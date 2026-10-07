@@ -1,6 +1,6 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T17:35:48Z",
+  "updated_at": "2026-10-07T17:44:57Z",
   "timezone": "America/Bogota",
   "titulo": "P1 entregado; P2, P3 y guion en revisión",
   "detalle": "P1 reúne datos y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables constan como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta, y esto no afirma ilegalidad ni autorización general. El PDF obligatorio de hasta dos páginas está preparado; el ensayo humano de 14–16 minutos sigue pendiente.",
@@ -8,7 +8,7 @@
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/2ea508113ba60c1215531aa4fcccb3d06af88037/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/fb107ba365e1b0aaa8402b0f00df5d1c61c81127/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -103,7 +103,7 @@
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
-  "source_updated_at": "2026-10-07T17:22:35+00:00",
+  "source_updated_at": "2026-10-07T17:37:23+00:00",
   "source_branch": "dev",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "go_recibido": true,
@@ -113,7 +113,7 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/main/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T17:35:48Z"
+    "comprobado_utc": "2026-10-07T17:44:57Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
@@ -122,18 +122,18 @@
     "Realizar el ensayo humano de 14–16 minutos."
   ],
   "summary": [
-    "P1 entregado; sus hallazgos no validan ambientalmente una cartera.",
-    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
-    "P3 y sus variables presentes como borrador D6 provisional en revisión.",
+    "P1 reúne datos y hallazgos trazados; no valida ambientalmente una cartera.",
+    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis con una unidad por catálogo; comparación financiera, no óptimo ambiental.",
+    "P3 y sus variables están presentes como borrador D6 provisional en revisión.",
     "Eficacia, delta V y robustez completa no demostradas.",
-    "Uso y reproducción de M-E-2411 B7 en revisión; acceso público no significa licencia abierta ni determina ilegalidad o autorización general.",
+    "Uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, en revisión; acceso público no significa licencia abierta ni determina ilegalidad o autorización general.",
     "PDF obligatorio de hasta dos páginas preparado; ensayo humano de 14–16 minutos pendiente.",
     "Unidad 14 municipal para Rionegro propuesta por COP 600 millones y 12 meses desde una futura acta."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T17:35:48Z",
-  "source_commit": "2ea508113ba60c1215531aa4fcccb3d06af88037",
-  "source_captured_at": "2026-10-07T17:35:35Z",
+  "checked_at": "2026-10-07T17:44:57Z",
+  "source_commit": "fb107ba365e1b0aaa8402b0f00df5d1c61c81127",
+  "source_captured_at": "2026-10-07T17:44:35Z",
   "source_was_current_at_publication": true,
-  "head_before_publication": "2ea508113ba60c1215531aa4fcccb3d06af88037"
+  "head_before_publication": "fb107ba365e1b0aaa8402b0f00df5d1c61c81127"
 }
