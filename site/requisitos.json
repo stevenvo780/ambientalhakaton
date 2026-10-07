@@ -2,7 +2,7 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
-  "source_sha256": "115257143dbddb2698709b1246137f78740a18ae4e06c3725ca7fd3391305202",
+  "source_sha256": "0d55947de0aca2a7d8186210f3460e2d16dd3534d825fae9fd32b61fffb1f339",
   "scope": "Corte D6/P2v2/P3v2. SSP3-7.0/2060 obligatorio reconfirmado por operador; SSP2 exploratorio y el intermedio literal oficial sin identificar. Evidencia documental limitada, no75cumplidos ni eficacia medida.",
   "items": [
     {
@@ -108,7 +108,7 @@
       "id": "R12",
       "regla_fuente": "Primero escenario de referencia y horizonte futuro intermedio suministrado por CORNARE. E p.6 §7.",
       "accion": "Localizar los dos insumos con año/escenario y construir la primera cartera con ellos.",
-      "evidencia": "P1/P2 iniciales y tabla de insumos exactos. **Corte verificado:** Usuario reconfirma SSP3-7.0/2060 obligatorio el7oct11:28Bogotá. SSP2-4.5/2021–2040 disponible SOLOadicional/exploratorio; el intermedio suministrado pedido enE p6 no se identificó. No declarar tres momentos oficiales completos.",
+      "evidencia": "P1/P2 iniciales y tabla de insumos exactos. **Corte verificado:** Usuario reconfirma SSP3-7.0/2060 obligatorio el7oct11:28Bogotá. SSP2-4.5/2021–2040 disponible SOLOadicional/exploratorio; el intermedio suministrado pedido enE p6 no se identificó; no se vuelve a pedirSSP2al usuario ni se trata como pendiente de confirmación humana. No declarar tres momentos oficiales completos.",
       "validacion": "Se identifica qué escenario y horizonte se usaron; no se asigna automáticamente 2040 al intermedio ni se reemplaza el insumo faltante por un mapa distinto.",
       "responsable": "DA + IN",
       "estado": "condicional"
@@ -279,7 +279,7 @@
       "id": "Q09",
       "regla_fuente": "¿Qué indicadores permitirán saber después si disminuyó vulnerabilidad? E p.6 §9.",
       "accion": "Aplicar R19 e I09, separando productos de resultados.",
-      "evidencia": "P3: ficha MEA de seguimiento. **Corte verificado:** P3v2/34variables ofrece definición/unidad/basal físico+fecha null/frecuencia propuesta/custodio/regla y comparación. La respuesta está documentada; medición/disminución no realizadas y C07/R19 condicionados.",
+      "evidencia": "P3: ficha MEA de seguimiento. **Corte verificado:** P3v2/34variables ofrece definición/unidad/basal físico+fecha null/frecuencia propuesta/custodio/regla y comparación. La respuesta está documentada y la auditoría Q01–Q09/C01–C08 enpitch distingue soporte/condición; medición/disminución no realizadas y C07/R19 condicionados.",
       "validacion": "Definición, unidad, fuente, línea base/ausencia, frecuencia, responsable y criterio de interpretación; permite evaluar S/CA/V.",
       "responsable": "DA + AG",
       "estado": "demostrado"
@@ -681,7 +681,7 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T11:31:03.957338-05:00",
+  "updated_at": "2026-10-07T11:33:25.937276-05:00",
   "counts": {
     "condicional": 35,
     "demostrado": 33,

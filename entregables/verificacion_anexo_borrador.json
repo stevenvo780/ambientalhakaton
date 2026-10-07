@@ -34,11 +34,12 @@
     "additional_only": "SSP2-4.5/2040",
     "official_intermediate_identified": false
   },
-  "pitch_sha256": "c3e88b48d2724c0d3f724106caef078e7fa481e39c75a4eb5d4c4940235aba99",
+  "pitch_sha256": "ccb6720f2b2a1799ff8ab33a7747fef04a95ed9f01887234aa4af94dcf03b538",
   "oral_rehearsal": {
     "status": "pendiente",
     "person": null,
     "duration_seconds": null,
-    "timestamp": null
+    "timestamp": null,
+    "receipt_template": "PITCH_BORRADOR.md: ficha para ensayo oral real"
   }
 }
