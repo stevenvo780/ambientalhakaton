@@ -1,0 +1,32 @@
+{
+  "schema": "ambiental.autodeploy-git.verificado.v1",
+  "verified_at_utc": "2026-10-07T15:52:43.756790+00:00",
+  "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
+  "project": "ambientalhakaton",
+  "team": "stevenvo780s-projects",
+  "repository": "stevenvo780/ambientalhakaton",
+  "production_branch": "dev",
+  "root_directory": "site",
+  "observed_deployment": {
+    "id": "dpl_D4XENnBbuWVwwQxcmdaW1mrc33Ui",
+    "readyState": "READY",
+    "target": "production",
+    "source": "git",
+    "git_type": "github",
+    "git_ref": "dev",
+    "git_sha": "a36a7f264478d6921338b250f6d49ae63d694322"
+  },
+  "http": {
+    "/": 200,
+    "/estado.json": 200,
+    "/deployment.json": 200
+  },
+  "served_deployment_commit": "a36a7f264478d6921338b250f6d49ae63d694322",
+  "automatic_git_push_to_production_demonstrated": true,
+  "scope": "Primer ciclo Git confirmado; no prueba que todos los pushes posteriores hayan terminado. Datos y productos ambientales se validan por separado.",
+  "verification_methods": [
+    "CLI whoami/proyecto inspect con cuenta actual",
+    "CLI api GET selectivo del proyecto y despliegue porque inspect omite procedencia Git",
+    "HTTP IPv4 público del dominio; sin nuevas credenciales ni mutaciones Vercel"
+  ]
+}
