@@ -1,6 +1,6 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T18:02:46Z",
+  "updated_at": "2026-10-07T18:05:51Z",
   "timezone": "America/Bogota",
   "titulo": "Entregables en revisión; ensayo humano pendiente",
   "detalle": "P1 reúne datos y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta; esto no afirma ilegalidad ni autorización general. El PDF obligatorio de hasta dos páginas está preparado; el ensayo humano de 14–16 minutos sigue pendiente. La unidad 14 municipal para Rionegro, por COP 600 millones y 12 meses, está propuesta y sujeta a una futura acta.",
@@ -8,7 +8,7 @@
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/db93993b5e1bc356802fceb4bfd69266ebf45829/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/acec5288d9b678a2b725b78bb3887705eb26316b/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -119,7 +119,7 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/main/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T18:02:46Z"
+    "comprobado_utc": "2026-10-07T18:05:51Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
@@ -130,17 +130,17 @@
   ],
   "summary": [
     "P1 reúne datos y hallazgos trazados; no valida ambientalmente una cartera.",
-    "P2 examinó 32.768 subconjuntos; 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo. Es comparación financiera, no óptimo ambiental.",
-    "P3 y sus variables están presentes como borrador D6 provisional en revisión.",
-    "Eficacia, delta V y robustez completa no demostradas.",
-    "Uso y reproducción de M-E-2411, hoja «Sobre este documento», B7, en revisión; acceso público no significa licencia abierta.",
+    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
+    "P3 y sus variables constan como borrador D6 provisional en revisión.",
+    "Eficacia, delta V y robustez completa siguen sin demostrarse.",
+    "El uso y la reproducción de M-E-2411, hoja «Sobre este documento», B7, están en revisión; acceso público no significa licencia abierta.",
     "PDF obligatorio de hasta dos páginas preparado; ensayo humano de 14–16 minutos pendiente.",
-    "Unidad 14 municipal para Rionegro propuesta por COP 600 millones y 12 meses, sujeta a futura acta."
+    "Unidad 14 municipal para Rionegro, por COP 600 millones y 12 meses, propuesta sujeta a futura acta."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T18:02:46Z",
-  "source_commit": "db93993b5e1bc356802fceb4bfd69266ebf45829",
-  "source_captured_at": "2026-10-07T18:02:35Z",
+  "checked_at": "2026-10-07T18:05:51Z",
+  "source_commit": "acec5288d9b678a2b725b78bb3887705eb26316b",
+  "source_captured_at": "2026-10-07T18:05:35Z",
   "source_was_current_at_publication": true,
-  "head_before_publication": "db93993b5e1bc356802fceb4bfd69266ebf45829"
+  "head_before_publication": "acec5288d9b678a2b725b78bb3887705eb26316b"
 }
