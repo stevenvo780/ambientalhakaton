@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T16:59:09.632448+00:00",
+  "verified_at_utc": "2026-10-07T17:04:32.814777+00:00",
   "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "df030a6fbc233aba368706ff2e2f0e2c0a293e3d4471b4fad1c0f0f83b4c4a1d",
+  "source_sha256": "a055f3b4e329249c7a31f88c4e4cc99e0f6e154d3299d55a516efdbc2c2f8bc1",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "7c88ec670f3a9d6d4df3b3b2759a0aff64c2a4d62e12e17dfb1429ac1b83c164",
+  "pdf_sha256": "929e1c7c1ecfb057573b2264f8c1effba85859768e5477c8f44db1982ba92d9f",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,22 +17,22 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T11:59:41.100985-05:00",
-    "method": "pdftoppm render ambas paginas; inspeccion directa"
+    "reviewed_at_bogota": "2026-10-07T12:04:32.815834-05:00",
+    "method": "pdftoppm ambas paginas; inspeccion directa"
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "32f6d55379dce32868ac3018f9a7b19387a4a28f487c751d1c18712fd3ca4c96",
+  "pitch_sha256": "06643e138b20dd7df891f7d155466033f27f7c5b3bbad63f20c03a95f02113a9",
   "inputs_sha256": {
-    "entregables/p1_tablero.md": "485a635e7afd6238af0cb35d20616339a8efd31181281613036feb55643cc791",
+    "entregables/p1_tablero.md": "d7d9356630b811cb06f06ab22b089109c7866fa7805ff5c20e7affbd80eb69d9",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
     "entregables/datos_oficiales.json": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232",
-    "entregables/p2_portafolio.md": "d35ab25f47361ee959a37c4a9a07a13cfe16fd4e6145f11820391f0390f2e6d1",
+    "entregables/p2_portafolio.md": "3d4b4693feafd3eb2d04240fca485aa5052ca44e17beafab2e6d191b6b828876",
     "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
-    "entregables/p2_justificacion.md": "c0bcf9965171e8583fb692de03ae65e9d4c6b7e28833ec62102a87da6bb4c907",
+    "entregables/p2_justificacion.md": "6ca94ca2705f0c6a2fdf672f1db81d21d2422e5f31737733f2a86d0a521cf32b",
     "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
-    "entregables/p3_riesgo_residual.md": "f3b8791ac0cff49e19a35413c5ddf4e22eff90c2af82c35ce06ebf708af0e8ad",
-    "entregables/p3_riesgo_residual.csv": "3fa273ed0b45bf3a4dd1cb3df41b41b968dfa99cb53100051093b881b4babb46",
-    "entregables/variables_seguimiento.csv": "2743e829d6e61e60e72f1668f67df1f0730e690fd6f4b8d8f23c58a7d473ef90",
+    "entregables/p3_riesgo_residual.md": "7f984b1f5e9b8c1ed7d109f29a5a266dbcbf612a9fb0519d2492f8e1a0799d76",
+    "entregables/p3_riesgo_residual.csv": "73306058f36935ab577a27d47530ad98c3060d3f4e1ff3ecacdde6a316fe8c38",
+    "entregables/variables_seguimiento.csv": "efa576ea4a83079a95d1075d11c6c56f6460bf29a415a8471bc3cd0ce55ef190",
     "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
   },
   "source_urls": {
@@ -81,5 +81,5 @@
     "historical_commit_content_not_erased": true,
     "rights_clearance_certified": false
   },
-  "change_note": "V4.1 usaP2v3.2/P3v4; explicita14RprioridadGRDsinindiceautomatico y costo oportunidadhip7retira07/09=40%presupuesto, noeficacia"
+  "change_note": "V4.2 P1 horizonte aclarado d7d935/P2v3.2/P3v5; reponeaguaR/MVAlta solo matrizampliada frenteRMediaL12, sixPROP físicos/operacionales con limitaciones, custodia/basal/sitiosNA.42/34constantes."
 }

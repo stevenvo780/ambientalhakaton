@@ -2,8 +2,8 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
-  "source_sha256": "fc58a42d4909b016a2337e2e3fd93d50fdd5154341b1b1765a1d56b7d630a239",
-  "scope": "P2v3.2/P3v4/PDF único obligatorio2p. Horizonte solicitadoSSP3 hacia2060 cerrado porusuario; solicitado/estrés coinciden, SSP2adicionalexploratorio.14municipalR600/12mesesPROPUESTOS,03corredor oficial. Cupo1máximo financiero6; cupo3hipotético14máximo7UNIDADES5TIPOS, elegibilidad no probada. Ensayo14–16futuro no bloquea paqueteantes14. Hip7 retira07/09(2000M40%presupuesto), añade15+14G/Msin elegibilidad demostrada; no porcentajeeficacia.",
+  "source_sha256": "3c3f9248c1ceee7f787537863fd009849943242f6b5a0558231ad2ed23ce206e",
+  "scope": "P2v3.2/P3v5/PDF único obligatorio2p. Horizonte solicitadoSSP3 hacia2060 cerrado porusuario; solicitado/estrés coinciden, SSP2adicionalexploratorio.14municipalR600/12mesesPROPUESTOS,03corredor oficial. Cupo1máximo financiero6; cupo3hipotético14máximo7UNIDADES5TIPOS, elegibilidad no probada. Ensayo14–16futuro no bloquea paqueteantes14. Hip7 retira07/09(2000M40%presupuesto), añade15+14G/Msin elegibilidad demostrada; no porcentajeeficacia. AguaR/MVAlta sólo matriz ampliada;RMedioL12 se conserva. P3sixPROP físicos/operacionales sin códigos nuevos ni mediciones.",
   "items": [
     {
       "id": "R01",
@@ -90,7 +90,7 @@
       "id": "R10",
       "regla_fuente": "Demostrar por qué la combinación genera mayor reducción de vulnerabilidad que las alternativas descartadas, especificando S, CA, territorio/sistema, actores y residual. E pp.4–5 §6.",
       "accion": "Comparar carteras sustanciales, incluidos sacrificios y ventajas; vincular medida–factor–mecanismo y declarar nivel de evidencia del beneficio.",
-      "evidencia": "P2 con comparación y motivos de descarte; P3 con residual. **Corte verificado:** P2v3.2 compara D6/N1 y siete máximas;56% (2800M) suelo/agro/verde tiene aporte bio/agua hipotético. P3v4 declara conservación hídrica residual. Razonamiento no prueba mayor reducción deV ni óptimo causal.",
+      "evidencia": "P2 con comparación y motivos de descarte; P3 con residual. **Corte verificado:** P2v3.2 compara D6/N1 y siete máximas;56% (2800M) suelo/agro/verde tiene aporte bio/agua hipotético. P3v5 declara conservación hídrica residual. Razonamiento no prueba mayor reducción deV ni óptimo causal.",
       "validacion": "Cada alternativa tiene costo, conteo, alcance, mecanismo, incertidumbre y motivo verificable de descarte; una afirmación cuantitativa de beneficio tiene método y datos rastreables. Sin eficacias, se declara comparación razonada, no reducción demostrada u óptimo ambiental.",
       "responsable": "AG + CA + IN + RI",
       "estado": "condicional"
@@ -108,7 +108,7 @@
       "id": "R12",
       "regla_fuente": "Primero escenario de referencia y horizonte futuro intermedio suministrado por CORNARE. E p.6 §7.",
       "accion": "Localizar los dos insumos con año/escenario y construir la primera cartera con ellos.",
-      "evidencia": "P1/P2 iniciales y fuentes exactas. **Corte verificado:** Horizonte solicitadoSSP3-7.0 hacia2060 confirmado porusuario enrespuestaalaconsultasobrebriefing(7oct11:28Bogotá); amenazasM-E-2550p6 ventana2041–2060. P2v3.2/P3v4 contrastan referencia→SSP3. Solicitado/estrés coinciden por aclaración; no son dos futuros independientes. SSP2/2040 sólo exploratorio adicional. Selección cerrada, sin acta institucional inventada.",
+      "evidencia": "P1/P2 iniciales y fuentes exactas. **Corte verificado:** Horizonte solicitadoSSP3-7.0 hacia2060 confirmado porusuario enrespuestaalaconsultasobrebriefing(7oct11:28Bogotá); amenazasM-E-2550p6 ventana2041–2060. P2v3.2/P3v5 contrastan referencia→SSP3. Solicitado/estrés coinciden por aclaración; no son dos futuros independientes. SSP2/2040 sólo exploratorio adicional. Selección cerrada, sin acta institucional inventada.",
       "validacion": "Horizonte solicitado/fuente/fecha/procedencia humana identificados; referencia→SSP3 documentado. No inventar otro par ni dos pruebas futuras independientes; robustez operacional se evalúa enR13.",
       "responsable": "DA + IN",
       "estado": "demostrado"
@@ -162,7 +162,7 @@
       "id": "R18",
       "regla_fuente": "Diferenciar dato institucional, inferencia del equipo, supuesto e información faltante. E p.7 §11.",
       "accion": "Aplicar cuatro etiquetas visibles y localizadores; no convertir una hipótesis en dato al pasar a una gráfica.",
-      "evidencia": "Leyenda y etiquetas en las tres salidas y anexo si existe. **Corte verificado:** P1–P3 distinguen institucional/propuesta/hipótesis/ausencia; falta revisar la exportación final integrada y sus leyendas antes de cerrar.",
+      "evidencia": "Leyenda y etiquetas en las tres salidas y anexo si existe. **Corte verificado:** P1–P3 distinguen institucional/propuesta/hipótesis/ausencia; PDF2p integra etiquetas y límites; el cierre de versión requiere conservar ese mismo corte en el paquete congelado de entrega, todavía en publicación.",
       "validacion": "Toda cifra, relación y beneficio tiene categoría y fuente/método; los faltantes se conservan también en las visualizaciones y exportaciones.",
       "responsable": "DA + IN + RI",
       "estado": "condicional"
@@ -171,7 +171,7 @@
       "id": "R19",
       "regla_fuente": "Seguimiento para verificar S, CA o V, no solo actividades/inversión. E p.7 P3/§12; D p.23 ciclo MEA.",
       "accion": "Enlazar medida con indicador oficial de resultado, línea base/remedición y regla de ajuste; separar indicadores de gestión.",
-      "evidencia": "P3 con indicadores y ciclo de seguimiento. **Corte verificado:** P3v4 contiene34variables:14códigos institucionales y20PROP, unidad/procedimiento/fuente/fecha/basal/frecuencia/custodio y revisión. Basales físicos/año/custodia aceptada/acceso sin acreditar; no reducción medida.",
+      "evidencia": "P3 con indicadores y ciclo de seguimiento. **Corte verificado:** P3v5 contiene34variables:14códigos institucionales y20PROP, seis ejemplos físicos/operacionales con denominador y controles, unidad/procedimiento/fuente/fecha/basal/frecuencia/custodio y revisión. Basales físicos/año/custodia aceptada/acceso sin acreditar; no reducción medida.",
       "validacion": "Cada mecanismo S/CA tiene al menos una variable que permita verificarlo; gastos, capacitaciones o beneficiarios no se presentan solos como reducción de V. Véase I09.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -189,7 +189,7 @@
       "id": "R21",
       "regla_fuente": "Ruta oficial de ocho horas: lectura, diagnóstico, mapa, cartera, estrés, residual, seguimiento y síntesis. E p.6 §8.",
       "accion": "Organizar todas las fases, solapando tareas independientes para respetar U; no omitir las fases sustantivas por desarrollar interfaz.",
-      "evidencia": "Fases con salidasP1/P2v3.2/P3v4/PDF y dueños; congelación/versionado final en curso. Aclaración humana: solución antes14, estudio/ensayo14–16. No ensayo previo14requerido; ruta escrita no prueba todas las comprobaciones.",
+      "evidencia": "Fases con salidasP1/P2v3.2/P3v5/PDF y dueños; congelación/versionado final en curso. Aclaración humana: solución antes14, estudio/ensayo14–16. No ensayo previo14requerido; ruta escrita no prueba todas las comprobaciones.",
       "validacion": "Conservar salidas sustantivasR05–R19 antes14 y recibo de congelación; ensayoF01 duranteestudio14–16 segúnaclaraciónhumana, sin darlo por realizado.",
       "responsable": "OR + IN",
       "estado": "pendiente"
@@ -252,7 +252,7 @@
       "id": "Q06",
       "regla_fuente": "¿Qué cambia frente a SSP3-7.0 hacia 2060? E p.6 §9; notación confirmada en §7.",
       "accion": "Ejecutar R12/R13 y explicar continuidad o cambio.",
-      "evidencia": "P2v3.2/P3v4 referencia→SSP3 y celdas por unidad. **Corte verificado:** Horizonte solicitado y estrés coinciden por respuesta humana; selección cerrada. Mantener/revisar cualitativamente documentado; no eficacia diferencialD6/N1 ni dos futuros independientes. SSP2 adicional exploratorio.",
+      "evidencia": "P2v3.2/P3v5 referencia→SSP3 y celdas por unidad. **Corte verificado:** Horizonte solicitado y estrés coinciden por respuesta humana; selección cerrada. Mantener/revisar cualitativamente documentado; no eficacia diferencialD6/N1 ni dos futuros independientes. SSP2 adicional exploratorio.",
       "validacion": "Se identifica cambio de condiciones y consecuencia en cartera; “sin cambios” tiene justificación y no equivale a omitir el contraste.",
       "responsable": "DA + AG + RI",
       "estado": "condicional"
@@ -270,7 +270,7 @@
       "id": "Q08",
       "regla_fuente": "¿Qué dependencias o datos faltantes podrían cambiar la decisión? E p.6 §9.",
       "accion": "Aplicar R15/R16 con condición de revisión concreta.",
-      "evidencia": "P3: brecha, variable, captura y decisión afectada. **Corte verificado:** P3v4 pide servicio/activo/proveedor/respaldo/interrupción/recuperación/afectados; si12es esencial y elegible, retirar07/09+añadir12=5000/5; SATsolo03/04/08/13/14=4200/5/saldo800. Reenumerar15, no aristas ni salud de relleno.",
+      "evidencia": "P3: brecha, variable, captura y decisión afectada. **Corte verificado:** P3v5 pide servicio/activo/proveedor/respaldo/interrupción/recuperación/afectados; si12es esencial y elegible, retirar07/09+añadir12=5000/5; SATsolo03/04/08/13/14=4200/5/saldo800. Reenumerar15, no aristas ni salud de relleno.",
       "validacion": "Al menos cada brecha priorizada tiene efecto sobre una elección y plan de caracterización; no contiene aristas inventadas.",
       "responsable": "DA + AG + RI",
       "estado": "demostrado"
@@ -279,7 +279,7 @@
       "id": "Q09",
       "regla_fuente": "¿Qué indicadores permitirán saber después si disminuyó vulnerabilidad? E p.6 §9.",
       "accion": "Aplicar R19 e I09, separando productos de resultados.",
-      "evidencia": "P3: ficha MEA de seguimiento. **Corte verificado:** P3v4/34variables ofrece definición/unidad/basal físico+fecha null/frecuencia propuesta/custodio/regla y comparación. La respuesta está documentada y la auditoría Q01–Q09/C01–C08 enpitch distingue soporte/condición; medición/disminución no realizadas y C07/R19 condicionados.",
+      "evidencia": "P3: ficha MEA de seguimiento. **Corte verificado:** P3v5/34variables ofrece seis ejemplosPROP03ha/04m³actividad/07cobertura/08kg-ha/09supervivencia/14recepción+uso-intentos, definición/procedimiento/T0/frecuencia propuesta/rol; basal físico+fecha/sitio/custodio aceptadonull y regla y comparación. La respuesta está documentada y la auditoría Q01–Q09/C01–C08 enpitch distingue soporte/condición; medición/disminución no realizadas y C07/R19 condicionados.",
       "validacion": "Definición, unidad, fuente, línea base/ausencia, frecuencia, responsable y criterio de interpretación; permite evaluar S/CA/V.",
       "responsable": "DA + AG",
       "estado": "demostrado"
@@ -324,7 +324,7 @@
       "id": "C05",
       "regla_fuente": "Robustez. E p.7 §12.",
       "accion": "Revisar la estrategia con el futuro más exigente y reconocer incertidumbre.",
-      "evidencia": "R12/R13,P2v3.2/P3v4. **Corte verificado:** Contraste referencia→SSP3 obligatorio documentado y horizonte solicitado cerrado porusuario; solicitado/estrés coinciden. Sitios/diseños/basal físico y eficacia futura no validados. No robustez operacional completa ni efectoSSP3exclusivo porque categorías/redondeo2060coincidan.",
+      "evidencia": "R12/R13,P2v3.2/P3v5. **Corte verificado:** Contraste referencia→SSP3 obligatorio documentado y horizonte solicitado cerrado porusuario; solicitado/estrés coinciden. Sitios/diseños/basal físico y eficacia futura no validados. No robustez operacional completa ni efectoSSP3exclusivo porque categorías/redondeo2060coincidan.",
       "validacion": "SSP3-7.0/2060 realmente contrastado; revisión de cartera trazable; si faltan insumos, criterio queda pendiente y el resultado parcial lo declara.",
       "responsable": "DA + AG + RI",
       "estado": "condicional"
@@ -342,7 +342,7 @@
       "id": "C07",
       "regla_fuente": "Seguimiento. E p.7 §12.",
       "accion": "Seleccionar indicadores para cambios S/CA/V, con ciclo de medición y revisión.",
-      "evidencia": "R19, Q09 y P3. **Corte verificado:** Contrato34variables P3v4:14códigos originales/20PROP locales, vínculos07/08/09 propuestos;09función específica por homologar. Basal físico/fecha/custodio/frecuencia acordada/operación faltan; no causalidad medida.",
+      "evidencia": "R19, Q09 y P3. **Corte verificado:** Contrato34variables P3v5:14códigos originales/20PROP locales, vínculos07/08/09 propuestos;09función específica por homologar. Basal físico/fecha/custodio/frecuencia acordada/operación faltan; no causalidad medida.",
       "validacion": "La ficha permite obtener/comparar mediciones y decidir un ajuste; un indicador de inversión solo no cierra el criterio.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -432,7 +432,7 @@
       "id": "P03",
       "regla_fuente": "Riesgo residual, información faltante y seguimiento. E p.7 §10.",
       "accion": "Entregar ficha de riesgo que permanece; dependencias/datos que CORNARE debe levantar; variables mínimas; indicadores MEA para S/CA/V.",
-      "evidencia": "Ficha con esas cuatro partes, ciclo de medición, captura, responsabilidad y condición de revisión. **Corte verificado:** P3v4cubierta42cruces D6/N1×3mun×7dimensiones y34variables; define residual/captura/reapertura/seguimiento. Basales físicos/fechas null y actores/custodios propuestos; no eficacia o reducción demostradas.",
+      "evidencia": "Ficha con esas cuatro partes, ciclo de medición, captura, responsabilidad y condición de revisión. **Corte verificado:** P3v5cubierta42cruces D6/N1×3mun×7dimensiones y34variables; define residual/captura/reapertura/seguimiento. Basales físicos/fechas null y actores/custodios propuestos; no eficacia o reducción demostradas.",
       "validacion": "Los cuatro contenidos están presentes; R15/R16/R19, Q07–Q09 e I09 comprobados; no se oculta una brecha o se sustituye residual por “cero” sin datos.",
       "responsable": "IN, con DA + AG",
       "estado": "condicional"
@@ -531,7 +531,7 @@
       "id": "I08",
       "regla_fuente": "Catálogo/fichas oficiales de medidas MEA. E p.3 §3; D pp.16–18.",
       "accion": "Confirmar correspondencia del nombre del reto con código/ficha, alcance, acciones, indicadores y horizonte MEA.",
-      "evidencia": "P2v3.2/P3v4 separan17fichas/15costos.03admisión corredor porE p5, ficha1C11Páramo contextual; sitios/indicadores porvalidar.14ficha17C28municipio-año como antecedente, C20estimadosno precioRET14;14R600/12mesesPROPUESTOS, noSATcompleto.07/08/09 códigos por homologar sin cambiar literalmente fuente.",
+      "evidencia": "P2v3.2/P3v5 separan17fichas/15costos.03admisión corredor porE p5, ficha1C11Páramo contextual; sitios/indicadores porvalidar.14ficha17C28municipio-año como antecedente, C20estimadosno precioRET14;14R600/12mesesPROPUESTOS, noSATcompleto.07/08/09 códigos por homologar sin cambiar literalmente fuente.",
       "validacion": "Se puede localizar código y medida oficial; los 17 nombres territoriales, 11 empresariales y 15 precios se mantienen como alcances distintos. Una portada o esquema de 21 campos no es ficha íntegra.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -540,7 +540,7 @@
       "id": "I09",
       "regla_fuente": "Indicadores MEA relacionados con S/CA. E p.3 §3 y p.7 P3; D p.23.",
       "accion": "Confirmar código, definición, fórmula, unidad, fuente, línea base, meta, frecuencia, responsable y vínculo medida–factor; definir remedición y revisión.",
-      "evidencia": "Fichas P3 con esos campos, ausencias explícitas y indicador de gestión separado del de resultado. **Corte verificado:** P3v4define34variables con código original, vínculo propuesto, fuenteSHA, localizador, basal físico/fecha null, frecuencia/custodio propuestos, regla. Los90valores normalizados nuevos siguen internos; no sustituir basal físico.",
+      "evidencia": "Fichas P3 con esos campos, ausencias explícitas y indicador de gestión separado del de resultado. **Corte verificado:** P3v5define34variables con código original, vínculo propuesto, fuenteSHA, localizador, basal físico/fecha null, frecuencia/custodio propuestos, regla. Los90valores normalizados nuevos siguen internos; no sustituir basal físico.",
       "validacion": "Nombre de indicador no se trata como valor numérico; variable permite verificar S/CA/V. Ninguna fórmula/meta oficial se inventa. Un indicador provisional no se etiqueta MEA confirmado.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -681,7 +681,7 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T11:59:41.100078-05:00",
+  "updated_at": "2026-10-07T12:04:32.814010-05:00",
   "counts": {
     "condicional": 33,
     "demostrado": 35,
