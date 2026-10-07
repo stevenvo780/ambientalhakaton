@@ -175,6 +175,16 @@
     const sel = el("fieldset", { class: "selector" }, `<legend>Recorrer hallazgos</legend><button type="button" data-h="" aria-pressed="true">Todo</button>${D.hallazgos.map(h => `<button type="button" data-h="${h.id}" aria-pressed="false">${h.id}</button>`).join("")}`);
     const lect = el("div", { class: "lectura-h", "aria-live": "polite" });
     const nota = el("p", { class: "fuente" }, "P1, matriz M-E-2411, hoja Regional Valles SN, AJ/AK, filas 15–79. Barra interior = índice 0–1, no porcentaje. *Agua Rionegro: Alto en la matriz ampliada, Medio en la lámina 12; el enunciado prevalece y P1 registra otras discrepancias (p. ej., Guarne desastres, salud y alimentos).");
+    if (cont.dataset.modo === "oral") {
+      /* Modo oral: todas las celdas H marcadas a la vez; H3 es riesgo y queda fuera de la tabla. */
+      tabla.classList.add("foco");
+      for (const h of D.hallazgos) for (const [d, j] of h.celdas) {
+        const td = $(`td[data-d="${d}"][data-j="${j}"]`, tabla);
+        if (td) { td.classList.add("on"); td.dataset.h = td.dataset.h ? `${td.dataset.h}·${h.id}` : h.id; }
+      }
+      cont.append(tabla, nota);
+      return;
+    }
     cont.append(sel, tabla, lect, nota);
     const ver = id => {
       $$("button", sel).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.h === id)));
@@ -230,6 +240,22 @@
     const sel = el("fieldset", { class: "selector" }, `<legend>Escenario</legend><button type="button" data-e="ref" aria-pressed="false">Referencia</button><button type="button" data-e="s3" aria-pressed="false">SSP3-7.0, 2041–2060 (solicitado)</button><button type="button" data-e="s2" class="hipo" aria-pressed="false">SSP2-4.5, 2021–2040 (exploratorio)</button>`);
     const caja = el("div", { class: "ssp-caja" }); caja.append(svg);
     const lect = el("p", { class: "fuente", "aria-live": "polite" });
+    if (cont.dataset.modo === "oral") {
+      /* Modo oral: referencia fija (círculo hueco) y SSP3 como estado final; al entrar el punto se desplaza una vez. */
+      lt2.textContent = "SSP3-7.0, 2041–2060";
+      const fijar = e => movs.forEach(({ f, mv, tr, val }) => { const x = X(f[e]); mv.style.transform = `translate(${x}px,0px)`; tr.setAttribute("x2", x); val.textContent = e === "s3" ? `${dec(f.ref)} → ${dec(f.s3)}` : dec(f.ref); });
+      cont.append(caja);
+      fijar("s3");
+      let auto = 0;
+      cont.addEventListener("lamina:entra", () => {
+        clearTimeout(auto);
+        if (reducido) { fijar("s3"); return; }
+        movs.forEach(({ mv }) => { mv.style.transition = "none"; }); fijar("ref"); void svg.getBoundingClientRect();
+        movs.forEach(({ mv }) => { mv.style.transition = ""; });
+        auto = setTimeout(() => fijar("s3"), 350);
+      });
+      return;
+    }
     cont.append(sel, caja, lect);
     const ver = e => {
       $$("button", sel).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.e === e)));
@@ -249,7 +275,58 @@
   }
 
   /* ---------- Reapertura: D6 → SAT crítico / servicio esencial ---------- */
+  /* ---------- Filas estáticas para el modo oral ---------- */
+  const filaEstatica = (rot, unidades, total, cls = "", nota = "") => `<div class="max grande ${cls}"><span class="rot">${rot}</span><div class="pila">${unidades.map(x => `<span class="seg${x.hipo ? " hipo" : ""}" style="--m:${cat(x.id).c};--c:${color(x.id)}"><b>${x.id}</b><span>${fmt(cat(x.id).c)}</span></span>`).join("")}${total < 5000 ? `<span class="seg saldo" style="--m:${5000 - total}"><b>${fmt(5000 - total)}</b><span>saldo</span></span>` : ""}${nota}</div><span class="tot">${fmt(total)} · ${unidades.length} u.</span></div>`;
+  const ejeOral = `<div class="eje eje-oral" aria-hidden="true"><span>0</span><span>1.000</span><span>2.000</span><span>3.000</span><span>4.000</span><span>5.000 M</span></div>`;
+
+  /* D6 frente a N1 con panel municipal, o diferencia de compras: todo visible sin clics. */
+  function comparacion(cont) {
+    const d6 = D.carteras.D6, n1 = D.carteras.N1;
+    if (cont.dataset.modo === "diferencia") {
+      const idsD = d6.unidades.map(x => x.id), idsN = n1.unidades.map(x => x.id);
+      const comunes = idsD.filter(id => idsN.includes(id)), soloD = idsD.filter(id => !idsN.includes(id)), soloN = idsN.filter(id => !idsD.includes(id));
+      const u = ids => ids.map(id => ({ id }));
+      const t = ids => D.total(ids);
+      cont.innerHTML = `<div class="maximas visto comp" role="img" aria-label="Compras comunes y diferentes entre D6 y N1 a la misma escala">
+        ${filaEstatica("En ambas", u(comunes), 5000, "", "")}
+        ${filaEstatica("Solo D6", u(soloD), 5000, "d6", "")}
+        ${filaEstatica("Solo N1", u(soloN), 5000, "", "")}
+      </div>${ejeOral}
+      <p class="fuente">En ambas: ${comunes.join(", ")} = ${fmt(t(comunes))} M. Solo D6: ${soloD.join(", ")} = ${fmt(t(soloD))} M (56 %). Solo N1: ${soloN.join(", ")} = ${fmt(t(soloN))} M, más saldo de 300 que no es reserva obligada. Escala lineal común; asignación, no eficacia.</p>`;
+      $$(".tot", cont).forEach((s, k) => { s.textContent = `${fmt(t([comunes, soloD, soloN][k]))} M`; });
+      $$(".seg.saldo", cont).forEach(s => s.remove());
+      return;
+    }
+    const llave = `<span class="llave56" style="left:32%;width:56%"><span>07+08+09 = 2.800 M = 56 % (asignación)</span></span>`;
+    let html = `<div class="maximas visto comp" role="img" aria-label="D6 y N1 a la misma escala de 0 a 5.000 millones">
+      ${filaEstatica("D6", d6.unidades, d6.total, "d6", llave)}
+      ${filaEstatica("N1", n1.unidades, n1.total)}
+    </div>${ejeOral}`;
+    if (cont.dataset.municipios !== "no") {
+      const fichaO = (x, extra = "") => `<span class="ficha${x.hipo ? " hipo" : ""}" style="--c:${color(x.id)}">${x.id}${extra}</span>`;
+      const enM = (c, m) => c.unidades.filter(x => x.ubic.includes(m)).map(x => fichaO(x, x.corredor ? " corredor" : x.compartida ? " compartida" : "")).join("") || "<small>ninguna localizada</small>";
+      html += `<p class="rotulo-esq">Esquema municipal rotulado, no es un mapa: unidades propuestas, factor P1 y residual de D6.</p>
+      <div class="muni-oral">${["G", "M", "R"].map(m => { const M = D.municipios[m]; return `<section><h4>${M.nombre}</h4>
+        <p><b>D6</b> ${enM(d6, m)}</p><p><b>N1</b> ${enM(n1, m)}</p>
+        <p class="fac">${M.factor.slice(0, 2).join(". ")}.</p>
+        <ul class="res">${M.residual.map(r => `<li>${r}</li>`).join("")}</ul></section>`; }).join("")}</div>
+      <p class="fuente">N1: 01 y 05 sin localización municipal acreditada; no se dibuja cobertura. Residual mostrado = residual de D6.</p>`;
+    }
+    cont.innerHTML = html;
+  }
+
   function reapertura(cont) {
+    if (cont.dataset.modo === "oral") {
+      const base = D.carteras.D6.unidades.map(x => x.id);
+      const filas = ["D6", "SAT", "SERV"].map(k => {
+        const c = D.carteras[k], ids = c.unidades.map(x => x.id);
+        const sale = base.filter(id => !ids.includes(id)), entra = ids.filter(id => !base.includes(id));
+        const nota = k === "D6" ? "" : `<p class="cambios">${sale.map(id => `<span class="sale">${id} ${cat(id).n}</span>`).join(" ")} ${entra.map(id => `<span class="entra">+ ${id} ${cat(id).n}</span>`).join(" ")}</p>`;
+        return filaEstatica(c.nombre, c.unidades, c.total, k === "D6" ? "d6" : "") + nota;
+      }).join("");
+      cont.innerHTML = `<div class="maximas visto comp" role="img" aria-label="D6 y dos reaperturas a la misma escala">${filas}</div>${ejeOral}`;
+      return;
+    }
     const sel = el("fieldset", { class: "selector" }, `<legend>Si se demuestra una función crítica</legend><button type="button" data-c="D6" aria-pressed="true">D6</button><button type="button" data-c="SAT" aria-pressed="false">SAT crítico</button><button type="button" data-c="SERV" aria-pressed="false">Servicio esencial</button>`);
     const barra = el("div"), cambios = el("p", { class: "cambios", "aria-live": "polite" });
     cont.append(sel, barra, cambios);
@@ -273,10 +350,17 @@
     b?.addEventListener("click", () => { const on = cont.classList.toggle("separadas"); b.setAttribute("aria-pressed", String(on)); b.textContent = on ? "Alinear capas" : "Separar capas"; });
   }
 
-  const COMPONENTES = { rio, tablero, matriz, maximas, escenario, reapertura, capas };
-  $$("[data-componente]").forEach(c => { try { COMPONENTES[c.dataset.componente]?.(c); } catch (err) { console.error("Componente", c.dataset.componente, err); } });
+  const COMPONENTES = { rio, tablero, matriz, maximas, escenario, reapertura, capas, comparacion };
+  const crear = c => { if (c.dataset.listo) return; c.dataset.listo = "1"; try { COMPONENTES[c.dataset.componente]?.(c); } catch (err) { console.error("Componente", c.dataset.componente, err); } };
+  /* Dibuja cuando el contenedor ya tiene ancho (evita gráficos de ancho 0 en láminas ocultas) y luego avisa la entrada. */
+  const activar = (c, intentos = 0) => {
+    if (!c.dataset.listo && c.clientWidth === 0 && intentos < 60) { requestAnimationFrame(() => activar(c, intentos + 1)); return; }
+    crear(c);
+    c.dispatchEvent(new CustomEvent("lamina:entra"));
+  };
 
   const laminas = $$(".lamina");
+  if (!laminas.length) $$("[data-componente]").forEach(crear);
   const btn = a => $(`[data-accion="${a}"]`);
   const alternar = (accion, clase) => { const on = body.classList.toggle(clase); btn(accion)?.setAttribute("aria-pressed", String(on)); return on; };
 
@@ -336,7 +420,7 @@
     if (sig) sig.disabled = i === laminas.length - 1;
     if (deck) escenarioEl?.scrollTo({ top: 0 });
     laminas[i].setAttribute("aria-label", `${i + 1} de ${laminas.length}: ${titulo}`);
-    $$("[data-componente]", laminas[i]).forEach(c => c.dispatchEvent(new CustomEvent("lamina:entra")));
+    $$("[data-componente]", laminas[i]).forEach(c => activar(c));
     if (reloj && !reloj.hidden) tic();
   };
   const ir = (k, dir = 0) => {
@@ -350,7 +434,7 @@
   const siguiente = () => ir(i + 1, 1), anterior = () => ir(i - 1, -1);
   const estudio = () => {
     const on = alternar("estudio", "estudio"); deck = !on; body.classList.toggle("deck", deck); pintar();
-    if (on) { $$("[data-componente]").forEach(c => c.dispatchEvent(new CustomEvent("lamina:entra"))); laminas[i].scrollIntoView({ block: "start" }); }
+    if (on) { $$("[data-componente]").forEach(c => activar(c)); laminas[i].scrollIntoView({ block: "start" }); }
   };
   const pantalla = async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen?.(); } catch { /* el navegador puede negarlo */ } };
 

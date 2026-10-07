@@ -252,6 +252,34 @@ svg{max-width:100%}
 .capa{position:absolute;left:18%;width:58%;height:42%;top:30%;border-radius:6px;border:1.5px solid var(--c);background:color-mix(in srgb,var(--c) 22%,transparent);transform:translateZ(calc(var(--i) * 30px));display:flex;align-items:flex-start;padding:.3rem .5rem;font-size:.72rem;font-weight:700;color:var(--c)}
 .capa.falta{border-style:dashed;background:transparent}
 
+/* Modo oral: filas grandes estáticas, llave del 56 %, panel municipal y H marcadas */
+.max.grande{grid-template-columns:6.2rem minmax(0,1fr) 5.6rem}
+.max.grande .rot{font-size:.86rem}
+.max.grande .tot{font-size:.78rem;color:var(--texto)}
+.max.grande .pila{height:clamp(2.4rem,6vh,3.2rem)}
+.max.grande .pila .seg b{font-size:.84rem}
+.max.grande .pila .seg span{font-size:.64rem}
+.comp{gap:.7rem}
+.comp .max.d6{margin-bottom:1.6rem}
+.eje-oral{margin:0 6.7rem 0 6.7rem}
+.llave56{position:absolute;top:calc(100% + 3px);height:.5rem;border:2px solid var(--ocre);border-top:0}
+.llave56 span{position:absolute;top:.55rem;left:0;white-space:nowrap;font-size:.7rem;font-weight:700;color:var(--ocre)}
+.rotulo-esq{margin:.9rem 0 .35rem;font-size:.72rem;color:var(--ocre);font-weight:600}
+.muni-oral{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+.muni-oral section{border:1px solid var(--linea);border-radius:6px;padding:.45rem .55rem;background:var(--panel)}
+.muni-oral h4{margin:0 0 .25rem;font-size:.92rem}
+.muni-oral p{margin:.15rem 0;font-size:.74rem}
+.muni-oral p>b{display:inline-block;width:1.9rem;color:var(--texto-2)}
+.muni-oral .fac{color:var(--texto-2);font-size:.7rem;line-height:1.3}
+.muni-oral .res{margin:.25rem 0 0;padding-left:.9rem;font-size:.7rem;color:var(--coral);line-height:1.3}
+.muni-oral small{color:var(--texto-2)}
+.hallazgos{list-style:none;margin:.2rem 0 0;padding:0}
+.hallazgos li{display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:.4rem;margin:.38rem 0;font-size:.84rem;line-height:1.3}
+.hallazgos li>b{font-family:var(--serif);color:var(--ocre);font-size:1rem}
+.hallazgos .f{display:block;color:var(--agua);font-size:.76rem}
+.matriz td[data-h]::after{content:attr(data-h);position:absolute;top:-.55rem;right:-.15rem;background:var(--ocre);color:var(--fondo);font-size:.6rem;font-weight:700;padding:0 .25rem;border-radius:3px;line-height:1.4}
+.comp .cambios{margin:-.3rem 0 .2rem 6.7rem}
+
 /* Página normal (metodología): menú de anclas y secciones largas */
 .dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,2.5vw,2.5rem)}
 body.pagina{scroll-behavior:smooth}
@@ -377,6 +405,12 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   .grafo-caja{overflow-x:auto}
   .grafo{min-width:620px}
   .maximas+.eje{margin:0!important}
+  .max.grande{grid-template-columns:minmax(0,1fr) auto}
+  .eje-oral{margin:0}
+  .comp .cambios{margin:0}
+  .llave56 span{white-space:normal;width:max(100%,12rem)}
+  .comp .max.d6{margin-bottom:2.4rem}
+  .muni-oral{grid-template-columns:minmax(0,1fr)}
   .flujo{grid-template-columns:minmax(0,1fr);gap:1.1rem}
   .flujo li+li::before,.flujo li:nth-child(5)::before{display:block;left:1.2rem;top:-1rem;width:0;height:.8rem;border-top:0;border-left:2px dashed var(--texto-2)}
   .flujo li+li::after,.flujo li:nth-child(5)::after{display:block;left:calc(1.2rem - 5px);top:-.35rem;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid var(--texto-2);border-bottom:0}
