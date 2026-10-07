@@ -2,68 +2,68 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
-  "source_sha256": "a8ef33d1d9ec8cb1088294508cedc0484d7aaac2fe1391630f92dd8a6ce93619",
-  "scope": "Estado de la matriz de preparación. Demostrado no significa cartera ni productos finales completados.",
+  "source_sha256": "8af8d0e5b8f0d00813fa7956335ea3d1e32f935b261700d64d19f6d47850abe5",
+  "scope": "Corte de continuidad GO/reanudada. Estado documental por afirmación limitada; D6/escenarios/elegibilidad/MEA permanecen condicionados y ensayo/entrega pendientes.",
   "items": [
     {
       "id": "R01",
       "regla_fuente": "Decidir adaptación con información existente, recursos limitados y brecha de dependencias; reducir vulnerabilidad actuando sobre sensibilidad y/o capacidad adaptativa y fortalecer resiliencia futura. E p.1 §1 y p.8 cierre.",
       "accion": "Formular la decisión y enlazar cada intervención con el factor que pretende cambiar.",
-      "evidencia": "P1–P3: problema, factor S/CA, mecanismo esperado y elección explícita.",
+      "evidencia": "P1–P3: problema, factor S/CA, mecanismo esperado y elección explícita. **Corte verificado:** P1-H1–H5, P2 D6 y P3 enlazan factores y mecanismos; elegibilidad y mayor reducción comparada aún no demostradas.",
       "validacion": "Cada intervención seleccionada tiene factor y mecanismo; no se presenta el diagnóstico como resultado final ni una inversión como reducción medida.",
       "responsable": "IN + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R02",
       "regla_fuente": "Corredor Rionegro–Guarne–Marinilla, no muestra estadística de toda Valles ni selección de los municipios con mayor riesgo. E pp.1–2 §2.",
       "accion": "Limitar las decisiones al corredor y justificar perfiles distintos.",
-      "evidencia": "P1 con los tres municipios; P2 con localizaciones y alcance territorial.",
+      "evidencia": "P1 con los tres municipios; P2 con localizaciones y alcance territorial. **Corte verificado:** P1 contiene 21 perfiles de Rionegro/Guarne/Marinilla; P2/P3 limitan su decisión al corredor. Resolución municipal, no predial.",
       "validacion": "No hay decisión para otros municipios ni extrapolación estadística; se explica por qué el agregado regional no decide por sí solo.",
       "responsable": "DA + IN",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R03",
       "regla_fuente": "No confundir amenaza, sensibilidad, capacidad adaptativa, vulnerabilidad y riesgo. E pp.1–2 y p.7 §12.",
       "accion": "Conservar componente, dimensión, año, escenario, unidad/escala y fuente de cada dato usado.",
-      "evidencia": "Tabla de evidencia de P1 y glosario breve o leyenda.",
+      "evidencia": "Tabla de evidencia de P1 y glosario breve o leyenda. **Corte verificado:** P1 CSV/JSON conserva A/S/CA/V/R, categorías, escenarios y celdas; las discrepancias de versión y año basal null se explicitan.",
       "validacion": "Revisor puede rastrear todos los valores; ningún valor A se etiqueta V o R; categorías y escalas de percepción no se mezclan con índices técnicos.",
       "responsable": "DA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R04",
       "regla_fuente": "Perfiles diferenciados y siete dimensiones; una decisión exclusiva sobre biodiversidad/agua puede dejar desastres, infraestructura u ocupación sin atender. E p.2 §2.",
       "accion": "Examinar las siete dimensiones y sintetizar hasta cinco hallazgos que muestren conflictos y sacrificios.",
-      "evidencia": "P1 y cobertura/residual de P2–P3.",
+      "evidencia": "P1 y cobertura/residual de P2–P3. **Corte verificado:** P1 presenta cinco hallazgos y siete dimensiones; P3 describe residual de cada dimensión, sin obligar reparto igual.",
       "validacion": "Cada dimensión relevante tiene decisión de atender, descartar o dato faltante; no se fuerza igualdad de gasto entre dimensiones o municipios sin regla oficial.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R05",
       "regla_fuente": "Fondo conjunto simulado de COP 5.000 millones para los tres municipios. E p.4 §6.",
       "accion": "Calcular total de la cartera y asignación por intervención/municipio, evitando contar dos veces unidades compartidas.",
-      "evidencia": "P2 con costos enteros, total, saldo y distribución.",
+      "evidencia": "P2 con costos enteros, total, saldo y distribución. **Corte verificado:** P2 D6: 700+900+1000+800+1000+600=5000 M COP; saldo0. N1:4700, saldo300. Cuenta provisional, no financiación comprometida.",
       "validacion": "Suma independiente en COP ≤ 5.000.000.000; coincide con suma de filas y agregados; no se multiplicó el fondo por tres.",
       "responsable": "CA + IN",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R06",
       "regla_fuente": "Quince opciones con precio, unidades funcionales comparables e indivisibles salvo instrucción expresa de CORNARE. E p.5 §6.",
       "accion": "Usar CC como transcripción, conservando la unidad íntegra de cada fila; registrar cualquier excepción expresa antes de aplicarla.",
-      "evidencia": "P2 con ID local, nombre, unidad, número de unidades y costo de referencia.",
-      "validacion": "Cruce fila a fila con tabla económica inferior; ningún costo fraccionado o extra inventado; RETO-xx nunca se presenta como código MEA oficial.",
+      "evidencia": "P2 con ID local, nombre, unidad, número de unidades y costo de referencia. **Corte verificado:** P2 usa las15 entradas y unidades íntegras; RETO es ID local, PSA conserva3años y restauración~100ha. Repetición/cupo sigue abierta en R07/I14.",
+      "validacion": "Cruce fila a fila con tabla económica inferior; ningún costo fraccionado o extra inventado; `RETO-xx` nunca se presenta como código MEA oficial.",
       "responsable": "CA + DA",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R07",
       "regla_fuente": "Seleccionar el máximo de intervenciones posibles con el recurso; localizarlas y distribuirlo. E p.4 §6 y p.6 §8/§10.",
       "accion": "Definir primero conjunto de unidades y repetición; por unidad registrar pasa/no pasa/condicionado con evidencia de problema, sitio, actor, mecanismo y ausencia de doble financiación. Enumerar el conjunto autorizado; mostrar cómo cambia el máximo si no se habilita una condición. No declarar condicionadas como viabilidad demostrada.",
-      "evidencia": "P2/anexo: regla de conteo, catálogo elegible, alternativas y certificado de máximo bajo esa regla.",
+      "evidencia": "P2/anexo: regla de conteo, catálogo elegible, alternativas y certificado de máximo bajo esa regla. **Corte verificado:** Enumeración financiera:32768 subconjuntos,1567 factibles,7 de6. Una unidad por entrada y14 regional propuesta; no hay conjunto elegible definitivo ni máximo pertinente acreditado.",
       "validacion": "Existe prueba reproducible del mayor conteo factible dentro del conjunto declarado; no se llama máximo a una heurística ni se usa un costo promedio. Si la repetición está sin resolver, el máximo queda condicional y se muestran sus consecuencias.",
       "responsable": "CA + IN + RI",
       "estado": "condicional"
@@ -72,115 +72,115 @@
       "id": "R08",
       "regla_fuente": "No es obligatorio ejecutar todo el fondo. E p.4 §6.",
       "accion": "Mostrar saldo y explicar su relación con indivisibilidad y cartera.",
-      "evidencia": "P2 con presupuesto usado y remanente.",
+      "evidencia": "P2 con presupuesto usado y remanente. **Corte verificado:** P2 D6: 700+900+1000+800+1000+600=5000 M COP; saldo0. N1:4700, saldo300. Cuenta provisional, no financiación comprometida.",
       "validacion": "Usado + saldo = fondo; no se añade una intervención o gasto ficticio para agotar el dinero.",
       "responsable": "CA",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R09",
       "regla_fuente": "Precios supuestos para comparación; no contractuales ni disponibilidades reales de CORNARE. E p.4 §6.",
       "accion": "Rotular presupuesto y costos como simulados; separar antecedentes históricos de los costos del caso.",
-      "evidencia": "Leyenda visible en P2 y pitch.",
+      "evidencia": "Leyenda visible en P2 y pitch. **Corte verificado:** P2 y pitch rotulan COP5000M simulados y separan antecedentes; no contratos ni eficacias prometidos.",
       "validacion": "No se anuncian contratos, financiación comprometida ni ahorro contractual; las inversiones EX no sustituyen CC.",
       "responsable": "IN + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R10",
       "regla_fuente": "Demostrar por qué la combinación genera mayor reducción de vulnerabilidad que las alternativas descartadas, especificando S, CA, territorio/sistema, actores y residual. E pp.4–5 §6.",
       "accion": "Comparar carteras sustanciales, incluidos sacrificios y ventajas; vincular medida–factor–mecanismo y declarar nivel de evidencia del beneficio.",
-      "evidencia": "P2 con comparación y motivos de descarte; P3 con residual.",
+      "evidencia": "P2 con comparación y motivos de descarte; P3 con residual. **Corte verificado:** P2 compara D6/N1 y otros máximos/comparadores; P3 registra sacrificios. Hay razonamiento de mecanismos, pero no eficacia causal ni prueba de mayor reducción de V.",
       "validacion": "Cada alternativa tiene costo, conteo, alcance, mecanismo, incertidumbre y motivo verificable de descarte; una afirmación cuantitativa de beneficio tiene método y datos rastreables. Sin eficacias, se declara comparación razonada, no reducción demostrada u óptimo ambiental.",
       "responsable": "AG + CA + IN + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R11",
       "regla_fuente": "Posibles beneficios compartidos entre ecosistemas, comunidades, infraestructura, agua y actividad productiva; no asumir cadenas empresariales. E pp.2–3 §2.",
       "accion": "Registrar cobeneficios plausibles separando evidencia de hipótesis; revisar solapamientos entre intervenciones.",
-      "evidencia": "P2: beneficiarios/sistemas, mecanismo y nivel de evidencia.",
+      "evidencia": "P2: beneficiarios/sistemas, mecanismo y nivel de evidencia. **Corte verificado:** P2/P3 separan cobeneficios plausibles y solapes07/08/09; faltan sitios/beneficiarios que prueben complementariedad y adicionalidad.",
       "validacion": "No se suman beneficios solapados sin justificación; proximidad o sector no se convierte en dependencia ni efecto causal acreditado.",
       "responsable": "AG + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R12",
       "regla_fuente": "Primero escenario de referencia y horizonte futuro intermedio suministrado por CORNARE. E p.6 §7.",
       "accion": "Localizar los dos insumos con año/escenario y construir la primera cartera con ellos.",
-      "evidencia": "P1/P2 iniciales y tabla de insumos exactos.",
+      "evidencia": "P1/P2 iniciales y tabla de insumos exactos. **Corte verificado:** P1 dispone referencia y SSP2-4.5/2021–2040; P2 lo usa preliminarmente. El organizador no confirmó que ese par sea el intermedio suministrado del reto.",
       "validacion": "Se identifica qué escenario y horizonte se usaron; no se asigna automáticamente 2040 al intermedio ni se reemplaza el insumo faltante por un mapa distinto.",
       "responsable": "DA + IN",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R13",
       "regla_fuente": "Prueba de robustez SSP3-7.0 hacia 2060; mantener, modificar o reemplazar la cartera. E p.6 §7 y pp.6–7 P2.",
       "accion": "Comparar condiciones iniciales y de estrés, revisar cada intervención y documentar el cambio.",
-      "evidencia": "P2 antes/después; P3 con residual bajo estrés.",
+      "evidencia": "P2 antes/después; P3 con residual bajo estrés. **Corte verificado:** P2 contrasta por unidad tres momentos; M-E-2550p6 confirma SSP3-7.0/2041–2060. Mantener condicional no prueba desempeño, diseño ni robustez operacional definitiva.",
       "validacion": "Datos SSP3-7.0/2060 del corredor con fuente, dimensiones afectadas, regla y decisión registrada para cada intervención. Un contraste parcial se etiqueta parcial y no cierra la prueba oficial completa.",
       "responsable": "DA + AG + CA + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R14",
       "regla_fuente": "Usar escenarios existentes; no se espera modelación climática nueva. E p.6 §7.",
       "accion": "Consultar e interpretar productos suministrados, preservando sus escalas.",
-      "evidencia": "Registro de escenarios y método del contraste.",
+      "evidencia": "Registro de escenarios y método del contraste. **Corte verificado:** P1 usa valores XML almacenados y categorías; no ejecuta fórmulas ni nuevo modelo climático. P2/P3 no calculan V/R después de medidas.",
       "validacion": "No se generan proyecciones, probabilidades de SSP o índices institucionales nuevos para llenar vacíos.",
       "responsable": "DA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R15",
       "regla_fuente": "No completar, inferir o suponer la matriz empresarial ausente ni propagación de interrupciones. E p.3 §2 y p.4 §5.",
       "accion": "Marcar aristas no demostradas como dato faltante; evitar puntuar o simular propagación empresarial sin evidencia.",
-      "evidencia": "P1/P3: brecha y efecto posible en la decisión.",
+      "evidencia": "P1/P3: brecha y efecto posible en la decisión. **Corte verificado:** P3 no inventa aristas; pide servicio/activo, proveedor, respaldo, interrupción/recuperación y afectados en agregado autorizado.",
       "validacion": "Cada dependencia afirmada tiene fuente autorizada; ninguna se deduce de alcance 3, proximidad, inversiones o pertenencia a un sector.",
       "responsable": "DA + AG + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R16",
       "regla_fuente": "Identificar qué información adicional cambiaría/fortalecería la decisión, por qué y cómo integrarla a la futura capacidad de análisis/monitoreo. E p.4 §5.",
       "accion": "Formular solicitudes acotadas con variable mínima, responsable de captura, uso y condición de revisión de cartera.",
-      "evidencia": "P3: ficha de brechas accionables y capacidad institucional propuesta.",
+      "evidencia": "P3: ficha de brechas accionables y capacidad institucional propuesta. **Corte verificado:** P3 y variables_seguimiento.csv especifican captura/custodio propuestos, datos mínimos y decisión: reabrir SAT/infra o elegibilidad y reenumerar sin superar5000M.",
       "validacion": "Para cada brecha se explica una decisión concreta que podría cambiar y cómo se obtendría e incorporaría el dato; una lista genérica de datos no basta.",
       "responsable": "AG + DA + IN",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R17",
       "regla_fuente": "Empresas solamente agregadas, anonimizadas o sintéticas; sin reservado ni identificable. E p.3 §3 y p.8 §13.",
       "accion": "Seleccionar agregados autorizados, rotular sintéticos y excluir identificadores empresariales del paquete.",
-      "evidencia": "Registro de procedencia y versión pública de P1–P3/pitch/anexo.",
+      "evidencia": "Registro de procedencia y versión pública de P1–P3/pitch/anexo. **Corte verificado:** Publicabilidad inspecciona imágenesp14/p20/p24–27 y excluye originales; uso/avalB7 sigue por aclarar. Privacidad no equivale a licencia o autorización de extractos.",
       "validacion": "Revisión de tablas, imágenes, capas y metadatos: no aparecen nombres o identificadores individuales reservados, ni se redistribuyen capturas con empresas identificables.",
       "responsable": "DA + IN + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R18",
       "regla_fuente": "Diferenciar dato institucional, inferencia del equipo, supuesto e información faltante. E p.7 §11.",
       "accion": "Aplicar cuatro etiquetas visibles y localizadores; no convertir una hipótesis en dato al pasar a una gráfica.",
-      "evidencia": "Leyenda y etiquetas en las tres salidas y anexo si existe.",
+      "evidencia": "Leyenda y etiquetas en las tres salidas y anexo si existe. **Corte verificado:** P1–P3 distinguen institucional/propuesta/hipótesis/ausencia; falta revisar la exportación final integrada y sus leyendas antes de cerrar.",
       "validacion": "Toda cifra, relación y beneficio tiene categoría y fuente/método; los faltantes se conservan también en las visualizaciones y exportaciones.",
       "responsable": "DA + IN + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R19",
       "regla_fuente": "Seguimiento para verificar S, CA o V, no solo actividades/inversión. E p.7 P3/§12; D p.23 ciclo MEA.",
       "accion": "Enlazar medida con indicador oficial de resultado, línea base/remedición y regla de ajuste; separar indicadores de gestión.",
-      "evidencia": "P3 con indicadores y ciclo de seguimiento.",
+      "evidencia": "P3 con indicadores y ciclo de seguimiento. **Corte verificado:** P3 incluye variables oficiales/propuestas, unidad, fuente, basal ausente/interno, frecuencia/custodio y revisión. Basal físico, año y acceso MEA sin acreditar; no reducción medida.",
       "validacion": "Cada mecanismo S/CA tiene al menos una variable que permita verificarlo; gastos, capacitaciones o beneficiarios no se presentan solos como reducción de V. Véase I09.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R20",
       "regla_fuente": "Convertir conocimiento en decisión defendible, robusta, monitoreable y reproducible, señalando capacidad institucional por fortalecer. E pp.7–8 §12/cierre.",
       "accion": "Conservar fuentes, versiones, reglas, alternativas, cálculo y condiciones de revisión.",
-      "evidencia": "Paquete P1–P3 y método; copia legible para CORNARE.",
+      "evidencia": "Paquete P1–P3 y método; copia legible para CORNARE. **Corte verificado:** P1–P3 provisionales legibles y cálculo disponible; falta cierre integrado, versión final y verificación del paquete antes de declarar entrega reproducible completa.",
       "validacion": "Otro integrante reproduce el total, conteo y razón de selección a partir del paquete sin depender de la memoria del autor o de una sesión privada.",
       "responsable": "IN + CA + RI",
       "estado": "pendiente"
@@ -189,7 +189,7 @@
       "id": "R21",
       "regla_fuente": "Ruta oficial de ocho horas: lectura, diagnóstico, mapa, cartera, estrés, residual, seguimiento y síntesis. E p.6 §8.",
       "accion": "Organizar todas las fases, solapando tareas independientes para respetar U; no omitir las fases sustantivas por desarrollar interfaz.",
-      "evidencia": "Cronograma, dependencias de entradas/salidas y registro de cierres.",
+      "evidencia": "Cronograma, dependencias de entradas/salidas y registro de cierres. **Corte verificado:** Fases y dueños previstos; falta registro final de cierres y ensayo. Cronograma/autorización GO no demuestra todas las fases terminadas.",
       "validacion": "Todas las ocho fases tienen salida y responsable; se preservan R05–R19 y F01 antes de las 14:00. El cronograma escrito no demuestra ejecución.",
       "responsable": "OR + IN",
       "estado": "pendiente"
@@ -198,7 +198,7 @@
       "id": "R22",
       "regla_fuente": "Decisión, mapa/localización y seguimiento deben poder comunicarse en formatos permitidos. E pp.6–7 §10/§11.",
       "accion": "Reutilizar Presupuesto Vivo para cartera y Territorio Vivo para territorio/procedencia/seguimiento; producir tablas/láminas si una función no está disponible.",
-      "evidencia": "P1–P3 finales y gráficas con unidades, fuente y leyenda.",
+      "evidencia": "P1–P3 finales y gráficas con unidades, fuente y leyenda. **Corte verificado:** P1–P3 provisionales legibles y cálculo disponible; falta cierre integrado, versión final y verificación del paquete antes de declarar entrega reproducible completa.",
       "validacion": "Las salidas responden al corredor oficial, no al caso demo Granada–Rionegro; los gráficos no incorporan datos ficticios como evidencia del reto. Una función en el repositorio no se declara ejecutada sin resultado observado.",
       "responsable": "IN + CA + RI",
       "estado": "pendiente"
@@ -207,151 +207,151 @@
       "id": "Q01",
       "regla_fuente": "¿Qué proteger primero y por qué? E p.6 §9.",
       "accion": "Expresar prioridad y motivo con R01/R03/R04.",
-      "evidencia": "P1: frase de decisión y hallazgos que la sustentan.",
+      "evidencia": "P1: frase de decisión y hallazgos que la sustentan. **Corte verificado:** P1-H1/H2 explicita prioridad bio/agua. Para D6, P2/P3 precisan capacidad de conservación y demanda hídrica; no atribuirle compras PSA/rondas/restauración.",
       "validacion": "Existe prioridad explícita, factor y evidencia; no solo una lista de valores altos.",
       "responsable": "IN + AG",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "Q02",
       "regla_fuente": "¿En cuál municipio, sistema o elemento territorial intervenir primero? E p.6 §9.",
       "accion": "Elegir localización defendible y resolución geográfica disponible.",
-      "evidencia": "P1 y primera intervención P2.",
+      "evidencia": "P1 y primera intervención P2. **Corte verificado:** P1/P2 explicitan municipios/sistemas propuestos; predios, UPA, activos y sitios09 aún no validados.",
       "validacion": "Municipio y sistema/elemento identificados; geometría o referencia verificable, o localización provisional marcada como tal.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "Q03",
       "regla_fuente": "¿Qué combinación de medidas implementar con el presupuesto? E p.6 §9.",
       "accion": "Elegir cartera y resolver R06/R07/R10.",
-      "evidencia": "P2: selección, unidades y comparación.",
+      "evidencia": "P2: selección, unidades y comparación. **Corte verificado:** D6 provisional6/5000 frenteN1 y otros; falta elegibilidad/cupo14 y máximo pertinente. La elección existe sin ser óptimo ambiental acreditado.",
       "validacion": "Selección diferenciada de alternativas; conteo y elegibilidad auditables; no óptimo causal inventado.",
       "responsable": "IN + CA + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "Q04",
       "regla_fuente": "¿Cómo distribuir los recursos entre intervenciones? E p.6 §9.",
       "accion": "Aplicar R05/R08/R09 por unidad y territorio.",
-      "evidencia": "P2: tabla y gráfico de gasto/saldo.",
+      "evidencia": "P2: tabla y gráfico de gasto/saldo. **Corte verificado:** P2 muestra costo por unidad, distribución propuesta, total/saldo; una14 regional cuenta una vez. Su alcance es condicional, no tres compras.",
       "validacion": "Filas, total y distribución coinciden; unidad compartida no aparece financiada dos veces.",
       "responsable": "CA",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "Q05",
       "regla_fuente": "¿Qué actores deben participar en cada intervención? E p.6 §9.",
       "accion": "Relacionar ejecución, financiación/gestión, coordinación y seguimiento con competencias conocidas.",
-      "evidencia": "P2/P3: roles por intervención.",
+      "evidencia": "P2/P3: roles por intervención. **Corte verificado:** P2/P3 proponen CORNARE/municipios/productores/operadores y custodios; no consta acuerdo, tenencia, competencia específica de ejecución ni mantenimiento concertados.",
       "validacion": "Actores coherentes con territorio y función; compromisos no comprobados se marcan propuestos, no concertados.",
       "responsable": "AG + DA",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "Q06",
       "regla_fuente": "¿Qué cambia frente a SSP3-7.0 hacia 2060? E p.6 §9; notación confirmada en §7.",
       "accion": "Ejecutar R12/R13 y explicar continuidad o cambio.",
-      "evidencia": "P2 antes/después y gráfica de escenarios con fuente.",
+      "evidencia": "P2 antes/después y gráfica de escenarios con fuente. **Corte verificado:** P2 documenta condiciones y mantener/modificar por unidad; intermedio oficial y diseño/localización siguen por confirmar. Índice futuro no es efecto D6.",
       "validacion": "Se identifica cambio de condiciones y consecuencia en cartera; “sin cambios” tiene justificación y no equivale a omitir el contraste.",
       "responsable": "DA + AG + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "Q07",
       "regla_fuente": "¿Qué riesgo residual permanece? E p.6 §9.",
       "accion": "Identificar riesgos/factores no atendidos, límites de cobertura y residual en estrés.",
-      "evidencia": "P3 y sacrificios de P2.",
+      "evidencia": "P3 y sacrificios de P2. **Corte verificado:** P3 describe residual por7dimensiones y D6/N1; no computa V residual ni compra implícitamente unidades omitidas.",
       "validacion": "Residual visible por sistema/dimensión/localización; no se calcula una V residual numérica sin método/datos de efecto.",
       "responsable": "AG + IN",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "Q08",
       "regla_fuente": "¿Qué dependencias o datos faltantes podrían cambiar la decisión? E p.6 §9.",
       "accion": "Aplicar R15/R16 con condición de revisión concreta.",
-      "evidencia": "P3: brecha, variable, captura y decisión afectada.",
+      "evidencia": "P3: brecha, variable, captura y decisión afectada. **Corte verificado:** P3 define brechas/variables/captura/decisión afectada; activo esencial sin respaldo reabre comparación SAT/infra. Se demuestra la respuesta propuesta, no red levantada ni solución ambiental ejecutada.",
       "validacion": "Al menos cada brecha priorizada tiene efecto sobre una elección y plan de caracterización; no contiene aristas inventadas.",
       "responsable": "DA + AG + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "Q09",
       "regla_fuente": "¿Qué indicadores permitirán saber después si disminuyó vulnerabilidad? E p.6 §9.",
       "accion": "Aplicar R19 e I09, separando productos de resultados.",
-      "evidencia": "P3: ficha MEA de seguimiento.",
+      "evidencia": "P3: ficha MEA de seguimiento. **Corte verificado:** P3 y19variables definen comparación con basal, revisión/frecuencia/custodio y límites. Respuesta de seguimiento demostrada; no se ha medido disminución y C07/R19 quedan condicionados.",
       "validacion": "Definición, unidad, fuente, línea base/ausencia, frecuencia, responsable y criterio de interpretación; permite evaluar S/CA/V.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "C01",
       "regla_fuente": "Decisión, NO diagnóstico. E p.7 §12.",
       "accion": "Concentrar síntesis en elección y sacrificios usando el estudio existente.",
-      "evidencia": "P1 hasta cinco hallazgos y P2 elegido.",
+      "evidencia": "P1 hasta cinco hallazgos y P2 elegido. **Corte verificado:** Hay decisión D6/comparadores explícitos; sitios, elegibilidad y preferencia frentealternativas dependen de verificación; no máximo pertinente ni mayor eficacia demostrados.",
       "validacion": "Hay decisión y alternativas, no un estudio recalculado ni una presentación de 26 municipios.",
       "responsable": "IN + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "C02",
       "regla_fuente": "Rigor. E p.7 §12.",
       "accion": "Cerrar R03/R14/R15/R17/R18.",
-      "evidencia": "Evidencia rastreable y leyendas en el paquete.",
+      "evidencia": "Evidencia rastreable y leyendas en el paquete. **Corte verificado:** Fuentes/celdas y versiones presentes; revisar paquete final y citas/derechos sin atribuir a la revisión previa cobertura de cambios nuevos.",
       "validacion": "Auditor no encuentra confusión A/V/R, dependencia inventada, falso dato oficial o beneficio causal sin soporte.",
       "responsable": "DA + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "C03",
       "regla_fuente": "Priorización. E p.7 §12.",
       "accion": "Justificar orden, localización, conteo y asignación.",
-      "evidencia": "P2 y comparación de R07/R10.",
+      "evidencia": "P2 y comparación de R07/R10. **Corte verificado:** Hay decisión D6/comparadores explícitos; sitios, elegibilidad y preferencia frentealternativas dependen de verificación; no máximo pertinente ni mayor eficacia demostrados.",
       "validacion": "Para cada intervención hay motivo de inclusión, secuencia, costo y alternativa descartada; las razones no son solo el índice mayor o el costo menor.",
       "responsable": "IN + AG + CA",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "C04",
       "regla_fuente": "Pensamiento sistémico. E p.7 §12.",
       "accion": "Mostrar dónde una dependencia faltante cambia una decisión y cómo caracterizarla.",
-      "evidencia": "P3, R16 y Q08.",
+      "evidencia": "P3, R16 y Q08. **Corte verificado:** P3 conecta brecha de dependencias y datos mínimos con cambios de cartera concretos; no inventa matriz empresarial. Propuesta de análisis, no dependencias ya verificadas.",
       "validacion": "Variable y mecanismo de cambio de decisión explícitos, con captura propuesta; no hace falta simular una red no conocida.",
       "responsable": "AG + DA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "C05",
       "regla_fuente": "Robustez. E p.7 §12.",
       "accion": "Revisar la estrategia con el futuro más exigente y reconocer incertidumbre.",
-      "evidencia": "R12/R13, P2 comparado y P3.",
+      "evidencia": "R12/R13, P2 comparado y P3. **Corte verificado:** P2 tres momentos y fuente SSP3 constan; intermedio oficial, exposición local y respuesta operacional definitivas faltan.",
       "validacion": "SSP3-7.0/2060 realmente contrastado; revisión de cartera trazable; si faltan insumos, criterio queda pendiente y el resultado parcial lo declara.",
       "responsable": "DA + AG + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "C06",
       "regla_fuente": "Viabilidad y gobernanza. E p.7 §12.",
       "accion": "Verificar coherencia de medidas, secuencia y actores con competencias y territorio.",
-      "evidencia": "P2: roles, unidad, secuencia y restricciones; P3: seguimiento.",
+      "evidencia": "P2: roles, unidad, secuencia y restricciones; P3: seguimiento. **Corte verificado:** Actores/roles/secuencia son propuestos y mantenimiento/tenencia sin acuerdos; gobernanza del equipo no demuestra gobernanza territorial.",
       "validacion": "No hay atribuciones jurídicas o compromisos inventados; localizaciones y unidades tienen base; restricciones pendientes se explican.",
       "responsable": "AG + DA",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "C07",
       "regla_fuente": "Seguimiento. E p.7 §12.",
       "accion": "Seleccionar indicadores para cambios S/CA/V, con ciclo de medición y revisión.",
-      "evidencia": "R19, Q09 y P3.",
+      "evidencia": "R19, Q09 y P3. **Corte verificado:** Contrato P3 de19variables y fuentes MEA existe; basales físicos/año/acceso/umbrales operativos validados siguen faltando; no ejecución ni causalidad acreditadas.",
       "validacion": "La ficha permite obtener/comparar mediciones y decidir un ajuste; un indicador de inversión solo no cierra el criterio.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "C08",
       "regla_fuente": "Utilidad para CORNARE. E p.7 §12.",
       "accion": "Entregar decisión reproducible y capacidad institucional a fortalecer.",
-      "evidencia": "R16/R20, P1–P3 legibles y anexo si existe.",
+      "evidencia": "R16/R20, P1–P3 legibles y anexo si existe. **Corte verificado:** P1–P3 y puente MEA útiles provisionalmente; falta integración final, ensayo real y entrega versionada antes del plazo.",
       "validacion": "Otro integrante reconstruye cálculo y decisión; está identificado quién incorporaría datos y cuándo revisaría la cartera.",
       "responsable": "IN + CA + RI",
       "estado": "pendiente"
@@ -360,88 +360,88 @@
       "id": "X01",
       "regla_fuente": "No recalcular el estudio de riesgo climático. E p.7 §13.",
       "accion": "Usar resultados institucionales y análisis de cartera, sin reemplazar su metodología.",
-      "evidencia": "Fuentes y método de P1–P3.",
+      "evidencia": "Fuentes y método de P1–P3. **Corte verificado:** P1–P3 usan estudio existente, tres municipios y prioridades por factor; no nuevo índice/modelo, no26municipios, no ranking automático.",
       "validacion": "No hay un nuevo índice presentado como actualización oficial ni deducido de inversión/emisiones.",
       "responsable": "DA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "X02",
       "regla_fuente": "No analizar los 26 municipios. E p.7 §13.",
       "accion": "Usar contexto regional solo para interpretar el corredor.",
-      "evidencia": "P1/P2 y alcance metodológico.",
+      "evidencia": "P1/P2 y alcance metodológico. **Corte verificado:** P1–P3 usan estudio existente, tres municipios y prioridades por factor; no nuevo índice/modelo, no26municipios, no ranking automático.",
       "validacion": "Las unidades de decisión pertenecen a Rionegro, Guarne o Marinilla; no hay expansión del trabajo a toda la jurisdicción.",
       "responsable": "IN + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "X03",
       "regla_fuente": "No elegir automáticamente el municipio del índice más alto. E p.7 §13.",
       "accion": "Evaluar perfiles, factores, alternativas y restricciones.",
-      "evidencia": "Q01/Q02 y comparación P2.",
+      "evidencia": "Q01/Q02 y comparación P2. **Corte verificado:** P1–P3 usan estudio existente, tres municipios y prioridades por factor; no nuevo índice/modelo, no26municipios, no ranking automático.",
       "validacion": "La elección depende de más que un orden de índices; no confunde dimensiones ni usa mayor gasto histórico como prioridad.",
       "responsable": "AG + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "X04",
       "regla_fuente": "No inventar dependencias empresariales ni usar reservado. E p.8 §13.",
       "accion": "Aplicar R15/R17 en tablas, imágenes, gráficas y anexos.",
-      "evidencia": "Versión pública y registro de fuentes.",
+      "evidencia": "Versión pública y registro de fuentes. **Corte verificado:** No red ficticia en P3; originales con identificadores excluidos. Condición de uso/avalB7 de fuentes y versión final pública siguen en revisión.",
       "validacion": "Ninguna relación empresarial no demostrada se trata como medida y no hay información individual reservada o identificable.",
       "responsable": "DA + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "X05",
       "regla_fuente": "No construir una plataforma completa o un software. E p.8 §13.",
       "accion": "Reutilizar salidas existentes y dedicar tiempo a los tres productos; limitar la orquestación al caso.",
-      "evidencia": "Paquete y registro del alcance efectivo.",
+      "evidencia": "Paquete y registro del alcance efectivo. **Corte verificado:** Productos usan comparador/tablas y ficha puente al MEA existente; no se exige construir plataforma completa ni login para demostrar adaptación.",
       "validacion": "No hay objetivo de autenticación, multiorganización, backend completo o integración de cuatro productos como condición de entrega; el prototipo permitido es un formato de comunicación del caso.",
       "responsable": "IN + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "X06",
       "regla_fuente": "No presentar lista de medidas sin priorización ni asignación. E p.8 §13.",
       "accion": "Cerrar selección, secuencia, distribución y motivos de descarte.",
-      "evidencia": "P2 y resumen del pitch.",
+      "evidencia": "P2 y resumen del pitch. **Corte verificado:** P2 prioriza cartera y presupuesto completo con alternativas; no es mera lista. La elegibilidad permanece condicionada.",
       "validacion": "Existe cartera elegida con cantidades, costo, localización, orden y explicación de alternativas.",
       "responsable": "IN + CA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "P01",
       "regla_fuente": "Tablero de decisión territorial. E p.6 §10.",
       "accion": "Entregar máximo cinco hallazgos; qué proteger primero; localización; elementos críticos; brechas; relaciones no demostradas como hipótesis/faltante.",
-      "evidencia": "Un tablero/lámina/tabla con esas seis partes, fuentes y leyenda.",
+      "evidencia": "Un tablero/lámina/tabla con esas seis partes, fuentes y leyenda. **Corte verificado:** P1 cumple cinco hallazgos/21perfiles/fuentes/leyenda a resolución municipal; faltan localización de elementos críticos y validación final integrada.",
       "validacion": "Conteo de hallazgos ≤ 5; los seis contenidos están presentes y se entienden; cada dato tiene localizador y cada relación incierta está marcada. Cubre Q01/Q02 y R02–R04/R18.",
       "responsable": "IN, con DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "P02",
       "regla_fuente": "Portafolio priorizado de adaptación. E pp.6–7 §10.",
       "accion": "Entregar máximo de intervenciones bajo regla explícita; por cada una: municipio/localización, problema, medida MEA, valor, actores, orden, beneficio esperado y cambio tras estrés.",
-      "evidencia": "Tabla completa de ocho campos por intervención, unidades/conteo, costo total/saldo, alternativas y comparación de escenarios.",
+      "evidencia": "Tabla completa de ocho campos por intervención, unidades/conteo, costo total/saldo, alternativas y comparación de escenarios. **Corte verificado:** P2 tabla de campos/costos/unidades/alternativas/tresmomentos existe; elegibilidad operativa, sitios y mayor reducción no acreditados.",
       "validacion": "Ninguna fila carece de campo; R05–R13 y Q03–Q06 comprobados; código MEA faltante declarado; máximo condicionado si no se aclara repetición; beneficio esperado distinto de resultado observado.",
       "responsable": "IN, con CA + DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "P03",
       "regla_fuente": "Riesgo residual, información faltante y seguimiento. E p.7 §10.",
       "accion": "Entregar ficha de riesgo que permanece; dependencias/datos que CORNARE debe levantar; variables mínimas; indicadores MEA para S/CA/V.",
-      "evidencia": "Ficha con esas cuatro partes, ciclo de medición, captura, responsabilidad y condición de revisión.",
+      "evidencia": "Ficha con esas cuatro partes, ciclo de medición, captura, responsabilidad y condición de revisión. **Corte verificado:** P3 cubre residual, brechas y seguimiento con26filas/19variables; custodios propuestos, basal físico/año y operación MEA pendientes.",
       "validacion": "Los cuatro contenidos están presentes; R15/R16/R19, Q07–Q09 e I09 comprobados; no se oculta una brecha o se sustituye residual por “cero” sin datos.",
       "responsable": "IN, con DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "F01",
       "regla_fuente": "Pitch final ≤ 7 minutos. E p.7 §11.",
       "accion": "Preparar guion que defienda la decisión, sus alternativas, presupuesto, estrés, residual y seguimiento.",
-      "evidencia": "Presentación y registro de ensayo cronometrado.",
+      "evidencia": "Presentación y registro de ensayo cronometrado. **Corte verificado:** Guion provisional existe; no recibo de ensayo real con persona/hora/duración/versión. Distribución de tiempos o conteo de palabras no es prueba≤7min.",
       "validacion": "Duración real de ensayo ≤ 7:00; cifras y conclusiones coinciden con P1–P3. La duración escrita del guion no prueba el límite.",
       "responsable": "IN + equipo",
       "estado": "pendiente"
@@ -450,7 +450,7 @@
       "id": "F02",
       "regla_fuente": "Tres productos en formato libre y comprensibles sin explicación extensa. E p.7 §11.",
       "accion": "Elegir láminas, tablero, hoja, prototipo o combinación; añadir gráficos útiles con leyendas y unidades.",
-      "evidencia": "Paquete final abierto/exportable y legible.",
+      "evidencia": "Paquete final abierto/exportable y legible. **Corte verificado:** Exportables provisionales disponibles; falta verificar el paquete final legible de fuentes/versiones y congelarlo.",
       "validacion": "Un integrante ajeno al redactor identifica prioridad, cartera, total, cambio de escenario y seguimiento leyendo los productos; no requiere login privado o código para entenderlos.",
       "responsable": "IN + RI",
       "estado": "pendiente"
@@ -459,7 +459,7 @@
       "id": "F03",
       "regla_fuente": "Anexo metodológico opcional ≤ 2 páginas si se usa matriz multicriterio, algoritmo o procedimiento cuantitativo. E p.7 §11.",
       "accion": "Si se incluye, explicar reglas, entradas, faltantes y reproducción; no inventar pesos oficiales ni eficacia.",
-      "evidencia": "Anexo opcional con versión final y fuentes.",
+      "evidencia": "Anexo opcional con versión final y fuentes. **Corte verificado:** Anexo opcional borradorPDF2p existe; falta integrar D6/P3 actuales, exportar y contar páginas físicas de la versión entregada.",
       "validacion": "Si existe, cuenta física ≤ 2 páginas y método consistente con P2; ausencia del anexo opcional no se marca como incumplimiento por sí misma.",
       "responsable": "CA + IN + RI",
       "estado": "condicional"
@@ -468,7 +468,7 @@
       "id": "I01",
       "regla_fuente": "Dos enunciados oficiales de ocho páginas. E; RD §1.",
       "accion": "Conservar originales y utilizar su regla común.",
-      "evidencia": "Ambos PDF y textos extraídos en insumos/texto; revisión completa.",
+      "evidencia": "Ambos PDF y textos extraídos en `insumos/texto`; revisión completa. **Corte verificado:** Lecturas/transcripción/inventario y localizadores previos siguen válidos dentro de su alcance; no acreditan eficacia ni licencia abierta.",
       "validacion": "Ocho páginas en cada PDF y texto completo idéntico; diferencias de bytes no se interpretan como reglas distintas.",
       "responsable": "IN/DA, revisión documental realizada",
       "estado": "demostrado"
@@ -477,7 +477,7 @@
       "id": "I02",
       "regla_fuente": "Catálogo económico de 15 medidas y unidades. E p.5; CC; RD §3.",
       "accion": "Utilizar la transcripción ya contrastada como referencia, preservando texto de unidad.",
-      "evidencia": "CC con 15 filas, costos COP/millones, indivisibilidad y página; comparacion_financiera.json con hipótesis, hash y enumeración auditados.",
+      "evidencia": "CC con 15 filas, costos COP/millones, indivisibilidad y página; `comparacion_financiera.json` con hipótesis, hash y enumeración auditados. **Corte verificado:** Lecturas/transcripción/inventario y localizadores previos siguen válidos dentro de su alcance; no acreditan eficacia ni licencia abierta.",
       "validacion": "15 filas en orden oficial; costos coinciden; COP = millones × 1.000.000; todos indivisibles; suma de catálogo 18.900 millones. Esto acredita transcripción y factibilidad financiera ilustrativa; no cartera ambiental, elegibilidad o reducción de vulnerabilidad.",
       "responsable": "CA, contraste documental realizado",
       "estado": "demostrado"
@@ -486,7 +486,7 @@
       "id": "I03",
       "regla_fuente": "Presentación de 31 páginas/diapositivas, notas y figuras. D; RD §§1/5.",
       "accion": "Usar contexto con sus límites y discrepancias visibles.",
-      "evidencia": "PDF, PPTX, JSON y revisión de todas las páginas/figuras.",
+      "evidencia": "PDF, PPTX, JSON y revisión de todas las páginas/figuras. **Corte verificado:** Lecturas/transcripción/inventario y localizadores previos siguen válidos dentro de su alcance; no acreditan eficacia ni licencia abierta.",
       "validacion": "31 diapositivas en orden; siete partes de notas sin contenido sustantivo; figuras revisadas; único enlace externo en la 30. No equivale a 31 datasets o planes íntegros.",
       "responsable": "DA, revisión documental realizada",
       "estado": "demostrado"
@@ -495,61 +495,61 @@
       "id": "I04",
       "regla_fuente": "Fichas A/S/CA/V/R por dimensión de los tres municipios. E p.3 §3.",
       "accion": "Obtener/validar valores completos con escenario/año/dimensión, conservando ausencias.",
-      "evidencia": "Los valores explícitos de E p.2 y categorías de D p.12 son parciales; falta la ficha completa rastreable.",
+      "evidencia": "Los valores explícitos de E p.2 y categorías de D p.12 son parciales; falta la ficha completa rastreable. **Corte verificado:** P1 CSV/JSON:21perfiles y357registros; celdas/escenarios/categorías/hash y discrepancias explícitas. No nuevos90basales publicados.",
       "validacion": "Matriz municipio × dimensión × componente × escenario con unidad y fuente; datos no recibidos quedan vacíos y etiquetados, no imputados como cero.",
       "responsable": "DA",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "I05",
       "regla_fuente": "Mapas de referencia, horizonte intermedio y SSP3-7.0/2060. E p.3 §3 y p.6 §7.",
       "accion": "Localizar cartografía/valores exactos suministrados y documentar resolución y cobertura.",
-      "evidencia": "Registro/archivos de cada escenario y uso en R12/R13.",
+      "evidencia": "Registro/archivos de cada escenario y uso en R12/R13. **Corte verificado:** Datos de referencia/SSP2/SSP3 disponibles y SSP3verificadoM-E-2550p6; confirmación del intermedio oficial aún no consta.",
       "validacion": "Escenario, horizonte, cobertura del corredor, dimensión y fuente verificables; las síntesis D p.11 y mapas empresariales SSP2-4.5 D p.14 no sustituyen el insumo completo requerido. El cambio de Rionegro 0,28→0,32 hacia 2060 de E p.2 no identifica allí el SSP y no demuestra la prueba SSP3-7.0 del corredor completo.",
       "responsable": "DA",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "I06",
       "regla_fuente": "Resumen de eventos históricos relevantes. E p.3 §3.",
       "accion": "Obtener eventos con tipo, fecha, territorio y fuente; usarlos como evidencia de contexto.",
-      "evidencia": "Tabla o resumen oficial, con localizadores.",
+      "evidencia": "Tabla o resumen oficial, con localizadores. **Corte verificado:** P1 ofrece21perfiles de7dimensiones para3municipios con tabla/celda exactas y categorías institucionales.",
       "validacion": "Cobertura y fechas comprobadas; las categorías de amenaza de EX/AM no se convierten en un inventario completo de eventos o recurrencia.",
       "responsable": "DA",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "I07",
       "regla_fuente": "Capas/enlaces de agua, riesgo, POMCA, determinantes y otros elementos. E pp.3–4 §§3/4.",
       "accion": "Consultar y conservar referencias/capas pertinentes al sitio elegido; distinguir enlace disponible de capa utilizable.",
-      "evidencia": "P1/P2 con geometría o referencia territorial y restricciones relevantes.",
+      "evidencia": "P1/P2 con geometría o referencia territorial y restricciones relevantes. **Corte verificado:** POMCA2308-01 y escala municipal constan; capas/eventos/predios/activos no intersectados ni sitio elegible demostrado.",
       "validacion": "Fuente, fecha, cobertura y elemento verificables; la figura conceptual D p.29 no se presenta como una capa descargada. No se inventan predios, captaciones o puntos críticos.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "I08",
       "regla_fuente": "Catálogo/fichas oficiales de medidas MEA. E p.3 §3; D pp.16–18.",
       "accion": "Confirmar correspondencia del nombre del reto con código/ficha, alcance, acciones, indicadores y horizonte MEA.",
-      "evidencia": "Ficha o vínculo oficial por medida elegida; ID local separado.",
+      "evidencia": "Ficha o vínculo oficial por medida elegida; ID local separado. **Corte verificado:** P2/P3 vinculan17fichasM-E-2897 y códigosASCA con15costos; correspondencias07/08/09/14 y alcance/cupo requieren validación. RETO noMEA.",
       "validacion": "Se puede localizar código y medida oficial; los 17 nombres territoriales, 11 empresariales y 15 precios se mantienen como alcances distintos. Una portada o esquema de 21 campos no es ficha íntegra.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "I09",
       "regla_fuente": "Indicadores MEA relacionados con S/CA. E p.3 §3 y p.7 P3; D p.23.",
       "accion": "Confirmar código, definición, fórmula, unidad, fuente, línea base, meta, frecuencia, responsable y vínculo medida–factor; definir remedición y revisión.",
-      "evidencia": "Fichas P3 con esos campos, ausencias explícitas y indicador de gestión separado del de resultado.",
+      "evidencia": "Fichas P3 con esos campos, ausencias explícitas y indicador de gestión separado del de resultado. **Corte verificado:** 19variables P3 con unidad/procedimiento/fuente/basal ausente o interno/frecuencia/custodio/regla; faltan basal físico y fecha, no inferir2026.",
       "validacion": "Nombre de indicador no se trata como valor numérico; variable permite verificar S/CA/V. Ninguna fórmula/meta oficial se inventa. Un indicador provisional no se etiqueta MEA confirmado.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "I10",
       "regla_fuente": "Información empresarial únicamente agregada, anonimizada o sintética cuando sea necesaria. E p.3 §3.",
       "accion": "Determinar si aporta a la decisión y limitarla a cobertura/universo autorizados.",
-      "evidencia": "Agregados sectoriales EX u otra fuente autorizada, con escala y alcance.",
+      "evidencia": "Agregados sectoriales EX u otra fuente autorizada, con escala y alcance. **Corte verificado:** EX son agregados/antecedentes; no matriz empresarial ni dependencias probadas y no autorización universal por publicación.",
       "validacion": "No inferir ubicación municipal, dependencia o universo del corredor desde agregado regional/sectorial; datos sintéticos claramente rotulados y excluidos de afirmaciones de realidad. Si no se necesitan, explicar su no uso.",
       "responsable": "DA + RI",
       "estado": "condicional"
@@ -558,7 +558,7 @@
       "id": "I11",
       "regla_fuente": "Rutas oficiales Observatorio, riesgo, POMCA, determinantes y MARCO; Excel como indicadores complementarios. E pp.3–4 §4; D p.30.",
       "accion": "Usar esas rutas como fuentes y registrar lo efectivamente consultado/obtenido.",
-      "evidencia": "URLs explícitas en E; listado inferior.",
+      "evidencia": "URLs explícitas en E; listado inferior. **Corte verificado:** Lecturas/transcripción/inventario y localizadores previos siguen válidos dentro de su alcance; no acreditan eficacia ni licencia abierta.",
       "validacion": "La existencia documental de las cinco rutas está comprobada; accesibilidad presente, contenido completo y extracción para este caso requieren evidencia adicional I04–I09.",
       "responsable": "DA, existencia documental revisada",
       "estado": "demostrado"
@@ -567,7 +567,7 @@
       "id": "I12",
       "regla_fuente": "ZIP: 11 útiles, ocho Excel con una copia idéntica, dos PDF y un PPTX. Inventario; RD §1; EX §§1–3.",
       "accion": "Usar antecedentes limpios con localizador y calidad; no doble contar copia ni agregados.",
-      "evidencia": "inventario.json y EX: ocho hojas, 858 filas reportadas, 800 sin copia; 5.645 celdas auditadas.",
+      "evidencia": "[inventario.json](../insumos/inventario.json) y EX: ocho hojas, 858 filas reportadas, 800 sin copia; 5.645 celdas auditadas. **Corte verificado:** Lecturas/transcripción/inventario y localizadores previos siguen válidos dentro de su alcance; no acreditan eficacia ni licencia abierta.",
       "validacion": "Hashes/miembros conservados; copia AS excluida del conteo; AM duplicado f288/f293 marcado; MR/RM no sumados entre sí; blancos distintos de cero. Demuestra revisión del paquete, no datos de eficacia o escenarios.",
       "responsable": "DA/CA, revisión Excel realizada",
       "estado": "demostrado"
@@ -576,7 +576,7 @@
       "id": "I13",
       "regla_fuente": "Eficacia/beneficio cuantificable, si existe en fuentes institucionales. E p.4 §6 exige comparación; EX §6 acredita ausencia en las hojas.",
       "accion": "Buscar solo evidencia pertinente y registrar límites; si falta, usar mecanismos esperados y comparación razonada sin forzar el motor.",
-      "evidencia": "Parámetros oficiales con fuente/método o ausencia explícita en P2/anexo.",
+      "evidencia": "Parámetros oficiales con fuente/método o ausencia explícita en P2/anexo. **Corte verificado:** Eficacias oficiales ausentes: comparación razonada con mecanismos. No se llenó el motor con coeficientes inventados ni se certifica reducción superior.",
       "validacion": "No derivar eficacia de inversión, GEI, intensidad sectorial o número de acciones; no imputar porcentajes/rangos arbitrarios para conseguir un óptimo. Cuantificación de reducción o residual solo con soporte y supuestos visibles.",
       "responsable": "DA + AG + CA + RI",
       "estado": "condicional"
@@ -585,7 +585,7 @@
       "id": "I14",
       "regla_fuente": "Regla de repetición de unidades y elegibilidad/localización para el máximo. E pp.4–5, ambigüedad no resuelta; PC.",
       "accion": "Aclarar si una medida admite unidades repetidas, condiciones territoriales y conteo de unidad compartida.",
-      "evidencia": "Regla oficial, o escenarios de interpretación claramente condicionados.",
+      "evidencia": "Regla oficial, o escenarios de interpretación claramente condicionados. **Corte verificado:** Regla una entrada/una unidad y14regional propuesta; cupos/repetición/multisede no confirmados por organizador.",
       "validacion": "No anunciar máximo absoluto sin esa regla; no equiparar una medida distribuida a tres unidades financiadas ni asumir repetición ilimitada.",
       "responsable": "IN + CA + AG",
       "estado": "condicional"
@@ -594,79 +594,79 @@
       "id": "I15",
       "regla_fuente": "Localización, continuidad de antecedentes, capacidades y actores ejecutores. E pp.6–7 P1/P2/§12; EX §§4–6.",
       "accion": "Verificar sitio, alcance, mantenimiento/estado previo, roles y restricciones antes de afirmar complementariedad.",
-      "evidencia": "P1/P2 con localizador; ficha de antecedentes y actores.",
+      "evidencia": "P1/P2 con localizador; ficha de antecedentes y actores. **Corte verificado:** AntecedentesP1/P2 rastreables; no sitios vigentes, compromisos actuales ni ausencia de doble financiación confirmados.",
       "validacion": "Antecedente tiene archivo/hoja/fila y alcance; no presume proyecto vigente, eficacia, compromiso o permiso. La baja cobertura Excel de Marinilla no prueba ausencia de iniciativas.",
       "responsable": "DA + AG",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "I16",
-      "regla_fuente": "Avances de las dos iniciativas seleccionadas. U; PC; seleccion_propuestas.md.",
+      "regla_fuente": "Avances de las dos iniciativas seleccionadas. U; PC; [seleccion_propuestas.md](seleccion_propuestas.md).",
       "accion": "Reutilizar capacidades observadas y registrar qué salida se ejecutó para el nuevo corredor.",
-      "evidencia": "Exportaciones/funciones usadas en P1–P3 y límites técnicos.",
+      "evidencia": "Exportaciones/funciones usadas en P1–P3 y límites técnicos. **Corte verificado:** Puente MEA y comparador documentados; funciones descritas no equivalen login/persistencia. Integración/apps se verifican por sus recibos finales.",
       "validacion": "Se distingue código documentado, demo pública y función ejecutada en este caso; los tests previos de otra entrada no acreditan cartera, persistencia/backend, robustez o seguimiento actual.",
       "responsable": "CA + IN + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "H01",
       "regla_fuente": "Horizonte operativo de un año, N línea 59; no límite uniforme en E. PSA tiene tres años, E p.5.",
       "accion": "Aclarar qué se inicia/ejecuta el primer año, manteniendo compromisos y costos de unidad completa.",
-      "evidencia": "P2: secuencia/horizonte de cada unidad y regla aclarada o condicional.",
+      "evidencia": "P2: secuencia/horizonte de cada unidad y regla aclarada o condicional. **Corte verificado:** PSA conserva unidad completa3años; secuencia operativa propuesta, acuerdos/custodio y cupos por confirmar. No prorrateo anual.",
       "validacion": "No se prorratea PSA a 400 millones ni se promete completar todas las unidades en un año; separar año operativo, vigencia de medida y horizonte climático. PSA explicita custodio/acuerdos, mantenimiento y seguimiento para años 2 y 3, como propuesta o compromiso validado según evidencia.",
       "responsable": "IN + AG + CA",
       "estado": "condicional"
     },
     {
       "id": "H02",
-      "regla_fuente": "Meta institucional de disminuir 30% los indicadores de V a 2035, D p.19; notas “al 30%” imprecisas.",
+      "regla_fuente": "Meta institucional de disminuir 30% los indicadores de V **a 2035**, D p.19; notas “al 30%” imprecisas.",
       "accion": "Atribuir correctamente la meta y describir contribución esperada, sin promesa de éxito anual.",
-      "evidencia": "P3/pitch con meta y límite de medición.",
+      "evidencia": "P3/pitch con meta y límite de medición. **Corte verificado:** P3/pitch distinguen meta regional30%a2035 de resultados de jornada, V=0,30 o eficacia de D6.",
       "validacion": "No se interpreta como V = 0,30, reducción ya observada o exigencia de demostrar 30% este año.",
       "responsable": "AG + IN + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "H03",
       "regla_fuente": "Discrepancias de presentación: 106 frente a suma 99 indicadores empresariales, D p.10; piloto 32 frente a barras que suman 34, D pp.3/14/20/23; siete/ocho dimensiones, D pp.9/10.",
       "accion": "Conservar discrepancias y no reconstruir denominadores; usar siete dimensiones del reto y datos concretos con fuente.",
-      "evidencia": "Nota de límites metodológicos donde afecten una cifra utilizada.",
+      "evidencia": "Nota de límites metodológicos donde afecten una cifra utilizada. **Corte verificado:** P1 conserva discrepancias de versiones,7dimensiones oficiales y año basal null; no reconstruye denominadores empresariales.",
       "validacion": "No hay porcentajes recalculados mezclando universos ni corrección silenciosa de los documentos; incertidumbre no se usa como dato.",
       "responsable": "DA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "H04",
       "regla_fuente": "Priorización previa 70/15/15, D p.15; seis medidas preferentes de Valles, D p.16; 17 territoriales/11 empresariales frente a 15 precios de E.",
       "accion": "Tratarlo como antecedente institucional y evaluar las 15 opciones con precio; si se usan ponderaciones propias, declararlas y justificar su alcance.",
-      "evidencia": "P2/anexo con origen de criterio y comparación.",
+      "evidencia": "P2/anexo con origen de criterio y comparación. **Corte verificado:** P2/preferencias distingue prioridad PlanValles70/15/15 y afinidadSbN del equipo de rúbrica; pertinencia/localización y máximo siguen condicionados.",
       "validacion": "No se llaman pesos del jurado ni eficacias; no se agregan precios/medidas sin regla. Las seis preferentes cuestan 6.500 millones, por lo que no son cartera financiable íntegra.",
       "responsable": "AG + CA + IN",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "H05",
       "regla_fuente": "Expectativas previas de producto completo, V §18; criterios inferidos V §9 y desconocimiento previo del reto V §11. E ya contiene reglas y excluye construir software.",
       "accion": "Subordinar la preparación previa al enunciado recibido; aprovechar avances para las tres salidas.",
-      "evidencia": "Alcance y método del paquete final.",
+      "evidencia": "Alcance y método del paquete final. **Corte verificado:** Paquete subordina preparación al enunciado, no exige plataforma completa ni inventa presupuesto1%/deber legal. Usa perfiles diferenciados sin CA baja universal.",
       "validacion": "No se exigen Postgres, autenticación, roles, E2E o plataforma completa para cerrar el reto; no se sustituye la rúbrica oficial de ocho criterios por la inferida.",
       "responsable": "IN + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "H06",
       "regla_fuente": "Referencias normativas/inversión del 1% de N y cronología D p.2 no corroboradas en esta auditoría.",
       "accion": "Conservarlas como contexto atribuido sin emplearlas para financiación o afirmar obligaciones/competencias jurídicas verificadas.",
-      "evidencia": "Nota de límites si se mencionan; actores propuestos sin deber legal inventado.",
+      "evidencia": "Nota de límites si se mencionan; actores propuestos sin deber legal inventado. **Corte verificado:** Paquete subordina preparación al enunciado, no exige plataforma completa ni inventa presupuesto1%/deber legal. Usa perfiles diferenciados sin CA baja universal.",
       "validacion": "No se suma presupuesto “obligatorio” del 1%, se afirma permiso o se da asesoría jurídica a partir de esas notas. V tampoco aporta bases legales formales de la solución.",
       "responsable": "AG + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "H07",
       "regla_fuente": "Caso de ocho horas E p.6; horario previo V 08:00–16:00; U exige paquete antes de 14:00 Bogotá.",
       "accion": "Mantener las ocho fases y usar paralelismo independiente, cerrando cálculo/estrés/seguimiento antes del ensamblado y ensayo.",
-      "evidencia": "PC y propuesta de orquestación con ventanas, entradas, salidas y corte de interfaz.",
+      "evidencia": "PC y propuesta de orquestación con ventanas, entradas, salidas y corte de interfaz. **Corte verificado:** Plazo actual13:50paquete/antes14:00Bogotá; falta cierre/ensayo real. Hora o avance no autoriza anunciar todo cumplido.",
       "validacion": "Paquete y ensayo cerrados antes de U; el horario 16:00 de V no extiende la autorización temporal. Si falta un insumo, conservar estado pendiente/parcial sin anunciar “todo cumplido”.",
       "responsable": "OR + IN",
       "estado": "pendiente"
@@ -675,10 +675,16 @@
       "id": "H08",
       "regla_fuente": "Afirmaciones de N sobre mayor riesgo, baja CA universal y ausencia de variabilidad no sustentadas por E/D.",
       "accion": "Usar perfiles diferenciados y fuente componente-específica; evitar repetir las notas como hallazgos.",
-      "evidencia": "P1 y notas metodológicas.",
+      "evidencia": "P1 y notas metodológicas. **Corte verificado:** Paquete subordina preparación al enunciado, no exige plataforma completa ni inventa presupuesto1%/deber legal. Usa perfiles diferenciados sin CA baja universal.",
       "validacion": "No se dice que los tres municipios sean los de mayor riesgo ni que toda empresa tenga CA baja; D pp.3/9/21 sí trata actualización, climatología 1994–2024 y variabilidad hídrica.",
       "responsable": "DA + AG + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     }
-  ]
+  ],
+  "updated_at": "2026-10-07T11:24:37.206687-05:00",
+  "counts": {
+    "condicional": 35,
+    "demostrado": 33,
+    "pendiente": 7
+  }
 }

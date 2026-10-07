@@ -1,20 +1,21 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T15:45:05.987705+00:00",
-  "updated_at_bogota": "2026-10-07T10:45:05.987705-05:00",
+  "updated_at_utc": "2026-10-07T16:26:26Z",
+  "updated_at_bogota": "2026-10-07T11:26:26-05:00",
   "timezone": "America/Bogota",
-  "estado": "ejecucion_GO_recibido_goal_activa",
+  "estado": "ejecucion_reanudada_Desktop_goal_activa",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
     "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
-    "sha256": "69305e97119557c1908e2d5b4eeb8242063df34c7288a3b3ed81d6579fb72a84",
+    "sha256": "013c2aafc1195124ce6a09c6b8ba0c2951e8f1992018034cba5d82db3ef2344b",
     "preparada": true,
     "activada": true,
     "herramienta_create_goal_usada": true,
     "requiere": "evidencia verificable de cierre",
     "estado_tool": "active",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "gestion_autoritativa": "conversación principal"
+    "gestion_autoritativa": "esta conversación de ChatGPT Desktop",
+    "reanudacion_explicita_bogota": "2026-10-07T11:19:00-05:00"
   },
   "root": "solo_orquestador_sin_ejecucion_material",
   "implementacion_autorizada": true,
@@ -23,17 +24,17 @@
   "limites": {
     "paquete_bogota": "2026-10-07T13:50:00-05:00",
     "entrega_bogota": "2026-10-07T14:00:00-05:00",
-    "minutos_disponibles_hasta_paquete": 184,
+    "minutos_disponibles_hasta_paquete": 143,
     "recalcular_tras_GO_tardio": true
   },
   "recursos": {
     "nativos_maximos_incluido_root": 5,
     "nativos_ejecutores_maximos": 4,
-    "claude_muse": "locales; evaluaciones previas recibidas, FAQ/guía activas según coordinación",
-    "gemini": "local; pendiente autenticacion, sin inferencia atribuida",
-    "gpt_6_luna": "QA local respondida en 39,3 s según coordinación; no prueba infraestructura remota",
+    "claude_muse": "Revisiones independientes actuales sobre copias congeladas, con archivos propios; resultados pendientes.",
+    "gemini": "Puente local verificado previamente; revisión MEA en curso. El menú de autenticación de la sesión anterior no representa el estado del puente.",
+    "gpt_6_luna": "Actualizador único en recuperación; falta comprobar ciclo real y repetición automática.",
     "codex_remotos": "solo sesiones existentes; worktrees aislados",
-    "cuotas": "disponibilidad local no confirmada; sin failover"
+    "cuotas": "Lectura actual de la app para Codex; las cuotas de otros proveedores locales permanecen desconocidas. Sin renovación local, cambio de cuenta ni failover automático."
   },
   "evidencia_tecnica": {
     "presupuesto_unitarias_aprobadas": 419,
@@ -55,7 +56,10 @@
     "requisitos_IDs": 75,
     "robustez_completa_demostrada": false,
     "eficacia_causal_demostrada": false,
-    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md"
+    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
+    "P3": "borrador_D6_provisional_3archivos_existentes_11:12",
+    "base_cartera": "D6_6unidades_5000_condicional_no_optimo_ambiental",
+    "restriccion_datos": "B7 autorización/aval en estudio legal; nuevos valores basales individuales retenidos, lectura interna continua"
   },
   "cronograma_condicional": [
     {
@@ -121,14 +125,16 @@
     "mutaciones_git_por_agentes_autorizadas": "solo publicador delegado en dev; ningún otro escritor",
     "rama_documentos": "dev",
     "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
-    "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos"
+    "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos",
+    "actualizador": "Cadencia de inicio solicitada 180 segundos; recuperación en curso. Confirmar ciclos, push y despliegue por separado."
   },
   "ejecucion_remota": [
     {
       "frente": "presupuesto",
-      "estado": "GO_enviado",
-      "enviado_utc": "2026-10-07T15:42:22.448528+00:00",
-      "salida_auxiliar": "p2_motor_presupuesto.md"
+      "estado": "nueva_tarea_enviada_compactando_contexto",
+      "enviado_utc": "2026-10-07T16:08:37+00:00",
+      "salida_auxiliar": "p2_motor_presupuesto.md",
+      "resultado_previo": "helper17/17, siete carterasmax6; no casoambiental completado"
     },
     {
       "frente": "territorio",
@@ -148,5 +154,15 @@
       "enviado_utc": "2026-10-07T15:42:23.009280+00:00",
       "salida_auxiliar": "mapa_limites_localizacion.md"
     }
-  ]
+  ],
+  "AGY_local": {
+    "ruta_verificada": "puente local existente",
+    "provider": "gemini",
+    "model": "gemini/3.8-flash",
+    "revision_estado": "revision_previa_recibida_nueva_revision_MEA_pendiente",
+    "legal_estado": "borrador_previo_recibido_en_correccion_editorial",
+    "auth_bridge": "respuesta_real_confirmada_previamente",
+    "auth_standalone": "menu_anterior_conservado_sin_reconfigurar",
+    "cuota_local": "UNKNOWN"
+  }
 }

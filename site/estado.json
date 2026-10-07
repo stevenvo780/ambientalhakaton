@@ -1,9 +1,9 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T16:08:36Z",
+  "updated_at": "2026-10-07T16:26:26Z",
   "timezone": "America/Bogota",
-  "titulo": "GO recibido · ejecución ambiental en curso",
-  "detalle": "GO real y goal activa registrados. P1 entregó 21 perfiles y 357 registros oficiales; P2 completó una comparación financiera independiente. La elegibilidad de la cartera P2 y el residual P3 siguen en revisión. Eficacia, criterio ambiental, delta V y robustez no están demostrados. Las condiciones de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no implica licencia abierta.",
+  "titulo": "Ejecución reanudada · P1, P2 y P3 en revisión",
+  "detalle": "Reanudación expresa del 7 de octubre a las 11:19 de Bogotá; goal activa y paquete objetivo 13:50. P1 está entregado; P2 compara siete carteras máximas de seis unidades bajo una unidad por entrada. D6 continúa provisional: COP5.000 millones, elegibilidad operativa y cupo regional por confirmar. P3 ya existe como borrador de riesgo residual y seguimiento. Eficacia, delta V y robustez completa permanecen sin demostrar. Las condiciones de autorización y reproducción del master M-E-2411 B7 siguen en revisión.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
@@ -20,16 +20,6 @@
       "titulo": "Entorno de prueba",
       "estado": "demostrado_parcial",
       "detalle": "Pruebas unitarias: Presupuesto Vivo 419 aprobadas; Territorio Vivo 252 aprobadas y 29 omitidas. Cinco comprobaciones de backend aprobadas; integración amplia y E2E pendientes."
-    },
-    {
-      "titulo": "Entrega ambiental pendiente",
-      "estado": "pendiente",
-      "detalle": "Fichas completas de escenarios, códigos MEA, eficacias justificadas, P1–P3 y pitch. Gemini local pendiente de autenticación."
-    },
-    {
-      "titulo": "Tablero público y auditorías preparatorias",
-      "estado": "demostrado_preparacion",
-      "detalle": "Web publicada y comprobada con HTTP 200. La auditoría de Presupuesto Vivo terminó: método favorable, productos ambientales pendientes. Tres lectores delegados continúan verificaciones; un publicador delegado autorizado gestiona Git."
     },
     {
       "titulo": "GO explícito y ejecución iniciada",
@@ -72,11 +62,18 @@
       "estado": "en_revision",
       "detalle": "32768 subconjuntos examinados, 1567 factibles y máximo de 6, condicionado a una unidad por catálogo; no es óptimo ambiental.",
       "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json"
+    },
+    {
+      "titulo": "P3 presente: riesgo residual y seguimiento",
+      "estado": "en_revision",
+      "fecha": "2026-10-07T16:26:26Z",
+      "detalle": "Tres artefactos de la base D6 provisional entregan riesgos, dependencias y variables. Su presencia no demuestra eficacia ni cierre completo.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.md"
     }
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
-  "source_updated_at": "2026-10-07T15:45:05.987705+00:00",
+  "source_updated_at": "2026-10-07T16:26:26Z",
   "source_branch": "dev",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "go_recibido": true,
@@ -86,19 +83,19 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T16:08:36Z"
+    "comprobado_utc": "2026-10-07T16:26:26Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
-    "Cerrar elegibilidad de cartera P2 y residual P3, con fuentes, unidades y decisiones trazables.",
-    "Verificar productos ambientales; eficacia, criterio ambiental, delta V y robustez siguen sin demostrarse.",
-    "Resolver la revisión de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7."
+    "Cerrar elegibilidad operativa de D6 y confirmar la regla de repetición/cupos, incluido conocimiento regional.",
+    "P3 y pitch requieren integración y revisión; la eficacia, delta V y robustez completa siguen sin demostrarse.",
+    "Resolver autorización y reproducción del master M-E-2411 B7; no incorporar nuevos valores basales restringidos."
   ],
   "summary": [
-    "P1 contiene 21 perfiles municipales y 357 registros oficiales; su presencia no valida ambientalmente una cartera.",
-    "P2 examinó 32768 subconjuntos: 1567 factibles y máximo 6, condicionado a una unidad por catálogo. Es una comparación financiera, no un óptimo ambiental.",
-    "El acceso público al master M-E-2411 no implica licencia abierta; las condiciones de uso y reproducción de B7 están en revisión."
+    "P1 entregado; P2 y P3 están presentes y en revisión.",
+    "D6: seis unidades completas por COP5.000 millones; decisión provisional y máximo condicional.",
+    "Goal activa tras reanudación expresa; paquete 13:50 y entrega antes de 14:00 Bogotá."
   ],
-  "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T16:08:36Z"
+  "status": "ejecucion_reanudada_entregables_en_revision",
+  "checked_at": "2026-10-07T16:26:26Z"
 }

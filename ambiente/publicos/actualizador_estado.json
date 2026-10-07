@@ -1,15 +1,14 @@
 {
   "schema": "actualizador-luna.recibo.v1",
-  "updated_at": "2026-10-07T16:08:36Z",
-  "status": "ok",
+  "updated_at": "2026-10-07T16:26:26Z",
+  "status": "recovery_pending_real_cycle",
   "modelo": "gpt-6-luna",
   "esfuerzo": "medium",
-  "exito": true,
-  "error": null,
-  "ciclo_id": "20261007T160817Z-823b366b",
-  "cli_event_id": "01a1171f-699b-7ab2-8231-3ccc86002059",
-  "snapshot_sha256": "e18a6991fed867c7903f9852af624013b25695e908f4e121e94c017942ffee5c",
-  "site_estado_sha256": "e509b4ca47af4a60acf26745906617b83a4f0161966c617e3796a30beda19a6c",
+  "exito": false,
+  "error": "Tres ciclos fallaron con límite antiguo de detalle; proceso detenido. Versión actual validada localmente, falta comprobar ciclo real.",
+  "ciclo_id": "20261007T161716Z-5bbad961",
+  "snapshot_sha256": "2ef302bb047c773a6a2c037d644d089d5b784927705c41f49f23f075d6e8c215",
+  "actualizador_sha256": "b43303ab89f042e7a19a4126f0581f3402d4a85d4d3a25d7de2b2688d8fd8e53",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "fuentes": [
     "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
@@ -18,6 +17,5 @@
     "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.md",
     "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/brechas_escenarios_mea.md",
     "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json"
-  ],
-  "actualizador_sha256": "70eb66a0c99de7cf458f3c6168ca48a7cbe2ffd24cadd617aec4e23b0fa1800b"
+  ]
 }

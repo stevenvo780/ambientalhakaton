@@ -1,6 +1,8 @@
 # Goal activa — decisión de adaptación CORNARE
 
-**Estado: ACTIVA en la conversación principal; GO explícito recibido el 07/10/2026 a las 10:34 de Bogotá.** No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
+**Estado: ACTIVA en esta conversación de ChatGPT Desktop desde la reanudación expresa del 07/10/2026 a las 11:19 de Bogotá.** El GO inicial se recibió a las 10:34; la pausa de migración posterior queda como antecedente histórico. No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
+
+Continuidad vigente: [README](https://github.com/stevenvo780/ambientalhakaton/blob/dev/README.md) y [registro de ejecución](https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json). El [handoff](https://github.com/stevenvo780/ambientalhakaton/blob/dev/CONTINUIDAD_CHATGPT_DESKTOP.md) conserva el corte anterior a la reanudación; no modifica los criterios de aceptación siguientes.
 
 Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.stevenvallejo.com). El repositorio de trabajo permanece en la rama `dev`; la publicación Git corresponde al único publicador delegado, autorizado nuevamente con el GO.
 
