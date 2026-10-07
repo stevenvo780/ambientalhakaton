@@ -26,5 +26,14 @@
   "goal_activated": false,
   "production_branch": "dev",
   "root_directory": "site",
-  "automatic_push_demonstrated": false
+  "automatic_push_demonstrated": false,
+  "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
+  "canonical_domain_association_verified": true,
+  "canonical_http_receipt": {
+    "status": 200,
+    "ssl_verify_result": 0,
+    "repeat_ipv4": 200,
+    "latest_build_content_match": "no comprobado: peticiones paralelas previas tuvieron timeout"
+  },
+  "go_publication_status": "Fuente local refleja GO recibido y ejecución autorizada; registro create_goal aún sin confirmar, push de estado por delegado pendiente."
 }

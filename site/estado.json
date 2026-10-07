@@ -1,10 +1,10 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T15:37:36.606653+00:00",
+  "updated_at": "2026-10-07T15:39:26.000583+00:00",
   "timezone": "America/Bogota",
   "titulo": "GO recibido · ejecución ambiental en curso",
   "detalle": "El usuario autorizó resolver el reto. Ejecutores delegados recuperan datos oficiales y preparan P1, P2 y P3; aún no hay cartera ambientalmente validada.",
-  "goal_activada": true,
+  "goal_activada": false,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
@@ -29,7 +29,7 @@
     {
       "titulo": "Tablero público y auditorías preparatorias",
       "estado": "demostrado_preparacion",
-      "detalle": "Web publicada y comprobada con HTTP 200. La auditoría de Presupuesto Vivo terminó: método favorable, productos ambientales pendientes. Tres lectores delegados continúan verificaciones; el usuario gestiona Git."
+      "detalle": "Web publicada y comprobada con HTTP 200. La auditoría de Presupuesto Vivo terminó: método favorable, productos ambientales pendientes. Tres lectores delegados continúan verificaciones; un publicador delegado autorizado gestiona Git."
     },
     {
       "titulo": "GO explícito y ejecución iniciada",
@@ -37,9 +37,15 @@
       "detalle": "Lectura de datos oficiales, diagnóstico P1, cartera P2 y residual P3 asignados a delegados. Root solo orquesta. Productos, eficacia y robustez SSP siguen pendientes."
     }
   ],
-  "publicacion": "GitHub está conectado a Vercel. El usuario publica los cambios en Git; Vercel observa la rama configurada. Este tablero consulta su estado cada 25 segundos. Commit, push y despliegue introducen una demora; la publicación no es instantánea.",
+  "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
   "source_updated_at": "2026-10-07T15:31:34.726880+00:00",
   "source_branch": "dev",
-  "canonical_url": "https://hackathon-ambiental.stevenvallejo.com"
+  "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
+  "go_recibido": true,
+  "ejecucion_autorizada": true,
+  "registro_create_goal": {
+    "estado": "pendiente_de_confirmacion",
+    "fuente": "El GO fue explícito; el último registro de orquestación disponible aún era anterior al GO."
+  }
 }
