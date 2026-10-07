@@ -1,0 +1,23 @@
+{
+  "schema": "corredor-vivo.deploy.v1",
+  "verified_at": "2026-10-07T15:21:17.787992+00:00",
+  "status": "READY",
+  "target": "production",
+  "production_url": "https://ambientalhakaton.vercel.app",
+  "deployment_id": "dpl_Gw1uZjoFr326bbWvTVVgbREFtuAB",
+  "deployment_url": "https://ambientalhakaton-bxh5uormb-stevenvo780s-projects.vercel.app",
+  "project": "ambientalhakaton",
+  "team": "stevenvo780s-projects",
+  "cli_version": "59.9.1",
+  "authorization": "Despliegue Vercel solicitado explícitamente por el usuario",
+  "http": {
+    "/": 200,
+    "/estado.json": 200
+  },
+  "git_integration": "pendiente_configuracion",
+  "deployment_commit": null,
+  "source_date": "2026-10-07T15:13:24.805567+00:00",
+  "scope": "Únicamente site/; archivos .env* y .vercel excluidos; no se leyeron credenciales",
+  "environmental_products_complete": false,
+  "goal_activated": false
+}

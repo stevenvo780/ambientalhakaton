@@ -1,13 +1,13 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T15:13:24.805567+00:00",
-  "updated_at_bogota": "2026-10-07T10:13:24.805567-05:00",
+  "updated_at_utc": "2026-10-07T15:26:02.679947+00:00",
+  "updated_at_bogota": "2026-10-07T10:26:02.679947-05:00",
   "timezone": "America/Bogota",
   "estado": "preparacion_lista_goal_pendiente_GO",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
-    "url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/goal_ejecucion.md",
-    "sha256": "dcc5e178a1fda2bb81d3e4b7933cc0cd37dec2f21ca6d40d1dbcfe2471b14256",
+    "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
+    "sha256": "162171efba3971c7df9ab9121355f0c8ad63495dc6fdfbb131dc961ac81e9470",
     "preparada": true,
     "activada": false,
     "herramienta_create_goal_usada": false,
@@ -20,15 +20,15 @@
   "limites": {
     "paquete_bogota": "2026-10-07T13:50:00-05:00",
     "entrega_bogota": "2026-10-07T14:00:00-05:00",
-    "minutos_disponibles_hasta_paquete": 216,
+    "minutos_disponibles_hasta_paquete": 205,
     "recalcular_tras_GO_tardio": true
   },
   "recursos": {
     "nativos_maximos_incluido_root": 5,
     "nativos_ejecutores_maximos": 4,
-    "claude_muse": "locales; informes recibidos sobre borrador previo",
+    "claude_muse": "locales; evaluaciones previas recibidas, FAQ/guía activas según coordinación",
     "gemini": "local; pendiente autenticacion, sin inferencia atribuida",
-    "gpt_6_luna": "solicitado; ruta local en verificacion",
+    "gpt_6_luna": "QA local en cola según coordinación, sin ejecución acreditada",
     "codex_remotos": "solo sesiones existentes; worktrees aislados",
     "cuotas": "disponibilidad local no confirmada; sin failover"
   },
@@ -52,56 +52,56 @@
     "requisitos_IDs": 75,
     "robustez_completa_demostrada": false,
     "eficacia_causal_demostrada": false,
-    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md"
+    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md"
   },
   "cronograma_condicional": [
     {
       "fase": "Confirmación GO y asignaciones",
-      "inicio_bogota": "10:14",
-      "fin_bogota": "10:24",
+      "inicio_bogota": "10:25",
+      "fin_bogota": "10:34",
       "salida": "Root asigna; ejecutores reciben objetivo, fuentes y archivo exclusivo."
     },
     {
       "fase": "DA: fichas, escenarios y vacíos",
-      "inicio_bogota": "10:14",
-      "fin_bogota": "10:58",
+      "inicio_bogota": "10:25",
+      "fin_bogota": "11:07",
       "salida": "Registro de evidencia, localizadores, MEA y peticiones oficiales acotadas."
     },
     {
       "fase": "P1: diagnóstico territorial",
-      "inicio_bogota": "10:29",
-      "fin_bogota": "11:28",
+      "inicio_bogota": "10:39",
+      "fin_bogota": "11:36",
       "salida": "Hasta cinco hallazgos; cobertura de municipios y siete dimensiones."
     },
     {
       "fase": "P2: selección y comparación",
-      "inicio_bogota": "10:34",
-      "fin_bogota": "12:07",
+      "inicio_bogota": "10:43",
+      "fin_bogota": "12:14",
       "salida": "Elegibilidad, unidades enteras, conteo, presupuesto y alternativas."
     },
     {
       "fase": "P3: residual y seguimiento",
-      "inicio_bogota": "10:34",
-      "fin_bogota": "12:07",
+      "inicio_bogota": "10:43",
+      "fin_bogota": "12:14",
       "salida": "Vacíos que cambian decisión, indicadores/línea base y revisión."
     },
     {
       "fase": "Contraste de escenarios",
-      "inicio_bogota": "11:42",
-      "fin_bogota": "12:36",
+      "inicio_bogota": "11:50",
+      "fin_bogota": "12:42",
       "salida": "Referencia/intermedio/SSP3-7.0–2060; decisiones y límites reales."
     },
     {
       "fase": "Integración y revisión independiente",
-      "inicio_bogota": "12:36",
-      "fin_bogota": "13:30",
+      "inicio_bogota": "12:42",
+      "fin_bogota": "13:34",
       "salida": "75 IDs con evidencia; Claude/Muse y revisión delegada."
     },
     {
       "fase": "Pitch, anexo y paquete público",
-      "inicio_bogota": "13:30",
+      "inicio_bogota": "13:34",
       "fin_bogota": "13:50",
-      "salida": "Ensayo ≤7min; anexo opcional ≤2p; archivos/versiones coherentes."
+      "salida": "Ensayo ≤ 7 min; anexo opcional ≤ 2 páginas; archivos/versiones coherentes."
     },
     {
       "fase": "Entrega",
@@ -111,9 +111,11 @@
     }
   ],
   "publicacion": {
-    "Git_owner": "editor delegado unico",
+    "Git_owner": "usuario unico responsable",
     "web_owner": "redactor web delegado unico",
-    "protocolo": "artefacto terminado+lista exacta+SHA → commit/push acotado → HEAD y archivos al escritor web → lote JSON al dueño Git",
-    "privacidad": "solo whitelist sin secretos, rutas personales, IP privada, TUI o perfiles"
+    "protocolo": "artefacto terminado+lista exacta+SHA → usuario publica → HEAD y archivos al escritor web → lote JSON al usuario",
+    "privacidad": "solo whitelist sin secretos, rutas personales, IP privada, TUI o perfiles",
+    "mutaciones_git_por_agentes_autorizadas": false,
+    "rama_documentos": "dev"
   }
 }

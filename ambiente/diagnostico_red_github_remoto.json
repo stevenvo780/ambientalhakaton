@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-10-07T15:19:54.067151+00:00",
+  "machine": "servidor remoto autorizado",
+  "writes": false,
+  "public_checks": [
+    {
+      "check": "api_repo",
+      "method": "GET",
+      "status": 200,
+      "reachable": true,
+      "public_metadata": {
+        "full_name": "stevenvo780/ambientalhakaton",
+        "private": false,
+        "default_branch": "main",
+        "pushed_at": "2026-10-07T15:01:23Z"
+      }
+    },
+    {
+      "check": "readme_main",
+      "method": "GET",
+      "status": 200,
+      "reachable": true
+    },
+    {
+      "check": "github_repo",
+      "method": "HEAD",
+      "status": 200,
+      "reachable": true
+    }
+  ],
+  "gh_installed": true,
+  "gh_authorized_current_account": true,
+  "gh_account_status": "cuenta autorizada confirmada",
+  "gh_repo_metadata_status": 0,
+  "gh_repo_metadata": {
+    "default_branch": "main",
+    "full_name": "stevenvo780/ambientalhakaton",
+    "private": false
+  }
+}

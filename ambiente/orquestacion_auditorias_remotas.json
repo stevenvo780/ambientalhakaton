@@ -1,0 +1,37 @@
+{
+  "tasks": [
+    {
+      "session": "EfectoDomio",
+      "tipo": "territorio",
+      "state": "enviado",
+      "captura_antes_texto": true,
+      "captura_antes_enter": true,
+      "wait_before_enter_seconds": 1,
+      "sent_at_utc": "2026-10-07T15:22:34.449058+00:00",
+      "output": "/home/dev/hackathon-ambiental-20261007/evaluaciones/codex-territorio.md"
+    },
+    {
+      "session": "ContinuidadInfraestructuraServicios",
+      "tipo": "dependencias",
+      "state": "enviado",
+      "captura_antes_texto": true,
+      "captura_antes_enter": true,
+      "wait_before_enter_seconds": 1,
+      "sent_at_utc": "2026-10-07T15:22:54.903817+00:00",
+      "output": "/home/dev/hackathon-ambiental-20261007/evaluaciones/codex-dependencias.md"
+    },
+    {
+      "session": "lote-resiliente",
+      "tipo": "localizacion",
+      "state": "enviado",
+      "captura_antes_texto": true,
+      "captura_antes_enter": true,
+      "wait_before_enter_seconds": 1,
+      "sent_at_utc": "2026-10-07T15:22:58.581845+00:00",
+      "output": "/home/dev/hackathon-ambiental-20261007/evaluaciones/codex-localizacion.md"
+    }
+  ],
+  "solo_lectura": true,
+  "implementacion_autorizada": false,
+  "goals_activadas": false
+}

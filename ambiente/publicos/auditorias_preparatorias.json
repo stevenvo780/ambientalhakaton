@@ -1,0 +1,44 @@
+{
+  "updated_at_utc": "2026-10-07T15:26:02.679947+00:00",
+  "updated_at_bogota": "2026-10-07T10:26:02.679947-05:00",
+  "fase": "auditoria_preparatoria_solo_lectura",
+  "GO_recibido": false,
+  "implementacion_autorizada": false,
+  "goals_activadas": false,
+  "modelos": "GPT-6.1-Sol ultra; sesiones de proyectos existentes",
+  "tasks": [
+    {
+      "proyecto": "Presupuesto Vivo",
+      "tipo": "motor y complemento documental final",
+      "estado": "terminada",
+      "sha_informe": "99a7c5c8508146ec93f409a50104efb7df2bf93c715a46999a4909d262ec479d",
+      "dictamen": "método documental favorable; P1-P2-P3 y robustez completa pendientes"
+    },
+    {
+      "proyecto": "Territorio Vivo",
+      "tipo": "contrato de fuentes, corredor, escenarios, MEA y exportación P1/P3",
+      "estado": "en_curso_confirmado"
+    },
+    {
+      "proyecto": "Continuidad de Infraestructura y Servicios",
+      "tipo": "contrato de información faltante y límites de dependencias",
+      "estado": "en_curso_confirmado"
+    },
+    {
+      "proyecto": "Lote resiliente",
+      "tipo": "resolución espacial y localización sin precisión predial ficticia",
+      "estado": "en_curso_confirmado"
+    }
+  ],
+  "controles": "captura antes del texto y Enter, espera de un segundo; sin attach, Ctrl-C, cierre de sesiones ni cambios de código, Git, DB o configuración",
+  "publicacion_git": "solo usuario; agentes entregan archivos y SHA",
+  "actualizacion_coordinador": {
+    "Claude_Muse": "FAQ/guía locales activas según coordinación",
+    "GPT_6_Luna": "QA local en cola; sin resultado de ejecución",
+    "Gemini": "local pendiente autenticación",
+    "frentes_remotos_asignados": 4,
+    "auditorias_remotas_en_curso_confirmadas": 3,
+    "auditorias_remotas_terminadas": 1
+  },
+  "rama_documentos": "dev"
+}

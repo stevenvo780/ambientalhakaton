@@ -1,0 +1,5 @@
+.env*
+.vercel
+.cache
+public
+diseno.md
