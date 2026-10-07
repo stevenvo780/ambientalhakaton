@@ -60,7 +60,7 @@ Las respuestas siguientes existen en los documentos; la columna de límite impid
 | C05 Robustez | Referencia→SSP3 obligatorio con celdas y decisión por unidad; SSP2 exploratorio visible. | Condicional: no mide respuesta de intervención. Horizonte solicitado/estrés coinciden por aclaración humana recibida; selección cerrada, sin dos futuros independientes. Valores 2060 difieren aunque categoría/redondeo coincida. |
 | C06 Viabilidad y gobernanza | Expedientes mínimos, productos/pagos, secuencia, actores y mantenimiento propuestos. | Condicional: no permisos, sitios, compromisos ni custodia territorial acreditados. |
 | C07 Seguimiento | Variables físicas/normalizadas separadas, basal/fecha ausentes explícitos, reglas de reajuste y puente MEA. | Condicional: vínculos 07/08/09 propuestos, unidad 09 por homologar; 34 filas no equivalen a 34 indicadores oficiales ni mediciones realizadas. |
-| C08 Utilidad para CORNARE | Cuenta y fuentes reproducibles, residual, decisiones revisables y ficha paraMEA existente. | Paquete provisional útil; cierre documental por versión; ensayo real ≤7min previsto durante14–16, aún no realizado. Dos páginas de anexo verificadas no acreditan todos los criterios. |
+| C08 Utilidad para CORNARE | Cuenta/fuentes, sacrificios, brechas que reabren elección y fichaMEA: utilidad documental explícita. | Condicional: material listo y versionado antes14; uso/aceptación institucional y efecto no observados. Ensayo real14–16 pendiente porF01, sin bloquear entrega. PDF2p no acredita todos los criterios. |
 
 El [PDF único de dos páginas](ANEXO_METODOLOGICO.pdf) integra decisiónP1–P3 y metodología obligatoria por instrucción final del usuario; no hay un tercer anexo. La [matriz de75 IDs](../caso/matriz_requisitos_completa.md) conserva pruebas/estados por afirmación limitada. Esta auditoría no es puntaje del jurado, certificación de75 cumplidos ni ejecución física. Los ocho criterios siguen siendo los oficiales; no se añaden criterios del motor financiero o del trabajo con agentes.
 
@@ -117,3 +117,5 @@ Congelar el guion que se leerá y calcular su SHA antes de empezar; usar reloj o
 | Resultado ≤7:00 y necesidad de repetir | Pendiente |
 
 Registrar esos campos permite verificar F01; no se llena duración o identidad por estimación, recepción de archivos, modelo externo ni conteo de palabras. Hasta el recibo real, **F01 continúa pendiente** como verificación oral; no bloquea la solución material lista antes de14:00 conforme a la aclaración humana. El ensayo se planifica durante el estudio14–16. Si sólo cambia esta ficha posterior al ensayo, conservar el hash del guion leído y explicar la diferencia de versión documental.
+
+Corte documental:75IDs estables,40demostrados de afirmación limitada/34condicionales/1pendiente(F01 humano14–16). La legibilidad de V4.3 fue revisada por Muse/Claude; el PDF posterior sólo corrige espacios y se verificó visualmente. No es puntaje del jurado,75cumplidos ni resultado ambiental.

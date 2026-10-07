@@ -4,7 +4,7 @@ La publicación de los avances propios, textos del reto y costos puede avanzar. 
 
 ## Regla y procedencia
 
-El [enunciado público](https://github.com/stevenvo780/ambientalhakaton/blob/dev/insumos/texto/RETO%20CLIMATE%20WEEK%20HACKATHON.txt), PDF p.3, limita la información empresarial del ejercicio a agregada, anonimizada o sintética y dice que no se entregará información reservada ni identificable; p.8 prohíbe utilizar información reservada. La presentación tiene procedencia institucional CORNARE y atribución al consultor. No se verificó una URL pública del mismo PDF/PPTX: no se confunde la página del Observatorio con publicación del documento íntegro.
+El [enunciado público](https://github.com/stevenvo780/ambientalhakaton/blob/main/insumos/texto/RETO%20CLIMATE%20WEEK%20HACKATHON.txt), PDF p.3, limita la información empresarial del ejercicio a agregada, anonimizada o sintética y dice que no se entregará información reservada ni identificable; p.8 prohíbe utilizar información reservada. La presentación tiene procedencia institucional CORNARE y atribución al consultor. No se verificó una URL pública del mismo PDF/PPTX: no se confunde la página del Observatorio con publicación del documento íntegro.
 
 Se admiten nombres de instituciones, consultor y otros nombres públicos sin información individual asociada. La situación diferente es un nombre empresarial enlazado con su ubicación, clasificación de riesgo o plan individual.
 
@@ -39,7 +39,7 @@ Rutas personales, IP de red privada, nombres de host, PID y TUI son metadatos op
 
 ## Acceso del equipo
 
-La [web canónica](https://hackathon-ambiental.stevenvallejo.com) presenta resúmenes. Las fuentes versionadas se consultan en [GitHub dev](https://github.com/stevenvo780/ambientalhakaton/tree/dev), con su SHA y hora. La FAQ y guía indican el orden y el fallback: subir README a Proyecto ChatGPT no descarga automáticamente documentos si no hay navegación. No se crea un GPT personalizado.
+La [web canónica](https://hackathon-ambiental.stevenvallejo.com) presenta resúmenes. Las fuentes versionadas se consultan en [GitHub main](https://github.com/stevenvo780/ambientalhakaton/tree/main), con su SHA y hora. La FAQ y guía indican el orden y el fallback: subir README a Proyecto ChatGPT no descarga automáticamente documentos si no hay navegación. No se crea un GPT personalizado.
 
 El [inventario nominal](../ambiente/inventario_publicacion.json) contiene decisiones por archivo y SHA locales de revisión. Su sello temporal no certifica que cada archivo exista en ese mismo hash remoto. Toda publicación de nuevos artefactos corresponde al publicador único autorizado por GO.
 
@@ -65,7 +65,7 @@ Se cotejaron bytes de cuatro archivos del commit `cd2b08c232257957d8057bfd6db661
 
 | Archivo y localizador | Hallazgo confirmado, sin reproducir valores | Tratamiento actual |
 |---|---|---|
-| `ambiente/prioridad_reuso_observatorio_GO.txt`, párrafo basales |30valores individuales normalizados:12agua,6desastres,12bio. Son un subconjunto de90, distinto de357agregados. | Sustituidos por código/hoja/celda yNA; nota de basal retenido/acceso autorizado. |
+| `ambiente/prioridad_reuso_observatorio_GO.txt`, párrafo basales |30registros individuales normalizados:12agua,6desastres,12bio;28apariciones numéricas, porque inversiónbio agrupaba3municipios. Son un subconjunto de90, distinto de357agregados. | Sustituidos por código/hoja/celda yNA; nota de basal retenido/acceso autorizado. |
 | `caso/evaluaciones/claude/informe.md`, corrección punto4 (línea153 original) |3basales individuales GRD, repetidos del conjunto30. CA municipal agregado no se retiró. | Sólo3valores sustituidos por localizadores/NA; resto del contexto conservado. |
 | `entregables/revision_pitch_claude.md`, propuesta p82 del texto |2basales SAT individuales, repetidos del conjunto30. | Sólo2valores sustituidos por localizadores/NA. |
 | `entregables/revision_agy.md` | Códigos y agregados, sin nuevo valor individual localizado. | Sin retirada por coincidencia de regex; revisión histórica no acredita cartera actual. |
@@ -75,3 +75,5 @@ Los30registros se localizan por Guarne/Marinilla/Rionegro (filas22/26/29): aguaM
 La sustitución corrige el contenido corriente hacia la decisión editorial de retener basales individuales; **no elimina el contenido del commit histórico ni acredita permiso de reproducción**. Se preservaron originales y respaldos privados0600; no se reescribió historia. Tampoco se declara infracción jurídica, licencia suficiente o secreto por el solo código. La revisión de atribución/proporcionalidad/aviso B7 aplica también a los357agregados existentes.
 
 SHA del contenido publicado examinado: GO `8c15be813e379b62c6a25d5ab0bd25b2641511afd2589cd105774bf5082cdf88`; Claude `524d6224d92073a84473746bccf0dc20bfac1f073f87e8cc20be2a0495be3314`; AGY `02e704aaafdd4e238cb83cb1ce8dcec585e65973cee689354f16de7bb39cf9dc`; pitchClaude `8ff75e87f344f81a0e62fb8e60d20fa32cb2e7ac39ba865c01982404487cc667`. Los SHA corregidos se identifican en el recibo de publicación, sin equiparar corrección local con push confirmado.
+
+Corrección acotada de contextoGO: se restauró íntegro el párrafo original conservando PlanVSNp51–52/66normalizados y recordatorio de descarga; sólo28apariciones numéricas→NA que representan30registros y nota retenido/acceso autorizado. Comprobación inversa devuelve exactamente el texto original al restaurar ese párrafo privado. SHA corrienteGO `b43a5d096518ca96abdc14c766375fdadb017c74172b8590f06114649451214a`; no elimina historia ni modifica agregados/contexto/costos.

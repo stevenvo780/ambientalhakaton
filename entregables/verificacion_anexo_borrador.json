@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T17:07:57.477123+00:00",
+  "verified_at_utc": "2026-10-07T17:27:47.198777+00:00",
   "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "b397732e06e9b98b57e227e944a18ac2168335a3934bf47a5540f40cc9e3de27",
+  "source_sha256": "e9f38221492111261e9f0ba9c753d007f52505d49c23870fa483d98b73db8c88",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "75e7f30ecd3fb3da445464e66bc2f179a1c7b1cdda14536ea4e3a6869d75d5e6",
+  "pdf_sha256": "83e58b76faacb32e50fe076af65768c64b1fab14c797400abaa3af670cc51875",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,11 +17,11 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T12:07:57.477251-05:00",
-    "method": "pdftoppm ambas paginas; inspeccion directa"
+    "reviewed_at_bogota": "2026-10-07T12:27:47.188858-05:00",
+    "method": "pdftoppm ambas paginas; inspeccion directa tras correccion minima de espacios"
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "d5c31aea6edd1dc2ff943d97894f1281faec6f3456b8d3dcd8d51e39f0a4b537",
+  "pitch_sha256": "3517e959b6d45f10b73d30feca9f1e15862f0c9b7fb36b2c7c02758dd3169f4b",
   "inputs_sha256": {
     "entregables/p1_tablero.md": "d7d9356630b811cb06f06ab22b089109c7866fa7805ff5c20e7affbd80eb69d9",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
@@ -36,17 +36,17 @@
     "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
   },
   "source_urls": {
-    "entregables/p1_tablero.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.md",
-    "entregables/p1_tablero.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.csv",
-    "entregables/datos_oficiales.json": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/datos_oficiales.json",
-    "entregables/p2_portafolio.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_portafolio.md",
-    "entregables/p2_portafolio.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_portafolio.csv",
-    "entregables/p2_justificacion.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_justificacion.md",
-    "entregables/p2_comparacion_financiera.json": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json",
-    "entregables/p3_riesgo_residual.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.md",
-    "entregables/p3_riesgo_residual.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.csv",
-    "entregables/variables_seguimiento.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/variables_seguimiento.csv",
-    "caso/catalogo_costos_reto.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/catalogo_costos_reto.csv"
+    "entregables/p1_tablero.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p1_tablero.md",
+    "entregables/p1_tablero.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p1_tablero.csv",
+    "entregables/datos_oficiales.json": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/datos_oficiales.json",
+    "entregables/p2_portafolio.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p2_portafolio.md",
+    "entregables/p2_portafolio.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p2_portafolio.csv",
+    "entregables/p2_justificacion.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p2_justificacion.md",
+    "entregables/p2_comparacion_financiera.json": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p2_comparacion_financiera.json",
+    "entregables/p3_riesgo_residual.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p3_riesgo_residual.md",
+    "entregables/p3_riesgo_residual.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p3_riesgo_residual.csv",
+    "entregables/variables_seguimiento.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/variables_seguimiento.csv",
+    "caso/catalogo_costos_reto.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/catalogo_costos_reto.csv"
   },
   "horizon": {
     "requested": "SSP3-7.0 hacia2060",
@@ -71,21 +71,38 @@
     "compatibility_alias": "ANEXO_BORRADOR.pdf copia byte-identica; no entregable adicional"
   },
   "matrix_counts": {
-    "condicional": 33,
-    "demostrado": 35,
-    "pendiente": 7
+    "condicional": 34,
+    "demostrado": 40,
+    "pendiente": 1
   },
   "remediation": {
     "unique_individual_basals_replaced": 30,
     "repeated_mentions_replaced": 5,
     "historical_commit_content_not_erased": true,
-    "rights_clearance_certified": false
+    "rights_clearance_certified": false,
+    "numeric_occurrences_in_GO": 28,
+    "GO_current_sha256": "b43a5d096518ca96abdc14c766375fdadb017c74172b8590f06114649451214a"
   },
-  "change_note": "V4.3 usa snapshot privado exactoP1d7d935/P2v3.3 3d4b/P3v6 b83ca para evitar mezclar versiones durante edición. D6empata conteo otras6;no mayor reducción porconteo;sin05 no presumaInCaHIDRO01cero;N101/05sinlocalizaciónmunicipal decidida/contextoexterno no cobertura local.",
+  "change_note": "Cierre editorial: formato/salidas/material listo demostrado limitado;R20/C08condicionales;F01humano14–16pendiente. PDF cambia sólo espacios señalados por Claude,2pA4 reinspeccionadas; contenido científico/snapshotfuentes intactos.",
   "source_versions": {
     "P1": "horizonte aclarado mínimo d7d935",
     "P2": "v3.3",
     "P3": "v6"
   },
-  "inputs_frozen_before_export": true
+  "inputs_frozen_before_export": true,
+  "documentary_reviews": [
+    {
+      "path": "entregables/revision_pdf_v43_muse_desktop.md",
+      "sha256": "c668d761cb5c782dcf0e75ce719085c0228d40f12d82eedfbc519da7cd2fc4a3",
+      "reviewed_pdf_sha256": "75e7f30ecd3fb3da445464e66bc2f179a1c7b1cdda14536ea4e3a6869d75d5e6",
+      "scope": "coherencia/legibilidad documental V4.3; no ensayo/eficacia/aceptacioninstitucional"
+    },
+    {
+      "path": "entregables/revision_pdf_v43_claude_desktop.md",
+      "sha256": "6eb6cbe9bb3c040d8be61808b4a5492dfbed054e68e7259ce5b5709694901bd8",
+      "reviewed_pdf_sha256": "75e7f30ecd3fb3da445464e66bc2f179a1c7b1cdda14536ea4e3a6869d75d5e6",
+      "scope": "coherencia/legibilidad documental V4.3; no ensayo/eficacia/aceptacioninstitucional"
+    }
+  ],
+  "publication_target": "main"
 }

@@ -1,9 +1,9 @@
 {
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
-  "source_sha256": "07d0c2b0e879ca0f8eccefbcdf8ac0f2a81ebd03cea1e8bc5d14290bbff04ae4",
-  "scope": "P2v3.3/P3v6/PDF único obligatorio2p. Horizonte solicitadoSSP3 hacia2060 cerrado porusuario; solicitado/estrés coinciden, SSP2adicionalexploratorio.14municipalR600/12mesesPROPUESTOS,03corredor oficial. Cupo1máximo financiero6; cupo3hipotético14máximo7UNIDADES5TIPOS, elegibilidad no probada. Ensayo14–16futuro no bloquea paqueteantes14. Hip7 retira07/09(2000M40%presupuesto), añade15+14G/Msin elegibilidad demostrada; no porcentajeeficacia. AguaR/MVAlta sólo matriz ampliada;RMedioL12 se conserva. P3sixPROP físicos/operacionales sin códigos nuevos ni mediciones. D6empata conteo conotras6máximas; sin05no presumeInCaHIDRO01cero; sin cobertura local por contextoexterno.",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md",
+  "source_sha256": "76b53676b57468acb0110acb06c1e4219f630fbcca1a90bc10f3844d58364446",
+  "scope": "Cierre material antes14. P1d7d935/P2v3.3/P3v6 congelados; PDF único2p y lectura documental independiente V4.3, actual sólo espacios inspeccionados. HorizonteSSP3 cerrado;14R600/12meses propuesta; máximo financiero cupo1condicionado y cupo3hipotético. SóloF01 pendiente humano14–16;34condiciones no eficacia/adopción/eligibilidad demostradas.",
   "items": [
     {
       "id": "R01",
@@ -162,10 +162,10 @@
       "id": "R18",
       "regla_fuente": "Diferenciar dato institucional, inferencia del equipo, supuesto e información faltante. E p.7 §11.",
       "accion": "Aplicar cuatro etiquetas visibles y localizadores; no convertir una hipótesis en dato al pasar a una gráfica.",
-      "evidencia": "Leyenda y etiquetas en las tres salidas y anexo si existe. **Corte verificado:** P1–P3 distinguen institucional/propuesta/hipótesis/ausencia; PDF2p integra etiquetas y límites; el cierre de versión requiere conservar ese mismo corte en el paquete congelado de entrega, todavía en publicación.",
-      "validacion": "Toda cifra, relación y beneficio tiene categoría y fuente/método; los faltantes se conservan también en las visualizaciones y exportaciones.",
+      "evidencia": "P1–P3 y PDF distinguen datos institucionales, propuesta, hipótesis y ausencias. Revisiones documentales Claude/Muse sobre V4.3 confirman coherencia de límites; PDF actual sólo corrige espacios y conserva esos contenidos. Inspección directa de ambas páginas actuales. Demostrado el etiquetado documental, no efectos ni autorización de uso.",
+      "validacion": "Cada afirmación del paquete se interpreta con su fuente/alcance; PROP y ausencias no se presentan como dato medido o institucional. SHA/versiones preservados; revisión de derechos y resultados ambientales se evalúan por separado.",
       "responsable": "DA + IN + RI",
-      "estado": "condicional"
+      "estado": "demostrado"
     },
     {
       "id": "R19",
@@ -180,28 +180,28 @@
       "id": "R20",
       "regla_fuente": "Convertir conocimiento en decisión defendible, robusta, monitoreable y reproducible, señalando capacidad institucional por fortalecer. E pp.7–8 §12/cierre.",
       "accion": "Conservar fuentes, versiones, reglas, alternativas, cálculo y condiciones de revisión.",
-      "evidencia": "Paquete P1–P3 y método; copia legible para CORNARE. **Corte verificado:** P1–P3 provisionales legibles y cálculo disponible; falta cierre integrado, versión final y verificación del paquete antes de declarar entrega reproducible completa.",
-      "validacion": "Otro integrante reproduce el total, conteo y razón de selección a partir del paquete sin depender de la memoria del autor o de una sesión privada.",
+      "evidencia": "PDF/P1/P2/P3 contienen decisión, alternativas, suma, regla reproducible, escenarios, residual y fichaMEA. Fuentes exactas congeladas; cálculo reproducido independientemente en P2. Razonamiento y seguimiento propuestos documentados; pertinencia operativa, mayor reducción y robustez de diseños siguen condicionadas.",
+      "validacion": "Reproducir cuenta y reconstruir razones con catálogo/documentos. La reproducción aritmética y una lectura documental no prueban aceptación institucional, eficacia o robustez operacional.",
       "responsable": "IN + CA + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "R21",
       "regla_fuente": "Ruta oficial de ocho horas: lectura, diagnóstico, mapa, cartera, estrés, residual, seguimiento y síntesis. E p.6 §8.",
       "accion": "Organizar todas las fases, solapando tareas independientes para respetar U; no omitir las fases sustantivas por desarrollar interfaz.",
-      "evidencia": "Fases con salidasP1/P2v3.3/P3v6/PDF y dueños; congelación/versionado final en curso. Aclaración humana: solución antes14, estudio/ensayo14–16. No ensayo previo14requerido; ruta escrita no prueba todas las comprobaciones.",
-      "validacion": "Conservar salidas sustantivasR05–R19 antes14 y recibo de congelación; ensayoF01 duranteestudio14–16 segúnaclaraciónhumana, sin darlo por realizado.",
+      "evidencia": "Ocho salidas documentales localizadas: lectura(revision_documentos/revision_excel); diagnóstico(P1); mapa/localización municipal(P1/P2); cartera(P2); estrésSSP3(P2/P3); residual42(P3); seguimiento34/P3; síntesis(PDF/guion). Paquete material listo desde12:07Bogotá. EnsayoF01 previsto14–16, no realizado. Demostrado ese corte de salidas, no ocho horas cronometradas ni ejecución ambiental.",
+      "validacion": "Las fases sustantivas tienen salida concreta y versión; la fuente no exige esperar a completar ocho horas para entregar. Mantener F01 pendiente hasta recibo humano y separar salidas documentales de ejecución futura.",
       "responsable": "OR + IN",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "R22",
       "regla_fuente": "Decisión, mapa/localización y seguimiento deben poder comunicarse en formatos permitidos. E pp.6–7 §10/§11.",
       "accion": "Reutilizar Presupuesto Vivo para cartera y Territorio Vivo para territorio/procedencia/seguimiento; producir tablas/láminas si una función no está disponible.",
-      "evidencia": "P1–P3 finales y gráficas con unidades, fuente y leyenda. **Corte verificado:** P1–P3 provisionales legibles y cálculo disponible; falta cierre integrado, versión final y verificación del paquete antes de declarar entrega reproducible completa.",
-      "validacion": "Las salidas responden al corredor oficial, no al caso demo Granada–Rionegro; los gráficos no incorporan datos ficticios como evidencia del reto. Una función en el repositorio no se declara ejecutada sin resultado observado.",
+      "evidencia": "PDF único2p integra P1–P3, localizaciones propuestas del corredor, costos, horizonte y seguimiento. Ambas páginas actuales legibles; Muse/Claude leyeron V4.3 real con coherencia documental. Formato libre/tablas disponible sin login, sin demoGranada ni dato ficticio como evidencia. Cartografía predial, sitios y actores comprometidos no acreditados.",
+      "validacion": "Verificar representación legible de decisión/localización/seguimiento a resolución municipal; no confundir tabla municipal propuesta con cartografía de elegibilidad o resultado físico. Software sólo se acredita por sus recibos propios.",
       "responsable": "IN + CA + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "Q01",
@@ -351,10 +351,10 @@
       "id": "C08",
       "regla_fuente": "Utilidad para CORNARE. E p.7 §12.",
       "accion": "Entregar decisión reproducible y capacidad institucional a fortalecer.",
-      "evidencia": "R16/R20, P1–P3 legibles y anexo si existe. **Corte verificado:** P1–P3 y puente MEA útiles provisionalmente; falta integración final, ensayo real y entrega versionada antes del plazo.",
-      "validacion": "Otro integrante reconstruye cálculo y decisión; está identificado quién incorporaría datos y cuándo revisaría la cartera.",
+      "evidencia": "Utilidad documental explícita: selección revisable, sacrificios, cuenta reproducible, brechas que cambian decisión y puenteMEA. P1/P2/P3/PDF legibles y versionados; revisión independiente sobre V4.3. Uso/aceptación institucional y efecto ambiental no observados. Ensayo humano14–16 es verificación posterior, no bloqueo de entrega antes14.",
+      "validacion": "Evaluar utilidad propuesta por decisiones/datos de reajuste y trazabilidad. No convertir lectura de modelo, recepción de archivo o software en adopción institucional ni resultado; F01 se verifica por separado.",
       "responsable": "IN + CA + RI",
-      "estado": "pendiente"
+      "estado": "condicional"
     },
     {
       "id": "X01",
@@ -450,10 +450,10 @@
       "id": "F02",
       "regla_fuente": "Tres productos en formato libre y comprensibles sin explicación extensa. E p.7 §11.",
       "accion": "Elegir láminas, tablero, hoja, prototipo o combinación; añadir gráficos útiles con leyendas y unidades.",
-      "evidencia": "Paquete final abierto/exportable y legible. **Corte verificado:** Exportables provisionales disponibles; falta verificar el paquete final legible de fuentes/versiones y congelarlo.",
-      "validacion": "Un integrante ajeno al redactor identifica prioridad, cartera, total, cambio de escenario y seguimiento leyendo los productos; no requiere login privado o código para entenderlos.",
+      "evidencia": "Tres productos integrados en un PDF de2pA4 exportable y leído visualmente. V4.3 real fue leído por Muse(c668d761…) y Claude(6eb6cbe9…): identificaron cartera5000, horizonteSSP3, residual42/seguimiento34 y metodología; sin objeción material de contenido. PDF actual corrige sólo espacios, con nueva inspección física ambas páginas. Formato/legibilidad documental demostrados; lectura del equipo humano se realizará durante estudio14–16.",
+      "validacion": "El lector identifica prioridad, cartera, total, horizonte y seguimiento sin login/código/explicación extensa. Legibilidad y formato se verifican documentalmente; no exigen ensayo humano antes14 ni acreditan aceptación institucional.",
       "responsable": "IN + RI",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "F03",
@@ -666,10 +666,10 @@
       "id": "H07",
       "regla_fuente": "Caso de ocho horas E p.6; horario previo V 08:00–16:00; U exige paquete antes de 14:00 Bogotá.",
       "accion": "Mantener las ocho fases y usar paralelismo independiente, cerrando cálculo/estrés/seguimiento antes del ensamblado; ensayo duranteestudio14–16.",
-      "evidencia": "Plazo paquete13:50/solución antes14; estudio/ensayo14–16 poraclaraciónhumana. RolesAriadna/Brahyam/Steven7minTOTAL conocidos; tiempo real aún no registrado. No bloquea entrega material por ensayo posterior.",
-      "validacion": "Soluciónmaterial antes14 paraestudio14–16; ensayo real futuro no bloquea paquete13:50. Horario de estudio no demuestra ejecución.",
+      "evidencia": "Paquete material integrado listo a12:07Bogotá, antes14; versiones porSHA, PDF2p y guion/guía. Publicaciónmain confirmada por publicador128f0af y PDFV4.3 público byte75e7…; PDF actual sólo corrige legibilidad. Buffer13:50 es corte previsto de control, no requisito de esperar esa hora. Estudio/ensayo14–16 por aclaración humana.",
+      "validacion": "Comprobar existencia/contenido/versiones del material antes14. Conservación de versión para estudiar no equivale a ensayo hecho. F01 permanece pendiente hasta persona/hora/duración/SHA real; avance temporal no acredita efecto ambiental.",
       "responsable": "OR + IN",
-      "estado": "pendiente"
+      "estado": "demostrado"
     },
     {
       "id": "H08",
@@ -681,10 +681,10 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T12:07:57.476278-05:00",
+  "updated_at": "2026-10-07T12:27:47.188858-05:00",
   "counts": {
-    "condicional": 33,
-    "demostrado": 35,
-    "pendiente": 7
+    "condicional": 34,
+    "demostrado": 40,
+    "pendiente": 1
   }
 }
