@@ -1,6 +1,6 @@
 # Publicabilidad de los insumos y evidencias
 
-La publicación de los avances propios, textos del reto y costos puede avanzar. La difusión de matrices municipales/sectoriales de terceros y sus derivados requiere además respetar condiciones de uso y aval, ahora en revisión. Los originales institucionales de 31 páginas y el ZIP permanecen locales hasta disponer de un derivado que omita información empresarial individual identificable. Este dictamen no establece una prohibición general de redistribución ni considera secreto un nombre público por sí solo.
+La publicación de los avances propios, textos del reto y costos puede avanzar. La difusión de matrices municipales/sectoriales de terceros y sus derivados requiere además respetar condiciones de uso y aval, ahora en revisión. Los originales institucionales de 31 páginas y el ZIP permanecen locales hasta disponer de un derivado que omita información empresarial individual identificable. Esta revisión no establece una prohibición general de redistribución ni considera secreto un nombre público por sí solo.
 
 ## Regla y procedencia
 
@@ -48,3 +48,9 @@ El [inventario nominal](../ambiente/inventario_publicacion.json) contiene decisi
 Se verificó en el masterM-E-2411, hoja `Sobre este documento`, B7, un aviso de uso exclusivo de CORNARE y aval/autorización para uso, mención, reproducción o modificación. Acceso por URL pública no equivale a licencia abierta. La interpretación jurídica del aviso y el alcance del caso siguen en revisión por el responsable legal; no se deduce ilegalidad por el solo aviso ni se certifica autorización general. No se añaden copias masivas de esas fuentes hasta dictamen. Las comprobaciones técnicas de datos agregados/ausencia de secretos siguen siendo válidas, pero no sustituyen esa revisión de derechos.
 
 La allowlist previa describe privacidad y formato del primer lote, no una licencia libre de todas las fuentes. Originales ya publicados mantienen trazabilidad; ningún cambio Git, retirada o republicación se hace desde esta auditoría. Los avances propios de decisión y estado pueden continuar mostrando la condición pendiente.
+
+## Corte legal verificado de continuidad
+
+La [revisión de uso de fuentes](uso_legal_datos.md) corrige el borrador anterior con textos oficiales: Ley23art31 y derechosart12, Decisión351arts7/21/22a/28, Ley1712acceso y Ley1581datos personales. No certifica «uso honrado» automático, aval implícito, licencia abierta ni ausencia de infracción. Prosa propia y análisis de hechos pueden continuar con atribución/localizador y condición visible; la descarga pública y la autorización del usuario para publicar el trabajo propio no resuelven los derechos de terceros.
+
+El extracto existente corresponde a **Rionegro/Guarne/Marinilla,21perfiles/357registros**. Se conserva trazabilidad sin llamarlo «autorizado por CORNARE». Los90nuevosbasales normalizados se mantienen internos; originalesPDF/PPTX31p yZIP quedan fuera del lote. La decisión es editorial sobre recursos concretos, no reserva general de todo dato municipal ni prohibición de mencionar instituciones. El avisoB7 se verificó directamente; su alcance respecto al extracto sigue pendiente de aclaración. Ningún hash es certificado jurídico o permiso.
