@@ -1,0 +1,121 @@
+{
+  "schema": "ambiental.paquete_estudio.v1",
+  "verified_at_utc": "2026-10-07T18:33:10.211617+00:00",
+  "verified_at_bogota": "2026-10-07T13:33:10.211617-05:00",
+  "estado": "listo para estudio con límites explícitos",
+  "package_source_commit": "bc5c7f19aebde429469e06e5792544f075366289",
+  "deployment_commit_observed": "30979b858c9e9c25a8c636ef991530f737f1fefc",
+  "rama_documentos": "main",
+  "productionBranch": "main",
+  "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
+  "HTTP_exact_bytes": [
+    {
+      "url": "https://hackathon-ambiental.stevenvallejo.com/presentacion",
+      "HTTP": 200,
+      "bytes": 19052,
+      "sha256": "283bfab79477229cef6ae0d9d8ece9ee6f710cbba6b662df3497b8ae7f0e0872"
+    },
+    {
+      "url": "https://hackathon-ambiental.stevenvallejo.com/metodologia",
+      "HTTP": 200,
+      "bytes": 24785,
+      "sha256": "cbb4c5c58b522ebac2aada040b17246ff7f534c4ea489b4dc3850dbdf8542da1"
+    },
+    {
+      "url": "https://hackathon-ambiental.stevenvallejo.com/exposicion-assets/expo.css",
+      "HTTP": 200,
+      "bytes": 36533,
+      "sha256": "fd4a39526b3aac12ebdf093a475005cae8ab4ec7f6b6fb2e5e6f2a8ecee4636a"
+    },
+    {
+      "url": "https://hackathon-ambiental.stevenvallejo.com/exposicion-assets/expo.js",
+      "HTTP": 200,
+      "bytes": 37277,
+      "sha256": "da23e28ff30257489c07e6808bd33f4d787311deb27d77b0bdb8349e07428892"
+    },
+    {
+      "url": "https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf",
+      "HTTP": 200,
+      "bytes": 55370,
+      "sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e"
+    }
+  ],
+  "portada": {
+    "accesos": 3,
+    "hrefs": [
+      "/presentacion",
+      "/metodologia",
+      "/avances"
+    ],
+    "sha256": "424e607ed8a407e62a5e3fd0f4f221388646fb51d6f805f70847f38d658387c4"
+  },
+  "PDF": {
+    "archivo": "ANEXO_METODOLOGICO.pdf",
+    "paginas": 2,
+    "formato": "A4",
+    "sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
+    "alias_BORRADOR": "idéntico; no entregar un segundo PDF",
+    "inspeccion_visual": "ambas páginas: editor, publicador y Claude. Muse comprobó texto/estructura.",
+    "fuentes_finales": {
+      "entregables/p1_tablero.md": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
+      "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
+      "entregables/datos_oficiales.json": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232",
+      "entregables/p2_portafolio.md": "cc1e7a3ac605d5f1f1e9041dc1c6d42b68d2bf0d0457f7e3d3eab1dbac46428b",
+      "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
+      "entregables/p2_justificacion.md": "40db288fdb2e5846ee09ae11d7ac6fd0e265fe4ce1509161ef7ae18d9ef50e1e",
+      "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
+      "entregables/p3_riesgo_residual.md": "e38535fe5713f1345e4eea9c90fcf37c3f0f4cd901d32599f149e1be50642252",
+      "entregables/p3_riesgo_residual.csv": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
+      "entregables/variables_seguimiento.csv": "247c4cdeec3e89850a8f37d358efae90b9fed7fb0b6a62770a40a4dea4e7737d",
+      "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
+    }
+  },
+  "QA_oral": {
+    "corte": "bc5c7f19aebde429469e06e5792544f075366289",
+    "9_escenas_solo_Siguiente": "PASS",
+    "mobile_390x844": "PASS; sin overflow global y Next visible",
+    "desktop_1280x720": "PASS; texto T0 sin intersección, Next visible",
+    "desktop_1440x900": "PASS; leyenda14R y plazo visibles",
+    "SVG_dimension_no_cero": "PASS",
+    "plan": "7 bloques y7min totales; no ensayo humano realizado"
+  },
+  "software": {
+    "Presupuesto_Vivo": {
+      "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+      "consulta_anonima": "PASS",
+      "QA_produccion": 11,
+      "D6": "5000M/6",
+      "N1": "4700M/5",
+      "exportaciones": "JSON/CSV bytes exactos; recibo_presupuesto_vivo.json",
+      "administracion": "protegida"
+    },
+    "Territorio_Vivo": {
+      "url": "https://territorio-vivo-five.vercel.app/resultados",
+      "consulta_anonima": "PASS",
+      "snapshot_commit": "84b0199ff88828531bb0cf861d2d4d7cf09c5736",
+      "conteos": "21 perfiles/6 unidades D6/42 cruces",
+      "filtros_N1_municipio": "PASS",
+      "API_publica": 200,
+      "API_privadas": 401,
+      "POST_publico": 405
+    }
+  },
+  "requisitos": {
+    "IDs": 75,
+    "demostrados_alcance_limitado": 39,
+    "condicionales": 35,
+    "pendiente_F01": 1
+  },
+  "ensayo_humano": {
+    "estado": "pendiente",
+    "ventana_bogota": "14:00–16:00",
+    "bloquea_paquete_estudio": false
+  },
+  "limites": [
+    "No son75 requisitos cumplidos ni eficacia ambiental acreditada.",
+    "Consultas públicas, código y pruebas no acreditan ejecución ni beneficio causal.",
+    "Basales institucionales individuales retenidos internamente; T0 físico de sitios D6 pendiente donde se declara.",
+    "D6 es condicional y empata otras seis máximas bajo una unidad por entrada.",
+    "No se infiere licencia o aval institucional."
+  ]
+}
