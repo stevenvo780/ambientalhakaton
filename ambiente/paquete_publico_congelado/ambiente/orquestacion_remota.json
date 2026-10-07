@@ -1,0 +1,286 @@
+{
+  "verified_at_utc": "2026-10-07T14:50:20.552907+00:00",
+  "host": "ws-steven",
+  "account": "dev",
+  "policy": "Only existing project tmux sessions used for work; new remote sessions idle and excluded.",
+  "used_session": "PresupuestoVivo",
+  "used_pane": "%0",
+  "repository": "/workspace/PresupuestoVivo",
+  "audit_prompt_local": "ambiente/orquestacion_presupuesto_prompt.txt",
+  "audit_instructions_remote": "/home/dev/hackathon-ambiental-20261007/evaluaciones/instrucciones-presupuesto.txt",
+  "authorized_output": "/home/dev/hackathon-ambiental-20261007/evaluaciones/codex-presupuesto.md",
+  "audit_sent": true,
+  "audit_acknowledged": true,
+  "audit_last_observed_state": "complete_idle",
+  "audit_report_exists": true,
+  "goal_resume_requested": false,
+  "other_existing_session_observed_only": "EfectoDomio",
+  "other_repository": "/workspace/EfectoDomio",
+  "sessions_not_used_for_work": [
+    "ambiental-agy",
+    "ambiental-codex-remoto"
+  ],
+  "tmux_attach_used": false,
+  "sessions_closed": false,
+  "ctrl_c_sent": false,
+  "source_modifications_authorized": false,
+  "new_goals_created": false,
+  "new_remote_clis_started": false,
+  "connection_error": "Three independent SSH attempts timed out during banner exchange; later single multiplexed connection succeeded.",
+  "per_command_ssh_options": "-o ConnectTimeout=12 -o ControlMaster=auto -o ControlPersist=60 -o ControlPath=/tmp/ambiental-ws-steven-control",
+  "global_ssh_config_modified": false,
+  "remote_plan_sha256_matches_local": true,
+  "worktrees": [
+    {
+      "project": "presupuesto-vivo",
+      "source": "/workspace/PresupuestoVivo",
+      "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/presupuesto-vivo",
+      "head": "513b7e6872e159485e62f325bbc5ad4450a777d9",
+      "branch_mode": "detached_HEAD",
+      "source_clean_before": true,
+      "worktree_clean_after": true,
+      "dependencies": "ignored node_modules directory with links to existing same-machine packages; caches isolated",
+      "environment_files_copied": false
+    },
+    {
+      "project": "territorio-vivo",
+      "source": "/workspace/EfectoDomio",
+      "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/territorio-vivo",
+      "head": "19214fceffd89a0de9131acc90fc3fd4205d8a62",
+      "branch_mode": "detached_HEAD",
+      "source_clean_before": true,
+      "worktree_clean_after": true,
+      "dependencies": "ignored node_modules directory with links to existing same-machine packages; caches isolated",
+      "environment_files_copied": false
+    }
+  ],
+  "toolchain": {
+    "git": "git version 2.43.0",
+    "node": "v22.22.3",
+    "npm": "10.9.8"
+  },
+  "candidate_ports": [
+    {
+      "project": "presupuesto-vivo",
+      "candidate_port": 43007,
+      "available_at_verification": true,
+      "reserved": false
+    },
+    {
+      "project": "territorio-vivo",
+      "candidate_port": 43008,
+      "available_at_verification": true,
+      "reserved": false
+    }
+  ],
+  "tests": {
+    "presupuesto_vivo": {
+      "command": "npm run test:unit",
+      "passed": 419,
+      "failed": 0,
+      "exit_code": 0
+    },
+    "territorio_vivo": {
+      "command": "PRODUCTION_DATABASE_TEST=0 npm test",
+      "passed": 252,
+      "skipped": 29,
+      "failed": 0,
+      "exit_code": 0
+    }
+  },
+  "database_runtime_verified": false,
+  "production_migrations_executed": false,
+  "source_and_worktree_clean_after_tests": true,
+  "future_code_writers": "Unassigned until team deliberation; one Codex/writer per worktree and branch, with its own test database.",
+  "audit_report_bytes": 24735,
+  "audit_report_local": "ambiente/evaluaciones/codex-presupuesto.md",
+  "audit_report_sha256": "bfc03e2022025cc3b10cebc55a57a0497dc76eeba7a559c45a1cf8a1179092e0",
+  "dedicated_test_database_runtime_verified": true,
+  "original_application_runtime_end_to_end_verified": false,
+  "isolated_test_runtime": {
+    "prepared_at_utc": "2026-10-07T14:44:42.975893+00:00",
+    "host": "ws-steven",
+    "postgres_port": 55907,
+    "bind_address": "127.0.0.1",
+    "data_directory": "/home/dev/hackathon-ambiental-20261007/infra_pruebas/postgres_data",
+    "credentials_directory_private": true,
+    "production_connections_used": false,
+    "original_environment_files_copied": false,
+    "applications": [
+      {
+        "project": "presupuesto-vivo",
+        "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/presupuesto-vivo",
+        "database_name": "pv_hackathon_test",
+        "database_host": "127.0.0.1",
+        "database_port": 55907,
+        "test_name_guard_passed": true,
+        "migrations_exit_code": 0,
+        "private_test_env_file": "/home/dev/hackathon-ambiental-20261007/worktrees/presupuesto-vivo/.env.local",
+        "test_environment_generated_new": true,
+        "app_port": 43007,
+        "table_count": 28,
+        "runtime_role_safe": true,
+        "runtime_pid": 835702,
+        "http_checks": [
+          {
+            "endpoint": "http://127.0.0.1:43007/api/auth/me",
+            "method": "GET",
+            "http_status": 401
+          },
+          {
+            "endpoint": "http://127.0.0.1:43007/api/cornare",
+            "method": "GET",
+            "http_status": 401
+          }
+        ],
+        "server_process_alive": true
+      },
+      {
+        "project": "territorio-vivo",
+        "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/territorio-vivo",
+        "database_name": "territorio_hackathon_test",
+        "database_host": "127.0.0.1",
+        "database_port": 55907,
+        "test_name_guard_passed": true,
+        "migrations_exit_code": 0,
+        "private_test_env_file": "/home/dev/hackathon-ambiental-20261007/worktrees/territorio-vivo/.env.local",
+        "test_environment_generated_new": true,
+        "app_port": 43008,
+        "table_count": 49,
+        "runtime_role_safe": true,
+        "postgis_version": "3.4.2",
+        "runtime_pid": 835795,
+        "http_checks": [
+          {
+            "endpoint": "http://127.0.0.1:43008/api/auth/session",
+            "method": "GET",
+            "http_status": 200,
+            "json_response": true,
+            "json_keys": [
+              "actor",
+              "organizations"
+            ]
+          },
+          {
+            "endpoint": "http://127.0.0.1:43008/api/cornare",
+            "method": "GET",
+            "http_status": 200,
+            "json_response": true,
+            "json_keys": [
+              "schema",
+              "organization",
+              "retrievedAt",
+              "officialChallenge",
+              "dataClassification",
+              "termsURL",
+              "case",
+              "datasets",
+              "documents",
+              "stats",
+              "documentLimitations",
+              "sourcePageSHA256"
+            ]
+          }
+        ],
+        "server_process_alive": true
+      }
+    ],
+    "complete_flow_e2e_verified": false
+  },
+  "database_integration_smoke": {
+    "verified_at_utc": "2026-10-07T14:46:53.790450+00:00",
+    "integration_smoke": [
+      {
+        "project": "presupuesto-vivo",
+        "command": [
+          "node",
+          "--env-file=.env.local",
+          "node_modules/vitest/vitest.mjs",
+          "run",
+          "--config",
+          "vitest.config.ts",
+          "tests/integration/postgres.test.ts",
+          "-t",
+          "stores scrypt"
+        ],
+        "exit_code": 0,
+        "summary": [
+          "Test Files  1 passed (1)",
+          "Tests  1 passed | 32 skipped (33)",
+          "Duration  896ms (tests 49%, import 31%, transform 20%)"
+        ],
+        "test_database_guard_passed": true,
+        "private_log": "/home/dev/hackathon-ambiental-20261007/infra_pruebas/presupuesto-vivo-integration-smoke.log",
+        "browser_e2e": false
+      },
+      {
+        "project": "territorio-vivo",
+        "command": [
+          "node",
+          "--env-file=.env.local",
+          "node_modules/vitest/vitest.mjs",
+          "run",
+          "tests/production-auth.integration.test.ts"
+        ],
+        "exit_code": 0,
+        "summary": [
+          "Test Files  1 passed (1)",
+          "Tests  4 passed (4)",
+          "Duration  1.07s (tests 94%, transform 4%, import 1%)"
+        ],
+        "test_database_guard_passed": true,
+        "private_log": "/home/dev/hackathon-ambiental-20261007/infra_pruebas/territorio-vivo-integration-smoke.log",
+        "browser_e2e": false
+      }
+    ],
+    "production_used": false,
+    "frontend_e2e_run": false
+  },
+  "health_api": {
+    "verified_at_utc": "2026-10-07T14:49:21.102104+00:00",
+    "checks": [
+      {
+        "project": "presupuesto-vivo",
+        "url": "http://127.0.0.1:43007/api/health",
+        "method": "GET",
+        "http_status": 200,
+        "json_keys": [
+          "data"
+        ],
+        "safe_metadata": {
+          "status": "ok",
+          "database": "postgresql",
+          "catalogDatasets": 1
+        }
+      },
+      {
+        "project": "presupuesto-vivo",
+        "url": "http://127.0.0.1:43007/api/catalog",
+        "method": "GET",
+        "http_status": 200,
+        "json_keys": [
+          "data"
+        ],
+        "records_count": 1
+      },
+      {
+        "project": "territorio-vivo",
+        "url": "http://127.0.0.1:43008/api/health",
+        "method": "GET",
+        "http_status": 200,
+        "json_keys": [
+          "status",
+          "storage",
+          "postgis"
+        ],
+        "safe_metadata": {
+          "status": "ok",
+          "storage": "postgresql",
+          "postgis": true
+        }
+      }
+    ],
+    "authenticated_end_to_end_flow_verified": false
+  },
+  "root_role": "orchestrator_only_no_material_execution"
+}

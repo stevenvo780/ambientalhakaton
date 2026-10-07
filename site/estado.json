@@ -1,0 +1,20 @@
+{
+  "schema": "corredor-vivo.estado.v1",
+  "updated_at": "2026-10-07T15:13:24.805567+00:00",
+  "timezone": "America/Bogota",
+  "titulo": "Preparación lista · ejecución pendiente de GO",
+  "detalle": "El objetivo está redactado. Requiere la decisión explícita del usuario para comenzar la entrega ambiental.",
+  "goal_activada": false,
+  "productos_completados": false,
+  "orquestador": "Root solo delega; no ejecuta trabajo material.",
+  "source": "ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/ambiente/estado_orquestacion.json",
+  "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
+  "hitos": [
+    {"titulo":"Preparación y auditoría","estado":"demostrado_preparacion","detalle":"Plan, catálogo de costos y matriz de 75 requisitos revisados. Claude y Muse evaluaron un borrador; el delta final tuvo revisión independiente."},
+    {"titulo":"Entorno de prueba","estado":"demostrado_parcial","detalle":"Pruebas unitarias: Presupuesto Vivo 419 aprobadas; Territorio Vivo 252 aprobadas y 29 omitidas. Cinco comprobaciones de backend aprobadas; integración amplia y E2E pendientes."},
+    {"titulo":"Entrega ambiental pendiente","estado":"pendiente","detalle":"Fichas completas de escenarios, códigos MEA, eficacias justificadas, P1–P3 y pitch. Gemini local pendiente de autenticación."}
+  ],
+  "publicacion": "Este tablero consulta su estado cada 25 segundos. Los cambios publicados requieren un commit, un push y un despliegue; pueden tardar en aparecer. La conexión automática de GitHub se está preparando.",
+  "deadline": "2026-10-07T14:00:00-05:00"
+}

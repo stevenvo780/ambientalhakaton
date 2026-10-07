@@ -1,0 +1,5 @@
+# Preparación técnica comprobada
+
+Preparación lista; goal pendiente del GO explícito. Claude y Muse locales entregaron revisiones del borrador previo; Gemini local requiere autenticación. La preparación de código pasó 419 pruebas unitarias de Presupuesto y252 de Territorio (29 omitidas), más5comprobaciones backend con bases nuevas de pruebas. Las APIs de salud de ambas copias respondieron 200 con PostgreSQL/PostGIS. Estos resultados no acreditan los productos ambientales, eficacia causal, robustez completa o E2E en navegador. Producción no se utilizó.
+
+Las rutas de acceso, cuentas, configuraciones privadas y logs se conservan fuera de esta publicación. [Goal preparada](https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/goal_ejecucion.md) · [Estado de orquestación](https://github.com/stevenvo780/ambientalhakaton/blob/main/ambiente/estado_orquestacion.json).

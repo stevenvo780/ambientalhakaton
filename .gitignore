@@ -1,0 +1,56 @@
+# Entornos, perfiles y credenciales
+.codex/
+.claude/
+.muse/
+.agy/
+.env
+.env.*
+!.env.example
+auth.json
+credentials.json
+*.pem
+*.key
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+__MACOSX/
+
+# Control privado de agentes, respaldos y salidas locales
+.agentes-local/
+ambiente/historial/
+ambiente/evaluaciones_locales.json
+ambiente/orquestacion_remota.json
+ambiente/infra_aplicaciones_remotas.json
+ambiente/readiness_runtime_remoto.json
+ambiente/readiness_integracion_remota.json
+ambiente/paquete*.json
+ambiente/paquete_paths.txt
+ambiente/actualizacion_plan*.json
+ambiente/actualizacion_plan_paths.txt
+ambiente/orquestacion_presupuesto_prompt.txt
+ambiente/preparar_runtime_aislado.py
+insumos/revision/remoto/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.lock
+
+# Originales corporativos: conservados localmente, revisión pública pendiente
+*.zip
+insumos/cornare/HACKATHON RETO CORNARE.pdf
+insumos/cornare/HACKATHON RETO CORNARE.pptx
+
+# Sitio: únicamente fuentes, sin artefactos de build o estado privado Vercel
+.vercel/
+site/.vercel/
+site/node_modules/
+site/.next/
+site/dist/
+site/public/
+site/.cache/
+site/preview/
+site/*.log

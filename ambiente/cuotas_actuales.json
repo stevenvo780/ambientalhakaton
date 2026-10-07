@@ -1,0 +1,118 @@
+{
+  "machine_scope": "Kratos (ai-usage); this does not establish Fedora or ws-steven auth/quota",
+  "capturedAt": "2026-10-07T14:55:53.992Z",
+  "providers": {
+    "claude#1": {
+      "kind": "active-block",
+      "ok": false,
+      "available": false,
+      "windows": []
+    },
+    "claude#2": {
+      "kind": "active-block",
+      "ok": false,
+      "available": false,
+      "windows": []
+    },
+    "claude#3": {
+      "kind": "active-block",
+      "ok": false,
+      "available": false,
+      "windows": []
+    },
+    "codex1": {
+      "kind": "unknown",
+      "ok": false,
+      "available": false,
+      "windows": []
+    },
+    "codex200": {
+      "kind": "unknown",
+      "ok": false,
+      "available": false,
+      "windows": []
+    },
+    "gemini#1": {
+      "kind": "detected-percent",
+      "ok": true,
+      "available": true,
+      "ageSeconds": 11,
+      "observedAt": "2026-10-07T14:55:43.000Z",
+      "source": "antigravity-cli",
+      "windows": [
+        {
+          "label": "5 horas",
+          "remainingPercent": 99,
+          "resetInSeconds": 17700
+        },
+        {
+          "label": "semanal",
+          "remainingPercent": 99,
+          "resetInSeconds": 599100
+        },
+        {
+          "label": "5 horas",
+          "remainingPercent": 100,
+          "resetInSeconds": null
+        },
+        {
+          "label": "semanal",
+          "remainingPercent": 100,
+          "resetInSeconds": null
+        }
+      ]
+    },
+    "gemini#2": {
+      "kind": "detected-percent",
+      "ok": true,
+      "available": true,
+      "ageSeconds": 5,
+      "observedAt": "2026-10-07T14:55:49.000Z",
+      "source": "antigravity-cli",
+      "windows": [
+        {
+          "label": "5 horas",
+          "remainingPercent": 100,
+          "resetInSeconds": null
+        },
+        {
+          "label": "semanal",
+          "remainingPercent": 71,
+          "resetInSeconds": 451200
+        },
+        {
+          "label": "5 horas",
+          "remainingPercent": 100,
+          "resetInSeconds": null
+        },
+        {
+          "label": "semanal",
+          "remainingPercent": 100,
+          "resetInSeconds": null
+        }
+      ]
+    },
+    "minimax": {
+      "kind": "detected-percent",
+      "ok": true,
+      "available": true,
+      "ageSeconds": 14,
+      "observedAt": "2026-10-07T14:55:40.167Z",
+      "source": "minimax-api",
+      "windows": [
+        {
+          "label": "general 5h",
+          "remainingPercent": 99,
+          "status": 1,
+          "resetInSeconds": 246
+        },
+        {
+          "label": "general sem",
+          "remainingPercent": 82,
+          "status": 1,
+          "resetInSeconds": 378246
+        }
+      ]
+    }
+  }
+}

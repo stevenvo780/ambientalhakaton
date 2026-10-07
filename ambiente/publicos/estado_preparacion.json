@@ -1,0 +1,19 @@
+{
+  "schema": "ambiental-hackathon.preparacion-publica.v1",
+  "verified_at_utc": "2026-10-07T15:13:24.805567+00:00",
+  "estado": "preparacion_lista_goal_pendiente_GO",
+  "goal_activada": false,
+  "gemini_local": "pendiente_autenticacion",
+  "baseline": {
+    "presupuesto_unitarias_aprobadas": 419,
+    "territorio_unitarias_aprobadas": 252,
+    "territorio_unitarias_omitidas": 29,
+    "backend_DB_checks_aprobados": 5,
+    "health_postgresql_postgis": "200 en ambas copias de prueba",
+    "produccion_usada": false,
+    "E2E_navegador_completo": false
+  },
+  "productos_ambientales": "pendientes de GO y ejecución",
+  "limite_entrega": "14:00 Bogotá, 7/10/2026",
+  "sin_credenciales_o_rutas_operativas": true
+}

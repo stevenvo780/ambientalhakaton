@@ -1,0 +1,11 @@
+{
+  "task": "final_document_read_only_supplement",
+  "session": "PresupuestoVivo",
+  "central_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
+  "instructions_file": "/home/dev/hackathon-ambiental-20261007/evaluaciones/instrucciones-complemento-presupuesto.txt",
+  "sent": true,
+  "acknowledgment_pending": true,
+  "goals_resumed": false,
+  "sources_modifications_authorized": false,
+  "backend_tests_repetition_requested": false
+}
