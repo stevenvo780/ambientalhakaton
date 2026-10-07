@@ -1,55 +1,33 @@
 {
-  "format": "pv_jury_guide_receipt_v1",
-  "status": "FROZEN guide_and_sanitized_source_ready",
-  "generated_at_utc": "2026-10-07T18:05:18.346656+00:00",
-  "guide": {
-    "path": "guia_jurado_pv.md",
-    "sha256": "afe70d0c5a310d735cc9ba1d64c622c457b329c4e01f929dc960ca2af11024ac"
+  "schema": "ambiental.software.guia.PV.M6-2.v2",
+  "current_case": "M6-2_provisional",
+  "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+  "source_code_manifest": "pv_fuente_publica_manifest.json",
+  "guide": "guia_jurado_pv.md",
+  "guide_sha256": "2e45603239659fb3df83565bbaa6c84994af9df810ac6bdaca04bcc3b6904636",
+  "cases": {
+    "M6-2": {
+      "millones_cop": 5000,
+      "unidades": 6
+    },
+    "D6_historico": {
+      "millones_cop": 5000,
+      "unidades": 6
+    },
+    "N1": {
+      "millones_cop": 4700,
+      "unidades": 5
+    }
   },
-  "public_urls": {
-    "root": "https://presupuesto-vivo-chi.vercel.app/",
-    "case": "https://presupuesto-vivo-chi.vercel.app/hackathon",
-    "method_sources": "https://hackathon-ambiental.stevenvallejo.com/metodologia#fuentes"
+  "exports": {
+    "JSON_version": 3,
+    "CSV_columns": 13,
+    "rows": 17,
+    "legacy_imports": [
+      1,
+      2
+    ]
   },
-  "existing_QA_reused": {
-    "tested_at_utc": "2026-10-07T17:59:27.954Z",
-    "tested_at_bogota": "2026-10-07 12:59:28",
-    "status": "passed",
-    "checks": 11,
-    "receipt_sha256": "d37604dd6a89d406d7d1445d0d3ce5d623f6958b8c3ae7ca80a4e0784cf49563",
-    "json_download_sha256": "be2aad8e08f236579b350a44f61e7293ea8155aa3c08f1aad6a351119bc4bd0a",
-    "csv_download_sha256": "b7bd85eb1efd5e0e45689748ebfce3e1028b6ccf418131f098683ae4acdf4f1c",
-    "rerun": false
-  },
-  "documentary_basis": [
-    "guía cotejada a instrucciones vigentes del operador, incluida aclaración de unidad05 y capacidad institucional",
-    "QA anónima producción17:59:27.954UTC reutilizada, no repetida",
-    "P2v3.3 previamente leído como antecedente; versión vigente P2v3.6 indicada por operador, no releída ni publicación nuevamente verificada",
-    "desempate cualitativo provisional, no ranking automático"
-  ],
-  "private_paths_in_publishable_guide": false,
-  "individual_baselines_included": false,
-  "institutional_approval_claimed": false,
-  "CC_licence_claimed": false,
-  "software_or_environment_changes": false,
-  "new_tests_reviews_or_deploy": false,
-  "source_export": {
-    "patch": "pv_fuente_publica.patch",
-    "patch_sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
-    "manifest": "pv_fuente_publica_manifest.json",
-    "manifest_sha256": "0169b87e9cec1eb628ee43505c8cf43ebba6385896276337eab1e5438feafed0",
-    "runtime_files": 6,
-    "NAV_hunks": 2,
-    "requires_private_base": true
-  },
-  "finalized_at_utc": "2026-10-07T18:08:52.249979+00:00",
-  "current_source_version": {
-    "operator_indicated": "P2v3.6",
-    "reread_in_this_phase": false,
-    "publication_reverified_here": false,
-    "last_snapshot_read_in_prior_phase": "P2v3.3",
-    "guide_basis": "instrucciones vigentes del operador y QA previa; no atribuir lectura nueva de P2v3.6"
-  },
-  "final_minimal_correction": "D6 no financia unidad05 de restauración de rondas1300M; no significa InCaHIDRO-01=0 ni ausencia institucional",
-  "frozen_at_utc": "2026-10-07T18:10:09.371830+00:00"
+  "historical_guide_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+  "qa_scope": "Bundle y exportes actuales15:47; no eficacia ambiental, nueva DB ni ensayo humano."
 }

@@ -47,5 +47,24 @@
     "source_export_manifest": "tv_fuente_publica_manifest.json",
     "source_export_scope": "8 runtime públicos curados; depende de base existente. No reaplicar sobre árbol desplegado."
   },
-  "limite": "QA técnica de consulta, procedencia y exportación; no demuestra eficacia ni elegibilidad ambiental."
+  "limite": "QA técnica de consulta, procedencia y exportación; no demuestra eficacia ni elegibilidad ambiental.",
+  "codigo_publico_actual": {
+    "case": "M6-2_provisional",
+    "prepared_at_bogota": "2026-10-07T16:15:14.062244-05:00",
+    "manifest_path": "tv_fuente_publica_manifest.json",
+    "manifest_sha256": "4e85341c0cc3ff0ad533fef2ec63048bb06adae0445c5667c384dfac6a5543c7",
+    "patch_path": "tv_fuente_publica.patch",
+    "patch_sha256": "6c3bd011a67b68e0386b3c51d4d1232b773e2dd235f5def5dcddefa1dd99f2f2",
+    "runtime_files": 8,
+    "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "source_code_identity": "SHA individuales y del parche, separados del pin científico",
+    "historical_D6": {
+      "commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "patch_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/tv_fuente_publica.patch",
+      "patch_sha256": "80b0c0e21cce08d2db4433a9601458853bfbbf71c7032ec90a40586accac42e8",
+      "manifest_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/tv_fuente_publica_manifest.json",
+      "manifest_sha256": "2624ee22c502aaa678a1fb6ac5cd7272ece374e131e9111bab11f99c50556b3a"
+    },
+    "scope": "Curación/reconstrucción exacta de fuente desplegada; no nuevo despliegue ni tests de aplicaciones."
+  }
 }

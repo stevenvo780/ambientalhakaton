@@ -1,80 +1,91 @@
 {
-  "format": "pv_sanitized_public_source_patch_v1",
-  "generated_at_utc": "2026-10-07T18:08:52.249695+00:00",
-  "status": "sanitized existing source export; no new software or tests",
+  "schema": "ambiental.software.curacion.M6-2.v2",
+  "generated_at_bogota": "2026-10-07T16:11:18.365590-05:00",
+  "current_case": "M6-2_provisional",
+  "base_commit": "513b7e6872e159485e62f325bbc5ad4450a777d9",
+  "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+  "source_input_manifest_sha256": "373e3608f7af192da6310daa33bd5e56624d199119fa4539c46595864ace210c",
   "patch": {
     "path": "pv_fuente_publica.patch",
-    "sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
-    "bytes": 30647,
-    "runtime_files": 6,
-    "navigation_only_hunks": 2,
-    "total_paths": 8
-  },
-  "base": {
-    "commit": "513b7e6872e159485e62f325bbc5ad4450a777d9",
-    "requires_private_base": true,
-    "self_contained_repository": false,
-    "deployment_dependencies_copied": false,
-    "deployment_project": "presupuesto-vivo",
-    "framework": "nextjs",
-    "rootDirectory": null
-  },
-  "public_urls": {
-    "root": "https://presupuesto-vivo-chi.vercel.app/",
-    "case": "https://presupuesto-vivo-chi.vercel.app/hackathon",
-    "method_sources": "https://hackathon-ambiental.stevenvallejo.com/metodologia#fuentes"
+    "sha256": "0a0cbd89971f9186efef8d6efd8a2252c34cb32f32be4833874d383966421907",
+    "bytes": 39214,
+    "runtime_files": 7,
+    "navigation_only_hunks": 2
   },
   "runtime_files": [
     {
       "path": "app/page.tsx",
-      "operation": "modify",
       "sha256": "7e7ae400d6ae6088f0d1430ee2fb9a563c8cc7425233994af71088e21a8c4d7c",
-      "base_sha256": "ea03288859c3777df7473aab3bc0fd470d2d34d323b66b0406a8a799f404c274",
       "bytes": 105,
-      "scope": "own runtime only; no individual baselines"
+      "operation": "modify"
     },
     {
       "path": "app/hackathon/page.tsx",
-      "operation": "add",
       "sha256": "4034bc97b1ecf8605d1b8342154896c49537aca1c0ed1a2b55412a2227705159",
-      "base_sha256": null,
       "bytes": 126,
-      "scope": "own runtime only; no individual baselines"
+      "operation": "add"
     },
     {
       "path": "src/platform/p2_motor_demo.tsx",
-      "operation": "add",
-      "sha256": "f342b879888653fa9d4d9fab5ea1432ade84ed1189dd35bde1471a9f170352ee",
-      "base_sha256": null,
-      "bytes": 9428,
-      "scope": "own runtime only; no individual baselines"
+      "sha256": "5a0982df5f01247552498f9b1754165132362de07da7661283f527c5d7216fbd",
+      "bytes": 10532,
+      "operation": "add"
     },
     {
       "path": "src/hackathon/p2_motor_carteras.ts",
-      "operation": "add",
-      "sha256": "1d23f0bb6b8fd140d8bb19c1078849f1c7780b75b7f6de230c3475c049d8d107",
-      "base_sha256": null,
-      "bytes": 14284,
-      "scope": "own runtime only; no individual baselines"
+      "sha256": "2449db7bf6059bd513f79740e900b07e7cfdfe58a1ed6ecf359a12995acaa20c",
+      "bytes": 16340,
+      "operation": "add"
     },
     {
       "path": "src/hackathon/p2_motor_catalogo.json",
-      "operation": "add",
       "sha256": "74e22bf3e092b54486a956a1a9d08afb053453ea5eb280131e6591f68387b623",
-      "base_sha256": null,
       "bytes": 4023,
-      "scope": "own runtime only; no individual baselines"
+      "operation": "add"
     },
     {
       "path": "src/hackathon/p2_motor_demo.css",
-      "operation": "add",
       "sha256": "ba60efe1ad64c3da54e433bfbe4acfb55d20260cf97e15c2704090826c48b84e",
-      "base_sha256": null,
       "bytes": 767,
-      "scope": "own runtime only; no individual baselines"
+      "operation": "add"
+    },
+    {
+      "path": "src/hackathon/pv_m62_snapshot.json",
+      "sha256": "4287050ef83b4ccc26bd8e42ce4748563486280f230c29211c0467b85f90dc41",
+      "bytes": 5094,
+      "operation": "add"
     }
   ],
-  "navigation_diff_only": [
+  "source_code_separate_from_data_pin": true,
+  "requires_compatible_private_base": true,
+  "self_contained_repository": false,
+  "historical_D6": {
+    "commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "patch_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/pv_fuente_publica.patch",
+    "patch_sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
+    "manifest_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/pv_fuente_publica_manifest.json",
+    "manifest_sha256": "0169b87e9cec1eb628ee43505c8cf43ebba6385896276337eab1e5438feafed0"
+  },
+  "excluded": [
+    "tests",
+    "guardas y autenticación completas",
+    "DB/configuración/credenciales",
+    "base completa",
+    "logs y rutas privadas",
+    "basales individuales retenidos"
+  ],
+  "checks": {
+    "source_hash_allowlist": true,
+    "new_app_tests": false,
+    "redeploy_apps": false,
+    "reconstruction_exact_hashes_PASS": true
+  },
+  "limits": [
+    "Fuente curada del módulo público existente; no repositorio autónomo.",
+    "Sin licencia o aval institucional inferidos.",
+    "Sin eficacia ambiental, ejecución, elegibilidad o ganador global certificados."
+  ],
+  "navigation_only_hunks": [
     {
       "path": "src/platform/Shell.tsx",
       "scope": "navigation insertion only, zero context; no complete file or guards",
@@ -146,49 +157,14 @@
       "included": false
     }
   ],
-  "source_basis": {
-    "existing_full_publisher_patch_sha256": "f13c928522b0e5ee5f078e268101e3eeac6c9e90c55f6691f698faa9f8ade5c9",
-    "current_sources_match_frozen_source_hashes": true,
-    "existing_navigation_hashes_preserved": true,
-    "generation": "explicit six-file allowlist; NAV additions verified against exact allowed link lines; zero context to exclude guard/auth code",
-    "patch_is_against_BASE_not_deployed_tree": true,
-    "note": "source export only; publisher already applied full patch plus navigation. Do not reapply additions blindly to deployed tree."
+  "production_qa": {
+    "at_bogota": "2026-10-07T15:47:00-05:00",
+    "scope": "GET/guardas y handlers JSONv3/CSV13 del bundle publicado iguales a fuente; sin nueva prueba de apps."
   },
-  "licence": {
-    "declared_by_this_export": null,
-    "CC_licence_inferred": false,
-    "CORNARE_approval_inferred": false,
-    "note": "No licence or redistribution authorization is established by this curation. Depends on private base; source references do not grant institutional approval."
-  },
-  "excluded": [
-    "complete repository or private base files",
-    "tests/scripts/oracles/fixtures",
-    "private route implementations",
-    "complete AuthForm/Shell files or guard/auth code",
-    ".env/auth/config credentials",
-    "DB/API/server/production implementations",
-    "node_modules/dependency files contents",
-    "individual baselines/internal snapshots",
-    "private receipts/documents"
-  ],
-  "limitations": [
-    "financial official-price case; no measured efficacy or environmental winner",
-    "public CSV13 has no explicit fingerprint/version; not scientific CSV29",
-    "JSONv1/v2 and municipal14proposal preserved as currentsource; sourcecuration doesnotrevalidate behavior",
-    "dependent on10 baseprerequisites; no autonomous app claimed"
-  ],
-  "checks": {
-    "textual_allowlist_and_hash_curation_only": true,
-    "new_runtime_tests": false,
-    "QA11_rerun": false,
-    "new_reviews": false,
-    "sources_or_frozen_artifacts_modified": false,
-    "Git_mutations_or_deploy": false,
-    "absolute_workspace_paths_in_patch_or_manifest": false
-  },
+  "public_url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+  "apply_check_flag": "--unidiff-zero",
   "guide": {
     "path": "guia_jurado_pv.md",
-    "sha256": "afe70d0c5a310d735cc9ba1d64c622c457b329c4e01f929dc960ca2af11024ac"
-  },
-  "frozen_at_utc": "2026-10-07T18:10:09.371830+00:00"
+    "sha256": "2e45603239659fb3df83565bbaa6c84994af9df810ac6bdaca04bcc3b6904636"
+  }
 }

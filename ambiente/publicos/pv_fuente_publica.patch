@@ -21,12 +21,12 @@ diff --git a/src/platform/p2_motor_demo.tsx b/src/platform/p2_motor_demo.tsx
 new file mode 100644
 --- /dev/null
 +++ b/src/platform/p2_motor_demo.tsx
-@@ -0,0 +1,146 @@
+@@ -0,0 +1,151 @@
 +"use client";
 +import Link from "next/link";
 +import { useMemo, useState, type ChangeEvent } from "react";
 +import {
-+  BUDGET_COP, CATALOG, DEFAULT_PORTFOLIOS, compareCatalogue, evaluatePortfolio,
++  BUDGET_COP, CATALOG, DEFAULT_PORTFOLIOS, CASE_SNAPSHOT, compareCatalogue, evaluatePortfolio,
 +  exportPortfoliosJson, importPortfoliosJson, exportPortfoliosCsv, importPortfoliosCsv,
 +  scopeCondition,
 +  type Portfolio,
@@ -52,6 +52,7 @@ new file mode 100644
 +  const comparison = useMemo(() => compareCatalogue(), []);
 +  const catalog = useMemo(() => new Map(CATALOG.map(entry => [entry.id, entry])), []);
 +  const evaluated = portfolios.map(portfolio => ({ portfolio, result: evaluatePortfolio(portfolio) }));
++  const hasPrincipal = portfolios.some(p => p.id === "M6-2");
 +  const hasAny14 = portfolios.some(p => p.units.some(u => u.catalogue_id === "RETO-14"));
 +  const hasLegacy14 = portfolios.some(p => p.units.some(u => u.catalogue_id === "RETO-14" && u.scope_hypothesis !== "municipal_rionegro_proposed"));
 +
@@ -70,8 +71,8 @@ new file mode 100644
 +      imported.forEach(evaluatePortfolio);
 +      setPortfolios(imported);
 +      const legacy = imported.some(p => p.units.some(u => u.catalogue_id === "RETO-14" && u.scope_hypothesis !== "municipal_rionegro_proposed"));
-+      setMessage(legacy ? "Dos carteras importadas. RETO-14 conserva la hipótesis anterior, sin alcance aprobado; no se reasignó a Rionegro ni se añadió plazo."
-+        : "Dos carteras importadas y costos recalculados con el catálogo oficial.");
++      setMessage(legacy ? "Casos importados. RETO-14 conserva la hipótesis anterior, sin alcance aprobado; no se reasignó a Rionegro ni se añadió plazo."
++        : "Casos importados y costos recalculados con el catálogo oficial.");
 +    } catch (cause) {
 +      setError(cause instanceof Error ? cause.message : "No se pudo validar el archivo.");
 +    }
@@ -83,13 +84,14 @@ new file mode 100644
 +        <div>
 +          <Link href="/">◈ Presupuesto Vivo · Consulta pública</Link>
 +          <p className="eyebrow">CORNARE · RIONEGRO / GUARNE / MARINILLA</p>
-+          <h1>Dos carteras, un presupuesto</h1>
++          <h1>{hasPrincipal ? "Tres carteras, un presupuesto" : "Legado D6 y N1, un presupuesto"}</h1>
 +          <p className="muted small">Consulta y exportación financiera abiertas, sin cuenta. La administración de proyectos requiere iniciar sesión.</p>
 +          <p>{!hasAny14
 +            ? "Comparación de carteras importadas sin RETO-14; no se atribuye alcance municipal ni plazo a una medida ausente."
 +            : hasLegacy14
 +            ? "Comparación de hipótesis importadas: RETO-14 conserva su alcance anterior no aprobado, sin reasignación municipal ni plazo añadido."
-+            : "Base provisional D6 y alternativa N1. RETO-14: una unidad municipal propuesta para Rionegro, 12 meses desde el acta de inicio. Comparación financiera con costos completos del reto."}</p>
++            : hasPrincipal ? "M6-2 principal PROVISIONAL; D6 comparador histórico y N1 comparador. RETO-14: una unidad municipal propuesta para Rionegro, 12 meses desde el acta de inicio. Comparación financiera con costos completos del reto."
++            : "Legado D6/N1 importado, sin añadir M6-2. RETO-14 conserva su unidad municipal propuesta para Rionegro, 12 meses desde el acta de inicio."}</p>
 +        </div>
 +      </header>
 +
@@ -115,12 +117,12 @@ new file mode 100644
 +        <div className="p2-motor-actions">
 +          <button onClick={() => download(exportPortfoliosJson(portfolios), "json")}>Exportar carteras JSON</button>
 +          <button className="secondary" onClick={() => download(exportPortfoliosCsv(portfolios), "csv")}>Exportar carteras CSV</button>
-+          <button className="secondary" onClick={() => { setPortfolios(DEFAULT_PORTFOLIOS); setError(""); setMessage("Base provisional D6 y alternativa N1 restauradas."); }}>Restaurar D6 y N1</button>
++          <button className="secondary" onClick={() => { setPortfolios(DEFAULT_PORTFOLIOS); setError(""); setMessage("M6-2 principal, D6 histórico y N1 restaurados."); }}>Restaurar M6-2, D6 y N1</button>
 +        </div>
-+        <label className="p2-motor-import">Importar dos carteras JSON o CSV
++        <label className="p2-motor-import">Importar tres casos o legado D6/N1 JSON o CSV
 +          <input type="file" accept=".json,.csv,application/json,text/csv" onChange={importFile} />
 +        </label>
-+        <p className="muted small">La importación abre una comparación local. Exporte el archivo para conservarla; al recargar se vuelve a D6 y N1.</p>
++        <p className="muted small">La importación abre una comparación local. Exporte el archivo para conservarla; al recargar se vuelve a M6-2, D6 histórico y N1.</p>
 +        {message && <p className="notice success" role="status">{message}</p>}
 +        {error && <p className="notice error" role="alert">{error}</p>}
 +      </section>
@@ -136,10 +138,12 @@ new file mode 100644
 +                return <tr key={unit.id}>
 +                  <td><strong>{entry.id}</strong><p>{entry.measure}</p><small>{entry.dimension}</small></td>
 +                  <td>{entry.functional_unit}<p className="muted">Cantidad: 1 · Cupo condicional</p>
++                    {entry.id === "RETO-01" && unit.duration_months === 36 && <p>UNA unidad territorial · 36 meses completos · municipios propuestos indicados; sin predios ni contrato aprobados.</p>}
++                    {entry.id === "RETO-15" && <p>Localización PROPUESTA · factor de gestión por concretar; código MEA no verificado.</p>}
 +                    {entry.id === "RETO-14" && <p><strong>{scopeCondition(unit)}.</strong></p>}
 +                  </td>
 +                  <td>{number(entry.cost_cop / 1_000_000)}</td>
-+                  <td>{unit.municipalities.length ? unit.municipalities.map(code => municipalities[code]).join(", ") : "Asignación pendiente"}</td>
++                  <td>{unit.municipalities.length ? unit.municipalities.map(code => municipalities[code]).join(", ") : "Asignación pendiente"}{portfolio.id === "M6-2" && unit.catalogue_id === "RETO-01" && <p>Prioridad territorial propuesta; no predios asignados.</p>}</td>
 +                </tr>;
 +              })}
 +            </Table>
@@ -156,11 +160,12 @@ new file mode 100644
 +            {comparison.maximum_candidates.map(candidate => <tr key={candidate.ids.join("-")}><td>{candidate.ids.join(" / ")}</td><td>{number(candidate.cost_cop / 1_000_000)}</td><td>{number(candidate.balance_cop / 1_000_000)}</td></tr>)}
 +          </Table>
 +        </details>
-+        <p className="muted small">El máximo depende de la hipótesis de una unidad por fila; no establece un máximo ambiental. No hay ranking por eficacia ni una recomendación automática entre D6 y N1.</p>
++        <p className="muted small">El máximo depende de la hipótesis de una unidad por fila; no establece un máximo ambiental. No hay ranking por eficacia ni un ganador automático. M6-2 es la principal PROVISIONAL por decisión documental; D6 es histórico y N1 comparador.</p>
 +      </section>
 +
 +      <footer className="card">
 +        <strong>Fuente y límites</strong>
++        <p>{CASE_SNAPSHOT.source_commit ? `Fuente publicada: commit ${CASE_SNAPSHOT.source_commit}` : "Fuente: staging congelado por SHA; commit real de publicación pendiente."} · {CASE_SNAPSHOT.version}</p>
 +        <p>RETO CLIMATE WEEK HACKATHON.pdf, páginas 4–5; 15 filas con precio. IDs RETO locales, sin equivalencia automática a códigos MEA. PSA: programa íntegro de tres años, COP 1.200 millones. Restauración: unidad integral de aproximadamente 100 ha, COP 1.500 millones.</p>
 +        <p className="muted small">Las condiciones territoriales, la elegibilidad y el contraste ambiental acompañan la decisión documental del equipo. La comparación conserva sus faltantes.</p>
 +        <Link href="/login">Administrar proyectos (requiere iniciar sesión)</Link>
@@ -172,9 +177,11 @@ diff --git a/src/hackathon/p2_motor_carteras.ts b/src/hackathon/p2_motor_cartera
 new file mode 100644
 --- /dev/null
 +++ b/src/hackathon/p2_motor_carteras.ts
-@@ -0,0 +1,215 @@
+@@ -0,0 +1,239 @@
 +import Papa from "papaparse";
 +import catalogue from "./p2_motor_catalogo.json";
++import snapshot from "./pv_m62_snapshot.json";
++export const CASE_SNAPSHOT = snapshot;
 +
 +/** Comparación presupuestal del caso oficial; independiente del optimizador productivo. */
 +export const CATALOG = Object.freeze(catalogue.map((row) => Object.freeze({ ...row })));
@@ -204,7 +211,7 @@ new file mode 100644
 +  quantity: number;
 +  municipalities: string[];
 +  scope_hypothesis?: Scope14;
-+  duration_months?: 12 | null;
++  duration_months?: 12 | 36 | null;
 +  start_basis?: "acta_inicio" | null;
 +};
 +export type Portfolio = { id: string; name: string; units: Unit[] };
@@ -219,10 +226,22 @@ new file mode 100644
 +  }) };
 +}
 +
-+export const DEFAULT_PORTFOLIOS: Portfolio[] = [
++export const LEGACY_PORTFOLIOS: Portfolio[] = [
 +  defaultPortfolio("D6", "BASE PROVISIONAL D6", [3, 4, 7, 8, 9, 14]),
 +  defaultPortfolio("N1", "N1", [1, 3, 4, 5, 14]),
 +];
++
++export const DEFAULT_PORTFOLIOS: Portfolio[] = [
++  defaultPortfolio("M6-2", "M6-2 · PRINCIPAL PROVISIONAL", [1, 3, 4, 8, 14, 15]),
++  { ...LEGACY_PORTFOLIOS[0], name: "D6 · COMPARADOR HISTÓRICO" },
++  { ...LEGACY_PORTFOLIOS[1], name: "N1 · COMPARADOR" },
++];
++for (const unit of DEFAULT_PORTFOLIOS[0].units) {
++  if (["RETO-01", "RETO-03", "RETO-04"].includes(unit.catalogue_id)) unit.municipalities = ["05615", "05440"];
++  if (unit.catalogue_id === "RETO-08") unit.municipalities = ["05318"];
++  if (unit.catalogue_id === "RETO-15") unit.municipalities = ["05440"];
++  if (unit.catalogue_id === "RETO-01") unit.duration_months = 36;
++}
 +
 +function fail(message: string): never { throw new Error(message); }
 +function object(value: unknown, keys: string[], context: string): Record<string, unknown> {
@@ -241,6 +260,8 @@ new file mode 100644
 +  if (enriched) keys.push("cost_cop", "functional_unit", "eligibility");
 +  const hasScope = !!value && typeof value === "object" && Object.hasOwn(value, "scope_hypothesis");
 +  if (hasScope) keys.push("scope_hypothesis", "duration_months", "start_basis");
++  const hasPsaDuration = !!value && typeof value === "object" && !hasScope && (value as Record<string, unknown>).catalogue_id === "RETO-01" && Object.hasOwn(value, "duration_months");
++  if (hasPsaDuration) keys.push("duration_months");
 +  const row = object(value, keys, "Unidad");
 +  const id = text(row.id, "Unidad.id", true);
 +  const catalogue_id = text(row.catalogue_id, "catalogue_id", true);
@@ -261,6 +282,7 @@ new file mode 100644
 +    if (hasScope && (row.duration_months !== valid.duration_months || row.start_basis !== valid.start_basis)) fail("Plazo RETO-14 propuesto o base de inicio incompatibles");
 +    if (hypothesis === "municipal_rionegro_proposed" && (valid.municipalities.length !== 1 || valid.municipalities[0] !== "05615")) fail("La propuesta municipal RETO-14 corresponde solo a Rionegro 05615");
 +  } else if (hasScope) fail("La hipótesis de alcance RETO-14 no se aplica a otra medida");
++  if (hasPsaDuration) { if (row.duration_months !== 36) fail("PSA exige el programa completo de 36 meses"); valid.duration_months = 36; }
 +  const legacyEligibility = !hasScope && (row.eligibility === ELIGIBILITY
 +    || (catalogue_id === "RETO-14" && row.eligibility === `${ELIGIBILITY}. ${RETO14_REGIONAL_CONDITION}`));
 +  if (enriched && (row.cost_cop !== entry.cost_cop || row.functional_unit !== entry.functional_unit
@@ -277,9 +299,10 @@ new file mode 100644
 +  return { id, name, units };
 +}
 +function validatePair(values: unknown, enriched = false): Portfolio[] {
-+  if (!Array.isArray(values) || values.length !== 2) fail("Se requieren las dos carteras D6 y N1");
++  if (!Array.isArray(values) || ![2, 3].includes(values.length)) fail("Se requieren legado D6/N1 o tres casos M6-2/D6/N1");
 +  const portfolios = values.map((value) => validatePortfolio(value, enriched));
-+  if (new Set(portfolios.map((p) => p.id)).size !== 2 || !portfolios.some((p) => p.id === "D6") || !portfolios.some((p) => p.id === "N1")) fail("Se requieren los identificadores D6 y N1");
++  const required = values.length === 3 ? ["M6-2", "D6", "N1"] : ["D6", "N1"];
++  if (new Set(portfolios.map(p => p.id)).size !== required.length || required.some(id => !portfolios.some(p => p.id === id))) fail("Identificadores de casos incompletos o repetidos");
 +  return portfolios;
 +}
 +
@@ -311,7 +334,7 @@ new file mode 100644
 +
 +export function exportPortfoliosJson(portfolios: Portfolio[]): string {
 +  const valid = validatePair(portfolios);
-+  return JSON.stringify({ format: FORMAT, source_sha256: SOURCE_SHA256, source_page: 5,
++  return JSON.stringify({ format: valid.length === 3 ? "p2_motor_demo_v3" : FORMAT, ...(valid.length === 3 ? { case_snapshot: CASE_SNAPSHOT } : {}), source_sha256: SOURCE_SHA256, source_page: 5,
 +    budget_cop: BUDGET_COP, counting_assumption: COUNTING_ASSUMPTION, eligibility: ELIGIBILITY,
 +    portfolios: valid.map((p) => ({ ...p, units: p.units.map((u) => ({ ...u,
 +      cost_cop: byId.get(u.catalogue_id)!.cost_cop,
@@ -352,9 +375,13 @@ new file mode 100644
 +  let parsed: unknown;
 +  try { parsed = JSON.parse(input); } catch { return fail("JSON inválido"); }
 +  rejectDuplicateJsonKeys(input);
-+  const doc = object(parsed, ["format", "source_sha256", "source_page", "budget_cop", "counting_assumption", "eligibility", "portfolios"], "Documento");
-+  if (![FORMAT, "p2_motor_demo_v1"].includes(doc.format as string) || doc.source_sha256 !== SOURCE_SHA256 || doc.source_page !== 5 || doc.budget_cop !== BUDGET_COP || doc.counting_assumption !== COUNTING_ASSUMPTION || doc.eligibility !== ELIGIBILITY) fail("Formato, fuente, presupuesto o condiciones no corresponden a esta demo");
-+  return validatePair(doc.portfolios, true);
++  const isCurrent = !!parsed && typeof parsed === "object" && (parsed as Record<string, unknown>).format === "p2_motor_demo_v3";
++  const doc = object(parsed, ["format", "source_sha256", "source_page", "budget_cop", "counting_assumption", "eligibility", "portfolios", ...(isCurrent ? ["case_snapshot"] : [])], "Documento");
++  if (isCurrent && JSON.stringify(doc.case_snapshot) !== JSON.stringify(CASE_SNAPSHOT)) fail("Snapshot de casos no corresponde a esta versión publicada");
++  if (![FORMAT, "p2_motor_demo_v1", "p2_motor_demo_v3"].includes(doc.format as string) || doc.source_sha256 !== SOURCE_SHA256 || doc.source_page !== 5 || doc.budget_cop !== BUDGET_COP || doc.counting_assumption !== COUNTING_ASSUMPTION || doc.eligibility !== ELIGIBILITY) fail("Formato, fuente, presupuesto o condiciones no corresponden a esta demo");
++  const cases = validatePair(doc.portfolios, true);
++  if ((cases.length === 3) !== isCurrent) fail("Versión no corresponde al conjunto de casos");
++  return cases;
 +}
 +
 +const CSV_HEADER = ["cartera_id", "cartera_nombre", "id", "unidad_funcional_id", "catalogo_id", "cantidad", "municipios", "costo_cop", "unidad_funcional", "elegibilidad"];
@@ -378,11 +405,13 @@ new file mode 100644
 +    let portfolio = portfolios.get(portfolioId);
 +    if (!portfolio) { portfolio = { id: portfolioId, name, units: [] }; portfolios.set(portfolioId, portfolio); }
 +    if (portfolio.name !== name) fail("CSV: nombres inconsistentes para la misma cartera");
-+    if (v2 && catalogueId !== "RETO-14" && (scope !== "" || duration !== "" || start !== "")) fail("CSV: alcance RETO-14 en otra medida");
++    if (v2 && catalogueId === "RETO-01" && (scope !== "" || start !== "" || !["", "36"].includes(duration))) fail("CSV: PSA exige 36 meses completos sin inicio inventado");
++    if (v2 && !["RETO-14", "RETO-01"].includes(catalogueId) && (scope !== "" || duration !== "" || start !== "")) fail("CSV: alcance RETO-14 en otra medida");
 +    if (v2 && catalogueId === "RETO-14" && (!scope || !["", "12"].includes(duration))) fail("CSV: alcance o plazo RETO-14 inválido");
 +    portfolio.units.push({ id, functional_unit_id: functionalId, catalogue_id: catalogueId, quantity: 1,
 +      municipalities: municipalities === "" ? [] : municipalities.split("|"), cost_cop: Number(cost),
 +      functional_unit: functionalUnit, eligibility,
++      ...(v2 && catalogueId === "RETO-01" && duration === "36" ? { duration_months: 36 } : {}),
 +      ...(v2 && catalogueId === "RETO-14" ? { scope_hypothesis: scope, duration_months: duration === "" ? null : Number(duration), start_basis: start === "" ? null : start } : {}),
 +    });
 +  }
@@ -521,6 +550,116 @@ new file mode 100644
 +}
 +@media (max-width: 600px) {
 +  .p2-motor-demo table { min-width: 560px; }
++}
+diff --git a/src/hackathon/pv_m62_snapshot.json b/src/hackathon/pv_m62_snapshot.json
+new file mode 100644
+--- /dev/null
++++ b/src/hackathon/pv_m62_snapshot.json
+@@ -0,0 +1,105 @@
++{
++  "version": "POST14_M6-2_P2v3.8_P3v8.3",
++  "source_manifest_sha256": "373e3608f7af192da6310daa33bd5e56624d199119fa4539c46595864ace210c",
++  "source_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
++  "publication_status": "published_main_commit_pinned",
++  "principal": "M6-2",
++  "roles": {
++    "M6-2": "PRINCIPAL PROVISIONAL",
++    "D6": "COMPARADOR HISTÓRICO",
++    "N1": "COMPARADOR"
++  },
++  "source_files": [
++    {
++      "path": "entregables/p2_portafolio.md",
++      "sha256": "af55925fadeeb7cef465e0d8a3993a0b21081e50e9340729c326d85d5c187e55"
++    },
++    {
++      "path": "entregables/p2_portafolio.csv",
++      "raw_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/entregables/p2_portafolio.csv",
++      "sha256": "63340d6fa57e48045e2786ee502861f543acb6b34be5767995397ddb21cab11b"
++    },
++    {
++      "path": "entregables/p2_justificacion.md",
++      "sha256": "63734229fd62c217e90db62c274b39a0183602bda676de2eaa1b627b07a9ed61"
++    },
++    {
++      "path": "entregables/comparacion_incremental_carteras.md",
++      "sha256": "6490118457cc9ab8d83fa6ff8768adea9c2c2080c7a118c71d35fa01ab60e470"
++    },
++    {
++      "path": "entregables/p2_comparacion_financiera.md",
++      "sha256": "7ac9d9ad87ab2b008d9e94b893536fedfec60ab02ae4a1a31fb8d3f4fe3a7d54"
++    },
++    {
++      "path": "entregables/p1_tablero.csv",
++      "raw_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/entregables/p1_tablero.csv",
++      "sha256": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6"
++    },
++    {
++      "path": "entregables/p3_riesgo_residual.md",
++      "sha256": "edcef4a66b599486efff2c3052317ebb18c8ad146944804a326424cf6bc71124"
++    },
++    {
++      "path": "entregables/p3_riesgo_residual.csv",
++      "raw_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/entregables/p3_riesgo_residual.csv",
++      "sha256": "eb0c9933c7fde4b2296ec52fb0f255164e855f2fbef0615dcf91008575d8e2c6"
++    },
++    {
++      "path": "entregables/variables_seguimiento.csv",
++      "sha256": "d03c83b1b314c6821b949d728e021e4ab32627078c25d3723e4c7c16a9bdc592"
++    }
++  ],
++  "source_row_counts": {
++    "P1": 21,
++    "P2": 6,
++    "P3": 42,
++    "variables": 34,
++    "BASEPRIMARIA": 14,
++    "PROP_AUX": 20
++  },
++  "principal_units": [
++    {
++      "catalogue_id": "RETO-01",
++      "public_measure": "Instrumentos de compensación y Pago por Servicios Ambientales — PSA",
++      "territorial_proposal": "Una unidad territorial; prioridad Rionegro–Marinilla; predios por identificar",
++      "proposed_functional_unit": "Programa territorial de conservación/restauración de áreas estratégicas durante 3 años; UNA unidad territorial prioritaria Rionegro–Marinilla, sitios por identificar",
++      "duration_statement": "36; duración oficial3años de la unidad, no fraccionada"
++    },
++    {
++      "catalogue_id": "RETO-03",
++      "public_measure": "Fortalecimiento de sistemas de áreas protegidas",
++      "territorial_proposal": "Corredor; prioridad Rionegro–Marinilla; una unidad compartida",
++      "proposed_functional_unit": "Identificación, gestión, acuerdos, conectividad y fortalecimiento en el corredor",
++      "duration_statement": "NA; no definido aquí"
++    },
++    {
++      "catalogue_id": "RETO-04",
++      "public_measure": "Uso intersectorial eficiente del recurso hídrico",
++      "territorial_proposal": "Una unidad compartida; prioridad Marinilla–Rionegro; usuarios/cobertura por verificar",
++      "proposed_functional_unit": "Programa para grandes usuarios: diagnóstico, medición, eficiencia, reúso y seguimiento",
++      "duration_statement": "NA; no definido aquí"
++    },
++    {
++      "catalogue_id": "RETO-08",
++      "public_measure": "Producción agroecológica y economía rural resiliente",
++      "territorial_proposal": "Guarne; cobertura por verificar",
++      "proposed_functional_unit": "Programa de asistencia técnica, manejo de suelo/agua, asociatividad y adaptación productiva",
++      "duration_statement": "NA; no definido aquí"
++    },
++    {
++      "catalogue_id": "RETO-14",
++      "public_measure": "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático",
++      "territorial_proposal": "Rionegro; una unidad municipal completa PROPUESTA",
++      "proposed_functional_unit": "Una unidadmunicipalcompletaRionegro conocimiento/comunicación/instrumentaciónbásica/protocolos/seguimiento durante12mesesoperativospropuestos",
++      "duration_statement": "12; desdeactainiciofuturaacordada, nofecha2026presupuesta"
++    },
++    {
++      "catalogue_id": "RETO-15",
++      "public_measure": "Sistema de salud y entornos saludables resilientes al clima",
++      "territorial_proposal": "Marinilla; programa municipal propuesto, cobertura por definir",
++      "proposed_functional_unit": "Vigilancia climato-sensible, capacidades institucionales, prevención y respuesta; una unidad municipal Marinilla, factor de gestión por concretar",
++      "duration_statement": "NA; no definido aquí"
++    }
++  ]
 +}
 diff --git a/src/platform/Shell.tsx b/src/platform/Shell.tsx
 --- a/src/platform/Shell.tsx

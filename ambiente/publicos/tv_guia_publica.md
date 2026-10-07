@@ -1,23 +1,11 @@
-# Módulo público de resultados · Territorio Vivo
+# Territorio Vivo · consulta M6-2 POST14
 
-Este paquete conserva ocho archivos del módulo que funciona en la [consulta pública](https://territorio-vivo-five.vercel.app/resultados). Contiene parche curado y manifiesto de bytes. No crea una aplicación distinta ni vuelve a desplegar.
+Abra [los resultados públicos](https://territorio-vivo-five.vercel.app/resultados), sin sesión. La vista actual está fijada al commit científico3cc: **21 perfiles P1,6 unidades M6-2,42cruces documentales M6-2/N1 y34variables**, con **14MEA institucionales primarias y20PROP auxiliares**. Los cuatro CSV enlazados son inmutables y sus SHA están en el snapshot. La versión del código usa SHA propios; no cambie el pin de datos a cada nuevo HEAD visual.
 
-La versión adoptada usa base 19214fceffd89a0de9131acc90fc3fd4205d8a62 y patch completo SHA256 d1983b9f4fe1cf3f58039001e314b3968daebe95f2dc2fbcb2aa317e4510e0de. El parche curado es un subconjunto: conserva landing y rutas públicas, interfaz, estilos, lector estático y snapshot. Omite pantallas de autenticación, enlaces complementarios en documentación, configuración de despliegue y pruebas. No reproduce por sí solo todo el despliegue.
+Seleccione municipio y cartera para consultar diagnóstico, fuentes y residual cualitativo. M6-2 es principal provisional; N1 es comparador. PSA01 es una unidad de36meses con prioridadR/M y sitios/acuerdos pendientes;14se propone sólo enRionegro por600M/12meses desde futura acta. Salud15Marinilla no tiene códigoMEA verificado ni efecto clínico acreditado. Los42cruces no son cobertura financiada ni mediciones ejecutadas. Los20PROP conservan sus unidades operativas; la representación SIIVRA0–1 no convierte las unidades originales de los14códigos institucionales.
 
-## Contenido y dependencias
+La QA independiente de producción15:50:06 comprobó página/API/bundle,21/6/42/34 y paridad con los cuatro CSV del pin3cc; las rutas privadas devolvieron401 y no hubo cookies. La única expectativa obsoleta de URL de variables se corrigió; el archivo existente de pruebas pasó4/4 a15:50:15. Esta curación no repitió pruebas de apps ni DB ni desplegó de nuevo.
 
-/resultados consulta un snapshot público estático, sin sesión, organización o DB. /metodologia dirige a /resultados#metodologia; /api/public/resultados sólo implementa GET. Los filtros por municipio y cartera cambian diagnósticos y residuales; la cartera financiera mostrada es D6. Reutiliza RootLayout y dependencias existentes de la base: Node22, Next16.4, React19.3, lucide-react y estilos comunes. No incluye la base completa ni credenciales.
+El [parche curado](tv_fuente_publica.patch) y [manifiesto](tv_fuente_publica_manifest.json) conservan **8 runtime públicos**: landing, rutas de resultados/metodología/API GET, lector estático, snapshot, CSS y componente público. Dependen de la base19214fc y RootLayout/Next existentes, que no se incluyen. No contiene autenticación, guardas, configuración, tests, DB, secretos ni basales individuales retenidos. Sobre una copia compatible autorizada: `git apply --check tv_fuente_publica.patch`. La reconstrucción mínima comprobó los ocho SHA exactos. No es una aplicación autónoma ni el parche completo del despliegue.
 
-Sobre una copia compatible y autorizada de la base, inspeccionar manifiesto y comprobar primero con git apply --check modulo-resultados-publicos.patch. Aplicación y publicación corresponden al propietario. No aplicar a ciegas sobre cambios locales o versiones divergentes.
-
-La compilación adoptada fue npm run build -- --webpack, que invoca NODE_ENV=production next build --webpack. Para este módulo se omite el script combinado con migraciones; comprobar la configuración antes de usarlo. Esta guía no ejecuta instalación, migración, Git o despliegue.
-
-## Fuentes y límites
-
-Snapshot fijo de tres CSV públicos del commit 84b0199ff88828531bb0cf861d2d4d7cf09c5736, identificado en interfaz; no promete lectura del último MAIN. P1 tiene 21 cruces categóricos municipales; P2 seis unidades D6; P3 42 cruces cualitativos D6/N1 × tres municipios × siete dimensiones. Hashes originales en manifiesto e interfaz. No incluye los 90 basales individuales institucionales ni registros de organizaciones.
-
-La fecha de consulta del snapshot no es observación física. Sitios, basales físicos y custodios aceptados siguen pendientes donde así lo indican las fuentes. No hay eficacia de campo, atribución causal o reducción numérica V/R acreditadas. RETO y PROP son locales; acceso público no equivale a licencia ni aval institucional.
-
-Verificación de producción del 7 oct. 2026, 13:16:48 Bogotá: lectura sin Cookie/Authorization, resultados y alias metodología 200, API pública 21/6/42, privadas 401 y escritura pública 405. Navegador muestra municipios, filtros, evidencia y seguimiento. Organizaciones conservan su espacio protegido. Acredita consulta publicada, no ejecución ambiental.
-
-Excluye autenticación, guardas, DB, credenciales, tests, logs, configuración privada y rutas de máquina. No reproduce íntegramente fuentes institucionales ni las declara con licencia abierta.
+[GuíaD6 histórica](https://github.com/stevenvo780/ambientalhakaton/blob/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/tv_guia_publica.md), código y manifiesto permanecen inmutables en ese commit. Esa historia no describe la consulta actual. No se afirma eficacia, atribución causal, custodia aceptada, elegibilidad o permiso de reproducción general. No se presume licencia abierta ni aval CORNARE.

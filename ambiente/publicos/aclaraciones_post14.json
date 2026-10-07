@@ -215,5 +215,25 @@
         "https://hackathon-ambiental.stevenvallejo.com/metodologia"
       ]
     }
+  },
+  "curacion_codigo_M6_2_POST14": {
+    "prepared_at_bogota": "2026-10-07T16:15:14.062244-05:00",
+    "estado": "congelada_revision_independiente_en_cierre",
+    "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "aplicaciones_sin_nuevo_deploy": true,
+    "PDF_UI_ciencia_sin_cambios": true,
+    "files": {
+      "pv_fuente_publica.patch": "0a0cbd89971f9186efef8d6efd8a2252c34cb32f32be4833874d383966421907",
+      "pv_fuente_publica_manifest.json": "c4cf46757d1c2aa684f35a57d8079e8897b139f74f1d52e8b1262e475fea38d2",
+      "guia_jurado_pv.md": "2e45603239659fb3df83565bbaa6c84994af9df810ac6bdaca04bcc3b6904636",
+      "guia_jurado_pv.json": "63362ffe0db4f702213312a4f42536677baec7228616d88cc2f96338564d08c8",
+      "tv_fuente_publica.patch": "6c3bd011a67b68e0386b3c51d4d1232b773e2dd235f5def5dcddefa1dd99f2f2",
+      "tv_fuente_publica_manifest.json": "4e85341c0cc3ff0ad533fef2ec63048bb06adae0445c5667c384dfac6a5543c7",
+      "tv_guia_publica.md": "bfcb992392e7a4ceafa89c034eaef1ffaa335f42f9471ff949e2e93305ebf827"
+    },
+    "alcance": "PV7runtime+2NAV sin contexto;TV8runtime públicos. Reconstrucción exacta; sin base privada, guardas,DB,tests,credenciales o basales internos. Datos3cc y SHA código separados.",
+    "historical_D6_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "paquete_actual": "paquete_estudio_m62.json",
+    "paquete_original_13_59": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/8f2eaf2071ca9fc45d63fcac03837158e6d88f93/ambiente/publicos/paquete_estudio.json"
   }
 }

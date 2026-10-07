@@ -1,0 +1,79 @@
+{
+  "schema": "ambiental.paquete_estudio.POST14_M6_2.v2",
+  "prepared_at_bogota": "2026-10-07T16:15:14.062244-05:00",
+  "estado": "actual_POST14_con_limites",
+  "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+  "UI_publicado_commit": "617549c330dd9d08b9cfa8911b3599d9c1115031",
+  "recibo_UI_commit": "ffc4380e2151f08003b8d8b0bf0c0a6c7a962c9a",
+  "rama": "main",
+  "version_original_before14": {
+    "commit": "8f2eaf2071ca9fc45d63fcac03837158e6d88f93",
+    "receipt_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/8f2eaf2071ca9fc45d63fcac03837158e6d88f93/ambiente/publicos/paquete_estudio.json",
+    "preserved_current_file_sha256": "4e24240383ac479e05b807403a0a7f27fb053fd4c8bf5e4eafd7c5e848ad9cb7",
+    "nota": "El original de13:59 permanece íntegro; la revisión M6-2 no se antedata."
+  },
+  "case": {
+    "principal": "M6-2_provisional",
+    "costos_millones_COP": [
+      1200,
+      700,
+      900,
+      800,
+      600,
+      800
+    ],
+    "unidades": 6,
+    "total_millones_COP": 5000,
+    "D6": "histórico5000/6",
+    "N1": "comparador4700/5"
+  },
+  "PDF": {
+    "url": "https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf?version=a018559c997b",
+    "sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+    "bytes": 53177,
+    "paginas": 2,
+    "historia350_commit": "82f354888469cafedf06623c862845735cf2fbe9"
+  },
+  "oral": {
+    "escenas_visuales": 10,
+    "bloques": 7,
+    "plan_segundos": 420,
+    "QA_independiente": "PASS desktop720/900, móvil390 y microetiquetas; no ensayo humano",
+    "fecha_QA_bogota": "2026-10-07T16:07:44-05:00"
+  },
+  "software": {
+    "pv": {
+      "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+      "manifest": "pv_fuente_publica_manifest.json",
+      "manifest_sha256": "c4cf46757d1c2aa684f35a57d8079e8897b139f74f1d52e8b1262e475fea38d2",
+      "patch": "pv_fuente_publica.patch",
+      "patch_sha256": "0a0cbd89971f9186efef8d6efd8a2252c34cb32f32be4833874d383966421907",
+      "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "source_code_sha_separado": true
+    },
+    "tv": {
+      "url": "https://territorio-vivo-five.vercel.app/resultados",
+      "manifest": "tv_fuente_publica_manifest.json",
+      "manifest_sha256": "4e85341c0cc3ff0ad533fef2ec63048bb06adae0445c5667c384dfac6a5543c7",
+      "patch": "tv_fuente_publica.patch",
+      "patch_sha256": "6c3bd011a67b68e0386b3c51d4d1232b773e2dd235f5def5dcddefa1dd99f2f2",
+      "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "source_code_sha_separado": true
+    }
+  },
+  "registro_interno": {
+    "IDs": 75,
+    "demostrado_alcance_limitado": 39,
+    "condicional": 35,
+    "pendiente_F01": 1,
+    "criterios_oficiales_jurado": 8
+  },
+  "limites": [
+    "Candidata principal provisional; sin dominancia ambiental global ni regla explícita de cupo/repetición cerrada.",
+    "39/35/1 es desglose interno, no puntuación o75criterios aprobados.",
+    "Pruebas de consulta/exporte y fuente no prueban ejecución ni eficacia ambiental.",
+    "F01 ensayo humano sin recibo; no se infiere que ocurrió.",
+    "14MEA primarias y20PROP auxiliares mantienen fuentes/unidades propias.",
+    "Códigos/snapshot público no publican nuevos90basales individuales internos."
+  ]
+}

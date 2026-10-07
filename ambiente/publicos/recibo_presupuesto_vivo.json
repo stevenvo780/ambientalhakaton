@@ -12,7 +12,7 @@
     "source_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
     "paquete_sha256": "eea73f6d6c84584e0d1fb44ac251cd76a146c7aaa7bb7e89bd7d932c17b36fa7",
     "manifest_sha256": "a840d9c3814f71325f4dfb965be9adbb8f3bcec13654cf71bf8f80abda9f294f",
-    "at_bogota": "2026-10-07T15:45:00-05:00",
+    "at_bogota": "2026-10-07T15:47:03.526819-05:00",
     "scope": "Consulta M6-2 principal, D6 histórico y N1; export JSON/CSV reproducible. API privadas401; guard dashboard es cliente. No eficacia/eligibilidad/DB."
   },
   "historial_D6": {
@@ -38,5 +38,40 @@
     "schema": "ambiental.software.publicacion.v1",
     "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
   },
-  "limite": "QA técnica de consulta, procedencia y exportación; no demuestra eficacia ni elegibilidad ambiental."
+  "limite": "Consulta/exportes/guardas verificadas; no prueba de ejecución, eficacia ambiental o elegibilidad. DashboardHTTP200 es shell con guarda cliente, no redirecciónHTTP.",
+  "codigo_publico_actual": {
+    "case": "M6-2_provisional",
+    "prepared_at_bogota": "2026-10-07T16:15:14.062244-05:00",
+    "manifest_path": "pv_fuente_publica_manifest.json",
+    "manifest_sha256": "c4cf46757d1c2aa684f35a57d8079e8897b139f74f1d52e8b1262e475fea38d2",
+    "patch_path": "pv_fuente_publica.patch",
+    "patch_sha256": "0a0cbd89971f9186efef8d6efd8a2252c34cb32f32be4833874d383966421907",
+    "runtime_files": 7,
+    "source_data_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "source_code_identity": "SHA individuales y del parche, separados del pin científico",
+    "historical_D6": {
+      "commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "patch_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/pv_fuente_publica.patch",
+      "patch_sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
+      "manifest_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos/pv_fuente_publica_manifest.json",
+      "manifest_sha256": "0169b87e9cec1eb628ee43505c8cf43ebba6385896276337eab1e5438feafed0"
+    },
+    "scope": "Curación/reconstrucción exacta de fuente desplegada; no nuevo despliegue ni tests de aplicaciones."
+  },
+  "exportes_QA_bundle": [
+    {
+      "filename": "p2_motor_carteras.json",
+      "type": "application/json;charset=utf-8",
+      "bytes": 14746,
+      "sha256": "6d7b1ed63d69937163e5dd3ca58033004b3982f648d957739fff9fcede72e3cf",
+      "equals_verified_integrated_export": true
+    },
+    {
+      "filename": "p2_motor_carteras.csv",
+      "type": "text/csv;charset=utf-8",
+      "bytes": 4881,
+      "sha256": "63a9b7fe2043285e7c47a0f521a17fcc69d59c8b9fb8b055f57c7698c6e1f283",
+      "equals_verified_integrated_export": true
+    }
+  ]
 }

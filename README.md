@@ -276,7 +276,7 @@ La rama de publicación y Production Branch son `main`. La portada ofrece Presen
 
 - [Presentación](https://hackathon-ambiental.stevenvallejo.com/presentacion): corte `78b08e9`, comparaciones visibles y QA del recorrido en curso.
 - [Metodología](https://hackathon-ambiental.stevenvallejo.com/metodologia): sitio detallado con fuentes, proceso tecnológico y límites.
-- [Presupuesto Vivo](https://presupuesto-vivo-chi.vercel.app/hackathon): consulta sin sesión, D6=5000M/6 y N1=4700M/5, exportaciones JSON/CSV verificadas y administración protegida. Fuente adoptada y guía en `ambiente/publicos/pv_fuente_publica_manifest.json` y `guia_jurado_pv.md`.
+- [Presupuesto Vivo](https://presupuesto-vivo-chi.vercel.app/hackathon): consulta sin sesión, D6=5000M/6 y N1=4700M/5, exportaciones JSON/CSV verificadas y administración protegida. Fuente y guía de ese corte histórico en el [commit3cc](https://github.com/stevenvo780/ambientalhakaton/tree/3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d/ambiente/publicos).
 - [Territorio Vivo](https://territorio-vivo-five.vercel.app/resultados): consulta sin sesión del snapshot `84b0199`, con 21 perfiles, seis unidades D6 y 42 cruces documentales; filtros y API pública verificados, API privadas protegidas.
 
 La matriz registra 39 demostraciones de alcance limitado, 35 condiciones y un ensayo humano pendiente; no acredita eficacia ambiental. El PDF obligatorio único tiene dos páginas totales; su cierre con las fuentes finales se publica por separado tras inspección de ambas páginas. Luna leyó `origin/main` congelado por commit con cadencia de180segundos; terminó naturalmente a las14:02 y no se reinició.
@@ -289,3 +289,12 @@ Para estudiar el contrato del jurado: [ocho criterios oficiales y evidencia](htt
 ## Corte actual y versión histórica
 
 [PDF activo M6-2, dos páginas](https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf?version=a018559c997b) — SHA256 `a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e`,53177bytes. [PDF histórico D6, corte13:58](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/82f354888469cafedf06623c862845735cf2fbe9/entregables/ANEXO_METODOLOGICO.pdf) conserva SHA350; no es una segunda entrega activa. [P2](entregables/p2_portafolio.md), [P3](entregables/p3_riesgo_residual.md) y [comparación incremental](entregables/comparacion_incremental_carteras.md) describen la revisión POST14. PV y TV ya ofrecen M6-2, pin3cc22a90, con comprobaciones independientes de consulta/exportaciones y procedencia POST14. D6 sigue como comparador histórico de PV; no se heredan sus pruebas antiguas.
+
+### Código público de las aplicaciones · revisión M6-2 POST14
+
+El [paquete actual M6-2](ambiente/publicos/paquete_estudio_m62.json) reúne versiones de datos, código y verificaciones. El [recibo original de13:59](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/8f2eaf2071ca9fc45d63fcac03837158e6d88f93/ambiente/publicos/paquete_estudio.json) permanece histórico e íntegro; esta actualización no se atribuye a la entrega anterior a14.
+
+- Presupuesto Vivo: [guía actual](ambiente/publicos/guia_jurado_pv.md), [fuente curada](ambiente/publicos/pv_fuente_publica.patch) y [manifiesto SHA](ambiente/publicos/pv_fuente_publica_manifest.json). Siete runtime y dos enlaces NAV sin contexto; M6-2 provisional, D6 histórico y N1.
+- Territorio Vivo: [guía actual](ambiente/publicos/tv_guia_publica.md), [fuente curada](ambiente/publicos/tv_fuente_publica.patch) y [manifiesto SHA](ambiente/publicos/tv_fuente_publica_manifest.json). Ocho runtime,21/6/42/34 con14MEA primarias y20PROP auxiliares.
+
+El pin de **datos3cc** permanece separado de los SHA del código. Los curados D6 anteriores se conservan en ese commit histórico; los enlaces MAIN anteriores muestran ahora la versión vigente. Son módulos dependientes de sus bases compatibles, no repositorios autónomos. No se incluyen guardas completas, DB, credenciales, tests o basales individuales retenidos. La conservación del código no cambia las aplicaciones, la ciencia, el PDF ni el registro39/35/1.
