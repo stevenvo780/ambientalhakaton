@@ -1,12 +1,44 @@
 {
-  "verified_at_utc": "2026-10-07T15:45:29.803630+00:00",
+  "verified_at_utc": "2026-10-07T16:29:57.358628+00:00",
   "status": "borrador_no_anexo_final",
   "source": "ANEXO_BORRADOR.md",
-  "source_sha256": "261d7a3650c562974c68d83884ceadff49a59df7c4fc746bcb8556ae183c28c5",
+  "source_sha256": "fe980bfab9b96711a5869d50b3e3d073284dbba59f701e66d2d0dcf2432ffc3b",
   "pdf": "ANEXO_BORRADOR.pdf",
-  "pdf_sha256": "f59da06a744bc5f477ef205fdfc6dd5148c4e1f5f3c11a7248bc565dd51e306c",
+  "pdf_sha256": "c509b146f45c70d3fbccc79565b355ef5c6664a1b27aeb971c5650e8fcb16612",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
-  "final_requires_new_verification": true
+  "final_requires_new_verification": true,
+  "visual_review": {
+    "reviewed_at_utc": "2026-10-07T16:31:21.228835+00:00",
+    "method": "pdftoppm PNG de ambas páginas y lectura visual",
+    "pages_reviewed": [
+      1,
+      2
+    ],
+    "clipping_overlap_unreadable_glyphs": false
+  },
+  "inputs_sha256": {
+    "entregables/p1_tablero.md": "485a635e7afd6238af0cb35d20616339a8efd31181281613036feb55643cc791",
+    "entregables/p2_portafolio.md": "86baccd52ac2144dfb02aca976c7aae71cf514cc51040b5cef90fec356f340b8",
+    "entregables/p2_portafolio.csv": "6989e983a06568b3df1ad62159652e9fd429a08419bde77b57d024b1789f34d5",
+    "entregables/p2_justificacion.md": "7e8de333d1e023507aae37a24341ff86042d6f3c1c583a32acc9f13ea273fac2",
+    "entregables/p3_riesgo_residual.md": "39f721f2345d50b41ceb095690ac53686dda92f9f0fa480f272cd2bfa288d3d9",
+    "entregables/p3_riesgo_residual.csv": "517a76728731090a33820af65a66f3f8daf62423f3c083ef7a03feb97f66150f",
+    "entregables/variables_seguimiento.csv": "e71825a4cf2489f954b1083ea74707cd529de8b06a90f52fba2f4b78ca5b808a"
+  },
+  "operator_scenario_confirmation": {
+    "source": "instrucción humana de continuidad comunicada por orquestador",
+    "date_bogota": "2026-10-07 11:28",
+    "required": "SSP3-7.0/2060",
+    "additional_only": "SSP2-4.5/2040",
+    "official_intermediate_identified": false
+  },
+  "pitch_sha256": "c3e88b48d2724c0d3f724106caef078e7fa481e39c75a4eb5d4c4940235aba99",
+  "oral_rehearsal": {
+    "status": "pendiente",
+    "person": null,
+    "duration_seconds": null,
+    "timestamp": null
+  }
 }
