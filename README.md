@@ -2,7 +2,7 @@
 
 Proponemos **Presupuesto Vivo como principal y Territorio Vivo como apoyo** para decidir qué proteger, dónde intervenir y qué combinación financiar con el fondo simulado de **COP 5.000 millones**. Aprovecharemos sus avances y los antecedentes de PSA, restauración y agroecología, verificando continuidad y evitando duplicación. El evento espera una decisión ambiental defendible: hasta cinco hallazgos, una cartera priorizada y una ficha de riesgo residual/seguimiento MEA, con pitch de máximo siete minutos. El método explica los ocho criterios y nueve preguntas; la cartera final y su contraste completo de escenarios siguen pendientes de ejecución y evidencia.
 
-**Estado de esta ampliación local: 7 de octubre de 2026, 10:36 Bogotá. GO explícito recibido: ejecución ambiental autorizada; el registro de activación de la goal lo mantiene el delegado de entorno.** Paquete objetivo **13:50**; entrega **antes de las 14:00 de Bogotá**. La fase cambia de preparación a ejecución por el GO del usuario; los productos finales siguen pendientes.
+**Estado de esta ampliación local: 7 de octubre de 2026, 10:36 Bogotá. GO explícito recibido y goal activa: ejecución ambiental autorizada; consultar el registro vigente de orquestación.** Paquete objetivo **13:50**; entrega **antes de las 14:00 de Bogotá**. La fase cambia de preparación a ejecución por el GO del usuario; los productos finales siguen pendientes.
 
 **Codex principal SOLO orquesta:** instancia/delega, asigna áreas, controla sesiones, recibe evidencia, decide la integración conceptual y entrega. Los ejecutores leen, redactan, calculan, prueban y preparan el entorno. Un escritor por archivo. **Publicación delegada tras el GO:** un único ejecutor gestiona Git y recibe lotes terminados de cada escritor; hace commits acotados y push frecuentes a dev. Conserva íntegros los commits del usuario y excluye credenciales/operación privada.
 
@@ -82,6 +82,10 @@ La gobernanza de agentes organiza al equipo; **no acredita gobernanza territoria
 **P3: residual, información faltante y seguimiento.** Riesgo que permanece, dependencias/datos que CORNARE debe levantar, variables mínimas e indicadores MEA de S/CA/V. Indicar cuándo medir, cómo comparar con basal y qué obliga a revisar cartera/indicador. Sin basal no calcular reducción porcentual; observación futura no demuestra causalidad automáticamente.
 
 Formato libre: láminas, tablas, tablero, hoja o prototipo. Pitch **≤7 minutos comprobado por ensayo real**. Anexo metodológico **opcional ≤2 páginas**, si se presenta. Los documentos preparatorios extensos no son ese anexo.
+
+## Preferencia del equipo: naturaleza dentro de una cartera híbrida
+
+El usuario pide priorizar soluciones basadas en la naturaleza cuando la evidencia del corredor las respalde, dentro de una **cartera híbrida** que también pueda incluir alertas, conocimiento, infraestructura, salud o gestión. Es una **preferencia del equipo**, no una regla del evento ni pesos nuevos del jurado. Cada decisión se contrasta con municipio×dimensión×factor, medida/MEA, localización, costo, continuidad y sacrificios. La preferencia no vuelve elegible una medida sin problema sustentado ni justifica excluir una actuación crítica; el dueño P2 registra aceptado/condicionado/rechazado y su razón/fuente en entregables/registro_preferencias.md al terminarlo.
 
 ## Método y comparación financiera
 
@@ -199,7 +203,7 @@ Abrir primero estado/commit y después 1–7. Todos estos enlaces apuntan a **de
 
 Estado técnico en JSON: [lectura directa](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/ambiente/publicos/estado_preparacion.json). Web: [código site/](https://github.com/stevenvo780/ambientalhakaton/tree/dev/site) · [estado fuente](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/site/estado.json) · [commits](https://github.com/stevenvo780/ambientalhakaton/commits/dev/).
 
-**Lotes locales posteriores al commit comprobado:** caso/preguntas_equipo.md está redactado; caso/guia_lectura_equipo.md en preparación; ambiente/publicos/auditorias_preparatorias.json está listo. Su disponibilidad pública depende del push del lote; no se anuncia como verificada. Goal y estados locales recibieron ajustes de rama/protocolo Git/dominio. Actualizar este mapa con el commit efectivo cuando se publique cada lote.
+**Apoyo al equipo ya incorporado:** [preguntas frecuentes](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/preguntas_equipo.md) · [raw](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/caso/preguntas_equipo.md); [guía de lectura](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/guia_lectura_equipo.md) · [raw](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/caso/guia_lectura_equipo.md). Conservan comprobantes de un snapshot preparatorio anterior al GO; consultar estado/commit actual antes de seguir su instrucción temporal. [Auditorías preparatorias públicas](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/ambiente/publicos/auditorias_preparatorias.json). [Carpeta de entrega](https://github.com/stevenvo780/ambientalhakaton/tree/dev/entregables): guion y anexo son borradores, sin cartera ni ensayo final acreditados. Actualizar el mapa con cada artefacto realmente terminado/publicado.
 
 ## Insumos: originales, extracciones y publicación
 

@@ -11,6 +11,10 @@
 | 5:15–6:15 | P3: riesgos que permanecen, datos/dependencias capaces de cambiar la elección, MEA/basal/frecuencia/custodio y revisión. |
 | 6:15–7:00 | Utilidad: capacidad institucional a fortalecer, próximos datos y condiciones de ejecución. Cierre con decisión y límites que el equipo realmente puede defender. |
 
+## Preferencia declarada del equipo
+
+Explicar en la defensa cómo la preferencia por soluciones basadas en la naturaleza se evaluó dentro de una cartera híbrida, y qué se aceptó/condicionó/descartó según factor crítico, evidencia y sacrificios. No llamarla criterio oficial, asignar nuevos pesos del jurado ni asumir que sustituye alertas/infraestructura necesarias. Referencia futura: registro_preferencias.md del dueño P2, cuando realmente entregue ese archivo.
+
 ## Comprobación antes de entregar
 
 - Ensayo cronometrado real ≤7:00; registrar quién, hora, duración y archivo/versión. El esquema de tiempos no prueba la duración.

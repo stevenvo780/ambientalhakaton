@@ -20,6 +20,8 @@ Se comparan carteras de cuatro/cinco/seis unidades con problemas críticos, fact
 
 El motor minimax del software exige beneficios y desempata por menos unidades; no certifica máximo oficial. Sin eficacia institucional suficiente se usa comparación cualitativa sustentada, sin porcentajes inventados ni óptimo causal.
 
+La preferencia del equipo por soluciones basadas en la naturaleza se aplica dentro de cartera híbrida y se registra con razón/fuente por medida; no es requisito oficial ni peso del jurado y no reemplaza elegibilidad, riesgo crítico o cuenta.
+
 ## Escenarios, seguimiento y límites
 
 Contrastar referencia, intermedio ySSP3-7.0/2060 por unidad: mantener/modificar/reemplazar, fuente/factor que cambia, costo y residual. DatoRionegro0,28→0,32 no identificaSSP en p.2 ni prueba una cartera completa. Los insumos faltantes dejan robustez parcial y requisito pendiente.
