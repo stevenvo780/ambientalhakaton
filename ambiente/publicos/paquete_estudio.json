@@ -1,43 +1,25 @@
 {
   "schema": "ambiental.paquete_estudio.v1",
-  "verified_at_utc": "2026-10-07T18:33:10.211617+00:00",
-  "verified_at_bogota": "2026-10-07T13:33:10.211617-05:00",
+  "verified_at_utc": "2026-10-07T18:57:16.169219+00:00",
+  "verified_at_bogota": "2026-10-07T13:57:16.169219-05:00",
   "estado": "listo para estudio con límites explícitos",
-  "package_source_commit": "bc5c7f19aebde429469e06e5792544f075366289",
-  "deployment_commit_observed": "30979b858c9e9c25a8c636ef991530f737f1fefc",
+  "package_source_commit": "91220a37b8d9db6d29bee98d3e254e8f5b799d99",
+  "deployment_commit_observed": "1301e0313d2d84c97a76d3cbbcc46579772e95b5",
   "rama_documentos": "main",
   "productionBranch": "main",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "HTTP_exact_bytes": [
     {
-      "url": "https://hackathon-ambiental.stevenvallejo.com/presentacion",
+      "url": "https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf?version=3505800107fb",
       "HTTP": 200,
-      "bytes": 19052,
-      "sha256": "283bfab79477229cef6ae0d9d8ece9ee6f710cbba6b662df3497b8ae7f0e0872"
+      "bytes": 55380,
+      "sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6"
     },
     {
       "url": "https://hackathon-ambiental.stevenvallejo.com/metodologia",
       "HTTP": 200,
-      "bytes": 24785,
-      "sha256": "cbb4c5c58b522ebac2aada040b17246ff7f534c4ea489b4dc3850dbdf8542da1"
-    },
-    {
-      "url": "https://hackathon-ambiental.stevenvallejo.com/exposicion-assets/expo.css",
-      "HTTP": 200,
-      "bytes": 36533,
-      "sha256": "fd4a39526b3aac12ebdf093a475005cae8ab4ec7f6b6fb2e5e6f2a8ecee4636a"
-    },
-    {
-      "url": "https://hackathon-ambiental.stevenvallejo.com/exposicion-assets/expo.js",
-      "HTTP": 200,
-      "bytes": 37277,
-      "sha256": "da23e28ff30257489c07e6808bd33f4d787311deb27d77b0bdb8349e07428892"
-    },
-    {
-      "url": "https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf",
-      "HTTP": 200,
-      "bytes": 55370,
-      "sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e"
+      "bytes": 25638,
+      "sha256": "bf020efd4f139cd29922354e0f25e1a622863d1194e8d23ab59ebb4a95e8d882"
     }
   ],
   "portada": {
@@ -53,9 +35,9 @@
     "archivo": "ANEXO_METODOLOGICO.pdf",
     "paginas": 2,
     "formato": "A4",
-    "sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
+    "sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
     "alias_BORRADOR": "idéntico; no entregar un segundo PDF",
-    "inspeccion_visual": "ambas páginas: editor, publicador y Claude. Muse comprobó texto/estructura.",
+    "inspeccion_visual": "Nuevos bytes350580: dos páginas A4 inspeccionadas por editor y revisor independiente GPT6.1Sol; no hereda avales de versiones anteriores.",
     "fuentes_finales": {
       "entregables/p1_tablero.md": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
       "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
@@ -67,8 +49,11 @@
       "entregables/p3_riesgo_residual.md": "e38535fe5713f1345e4eea9c90fcf37c3f0f4cd901d32599f149e1be50642252",
       "entregables/p3_riesgo_residual.csv": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
       "entregables/variables_seguimiento.csv": "247c4cdeec3e89850a8f37d358efae90b9fed7fb0b6a62770a40a4dea4e7737d",
-      "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
-    }
+      "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
+      "caso/comparar_presupuesto.py": "e9b30af167dde4ea79bed9a149b3a0a632c3fbaf8ee4df3fc135d7d06c5b0006"
+    },
+    "bytes": 55380,
+    "url": "https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf?version=3505800107fb"
   },
   "QA_oral": {
     "corte": "bc5c7f19aebde429469e06e5792544f075366289",
@@ -116,6 +101,19 @@
     "Consultas públicas, código y pruebas no acreditan ejecución ni beneficio causal.",
     "Basales institucionales individuales retenidos internamente; T0 físico de sitios D6 pendiente donde se declara.",
     "D6 es condicional y empata otras seis máximas bajo una unidad por entrada.",
-    "No se infiere licencia o aval institucional."
-  ]
+    "No se infiere licencia o aval institucional.",
+    "R07/I14: cupos y elegibilidad no cerrados por regla explícita; R10: eficacia comparada no probada; R13/C05: desempeño operacional de sitios pendiente; B7 permanece condicionado."
+  ],
+  "cache_PDF": {
+    "url_versionada": "HTTP200,55380B,SHA350580 confirmado13:56",
+    "url_sin_query": "13:53 entregaba copia anterior eb358; no se afirma purga de caché"
+  },
+  "reproducibilidad": {
+    "base": "python3 caso/comparar_presupuesto.py --stdout",
+    "hipotesis_no_oficial": "python3 caso/comparar_presupuesto.py --hipotesis-14-tres-municipios",
+    "sin_opciones_destino": "caso/comparacion_financiera.json",
+    "base_resultado": "32768/1567/max6/7empates",
+    "hip_resultado": "131072/3906/max7/5tipos",
+    "verificacion_independiente": "PASS Sol, stdout sin mutaciones de fuentes"
+  }
 }

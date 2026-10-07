@@ -7,7 +7,7 @@ Solución documental publicada en `main`, con recomendación D6 condicional. Paq
 - [Presentación oral](https://hackathon-ambiental.stevenvallejo.com/presentacion).
 - [Metodología detallada](https://hackathon-ambiental.stevenvallejo.com/metodologia).
 - [Estado de avances](https://hackathon-ambiental.stevenvallejo.com/avances).
-- [PDF obligatorio único: decisión y metodología, dos páginas totales](https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf). `ANEXO_BORRADOR.pdf` es sólo un alias idéntico de compatibilidad; no es una segunda entrega.
+- [PDF obligatorio único: decisión y metodología, dos páginas totales](https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf?version=3505800107fb). `ANEXO_BORRADOR.pdf` es sólo un alias idéntico de compatibilidad; no es una segunda entrega.
 - [P1: diagnóstico y cinco hallazgos](p1_tablero.md).
 - [P2: portafolio y alternativas](p2_portafolio.md) · [CSV](p2_portafolio.csv) · [justificación](p2_justificacion.md).
 - [P3: residual y seguimiento](p3_riesgo_residual.md) · [42 cruces](p3_riesgo_residual.csv) · [34 variables](variables_seguimiento.csv).
