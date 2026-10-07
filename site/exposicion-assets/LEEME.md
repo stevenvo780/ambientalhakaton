@@ -1,36 +1,23 @@
 # Vistas de exposición: integración y procedencia
 
-Archivos estáticos sin dependencias ni servicios:
+Archivos estáticos sin dependencias, red externa ni servicios:
 
-- `presentacion/index.html`: 7 bloques orales (0:40/1:10/1:20/0:50/1:00/1:20/0:40 = 7:00 en total), en 8 láminas porque el bloque 3 tiene dos, más una lámina de preguntas fuera del tiempo oral.
-- `metodologia/index.html`: visión general, 6 etapas (fuentes → datos → factor S/CA → cartera → residual/MEA → revisión), ejemplos de verificación y límites.
-- `exposicion-assets/expo.css`, `exposicion-assets/expo.js`: estilos y motor compartidos.
+- `presentacion/index.html`: modo diapositivas de 7 bloques orales (0:40/1:10/1:20/0:50/1:00/1:20/0:40 = 7:00 en total), en 8 láminas, más una lámina de preguntas fuera del tiempo oral y del objetivo del cronómetro. Tema oscuro de agua profunda.
+- `metodologia/index.html`: página web normal y larga, sin diapositivas ni reloj, con menú de anclas, filtro por tipo de afirmación y componentes interactivos. Tema claro.
+- `exposicion-assets/datos.js`: datos agregados públicos de P1/P2/P3, sin basales individuales, con autochequeo de totales.
+- `exposicion-assets/expo.js`: componentes y motor.
+  - Componentes: río del fondo (Sankey proporcional al costo), tablero cartera × municipio con esquema territorial rotulado «no es mapa», matriz H1–H5, siete máximas, escenario referencia ↔ SSP3 ↔ SSP2 exploratorio, reapertura y capas 3D conceptuales.
+  - Motor de láminas: solo si la página tiene `.lamina`.
+- `exposicion-assets/expo.css`: estilos de ambas vistas.
 
-Rutas: las páginas cargan `../exposicion-assets/…` y enlazan `../`, `../presentacion/` y `../metodologia/`. Ambas enlazan el PDF final de 2 páginas en `/entregables/ANEXO_METODOLOGICO.pdf`. El build del publicador ya copia los tres directorios y el PDF; estas vistas no lo modifican.
+Ambas páginas enlazan la raíz `../`, la otra vista y el PDF final `/entregables/ANEXO_METODOLOGICO.pdf`. El build del publicador copia estos directorios y el PDF.
 
-Controles:
+Controles de la presentación:
 - Flechas, Re Pág/Av Pág, espacio, Inicio/Fin y 1–9; deslizar en táctil.
-- N muestra las notas; E abre el modo estudio, que también sirve para imprimir; F activa la pantalla completa.
-- T y R (solo en la presentación): cronómetro de ensayo y reinicio. Es ayuda local, no evidencia de duración.
+- N muestra las notas; E abre el modo estudio; P pausa el movimiento; T y R manejan el cronómetro de ensayo (ayuda local, no evidencia); F activa la pantalla completa.
+- El hash `#id` enlaza cada lámina. Un hash malformado o desconocido no reinicia la vista.
+- `prefers-reduced-motion` desactiva animaciones y transiciones.
 
-Barras: escala lineal, cada segmento = costo / 5.000. `expo.js` marca y registra en consola cualquier barra cuya suma no coincida con su total o saldo. No hay mapa geográfico.
+Fuentes vigentes en el corte de 12:34 (prefijo SHA256): P1 `d7d9356630b8`, P2 MD `29cdc12dc5d0`, P2 CSV `92696ddfff34`, justificación `ad8f0a7c222a`, P3 MD `cf7befd053ae`, P3 CSV `a4635a041318`, variables `057e4d279c9e`, catálogo `4bfa305f9ba4`, script `09626b8633d4`, PITCH `3517e959b6d4`, PDF `83e58b76faac`.
 
-## Procedencia exacta (lectura de este escritor)
-
-| Fuente | SHA256 (prefijo) | Alcance de la lectura |
-|---|---|---|
-| P2 MD v3.1 | 48e205adc32c | Completa |
-| P2 CSV | 92696ddfff34 | Completa |
-| P2 MD v3.3 | 3d4b4693feaf | Solo búsqueda del empate D6/otras seis y del alcance de las 17 unidades |
-| p2_justificacion.md | (sin hash registrado) | Completa |
-| P3 MD v4 | f3b8791ac0cf | Completa |
-| P3 MD v6 | b83ca6957498 | Líneas 112–145: ejemplos físicos PROP, estados de asignación, localización del residual |
-| variables_seguimiento.csv | — | No releída en su versión 057e4d279c9e; las vistas solo usan el total de 34 y los seis ejemplos tomados de P3 v6 |
-| P1 tablero | — | Completa |
-| PITCH V4.1 | 32f6d55379dc | Guion, líneas 1–30 |
-| PITCH V4.3 | d5c31aea6edd | Búsqueda de las tablas Q01–Q09, C03 y preguntas probables |
-| ANEXO MD | df030a6fbc23 | Completa |
-| ANEXO MD final | b397732e06e9 | No releída; las vistas solo enlazan el PDF |
-| goal_ejecucion.md | — | Completa |
-
-No se leyeron revisiones antiguas ni fuentes internas con basales individuales; no se publican basales individuales.
+Lectura completa: P1, P2 v3.1, P3 v4 y ANEXO MD `df030a6f`. Lectura parcial: P3 v6 (ejemplos físicos), PITCH V4.1 (guion) y V4.3 (preguntas). Los cambios posteriores de P2 v3.4 y P3 v7 se incorporaron según las notas del coordinador (desempate PROP abierto), sin relectura completa.

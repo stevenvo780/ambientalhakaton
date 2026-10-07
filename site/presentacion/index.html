@@ -4,26 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Decisión D6 · Presentación</title>
-<meta name="description" content="Presentación de 7 minutos en total: decisión de adaptación D6 para Rionegro, Guarne y Marinilla, costos, sacrificios, escenario SSP3-7.0/2060, residual y límites.">
-<meta name="theme-color" content="#11302a">
+<meta name="description" content="Presentación de 7 minutos en total: el fondo de 5.000 millones como un río que se reparte en seis unidades, hallazgos, tablero de carteras, empate de máximas, escenario SSP3-7.0/2060, residual y límites.">
+<meta name="theme-color" content="#0b2a2b">
 <link rel="stylesheet" href="../exposicion-assets/expo.css">
+<script defer src="../exposicion-assets/datos.js"></script>
 <script defer src="../exposicion-assets/expo.js"></script>
 </head>
 <body data-vista="presentacion">
-<a class="salto" href="#escenario">Ir a la presentación</a>
+<a class="salto" href="#escenario">Ir a la lámina actual</a>
 <header class="barra-sup">
   <a class="raiz" href="../">Corredor vivo</a>
   <nav class="vistas" aria-label="Vistas de exposición"><a href="../presentacion/" aria-current="page">Presentación</a><a href="../metodologia/">Metodología</a></nav>
-  <p class="anexo" data-anexo>Anexo metodológico: <a href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final, 2 páginas</a></p>
+  <p class="anexo">Entregable: <a href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final, 2 páginas</a></p>
   <div class="controles" role="group" aria-label="Controles">
     <button type="button" data-accion="notas" aria-pressed="false">Notas<kbd>N</kbd></button>
     <button type="button" data-accion="estudio" aria-pressed="false">Modo estudio<kbd>E</kbd></button>
+    <button type="button" data-accion="pausa" aria-pressed="false">Pausar movimiento<kbd>P</kbd></button>
     <button type="button" data-accion="reloj" aria-pressed="false">Cronómetro<kbd>T</kbd></button>
     <button type="button" data-accion="pantalla">Pantalla completa<kbd>F</kbd></button>
   </div>
 </header>
 
-<nav class="rio" aria-label="Siete bloques, 0:00 a 7:00 en total">
+<nav class="rio" aria-label="Siete bloques orales, 0:00 a 7:00 en total">
   <button type="button" class="tramo" data-ir="0" data-fin="40" style="--s:40"><span class="t">0:00</span><span class="n">1 Decisión</span></button>
   <button type="button" class="tramo" data-ir="1" data-fin="110" style="--s:70"><span class="t">0:40</span><span class="n">2 Cinco hallazgos</span></button>
   <button type="button" class="tramo" data-ir="2" data-fin="190" style="--s:80"><span class="t">1:50</span><span class="n">3 Cartera y sacrificios</span></button>
@@ -31,7 +33,7 @@
   <button type="button" class="tramo" data-ir="4" data-fin="300" style="--s:60"><span class="t">4:00</span><span class="n">5 Horizonte SSP3-7.0</span></button>
   <button type="button" class="tramo" data-ir="5" data-fin="380" style="--s:80"><span class="t">5:00</span><span class="n">6 Residual y seguimiento</span></button>
   <button type="button" class="tramo" data-ir="6" data-fin="420" style="--s:40"><span class="t">6:20</span><span class="n">7 Cierre</span></button>
-  <span class="fuera">7:00 · después: preguntas</span>
+  <span class="fuera">7:00 · luego preguntas</span>
 </nav>
 
 <main id="escenario" class="escenario" tabindex="-1">
@@ -40,36 +42,18 @@
 <section class="lamina" id="decision" data-tramo="0" data-habla="Ariadna conduce" aria-labelledby="h1">
   <div class="texto">
     <p class="bloque"><b>Bloque 1</b>, 0:00–0:40</p>
-    <h1 id="h1">Proponemos D6: seis unidades completas por 5.000 millones.</h1>
-    <p class="bajada">Para Rionegro, Guarne y Marinilla. Primero, la capacidad de conservación de la biodiversidad y la demanda de agua; después, suelo, agroecología, verde urbano y conocimiento del riesgo.</p>
-    <p class="aviso">Es una recomendación provisional, condicionada a sitios, funciones y actores. No hemos demostrado que reduzca más la vulnerabilidad que otra cartera.</p>
+    <h1 id="h1">Proponemos D6: el fondo de 5.000 millones se reparte en seis unidades completas.</h1>
+    <p class="bajada">Primero, la capacidad de conservación y la demanda de agua; después, suelo, agroecología, verde urbano y conocimiento del riesgo. Saldo cero.</p>
+    <p class="aviso">Recomendación provisional para Rionegro, Guarne y Marinilla. No hemos demostrado que reduzca más la vulnerabilidad que otra cartera.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">Barra apilada de D6 a escala de 0 a 5.000 millones COP simulados.</figcaption>
-    <div class="barras">
-      <div class="fila-barra"><p class="nombre"><b>D6</b>6 unidades, saldo 0</p>
-        <div class="barra" data-total="5000" data-saldo="0">
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b><span>700</span></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b><span>900</span></div>
-          <div class="seg" style="--m:1000;--c:var(--u07)" data-m="1000"><b>07</b><span>1.000</span></div>
-          <div class="seg" style="--m:800;--c:var(--u08)" data-m="800"><b>08</b><span>800</span></div>
-          <div class="seg" style="--m:1000;--c:var(--u09)" data-m="1000"><b>09</b><span>1.000</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14</b><span>600</span></div>
-        </div>
-      </div>
-      <div class="eje" aria-hidden="true"><span></span><ol><li>0</li><li>1.000</li><li>2.000</li><li>3.000</li><li>4.000</li><li>5.000 M COP</li></ol></div>
-    </div>
-    <ul class="etiquetas" aria-label="Unidades de D6">
-      <li>03 Áreas estratégicas del corredor</li><li>04 Eficiencia hídrica</li><li>07 Suelos</li><li>08 Agroecología</li><li>09 Verde urbano</li><li>14 Conocimiento del riesgo</li>
-    </ul>
-    <p class="fuente">Proporciones del presupuesto: 14 / 18 / 20 / 16 / 20 / 12 % = 100 %. Miden asignación, no eficacia. Precios indivisibles del catálogo del reto, enunciado p. 5. RETO es un ID local, no un código MEA. Escala lineal: cada segmento ocupa su costo sobre 5.000.</p>
+  <figure class="figura" data-componente="rio" data-cartera="D6">
+    <figcaption class="fuente">Representación conceptual: el grosor de cada brazo es proporcional a su costo (catálogo del reto, enunciado p. 5). El porcentaje es asignación del presupuesto, no eficacia.</figcaption>
   </figure>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
       <dt>Frase ancla</dt><dd>«Seis unidades completas, 5.000 millones, saldo cero; decisión provisional.»</dd>
-      <dt>No decir</dt><dd>«La mejor cartera», «máximo de intervenciones» sin condición, «reduce la vulnerabilidad».</dd>
-      <dt>Si preguntan</dt><dd>¿Por qué provisional? Faltan sitios, expedientes, adicionalidad y custodios aceptados (P2, condiciones uniformes a las 15 medidas).</dd>
+      <dt>No decir</dt><dd>«La mejor cartera», «reduce la vulnerabilidad», «seis es el máximo» sin la condición de una unidad por entrada.</dd>
       <dt>Responde</dt><dd>Ariadna; Brahyam si la pregunta es sobre incertidumbre.</dd>
     </dl>
   </aside>
@@ -80,127 +64,55 @@
   <div class="texto">
     <p class="bloque"><b>Bloque 2</b>, 0:40–1:50</p>
     <h2 id="h2">Cinco hallazgos orientan qué proteger primero.</h2>
-    <ol class="hallazgos">
-      <li><b>H1</b><span>Biodiversidad en Rionegro y Marinilla: capacidad adaptativa muy baja (0,22 y 0,24) y vulnerabilidad muy alta.</span></li>
-      <li><b>H2</b><span>Agua: sensibilidad alta en Marinilla (0,661). La matriz ampliada da vulnerabilidad alta en Marinilla y Rionegro; para Rionegro la lámina 12 del enunciado dice Medio. Conservamos la discrepancia.</span></li>
-      <li><b>H3</b><span>Desastres en Rionegro: el riesgo pasa de 0,283 Bajo a 0,321 Medio hacia 2060.</span></li>
-      <li><b>H4</b><span>Infraestructura en Guarne: vulnerabilidad alta (0,597) con capacidad baja (0,442).</span></li>
-      <li><b>H5</b><span>Salud, alimentos y hábitat conservan seguimiento; ninguna dimensión se vuelve cero.</span></li>
-    </ol>
-    <p class="aviso agua">No elegimos automáticamente el índice mayor. Separamos amenaza, sensibilidad, capacidad, vulnerabilidad y riesgo. La resolución es municipal: sin predios ni activos validados.</p>
+    <p class="bajada">Recorra H1 a H5: cada uno marca su celda y dice qué función orienta. Separamos amenaza, sensibilidad, capacidad, vulnerabilidad y riesgo.</p>
+    <p class="aviso agua">Resolución municipal: sin predios ni activos validados. No elegimos automáticamente el índice mayor.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">Matriz de vulnerabilidad de referencia por dimensión y municipio, con los cinco hallazgos marcados. No es un mapa.</figcaption>
-    <table class="matriz">
-      <thead><tr><th scope="col">Vulnerabilidad de referencia</th><th scope="col">Guarne</th><th scope="col">Marinilla</th><th scope="col">Rionegro</th></tr></thead>
-      <tbody>
-        <tr><th scope="row">Biodiversidad</th><td class="v3">Medio<small>0,340</small></td><td class="v5" data-h="H1">Muy alto<small>0,745</small></td><td class="v5" data-h="H1">Muy alto<small>0,765</small></td></tr>
-        <tr><th scope="row">Recursos hídricos</th><td class="v3">Medio<small>0,370</small></td><td class="v4" data-h="H2">Alto<small>0,588</small></td><td class="v4" data-h="H2">Alto*<small>0,548</small></td></tr>
-        <tr><th scope="row">Riesgo de desastres</th><td class="v3">Medio<small>0,408</small></td><td class="v1">Muy bajo<small>0,110</small></td><td class="v4">Alto<small>0,482</small></td></tr>
-        <tr><th scope="row">Infraestructura</th><td class="v4" data-h="H4">Alto<small>0,597</small></td><td class="v1">Muy bajo<small>0,110</small></td><td class="v3">Medio<small>0,324</small></td></tr>
-        <tr><th scope="row">Salud humana</th><td class="v1">Muy bajo<small>0,145</small></td><td class="v3" data-h="H5">Medio<small>0,257</small></td><td class="v1">Muy bajo<small>0,110</small></td></tr>
-        <tr><th scope="row">Seguridad alimentaria</th><td class="v2">Bajo<small>0,177</small></td><td class="v2">Bajo<small>0,227</small></td><td class="v3" data-h="H5">Medio<small>0,243</small></td></tr>
-        <tr><th scope="row">Hábitat humano</th><td class="v2">Bajo<small>0,179</small></td><td class="v2">Bajo<small>0,153</small></td><td class="v1">Muy bajo<small>0,110</small></td></tr>
-      </tbody>
-    </table>
-    <ul class="leyenda-v" aria-hidden="true"><li><i class="v1"></i>Muy bajo</li><li><i class="v2"></i>Bajo</li><li><i class="v3"></i>Medio</li><li><i class="v4"></i>Alto</li><li><i class="v5"></i>Muy alto</li></ul>
-    <p class="aviso agua">H3 corresponde al riesgo de Rionegro (0,283 Bajo → 0,321 Medio, AP19→BB19), no a la vulnerabilidad de esta tabla.</p>
-    <p class="fuente">P1, matriz M-E-2411, hoja Regional Valles SN, columnas AJ/AK, filas 15–79; índice 0–1, categoría de la celda fuente. *Agua Rionegro: Alto en la matriz ampliada, Medio en la lámina 12 del enunciado; discrepancia de fuentes conservada, sin armonizar. El enunciado prevalece si difiere (biodiversidad V 0,75/0,72).</p>
-  </figure>
+  <div class="figura" data-componente="matriz"></div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
       <dt>Frase ancla</dt><dd>«Cada hallazgo orienta una función; no elegimos el índice mayor.»</dd>
-      <dt>Cuidado</dt><dd>Rionegro agua figura Medio en la lámina 12 del enunciado y Alto en la matriz: se conserva la discrepancia. Vulnerabilidad alta no es sensibilidad alta (Guarne infraestructura).</dd>
-      <dt>Si preguntan</dt><dd>«¿Dónde está el mapa?» No inventamos geografía: la resolución sustentada es municipal; sitios y predios son faltantes declarados.</dd>
-      <dt>Responde</dt><dd>Brahyam (datos y componentes A/S/CA/V/R); Steven (dónde está cada celda).</dd>
+      <dt>Cuidado</dt><dd>Agua Rionegro: Alto en la matriz ampliada y Medio en la lámina 12 del enunciado; se conserva. H3 es riesgo (0,283 → 0,321), no V.</dd>
+      <dt>Responde</dt><dd>Brahyam (componentes A/S/CA/V/R); Steven (celdas).</dd>
     </dl>
   </aside>
 </section>
 
-<!-- 3a · 1:50–3:10 -->
-<section class="lamina" id="cartera" data-tramo="2" data-habla="Ariadna conduce" aria-labelledby="h3a">
+<!-- 3 · 1:50–3:10 tablero -->
+<section class="lamina" id="tablero" data-tramo="2" data-habla="Ariadna conduce" aria-labelledby="h3a">
   <div class="texto">
-    <p class="bloque"><b>Bloque 3</b>, 1:50–3:10 · cartera</p>
-    <h2 id="h3a">Seis unidades, un lugar propuesto para cada una, saldo cero.</h2>
-    <p class="bajada">700 + 900 + 1.000 + 800 + 1.000 + 600 = 5.000 millones.</p>
-    <p class="aviso"><b>14 es una sola unidad municipal en Rionegro</b>: 600 M y 12 meses operativos propuestos desde una futura acta de inicio. Reutiliza el Observatorio y el MEA. No financia programas en Guarne ni en Marinilla, ni un SAT completo.</p>
-    <p class="fuente">Los lugares son propuestas municipales o de sistema, sin predios. Actores: roles propuestos, sin compromisos recibidos.</p>
+    <p class="bloque"><b>Bloque 3</b>, 1:50–3:10 · tablero</p>
+    <h2 id="h3a">Cada cartera, su costo y dónde se propone.</h2>
+    <p class="bajada">Cambie de cartera o de municipio. Toque un segmento para ver su desglose.</p>
+    <p class="aviso"><b>14 es una sola unidad municipal en Rionegro</b>: 600 M y 12 meses operativos propuestos desde una futura acta. No financia programas en Guarne ni Marinilla, ni un SAT completo. Solo 14R tiene ese plazo propuesto.</p>
+    <p class="fuente">03 y 04 son propuestas existentes del corredor y Marinilla–Rionegro. En N1, 01 y 05 no tienen localización municipal acreditada: van a la bandeja de pendientes, sin dibujar cobertura.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">Tabla de las seis unidades con barra de costo a escala 0–1.000 millones.</figcaption>
-    <table class="cartera">
-      <thead><tr><th scope="col">Unidad</th><th scope="col">Lugar propuesto</th><th scope="col">Costo, M COP (escala 0–1.000)</th></tr></thead>
-      <tbody>
-        <tr style="--c:var(--u03)"><td><span class="id">03</span> Áreas estratégicas</td><td class="lugar">Corredor; prioridad Rionegro–Marinilla. Admitida en el corredor por el enunciado p. 5; indicador de sitio pendiente.</td><td><div class="mini" style="--m:700"><i></i><span>700</span></div></td></tr>
-        <tr style="--c:var(--u04)"><td><span class="id">04</span> Eficiencia hídrica</td><td class="lugar">Grandes usuarios agregados, Marinilla–Rionegro.</td><td><div class="mini" style="--m:900"><i></i><span>900</span></div></td></tr>
-        <tr style="--c:var(--u07)"><td><span class="id">07</span> Suelos</td><td class="lugar">Rionegro; sitio por identificar.</td><td><div class="mini" style="--m:1000"><i></i><span>1.000</span></div></td></tr>
-        <tr style="--c:var(--u08)"><td><span class="id">08</span> Agroecología</td><td class="lugar">UPA y asociaciones de Guarne.</td><td><div class="mini" style="--m:800"><i></i><span>800</span></div></td></tr>
-        <tr style="--c:var(--u09)"><td><span class="id">09</span> Verde urbano</td><td class="lugar">Guarne; función térmica, hídrica o ecológica por acreditar.</td><td><div class="mini" style="--m:1000"><i></i><span>1.000</span></div></td></tr>
-        <tr style="--c:var(--u14)"><td><span class="id">14</span> Conocimiento</td><td class="lugar">Rionegro, una unidad municipal, 12 meses propuestos.</td><td><div class="mini" style="--m:600"><i></i><span>600</span></div></td></tr>
-      </tbody>
-      <tfoot><tr><td colspan="2">Total, saldo 0</td><td>5.000</td></tr></tfoot>
-    </table>
-  </figure>
+  <div class="figura" data-componente="tablero" data-cartera="D6"></div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
-      <dt>Frase ancla</dt><dd>«Una unidad completa por entrada; 14 cuenta una vez, en Rionegro.»</dd>
-      <dt>No decir</dt><dd>«Tres municipios financiados por 14», «SAT», «portal nuevo», «plazo oficial de 12 meses» (es diseño del equipo; C28 de la ficha 17 es antecedente, no mandato).</dd>
-      <dt>Si preguntan</dt><dd>¿Por qué 03 en el corredor si la ficha dice Páramo? El enunciado p. 5 ofrece áreas estratégicas en el corredor por 700 M; la ficha 1 C11 queda como contexto.</dd>
+      <dt>Demostración</dt><dd>D6 → N1 (4.700, saldo 300, no es reserva obligada) → Rionegro para mostrar la cadena factor → función → evidencia faltante → residual.</dd>
+      <dt>No decir</dt><dd>«Tres municipios financiados por 14», «plazo oficial de 12 meses», «cobertura» en el esquema.</dd>
       <dt>Responde</dt><dd>Ariadna; Steven para la cuenta.</dd>
     </dl>
   </aside>
 </section>
 
-<!-- 3b · 1:50–3:10 -->
+<!-- 3b · 1:50–3:10 sacrificios -->
 <section class="lamina" id="sacrificios" data-tramo="2" data-habla="Ariadna conduce" aria-labelledby="h3b">
   <div class="texto">
     <p class="bloque"><b>Bloque 3</b>, 1:50–3:10 · sacrificios</p>
     <h2 id="h3b">Seis unidades cuestan conservación hídrica dedicada.</h2>
-    <ul class="lista-corta">
-      <li><b>InCaHIDRO-01</b>, la capacidad de conservación hídrica, queda sin unidad dedicada. N1 la atiende con rondas (05).</li>
-      <li><b>Marinilla</b> recibe unidades compartidas del corredor (03, 04), sin obra física propia acreditada.</li>
-      <li><b>Guarne</b>: 08 y 09 no resuelven su infraestructura vulnerable.</li>
-      <li>Quedan sin compra propia: PSA, restauración, rondas, cabeceras, alerta (SAT), infraestructura y salud.</li>
-    </ul>
+    <ul class="abiertas" aria-label="Lo que D6 deja sin unidad propia"><li>InCaHIDRO-01 conservación hídrica</li><li>01 PSA</li><li>02 Restauración</li><li>05 Rondas</li><li>06 Cabeceras</li><li>13 SAT</li><li>11/12 Infraestructura</li><li>15 Salud</li></ul>
+    <p>Marinilla recibe unidades compartidas, sin obra física propia acreditada. En Guarne, 08 y 09 no resuelven la infraestructura vulnerable.</p>
+    <p class="aviso">07 + 08 + 09 = 2.800 M, el 56 % del presupuesto. Es asignación; su aporte a biodiversidad y agua es <b>hipótesis</b>, no efecto medido. Compartir beneficiarios no es doble pago si se distinguen acciones, productos y pagos.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">D6 frente a N1, barras apiladas a la misma escala de 0 a 5.000 millones.</figcaption>
-    <div class="barras">
-      <div class="fila-barra"><p class="nombre"><b>D6</b>6 unidades, 5.000</p>
-        <div class="barra" data-total="5000" data-saldo="0">
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b><span>700</span></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b><span>900</span></div>
-          <div class="seg" style="--m:1000;--c:var(--u07)" data-m="1000"><b>07</b><span>1.000</span></div>
-          <div class="seg" style="--m:800;--c:var(--u08)" data-m="800"><b>08</b><span>800</span></div>
-          <div class="seg" style="--m:1000;--c:var(--u09)" data-m="1000"><b>09</b><span>1.000</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14</b><span>600</span></div>
-        </div>
-      </div>
-      <div class="fila-barra" aria-hidden="true"><span></span><div class="llave" style="--a:1600;--m:2800"><div></div><p>07+08+09 = 2.800 M = 56 % del presupuesto</p></div></div>
-      <div class="fila-barra"><p class="nombre"><b>N1</b>5 unidades, 4.700</p>
-        <div class="barra" data-total="4700" data-saldo="300">
-          <div class="seg" style="--m:1200;--c:var(--u01)" data-m="1200"><b>01 PSA</b><span>1.200 · 3 años</span></div>
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b><span>700</span></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b><span>900</span></div>
-          <div class="seg" style="--m:1300;--c:var(--u05)" data-m="1300"><b>05 Rondas</b><span>1.300</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14</b><span>600</span></div>
-          <div class="seg saldo" style="--m:300"><b>300</b><span>saldo</span></div>
-        </div>
-      </div>
-      <div class="eje" aria-hidden="true"><span></span><ol><li>0</li><li>1.000</li><li>2.000</li><li>3.000</li><li>4.000</li><li>5.000 M</li></ol></div>
-    </div>
-    <p class="aviso">El 56 % es asignación presupuestal. Que 07, 08 y 09 aporten a biodiversidad y agua es una <b>hipótesis</b>, no un efecto medido.</p>
-    <p class="fuente">El saldo de 300 de N1 no es una reserva obligada. P2, «Asignación y sacrificio explícitos»; P3, residual de D6 y N1. 07 y 08 pueden compartir beneficiarios si distinguen acciones, productos y pagos: compartir no es doble pago.</p>
-  </figure>
+  <div class="figura" data-componente="tablero" data-cartera="D6" data-opciones="D6,N1" data-municipios="no"></div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
-      <dt>Frase ancla</dt><dd>«D6 gana en cantidad y diversidad de mecanismos si las seis pasan la puerta; N1 concentra conservación y agua.»</dd>
-      <dt>Pregunta probable</dt><dd>«¿Por qué 56 % a suelo, agro y verde si el diagnóstico prioriza biodiversidad y agua?» Funciones complementarias esperadas y máximo financiero condicionado; su aporte bio/agua es hipótesis y aceptamos el sacrificio frente a N1.</dd>
-      <dt>No decir</dt><dd>«D6 reduce más», «N1 queda descartada». Una objeción aislada a D6 obliga a comparar de nuevo; no hace ganar a N1 automáticamente.</dd>
-      <dt>Responde</dt><dd>Ariadna; Brahyam para el límite de evidencia.</dd>
+      <dt>Pregunta probable</dt><dd>«¿Por qué 56 % a suelo, agro y verde si se prioriza biodiversidad y agua?» Funciones complementarias esperadas; aporte bio/agua hipotético; aceptamos el sacrificio frente a N1.</dd>
+      <dt>No decir</dt><dd>«D6 reduce más», «N1 descartada».</dd>
     </dl>
   </aside>
 </section>
@@ -209,48 +121,20 @@
 <section class="lamina" id="pertinencia" data-tramo="3" data-habla="Ariadna conduce · Brahyam respalda criterios" aria-labelledby="h4">
   <div class="texto">
     <p class="bloque"><b>Bloque 4</b>, 3:10–4:00</p>
-    <h2 id="h4">Seis es el máximo financiero con una unidad por entrada, no un máximo universal.</h2>
-    <p class="bajada">Siete carteras de seis caben en 5.000; D6 empata con las otras seis y el conteo no demuestra su superioridad. Ninguna tiene elegibilidad definitiva: a las 15 medidas les aplicamos la misma puerta.</p>
-    <ul class="etiquetas" aria-label="Puerta común de elegibilidad">
-      <li>Problema y factor</li><li>Mecanismo</li><li>Sitio</li><li>Actor y competencia</li><li>Unidad y mantenimiento</li><li>Sin doble pago</li>
-    </ul>
-    <p class="fuente">Roles propuestos: CORNARE, municipios, productores/UMATA, titulares, operadores y gestión del riesgo, sin compromisos recibidos. Primero expedientes y custodios; después ejecución.</p>
+    <h2 id="h4">Siete carteras empatan en seis unidades. El conteo no elige.</h2>
+    <p class="bajada">Con una unidad por entrada, seis es el máximo financiero, no un máximo universal. D6 empata con las otras seis; el desempate ambiental sigue abierto.</p>
+    <ol class="puerta" aria-label="Puerta común aplicada a las 15 medidas"><li>Problema y factor</li><li>Mecanismo</li><li>Sitio</li><li>Actor y competencia</li><li>Unidad y mantenimiento</li><li>Sin doble pago</li></ol>
+    <p class="fuente">Roles propuestos: CORNARE, municipios, productores/UMATA, titulares, operadores y gestión del riesgo, sin compromisos recibidos. Una cartera con menos unidades no se prefiere por costo o preferencia si hay más elegibles.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">Comparación de D6 con la hipótesis no oficial de siete unidades, misma escala de 0 a 5.000.</figcaption>
-    <div class="barras">
-      <div class="fila-barra"><p class="nombre"><b>D6</b>recomendada</p>
-        <div class="barra" data-total="5000" data-saldo="0">
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b></div>
-          <div class="seg" style="--m:1000;--c:var(--u07)" data-m="1000"><b>07</b><span>suelo</span></div>
-          <div class="seg" style="--m:800;--c:var(--u08)" data-m="800"><b>08</b></div>
-          <div class="seg" style="--m:1000;--c:var(--u09)" data-m="1000"><b>09</b><span>verde</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14R</b></div>
-        </div>
-      </div>
-      <div class="fila-barra"><p class="nombre"><b>HIP7</b>hipótesis, no oficial</p>
-        <div class="barra" data-total="5000" data-saldo="0">
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b></div>
-          <div class="seg" style="--m:800;--c:var(--u08)" data-m="800"><b>08</b></div>
-          <div class="seg" style="--m:800;--c:var(--u15)" data-m="800"><b>15</b><span>salud</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14R</b></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14G</b></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14M</b></div>
-        </div>
-      </div>
-      <div class="eje" aria-hidden="true"><span></span><ol><li>0</li><li>1.000</li><li>2.000</li><li>3.000</li><li>4.000</li><li>5.000 M</li></ol></div>
-    </div>
-    <p class="aviso"><b>Hipótesis de cupo 3 para 14</b> (17 unidades, 3.906 conjuntos factibles): máximo de 7 unidades de 5 tipos. Frente a D6 retira 07 suelo y 09 verde (2.000 M, 40 % del presupuesto) y añade 15, 14G y 14M, con pertinencia aún pendiente. No es escenario adoptado ni oficial, ni son tres programas actuales. Contar más no es más eficacia.</p>
-  </figure>
+  <div class="figura">
+    <div data-componente="maximas"></div>
+    <p class="aviso"><b>HIP7</b> (hipótesis de cupo 3 para 14, no oficial ni adoptada): retira 07 suelo y 09 verde (2.000 M, 40 %) y añade 15, 14G y 14M, con pertinencia pendiente. Sus 17 unidades no son las 17 fichas MEA. Contar más no es más eficacia.</p>
+  </div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
-      <dt>Frase ancla</dt><dd>«Bajo la regla de una unidad por entrada, el máximo es seis; si cambia el cupo, cambia el máximo.»</dd>
-      <dt>Cuenta</dt><dd>2<sup>15</sup> = 32.768 subconjuntos; 1.567 factibles (incluido el vacío); 7 carteras de seis. Las siete unidades más baratas suman 5.800: siete no caben con una por entrada.</dd>
-      <dt>Si preguntan</dt><dd>«¿Por qué no siete?» Solo bajo un cupo no confirmado, y exigiría acreditar 15, 14G y 14M por su propio problema. Salud 15 nunca entra como relleno.</dd>
-      <dt>Responde</dt><dd>Steven (enumeración reproducible: caso/comparar_presupuesto.py); Brahyam (puerta común).</dd>
+      <dt>Cuenta</dt><dd>2<sup>15</sup> = 32.768 subconjuntos; 1.567 factibles (incluido el vacío); 7 de seis. Las siete unidades más baratas suman 5.800.</dd>
+      <dt>Responde</dt><dd>Steven (caso/comparar_presupuesto.py); Brahyam (puerta común).</dd>
     </dl>
   </aside>
 </section>
@@ -260,43 +144,16 @@
   <div class="texto">
     <p class="bloque"><b>Bloque 5</b>, 4:00–5:00</p>
     <h2 id="h5">Hacia 2060 la amenaza sube donde actúa D6: revisamos diseño, no probamos eficacia.</h2>
-    <p class="bajada">Horizonte solicitado: <b>SSP3-7.0, 2041–2060</b>, confirmado. Comparamos referencia → SSP3. SSP2-4.5/2040 queda solo como exploración adicional.</p>
-    <p class="aviso agua">Riesgo de desastres en Rionegro, 2060: SSP1 0,3206814; SSP2 0,3206764; SSP3 0,3206592. Son distintos aunque redondeen a 0,321 Medio; no prueban igual eficacia ni robustez.</p>
-    <p class="fuente">Decisión por unidad: mantener las seis condicionadas; revisar prácticas en 07/08, función urbana en 09 y protocolos en 14.</p>
+    <p class="bajada">Horizonte solicitado y confirmado: SSP3-7.0, 2041–2060, que coincide con el de estrés. SSP2-4.5 es solo exploración.</p>
+    <p class="aviso agua">Riesgo de desastres en Rionegro, 2060: SSP1 0,3206814; SSP2 0,3206764; SSP3 0,3206592. Distintos aunque redondeen a 0,321 Medio.</p>
+    <p class="fuente">Mantener las seis condicionadas; revisar prácticas en 07/08, función urbana en 09 y protocolos en 14. Fuente: M-E-2411 columnas D/J/P; amenazas M-E-2550 p. 6.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">Amenaza institucional publicada por unidad de D6: referencia frente a SSP3-7.0/2060, escala 0 a 0,6.</figcaption>
-    <svg class="svgfig" viewBox="0 0 800 392" role="img" aria-labelledby="t-ssp d-ssp">
-      <title id="t-ssp">Amenaza de referencia y SSP3-7.0/2060 por unidad</title>
-      <desc id="d-ssp">03 biodiversidad Rionegro 0,291 a 0,313; 03 biodiversidad Marinilla 0,334 a 0,360; 04 agua Marinilla 0,180 a 0,190; 04 agua Rionegro 0,244 a 0,254; 07 alimentos Rionegro 0,384 a 0,435; 08 alimentos Guarne 0,275 a 0,304; 09 hábitat Guarne 0,316 a 0,403; 14 desastres Rionegro 0,489 a 0,567; residual infraestructura Guarne 0,323 a 0,367.</desc>
-      <g class="grid">
-        <line x1="150" y1="22" x2="150" y2="352"/><line x1="250" y1="22" x2="250" y2="352"/><line x1="350" y1="22" x2="350" y2="352"/><line x1="450" y1="22" x2="450" y2="352"/><line x1="550" y1="22" x2="550" y2="352"/><line x1="650" y1="22" x2="650" y2="352"/><line x1="750" y1="22" x2="750" y2="352"/>
-      </g>
-      <g font-size="13" class="r" text-anchor="middle">
-        <text x="150" y="372" class="r">0</text><text x="250" y="372" class="r">0,1</text><text x="350" y="372" class="r">0,2</text><text x="450" y="372" class="r">0,3</text><text x="550" y="372" class="r">0,4</text><text x="650" y="372" class="r">0,5</text><text x="750" y="372" class="r">0,6</text>
-      </g>
-      <g font-size="15">
-        <text x="0" y="45">03 Bio Rionegro</text><line class="tramo-l" x1="441" y1="40" x2="463" y2="40"/><circle class="ref" cx="441" cy="40" r="7"/><circle class="fut" cx="463" cy="40" r="7"/><text x="430" y="45" text-anchor="end" class="r">0,291</text><text x="474" y="45">0,313</text>
-        <text x="0" y="81">03 Bio Marinilla</text><line class="tramo-l" x1="484" y1="76" x2="510" y2="76"/><circle class="ref" cx="484" cy="76" r="7"/><circle class="fut" cx="510" cy="76" r="7"/><text x="473" y="81" text-anchor="end" class="r">0,334</text><text x="521" y="81">0,360</text>
-        <text x="0" y="117">04 Agua Marinilla</text><line class="tramo-l" x1="330" y1="112" x2="340" y2="112"/><circle class="ref" cx="330" cy="112" r="7"/><circle class="fut" cx="340" cy="112" r="7"/><text x="319" y="117" text-anchor="end" class="r">0,180</text><text x="351" y="117">0,190</text>
-        <text x="0" y="153">04 Agua Rionegro</text><line class="tramo-l" x1="394" y1="148" x2="404" y2="148"/><circle class="ref" cx="394" cy="148" r="7"/><circle class="fut" cx="404" cy="148" r="7"/><text x="383" y="153" text-anchor="end" class="r">0,244</text><text x="415" y="153">0,254</text>
-        <text x="0" y="189">07 Alimentos Rionegro</text><line class="tramo-l" x1="534" y1="184" x2="585" y2="184"/><circle class="ref" cx="534" cy="184" r="7"/><circle class="fut" cx="585" cy="184" r="7"/><text x="523" y="189" text-anchor="end" class="r">0,384</text><text x="596" y="189">0,435</text>
-        <text x="0" y="225">08 Alimentos Guarne</text><line class="tramo-l" x1="425" y1="220" x2="454" y2="220"/><circle class="ref" cx="425" cy="220" r="7"/><circle class="fut" cx="454" cy="220" r="7"/><text x="414" y="225" text-anchor="end" class="r">0,275</text><text x="465" y="225">0,304</text>
-        <text x="0" y="261">09 Hábitat Guarne</text><line class="tramo-l" x1="466" y1="256" x2="553" y2="256"/><circle class="ref" cx="466" cy="256" r="7"/><circle class="fut" cx="553" cy="256" r="7"/><text x="455" y="261" text-anchor="end" class="r">0,316</text><text x="564" y="261">0,403</text>
-        <text x="0" y="297">14 Desastres Rionegro</text><line class="tramo-l" x1="639" y1="292" x2="717" y2="292"/><circle class="ref" cx="639" cy="292" r="7"/><circle class="fut" cx="717" cy="292" r="7"/><text x="628" y="297" text-anchor="end" class="r">0,489</text><text x="728" y="297">0,567</text>
-        <g class="resid"><text x="0" y="333">Residual: infra Guarne</text><line class="tramo-l" x1="473" y1="328" x2="517" y2="328"/><circle class="ref" cx="473" cy="328" r="7"/><circle class="fut" cx="517" cy="328" r="7"/><text x="462" y="333" text-anchor="end" class="r">0,323</text><text x="528" y="333">0,367</text></g>
-      </g>
-      <g font-size="13"><circle class="ref" cx="160" cy="12" r="6"/><text x="172" y="16">Referencia</text><circle class="fut" cx="270" cy="12" r="6"/><text x="282" y="16">SSP3-7.0, 2041–2060</text></g>
-    </svg>
-    <p class="fuente">Amenaza institucional publicada (índice 0–1), master M-E-2411, columnas D y P por fila; informe de amenazas M-E-2550 p. 6. No es eficacia, caudal ni temperatura de diseño. Escala lineal compartida.</p>
-  </figure>
+  <div class="figura" data-componente="escenario"></div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
-      <dt>Frase ancla</dt><dd>«El escenario indica dónde revisar el diseño; no mide la respuesta de la cartera.»</dd>
-      <dt>Decisión cerrada</dt><dd>SSP3-7.0 hacia 2060, confirmado por el usuario al responder la consulta sobre el horizonte intermedio. El horizonte solicitado y el de estrés coinciden; no son dos pruebas independientes. No pedir otra ratificación.</dd>
+      <dt>Frase ancla</dt><dd>«El escenario dice dónde revisar el diseño; no mide la respuesta de la cartera.»</dd>
       <dt>No decir</dt><dd>«Valores idénticos», «D6 es robusta», «SSP2 es el intermedio oficial».</dd>
-      <dt>Responde</dt><dd>Brahyam; Steven para la celda (AT19/AX19/BB19).</dd>
     </dl>
   </aside>
 </section>
@@ -307,52 +164,29 @@
     <p class="bloque"><b>Bloque 6</b>, 5:00–6:20</p>
     <h2 id="h6">El residual queda escrito, con el dato que nos haría cambiar.</h2>
     <div class="cifras">
-      <p><b>42</b>cruces residuales: D6/N1 × 3 municipios × 7 dimensiones</p>
+      <p><b>42</b>cruces documentales D6/N1 × 3 municipios × 7 dimensiones; no son cobertura</p>
       <p><b>34</b>variables: 14 códigos institucionales y 20 propuestas locales (PROP)</p>
     </div>
-    <p>Sin unidad dedicada en D6:</p>
-    <ul class="abiertas"><li>01 PSA</li><li>02 Restauración</li><li>05 Rondas</li><li>06 Cabeceras</li><li>13 SAT</li><li>11/12 Infraestructura</li><li>15 Salud</li></ul>
-    <ol class="cadena" aria-label="Cómo verificar después">
-      <li><b>Basal física fechada</b>Antes de ejecutar; un índice 0–1 no es volumen.</li>
-      <li><b>Repetir el método</b>Mismo procedimiento, periodo comparable.</li>
-      <li><b>Separar</b>Ejecución, cambio observado y atribución.</li>
-    </ol>
+    <p class="fuente">Pedimos servicio/activo, respaldo, interrupción tolerable, recuperación y afectados; no inventamos dependencias por proximidad. La ficha sigue en el MEA existente; no hemos cargado datos.</p>
   </div>
-  <figure class="figura">
-    <figcaption class="oculto">Carteras de reapertura a la misma escala de 0 a 5.000 millones.</figcaption>
-    <p class="bajada" style="font-size:1rem">Si se demuestra una función crítica, reabrimos con costo visible:</p>
-    <div class="barras">
-      <div class="fila-barra"><p class="nombre"><b>SAT crítico</b>5 unidades, 4.200</p>
-        <div class="barra" data-total="4200" data-saldo="800">
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b></div>
-          <div class="seg" style="--m:800;--c:var(--u08)" data-m="800"><b>08</b></div>
-          <div class="seg" style="--m:1200;--c:var(--u13)" data-m="1200"><b>13 SAT</b><span>1.200</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14</b></div>
-          <div class="seg saldo" style="--m:800"><b>800</b><span>saldo</span></div>
-        </div>
+  <div class="figura">
+    <div data-componente="reapertura"></div>
+    <p class="aviso coral">El saldo de 800 no obliga a comprar salud: 15 entra solo por su propio problema. Antes de decidir se reenumeran las 15.</p>
+    <div class="escalera" role="img" aria-label="Escalera conceptual de evidencia: actividad ejecutada, resultado observado, contribución plausible; atribución causal no acreditada">
+      <div class="pl">
+        <div class="esc" style="--i:0;--c:var(--bosque)"><div class="cara">Actividad ejecutada</div></div>
+        <div class="esc" style="--i:1;--c:var(--agua)"><div class="cara">Resultado observado con T0</div></div>
+        <div class="esc" style="--i:2;--c:var(--ocre)"><div class="cara">Contribución plausible</div></div>
+        <div class="esc fantasma" style="--i:3;--c:var(--coral)"><div class="cara">Atribución causal: no acreditada</div></div>
       </div>
-      <div class="fila-barra"><p class="nombre"><b>Servicio esencial</b>5 unidades, 5.000</p>
-        <div class="barra" data-total="5000" data-saldo="0">
-          <div class="seg" style="--m:700;--c:var(--u03)" data-m="700"><b>03</b></div>
-          <div class="seg" style="--m:900;--c:var(--u04)" data-m="900"><b>04</b></div>
-          <div class="seg" style="--m:800;--c:var(--u08)" data-m="800"><b>08</b></div>
-          <div class="seg" style="--m:2000;--c:var(--u12)" data-m="2000"><b>12 Servicios</b><span>2.000</span></div>
-          <div class="seg" style="--m:600;--c:var(--u14)" data-m="600"><b>14</b></div>
-        </div>
-      </div>
-      <div class="eje" aria-hidden="true"><span></span><ol><li>0</li><li>1.000</li><li>2.000</li><li>3.000</li><li>4.000</li><li>5.000 M</li></ol></div>
     </div>
-    <p class="aviso residuo">Ambas retiran 07 suelo y 09 verde. El saldo de 800 no obliga a comprar salud: 15 entra solo por su propio problema, nunca como relleno. Antes de decidir se reenumeran las 15.</p>
-    <p class="fuente">P3, «Reapertura con costo y sacrificio visibles». Dependencias: pedimos servicio/activo, respaldo, interrupción tolerable, recuperación y afectados; no inventamos redes por proximidad. La ficha sigue en el MEA existente; no hemos cargado datos.</p>
-  </figure>
+    <p class="fuente">Escalera 3D conceptual: no representa magnitudes. Sin basal física fechada (T0) no anunciamos reducción.</p>
+  </div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
-      <dt>Frase ancla</dt><dd>«Sin basal física no anunciamos reducción.»</dd>
-      <dt>Ejemplo</dt><dd>04: conservar InSensHIDRO-01 y levantar demanda/oferta física comparable, con basal fechada, procedimiento, frecuencia y custodio propuestos.</dd>
+      <dt>Ejemplo</dt><dd>04: InSensHIDRO-01 + intensidad de captación m³ por unidad real de actividad (PROP). Menor actividad puede explicar menor consumo.</dd>
       <dt>No decir</dt><dd>«34 indicadores oficiales», «ya medimos», «la cartera reduce el riesgo residual».</dd>
-      <dt>Responde</dt><dd>Brahyam (residual y verificación); Steven (CSV de variables y su procedencia).</dd>
     </dl>
   </aside>
 </section>
@@ -363,49 +197,41 @@
     <p class="bloque"><b>Bloque 7</b>, 6:20–7:00</p>
     <h2 id="h7">Una decisión revisable, su costo de oportunidad y los datos que pueden cambiarla.</h2>
     <div class="estados">
-      <section style="--c:var(--bosque)"><h3>Comprobado</h3><ul><li>Cuenta 5.000, saldo 0, contra los 15 precios del reto.</li><li>Siete carteras de seis enumeradas con una unidad por entrada.</li><li>Valores institucionales con hoja, fila y celda.</li></ul></section>
-      <section style="--c:var(--ocre)"><h3>Propuesto</h3><ul><li>Lugares municipales y roles de actores.</li><li>14 en Rionegro, 12 meses desde una futura acta.</li><li>Variables, frecuencias y custodios.</li></ul></section>
-      <section style="--c:var(--residuo)"><h3>Pendiente</h3><ul><li>Sitios, expedientes y adicionalidad.</li><li>Cupos de repetición y custodios aceptados.</li><li>Basales físicas y efecto medido.</li></ul></section>
+      <section style="--c:var(--bosque)"><h3>Comprobado</h3><ul><li>Cuenta 5.000, saldo 0, contra los 15 precios del reto.</li><li>Siete carteras de seis con una unidad por entrada.</li><li>Valores institucionales con hoja, fila y celda.</li></ul></section>
+      <section style="--c:var(--ocre)"><h3>Propuesto</h3><ul><li>Lugares municipales y roles de actores.</li><li>14R: 12 meses desde una futura acta.</li><li>Variables, frecuencias y custodios.</li></ul></section>
+      <section style="--c:var(--coral)"><h3>Pendiente</h3><ul><li>Sitios, expedientes y adicionalidad.</li><li>Cupos de repetición y custodios aceptados.</li><li>Basales físicas y efecto medido.</li></ul></section>
     </div>
-    <p class="aviso">No afirmamos eficacia ni causalidad demostradas. 70/15/15 no son pesos del jurado; el 30 % a 2035 es una meta institucional. Acceso público no equivale a licencia ni aval.</p>
-    <p class="fuente">Documento entregable: <a data-anexo-enlace href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final de 2 páginas con decisión y anexo metodológico</a>. Esta web lo acompaña; no lo sustituye.</p>
+    <p class="aviso">No afirmamos eficacia ni causalidad. 70/15/15 no son pesos del jurado; 30 % a 2035 es meta institucional. Acceso público no equivale a licencia ni aval.</p>
+    <p class="fuente">Entregable: <a href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final de 2 páginas con decisión y anexo metodológico</a>. Cómo llegamos, en detalle: <a href="../metodologia/">metodología</a>.</p>
   </div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
-      <dt>Frase ancla</dt><dd>«Pasamos del diagnóstico a una selección, un sacrificio explícito y un seguimiento verificable.»</dd>
-      <dt>Transición</dt><dd>Al cerrar, Ariadna da paso a preguntas: Brahyam (incertidumbres y criterios) y Steven (cómo repetir la cuenta y encontrar fuentes).</dd>
-      <dt>Ensayo</dt><dd>Durante el estudio 14–16: cronometrar en voz alta; el registro real sigue pendiente. El cronómetro (T) de esta página es solo ayuda, no evidencia.</dd>
+      <dt>Transición</dt><dd>Ariadna da paso a preguntas: Brahyam (incertidumbres y criterios) y Steven (cuenta, fuentes y herramientas).</dd>
+      <dt>Ensayo</dt><dd>Durante el estudio 14–16; registro real pendiente. El cronómetro (T) es ayuda, no evidencia.</dd>
     </dl>
   </aside>
 </section>
 
 <!-- Fuera del oral -->
-<section class="lamina ancha" id="preguntas" data-tramo="-1" data-habla="Fuera de los 7 minutos" aria-labelledby="h8">
+<section class="lamina ancha" id="preguntas" data-tramo="-1" data-habla="Fuera de los 7 minutos orales" aria-labelledby="h8">
   <div class="texto">
-    <p class="bloque"><b>Después de 7:00</b>, preguntas y criterios (no se expone)</p>
+    <p class="bloque"><b>Después de 7:00</b>, preguntas (no se expone; fuera del objetivo del cronómetro)</p>
     <h2 id="h8">Preguntas probables y dónde está la respuesta.</h2>
+    <div class="equipo"><p><b>Ariadna</b>Lidera y responde prioridades</p><p><b>Brahyam</b>Incertidumbres, criterios y límites</p><p><b>Steven</b>Cuenta, fuentes y herramientas</p></div>
     <ul class="qa">
       <li><b>Q01 ¿Qué proteger y por qué?</b>Capacidad de conservación bio y sensibilidad hídrica (P1-H1/H2). El 56 % a suelo/agro/verde tiene aporte bio/agua hipotético. <em>Ariadna</em></li>
-      <li><b>Q02 ¿Dónde primero?</b>03/04 compartidas R–M; 07 Rionegro; 08/09 Guarne; 14 Rionegro. Sin predios; Marinilla sin obra propia. <em>Ariadna</em></li>
-      <li><b>Q03 ¿Qué combinación?</b>D6 frente a N1, siete máximas y comparadores SAT, infraestructura, SUDS y restauración. <em>Brahyam</em></li>
-      <li><b>Q04 ¿Cómo distribuir?</b>700+900+1.000+800+1.000+600 = 5.000; 14 cuenta una vez. Compartir lugar no multiplica costo. <em>Steven</em></li>
-      <li><b>Q05 ¿Qué actores?</b>Roles propuestos por función, sin acuerdos, tenencia ni custodia aceptada. <em>Ariadna</em></li>
-      <li><b>Q06 ¿Qué cambia con SSP3?</b>Referencia → SSP3-7.0/2060 por unidad: mantener condicionadas y revisar diseño; no prueba eficacia. <em>Brahyam</em></li>
-      <li><b>Q07 ¿Qué permanece?</b>42 cruces; conservación hídrica, alerta, infraestructura y salud sin unidad propia. <em>Brahyam</em></li>
-      <li><b>Q08 ¿Qué dato cambia la elección?</b>Servicio esencial, SAT, demanda/oferta, sitio, adicionalidad. SAT 4.200/5/saldo 800 o servicios 5.000/5. <em>Ariadna</em></li>
-      <li><b>Q09 ¿Cómo verificar después?</b>34 variables; seis ejemplos PROP: 03 ha, 04 m³ por actividad, 07 cobertura, 08 kg/ha, 09 supervivencia, 14 recepción y uso por intentos. Basales, sitios y custodios aceptados siguen en null; ejecución, cambio y causalidad por separado. <em>Steven</em></li>
-      <li><b>Criterios C01–C08</b>Decisión, rigor, priorización, pensamiento sistémico, robustez, viabilidad y gobernanza, seguimiento y utilidad para CORNARE: todos condicionales al corte; ver metodología. <em>Brahyam</em></li>
+      <li><b>Q02 ¿Dónde primero?</b>03 corredor R–M; 04 M–R; 07 R; 08/09 G; 14 R. Sin predios; Marinilla sin obra propia acreditada. <em>Ariadna</em></li>
+      <li><b>Q03 ¿Qué combinación?</b>D6 frente a N1 y siete máximas que empatan; desempate ambiental abierto. <em>Brahyam</em></li>
+      <li><b>Q04 ¿Cómo distribuir?</b>700+900+1.000+800+1.000+600 = 5.000; 14 cuenta una vez. <em>Steven</em></li>
+      <li><b>Q05 ¿Qué actores?</b>Roles propuestos por función, sin acuerdos ni custodia aceptada. <em>Ariadna</em></li>
+      <li><b>Q06 ¿Qué cambia con SSP3?</b>Referencia → SSP3-7.0/2060: mantener condicionadas y revisar diseño; no prueba eficacia. <em>Brahyam</em></li>
+      <li><b>Q07 ¿Qué permanece?</b>42 cruces documentales; conservación hídrica, alerta, infraestructura y salud sin unidad propia. <em>Brahyam</em></li>
+      <li><b>Q08 ¿Qué dato cambia la elección?</b>Servicio esencial, SAT, demanda/oferta, sitio, adicionalidad: SAT 4.200/5/saldo 800 o servicios 5.000/5. <em>Ariadna</em></li>
+      <li><b>Q09 ¿Cómo verificar después?</b>34 variables; seis ejemplos PROP (03 ha, 04 m³ por actividad, 07 cobertura, 08 kg/ha, 09 supervivencia, 14 recepción y uso). Basales y custodios en null. <em>Steven</em></li>
+      <li><b>C01–C08</b>Decisión, rigor, priorización, sistema, robustez, viabilidad, seguimiento y utilidad: todos condicionales al corte. <em>Brahyam</em></li>
     </ul>
   </div>
-  <aside class="notas" aria-label="Notas de estudio">
-    <h3>Notas de estudio</h3>
-    <dl>
-      <dt>Regla</dt><dd>Cada respuesta separa dato, cálculo, inferencia, supuesto y faltante. Si no hay evidencia, decir qué falta y quién lo levantaría.</dd>
-      <dt>¿Siete unidades?</dt><dd>Solo como hipótesis de cupo 3 para 14: {03, 04, 08, 15, 14R, 14G, 14M} = 5.000. Retira 07 y 09 (2.000 M, 40 %). No oficial ni adoptada. Sus 17 unidades no son las 17 fichas MEA. Más conteo no implica más función ecosistémica.</dd>
-      <dt>¿La web prueba algo?</dt><dd>No: la cuenta y la recepción de datos son evidencia técnica limitada; el resultado ambiental requiere medición.</dd>
-    </dl>
-  </aside>
 </section>
 
 </main>
@@ -414,7 +240,7 @@
   <button type="button" data-accion="anterior" aria-label="Lámina anterior">Anterior</button>
   <p class="contador" aria-live="polite"></p>
   <p class="habla"></p>
-  <span class="cronometro" hidden aria-live="off">0:00</span>
+  <span class="cronometro" hidden>0:00</span>
   <button type="button" data-accion="siguiente" aria-label="Lámina siguiente">Siguiente</button>
 </footer>
 </body>

@@ -1,120 +1,369 @@
-/* Motor de láminas sin dependencias: teclado, táctil, notas, modo estudio, cronómetro y pantalla completa.
-   Sin JS, las láminas se leen como documento continuo. */
+/* Motor de láminas y componentes interactivos sin dependencias.
+   Teclado, táctil, notas, modo estudio, pausa de movimiento, cronómetro de ensayo y pantalla completa. */
 (() => {
   "use strict";
+  const D = window.EXPO_DATOS;
   const body = document.body;
-  const laminas = [...document.querySelectorAll(".lamina")];
-  const tramos = [...document.querySelectorAll(".tramo")];
-  const contador = document.querySelector(".pie .contador");
-  const habla = document.querySelector(".pie .habla");
-  const reloj = document.querySelector(".cronometro");
-  const escenario = document.querySelector(".escenario");
-  const btn = a => document.querySelector(`[data-accion="${a}"]`);
-  if (!laminas.length) return;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs = {}, html) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); if (html !== undefined) e.innerHTML = html; return e; };
+  const sv = (tag, attrs = {}) => { const e = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v); return e; };
+  const fmt = n => n.toLocaleString("es-CO");
+  const dec = (n, d = 3) => n.toFixed(d).replace(".", ",");
+  const pct = c => `${Math.round(c / 50)} %`;
+  const cat = id => D.catalogo[id.slice(0, 2)];
+  const color = id => `var(--u${id.slice(0, 2)})`;
+  const reducido = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Autochequeo de barras: la suma de segmentos debe coincidir con data-total y el saldo con 5.000 − total. */
-  for (const barra of document.querySelectorAll(".barra[data-total]")) {
-    const suma = [...barra.querySelectorAll(".seg[data-m]")].reduce((s, el) => s + Number(el.dataset.m), 0);
-    const total = Number(barra.dataset.total);
-    const saldoEl = barra.querySelector(".seg.saldo");
-    const saldo = saldoEl ? Number(getComputedStyle(saldoEl).getPropertyValue("--m")) : 0;
-    const okSaldo = barra.dataset.saldo === undefined || (Number(barra.dataset.saldo) === 5000 - total && (!saldoEl || saldo === 5000 - total));
-    if (suma !== total || suma + saldo > 5000 || !okSaldo) {
-      barra.classList.add("error");
-      console.error("Barra inconsistente", { suma, total, saldo, barra });
+  /* ---------- Barra apilada con transición, compartida por tablero y reapertura ---------- */
+  const ORDEN = ["01", "03", "04", "05", "07", "08", "09", "12", "13", "14", "15", "14G", "14M"];
+  const clave = id => (id === "14R" ? "14" : id);
+  function crearPila(cont, alSeleccionar) {
+    const pila = el("div", { class: "pila", role: "group", "aria-label": "Presupuesto a escala de 0 a 5.000 millones" });
+    const segs = {};
+    for (const k of ORDEN) {
+      const b = el("button", { type: "button", class: "seg", "data-k": k, "data-m": "0", "aria-expanded": "false", tabindex: "-1" });
+      b.style.setProperty("--c", color(k));
+      b.addEventListener("click", () => alSeleccionar?.(b.dataset.id));
+      segs[k] = b; pila.append(b);
     }
+    const saldo = el("div", { class: "seg saldo", "data-m": "0" });
+    pila.append(saldo);
+    const eje = el("div", { class: "eje", "aria-hidden": "true" }, ["0", "1.000", "2.000", "3.000", "4.000", "5.000 M"].map(t => `<span>${t}</span>`).join(""));
+    cont.append(pila, eje);
+    return {
+      pintar(cartera) {
+        const presentes = new Map(cartera.unidades.map(x => [clave(x.id), x]));
+        for (const k of ORDEN) {
+          const s = segs[k], x = presentes.get(k);
+          const m = x ? cat(x.id).c : 0;
+          s.style.setProperty("--m", m);
+          s.dataset.m = String(m);
+          s.dataset.id = x ? x.id : "";
+          s.tabIndex = x ? 0 : -1;
+          s.classList.toggle("hipo", !!x?.hipo);
+          s.innerHTML = x ? `<b>${x.id}</b><span>${fmt(m)}</span>` : "";
+          s.setAttribute("aria-label", x ? `${x.id} ${cat(x.id).n}, ${fmt(m)} millones, ${pct(m)} del fondo` : "");
+          s.setAttribute("aria-hidden", String(!x));
+          if (!x) s.setAttribute("aria-expanded", "false");
+        }
+        const sal = D.fondo - cartera.total;
+        saldo.style.setProperty("--m", sal);
+        saldo.dataset.m = String(sal);
+        saldo.innerHTML = sal ? `<b>${fmt(sal)}</b><span>saldo</span>` : "";
+        saldo.setAttribute("aria-hidden", String(!sal));
+        const suma = [...presentes.values()].reduce((s, x) => s + cat(x.id).c, 0);
+        if (suma !== cartera.total || suma + sal !== D.fondo) { pila.style.outline = "3px solid red"; console.error("Barra inconsistente", cartera.nombre); }
+      },
+      marcar(id) { for (const s of Object.values(segs)) s.setAttribute("aria-expanded", String(!!id && s.dataset.id === id)); }
+    };
+  }
+  const leyendaUnidades = (cartera) => cartera.unidades.map(x => {
+    const c = cat(x.id).c;
+    return `<li style="--c:${color(x.id)}"><i></i><b>${x.id}</b><span>${cat(x.id).n}<small>${x.nota}</small></span><span class="num">${fmt(c)} M<small> · ${pct(c)}</small></span></li>`;
+  }).join("");
+
+  /* ---------- Río del fondo (Sankey): grosor de cada brazo proporcional al costo ---------- */
+  function rio(cont) {
+    const cartera = D.carteras[cont.dataset.cartera || "D6"];
+    const k = 0.1, x0 = 140, x1 = 700, gap = 16, top = 40;
+    const alto = D.fondo * k + gap * (cartera.unidades.length - 1);
+    const svg = sv("svg", { class: "sankey", viewBox: `0 0 1000 ${alto + top + 30}`, role: "img", "aria-label": `Fondo de 5.000 millones repartido en ${cartera.unidades.length} unidades; grosor proporcional al costo` });
+    const off = (alto - D.fondo * k) / 2;
+    svg.append(sv("rect", { class: "fuente-caudal", x: 100, y: top + off, width: 40, height: D.fondo * k, rx: 4 }));
+    const t0 = sv("text", { x: 0, y: top + off - 12, "font-size": 24, "font-weight": 700 }); t0.textContent = "Fondo 5.000 M"; svg.append(t0);
+    let sy = top + off, ty = top;
+    cartera.unidades.forEach((x, i) => {
+      const h = cat(x.id).c * k, cx = (x0 + x1) / 2;
+      const d = `M${x0},${sy} C${cx},${sy} ${cx},${ty} ${x1},${ty} L${x1},${ty + h} C${cx},${ty + h} ${cx},${sy + h} ${x0},${sy + h} Z`;
+      const p = sv("path", { class: "brazo", d, fill: color(x.id) }); svg.append(p);
+      const cl = sv("path", { class: "corriente", d: `M${x0},${sy + h / 2} C${cx},${sy + h / 2} ${cx},${ty + h / 2} ${x1},${ty + h / 2}`, "stroke-width": Math.max(2, h * 0.18) });
+      cl.style.animationDelay = `${-i * 0.37}s`; svg.append(cl);
+      svg.append(sv("rect", { x: x1, y: ty, width: 14, height: h, fill: color(x.id), rx: 2 }));
+      const t = sv("text", { x: x1 + 26, y: ty + h / 2 + 9, "font-size": 26, "font-weight": 700 }); t.textContent = `${x.id}  ${fmt(cat(x.id).c)}`; svg.append(t);
+      const t2 = sv("text", { x: x1 + 150, y: ty + h / 2 + 9, "font-size": 22, class: "t2", fill: "currentColor", opacity: .75 }); t2.textContent = pct(cat(x.id).c); svg.append(t2);
+      sy += h; ty += h + gap;
+    });
+    cont.append(svg);
+    const ul = el("ul", { class: "leyenda-unidades" }, leyendaUnidades(cartera));
+    cont.append(ul);
   }
 
-  let i = 0;
-  let deck = true;
-  const leerHash = () => {
-    const h = decodeURIComponent(location.hash.slice(1));
+  /* ---------- Tablero: cartera × municipio, barra, esquema territorial y cadena ---------- */
+  const EVIDENCIA = {
+    R: ["Sitio y estado del suelo para 07", "Programa completo y custodio de 14", "Acuerdos de 03 y usuarios de 04"],
+    G: ["UPA, prácticas y basal de 08", "Sitio, función y mantenimiento de 09", "Activo crítico de infraestructura"],
+    M: ["Usuarios y demanda física de 04", "Acuerdos y custodia de 03", "Problema sanitario propio para 15"]
+  };
+  function tablero(cont) {
+    let carteraK = cont.dataset.cartera || "D6", muni = "";
+    const opciones = cont.dataset.opciones ? cont.dataset.opciones.split(",") : ["D6", "N1", "SAT", "SERV", "HIP7"];
+    const selC = el("fieldset", { class: "selector" }, `<legend>Cartera</legend>${opciones.map(k => `<button type="button" data-c="${k}" class="${D.carteras[k].hipotesis ? "hipo" : ""}" aria-pressed="false">${D.carteras[k].nombre}</button>`).join("")}`);
+    const conMuni = cont.dataset.municipios !== "no";
+    const selM = el("fieldset", { class: "selector" }, `<legend>Municipio</legend><button type="button" data-m="" aria-pressed="true">Los tres</button>${["R", "G", "M"].map(m => `<button type="button" data-m="${m}" aria-pressed="false">${D.municipios[m].nombre}</button>`).join("")}`);
+    const estado = el("p", { class: "fuente", "aria-live": "polite" });
+    const kpis = el("div", { class: "kpis" });
+    const barra = el("div");
+    const desg = el("div", { class: "desglose", hidden: "" });
+    const esquema = el("div", { class: "esquema" });
+    const cadena = el("div");
+    cont.append(selC);
+    if (conMuni) cont.append(selM);
+    cont.append(kpis, barra, desg, estado);
+    if (conMuni) cont.append(esquema, cadena);
+    const pila = crearPila(barra, id => {
+      const x = D.carteras[carteraK].unidades.find(u => u.id === id);
+      if (!x) return;
+      const abierto = !desg.hidden && desg.dataset.id === id;
+      desg.hidden = abierto; desg.dataset.id = abierto ? "" : id; pila.marcar(abierto ? "" : id);
+      const c = cat(id).c;
+      desg.style.setProperty("--c", color(id));
+      desg.innerHTML = `<h4>${id} · ${cat(id).largo}</h4><p><b>${fmt(c)} M</b>, ${pct(c)} del fondo: asignación, no eficacia.</p><p>Lugar: ${x.nota}.</p>${x.hipo ? "<p>Unidad hipotética: programa municipal propio no acreditado.</p>" : ""}${id.startsWith("14") && !x.hipo ? "<p>Solo 14R tiene 12 meses operativos propuestos desde una futura acta.</p>" : ""}`;
+    });
+    const ficha = x => `<span class="ficha${x.hipo ? " hipo" : ""}" style="--c:${color(x.id)}">${x.id}</span>`;
+    const pintar = () => {
+      const c = D.carteras[carteraK];
+      $$("button", selC).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.c === carteraK)));
+      $$("button", selM).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.m === muni)));
+      pila.pintar(c); pila.marcar(""); desg.hidden = true;
+      const sal = D.fondo - c.total;
+      kpis.innerHTML = `<p><b>${c.unidades.length}</b>unidades completas</p><p><b>${fmt(c.total)}</b>millones asignados</p><p><b>${fmt(sal)}</b>saldo${sal ? ", no es reserva obligada" : ""}</p>`;
+      estado.textContent = `${c.nombre}: ${c.estado}. Porcentajes = asignación del presupuesto, no eficacia.${c.hipotesis ? " Contar más unidades no es más eficacia." : ""}`;
+      if (!conMuni) return;
+      const enM = m => c.unidades.filter(x => !x.corredor && !x.compartida && x.ubic.includes(m));
+      const corr = c.unidades.filter(x => x.corredor), comp = c.unidades.filter(x => x.compartida), pend = c.unidades.filter(x => !x.ubic.length);
+      esquema.innerHTML = `<p class="rotulo">Esquema territorial rotulado: no es un mapa; no indica posición, superficie ni cobertura.</p>
+        <div class="grid3">
+          ${corr.length ? `<div class="banda">${corr.map(ficha).join("")} corredor, prioridad Rionegro–Marinilla</div>` : ""}
+          ${comp.length ? `<div class="banda mr">${comp.map(ficha).join("")} compartida Marinilla–Rionegro</div>` : ""}
+          ${["G", "M", "R"].map(m => `<div class="muni${muni && muni !== m ? " apagado" : ""}${muni === m ? " activo" : ""}"><h4>${D.municipios[m].nombre}</h4>${enM(m).map(ficha).join("") || `<small>${m === "M" ? "Sin obra física propia acreditada" : "Sin unidad municipal propia en esta cartera"}</small>`}</div>`).join("")}
+        </div>
+        ${pend.length ? `<p class="bandeja">Localización pendiente, no se dibuja cobertura: ${pend.map(ficha).join("")}</p>` : ""}`;
+      if (!muni) { cadena.innerHTML = `<p class="razon">Elija un municipio para ver la cadena factor → función propuesta → evidencia faltante → residual.</p>`; return; }
+      const M = D.municipios[muni];
+      const fun = M.funcion[carteraK === "N1" ? "N1" : "D6"];
+      const funTxt = carteraK === "D6" || carteraK === "N1" ? fun : c.unidades.filter(x => x.ubic.includes(muni)).map(x => `${x.id} ${cat(x.id).n}${x.hipo ? " (hipótesis)" : ""}`);
+      cadena.innerHTML = `<ol class="cadena-r" aria-label="Cadena de razonamiento para ${M.nombre}">
+        <li style="--c:var(--agua)"><h4>Factor (P1)</h4><ul>${M.factor.map(t => `<li>${t}</li>`).join("")}</ul></li>
+        <li style="--c:var(--bosque)"><h4>Función propuesta</h4><ul>${funTxt.map(t => `<li>${t}</li>`).join("") || "<li>Sin unidad localizada</li>"}</ul></li>
+        <li style="--c:var(--ocre)"><h4>Evidencia faltante</h4><ul>${EVIDENCIA[muni].map(t => `<li>${t}</li>`).join("")}</ul></li>
+        <li style="--c:var(--coral)"><h4>Residual</h4><ul>${M.residual.map(t => `<li>${t}</li>`).join("")}</ul></li>
+      </ol><p class="razon">Las flechas muestran el orden del razonamiento propuesto, no causalidad ni efecto medido.</p>`;
+    };
+    selC.addEventListener("click", e => { const b = e.target.closest("[data-c]"); if (b) { carteraK = b.dataset.c; pintar(); } });
+    selM.addEventListener("click", e => { const b = e.target.closest("[data-m]"); if (b) { muni = b.dataset.m; pintar(); } });
+    pintar();
+  }
+
+  /* ---------- Matriz de hallazgos con recorrido H1–H5 ---------- */
+  function matriz(cont) {
+    const catN = t => ({ "Muy bajo": 1, "Bajo": 2, "Medio": 3, "Alto": 4, "Alto*": 4, "Muy alto": 5 })[t];
+    const tabla = el("table", { class: "matriz" });
+    tabla.innerHTML = `<caption class="oculto">Vulnerabilidad de referencia por dimensión y municipio (índice 0–1 y categoría). No es un mapa.</caption>
+      <thead><tr><th scope="col">V de referencia</th><th scope="col">Guarne</th><th scope="col">Marinilla</th><th scope="col">Rionegro</th></tr></thead>
+      <tbody>${D.dims.map(d => `<tr><th scope="row">${d}</th>${D.V[d].map(([v, t], j) => `<td class="cat${catN(t)}" data-d="${d}" data-j="${j}">${t}<small>${dec(v)}</small><span class="rel" aria-hidden="true"><i style="--v:${v}"></i></span></td>`).join("")}</tr>`).join("")}</tbody>`;
+    const sel = el("fieldset", { class: "selector" }, `<legend>Recorrer hallazgos</legend><button type="button" data-h="" aria-pressed="true">Todo</button>${D.hallazgos.map(h => `<button type="button" data-h="${h.id}" aria-pressed="false">${h.id}</button>`).join("")}`);
+    const lect = el("div", { class: "lectura-h", "aria-live": "polite" });
+    const nota = el("p", { class: "fuente" }, "P1, matriz M-E-2411, hoja Regional Valles SN, AJ/AK, filas 15–79. Barra interior = índice 0–1, no porcentaje. *Agua Rionegro: Alto en la matriz ampliada, Medio en la lámina 12; el enunciado prevalece y P1 registra otras discrepancias (p. ej., Guarne desastres, salud y alimentos).");
+    cont.append(sel, tabla, lect, nota);
+    const ver = id => {
+      $$("button", sel).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.h === id)));
+      const h = D.hallazgos.find(x => x.id === id);
+      tabla.classList.toggle("foco", !!h);
+      $$("td", tabla).forEach(td => td.classList.toggle("on", !!h && h.celdas.some(([d, j]) => d === td.dataset.d && j === Number(td.dataset.j))));
+      lect.innerHTML = h ? `<b>${h.id}</b> ${h.t}${h.riesgo ? `<br><span class="chip-riesgo">Riesgo Rionegro 0,283 Bajo → 0,321 Medio</span>` : ""}<span class="f">${h.f}</span>` : "Cinco hallazgos: cada uno orienta una función. No elegimos automáticamente el índice mayor.";
+    };
+    sel.addEventListener("click", e => { const b = e.target.closest("[data-h]"); if (b) ver(b.dataset.h); });
+    ver("");
+  }
+
+  /* ---------- Siete máximas de seis unidades ---------- */
+  function maximas(cont) {
+    const filas = D.maximas.map(m => ({ ...m, unidades: m.u.map(id => ({ id })) }));
+    const hip = D.carteras.HIP7;
+    const fila = (rot, unidades, total, cls) => `<div class="max ${cls}"><span class="rot">${rot}</span><div class="pila">${unidades.map(x => `<span class="seg${x.hipo ? " hipo" : ""}" style="--m:${cat(x.id).c};--c:${color(x.id)}"><b>${x.id}</b></span>`).join("")}${total < 5000 ? `<span class="seg saldo" style="--m:${5000 - total}"></span>` : ""}</div><span class="tot">${fmt(total)} · ${unidades.length} u.</span></div>`;
+    cont.innerHTML = `<div class="maximas" role="img" aria-label="Siete carteras de seis unidades factibles con una unidad por entrada; D6 es una de ellas; HIP7 es hipótesis no oficial">
+      ${filas.map((m, i) => fila(m.id, m.unidades, m.total, i === 0 ? "d6" : "")).join("")}
+      ${fila("HIP7", hip.unidades, hip.total, "hip")}
+    </div><div class="eje" aria-hidden="true" style="margin-left:5.9rem;margin-right:5.1rem"><span>0</span><span>2.500</span><span>5.000 M</span></div>`;
+    $$(".max .pila .seg", cont).forEach((s, i) => { s.style.transitionDelay = `${(i % 7) * 40 + Math.floor(i / 6) * 90}ms`; });
+    cont.addEventListener("lamina:entra", () => { const m = $(".maximas", cont); m.classList.remove("visto"); requestAnimationFrame(() => requestAnimationFrame(() => m.classList.add("visto"))); });
+    if (reducido) $(".maximas", cont).classList.add("visto");
+  }
+
+  /* ---------- Escenario: referencia ↔ SSP3-7.0/2060 ↔ SSP2-4.5/2040 exploratorio ---------- */
+  function escenario(cont) {
+    const X = v => 230 + v * 1000, filas = D.escenarios, h = 40, top = 50;
+    const svg = sv("svg", { class: "ssp", viewBox: `0 0 900 ${top + filas.length * h + 40}`, role: "img", "aria-label": "Amenaza institucional publicada por unidad; referencia frente al escenario elegido" });
+    const rej = sv("g", { class: "rej" });
+    for (let v = 0; v <= 6; v++) {
+      rej.append(sv("line", { x1: X(v / 10), x2: X(v / 10), y1: top - 20, y2: top + filas.length * h }));
+      const t = sv("text", { x: X(v / 10), y: top + filas.length * h + 24, "text-anchor": "middle", "font-size": 15, class: "t2" }); t.textContent = v ? `0,${v}` : "0"; rej.append(t);
+    }
+    svg.append(rej);
+    const movs = filas.map((f, i) => {
+      const y = top + i * h;
+      const g = sv("g", { class: f.residual ? "resid" : "" });
+      const et = sv("text", { x: 0, y: y + 6, "font-size": 17 }); et.textContent = `${f.u === "—" ? "" : f.u + " "}${f.p}`; g.append(et);
+      g.append(sv("circle", { class: "fantasma", cx: X(f.ref), cy: y, r: 8 }));
+      const tr = sv("line", { class: "traza", x1: X(f.ref), x2: X(f.ref), y1: y, y2: y }); g.append(tr);
+      const mv = sv("g", { class: "mov" });
+      mv.append(sv("circle", { class: "punto", cx: 0, cy: y, r: 9 }));
+      const val = sv("text", { x: 14, y: y - 12, "font-size": 15, "font-weight": 700 }); mv.append(val);
+      g.append(mv); svg.append(g);
+      return { f, mv, tr, val };
+    });
+    const leyenda = sv("g"); leyenda.append(sv("circle", { class: "fantasma", cx: 240, cy: 18, r: 7 }));
+    const lt = sv("text", { x: 254, y: 23, "font-size": 15 }); lt.textContent = "referencia 1981–2010"; leyenda.append(lt);
+    leyenda.append(sv("circle", { class: "punto", cx: 470, cy: 18, r: 7 }));
+    const lt2 = sv("text", { x: 484, y: 23, "font-size": 15 }); lt2.textContent = "escenario elegido"; leyenda.append(lt2); svg.append(leyenda);
+    const sel = el("fieldset", { class: "selector" }, `<legend>Escenario</legend><button type="button" data-e="ref" aria-pressed="false">Referencia</button><button type="button" data-e="s3" aria-pressed="false">SSP3-7.0, 2041–2060 (solicitado)</button><button type="button" data-e="s2" class="hipo" aria-pressed="false">SSP2-4.5, 2021–2040 (exploratorio)</button>`);
+    const caja = el("div", { class: "ssp-caja" }); caja.append(svg);
+    const lect = el("p", { class: "fuente", "aria-live": "polite" });
+    cont.append(sel, caja, lect);
+    const ver = e => {
+      $$("button", sel).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.e === e)));
+      for (const { f, mv, tr, val } of movs) { const x = X(f[e]); mv.style.transform = `translate(${x}px,0px)`; tr.setAttribute("x2", x); val.textContent = dec(f[e]); }
+      lect.textContent = e === "s3" ? "SSP3-7.0 hacia 2060: horizonte solicitado y confirmado; coincide con el de estrés. Índice 0–1 de amenaza, no caudal, temperatura ni eficacia." : e === "s2" ? "SSP2-4.5/2040: solo exploración adicional del equipo; no es el horizonte solicitado." : "Referencia climática 1981–2010.";
+    };
+    sel.addEventListener("click", e => { const b = e.target.closest("[data-e]"); if (b) ver(b.dataset.e); });
+    ver("ref");
+    cont.addEventListener("lamina:entra", () => { ver("ref"); if (!reducido) setTimeout(() => ver("s3"), 650); });
+  }
+
+  /* ---------- Reapertura: D6 → SAT crítico / servicio esencial ---------- */
+  function reapertura(cont) {
+    const sel = el("fieldset", { class: "selector" }, `<legend>Si se demuestra una función crítica</legend><button type="button" data-c="D6" aria-pressed="true">D6</button><button type="button" data-c="SAT" aria-pressed="false">SAT crítico</button><button type="button" data-c="SERV" aria-pressed="false">Servicio esencial</button>`);
+    const barra = el("div"), cambios = el("p", { class: "cambios", "aria-live": "polite" });
+    cont.append(sel, barra, cambios);
+    const pila = crearPila(barra);
+    const base = D.carteras.D6.unidades.map(x => x.id);
+    const ver = k => {
+      const c = D.carteras[k];
+      $$("button", sel).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.c === k)));
+      pila.pintar(c);
+      const ids = c.unidades.map(x => x.id);
+      const sale = base.filter(id => !ids.includes(id)), entra = ids.filter(id => !base.includes(id));
+      cambios.innerHTML = k === "D6" ? "Base provisional: 6 unidades, 5.000, saldo 0." : `${sale.map(id => `<span class="sale">${id} ${cat(id).n}</span>`).join(" ")} ${entra.map(id => `<span class="entra">+ ${id} ${cat(id).n}</span>`).join(" ")} → ${c.unidades.length} unidades, ${fmt(c.total)} M, saldo ${fmt(D.fondo - c.total)}.`;
+    };
+    sel.addEventListener("click", e => { const b = e.target.closest("[data-c]"); if (b) ver(b.dataset.c); });
+    ver("D6");
+  }
+
+  /* ---------- Capas 3D conceptuales: separar / alinear ---------- */
+  function capas(cont) {
+    const b = $("[data-capas]", cont);
+    b?.addEventListener("click", () => { const on = cont.classList.toggle("separadas"); b.setAttribute("aria-pressed", String(on)); b.textContent = on ? "Alinear capas" : "Separar capas"; });
+  }
+
+  const COMPONENTES = { rio, tablero, matriz, maximas, escenario, reapertura, capas };
+  $$("[data-componente]").forEach(c => { try { COMPONENTES[c.dataset.componente]?.(c); } catch (err) { console.error("Componente", c.dataset.componente, err); } });
+
+  const laminas = $$(".lamina");
+  const btn = a => $(`[data-accion="${a}"]`);
+  const alternar = (accion, clase) => { const on = body.classList.toggle(clase); btn(accion)?.setAttribute("aria-pressed", String(on)); return on; };
+
+  /* Página normal (metodología): animar componentes al entrar en vista; pausa de movimiento con botón o P. */
+  if (!laminas.length) {
+    const avisar = c => c.dispatchEvent(new CustomEvent("lamina:entra"));
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { avisar(e.target); io.unobserve(e.target); } }), { threshold: .25 });
+      $$("[data-componente]").forEach(c => io.observe(c));
+    } else $$("[data-componente]").forEach(avisar);
+    document.addEventListener("click", e => {
+      if (e.target.closest('[data-accion="pausa"]')) alternar("pausa", "pausado");
+      const f = e.target.closest("[data-filtro]");
+      if (f) {
+        const t = f.dataset.filtro;
+        $$("[data-filtro]").forEach(b => b.setAttribute("aria-pressed", String(b === f)));
+        body.classList.toggle("filtrado", !!t);
+        $$(".libro li").forEach(li => li.classList.toggle("on", !!t && !!li.querySelector(`.tipo.${t}`)));
+      }
+    });
+    document.addEventListener("keydown", e => { if ((e.key === "p" || e.key === "P") && !e.ctrlKey && !e.metaKey && !e.altKey && !e.target.closest("input,textarea,select")) alternar("pausa", "pausado"); });
+    return;
+  }
+
+  /* ---------- Motor de láminas (presentación) ---------- */
+  const tramos = $$(".tramo");
+  const contador = $(".pie .contador"), habla = $(".pie .habla"), reloj = $(".cronometro"), escenarioEl = $(".escenario");
+  let i = 0, deck = true;
+  const indiceHash = () => {
+    let h = "";
+    try { h = decodeURIComponent(location.hash.slice(1)); } catch { return -1; }
     if (!h) return 0;
     const n = Number(h);
     if (Number.isInteger(n) && n >= 1 && n <= laminas.length) return n - 1;
-    const idx = laminas.findIndex(l => l.id === h);
-    return idx >= 0 ? idx : 0;
+    return laminas.findIndex(l => l.id === h);
   };
-
   const pintar = (dir = 0) => {
     laminas.forEach((l, k) => {
       const activa = k === i;
       l.hidden = deck && !activa;
       l.setAttribute("aria-roledescription", "lámina");
       l.classList.remove("entra");
-      if (activa && deck && dir) { l.style.setProperty("--dx", dir > 0 ? "14px" : "-14px"); void l.offsetWidth; l.classList.add("entra"); }
+      if (activa && deck && dir) { void l.offsetWidth; l.classList.add("entra"); }
     });
     const t = Number(laminas[i].dataset.tramo);
     tramos.forEach((b, k) => {
       if (k === t) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
       b.classList.toggle("hecho", t >= 0 ? k < t : i > 0);
     });
-    const rio = document.querySelector(".rio");
-    const actual = tramos[t];
-    if (rio && actual && rio.scrollWidth > rio.clientWidth) rio.scrollLeft = actual.offsetLeft - rio.offsetLeft - 16;
-    const titulo = laminas[i].querySelector("h1,h2")?.textContent.trim() ?? "";
+    const rioT = $(".rio"), actual = tramos[t];
+    if (rioT && actual && rioT.scrollWidth > rioT.clientWidth) rioT.scrollLeft = actual.offsetLeft - rioT.offsetLeft - 16;
+    const titulo = $("h1,h2", laminas[i])?.textContent.trim() ?? "";
     if (contador) contador.textContent = `${i + 1} de ${laminas.length}`;
     if (habla) habla.textContent = laminas[i].dataset.habla || "";
     const ant = btn("anterior"), sig = btn("siguiente");
     if (ant) ant.disabled = i === 0;
     if (sig) sig.disabled = i === laminas.length - 1;
-    if (deck) escenario?.scrollTo({ top: 0 });
+    if (deck) escenarioEl?.scrollTo({ top: 0 });
     laminas[i].setAttribute("aria-label", `${i + 1} de ${laminas.length}: ${titulo}`);
+    $$("[data-componente]", laminas[i]).forEach(c => c.dispatchEvent(new CustomEvent("lamina:entra")));
+    if (reloj && !reloj.hidden) tic();
   };
-
   const ir = (k, dir = 0) => {
     const n = Math.max(0, Math.min(laminas.length - 1, k));
     if (n === i && dir) return;
     i = n;
-    history.replaceState(null, "", `#${laminas[i].id || i + 1}`);
+    try { history.replaceState(null, "", `#${laminas[i].id || i + 1}`); } catch { /* sin historial: sigue funcionando */ }
     pintar(dir);
     if (!deck) laminas[i].scrollIntoView({ block: "start" });
   };
-  const siguiente = () => ir(i + 1, 1);
-  const anterior = () => ir(i - 1, -1);
-
-  const alternar = (accion, clase) => {
-    const b = btn(accion);
-    const on = body.classList.toggle(clase);
-    b?.setAttribute("aria-pressed", String(on));
-    return on;
-  };
+  const siguiente = () => ir(i + 1, 1), anterior = () => ir(i - 1, -1);
   const estudio = () => {
-    const on = alternar("estudio", "estudio");
-    deck = !on;
-    body.classList.toggle("deck", deck);
-    pintar();
-    if (on) laminas[i].scrollIntoView({ block: "start" });
+    const on = alternar("estudio", "estudio"); deck = !on; body.classList.toggle("deck", deck); pintar();
+    if (on) { $$("[data-componente]").forEach(c => c.dispatchEvent(new CustomEvent("lamina:entra"))); laminas[i].scrollIntoView({ block: "start" }); }
   };
-  const pantalla = async () => {
-    try {
-      if (document.fullscreenElement) await document.exitFullscreen();
-      else await document.documentElement.requestFullscreen?.();
-    } catch { /* el navegador puede negarlo; la vista sigue usable */ }
-  };
+  const pantalla = async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen?.(); } catch { /* el navegador puede negarlo */ } };
 
-  /* Cronómetro de ensayo: ayuda local, no es evidencia de duración. */
+  /* Cronómetro de ensayo: ayuda local; la lámina de preguntas queda fuera del objetivo oral. */
   let inicio = 0, acumulado = 0, timer = 0;
-  const fmt = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
-  const tic = () => {
+  const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+  function tic() {
+    if (!reloj) return;
     const s = (acumulado + (inicio ? Date.now() - inicio : 0)) / 1000;
-    reloj.textContent = fmt(s);
+    reloj.textContent = mmss(s);
     const t = Number(laminas[i].dataset.tramo);
-    const fin = t >= 0 ? Number(tramos[t]?.dataset.fin) : 420;
-    reloj.classList.toggle("tarde", s > (fin || 420));
-    reloj.title = fin ? `Objetivo de este bloque: terminar antes de ${fmt(fin)}` : "";
-  };
+    const fin = t >= 0 ? Number(tramos[t]?.dataset.fin) : 0;
+    reloj.classList.toggle("tarde", !!fin && s > fin);
+    reloj.title = fin ? `Objetivo: terminar este bloque antes de ${mmss(fin)}` : "Fuera de los 7 minutos orales";
+  }
   const cronometro = () => {
     if (!reloj) return;
+    reloj.hidden = false;
     const b = btn("reloj");
-    if (reloj.hidden) { reloj.hidden = false; }
     if (inicio) { acumulado += Date.now() - inicio; inicio = 0; clearInterval(timer); b?.setAttribute("aria-pressed", "false"); }
     else { inicio = Date.now(); timer = setInterval(tic, 250); b?.setAttribute("aria-pressed", "true"); }
     tic();
   };
-  const reiniciarReloj = () => { acumulado = 0; if (inicio) inicio = Date.now(); if (reloj && !reloj.hidden) tic(); };
+  const reiniciar = () => { acumulado = 0; if (inicio) inicio = Date.now(); if (reloj && !reloj.hidden) tic(); };
+  const pausa = () => alternar("pausa", "pausado");
 
   document.addEventListener("click", e => {
+    const salto = e.target.closest(".salto");
+    if (salto) { e.preventDefault(); const l = laminas[i]; l.tabIndex = -1; l.focus({ preventScroll: false }); return; }
     const a = e.target.closest("[data-accion]")?.dataset.accion;
     if (a === "siguiente") siguiente();
     else if (a === "anterior") anterior();
@@ -122,19 +371,15 @@
     else if (a === "estudio") estudio();
     else if (a === "pantalla") pantalla();
     else if (a === "reloj") cronometro();
-    const ir_ = e.target.closest("[data-ir]");
-    if (ir_) {
-      const t = Number(ir_.dataset.ir);
-      const k = laminas.findIndex(l => Number(l.dataset.tramo) === t);
-      if (k >= 0) ir(k, k > i ? 1 : -1);
-    }
+    else if (a === "pausa") pausa();
+    const t = e.target.closest(".tramo[data-ir], [data-ir-etapa]");
+    if (t) { const n = Number(t.dataset.ir ?? t.dataset.irEtapa); const k = laminas.findIndex(l => Number(l.dataset.tramo) === n); if (k >= 0) ir(k, k > i ? 1 : -1); }
   });
-
   document.addEventListener("keydown", e => {
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.target.closest("input,textarea,select,[contenteditable]")) return;
     const k = e.key;
-    if ((k === " " || k === "Enter") && e.target.closest("button,a")) return;
+    if ((k === " " || k === "Enter") && e.target.closest("button,a,[role=button],[tabindex='0']")) return;
     if (deck && (k === "ArrowRight" || k === "PageDown" || (k === " " && !e.shiftKey))) { e.preventDefault(); siguiente(); }
     else if (deck && (k === "ArrowLeft" || k === "PageUp" || (k === " " && e.shiftKey))) { e.preventDefault(); anterior(); }
     else if (deck && k === "Home") { e.preventDefault(); ir(0, -1); }
@@ -142,25 +387,22 @@
     else if (k === "n" || k === "N") alternar("notas", "con-notas");
     else if (k === "e" || k === "E") estudio();
     else if (k === "f" || k === "F") pantalla();
+    else if (k === "p" || k === "P") pausa();
     else if (k === "t" || k === "T") cronometro();
-    else if (k === "r" || k === "R") reiniciarReloj();
+    else if (k === "r" || k === "R") reiniciar();
     else if (deck && /^[1-9]$/.test(k)) { const n = Number(k) - 1; if (n < laminas.length) ir(n, n > i ? 1 : -1); }
   });
-
-  /* Táctil: deslizar horizontal cambia de lámina; el desplazamiento vertical se respeta. */
   let x0 = null, y0 = null;
-  escenario?.addEventListener("pointerdown", e => { if (e.pointerType !== "mouse") { x0 = e.clientX; y0 = e.clientY; } }, { passive: true });
-  escenario?.addEventListener("pointerup", e => {
+  escenarioEl?.addEventListener("pointerdown", e => { if (e.pointerType !== "mouse" && !e.target.closest("button,.ssp-caja,.grafo-caja,.matriz,.rio")) { x0 = e.clientX; y0 = e.clientY; } }, { passive: true });
+  escenarioEl?.addEventListener("pointerup", e => {
     if (x0 === null || !deck) return;
-    const dx = e.clientX - x0, dy = e.clientY - y0;
-    x0 = y0 = null;
+    const dx = e.clientX - x0, dy = e.clientY - y0; x0 = y0 = null;
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) (dx < 0 ? siguiente : anterior)();
   }, { passive: true });
-  escenario?.addEventListener("pointercancel", () => { x0 = y0 = null; });
-
-  window.addEventListener("hashchange", () => { const k = leerHash(); if (k !== i) { i = k; pintar(); } });
+  escenarioEl?.addEventListener("pointercancel", () => { x0 = y0 = null; });
+  window.addEventListener("hashchange", () => { const k = indiceHash(); if (k >= 0 && k !== i) { i = k; pintar(); } });
 
   body.classList.add("deck");
-  i = leerHash();
+  const k0 = indiceHash(); i = k0 >= 0 ? k0 : 0;
   pintar();
 })();
