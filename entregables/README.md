@@ -24,4 +24,4 @@ D6 usa seis unidades completas por COP5000M y empata con otras seis máximas baj
 
 La matriz registra 39 demostraciones de alcance limitado, 35 condiciones y F01 pendiente: ensayo humano durante el estudio de 14:00 a 16:00. No son 75 requisitos cumplidos ni eficacia acreditada. T0 físico, sitios, custodios aceptados y ejecución siguen pendientes donde así se declaran. Los basales institucionales individuales retenidos se conservan internos; no se publican como mediciones de la intervención.
 
-Publica un único escritor Git en `main`, por lotes exactos con SHA. El PDF final tiene SHA256 `eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e`, dos páginas A4 e inspección visual de ambas. El ensayo humano y los resultados ambientales no se sustituyen con una prueba de software.
+Publica un único escritor Git en `main`, por lotes exactos con SHA. El PDF final tiene SHA256 `3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6`, dos páginas A4 e inspección visual de ambas. El ensayo humano y los resultados ambientales no se sustituyen con una prueba de software.

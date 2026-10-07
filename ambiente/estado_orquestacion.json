@@ -74,10 +74,10 @@
       "obligatorio": true,
       "maximo_paginas_total": 2,
       "incluye_anexo_metodologico": true,
-      "estado": "cierre_documental_final_dos_paginas_verificadas_editorial_y_publicador",
+      "estado": "dos_paginas_A4_verificadas_editor_y_revision_independiente_Sol_nuevos_bytes",
       "archivo": "entregables/ANEXO_METODOLOGICO.pdf",
-      "source_commit_verificado": "5489a562e74b3fd33f6bf0fba3bedbd1055b18a5",
-      "sha256_verificado": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
+      "source_commit_verificado": "91220a37b8d9db6d29bee98d3e254e8f5b799d99",
+      "sha256_verificado": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
       "ensayo_humano": "pendiente_durante_estudio_14_a_16_no_bloquea_paquete",
       "fuentes_finales": {
         "P1_sha256": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
