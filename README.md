@@ -234,6 +234,10 @@ python3 caso/comparar_presupuesto.py
 
 La clonación recursiva obtiene el submódulo fijado. Para documentos/cálculo puede omitirse --recurse-submodules y obtenerlo después. El script usa biblioteca estándar de Python y vuelve a escribir caso/comparacion_financiera.json con hora de cálculo; no estima eficacia ni ejecuta aplicaciones. No requiere .env o credenciales de producción.
 
+## Borradores de defensa y anexo
+
+[Guion de siete minutos](https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/PITCH_BORRADOR.md): estructura con evidencia pendiente de P1/P2/P3, sin ensayo real aún. [Anexo metodológico borrador](https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/ANEXO_BORRADOR.md) · [PDF](https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/ANEXO_BORRADOR.pdf) · [recibo de paginado](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/entregables/verificacion_anexo_borrador.json). El PDF de borrador tiene **dos páginas A4 comprobadas**; no es el anexo final ni aprueba la cartera. Al integrar la decisión final se exportará y contará de nuevo. [Exportador reproducible](https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/exportar_anexo.py) usa Python estándar, LibreOffice y pdfinfo existentes; no instala paquetes ni copia perfiles.
+
 ## Condición de entrega y continuidad
 
 Tras GO, terminar exige P1–P3, cuenta/fuentes verificables, comparación defendible, contraste obligatorio con datos suficientes, residual/MEA, verificación de los75 IDs y ensayo dentro del plazo. Documentación, web y pruebas técnicas avanzaron; **productos ambientales, cartera definitiva y robustez completa permanecen pendientes**.

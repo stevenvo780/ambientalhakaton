@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-10-07T15:45:29.803630+00:00",
+  "status": "borrador_no_anexo_final",
+  "source": "ANEXO_BORRADOR.md",
+  "source_sha256": "261d7a3650c562974c68d83884ceadff49a59df7c4fc746bcb8556ae183c28c5",
+  "pdf": "ANEXO_BORRADOR.pdf",
+  "pdf_sha256": "f59da06a744bc5f477ef205fdfc6dd5148c4e1f5f3c11a7248bc565dd51e306c",
+  "pages": 2,
+  "page_limit": 2,
+  "environmental_portfolio_approved": false,
+  "final_requires_new_verification": true
+}
