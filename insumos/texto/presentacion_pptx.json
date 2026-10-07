@@ -1,0 +1,2340 @@
+{
+  "source": "insumos/cornare/HACKATHON RETO CORNARE.pptx",
+  "sha256": "2768c29617022090e20ec60672e351eb85ffad654cb4c60c0cf26cfcf2b6ad14",
+  "slide_count": 31,
+  "slide_order": "presentation.xml sldIdLst",
+  "notes_slide_count": 7,
+  "hyperlink_count": 1,
+  "slides": [
+    {
+      "slide": 1,
+      "part": "ppt/slides/slide1.xml",
+      "paragraphs": [
+        "CLIMATE RISK HACKATHON FOR CITIES",
+        "",
+        "RIESGOS CLIMÁTICOS EN LA JURISDICCIÓN DE CORNARE.",
+        "",
+        "",
+        "",
+        "",
+        "Octubre 7 de 2026."
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image1.jpeg"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 1,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "       CLIMATE RISK HACKATHON FOR CITIES\n\nRIESGOS CLIMÁTICOS EN LA JURISDICCIÓN DE CORNARE.\n\n\n\n\n                Octubre 7 de 2026.\n"
+      },
+      "visual_observation": "Portada y fecha 7 de octubre de 2026."
+    },
+    {
+      "slide": 2,
+      "part": "ppt/slides/slide2.xml",
+      "paragraphs": [],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image3.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image2.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Forma\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 2,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": ""
+      },
+      "visual_observation": "Cronología normativa colombiana, de CMNUCC a instrumentos 2026. Figura de contexto; no verificación de vigencia, contenido o obligaciones aplicables al equipo."
+    },
+    {
+      "slide": 3,
+      "part": "ppt/slides/slide3.xml",
+      "paragraphs": [
+        "",
+        "¿CÓMO PLANEAMOS LA ACTUALIZACIÓN DE RIESGOS CLIMÁTICOS EN LA JURISDICCIÓN?",
+        "Apoyo mediante contrato de consultoría: S-CM-705-2024, Empresa Ecoacciones S.A.S BIC.",
+        "",
+        "Objetivo: “Realizar la actualización de los riesgos climáticos y el estado de vulnerabilidad ante la variabilidad climática en los Municipios de la jurisdicción, y la identificación de riesgos climáticos empresariales con las empresas adheridas a los acuerdos de crecimiento verde y cambio climático con CORNARE”. ",
+        "1. Diagnóstico en adaptación y gestión del riesgo climático",
+        "32 Empresas y 26 Municipios",
+        "2. Análisis de vulnerabilidad y riesgo climático",
+        "Actualización por Regional",
+        "3. Plan de adaptación y gestión del riesgo climático",
+        "Empresarial y por Regional",
+        "4. Estrategia de",
+        "financiamiento climático",
+        "Perfiles de proyectos",
+        "Adopción en el Sistema MRV de CORNARE de un Módulo de Monitoreo, Evaluación y Aprendizaje MEA"
+      ],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide1.xml",
+          "paragraphs": [
+            "",
+            "",
+            "3"
+          ]
+        }
+      ],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image4.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image8.svg"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image7.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image6.svg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image5.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Marcador de contenido 4",
+          "descr": "Un conjunto de letras negras en un fondo negro\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 3,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "1. Diagnóstico en adaptación y gestión del riesgo climático",
+          "2. Análisis de vulnerabilidad y riesgo climático",
+          "3. Plan de adaptación y gestión del riesgo climático"
+        ],
+        "pdf_text": " ¿CÓMO PLANEAMOS LA ACTUALIZACIÓN DE\nRIESGOS CLIMÁTICOS EN LA JURISDICCIÓN?\n\n\n\n\n              1. Diagnóstico en                      2. Análisis de vulnerabilidad                  3. Plan de adaptación y                         4. Estrategia de\n          adaptación y gestión del                         y riesgo climático                     gestión del riesgo climático                 financiamiento climático\n               riesgo climático                         Actualización por Regional                  Empresarial y por Regional                    Perfiles de proyectos\n          32 Empresas y 26 Municipios\n\n\n\n\n           Adopción en el Sistema MRV de CORNARE de un Módulo de Monitoreo, Evaluación y Aprendizaje MEA\n\n\n\n  Apoyo mediante contrato de consultoría: S-CM-705-2024, Empresa Ecoacciones S.A.S BIC.\n\n  Objetivo: “Realizar la actualización de los riesgos climáticos y el estado de vulnerabilidad ante la variabilidad climática en los Municipios de la jurisdicción, y\n  la identificación de riesgos climáticos empresariales con las empresas adheridas a los acuerdos de crecimiento verde y cambio climático con CORNARE”.\n"
+      },
+      "visual_observation": "Cuatro componentes de actualización: diagnóstico, análisis, planes y financiamiento; 32 empresas, 26 municipios y MEA en MRV."
+    },
+    {
+      "slide": 4,
+      "part": "ppt/slides/slide4.xml",
+      "paragraphs": [
+        "Diagnósticos Municipales de Madurez frente a la Gestión del Cambio Climático.",
+        "195 Participantes entre los 26 Municipios (Secretarios, Funcionarios y Representantes del Comité Municipal de Gestión del Riesgo de Desastres."
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image9.jpeg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image2.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image12.jpeg"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image11.jpeg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image10.jpeg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Forma\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "3",
+          "name": "Imagen 2",
+          "descr": "Interfaz de usuario gráfica, Aplicación, Sitio web\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "4",
+          "name": "Imagen 3",
+          "descr": "Interfaz de usuario gráfica, Sitio web\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "7",
+          "name": "Imagen 6",
+          "descr": "Interfaz de usuario gráfica, Aplicación, Sitio web\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "8",
+          "name": "Imagen 7",
+          "descr": "Imagen de la pantalla de un celular con texto e imágenes\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 4,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": " Diagnósticos Municipales de Madurez frente a\n      la Gestión del Cambio Climático.\n\n\n\n\n195 Participantes entre los 26 Municipios (Secretarios, Funcionarios y Representantes del Comité Municipal de Gestión del Riesgo de\nDesastres.\n"
+      },
+      "visual_observation": "Talleres de madurez municipal, 195 participantes de 26 municipios, con fotografías."
+    },
+    {
+      "slide": 5,
+      "part": "ppt/slides/slide5.xml",
+      "paragraphs": [],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image13.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image2.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Forma\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 5,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": ""
+      },
+      "visual_observation": "Gráfico por pilares/subregión. Valles: gobernanza 42%, estrategia 53%, métricas/objetivos 33%, gestión 52%; no porcentajes de vulnerabilidad reducida."
+    },
+    {
+      "slide": 6,
+      "part": "ppt/slides/slide6.xml",
+      "paragraphs": [
+        "495 actores “clave” del Municipio han participado de los talleres a la fecha (Juntas de Acción Comunal, Juntas de Acueductos, Bomberos, Defensa Civil, Cercanos, Secretarios de Despacho, Salud, Organizaciones de Mujeres, Representantes de ONG Ambientalistas, entre otros."
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image19.jpg"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image14.jpg"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image18.jpeg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image2.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image17.jpg"
+        },
+        {
+          "Id": "rId11",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image22.jpg"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image16.jpg"
+        },
+        {
+          "Id": "rId10",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image21.jpeg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image15.jpg"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image20.jpg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Forma\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "3",
+          "name": "Imagen 2",
+          "descr": "Un grupo de personas en un salón de clases\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "4",
+          "name": "Imagen 3",
+          "descr": "Grupo de personas posando para una foto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "6",
+          "name": "Imagen 5",
+          "descr": "Un grupo de personas en un salón\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "7",
+          "name": "Imagen 6",
+          "descr": "Un grupo de personas posando para una foto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "8",
+          "name": "Imagen 7",
+          "descr": "Un dibujo de un grupo de personas posando para una foto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "10",
+          "name": "Imagen 9",
+          "descr": "Un grupo de personas en un salón de clases\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "11",
+          "name": "Imagen 10",
+          "descr": "Personas sentadas en una mesa\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "12",
+          "name": "Imagen 11",
+          "descr": "Un grupo de personas en un salón\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "13",
+          "name": "Imagen 12",
+          "descr": "Un grupo de personas en un salón de clases\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 6,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": " 495 actores “clave” del Municipio\n han participado de los talleres a la\n fecha (Juntas de Acción Comunal,\n Juntas de Acueductos, Bomberos,\nDefensa Civil, Cercanos, Secretarios\n        de Despacho, Salud,\n    Organizaciones de Mujeres,\n      Representantes de ONG\n    Ambientalistas, entre otros.\n"
+      },
+      "visual_observation": "Talleres con 495 actores clave y fotografías; no dataset desagregado de participación."
+    },
+    {
+      "slide": 7,
+      "part": "ppt/slides/slide7.xml",
+      "paragraphs": [],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image23.jpg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image2.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image25.jpg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image24.jpg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Forma\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "3",
+          "name": "Imagen 2",
+          "descr": "Personas sentadas en una mesa\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "4",
+          "name": "Imagen 3",
+          "descr": "Interfaz de usuario gráfica, Sitio web\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "6",
+          "name": "Imagen 5",
+          "descr": "Interfaz de usuario gráfica, Sitio web\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 7,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": ""
+      },
+      "visual_observation": "Fotografías de talleres de riesgos; no nuevas reglas del reto."
+    },
+    {
+      "slide": 8,
+      "part": "ppt/slides/slide8.xml",
+      "paragraphs": [],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image26.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image2.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Forma\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 8,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": ""
+      },
+      "visual_observation": "Captura de percepción cualitativa: madurez 50%, amenaza 3,81, sensibilidad 3,51, capacidad 2,02, vulnerabilidad 1,96 y riesgo 7,55. Escalas propias; no intercambiarlas con índices técnicos del enunciado."
+    },
+    {
+      "slide": 9,
+      "part": "ppt/slides/slide9.xml",
+      "paragraphs": [
+        "¿Cómo se realizó el Análisis de la información?",
+        "Climatología",
+        "Se estudiaron las condiciones climáticas del territorio entre 1994 y 2024, utilizando información de entidades nacionales e internacionales como IDEAM, ISAGEN y Bases de Datos Climáticas Globales.",
+        "Vulnerabilidad =",
+        "Sensibilidad",
+        "Capacidad adaptativa",
+        "Metodología integral  ",
+        "El análisis se realizó utilizando metodologías reconocidas a nivel internacional para evaluar la vulnerabilidad y el riesgo climático, lo que permitió estudiar cómo el clima puede afectar diferentes aspectos del territorio. ",
+        "Fuente: Actualización de Riesgos Climáticos CORNARE. 2025",
+        "Precipitación",
+        "Temperatura media",
+        "Eventos reportados",
+        "1994 - 2024",
+        "Dimensiones del Territorio",
+        "Se analizaron 7 dimensiones del Territorio, lo cuál permitió identificar dónde existen mayores riesgos y qué acciones de adaptación son necesarias según las particularidades de cada dimensión.",
+        "Biodiversidad y Servicios Ecosistémicos.",
+        "Recurso Hídrico.",
+        "Riesgo de Desastres.",
+        "Salud Humana.",
+        "Infraestructura,",
+        "Hábitat Humano.",
+        "Seguridad Alimentaria"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image28.jpeg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image27.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image30.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image29.jpeg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Un conjunto de letras blancas en un fondo blanco\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "40",
+          "name": "Imagen 39",
+          "descr": "Mapa\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "41",
+          "name": "Imagen 40",
+          "descr": "Gráfico, Gráfico de barras\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 9,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "Se estudiaron las condiciones climáticas del territorio entre 1994 y 2024, utilizando información de entidades nacionales e internacionales como IDEAM, ISAGEN y Bases de Datos Climáticas Globales.",
+          "El análisis se realizó utilizando metodologías reconocidas a nivel internacional para evaluar la vulnerabilidad y el riesgo climático, lo que permitió estudiar cómo el clima puede afectar diferentes aspectos del territorio. ",
+          "Temperatura media",
+          "Eventos reportados",
+          "Se analizaron 7 dimensiones del Territorio, lo cuál permitió identificar dónde existen mayores riesgos y qué acciones de adaptación son necesarias según las particularidades de cada dimensión.",
+          "Biodiversidad y Servicios Ecosistémicos."
+        ],
+        "pdf_text": "        ¿Cómo se realizó el Análisis de la\n                 información? 1994 - 2024\nMetodología integral                         Dimensiones del Territorio\nEl análisis se realizó utilizando                                                 Climatología\n                                             Se analizaron 7 dimensiones del\nmetodologías reconocidas a nivel                                                  Se estudiaron las condiciones climáticas del territorio entre 1994 y\n                                             Territorio,   lo   cuál   permitió\ninternacional para evaluar la                                                     2024, utilizando información de entidades nacionales e\n                                             identificar dónde existen mayores\nvulnerabilidad y el riesgo climático,                                             internacionales como IDEAM, ISAGEN y Bases de Datos Climáticas\n                                             riesgos y qué acciones de\nlo que permitió estudiar cómo el                                                  Globales.\n                                             adaptación son necesarias según\nclima puede afectar diferentes               las particularidades de cada\naspectos del territorio.                     dimensión.\n                                                                                                                                Temperatura\n       Eventos                                ➢ Biodiversidad    y                    Precipitación                                media\n     reportados                                 Servicios\n                                                Ecosistémicos.\n                                              ➢ Recurso Hídrico.\n                                              ➢ Riesgo          de\n                                                Desastres.\n   Vulnerabilidad =\n                          Sensibilidad\n                                              ➢ Salud Humana.\n                      Capacidad adaptativa    ➢ Infraestructura,\n                                              ➢ Hábitat Humano.\n                                              ➢ Seguridad\n                                                Alimentaria\n                                                                                                                 Fuente: Actualización de Riesgos Climáticos CORNARE. 2025\n"
+      },
+      "visual_observation": "Climatología 1994–2024, metodología y siete dimensiones. No proporciona series completas ni efectos de intervenciones."
+    },
+    {
+      "slide": 10,
+      "part": "ppt/slides/slide10.xml",
+      "paragraphs": [
+        "¿Cuál fue la Arquitectura de  los Indicadores para la Actualización?",
+        "Fuente: Actualización de Riesgos Climáticos CORNARE. 2025"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image32.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image31.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image34.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image33.svg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "7",
+          "name": "Imagen 6",
+          "descr": "Un reloj en el medio del bosque\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 10,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "¿Cuál fue la Arquitectura de los Indicadores para\n                la Actualización?\n\n\n\n\n                                  Fuente: Actualización de Riesgos Climáticos CORNARE. 2025\n"
+      },
+      "visual_observation": "Arquitectura: 73 indicadores territoriales (20+22+31); figura empresarial con discrepancia 106 frente a suma 99. Rotula ocho dimensiones SIIVRA."
+    },
+    {
+      "slide": 11,
+      "part": "ppt/slides/slide11.xml",
+      "paragraphs": [
+        "",
+        "AMENAZA",
+        "La jurisdicción no enfrenta una Amenaza homogénea, sino que muestra varios núcleos territoriales de alta presión."
+      ],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide2.xml",
+          "paragraphs": [
+            "",
+            "",
+            "11"
+          ]
+        }
+      ],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image4.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image35.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Marcador de contenido 4",
+          "descr": "Un conjunto de letras negras en un fondo negro\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 11,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "AMENAZA\n\n\n          La     jurisdicción no\n          enfrenta una Amenaza\n          homogénea, sino que\n          muestra varios núcleos\n          territoriales de alta\n          presión.\n"
+      },
+      "visual_observation": "Síntesis de amenaza de referencia y SSP1/SSP2/SSP3, 2040/2060. Referencia: 17 municipios baja, ocho muy baja y uno media; la figura advierte valores referenciales."
+    },
+    {
+      "slide": 12,
+      "part": "ppt/slides/slide12.xml",
+      "paragraphs": [
+        "",
+        "",
+        "",
+        "Sectores",
+        "Alimentos",
+        "Químicos",
+        "Manufactura",
+        "Metalmecánica",
+        "Agroindustria ",
+        "Servicios",
+        "Fuente: Actualización de Riesgos Climáticos CORNARE. 2025",
+        "Municipio",
+        "Riesgo de desastres",
+        "Hábitat humano",
+        "Recursos hídricos",
+        "Infraestructura",
+        "Salud humana",
+        "Biodiversidad",
+        "Seguridad alimentaria",
+        "Nivel integrado",
+        "Abejorral",
+        "Alto",
+        "Medio",
+        "Muy alto",
+        "Medio",
+        "Medio",
+        "Alto",
+        "Alto",
+        "Alto",
+        "Alejandría",
+        "Medio",
+        "Alto",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Argelia",
+        "Muy alto",
+        "Muy alto",
+        "Medio",
+        "Muy alto",
+        "Medio",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Cocorná",
+        "Muy alto",
+        "Alto",
+        "Alto",
+        "Alto",
+        "Muy alto",
+        "Medio",
+        "Medio",
+        "Alto",
+        "Concepción",
+        "Medio",
+        "Alto",
+        "Muy alto",
+        "Muy alto",
+        "Medio",
+        "Alto",
+        "Bajo",
+        "Alto",
+        "El Carmen De Viboral",
+        "Medio",
+        "Muy bajo",
+        "Alto",
+        "Muy bajo",
+        "Bajo",
+        "Medio",
+        "Medio",
+        "Medio",
+        "El Peñol",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Bajo",
+        "Medio",
+        "Bajo",
+        "Medio",
+        "El Retiro",
+        "Medio",
+        "Bajo",
+        "Muy alto",
+        "Medio",
+        "Bajo",
+        "Bajo",
+        "Muy bajo",
+        "Medio",
+        "El Santuario",
+        "Alto",
+        "Medio",
+        "Medio",
+        "Muy bajo",
+        "Medio",
+        "Muy alto",
+        "Bajo",
+        "Medio",
+        "Granada",
+        "Muy alto",
+        "Muy alto",
+        "Alto",
+        "Muy alto",
+        "Medio",
+        "Alto",
+        "Medio",
+        "Alto",
+        "Guarne",
+        "Alto",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "Bajo",
+        "Medio",
+        "Bajo",
+        "Medio",
+        "Guatapé",
+        "Bajo",
+        "Bajo",
+        "Muy bajo",
+        "Bajo",
+        "Bajo",
+        "Muy bajo",
+        "Muy bajo",
+        "Muy bajo",
+        "La Ceja",
+        "Bajo",
+        "Muy bajo",
+        "Medio",
+        "Muy bajo",
+        "Muy bajo",
+        "Medio",
+        "Medio",
+        "Medio",
+        "La Unión",
+        "Bajo",
+        "Bajo",
+        "Medio",
+        "Medio",
+        "Bajo",
+        "Alto",
+        "Muy alto",
+        "Alto",
+        "Marinilla",
+        "Muy bajo",
+        "Bajo",
+        "Alto",
+        "Muy bajo",
+        "Bajo",
+        "Muy alto",
+        "Muy bajo",
+        "Medio",
+        "Nariño",
+        "Medio",
+        "Muy alto",
+        "Muy alto",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Alto",
+        "Puerto Triunfo",
+        "Medio",
+        "Medio",
+        "Alto",
+        "Muy alto",
+        "Muy alto",
+        "Muy alto",
+        "Medio",
+        "Alto",
+        "Rionegro",
+        "Alto",
+        "Muy bajo",
+        "Medio",
+        "Medio",
+        "Muy bajo",
+        "Muy alto",
+        "Bajo",
+        "Medio",
+        "San Carlos",
+        "Bajo",
+        "Bajo",
+        "Medio",
+        "Muy bajo",
+        "Medio",
+        "Bajo",
+        "Bajo",
+        "Bajo",
+        "San Francisco",
+        "Alto",
+        "Muy alto",
+        "Medio",
+        "Muy alto",
+        "Alto",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "San Luis",
+        "Alto",
+        "Medio",
+        "Medio",
+        "Alto",
+        "Muy alto",
+        "Medio",
+        "Bajo",
+        "Medio",
+        "San Rafael",
+        "Medio",
+        "Alto",
+        "Muy alto",
+        "Alto",
+        "Muy alto",
+        "Bajo",
+        "Medio",
+        "Alto",
+        "San Roque",
+        "Alto",
+        "Medio",
+        "Alto",
+        "Alto",
+        "Alto",
+        "Alto",
+        "Medio",
+        "Alto",
+        "San Vicente Ferrer",
+        "Medio",
+        "Alto",
+        "Muy alto",
+        "Medio",
+        "Medio",
+        "Muy alto",
+        "Bajo",
+        "Alto",
+        "Santo Domingo",
+        "Medio",
+        "Alto",
+        "Alto",
+        "Muy alto",
+        "Muy alto",
+        "Alto",
+        "Medio",
+        "Alto",
+        "Sonsón",
+        "Bajo",
+        "Medio",
+        "Medio",
+        "Muy alto",
+        "Medio",
+        "Medio",
+        "Medio",
+        "Medio",
+        "¿Cuál es nuestra Vulnerabilidad Territorial?",
+        "",
+        "",
+        ""
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image42.svg"
+        },
+        {
+          "Id": "rId13",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image47.png"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image37.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image41.png"
+        },
+        {
+          "Id": "rId12",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image46.svg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image36.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image40.svg"
+        },
+        {
+          "Id": "rId11",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image45.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image39.png"
+        },
+        {
+          "Id": "rId10",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image44.svg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image38.svg"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image43.png"
+        },
+        {
+          "Id": "rId14",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image48.svg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Imagen en blanco y negro\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 12,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "                ¿Cuál es nuestra Vulnerabilidad\n                          Territorial?\n                 Municipio\n                             Riesgo de desastres   Hábitat humano   Recursos hídricos   Infraestructura   Salud humana   Biodiversidad        Seguridad alimentaria   Nivel integrado\nAbejorral                           Alto               Medio            Muy alto            Medio            Medio           Alto                     Alto                 Alto\nAlejandría\nArgelia\n                                   Medio\n                                  Muy alto\n                                                        Alto\n                                                      Muy alto\n                                                                         Medio\n                                                                         Medio\n                                                                                            Medio\n                                                                                           Muy alto\n                                                                                                             Medio\n                                                                                                             Medio\n                                                                                                                         Sectores\n                                                                                                                            Medio\n                                                                                                                           Bajo\n                                                                                                                                                     Medio\n                                                                                                                                                     Medio\n                                                                                                                                                                          Medio\n                                                                                                                                                                           Alto\nCocorná                           Muy alto              Alto              Alto               Alto           Muy alto        Medio                    Medio                 Alto\nConcepción                         Medio                Alto            Muy alto           Muy alto\n                                                                                                           Alimentos\n                                                                                                             Medio           Alto\n                                                                                                                                             Metalmecánica\n                                                                                                                                                      Bajo                 Alto\nEl Carmen De Viboral               Medio              Muy bajo            Alto            Muy bajo            Bajo          Medio                    Medio                Medio\nEl Peñol                           Medio               Medio             Medio              Medio             Bajo          Medio                     Bajo                Medio\nEl Retiro                          Medio                Bajo            Muy alto            Medio          Químicos\n                                                                                                              Bajo           Bajo            Agroindustria\n                                                                                                                                                    Muy bajo              Medio\nEl Santuario                        Alto               Medio             Medio            Muy bajo           Medio         Muy alto                   Bajo                Medio\nGranada\nGuarne\n                                  Muy alto\n                                    Alto\n                                                      Muy alto\n                                                        Bajo\n                                                                          Alto\n                                                                         Medio\n                                                                                           Muy alto\n                                                                                             Alto\n                                                                                                           Manufactura\n                                                                                                             Medio\n                                                                                                            Bajo\n                                                                                                                             Alto\n                                                                                                                            Medio\n                                                                                                                                             Servicios\n                                                                                                                                                     Medio\n                                                                                                                                                  Bajo\n                                                                                                                                                                           Alto\n                                                                                                                                                                          Medio\nGuatapé                             Bajo                Bajo           Muy bajo              Bajo             Bajo         Muy bajo                 Muy bajo             Muy bajo\nLa Ceja                             Bajo              Muy bajo           Medio            Muy bajo          Muy bajo        Medio                    Medio                Medio\nLa Unión                            Bajo                Bajo             Medio              Medio             Bajo           Alto                   Muy alto               Alto\nMarinilla                         Muy bajo              Bajo              Alto            Muy bajo            Bajo         Muy alto                 Muy bajo              Medio\nNariño                             Medio              Muy alto          Muy alto            Medio            Medio          Medio                    Medio                 Alto\nPuerto Triunfo                     Medio               Medio              Alto             Muy alto         Muy alto       Muy alto                  Medio                 Alto\nRionegro                            Alto              Muy bajo           Medio              Medio           Muy bajo       Muy alto                   Bajo                Medio\nSan Carlos                          Bajo                Bajo             Medio            Muy bajo           Medio           Bajo                     Bajo                 Bajo\nSan Francisco                       Alto              Muy alto           Medio             Muy alto           Alto           Bajo                    Medio                 Alto\nSan Luis                            Alto               Medio             Medio               Alto           Muy alto        Medio                     Bajo                Medio\nSan Rafael                         Medio                Alto            Muy alto             Alto           Muy alto         Bajo                    Medio                 Alto\nSan Roque                           Alto               Medio              Alto               Alto             Alto           Alto                    Medio                 Alto\nSan Vicente Ferrer                 Medio                Alto            Muy alto            Medio            Medio         Muy alto                   Bajo                 Alto\nSanto Domingo                      Medio                Alto              Alto             Muy alto         Muy alto         Alto                    Medio                 Alto\nSonsón                              Bajo               Medio             Medio             Muy alto          Medio          Medio                    Medio                Medio\n\n                                                                                                                                         Fuente: Actualización de Riesgos Climáticos CORNARE. 2025\n"
+      },
+      "visual_observation": "Tabla por dimensión y 26 municipios. El corredor muestra vulnerabilidad integrada media; las prioridades deben conservar componente/dimensión, no usar solo ese agregado."
+    },
+    {
+      "slide": 13,
+      "part": "ppt/slides/slide13.xml",
+      "paragraphs": [
+        "Capacidad adaptativa"
+      ],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide3.xml",
+          "paragraphs": [
+            "",
+            "",
+            "13"
+          ]
+        }
+      ],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image49.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image51.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image50.svg"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 13,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "Capacidad adaptativa\n"
+      },
+      "visual_observation": "Síntesis de riesgo jurisdiccional: 42% alto, 35% medio, 23% bajo; agua, desastres, alimentación e infraestructura expuesta. No distribución exclusiva de los tres municipios."
+    },
+    {
+      "slide": 14,
+      "part": "ppt/slides/slide14.xml",
+      "paragraphs": [],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide4.xml",
+          "paragraphs": [
+            "",
+            "",
+            "14"
+          ]
+        }
+      ],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image55.jpg"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image49.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image54.png"
+        },
+        {
+          "Id": "rId12",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image59.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image53.jpg"
+        },
+        {
+          "Id": "rId11",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image58.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image52.png"
+        },
+        {
+          "Id": "rId10",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image57.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image50.svg"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image56.jpg"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 14,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": ""
+      },
+      "visual_observation": "Mapas empresariales SSP2-4.5, hallazgos y distribución de vulnerabilidad; las barras suman 34, mientras otras láminas hablan de piloto de 32. No matriz de dependencias."
+    },
+    {
+      "slide": 15,
+      "part": "ppt/slides/slide15.xml",
+      "paragraphs": [
+        "¿Cómo Priorizamos las medidas de Adaptación para el Territorio? ",
+        "Análisis de ",
+        "vulnerabilidad (70%)",
+        "Recurrencia de ",
+        "acciones (15%)",
+        "Recurrencia en talleres",
+        "municipales (15%)",
+        "Indicadores con mayor valoración en sensibilidad / capacidad adaptativa",
+        "Instrumentos y referentes: PDM, PCVDCC, PICCA, NDC, MRV CORNARE, etc.",
+        "Contribuciones en adaptación",
+        "MEDIDAS PRIORIZADAS"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image61.svg"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image65.svg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image60.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image64.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image63.svg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image62.png"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 15,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "Indicadores con mayor valoración en sensibilidad / capacidad adaptativa",
+          "Instrumentos y referentes: PDM, PCVDCC, PICCA, NDC, MRV CORNARE, etc.",
+          "Contribuciones en adaptación"
+        ],
+        "pdf_text": "¿Cómo Priorizamos las medidas de\n  Adaptación para el Territorio?\n\n      Análisis de                  Recurrencia de            Recurrencia en talleres\n vulnerabilidad (70%)              acciones (15%)             municipales (15%)\n\n\n\n\n  Indicadores con mayor         Instrumentos y referentes:\nvaloración en sensibilidad /   PDM, PCVDCC, PICCA, NDC,         Contribuciones en\n   capacidad adaptativa            MRV CORNARE, etc.               adaptación\n\n\n\n\n                      MEDIDAS PRIORIZADAS\n"
+      },
+      "visual_observation": "Priorización institucional: 70% análisis de vulnerabilidad, 15% recurrencia de acciones, 15% talleres; no pesos del jurado o eficacia."
+    },
+    {
+      "slide": 16,
+      "part": "ppt/slides/slide16.xml",
+      "paragraphs": [
+        "Medidas Regionales",
+        "RH: Protección de la cabecera de cuencas y otros ecosistemas abastecedores",
+        "RH: Protección y recuperación de rondas hídricas",
+        "RH: Uso intersectorial eficiente del recurso hídrico",
+        "INFRA: Infraestructura resiliente al cambio climático",
+        "SAPA: Protección y reconversión de suelos agrícolas estratégicos para soberanía alimentaria",
+        "GR: Fortalecimiento del conocimiento de las amenazas y riesgos asociados al territorio",
+        "BIOSE: Deforestación evitada",
+        "RH: Protección de la cabecera de cuencas y otros ecosistemas abastecedores",
+        "SH: Plan de mejoramiento de sistema de salud ",
+        "INFRA: Infraestructura resiliente al cambio climático",
+        "HH: Construcciones resilientes y adaptadas al cambio climático",
+        "GR: Fortalecimiento del sistema de alertas tempranas- SAT",
+        "INFRA: Infraestructura resiliente al cambio climático",
+        "RH: Protección de la cabecera de cuencas y otros ecosistemas abastecedores",
+        "HH: Construcciones resilientes y adaptadas al cambio climático",
+        "BIOSE: Fortalecimiento de sistemas de áreas protegidas",
+        "SAPA: Producción Agroecológica y Economía Rural Comunitaria Resiliente al Cambio Climático",
+        "GR: Fortalecimiento del sistema de alertas tempranas- SAT",
+        "INFRA: Fortalecimiento de la infraestructura resiliente y de los servicios públicos para el hábitat humano",
+        "RH: Protección y recuperación de rondas hídricas",
+        "HH: Construcciones resilientes y adaptadas al cambio climático",
+        "BIOSE: Restauración de ecosistemas estratégicos",
+        "SAPA: Producción Agroecológica y Economía Rural Comunitaria Resiliente al Cambio Climático",
+        "GR: Fortalecimiento del sistema de alertas tempranas- SAT",
+        "RH: Uso intersectorial eficiente del recurso hídrico",
+        "BIOSE: Pagos por servicios ambientales PSA",
+        "HH: Espacios públicos verdes ",
+        "HH: Sistemas de Drenaje Sostenibles Urbanos",
+        "SAPA: Protección y reconversión de suelos agrícolas estratégicos para soberanía alimentaria",
+        "GR: Fortalecimiento del conocimiento de las amenazas y riesgos asociados al territorio",
+        "Aguas",
+        "Bosques",
+        "Páramo",
+        "Porce-Nus",
+        "Valles",
+        "17 medidas territoriales"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image67.svg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image66.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image69.svg"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image68.png"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 16,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "RH: Protección de la cabecera de cuencas y otros ecosistemas abastecedores",
+          "RH: Protección y recuperación de rondas hídricas",
+          "RH: Uso intersectorial eficiente del recurso hídrico",
+          "INFRA: Infraestructura resiliente al cambio climático",
+          "SAPA: Protección y reconversión de suelos agrícolas estratégicos para soberanía alimentaria",
+          "GR: Fortalecimiento del conocimiento de las amenazas y riesgos asociados al territorio",
+          "RH: Protección de la cabecera de cuencas y otros ecosistemas abastecedores",
+          "SH: Plan de mejoramiento de sistema de salud ",
+          "INFRA: Infraestructura resiliente al cambio climático",
+          "HH: Construcciones resilientes y adaptadas al cambio climático",
+          "GR: Fortalecimiento del sistema de alertas tempranas- SAT",
+          "INFRA: Infraestructura resiliente al cambio climático",
+          "RH: Protección de la cabecera de cuencas y otros ecosistemas abastecedores",
+          "HH: Construcciones resilientes y adaptadas al cambio climático",
+          "BIOSE: Fortalecimiento de sistemas de áreas protegidas",
+          "SAPA: Producción Agroecológica y Economía Rural Comunitaria Resiliente al Cambio Climático",
+          "GR: Fortalecimiento del sistema de alertas tempranas- SAT",
+          "INFRA: Fortalecimiento de la infraestructura resiliente y de los servicios públicos para el hábitat humano",
+          "RH: Protección y recuperación de rondas hídricas",
+          "HH: Construcciones resilientes y adaptadas al cambio climático",
+          "BIOSE: Restauración de ecosistemas estratégicos",
+          "SAPA: Producción Agroecológica y Economía Rural Comunitaria Resiliente al Cambio Climático",
+          "GR: Fortalecimiento del sistema de alertas tempranas- SAT",
+          "RH: Uso intersectorial eficiente del recurso hídrico",
+          "BIOSE: Pagos por servicios ambientales PSA",
+          "HH: Sistemas de Drenaje Sostenibles Urbanos",
+          "SAPA: Protección y reconversión de suelos agrícolas estratégicos para soberanía alimentaria",
+          "GR: Fortalecimiento del conocimiento de las amenazas y riesgos asociados al territorio"
+        ],
+        "pdf_text": "                                       Medidas Regionales\n\n           Aguas                                Bosques                                Páramo                                Porce-Nus                                          Valles\nRH: Protección de la cabecera de                                                                                     INFRA: Fortalecimiento de la\n                                                                              INFRA: Infraestructura resiliente al                                                   RH: Uso intersectorial eficiente del\ncuencas y otros ecosistemas            BIOSE: Deforestación evitada                                                  infraestructura resiliente y de los servicios\n                                                                              cambio climático                       públicos para el hábitat humano                 recurso hídrico\nabastecedores\n\n\nRH: Protección y recuperación de       RH: Protección de la cabecera de       RH: Protección de la cabecera de\n                                                                                                                     RH: Protección y recuperación de                BIOSE: Pagos por servicios\nrondas hídricas                        cuencas y otros ecosistemas            cuencas y otros ecosistemas\n                                                                                                                     rondas hídricas                                 ambientales PSA\n                                       abastecedores                          abastecedores\n\n\nRH: Uso intersectorial eficiente del   SH: Plan de mejoramiento de            HH: Construcciones resilientes y       HH: Construcciones resilientes y                HH: Espacios públicos verdes\nrecurso hídrico                        sistema de salud                       adaptadas al cambio climático          adaptadas al cambio climático\n\n\nINFRA: Infraestructura resiliente al   INFRA: Infraestructura resiliente al   BIOSE: Fortalecimiento de sistemas     BIOSE: Restauración de                          HH: Sistemas de Drenaje Sostenibles\ncambio climático                       cambio climático                       de áreas protegidas                    ecosistemas estratégicos                        Urbanos\n\n\n\nSAPA: Protección y reconversión de                                            SAPA: Producción Agroecológica y       SAPA: Producción Agroecológica y                SAPA: Protección y reconversión de\n                                       HH: Construcciones resilientes y       Economía Rural Comunitaria             Economía Rural Comunitaria                      suelos agrícolas estratégicos para\nsuelos agrícolas estratégicos para\n                                       adaptadas al cambio climático          Resiliente al Cambio Climático         Resiliente al Cambio Climático                  soberanía alimentaria\nsoberanía alimentaria\n\n\n\nGR: Fortalecimiento del                GR: Fortalecimiento del sistema de     GR: Fortalecimiento del sistema de     GR: Fortalecimiento del sistema de              GR: Fortalecimiento del\nconocimiento de las amenazas y         alertas tempranas- SAT                 alertas tempranas- SAT                 alertas tempranas- SAT                          conocimiento de las amenazas y\nriesgos asociados al territorio                                                                                                                                      riesgos asociados al territorio\n\n\n                                                                              17 medidas territoriales\n"
+      },
+      "visual_observation": "17 medidas territoriales. Valles prioriza eficiencia hídrica, PSA, verdes urbanos, SUDS, suelos y conocimiento; el ejercicio económico usa las 15 con precio."
+    },
+    {
+      "slide": 17,
+      "part": "ppt/slides/slide17.xml",
+      "paragraphs": [
+        "Medidas Empresariales",
+        "Aguas",
+        "Bosques",
+        "Páramo",
+        "Valles"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image67.svg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image66.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image70.png"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 17,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "        Medidas Empresariales\n\nAguas      Bosques   Páramo     Valles\n"
+      },
+      "visual_observation": "Tabla rasterizada de 11 medidas empresariales; no reemplaza las 15 unidades territoriales del ejercicio."
+    },
+    {
+      "slide": 18,
+      "part": "ppt/slides/slide18.xml",
+      "paragraphs": [
+        "¿QUÉ ELEMENTOS CLAVE CONTIENE CADA MEDIDA?",
+        "Nombre de la medida",
+        "Contexto institucional y normativo",
+        "Línea estratégica / instrumental de la PNCC",
+        "Línea estratégica / instrumental del PICCA",
+        "Línea estratégica / instrumental del PCVDCC Cornare.",
+        "Dimensión del territorio",
+        "Amenazas físicas que atiende",
+        "Objetivo de la medida",
+        "Enfoque de la medida",
+        "Ámbito de aplicación (Regional y Sectorial)",
+        "Estado de la medida",
+        "Descripción técnica",
+        "Horizonte temporal",
+        "Acciones requeridas",
+        "Indicadores de vulnerabilidad y riesgo",
+        "Metas",
+        "Actores",
+        "Medios de implementación e innovación",
+        "Costos estimados",
+        "Barreras inferidas para la implementación",
+        "Co-beneficios"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId13",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image82.svg"
+        },
+        {
+          "Id": "rId18",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image87.png"
+        },
+        {
+          "Id": "rId26",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image95.png"
+        },
+        {
+          "Id": "rId39",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image108.svg"
+        },
+        {
+          "Id": "rId21",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image90.svg"
+        },
+        {
+          "Id": "rId34",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image103.png"
+        },
+        {
+          "Id": "rId42",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image111.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image76.svg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image71.png"
+        },
+        {
+          "Id": "rId16",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image85.png"
+        },
+        {
+          "Id": "rId29",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image98.svg"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image75.png"
+        },
+        {
+          "Id": "rId11",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image80.svg"
+        },
+        {
+          "Id": "rId24",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image93.png"
+        },
+        {
+          "Id": "rId32",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image101.png"
+        },
+        {
+          "Id": "rId37",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image106.svg"
+        },
+        {
+          "Id": "rId40",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image109.png"
+        },
+        {
+          "Id": "rId45",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image114.svg"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image74.svg"
+        },
+        {
+          "Id": "rId15",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image84.svg"
+        },
+        {
+          "Id": "rId23",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image92.svg"
+        },
+        {
+          "Id": "rId28",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image97.png"
+        },
+        {
+          "Id": "rId36",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image105.png"
+        },
+        {
+          "Id": "rId10",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image79.png"
+        },
+        {
+          "Id": "rId19",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image88.svg"
+        },
+        {
+          "Id": "rId31",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image100.svg"
+        },
+        {
+          "Id": "rId44",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image113.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image73.png"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image78.svg"
+        },
+        {
+          "Id": "rId14",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image83.png"
+        },
+        {
+          "Id": "rId22",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image91.png"
+        },
+        {
+          "Id": "rId27",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image96.svg"
+        },
+        {
+          "Id": "rId30",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image99.png"
+        },
+        {
+          "Id": "rId35",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image104.svg"
+        },
+        {
+          "Id": "rId43",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image112.svg"
+        },
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image77.png"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image72.svg"
+        },
+        {
+          "Id": "rId12",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image81.png"
+        },
+        {
+          "Id": "rId17",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image86.svg"
+        },
+        {
+          "Id": "rId25",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image94.svg"
+        },
+        {
+          "Id": "rId33",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image102.svg"
+        },
+        {
+          "Id": "rId38",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image107.png"
+        },
+        {
+          "Id": "rId20",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image89.png"
+        },
+        {
+          "Id": "rId41",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image110.svg"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 18,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "Línea estratégica / instrumental del PCVDCC Cornare."
+        ],
+        "pdf_text": "¿QUÉ ELEMENTOS CLAVE CONTIENE\nCADA MEDIDA?\n\n     Nombre de la medida                           Estado de la medida\n     Contexto institucional y normativo            Descripción técnica\n     Línea estratégica / instrumental de la PNCC   Horizonte temporal\n     Línea estratégica / instrumental del PICCA    Acciones requeridas\n     Línea estratégica / instrumental del PCVDCC   Indicadores de vulnerabilidad y riesgo\n     Cornare.\n                                                   Metas\n     Dimensión del territorio\n                                                   Actores\n     Amenazas físicas que atiende\n                                                   Medios de implementación e innovación\n     Objetivo de la medida\n                                                   Costos estimados\n     Enfoque de la medida\n                                                   Barreras inferidas para la implementación\n     Ámbito de aplicación (Regional y Sectorial)\n                                                   Co-beneficios\n"
+      },
+      "visual_observation": "21 campos de ficha de medida: nombre, contexto, tres líneas de política/planes, dimensión, amenazas, objetivo, enfoque, ámbito, estado, técnica, horizonte, acciones, indicadores, metas, actores, medios, costos, barreras y cobeneficios."
+    },
+    {
+      "slide": 19,
+      "part": "ppt/slides/slide19.xml",
+      "paragraphs": [
+        "PLANES DE ADAPTACIÓN REGIONALES",
+        "Metas",
+        "Objetivo general",
+        "Disminuir en un 30% los indicadores de vulnerabilidad climática de cada regional a 2035, mediante la planificación e implementación de medidas de adaptación integrales, basadas en ecosistemas y articuladas a los marcos nacional e internacional de acción climática.",
+        " ",
+        ""
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image121.png"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image116.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image120.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image119.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image118.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image117.svg"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image122.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "3",
+          "name": "Imagen 2",
+          "descr": "Diagrama\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "6",
+          "name": "Imagen 5",
+          "descr": "Mapa\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "14",
+          "name": "Imagen 13",
+          "descr": "Interfaz de usuario gráfica\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "18",
+          "name": "Imagen 17",
+          "descr": "Mapa\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "24",
+          "name": "Imagen 23",
+          "descr": "Una captura de pantalla de un celular con texto e imagen\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 19,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "Disminuir en un 30% los indicadores de vulnerabilidad climática de cada regional a 2035, mediante la planificación e implementación de medidas de adaptación integrales, basadas en ecosistemas y articuladas a los marcos nacional e internacional de acción climática."
+        ],
+        "pdf_text": "   PLANES DE ADAPTACIÓN REGIONALES\n\n                           Objetivo general\n\n                           Disminuir en un 30% los\n                           indicadores            de\n                           vulnerabilidad climática\n                           de cada regional a 2035,\n                           mediante la planificación\n                           e implementación de\n                           medidas de adaptación\n                           integrales, basadas en\nMetas                      ecosistemas y articuladas\n                           a los marcos nacional e\n                           internacional de acción\n                           climática.\n"
+      },
+      "visual_observation": "Meta regional: disminuir 30% los indicadores de vulnerabilidad climática a 2035. Cinco portadas de planes regionales, no los planes completos."
+    },
+    {
+      "slide": 20,
+      "part": "ppt/slides/slide20.xml",
+      "paragraphs": [
+        "PLANES DE ADAPTACIÓN EMPRESARIALES",
+        "Metas",
+        "Para cada una de las 32 organizaciones piloto, de acuerdo con su análisis de vulnerabilidad, se priorizaron medidas de adaptación y se diseño una hoja de ruta a través de un Plan de Adaptación Empresarial individual."
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image116.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image125.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image124.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image123.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image117.svg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "4",
+          "name": "Imagen 3",
+          "descr": "Imagen que contiene Logotipo\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "9",
+          "name": "Imagen 8",
+          "descr": "Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "13",
+          "name": "Imagen 12",
+          "descr": "Diagrama, Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 20,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "                               PLANES DE ADAPTACIÓN\n                               EMPRESARIALES\n\n\n\n\nMetas\n\n Para cada una de las 32 organizaciones piloto, de acuerdo con su análisis de vulnerabilidad, se priorizaron medidas de adaptación\n y se diseño una hoja de ruta a través de un Plan de Adaptación Empresarial individual.\n"
+      },
+      "visual_observation": "Planes de las 32 organizaciones piloto; portadas no habilitan usar datos individuales reservados."
+    },
+    {
+      "slide": 21,
+      "part": "ppt/slides/slide21.xml",
+      "paragraphs": [
+        "CAPÍTULO ACTUALIZADO DE ADAPTACIÓN Y GESTIÓN DEL RIESGO CLIMÁTICO - PCVDCC ",
+        "Metas",
+        "En el caso del recurso hídrico, la actualización permite evidenciar que el riesgo climático está asociado a cambios en la dinámica del sistema y no únicamente a la disponibilidad.",
+        "",
+        "Esto implica la necesidad de incorporar criterios de operación adaptativa, gestión de variabilidad y articulación territorial en la planificación del recurso hídrico."
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image116.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image126.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image117.svg"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "3",
+          "name": "Imagen 2",
+          "descr": "Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 21,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "Esto implica la necesidad de incorporar criterios de operación adaptativa, gestión de variabilidad y articulación territorial en la planificación del recurso hídrico."
+        ],
+        "pdf_text": "CAPÍTULO ACTUALIZADO DE ADAPTACIÓN Y\nGESTIÓN DEL RIESGO CLIMÁTICO - PCVDCC\n\n\n                    En el caso del recurso hídrico, la actualización\n                    permite evidenciar que el riesgo climático\n                    está asociado a cambios en la dinámica del\n                    sistema y no únicamente a la disponibilidad.\n\n                    Esto implica la necesidad de incorporar\n                    criterios de operación adaptativa, gestión de\nMetas               variabilidad y articulación territorial en la\n                    planificación del recurso hídrico.\n"
+      },
+      "visual_observation": "Actualización PCVDCC: dinámica y variabilidad del agua, operación adaptativa y articulación; portada, no capítulo íntegro."
+    },
+    {
+      "slide": 22,
+      "part": "ppt/slides/slide22.xml",
+      "paragraphs": [
+        "Capacidad adaptativa",
+        "¿Cuáles son los perfiles de proyectos que formulamos?"
+      ],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide5.xml",
+          "paragraphs": [
+            "",
+            "",
+            "22"
+          ]
+        }
+      ],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image130.png"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image49.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image129.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image128.svg"
+        },
+        {
+          "Id": "rId11",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image133.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image127.png"
+        },
+        {
+          "Id": "rId10",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image132.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image50.svg"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image131.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "10",
+          "name": "Imagen 9",
+          "descr": "Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "13",
+          "name": "Imagen 12",
+          "descr": "Interfaz de usuario gráfica, Texto, Aplicación\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "15",
+          "name": "Imagen 14",
+          "descr": "Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "17",
+          "name": "Imagen 16",
+          "descr": "Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        },
+        {
+          "id": "19",
+          "name": "Imagen 18",
+          "descr": "Texto\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 22,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "¿Cuáles son los perfiles de proyectos que formulamos?"
+        ],
+        "pdf_text": "¿Cuáles son los perfiles        de proyectos que\n                 Capacidad adaptativa\n\n\n              formulamos?\n"
+      },
+      "visual_observation": "Portadas de cinco perfiles de proyectos; no perfiles completos ni sus presupuestos contractuales."
+    },
+    {
+      "slide": 23,
+      "part": "ppt/slides/slide23.xml",
+      "paragraphs": [
+        "¿Cómo Sabremos que se Reducirá el Riesgo Climático?",
+        "Cumplimiento General Diagnóstico regionales",
+        "Fuente: Actualización de Riesgos Climáticos CORNARE. 2025",
+        "“El módulo de Monitoreo, Evaluación y Aprendizaje - MEA permite demostrar con datos, si las acciones de adaptación realmente están reduciendo el riesgo climático en el territorio.”",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image139.png"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image134.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image138.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image4.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image137.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image136.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image135.png"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image140.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "8",
+          "name": "Imagen 7",
+          "descr": "Un conjunto de letras negras en un fondo negro\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 23,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "          ¿Cómo Sabremos que se Reducirá el\n                 Riesgo Climático?\n\n“El módulo de Monitoreo, Evaluación y Aprendizaje - MEA permite demostrar con datos, si las acciones de adaptación realmente están reduciendo el riesgo climático en el territorio.”\n      Cumplimiento General Diagnóstico regionales\n\n\n\n\n                                                                                                                                       Fuente: Actualización de Riesgos Climáticos CORNARE. 2025\n"
+      },
+      "visual_observation": "Ciclo MEA: evaluación inicial, línea base, implementación, nueva medición de sensibilidad/capacidad/vulnerabilidad, resultado y ajuste. Captura empresarial de 32; no prueba causal de medidas de este reto."
+    },
+    {
+      "slide": 24,
+      "part": "ppt/slides/slide24.xml",
+      "paragraphs": [
+        "Metas",
+        "¿Cómo Funciona el MEA en el Sistema?"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image141.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 24,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "¿Cómo Funciona el MEA en el Sistema?\n\n\n\n\nMetas\n"
+      },
+      "visual_observation": "Captura del sistema MRV/MEA: medida, acciones e indicadores; no contrato API o integración ejecutada por el equipo."
+    },
+    {
+      "slide": 25,
+      "part": "ppt/slides/slide25.xml",
+      "paragraphs": [
+        "Metas",
+        "En la misma Lógica de Inversión de Proyectos de las entidades"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image142.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 25,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": " En la misma Lógica de Inversión de\n      Proyectos de las entidades\n\n\n\n\nMetas\n"
+      },
+      "visual_observation": "Captura de inversión/acciones y gestión; actividad e inversión no equivalen a reducción observada."
+    },
+    {
+      "slide": 26,
+      "part": "ppt/slides/slide26.xml",
+      "paragraphs": [
+        "Metas"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image143.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image144.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 26,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "Metas\n"
+      },
+      "visual_observation": "Formulario de acción con inversión, unidades, valores y fechas; no ejecución contractual o eficacia probada."
+    },
+    {
+      "slide": 27,
+      "part": "ppt/slides/slide27.xml",
+      "paragraphs": [
+        "Metas"
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image145.png"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image115.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Imagen 4",
+          "descr": "Una montaña con árboles\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 27,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "Metas\n"
+      },
+      "visual_observation": "Captura de comparación/gestión de medidas y vulnerabilidad; sin acceso backend acreditado por el documento."
+    },
+    {
+      "slide": 28,
+      "part": "ppt/slides/slide28.xml",
+      "paragraphs": [
+        "",
+        "¿Para qué nos sirven estos resultado?",
+        "La actualización del análisis de riesgos climáticos proporciona a los municipios y empresas una base técnica y territorialmente específica para comprender cómo la variabilidad y el cambio climático están afectando su territorio, su población, sus ecosistemas, sus empresas, su infraestructura…",
+        "Priorizar inversiones públicas y proyectos de adaptación.",
+        "Incorporar el cambio climático de manera concreta en sus instrumentos de planificación.",
+        "Identificar y caracterizar los elementos expuestos.",
+        "Proteger Eficientemente los Ecosistemas más Estratégicos",
+        "Promover Infraestructura Resiliente al Clima",
+        "Monitorear, hacer seguimiento y revisar la eficiencia de la Inversión Climática"
+      ],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide6.xml",
+          "paragraphs": [
+            "",
+            "",
+            "28"
+          ]
+        }
+      ],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId8",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image150.png"
+        },
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image4.png"
+        },
+        {
+          "Id": "rId7",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image149.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image148.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image147.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image146.png"
+        },
+        {
+          "Id": "rId9",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image151.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Marcador de contenido 4",
+          "descr": "Un conjunto de letras negras en un fondo negro\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 28,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "Priorizar inversiones públicas y proyectos de adaptación.",
+          "Incorporar el cambio climático de manera concreta en sus instrumentos de planificación.",
+          "Identificar y caracterizar los elementos expuestos.",
+          "Proteger Eficientemente los Ecosistemas más Estratégicos",
+          "Promover Infraestructura Resiliente al Clima",
+          "Monitorear, hacer seguimiento y revisar la eficiencia de la Inversión Climática"
+        ],
+        "pdf_text": " ¿Para qué nos sirven estos\n        resultado?\nLa actualización del análisis de riesgos climáticos proporciona a los municipios y empresas una base técnica y territorialmente\nespecífica para comprender cómo la variabilidad y el cambio climático están afectando su territorio, su población, sus ecosistemas,\nsus empresas, su infraestructura…\n\n\n\n\n                                                                       Proteger Eficientemente                          Monitorear, hacer\n                        Priorizar inversiones        Identificar y                                   Promover            seguimiento y\n Incorporar el cambio                              caracterizar los      los Ecosistemas más\n                        públicas y proyectos                                                      Infraestructura      revisar la eficiencia\n climático de manera                            elementos expuestos.          Estratégicos\n                           de adaptación.                                                        Resiliente al Clima     de la Inversión\n     concreta en sus\n                                                                                                                            Climática\n    instrumentos de\n      planificación.\n"
+      },
+      "visual_observation": "Utilidad para planificación/POT, inversiones, exposición, ecosistemas, infraestructura y seguimiento."
+    },
+    {
+      "slide": 29,
+      "part": "ppt/slides/slide29.xml",
+      "paragraphs": [
+        "Aguas",
+        "Bosques",
+        "Páramo",
+        "Valles",
+        "ORDENAMIENTO AMBIENTAL DEL TERRITORIO CON CAMBIO CLIMÁTICO "
+      ],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image67.svg"
+        },
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image66.png"
+        },
+        {
+          "Id": "rId6",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image154.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image153.png"
+        },
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image152.png"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 29,
+        "ppt_paragraphs_not_substrings_of_pdf": [
+          "ORDENAMIENTO AMBIENTAL DEL TERRITORIO CON CAMBIO CLIMÁTICO "
+        ],
+        "pdf_text": "ORDENAMIENTO AMBIENTAL DEL\n    TERRITORIO CON CAMBIO\n Aguas\n           CLIMÁTICO\n         Bosques Páramo      Valles\n"
+      },
+      "visual_observation": "Figura de ordenamiento y dimensiones/elementos expuestos; referencia conceptual, no capas descargables."
+    },
+    {
+      "slide": 30,
+      "part": "ppt/slides/slide30.xml",
+      "paragraphs": [
+        "",
+        "¿Dónde se encuentra la Información?",
+        "OBSERVATORIO AMBIENTAL DE CORNARE. https://observatorioambiental.cornare.gov.co/crecimiento-verde-y-cambio-climatico/cambio-climatico/",
+        ""
+      ],
+      "notes": [
+        {
+          "part": "ppt/notesSlides/notesSlide7.xml",
+          "paragraphs": [
+            "",
+            "",
+            "30"
+          ]
+        }
+      ],
+      "hyperlinks": [
+        {
+          "Id": "rId4",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+          "Target": "https://observatorioambiental.cornare.gov.co/crecimiento-verde-y-cambio-climatico/cambio-climatico/",
+          "TargetMode": "External"
+        }
+      ],
+      "media": [
+        {
+          "Id": "rId3",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image4.png"
+        },
+        {
+          "Id": "rId5",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image155.png"
+        }
+      ],
+      "alt_text": [
+        {
+          "id": "5",
+          "name": "Marcador de contenido 4",
+          "descr": "Un conjunto de letras negras en un fondo negro\n\nEl contenido generado por IA puede ser incorrecto."
+        }
+      ],
+      "comparison_pdf": {
+        "page": 30,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": "       ¿Dónde se encuentra la\n           Información?\nOBSERVATORIO        AMBIENTAL   DE   CORNARE.   https://observatorioambiental.cornare.gov.co/crecimiento-verde-y-cambio-\nclimatico/cambio-climatico/\n"
+      },
+      "visual_observation": "Observatorio de cambio climático; único hipervínculo externo del PPTX."
+    },
+    {
+      "slide": 31,
+      "part": "ppt/slides/slide31.xml",
+      "paragraphs": [],
+      "notes": [],
+      "hyperlinks": [],
+      "media": [
+        {
+          "Id": "rId2",
+          "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+          "Target": "../media/image156.jpeg"
+        }
+      ],
+      "alt_text": [],
+      "comparison_pdf": {
+        "page": 31,
+        "ppt_paragraphs_not_substrings_of_pdf": [],
+        "pdf_text": ""
+      },
+      "visual_observation": "Cierre visual de agradecimiento."
+    }
+  ],
+  "limitations": [
+    "Los párrafos que no aparecen como subcadenas continuas en el PDF pueden deberse al orden de lectura de columnas; esa prueba no demuestra contenido ausente.",
+    "El contenido de imágenes requiere inspección visual separada; se documenta la cobertura en visual_review.",
+    "No se establece equivalencia visual píxel a píxel entre PDF y PPTX."
+  ],
+  "pdf_source": "insumos/cornare/HACKATHON RETO CORNARE.pdf",
+  "pdf_page_count": 31,
+  "visual_review": {
+    "coverage": "All 31 PDF pages rendered and inspected in memory; selected original PPTX media inspected independently.",
+    "inspected_original_pptx_media": [
+      "ppt/media/image34.png",
+      "ppt/media/image58.png",
+      "ppt/media/image70.png",
+      "ppt/media/image140.png"
+    ],
+    "temporary_image_files_written": false,
+    "notes_substantive_content": false,
+    "notes_slides": [
+      3,
+      11,
+      13,
+      14,
+      22,
+      28,
+      30
+    ],
+    "external_relationship_count_entire_pptx": 1,
+    "embedded_documents_or_charts": false,
+    "scope": "Not a claim of pixel-for-pixel PDF/PPTX equivalence."
+  },
+  "internal_figural_inconsistencies": [
+    {
+      "slide": 10,
+      "issue": "La figura anuncia 106 indicadores empresariales; los componentes 20 + 12 + 18 + 49 suman 99. Siete dimensiones territoriales en diapositiva 9/enunciado frente a ocho SIIVRA en la figura 10; falta aclarar alcance."
+    },
+    {
+      "slide": 14,
+      "issue": "Las barras de vulnerabilidad empresarial 6 + 9 + 13 + 4 + 2 suman 34 frente a las 32 organizaciones piloto en diapositivas 3 y 20 y captura 23. Falta aclarar universo/corte."
+    }
+  ]
+}

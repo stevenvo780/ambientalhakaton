@@ -1,0 +1,355 @@
+{
+  "registration_timing": "retrospective",
+  "actor": "agent:codex",
+  "items": [
+    {
+      "id": "problema",
+      "kind": "problem",
+      "text": "Elegir dos de las cuatro iniciativas adelantadas para producir una decisión de adaptación defendible en el corredor Rionegro–Guarne–Marinilla, con los insumos existentes y un fondo simulado de COP 5.000 millones.",
+      "refs": [],
+      "data": {
+        "mandato": "El usuario delegó elegir las dos propuestas que mejor encajan y aprovechar los avances existentes."
+      }
+    },
+    {
+      "id": "actores",
+      "kind": "actor",
+      "text": "CORNARE y las alcaldías del corredor; comunidades, productores y empresas mediante información permitida; el usuario como responsable del trabajo y Codex como analista delegado. No se atribuyen decisiones ni acuerdos a actores que no participaron.",
+      "refs": [
+        "problema"
+      ],
+      "data": {}
+    },
+    {
+      "id": "frontera",
+      "kind": "boundary",
+      "text": "Selección y preparación local; fuentes oficiales aportadas y superficies públicas de cuatro aplicaciones. Pendientes acceso al código y pruebas privadas. No recalcular riesgo, cubrir 26 municipios, inventar dependencias ni construir una plataforma completa.",
+      "refs": [
+        "problema",
+        "actores"
+      ],
+      "data": {}
+    },
+    {
+      "id": "mandato",
+      "kind": "norm",
+      "text": "Aprovechar iniciativas existentes para seleccionar dos bases complementarias, manteniendo rigor documental y el alcance del reto. Elección técnica delegada a Codex; no se afirma que el usuario escogió personalmente las aplicaciones.",
+      "refs": [
+        "problema",
+        "actores"
+      ],
+      "data": {
+        "source": "Mensajes del usuario de esta conversación; explicacion.txt",
+        "approval_recorded": false,
+        "delegated_choice": true
+      }
+    },
+    {
+      "id": "conceptos",
+      "kind": "concept",
+      "text": "Amenaza, sensibilidad, capacidad adaptativa, vulnerabilidad y riesgo son conceptos distintos. Gasto, talleres, emisiones y puntajes algorítmicos no son evidencia de reducción porcentual de vulnerabilidad.",
+      "refs": [
+        "problema"
+      ],
+      "data": {}
+    },
+    {
+      "id": "supuesto_capacidad",
+      "kind": "assumption",
+      "text": "La funcionalidad documentada o presente en el cliente puede ser reutilizable, pero necesita prueba. Una respuesta de salud o una página pública no acredita flujos privados completos.",
+      "refs": [
+        "frontera"
+      ],
+      "data": {}
+    },
+    {
+      "id": "pregunta_seleccion",
+      "kind": "question",
+      "text": "¿Qué pareja de iniciativas cubre mejor los tres productos oficiales aprovechando trabajo existente y evitando depender de datos empresariales inexistentes?",
+      "refs": [
+        "problema"
+      ],
+      "data": {}
+    },
+    {
+      "id": "hipotesis_complemento",
+      "kind": "hypothesis",
+      "text": "Una base de comparación presupuestal más una base territorial de evidencia y seguimiento ofrece mejor encaje inmediato que priorizar un grafo de dependencias sin matriz o una herramienta centrada en lotes.",
+      "refs": [
+        "pregunta_seleccion"
+      ],
+      "data": {}
+    },
+    {
+      "id": "protocolo_revision",
+      "kind": "protocol",
+      "text": "Documentar la revisión del enunciado, las hojas de cálculo, la documentación y las respuestas públicas. Distinguir capacidad documentada, respuesta observada y flujo ejecutado. Este registro reconstruye el procedimiento realizado; no se presenta como prerregistro previo a las consultas.",
+      "refs": [
+        "hipotesis_complemento"
+      ],
+      "data": {
+        "population": "Cuatro iniciativas del usuario y paquete oficial del reto CORNARE.",
+        "method": "Lectura documental, extracción PDF/Excel, inspección de cliente publicado por dos agentes y GET públicos sin sesión.",
+        "comparison": "Encaje con tres productos, reutilización verificable, cobertura, costo y datos faltantes; comparación cualitativa sin puntajes inventados.",
+        "uncertainty": "Sin prueba de interfaz completa, flujos privados, eficacia del algoritmo ni mejora ambiental observada.",
+        "registration_timing": "retrospective"
+      }
+    },
+    {
+      "id": "fuente_reto",
+      "kind": "evidence",
+      "text": "El enunciado delimita tres municipios, COP 5.000 millones simulados, costos indivisibles, 15 medidas con precio, tres productos y contraste SSP3-7.0/2060.",
+      "refs": [
+        "protocolo_revision"
+      ],
+      "data": {
+        "origin": "published",
+        "source": "RETO CLIMATE WEEK HACKATHON.pdf",
+        "date": "2026-10-07",
+        "locator": "Páginas 1–8; restricciones 6, escenarios 7, productos 10 y exclusiones 13.",
+        "sha256": "3dc49d0290487b0d316db4ed1e3d78dc2abbcb5c823a536e9ebbffa768251779"
+      }
+    },
+    {
+      "id": "fuente_meta",
+      "kind": "evidence",
+      "text": "La meta institucional es disminuir 30% los indicadores de vulnerabilidad de cada regional a 2035, no probar 30% durante el año inicial.",
+      "refs": [
+        "protocolo_revision"
+      ],
+      "data": {
+        "origin": "published",
+        "source": "insumos/cornare/HACKATHON RETO CORNARE.pdf",
+        "date": "2026-10-07",
+        "locator": "Página 19; texto extraído y página revisada visualmente.",
+        "sha256": "b9eafc137f1c8d1fdb592f8dc6c3f52f4765d59c942df0415261002b16e51fdc"
+      }
+    },
+    {
+      "id": "fuente_antecedentes",
+      "kind": "evidence",
+      "text": "El reporte contiene antecedentes de PSA, restauración y agroecología en Rionegro y Guarne. Son actividades e inversiones reportadas, no eficacia de adaptación demostrada.",
+      "refs": [
+        "protocolo_revision"
+      ],
+      "data": {
+        "origin": "published",
+        "source": "insumos/cornare/REPORTE MEDIDAS DE ADAPTACIÓN MUNICIPIOS.xlsx",
+        "date": "2026-10-07",
+        "locator": "Hoja Reporte_Adaptacion_General_2026; filas 149, 173, 178, 179, 199, 204 y 241.",
+        "sha256": "7d619f13571532b8be8d1c05592aeba150576c0a6bb8af67056a38a7f52908c7"
+      }
+    },
+    {
+      "id": "fuente_http",
+      "kind": "evidence",
+      "text": "Las respuestas públicas confirman autenticación requerida en Presupuesto Vivo, catálogo provisional Granada–Rionegro en Territorio Vivo y respuestas de salud en Efecto Dominó y Lote Resiliente.",
+      "refs": [
+        "protocolo_revision"
+      ],
+      "data": {
+        "origin": "observed",
+        "source": "insumos/revision/propuestas-http.json",
+        "date": "2026-10-07",
+        "locator": "Registros fechados 2026-10-07T13:54 UTC; URL y payload por consulta.",
+        "sha256": "4d24864d1785cd17551d71d2d63ca1b5e298dc3c1308ee07d7c2b6270afe782c",
+        "method": "GET públicos con curl, sin autenticación ni mutación; respuesta archivada en JSON."
+      }
+    },
+    {
+      "id": "fuente_guias",
+      "kind": "evidence",
+      "text": "La revisión de guías públicas y cliente publicado identifica capacidades candidatas de importación, comparación y exportación en Presupuesto Vivo; expediente territorial en Territorio Vivo; grafos en Efecto Dominó y diseño predial en Lote Resiliente. Sin ejecución autenticada.",
+      "refs": [
+        "protocolo_revision"
+      ],
+      "data": {
+        "origin": "published",
+        "source": "https://presupuesto-vivo-chi.vercel.app; https://territorio-vivo-five.vercel.app/documentacion; https://efecto-domino.vercel.app/documentacion; https://lote-resiliente.vercel.app/documentacion",
+        "date": "2026-10-07",
+        "locator": "Revisiones de agentes revisar_presupuesto_territorio y revisar_domino_lote; matriz y límites en seleccion_propuestas.md.",
+        "archive_limit": "No se archivó todo el código del cliente ni se obtuvo repositorio fuente; capacidades declaradas y no probadas de punta a punta."
+      }
+    },
+    {
+      "id": "inferencia_encaje",
+      "kind": "inference",
+      "text": "Presupuesto Vivo encaja con el producto 2; Territorio Vivo complementa productos 1 y 3. Dominó depende de una matriz que el reto declara faltante y Lote tiene otra escala. Esta inferencia justifica selección, no eficacia ambiental.",
+      "refs": [
+        "fuente_reto",
+        "fuente_http",
+        "fuente_guias"
+      ],
+      "data": {}
+    },
+    {
+      "id": "sintesis",
+      "kind": "synthesis",
+      "text": "Seleccionar Presupuesto Vivo y Territorio Vivo como bases complementarias. Reutilizar antecedentes territoriales comprobando continuidad, cobertura y resultados. Limitar el desarrollo inmediato a los productos oficiales y funciones existentes que puedan verificarse.",
+      "refs": [
+        "inferencia_encaje",
+        "fuente_antecedentes",
+        "fuente_meta"
+      ],
+      "data": {}
+    },
+    {
+      "id": "incertidumbre",
+      "kind": "uncertainty",
+      "text": "Falta acceso verificable a los repositorios, sesión para flujos privados, carga del catálogo oficial y cobertura completa del corredor. No están demostradas efectividades, matriz empresarial ni reducción de vulnerabilidad; Territorio Vivo sigue en caso provisional.",
+      "refs": [
+        "sintesis",
+        "fuente_http"
+      ],
+      "data": {}
+    },
+    {
+      "id": "opcion_presupuesto",
+      "kind": "option",
+      "text": "Presupuesto Vivo: Núcleo de portafolios y restricciones; flujo privado pendiente. Coste de adaptación y operación no cotizado.",
+      "refs": [
+        "sintesis",
+        "mandato"
+      ],
+      "data": {}
+    },
+    {
+      "id": "opcion_territorio",
+      "kind": "option",
+      "text": "Territorio Vivo: Base territorial, evidencia y seguimiento; cambiar cobertura Granada–Rionegro al corredor. Coste de adaptación y operación no cotizado.",
+      "refs": [
+        "sintesis",
+        "mandato"
+      ],
+      "data": {}
+    },
+    {
+      "id": "opcion_domino",
+      "kind": "option",
+      "text": "Efecto Dominó: Reserva para dependencias; los datos necesarios aún no están consolidados. Coste de levantamiento y adaptación no cotizado.",
+      "refs": [
+        "sintesis",
+        "mandato"
+      ],
+      "data": {}
+    },
+    {
+      "id": "opcion_lote",
+      "kind": "option",
+      "text": "Lote Resiliente: Reserva para localización predial; no resuelve por sí solo cartera regional. Coste de adaptación no cotizado.",
+      "refs": [
+        "sintesis",
+        "mandato"
+      ],
+      "data": {}
+    },
+    {
+      "id": "comparacion",
+      "kind": "comparison",
+      "text": "Presupuesto Vivo + Territorio Vivo cubre decisión presupuestal, territorio y seguimiento con menos dependencia de datos inexistentes. Dominó y Lote se conservan como reservas. Alternativa operativa si no funcionan flujos privados: hoja de cálculo y láminas, admitidas por el reto.",
+      "refs": [
+        "opcion_presupuesto",
+        "opcion_territorio",
+        "opcion_domino",
+        "opcion_lote",
+        "fuente_reto"
+      ],
+      "data": {
+        "document": "seleccion_propuestas.md",
+        "cost_limit": "No hay cotización de desarrollo; COP 5.000 millones es el fondo simulado de intervenciones ambientales, no presupuesto de software."
+      }
+    },
+    {
+      "id": "riesgo",
+      "kind": "risk",
+      "text": "Riesgos: presentar funciones documentadas como ejecutadas, arrastrar territorio provisional, fraccionar costos, asumir eficacia, doble contar intervenciones o inventar dependencias. Mitigar mediante fuentes, pruebas reales y faltantes explícitos.",
+      "refs": [
+        "opcion_presupuesto",
+        "opcion_territorio",
+        "fuente_reto",
+        "incertidumbre"
+      ],
+      "data": {}
+    },
+    {
+      "id": "eleccion_delegada",
+      "kind": "decision",
+      "text": "Codex recomienda avanzar con Presupuesto Vivo como núcleo y Territorio Vivo como soporte territorial y de seguimiento, por delegación del usuario. Selección preparatoria de iniciativas; portafolio ambiental y comprobación integrada todavía pendientes.",
+      "refs": [
+        "comparacion",
+        "mandato",
+        "fuente_reto",
+        "fuente_http"
+      ],
+      "data": {
+        "selected": [
+          "Presupuesto Vivo",
+          "Territorio Vivo"
+        ],
+        "delegated_choice": true,
+        "human_personal_selection_claimed": false,
+        "document": "seleccion_propuestas.md"
+      }
+    },
+    {
+      "id": "req_productos",
+      "kind": "requirement",
+      "text": "Producir tablero de máximo cinco hallazgos, portafolio localizado con medidas y costos MEA, y ficha de riesgo residual/dependencias/seguimiento; cada afirmación debe distinguir dato, inferencia, supuesto o faltante.",
+      "refs": [
+        "eleccion_delegada",
+        "fuente_reto"
+      ],
+      "data": {}
+    },
+    {
+      "id": "req_presupuesto",
+      "kind": "requirement",
+      "text": "El total del portafolio debe ser como máximo COP 5.000 millones con unidades funcionales indivisibles de la tabla del reto, sin duplicaciones y buscando el máximo de intervenciones posibles. Explicitar conteos y restricciones; conservar el costo completo de PSA aunque se describa un primer año.",
+      "refs": [
+        "eleccion_delegada",
+        "fuente_reto"
+      ],
+      "data": {}
+    },
+    {
+      "id": "req_escenarios",
+      "kind": "requirement",
+      "text": "Adaptar la cobertura a Rionegro–Guarne–Marinilla, usar escenarios suministrados y revisar SSP3-7.0/2060, conservando trazabilidad, ausencias y la diferencia entre la meta 2035 y los hitos del primer año.",
+      "refs": [
+        "eleccion_delegada",
+        "fuente_reto",
+        "fuente_meta"
+      ],
+      "data": {}
+    },
+    {
+      "id": "criterio_presupuesto",
+      "kind": "criterion",
+      "text": "Rechazar una cartera cuyo costo calculado exceda el fondo simulado, fraccione unidades sin autorización o no documente la búsqueda del máximo de intervenciones posibles.",
+      "refs": [
+        "req_presupuesto"
+      ],
+      "data": {
+        "metric": "costo_portafolio",
+        "unit": "COP",
+        "threshold": 5000000000,
+        "reject": "total > 5000000000 COP, unidad fraccionada sin instrucción, doble conteo o ausencia de comparación de conteos y restricciones para maximizar intervenciones."
+      }
+    },
+    {
+      "id": "criterio_entrega",
+      "kind": "criterion",
+      "text": "La entrega debe contener los tres productos con fuentes, riesgo residual y contraste del escenario; no dar por listo un flujo privado sin ejecutarlo.",
+      "refs": [
+        "req_productos",
+        "req_escenarios"
+      ],
+      "data": {
+        "metric": "productos_completos",
+        "unit": "producto",
+        "threshold": 3,
+        "reject": "Falta cualquiera de los tres productos, el contraste SSP3-7.0/2060 o se atribuye ejecución/eficacia no demostrada."
+      }
+    }
+  ]
+}

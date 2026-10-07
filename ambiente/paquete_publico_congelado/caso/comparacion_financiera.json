@@ -1,0 +1,347 @@
+{
+  "computed_at_utc": "2026-10-07T14:52:07.429792+00:00",
+  "source": "catalogo_costos_reto.csv",
+  "source_sha256": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
+  "budget_millions_cop": 5000,
+  "assumption": "At most one complete functional unit per priced catalogue entry. Repeated units and territorial/implementation eligibility are not evaluated.",
+  "scope": "Financial feasibility only; no vulnerability effects, causal efficacy, locality or scenario response are calculated.",
+  "subsets_examined": 32768,
+  "financially_feasible_subsets_including_empty": 1567,
+  "feasible_counts": {
+    "0": 1,
+    "1": 15,
+    "2": 105,
+    "3": 419,
+    "4": 717,
+    "5": 303,
+    "6": 7
+  },
+  "conditional_maximum_count": 6,
+  "cheapest_seven_millions_cop": 5800,
+  "maximum_count_financial_candidates": [
+    {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-07",
+        "RETO-08",
+        "RETO-09",
+        "RETO-14"
+      ],
+      "count": 6,
+      "cost_millions_cop": 5000,
+      "balance_millions_cop": 0
+    },
+    {
+      "ids": [
+        "RETO-01",
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 5000,
+      "balance_millions_cop": 0
+    },
+    {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-07",
+        "RETO-08",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 4800,
+      "balance_millions_cop": 200
+    },
+    {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-07",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 5000,
+      "balance_millions_cop": 0
+    },
+    {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 4800,
+      "balance_millions_cop": 200
+    },
+    {
+      "ids": [
+        "RETO-03",
+        "RETO-07",
+        "RETO-08",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 4900,
+      "balance_millions_cop": 100
+    },
+    {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-13",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 5000,
+      "balance_millions_cop": 0
+    }
+  ],
+  "illustrative_candidates": {
+    "antecedente_regional": {
+      "ids": [
+        "RETO-04",
+        "RETO-01",
+        "RETO-09",
+        "RETO-10",
+        "RETO-07",
+        "RETO-14"
+      ],
+      "measures": [
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Instrumentos de compensación y Pago por Servicios Ambientales — PSA",
+        "Espacios verdes urbanos",
+        "Sistemas Urbanos de Drenaje Sostenible — SUDS",
+        "Protección y reconversión de suelos agrícolas estratégicos",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático"
+      ],
+      "count": 6,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Hábitat",
+        "Recurso hídrico",
+        "Riesgo de desastres",
+        "Seguridad alimentaria"
+      ],
+      "catalogue_dimension_count": 5,
+      "cost_millions_cop": 6500,
+      "cost_cop": 6500000000,
+      "balance_millions_cop": -1500,
+      "financially_feasible": false,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    },
+    "A_lista_regional_sin_SUDS": {
+      "ids": [
+        "RETO-01",
+        "RETO-04",
+        "RETO-09",
+        "RETO-07",
+        "RETO-14"
+      ],
+      "measures": [
+        "Instrumentos de compensación y Pago por Servicios Ambientales — PSA",
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Espacios verdes urbanos",
+        "Protección y reconversión de suelos agrícolas estratégicos",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático"
+      ],
+      "count": 5,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Hábitat",
+        "Recurso hídrico",
+        "Riesgo de desastres",
+        "Seguridad alimentaria"
+      ],
+      "catalogue_dimension_count": 5,
+      "cost_millions_cop": 4700,
+      "cost_cop": 4700000000,
+      "balance_millions_cop": 300,
+      "financially_feasible": true,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    },
+    "B_ecosistemas": {
+      "ids": [
+        "RETO-01",
+        "RETO-02",
+        "RETO-03",
+        "RETO-04",
+        "RETO-14"
+      ],
+      "measures": [
+        "Instrumentos de compensación y Pago por Servicios Ambientales — PSA",
+        "Restauración de ecosistemas estratégicos",
+        "Fortalecimiento de sistemas de áreas protegidas",
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático"
+      ],
+      "count": 5,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Recurso hídrico",
+        "Riesgo de desastres"
+      ],
+      "catalogue_dimension_count": 3,
+      "cost_millions_cop": 4900,
+      "cost_cop": 4900000000,
+      "balance_millions_cop": 100,
+      "financially_feasible": true,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    },
+    "C_drenaje": {
+      "ids": [
+        "RETO-10",
+        "RETO-01",
+        "RETO-04",
+        "RETO-14"
+      ],
+      "measures": [
+        "Sistemas Urbanos de Drenaje Sostenible — SUDS",
+        "Instrumentos de compensación y Pago por Servicios Ambientales — PSA",
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático"
+      ],
+      "count": 4,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Hábitat",
+        "Recurso hídrico",
+        "Riesgo de desastres"
+      ],
+      "catalogue_dimension_count": 4,
+      "cost_millions_cop": 4500,
+      "cost_cop": 4500000000,
+      "balance_millions_cop": 500,
+      "financially_feasible": true,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    },
+    "D_seis_unidades_distintas": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-09",
+        "RETO-07",
+        "RETO-14"
+      ],
+      "measures": [
+        "Fortalecimiento de sistemas de áreas protegidas",
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Producción agroecológica y economía rural resiliente",
+        "Espacios verdes urbanos",
+        "Protección y reconversión de suelos agrícolas estratégicos",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático"
+      ],
+      "count": 6,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Hábitat",
+        "Recurso hídrico",
+        "Riesgo de desastres",
+        "Seguridad alimentaria"
+      ],
+      "catalogue_dimension_count": 5,
+      "cost_millions_cop": 5000,
+      "cost_cop": 5000000000,
+      "balance_millions_cop": 0,
+      "financially_feasible": true,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    },
+    "E_seis_dimensiones_catalogo": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "measures": [
+        "Fortalecimiento de sistemas de áreas protegidas",
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Producción agroecológica y economía rural resiliente",
+        "Espacios verdes urbanos",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático",
+        "Sistema de salud y entornos saludables resilientes al clima"
+      ],
+      "count": 6,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Hábitat",
+        "Recurso hídrico",
+        "Riesgo de desastres",
+        "Salud",
+        "Seguridad alimentaria"
+      ],
+      "catalogue_dimension_count": 6,
+      "cost_millions_cop": 4800,
+      "cost_cop": 4800000000,
+      "balance_millions_cop": 200,
+      "financially_feasible": true,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    },
+    "F_seis_dimensiones_con_suelos": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-07",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "measures": [
+        "Fortalecimiento de sistemas de áreas protegidas",
+        "Uso intersectorial eficiente del recurso hídrico",
+        "Protección y reconversión de suelos agrícolas estratégicos",
+        "Espacios verdes urbanos",
+        "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático",
+        "Sistema de salud y entornos saludables resilientes al clima"
+      ],
+      "count": 6,
+      "catalogue_dimensions": [
+        "Biodiversidad",
+        "Hábitat",
+        "Recurso hídrico",
+        "Riesgo de desastres",
+        "Salud",
+        "Seguridad alimentaria"
+      ],
+      "catalogue_dimension_count": 6,
+      "cost_millions_cop": 5000,
+      "cost_cop": 5000000000,
+      "balance_millions_cop": 0,
+      "financially_feasible": true,
+      "environmental_eligibility": "pending",
+      "status": "illustration_not_selected_portfolio"
+    }
+  },
+  "environmental_optimum": null,
+  "remaining_checks": [
+    "Official counting/repetition rule",
+    "Critical vulnerability and location of each unit",
+    "MEA factor and indicator",
+    "Actors and implementation viability",
+    "Overlap with funded actions and between measures",
+    "Reference/intermediate and SSP3-7.0/2060 contrast"
+  ]
+}

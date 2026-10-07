@@ -1,0 +1,1105 @@
+[
+  {
+    "url": "https://presupuesto-vivo-chi.vercel.app/api/auth/me",
+    "http_status": "401",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:13.231729+00:00",
+    "payload": {
+      "error": {
+        "code": "UNAUTHENTICATED",
+        "message": "Inicia sesión."
+      }
+    }
+  },
+  {
+    "url": "https://presupuesto-vivo-chi.vercel.app/api/projects",
+    "http_status": "401",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:12.613040+00:00",
+    "payload": {
+      "error": {
+        "code": "UNAUTHENTICATED",
+        "message": "Inicia sesión."
+      }
+    }
+  },
+  {
+    "url": "https://territorio-vivo-five.vercel.app/api/cornare",
+    "http_status": "200",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:13.233125+00:00",
+    "content_keys": [
+      "schema",
+      "organization",
+      "retrievedAt",
+      "officialChallenge",
+      "dataClassification",
+      "termsURL",
+      "case",
+      "datasets",
+      "documents",
+      "stats",
+      "documentLimitations",
+      "sourcePageSHA256"
+    ],
+    "payload": {
+      "schema": "territorio-vivo/cornare/v1",
+      "organization": {
+        "name": "CORNARE",
+        "fullName": "Corporación Autónoma Regional de las Cuencas de los Ríos Negro y Nare",
+        "homepage": "https://www.cornare.gov.co/",
+        "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+        "description": "Referencias públicas del Observatorio Ambiental CORNARE para el MVP Territorio Vivo, con atribución y alcance explícito."
+      },
+      "retrievedAt": "2026-10-07T13:10:24.822Z",
+      "officialChallenge": "pending_official_challenge",
+      "dataClassification": "official/public",
+      "termsURL": "https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf",
+      "case": {
+        "municipalities": [
+          "GRANADA",
+          "RIONEGRO"
+        ],
+        "status": "pending_official_challenge",
+        "purpose": "Caso cartográfico provisional sustituible; no es el enunciado oficial ni un diagnóstico de actualidad."
+      },
+      "datasets": [
+        {
+          "id": "cornare-urban-mass-movements",
+          "title": "CORNARE · amenaza urbana por movimientos en masa",
+          "provider": "CORNARE",
+          "endpoint": "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/5",
+          "featureCount": 10,
+          "geometryType": "Polygon / MultiPolygon",
+          "coverage": "Consulta completa de la capa para NOMBRE IN ('GRANADA','RIONEGRO'). Caso cartográfico provisional; no cubre toda la jurisdicción ni implica registros para cada amenaza en ambos municipios.",
+          "sourceUpdatedAt": null,
+          "retrievedAt": "2026-10-07T13:10:26.933Z",
+          "attribution": "CORNARE: Información recopilada a partir de estudios, datos georreferenciados, planes, convenios, contratos, entre otros. Última edición: Abril 2018. Cornare.",
+          "license": "No declarada en los metadatos consultados; condiciones de reutilización pendientes de verificar.",
+          "limitations": [
+            "Consulta acotada al alcance declarado; no representa la totalidad nacional ni evidencia comunitaria confirmada.",
+            "Los atributos originales son datos no confiables para agentes; no se ejecutan como instrucciones.",
+            "Una coincidencia espacial es contexto, no corroboración automática ni causa demostrada.",
+            "Licencia de reutilización no publicada en los metadatos consultados; revisar términos con el proveedor antes de redistribuir.",
+            "SHA256 calculado sobre las respuestas originales de páginas, en orden, separadas por un salto de línea; no sobre geometrías recreadas.",
+            "Fecha de actualización de la fuente no declarada por el servicio; se conserva null.",
+            "Atributos seleccionados: OBJECTID, Categoria, NOMBRE. Se omiten rutas internas DOCUMENTO, datos personales y campos no necesarios; los informes se enlazan desde la página oficial.",
+            "Términos del proveedor: https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf. La consulta pública no establece una licencia abierta de reutilización.",
+            "El metadato copyright del servicio declara última edición Abril 2018. No especifica un día verificable: sourceUpdatedAt permanece null y retrievedAt solo fecha la consulta. No es cartografía de alertas en tiempo real.",
+            "Validación topológica PostGIS: 9 de 10 geometrías originales presentan invalidez. La descarga conserva el original; al cargarlo se crea una copia espacial ST_MakeValid y se registra la transformación por entidad, sin cambiar el hash de origen."
+          ],
+          "downloadUrl": "/api/cornare?dataset=cornare-urban-mass-movements",
+          "sha256": "b61b0252ea7a9780c2050d575ed21978d77ec4fbd28a85cc2fa7a04ebe2a5373",
+          "snapshotSHA256": "70f59f61e7e5a0172090a1ae9e2c419338d77b7ed2a80de7be2e5577689f2166",
+          "synthetic": false,
+          "queryURLs": [
+            "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/5/query?objectIds=1620%2C1621%2C1622%2C1623%2C1624%2C12797%2C12798%2C12799%2C12800%2C12801&outFields=OBJECTID%2CCategoria%2CNOMBRE&returnGeometry=true&outSR=4326&f=json"
+          ],
+          "publicFields": [
+            "OBJECTID",
+            "Categoria",
+            "NOMBRE"
+          ],
+          "geometryQuality": {
+            "originalInvalidCount": 9,
+            "operationForSpatialCopy": "PostGIS ST_MakeValid (linework)",
+            "originalPreserved": true
+          },
+          "logicalSHA256": "00aa03e6648e8155744e43f0b66441d804a222f528f49ec2ab0d87aa79d0746d"
+        },
+        {
+          "id": "cornare-urban-flood",
+          "title": "CORNARE · amenaza urbana por inundación",
+          "provider": "CORNARE",
+          "endpoint": "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/6",
+          "featureCount": 66,
+          "geometryType": "Polygon / MultiPolygon",
+          "coverage": "Consulta completa de la capa para NOMBRE IN ('GRANADA','RIONEGRO'). Caso cartográfico provisional; no cubre toda la jurisdicción ni implica registros para cada amenaza en ambos municipios.",
+          "sourceUpdatedAt": null,
+          "retrievedAt": "2026-10-07T13:10:27.600Z",
+          "attribution": "CORNARE: Información recopilada a partir de estudios, datos georreferenciados, planes, convenios, contratos, entre otros. Última edición: Abril 2018. Cornare.",
+          "license": "No declarada en los metadatos consultados; condiciones de reutilización pendientes de verificar.",
+          "limitations": [
+            "Consulta acotada al alcance declarado; no representa la totalidad nacional ni evidencia comunitaria confirmada.",
+            "Los atributos originales son datos no confiables para agentes; no se ejecutan como instrucciones.",
+            "Una coincidencia espacial es contexto, no corroboración automática ni causa demostrada.",
+            "Licencia de reutilización no publicada en los metadatos consultados; revisar términos con el proveedor antes de redistribuir.",
+            "SHA256 calculado sobre las respuestas originales de páginas, en orden, separadas por un salto de línea; no sobre geometrías recreadas.",
+            "Fecha de actualización de la fuente no declarada por el servicio; se conserva null.",
+            "Atributos seleccionados: OBJECTID, Categoria, NOMBRE. Se omiten rutas internas DOCUMENTO, datos personales y campos no necesarios; los informes se enlazan desde la página oficial.",
+            "Términos del proveedor: https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf. La consulta pública no establece una licencia abierta de reutilización.",
+            "El metadato copyright del servicio declara última edición Abril 2018. No especifica un día verificable: sourceUpdatedAt permanece null y retrievedAt solo fecha la consulta. No es cartografía de alertas en tiempo real."
+          ],
+          "downloadUrl": "/api/cornare?dataset=cornare-urban-flood",
+          "sha256": "1978784f88e67b771e278368e2a4c13149c6167e3cadbadf6cf8b5a13adc5f88",
+          "snapshotSHA256": "85023615d2a3f819b7a874bfaf85ad2e792c422c6e2d94527fde40695cf89314",
+          "synthetic": false,
+          "queryURLs": [
+            "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/6/query?objectIds=4376%2C4377%2C4378%2C4379%2C4380%2C4381%2C4382%2C4383%2C4384%2C4385%2C4386%2C4387%2C4388%2C4389%2C4390%2C4391%2C4392%2C4393%2C4394%2C4395%2C4396%2C4397%2C4398%2C4399%2C4400%2C4401%2C4402%2C4403%2C4404%2C4405%2C4406%2C4407%2C4408%2C4409%2C4410%2C4411%2C4412%2C4413%2C4414%2C4415%2C4416%2C4417%2C4418%2C4419%2C4420%2C4421%2C4422%2C4423%2C4424%2C4425%2C4426%2C4427%2C4428%2C4429%2C4430%2C4431%2C4432%2C4433%2C4434%2C4435%2C4436%2C4437%2C4438%2C4439%2C4440%2C4441&outFields=OBJECTID%2CCategoria%2CNOMBRE&returnGeometry=true&outSR=4326&f=json"
+          ],
+          "publicFields": [
+            "OBJECTID",
+            "Categoria",
+            "NOMBRE"
+          ],
+          "geometryQuality": {
+            "originalInvalidCount": 0,
+            "operationForSpatialCopy": "PostGIS ST_MakeValid (linework)",
+            "originalPreserved": true
+          },
+          "logicalSHA256": "7cd978f0c817420e52dde89bbf228374000d639d9c4beaea30aca5eb0f7348cd"
+        },
+        {
+          "id": "cornare-urban-torrential",
+          "title": "CORNARE · amenaza urbana por avenida torrencial",
+          "provider": "CORNARE",
+          "endpoint": "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/7",
+          "featureCount": 44,
+          "geometryType": "Polygon / MultiPolygon",
+          "coverage": "Consulta completa de la capa para NOMBRE IN ('GRANADA','RIONEGRO'). Caso cartográfico provisional; no cubre toda la jurisdicción ni implica registros para cada amenaza en ambos municipios.",
+          "sourceUpdatedAt": null,
+          "retrievedAt": "2026-10-07T13:10:27.741Z",
+          "attribution": "CORNARE: Información recopilada a partir de estudios, datos georreferenciados, planes, convenios, contratos, entre otros. Última edición: Abril 2018. Cornare.",
+          "license": "No declarada en los metadatos consultados; condiciones de reutilización pendientes de verificar.",
+          "limitations": [
+            "Consulta acotada al alcance declarado; no representa la totalidad nacional ni evidencia comunitaria confirmada.",
+            "Los atributos originales son datos no confiables para agentes; no se ejecutan como instrucciones.",
+            "Una coincidencia espacial es contexto, no corroboración automática ni causa demostrada.",
+            "Licencia de reutilización no publicada en los metadatos consultados; revisar términos con el proveedor antes de redistribuir.",
+            "SHA256 calculado sobre las respuestas originales de páginas, en orden, separadas por un salto de línea; no sobre geometrías recreadas.",
+            "Fecha de actualización de la fuente no declarada por el servicio; se conserva null.",
+            "Atributos seleccionados: OBJECTID, Categoria, NOMBRE. Se omiten rutas internas DOCUMENTO, datos personales y campos no necesarios; los informes se enlazan desde la página oficial.",
+            "Términos del proveedor: https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf. La consulta pública no establece una licencia abierta de reutilización.",
+            "El metadato copyright del servicio declara última edición Abril 2018. No especifica un día verificable: sourceUpdatedAt permanece null y retrievedAt solo fecha la consulta. No es cartografía de alertas en tiempo real."
+          ],
+          "downloadUrl": "/api/cornare?dataset=cornare-urban-torrential",
+          "sha256": "49424f9cc1319249dc2ba20c586656f7c983d22286058c84e16ef0f4f9a6703c",
+          "snapshotSHA256": "36dc7bc2f121e48371e9fb4468d1ab7cac0eb91a4a27b7f547c3e4c43a31ded0",
+          "synthetic": false,
+          "queryURLs": [
+            "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/7/query?objectIds=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26%2C27%2C28%2C29%2C30%2C31%2C32%2C33%2C34%2C35%2C36%2C37%2C38%2C39%2C40%2C41%2C42%2C43%2C44&outFields=OBJECTID%2CCategoria%2CNOMBRE&returnGeometry=true&outSR=4326&f=json"
+          ],
+          "publicFields": [
+            "OBJECTID",
+            "Categoria",
+            "NOMBRE"
+          ],
+          "geometryQuality": {
+            "originalInvalidCount": 0,
+            "operationForSpatialCopy": "PostGIS ST_MakeValid (linework)",
+            "originalPreserved": true
+          },
+          "logicalSHA256": "48750d4844c5533a2b7180e97dd957f59db9537ce443e1ef60dbf80ab38fe9f4"
+        },
+        {
+          "id": "cornare-urban-morphodynamics",
+          "title": "CORNARE · procesos morfodinámicos urbanos",
+          "provider": "CORNARE",
+          "endpoint": "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/2",
+          "featureCount": 237,
+          "geometryType": "Polygon / MultiPolygon",
+          "coverage": "Consulta completa de la capa para NOMBRE IN ('GRANADA','RIONEGRO'). Caso cartográfico provisional; no cubre toda la jurisdicción ni implica registros para cada amenaza en ambos municipios.",
+          "sourceUpdatedAt": null,
+          "retrievedAt": "2026-10-07T13:10:28.103Z",
+          "attribution": "CORNARE: Información recopilada a partir de estudios, datos georreferenciados, planes, convenios, contratos, entre otros. Última edición: Abril 2018. Cornare.",
+          "license": "No declarada en los metadatos consultados; condiciones de reutilización pendientes de verificar.",
+          "limitations": [
+            "Consulta acotada al alcance declarado; no representa la totalidad nacional ni evidencia comunitaria confirmada.",
+            "Los atributos originales son datos no confiables para agentes; no se ejecutan como instrucciones.",
+            "Una coincidencia espacial es contexto, no corroboración automática ni causa demostrada.",
+            "Licencia de reutilización no publicada en los metadatos consultados; revisar términos con el proveedor antes de redistribuir.",
+            "SHA256 calculado sobre las respuestas originales de páginas, en orden, separadas por un salto de línea; no sobre geometrías recreadas.",
+            "Fecha de actualización de la fuente no declarada por el servicio; se conserva null.",
+            "Atributos seleccionados: OBJECTID, Categoria, NOMBRE. Se omiten rutas internas DOCUMENTO, datos personales y campos no necesarios; los informes se enlazan desde la página oficial.",
+            "Términos del proveedor: https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf. La consulta pública no establece una licencia abierta de reutilización.",
+            "El metadato copyright del servicio declara última edición Abril 2018. No especifica un día verificable: sourceUpdatedAt permanece null y retrievedAt solo fecha la consulta. No es cartografía de alertas en tiempo real."
+          ],
+          "downloadUrl": "/api/cornare?dataset=cornare-urban-morphodynamics",
+          "sha256": "e8b0a24ae9c6ae044ba4b6714df947e2486b3db692a1f3c373b152cef27c7889",
+          "snapshotSHA256": "dd58647a88e23b155d786e5d16b3a569a8f32798919af91990fc336a394de296",
+          "synthetic": false,
+          "queryURLs": [
+            "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/2/query?objectIds=322%2C323%2C324%2C325%2C326%2C327%2C328%2C329%2C330%2C331%2C332%2C333%2C334%2C335%2C336%2C337%2C338%2C339%2C340%2C341%2C342%2C343%2C344%2C345%2C346%2C347%2C348%2C349%2C350%2C351%2C352%2C353%2C354%2C355%2C356%2C357%2C358%2C359%2C360%2C361%2C362%2C363%2C364%2C365%2C366%2C367%2C368%2C369%2C370%2C371%2C372%2C373%2C374%2C375%2C376%2C377%2C378%2C379%2C380%2C381%2C382%2C383%2C384%2C385%2C386%2C387%2C388%2C389%2C390%2C391%2C392%2C393%2C394%2C395%2C396%2C397%2C398%2C399%2C400%2C401%2C402%2C403%2C404%2C405%2C406%2C407%2C408%2C409%2C410%2C411%2C412%2C413%2C414%2C415%2C416%2C417%2C418%2C419%2C420%2C421&outFields=OBJECTID%2CCategoria%2CNOMBRE&returnGeometry=true&outSR=4326&f=json",
+            "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/2/query?objectIds=422%2C423%2C424%2C425%2C426%2C427%2C428%2C429%2C430%2C431%2C432%2C433%2C434%2C435%2C436%2C437%2C1331%2C1332%2C1333%2C1334%2C1335%2C1336%2C1337%2C1338%2C1339%2C1340%2C1341%2C1342%2C1343%2C1344%2C1345%2C1346%2C1347%2C1348%2C1349%2C1350%2C1351%2C1352%2C1353%2C1354%2C1355%2C1356%2C1357%2C1358%2C1359%2C1360%2C1361%2C1362%2C1363%2C1364%2C1365%2C1366%2C1367%2C1368%2C1369%2C1370%2C1371%2C1372%2C1373%2C1374%2C1375%2C1376%2C1377%2C1378%2C1379%2C1380%2C1381%2C1382%2C1383%2C1384%2C1385%2C1386%2C1387%2C1388%2C1389%2C1390%2C1391%2C1392%2C1393%2C1394%2C1395%2C1396%2C1397%2C1398%2C1399%2C1400%2C1401%2C1402%2C1403%2C1404%2C1405%2C1406%2C1407%2C1408%2C1409%2C1410%2C1411%2C1412%2C1413%2C1414&outFields=OBJECTID%2CCategoria%2CNOMBRE&returnGeometry=true&outSR=4326&f=json",
+            "https://mapas.cornare.gov.co/arcgis/rest/services/OAT_Y_GR/Tr_Gestion_Riesgo/MapServer/2/query?objectIds=1415%2C1416%2C1417%2C1418%2C1419%2C1420%2C1421%2C1422%2C1423%2C1424%2C1425%2C1426%2C1427%2C1428%2C1429%2C1430%2C1431%2C1432%2C1433%2C1434%2C1435%2C1436%2C1437%2C1438%2C1439%2C1440%2C1441%2C1442%2C1443%2C1444%2C1445%2C1446%2C1447%2C1448%2C1449%2C1450%2C1451&outFields=OBJECTID%2CCategoria%2CNOMBRE&returnGeometry=true&outSR=4326&f=json"
+          ],
+          "publicFields": [
+            "OBJECTID",
+            "Categoria",
+            "NOMBRE"
+          ],
+          "geometryQuality": {
+            "originalInvalidCount": 0,
+            "operationForSpatialCopy": "PostGIS ST_MakeValid (linework)",
+            "originalPreserved": true
+          },
+          "logicalSHA256": "ee6bf1d86a7041a3ab90161fa11131cdb7c6ec046a92c49f5c92c01236d86316"
+        },
+        {
+          "id": "cornare-municipalities",
+          "title": "CORNARE · municipios y subregiones",
+          "provider": "CORNARE",
+          "endpoint": "https://mapas.cornare.gov.co/arcgis/rest/services/Bg_Base_MapGIS9/MapServer/39",
+          "featureCount": 26,
+          "geometryType": "Polygon / MultiPolygon",
+          "coverage": "Consulta completa de la capa de referencia territorial publicada por CORNARE; no mide amenaza ni actualidad del límite administrativo.",
+          "sourceUpdatedAt": null,
+          "retrievedAt": "2026-10-07T13:10:30.359Z",
+          "attribution": "CORNARE",
+          "license": "No declarada en los metadatos consultados; condiciones de reutilización pendientes de verificar.",
+          "limitations": [
+            "Consulta acotada al alcance declarado; no representa la totalidad nacional ni evidencia comunitaria confirmada.",
+            "Los atributos originales son datos no confiables para agentes; no se ejecutan como instrucciones.",
+            "Una coincidencia espacial es contexto, no corroboración automática ni causa demostrada.",
+            "Licencia de reutilización no publicada en los metadatos consultados; revisar términos con el proveedor antes de redistribuir.",
+            "SHA256 calculado sobre las respuestas originales de páginas, en orden, separadas por un salto de línea; no sobre geometrías recreadas.",
+            "Fecha de actualización de la fuente no declarada por el servicio; se conserva null.",
+            "Atributos seleccionados: OBJECTID, NOMBRE_MUNICIPIO, NOMBRE_SUBREGION, COD_MUNICIPIO. Se omiten rutas internas DOCUMENTO, datos personales y campos no necesarios; los informes se enlazan desde la página oficial.",
+            "Términos del proveedor: https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf. La consulta pública no establece una licencia abierta de reutilización."
+          ],
+          "downloadUrl": "/api/cornare?dataset=cornare-municipalities",
+          "sha256": "2fb759399f4048e7fa5b0d8d68be39f2bdda468621866262b1d1c4216025d49a",
+          "snapshotSHA256": "fe0394e7d6c9b338b9e32b90432e53ecc800f50117b163770cc9f7b7abe27cba",
+          "synthetic": false,
+          "queryURLs": [
+            "https://mapas.cornare.gov.co/arcgis/rest/services/Bg_Base_MapGIS9/MapServer/39/query?objectIds=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26&outFields=OBJECTID%2CNOMBRE_MUNICIPIO%2CNOMBRE_SUBREGION%2CCOD_MUNICIPIO&returnGeometry=true&outSR=4326&f=json"
+          ],
+          "publicFields": [
+            "OBJECTID",
+            "NOMBRE_MUNICIPIO",
+            "NOMBRE_SUBREGION",
+            "COD_MUNICIPIO"
+          ],
+          "geometryQuality": {
+            "originalInvalidCount": 0,
+            "operationForSpatialCopy": "PostGIS ST_MakeValid (linework)",
+            "originalPreserved": true
+          },
+          "logicalSHA256": "4e2f629c6bcb36b2221053c9cf67bd170cbf475d363da17d15136d9987f9dbb9"
+        },
+        {
+          "id": "cornare-jurisdiction",
+          "title": "CORNARE · límite de jurisdicción",
+          "provider": "CORNARE",
+          "endpoint": "https://mapas.cornare.gov.co/arcgis/rest/services/Bg_Base_MapGIS9/MapServer/37",
+          "featureCount": 1,
+          "geometryType": "Polygon / MultiPolygon",
+          "coverage": "Consulta completa de la capa de referencia territorial publicada por CORNARE; no mide amenaza ni actualidad del límite administrativo.",
+          "sourceUpdatedAt": null,
+          "retrievedAt": "2026-10-07T13:10:31.029Z",
+          "attribution": "CORNARE",
+          "license": "No declarada en los metadatos consultados; condiciones de reutilización pendientes de verificar.",
+          "limitations": [
+            "Consulta acotada al alcance declarado; no representa la totalidad nacional ni evidencia comunitaria confirmada.",
+            "Los atributos originales son datos no confiables para agentes; no se ejecutan como instrucciones.",
+            "Una coincidencia espacial es contexto, no corroboración automática ni causa demostrada.",
+            "Licencia de reutilización no publicada en los metadatos consultados; revisar términos con el proveedor antes de redistribuir.",
+            "SHA256 calculado sobre las respuestas originales de páginas, en orden, separadas por un salto de línea; no sobre geometrías recreadas.",
+            "Fecha de actualización de la fuente no declarada por el servicio; se conserva null.",
+            "Atributos seleccionados: OBJECTID, Descrip, Area_Ha, Perim_Km. Se omiten rutas internas DOCUMENTO, datos personales y campos no necesarios; los informes se enlazan desde la página oficial.",
+            "Términos del proveedor: https://www.cornare.gov.co/documentos/Terminos_y_condiciones_de_uso_pagina_web.pdf. La consulta pública no establece una licencia abierta de reutilización."
+          ],
+          "downloadUrl": "/api/cornare?dataset=cornare-jurisdiction",
+          "sha256": "cc96fdc8e5996accc885c63eb5f5c806396f279499049f5fcc3b74f7016be0f4",
+          "snapshotSHA256": "42c085738dcc6e14bb376f6924a1df13fcbef5578b2c10e0a048b40dd0ba93a6",
+          "synthetic": false,
+          "queryURLs": [
+            "https://mapas.cornare.gov.co/arcgis/rest/services/Bg_Base_MapGIS9/MapServer/37/query?objectIds=1&outFields=OBJECTID%2CDescrip%2CArea_Ha%2CPerim_Km&returnGeometry=true&outSR=4326&f=json"
+          ],
+          "publicFields": [
+            "OBJECTID",
+            "Descrip",
+            "Area_Ha",
+            "Perim_Km"
+          ],
+          "geometryQuality": {
+            "originalInvalidCount": 0,
+            "operationForSpatialCopy": "PostGIS ST_MakeValid (linework)",
+            "originalPreserved": true
+          },
+          "logicalSHA256": "9687b91aa62e6ff26217b3ca8d19c47a81fb09a897f7833bb6476e4fa8ed570b"
+        }
+      ],
+      "documents": [
+        {
+          "id": "rural-abejorral",
+          "municipality": "Abejorral",
+          "scope": "rural",
+          "title": "Estudio rural · Abejorral",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final_plantilla-Abejorral.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-alejandria",
+          "municipality": "Alejandría",
+          "scope": "rural",
+          "title": "Estudio rural · Alejandría",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-final-Alejandria.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-argelia",
+          "municipality": "Argelia",
+          "scope": "rural",
+          "title": "Estudio rural · Argelia",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-final-Argelia.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-cocorna",
+          "municipality": "Cocorná",
+          "scope": "rural",
+          "title": "Estudio rural · Cocorná",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Cocorna.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-concepcion",
+          "municipality": "Concepción",
+          "scope": "rural",
+          "title": "Estudio rural · Concepción",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-final-Concepcion.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-el-carmen-de-viboral",
+          "municipality": "El Carmen de Viboral",
+          "scope": "rural",
+          "title": "Estudio rural · El Carmen de Viboral",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/INFORME-FINAL-EL-CAMREN-DE-VIBORAL.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-el-penol",
+          "municipality": "El Peñol",
+          "scope": "rural",
+          "title": "Estudio rural · El Peñol",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Final-El-Penol.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-el-retiro",
+          "municipality": "El Retiro",
+          "scope": "rural",
+          "title": "Estudio rural · El Retiro",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Final-El-Retiro.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-el-santuario",
+          "municipality": "El Santuario",
+          "scope": "rural",
+          "title": "Estudio rural · El Santuario",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento_final_Santuario.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-granada",
+          "municipality": "Granada",
+          "scope": "rural",
+          "title": "Estudio rural · Granada",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Final-Muncipio-de-Granada.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-guarne",
+          "municipality": "Guarne",
+          "scope": "rural",
+          "title": "Estudio rural · Guarne",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final-GUARNE.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-guatape",
+          "municipality": "Guatapé",
+          "scope": "rural",
+          "title": "Estudio rural · Guatapé",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final-Guatape.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-la-ceja-del-tambo",
+          "municipality": "La Ceja del Tambo",
+          "scope": "rural",
+          "title": "Estudio rural · La Ceja del Tambo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/INFORME-FINAL-LA-CEJA.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-la-union",
+          "municipality": "La Unión",
+          "scope": "rural",
+          "title": "Estudio rural · La Unión",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/INFORME-FINAL-MUNICIPIO-DE-LA-UNION.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-marinilla",
+          "municipality": "Marinilla",
+          "scope": "rural",
+          "title": "Estudio rural · Marinilla",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/DOCUMENTO-FINAL-MARINILLA.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-narino",
+          "municipality": "Nariño",
+          "scope": "rural",
+          "title": "Estudio rural · Nariño",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/NARINO.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-puerto-triunfo",
+          "municipality": "Puerto Triunfo",
+          "scope": "rural",
+          "title": "Estudio rural · Puerto Triunfo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/puerto-triunfo.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-rionegro",
+          "municipality": "Rionegro",
+          "scope": "rural",
+          "title": "Estudio rural · Rionegro",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final-Rionegro.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-san-carlos",
+          "municipality": "San Carlos",
+          "scope": "rural",
+          "title": "Estudio rural · San Carlos",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-final-San-Carlos.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-san-francisco",
+          "municipality": "San Francisco",
+          "scope": "rural",
+          "title": "Estudio rural · San Francisco",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/1-Informe-Final-Muncipio-de-San-Francisco.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-san-luis",
+          "municipality": "San Luis",
+          "scope": "rural",
+          "title": "Estudio rural · San Luis",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final-San-Luis.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-san-rafael",
+          "municipality": "San Rafael",
+          "scope": "rural",
+          "title": "Estudio rural · San Rafael",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final-San-Rafael.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-san-roque",
+          "municipality": "San Roque",
+          "scope": "rural",
+          "title": "Estudio rural · San Roque",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Final-Muncipio-de-San-Roque.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-san-vicente",
+          "municipality": "San Vicente",
+          "scope": "rural",
+          "title": "Estudio rural · San Vicente",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-final-San-Vicente.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-santo-domingo",
+          "municipality": "Santo Domingo",
+          "scope": "rural",
+          "title": "Estudio rural · Santo Domingo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Final-Muncipio-de-Santo-Domingo.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "rural-sonson",
+          "municipality": "Sonsón",
+          "scope": "rural",
+          "title": "Estudio rural · Sonsón",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-final_sonson.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-abejorral",
+          "municipality": "Abejorral",
+          "scope": "urban",
+          "title": "Estudio urbano · Abejorral",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-Base-y-Metodologia-Amenaza-y-Riesgo-en-Zonas-Urbanas_Abejorral.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-alejandria",
+          "municipality": "Alejandría",
+          "scope": "urban",
+          "title": "Estudio urbano · Alejandría",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Alejandria_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-argelia",
+          "municipality": "Argelia",
+          "scope": "urban",
+          "title": "Estudio urbano · Argelia",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Argelia_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-cocorna",
+          "municipality": "Cocorná",
+          "scope": "urban",
+          "title": "Estudio urbano · Cocorná",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Municipio-de-Cocorna.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-concepcion",
+          "municipality": "Concepción",
+          "scope": "urban",
+          "title": "Estudio urbano · Concepción",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Amenaza-y-Riesgo-en-Zonas-Urbanas_Concepcion-1.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-el-carmen-de-viboral",
+          "municipality": "El Carmen de Viboral",
+          "scope": "urban",
+          "title": "Estudio urbano · El Carmen de Viboral",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-Final_Carmen-de-Viboral.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-el-penol",
+          "municipality": "El Peñol",
+          "scope": "urban",
+          "title": "Estudio urbano · El Peñol",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Municipio-de-El-Penol.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-el-retiro",
+          "municipality": "El Retiro",
+          "scope": "urban",
+          "title": "Estudio urbano · El Retiro",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-la-Cabecera-Urbana-de-El-Retiro.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-el-santuario",
+          "municipality": "El Santuario",
+          "scope": "urban",
+          "title": "Estudio urbano · El Santuario",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-la-Cabecera-Urbana-de-El-Santuario-2014_bien.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-granada",
+          "municipality": "Granada",
+          "scope": "urban",
+          "title": "Estudio urbano · Granada",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-la-Cabecera-Urbana-de-Granada-2014.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-guarne",
+          "municipality": "Guarne",
+          "scope": "urban",
+          "title": "Estudio urbano · Guarne",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-la-Cabecera-Urbana-de-Guarne-2014.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-guatape",
+          "municipality": "Guatapé",
+          "scope": "urban",
+          "title": "Estudio urbano · Guatapé",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Municipio-de-Guatape.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-la-ceja-del-tambo",
+          "municipality": "La Ceja del Tambo",
+          "scope": "urban",
+          "title": "Estudio urbano · La Ceja del Tambo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-Base-y-Metodologia-Amenaza-y-Riesgo-en-Zonas-Urbanas_La-Ceja.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-la-union",
+          "municipality": "La Unión",
+          "scope": "urban",
+          "title": "Estudio urbano · La Unión",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-Base-y-Metodologia-Amenaza-y-Riesgo-en-Zonas-Urbanas_La-Union.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-marinilla",
+          "municipality": "Marinilla",
+          "scope": "urban",
+          "title": "Estudio urbano · Marinilla",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-la-Cabecera-Urbana-de-Marinilla-2014.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-narino",
+          "municipality": "Nariño",
+          "scope": "urban",
+          "title": "Estudio urbano · Nariño",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Informe-NariA%C2%B1o.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-puerto-triunfo",
+          "municipality": "Puerto Triunfo",
+          "scope": "urban",
+          "title": "Estudio urbano · Puerto Triunfo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-los-corregimientos-de-Estacion-Cocorna-y-Puerto-Perales-municipio-de-Puerto-Triunfo.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-san-carlos",
+          "municipality": "San Carlos",
+          "scope": "urban",
+          "title": "Estudio urbano · San Carlos",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/San-Carlos.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-san-francisco",
+          "municipality": "San Francisco",
+          "scope": "urban",
+          "title": "Estudio urbano · San Francisco",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/San-Francisco.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-san-luis",
+          "municipality": "San Luis",
+          "scope": "urban",
+          "title": "Estudio urbano · San Luis",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Zonificacion-de-la-Amenaza-Evaluacion-de-la-Vulnerabilidad-y-el-Riesgo-en-la-Cabecera-Urbana-de-SAN-LUIS.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-san-rafael",
+          "municipality": "San Rafael",
+          "scope": "urban",
+          "title": "Estudio urbano · San Rafael",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/San-Rafael.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-san-roque",
+          "municipality": "San Roque",
+          "scope": "urban",
+          "title": "Estudio urbano · San Roque",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Documento-Base-y-Metodologia-Amenaza-y-Riesgo-en-Zonas-Urbanas_San-Roque.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-san-vicente",
+          "municipality": "San Vicente",
+          "scope": "urban",
+          "title": "Estudio urbano · San Vicente",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/San-Vicente.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-santo-domingo",
+          "municipality": "Santo Domingo",
+          "scope": "urban",
+          "title": "Estudio urbano · Santo Domingo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Santo-Domingo_Final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "urban-sonson",
+          "municipality": "Sonsón",
+          "scope": "urban",
+          "title": "Estudio urbano · Sonsón",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Municipio-de-Sonson.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-abejorral",
+          "municipality": "Abejorral",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Abejorral",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Abejorral_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-alejandria",
+          "municipality": "Alejandría",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Alejandría",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Alejandria_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-argelia",
+          "municipality": "Argelia",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Argelia",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Argelia_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-cocorna",
+          "municipality": "Cocorná",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Cocorná",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Cocorna_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-concepcion",
+          "municipality": "Concepción",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Concepción",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Concepcion_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-el-carmen-de-viboral",
+          "municipality": "El Carmen de Viboral",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · El Carmen de Viboral",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Carmen-de-Viboral_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-el-penol",
+          "municipality": "El Peñol",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · El Peñol",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-El-Penol_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-guarne",
+          "municipality": "Guarne",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Guarne",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Guarne_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-guatape",
+          "municipality": "Guatapé",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Guatapé",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Guatape_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-la-union",
+          "municipality": "La Unión",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · La Unión",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-La-Union_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-marinilla",
+          "municipality": "Marinilla",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Marinilla",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Marinilla_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-narino",
+          "municipality": "Nariño",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Nariño",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Narino_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-puerto-triunfo",
+          "municipality": "Puerto Triunfo",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Puerto Triunfo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Areas-degradadas_Puerto-Triunfo_FINAL.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-rionegro",
+          "municipality": "Rionegro",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Rionegro",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Rionegro_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-san-carlos",
+          "municipality": "San Carlos",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · San Carlos",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-San-Carlos_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-san-francisco",
+          "municipality": "San Francisco",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · San Francisco",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-San-Francisco_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-san-luis",
+          "municipality": "San Luis",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · San Luis",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-San-Luis_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-san-roque",
+          "municipality": "San Roque",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · San Roque",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Areas-degradadas_San-Roque_FINAL-1.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-san-vicente",
+          "municipality": "San Vicente",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · San Vicente",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-SanVicente_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-santo-domingo",
+          "municipality": "Santo Domingo",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Santo Domingo",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/11/Areas-degradadas_Santo-Domingo_FINAL.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        },
+        {
+          "id": "degraded-sonson",
+          "municipality": "Sonsón",
+          "scope": "degraded",
+          "title": "Estudio de áreas degradadas · Sonsón",
+          "url": "https://observatorioambiental.cornare.gov.co/wp-content/uploads/2025/12/Informe-Sonson_final.pdf",
+          "sourcePage": "https://observatorioambiental.cornare.gov.co/gestion-del-riesgo/",
+          "studyDate": null,
+          "linkStatus": "published_link"
+        }
+      ],
+      "stats": {
+        "municipalityCount": 26,
+        "datasetCount": 6,
+        "featureCount": 384,
+        "documentCount": 72
+      },
+      "documentLimitations": [
+        "Los enlaces se extrajeron de la página oficial; no se copiaron PDFs ni se infirió su contenido.",
+        "La carpeta de publicación de una URL no acredita la fecha del estudio. studyDate permanece null.",
+        "published_link acredita la presencia del enlace en la página; no garantiza que cada descarga del proveedor funcione."
+      ],
+      "sourcePageSHA256": "fe4ce75a1e4ca005b73fd01c5f2dc6c647fcea7e7a5e86c210f23dff28d817e3"
+    }
+  },
+  {
+    "url": "https://territorio-vivo-five.vercel.app/documentacion",
+    "http_status": "200",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:15.306429+00:00",
+    "body_size": 86617,
+    "contains_documentation": true
+  },
+  {
+    "url": "https://efecto-domino.vercel.app/api/v1/health",
+    "http_status": "200",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:16.691841+00:00",
+    "payload": {
+      "ok": true,
+      "database": "postgresql",
+      "postgis": "3.6 USE_GEOS=1 USE_PROJ=1 USE_STATS=1",
+      "migrations": 3
+    }
+  },
+  {
+    "url": "https://efecto-domino.vercel.app/api/health",
+    "http_status": "200",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:14.797595+00:00",
+    "payload": {
+      "ok": true,
+      "engineHash": "3f7b871792e7945398eb906950e149f47be707d8c3895da0c90c35e4e362b8e7",
+      "storage": "private-session",
+      "dataset": "real-v2"
+    }
+  },
+  {
+    "url": "https://lote-resiliente.vercel.app/api/health",
+    "http_status": "200",
+    "curl_exit_code": 0,
+    "retrieved_at": "2026-10-07T13:54:16.548343+00:00",
+    "payload": {
+      "ok": true,
+      "database": "PostgreSQL",
+      "postgis": "3.6 USE_GEOS=1 USE_PROJ=1 USE_STATS=1",
+      "storage": "private_blob",
+      "auth": "persistent_sessions",
+      "ai": "multilingual_semantic_extraction"
+    }
+  }
+]

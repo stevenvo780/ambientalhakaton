@@ -1,0 +1,119 @@
+{
+  "schema": "ambiental-hackathon.orquestacion.v1",
+  "updated_at_utc": "2026-10-07T15:13:24.805567+00:00",
+  "updated_at_bogota": "2026-10-07T10:13:24.805567-05:00",
+  "timezone": "America/Bogota",
+  "estado": "preparacion_lista_goal_pendiente_GO",
+  "goal": {
+    "documento": "caso/goal_ejecucion.md",
+    "url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/goal_ejecucion.md",
+    "sha256": "dcc5e178a1fda2bb81d3e4b7933cc0cd37dec2f21ca6d40d1dbcfe2471b14256",
+    "preparada": true,
+    "activada": false,
+    "herramienta_create_goal_usada": false,
+    "requiere": "GO explícito del usuario"
+  },
+  "root": "solo_orquestador_sin_ejecucion_material",
+  "implementacion_autorizada": false,
+  "proyecto_principal": "Presupuesto Vivo",
+  "proyecto_secundario": "Territorio Vivo",
+  "limites": {
+    "paquete_bogota": "2026-10-07T13:50:00-05:00",
+    "entrega_bogota": "2026-10-07T14:00:00-05:00",
+    "minutos_disponibles_hasta_paquete": 216,
+    "recalcular_tras_GO_tardio": true
+  },
+  "recursos": {
+    "nativos_maximos_incluido_root": 5,
+    "nativos_ejecutores_maximos": 4,
+    "claude_muse": "locales; informes recibidos sobre borrador previo",
+    "gemini": "local; pendiente autenticacion, sin inferencia atribuida",
+    "gpt_6_luna": "solicitado; ruta local en verificacion",
+    "codex_remotos": "solo sesiones existentes; worktrees aislados",
+    "cuotas": "disponibilidad local no confirmada; sin failover"
+  },
+  "evidencia_tecnica": {
+    "presupuesto_unitarias_aprobadas": 419,
+    "territorio_unitarias_aprobadas": 252,
+    "territorio_unitarias_omitidas": 29,
+    "backend_DB_checks_aprobados": 5,
+    "health_postgresql_postgis": "200 en ambas copias de prueba",
+    "produccion_usada": false,
+    "E2E_navegador_completo": false
+  },
+  "entrega_ambiental": {
+    "estado": "pendiente_GO_y_ejecucion",
+    "productos": [
+      "P1",
+      "P2",
+      "P3",
+      "pitch"
+    ],
+    "requisitos_IDs": 75,
+    "robustez_completa_demostrada": false,
+    "eficacia_causal_demostrada": false,
+    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md"
+  },
+  "cronograma_condicional": [
+    {
+      "fase": "Confirmación GO y asignaciones",
+      "inicio_bogota": "10:14",
+      "fin_bogota": "10:24",
+      "salida": "Root asigna; ejecutores reciben objetivo, fuentes y archivo exclusivo."
+    },
+    {
+      "fase": "DA: fichas, escenarios y vacíos",
+      "inicio_bogota": "10:14",
+      "fin_bogota": "10:58",
+      "salida": "Registro de evidencia, localizadores, MEA y peticiones oficiales acotadas."
+    },
+    {
+      "fase": "P1: diagnóstico territorial",
+      "inicio_bogota": "10:29",
+      "fin_bogota": "11:28",
+      "salida": "Hasta cinco hallazgos; cobertura de municipios y siete dimensiones."
+    },
+    {
+      "fase": "P2: selección y comparación",
+      "inicio_bogota": "10:34",
+      "fin_bogota": "12:07",
+      "salida": "Elegibilidad, unidades enteras, conteo, presupuesto y alternativas."
+    },
+    {
+      "fase": "P3: residual y seguimiento",
+      "inicio_bogota": "10:34",
+      "fin_bogota": "12:07",
+      "salida": "Vacíos que cambian decisión, indicadores/línea base y revisión."
+    },
+    {
+      "fase": "Contraste de escenarios",
+      "inicio_bogota": "11:42",
+      "fin_bogota": "12:36",
+      "salida": "Referencia/intermedio/SSP3-7.0–2060; decisiones y límites reales."
+    },
+    {
+      "fase": "Integración y revisión independiente",
+      "inicio_bogota": "12:36",
+      "fin_bogota": "13:30",
+      "salida": "75 IDs con evidencia; Claude/Muse y revisión delegada."
+    },
+    {
+      "fase": "Pitch, anexo y paquete público",
+      "inicio_bogota": "13:30",
+      "fin_bogota": "13:50",
+      "salida": "Ensayo ≤7min; anexo opcional ≤2p; archivos/versiones coherentes."
+    },
+    {
+      "fase": "Entrega",
+      "inicio_bogota": "13:50",
+      "fin_bogota": "14:00",
+      "salida": "Paquete final y limitaciones, con hora real de entrega."
+    }
+  ],
+  "publicacion": {
+    "Git_owner": "editor delegado unico",
+    "web_owner": "redactor web delegado unico",
+    "protocolo": "artefacto terminado+lista exacta+SHA → commit/push acotado → HEAD y archivos al escritor web → lote JSON al dueño Git",
+    "privacidad": "solo whitelist sin secretos, rutas personales, IP privada, TUI o perfiles"
+  }
+}

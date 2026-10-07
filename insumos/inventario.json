@@ -1,0 +1,79 @@
+[
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "REPORTE MITIGACIO╠üN.xlsx",
+    "path": "insumos/cornare/REPORTE MITIGACIÓN.xlsx",
+    "size": 12657,
+    "sha256": "b0e5c32ee47a5a0c45eebffbbd9025a2421cd52cb0903e3662901f4497f2d9fa"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "REPORTE MEDIDAS DE ADAPTACIO╠üN MUNICIPIOS.xlsx",
+    "path": "insumos/cornare/REPORTE MEDIDAS DE ADAPTACIÓN MUNICIPIOS.xlsx",
+    "size": 32186,
+    "sha256": "7d619f13571532b8be8d1c05592aeba150576c0a6bb8af67056a38a7f52908c7"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "REDUCCIO╠üN DE EMISIONES SECTORES.xlsx",
+    "path": "insumos/cornare/REDUCCIÓN DE EMISIONES SECTORES.xlsx",
+    "size": 12304,
+    "sha256": "abf46028a9b5c23282a872ea984e12d85f4a17b59e3d18850237d62ee569b16b"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "MEDIDAS DE MITIGACIO╠üN REGIONALES.xlsx",
+    "path": "insumos/cornare/MEDIDAS DE MITIGACIÓN REGIONALES.xlsx",
+    "size": 24898,
+    "sha256": "5ff9c731fae564bd7846dd74a734cb1196806a981bb51dfb565a6720de9c01fd"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "INDICADORES POR UNIDAD DE PRODUCCIO╠üN SECTORES.xlsx",
+    "path": "insumos/cornare/INDICADORES POR UNIDAD DE PRODUCCIÓN SECTORES.xlsx",
+    "size": 13309,
+    "sha256": "068214d790331b3d69bc9d7a222bde046422e67418ff3f500474eff1f730fa63"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "HACKATHON RETO CORNARE.pptx",
+    "path": "insumos/cornare/HACKATHON RETO CORNARE.pptx",
+    "size": 105157128,
+    "sha256": "2768c29617022090e20ec60672e351eb85ffad654cb4c60c0cf26cfcf2b6ad14"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "HACKATHON RETO CORNARE.pdf",
+    "path": "insumos/cornare/HACKATHON RETO CORNARE.pdf",
+    "size": 9235620,
+    "sha256": "b9eafc137f1c8d1fdb592f8dc6c3f52f4765d59c942df0415261002b16e51fdc"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "EMISIONES POR ALCANCE SECTORES.xlsx",
+    "path": "insumos/cornare/EMISIONES POR ALCANCE SECTORES.xlsx",
+    "size": 13485,
+    "sha256": "aed007fdfbe9cf2a0ecdb0c5cf26805c333bb48b6889bfe7c12d9d0710fd741f"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "ACCIONES DE ADAPTACIO╠üN SECTORES (1).xlsx",
+    "path": "insumos/cornare/ACCIONES DE ADAPTACIÓN SECTORES (1).xlsx",
+    "size": 13099,
+    "sha256": "085da6b14bb304130376a86b5b0f0396bafc0ab5115d28c7f090b76831090266"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "RETO CLIMATE WEEK HACKATHON (1).pdf",
+    "path": "insumos/cornare/RETO CLIMATE WEEK HACKATHON (1).pdf",
+    "size": 378523,
+    "sha256": "ce8901194241e006db4b90998719b08ff97963f64ec71d2416edd3ebae958e6d"
+  },
+  {
+    "archive": "Paquete CRH . Medellín Reto Cornare.zip",
+    "member": "ACCIONES DE ADAPTACIO╠üN SECTORES.xlsx",
+    "path": "insumos/cornare/ACCIONES DE ADAPTACIÓN SECTORES.xlsx",
+    "size": 13099,
+    "sha256": "085da6b14bb304130376a86b5b0f0396bafc0ab5115d28c7f090b76831090266"
+  }
+]

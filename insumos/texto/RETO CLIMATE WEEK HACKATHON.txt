@@ -1,0 +1,368 @@
+                       CLIMATE RISK HACKATHON FOR CITIES
+   Corporación Autónoma Regional de las Cuencas de los Ríos Negro y Nare – CORNARE
+                                 Octubre 7 de 2026
+
+                          RETO PROPUESTO POR CORNARE
+ ¿DÓNDE Y CÓMO INTERVENIR PARA REDUCIR LAS VULNERABILIDADES CLIMÁTICAS MÁS
+ CRÍTICAS DEL TERRITORIO, CONSIDERANDO QUE ESTAS RESPONDEN A COMBINACIONES
+               DIFERENTES DE SENSIBILIDAD Y CAPACIDAD ADAPTATIVA?
+
+CASO DE TRABAJO: 8 HORAS
+Regional Valles de San Nicolás, Municipios de Rionegro, Guarne y Marinilla.
+
+El reto consiste en tomar una decisión de adaptación con información existente, recursos
+limitados e información con una brecha importante en relación a las dependencias en los
+sectores productivos.
+
+   1. EL PROBLEMA QUE SE DEBE RESOLVER:
+
+CORNARE ya cuenta con información para conocer cómo se distribuyen la amenaza, la
+sensibilidad, la capacidad adaptativa, la vulnerabilidad y el riesgo climático en su jurisdicción.
+
+El siguiente desafío es usar ese conocimiento para decidir dónde intervenir primero y cómo
+combinar medidas de adaptación cuando no es posible actuar sobre todo al mismo tiempo.
+
+PREGUNTA DEL RETO:
+
+Con un presupuesto limitado, ¿Qué combinación de intervenciones priorizarían en Rionegro,
+Guarne y Marinilla para reducir las vulnerabilidades climáticas más críticas, actuando sobre
+sus factores de sensibilidad y/o capacidad adaptativa y fortaleciendo la resiliencia del
+territorio frente a escenarios climáticos futuros?
+
+   2. POR QUÉ SE DELIMITA EL RETO A TRES MUNICIPIOS:
+
+El reto se delimita a Rionegro, Guarne y Marinilla porque este conjunto permite representar,
+en un territorio continuo e interdependiente, problemas climáticos distintos que obligan a
+priorizar entre dimensiones, municipios y tipos de intervención. La selección no responde a
+que sean los tres municipios con mayor riesgo climático de Valles de San Nicolás, sino a que
+presentan perfiles diferenciados de vulnerabilidad y capacidad adaptativa, lo que evita
+construir un caso en el que todas las decisiones conduzcan de manera evidente hacia un
+mismo territorio o una sola medida.
+
+El análisis regional muestra precisamente que ningún municipio concentra simultáneamente
+las mayores vulnerabilidades en todas las dimensiones. En biodiversidad y servicios
+ecosistémicos, por ejemplo, Rionegro presenta una vulnerabilidad de 0,75 (Muy alta) y
+Marinilla de 0,72 (Muy alta); mientras que, a escala regional, biodiversidad y recurso hídrico
+son las dimensiones con mayor vulnerabilidad promedio, con 0,55 y 0,53, respectivamente.
+
+Al mismo tiempo, las capacidades para responder tampoco son homogéneas. Rionegro y
+Marinilla presentan una capacidad adaptativa relativamente favorable en gestión del riesgo
+—0,56 y 0,61, respectivamente—, mientras que en biodiversidad sus capacidades son muy
+bajas: 0,22 en Rionegro y 0,24 en Marinilla. Guarne, por su parte, registra 0,33 en
+biodiversidad, todavía en categoría Baja. Esto permite introducir una distinción fundamental
+para el ejercicio y es que, tener capacidad institucional o de gestión en una dimensión no
+significa ser resiliente en todas las demás.
+
+La selección también permite incorporar una tensión particularmente útil para la toma de
+decisiones. En riesgo de desastres, Marinilla presenta una amenaza destacada dentro de la
+regional, con valores entre 0,66 y 0,73 (Alta); Rionegro, por su parte, registra la mayor
+sensibilidad de esta dimensión (0,40) y su riesgo climático aumenta de 0,28 a 0,32 hacia
+2060, pasando de Bajo a Medio. Así, una estrategia concentrada exclusivamente en
+biodiversidad o recurso hídrico podría dejar sin atender riesgos asociados a infraestructura,
+ocupación territorial o eventos extremos.
+
+La delimitación a los tres municipios permite, además, que el ejercicio conserve una escala
+territorial manejable. El Plan Regional contiene 17 medidas de adaptación y siete
+dimensiones territoriales; trabajar simultáneamente con los nueve municipios de Valles de
+San Nicolás aumentaría considerablemente el número de combinaciones posibles y podría
+desplazar el propósito del reto desde la toma de decisiones hacia el procesamiento de
+información. El propio Plan plantea que la priorización debe servir para enfocar esfuerzos y
+recursos en las acciones más pertinentes y efectivas para reducir vulnerabilidad.
+
+Por tanto, Rionegro–Guarne–Marinilla funciona como un corredor de decisión y no como
+una muestra estadística de toda la regional. La intención es construir un caso
+suficientemente complejo para que existan conflictos reales de asignación, pero
+suficientemente acotado para que puedan analizarse las consecuencias de cada decisión.
+
+Adicionalmente, Rionegro, Guarne y Marinilla conforman un corredor de especial
+importancia para la actividad empresarial de la jurisdicción de CORNARE, en el que se
+concentra una parte relevante de las empresas asentadas en Valles de San Nicolás. Algunas
+de estas organizaciones participan, además, en los Acuerdos de Crecimiento Verde (ACV) de
+CORNARE, por lo que el territorio permite relacionar la vulnerabilidad climática con
+información empresarial y con procesos que la Corporación ya viene desarrollando en
+materia de sostenibilidad, adaptación y seguimiento ambiental. Esta condición hace
+especialmente pertinente analizar si determinadas intervenciones pueden generar
+beneficios compartidos entre ecosistemas, comunidades, infraestructura, recurso hídrico y
+actividad productiva.
+La presencia empresarial no implica que CORNARE disponga actualmente de información
+completa sobre las relaciones de dependencia entre empresas, vías, fuentes hídricas,
+proveedores, servicios públicos y demás sistemas territoriales. La identificación de estas
+interdependencias constituye precisamente una brecha de información. Por ello, los
+participantes no deberán asumir o inventar cadenas de dependencia empresarial; deberán
+trabajar con la información disponible en el Observatorio Ambiental, MARCO, los ACV y las
+demás fuentes suministradas, e identificar las dependencias que sería necesario caracterizar
+posteriormente para mejorar la toma de decisiones.
+
+   3. QUÉ ENTREGA CORNARE PARA INICIAR EL RETO:
+
+➢ Ficha de los municipios con resultados de amenaza, sensibilidad, capacidad adaptativa,
+  vulnerabilidad y riesgo por dimensión.
+➢ Mapas de referencia y mapas de escenario futuro.
+➢ Resumen de eventos históricos relevantes.
+➢ Capas o enlaces de consulta para recurso hídrico, gestión del riesgo, POMCAS,
+  determinantes ambientales y otros elementos territoriales pertinentes.
+➢ Catálogo de medidas de adaptación del MEA.
+➢ Indicadores del MEA que permiten relacionar las medidas con sensibilidad y capacidad
+  adaptativa.
+➢ Información empresarial únicamente agregada, anonimizada o sintética cuando sea
+  necesaria. No se entregará información reservada ni identificable de empresas.
+
+   4. INFORMACIÓN PÚBLICA DISPONIBLE EN EL OBSERVATORIO AMBIENTAL
+
+ Componente                    Qué consultar                                              Ruta
+
+                 Amenaza, vulnerabilidad y riesgo; consulta
+    Cambio                                                      https://observatorioambiental.cornare.gov.co/crecimiento-
+                  por subregión, índice, año, escenario y
+   Climático                                                            verde-y-cambio-climatico/cambio-climatico/
+                               dimensión.
+
+                 Capas e información de fenómenos como
+  Gestión del                                                   https://observatorioambiental.cornare.gov.co/gestion-del-
+                  movimientos en masa, inundaciones y
+    Riesgo                                                                              riesgo/
+                           avenidas torrenciales.
+                 Caracterización de cuencas, riesgo, análisis
+   POMCAS          situacional, prospectiva, zonificación y       https://observatorioambiental.cornare.gov.co/pomca/
+                                 formulación.
+
+
+                   Áreas protegidas, gestión del riesgo,
+ Determinantes                                             https://observatorioambiental.cornare.gov.co/ordenamiento-
+                 POMCAS, cambio climático, rondas hídricas
+  ambientales                                                  ambiental-del-territorio/determinantes-ambientales/
+                         y otras determinantes.
+                Durante el reto, los equipos podrán utilizar
+                 MARCO – Monitoreo Ambiental Regional
+                 CORNARE como fuente complementaria
+                                                               https://marco.cornare.gov.co/marco/observemos-el-
+   MARCO              para entender las condiciones
+                                                                territorio-desde-el-cielo?utm_source=chatgpt.com
+                   hidrometeorológicas del territorio y
+                  contrastarlas con las vulnerabilidades
+                       identificadas en el estudio.
+                Indicadores de estado y gestión ambiental
+  Indicadores
+                   útiles para complementar la lectura                          Archivos Excel.
+  ambientales
+                                territorial.
+
+
+   5. BRECHA QUE NO SE DEBE INVENTAR: LAS DEPENDENCIAS
+
+CORNARE todavía no dispone de una matriz completa de dependencias entre empresas y
+territorio. Por ejemplo, no está consolidado para cada empresa qué vía, captación,
+proveedor, red de energía, servicio ecosistémico o grupo de trabajadores resulta crítico para
+su operación. Tampoco se cuenta con una modelación completa de cómo una interrupción
+se propagaría entre esos elementos.
+
+Esta brecha forma parte deliberada del ejercicio. El propósito no es completar, inferir o
+suponer información que actualmente no está disponible, sino reconocer sus implicaciones
+para la toma de decisiones. Los equipos deberán identificar qué información adicional podría
+modificar o fortalecer la decisión adoptada, por qué resulta relevante y cómo debería
+integrarse a una futura capacidad de análisis y monitoreo de CORNARE.
+
+   6. RESTRICCIÓN DE RECURSOS
+
+CORNARE dispone, para efectos de esta simulación, de un Fondo para implementar las
+medidas de Adaptación Territorial de $5.000 millones de pesos colombianos (COP) para
+intervenir vulnerabilidades climáticas en el corredor Rionegro–Guarne–Marinilla.
+
+Los recursos son insuficientes para financiar todas las medidas disponibles. Cada equipo
+deberá seleccionar el máximo de intervenciones, definir dónde se implementarían y
+distribuir el presupuesto sin superar los $5.000 millones.
+
+Cada medida cuenta con un costo de referencia para el ejercicio, construido a partir de una
+unidad funcional comparable. Estos valores no corresponden a presupuestos contractuales
+ni a disponibilidades presupuestales reales de CORNARE; constituyen supuestos económicos
+homogéneos para permitir la comparación entre las decisiones de los equipos.
+
+No es obligatorio ejecutar la totalidad del presupuesto.
+
+El equipo deberá demostrar por qué su combinación de inversiones genera una mayor
+reducción de vulnerabilidad que las alternativas descartadas, indicando específicamente qué
+sensibilidad pretende disminuir, qué capacidad adaptativa pretende fortalecer, qué
+territorio o sistema prioriza, qué actores deberían participar y qué vulnerabilidad permanece
+sin resolver.
+
+  Dimensión           Medida disponible para el reto          Unidad de intervención para el ejercicio      Costo de referencia
+                                                                         Programa territorial de
+                  Instrumentos de compensación y Pago
+ Biodiversidad                                                   conservación/restauración de áreas          $1.200 millones
+                      por Servicios Ambientales – PSA
+                                                                       estratégicas durante 3 años
+                                                              Intervención integral aproximada de 100
+                       Restauración de ecosistemas
+ Biodiversidad                                                      ha, incluyendo establecimiento,          $1.500 millones
+                               estratégicos
+                                                                mantenimiento inicial y seguimiento
+                                                                   Identificación, gestión, acuerdos,
+                  Fortalecimiento de sistemas de áreas
+ Biodiversidad                                                 conectividad y fortalecimiento de áreas        $700 millones
+                               protegidas
+                                                                       estratégicas en el corredor
+                                                                   Programa para grandes usuarios,
+   Recurso        Uso intersectorial eficiente del recurso    empresas, sector público y/o productivo:
+                                                                                                              $900 millones
+   hídrico                        hídrico                     diagnóstico, medición, eficiencia, reúso y
+                                                                               seguimiento
+                                                                 Intervención integral de corredores
+   Recurso         Protección y recuperación de rondas
+                                                                 ribereños priorizados: restauración,        $1.300 millones
+   hídrico                        hídricas
+                                                              aislamiento, recuperación y seguimiento
+   Recurso         Protección de cabeceras de cuenca y           Intervención de una microcuenca o
+                                                                                                             $1.600 millones
+   hídrico             ecosistemas abastecedores                    sistema abastecedor estratégico
+                                                                Programa territorial con productores:
+   Seguridad       Protección y reconversión de suelos
+                                                             asistencia, reconversión, conservación de       $1.000 millones
+  alimentaria             agrícolas estratégicos
+                                                                               suelo y agua
+                                                             Programa de asistencia técnica, manejo de
+   Seguridad      Producción agroecológica y economía
+                                                               suelo, agua, asociatividad y adaptación        $800 millones
+  alimentaria                rural resiliente
+                                                                                productiva
+                                                               Corredor/área verde multifuncional con
+   Hábitat               Espacios verdes urbanos               arborización, conectividad y regulación       $1.000 millones
+                                                                             térmica/hídrica
+                                                              Intervención piloto de escala municipal:
+                      Sistemas Urbanos de Drenaje              jardines de lluvia, zonas de infiltración,
+   Hábitat                                                                                                   $1.800 millones
+                           Sostenible – SUDS                 pavimentos permeables, almacenamiento,
+                                                                                   etc.
+                   Infraestructura resiliente al cambio           Adecuación de un punto crítico de
+Infraestructura                                                                                              $2.500 millones
+                                  climático                     infraestructura/vía/servicio priorizado
+                    Fortalecimiento de infraestructura       Intervención focalizada de infraestructura
+Infraestructura                                                                                              $2.000 millones
+                       resiliente y servicios públicos                     o servicio esencial
+                                                             Sistema interoperable para puntos críticos
+  Riesgo de       Fortalecimiento de Sistemas de Alerta
+                                                                    del corredor, instrumentación +          $1.200 millones
+  desastres                 Temprana – SAT
+                                                                     comunicaciones + protocolos
+                   Conocimiento y comunicación sobre           Estudios, modelación, instrumentación
+  Riesgo de
+                     amenazas, vulnerabilidad y riesgo            básica, protocolos y plataforma de          $600 millones
+  desastres
+                                  climático                                   información
+                  Sistema de salud y entornos saludables      Vigilancia climato-sensible, capacidades
+    Salud                                                                                                     $800 millones
+                            resilientes al clima               institucionales, prevención y respuesta
+Los costos son indivisibles para efectos del ejercicio, salvo que CORNARE indique
+expresamente lo contrario.
+    7. ESCENARIOS PARA PROBAR LA DECISIÓN
+
+El equipo trabajará primero con el escenario de referencia y un horizonte futuro intermedio
+suministrado por CORNARE. Después de definir una primera estrategia, deberá someterla a
+una prueba de robustez utilizando el escenario SSP3-7.0 hacia 2060 y revisar si mantiene,
+modifica o reemplaza su portafolio.
+
+No se espera modelación climática nueva. La tarea es utilizar los escenarios existentes para
+evaluar la robustez de la decisión.
+
+    8. RUTA DE TRABAJO: 8 HORAS
+
+0:00–0:20 Briefing y lectura del caso: Comprender reglas, datos, productos y restricciones.
+0:20–1:30 Diagnóstico focalizado: Máximo 5 hallazgos críticos; no rehacer el estudio.
+1:30–2:30 Mapa de decisión: Qué proteger, dónde y qué información falta.
+2:30–4:30 Portafolio: Máximo de intervenciones posibles con el recurso disponible.
+4:30–5:15 Stress test: Contrastar frente a SSP3-7.0 / 2060 y decidir qué cambia.
+5:15–6:00 Riesgo residual y brechas: Qué queda sin resolver y qué datos levantar.
+6:00–7:00 Seguimiento: Seleccionar indicadores MEA y lógica mínima de seguimiento.
+7:00–8:00 Síntesis y pitch: Cerrar tres productos y presentación de máximo 7 minutos.
+
+    9. LAS DECISIONES QUE DEBEN TOMAR
+
+➢   ¿Qué proteger primero y por qué?
+➢   ¿En cuál municipio, sistema o elemento territorial intervenir primero?
+➢   ¿Qué combinación de medidas implementarían con el presupuesto disponible?
+➢   ¿Cómo distribuir las los recursos disponibles entre esas intervenciones?
+➢   ¿Qué actores deberían participar en cada intervención?
+➢   ¿Qué cambia cuando la decisión se prueba frente al escenario SSP3-7?0 hacia 2060?
+➢   ¿Qué riesgo residual permanece?
+➢   ¿Qué dependencias o datos faltantes podrían cambiar la decisión?
+➢   ¿Qué indicadores permitirían saber posteriormente si la intervención redujo
+    vulnerabilidad?
+
+    10. PRODUCTOS ESPERADOS:
+
+PRODUCTO 1 · Tablero de decisión territorial
+Máximo 5 hallazgos del diagnóstico; qué se protegerá primero; localización; elementos
+críticos; y brechas de información. Las relaciones no demostradas deben marcarse como
+hipótesis o dato faltante.
+
+PRODUCTO 2 · Portafolio priorizado de adaptación
+Máximo de intervenciones posibles con el recurso. Para cada una: Municipio/localización,
+problema que atiende, medida MEA asociada, valor asignado, actor(es), orden de
+implementación, beneficio esperado y cambio —si lo hay— después del stress test SSP3-
+7.0/2060.
+
+
+PRODUCTO 3 · Riesgo residual, información faltante y seguimiento
+Una ficha que indique: Qué riesgo permanece; qué dependencias/datos debería levantar
+CORNARE; qué variables mínimas se requieren; y qué indicadores MEA deberían seguirse
+para verificar reducción de sensibilidad, aumento de capacidad adaptativa o disminución de
+vulnerabilidad.
+
+   11. FORMATO DE ENTREGA
+
+➢ Pitch final: máximo 7 minutos.
+➢ Tres productos en formato libre (láminas, tablero, hoja de cálculo, prototipo o
+  combinación), siempre que puedan entenderse sin una explicación extensa.
+➢ Anexo metodológico opcional de máximo 2 páginas si el equipo utiliza una matriz
+  multicriterio, algoritmo o procedimiento cuantitativo.
+➢ Toda propuesta debe diferenciar claramente: Dato institucional, inferencia del equipo,
+  supuesto e información faltante.
+
+   12. QUÉ SE VALORARÁ
+
+      Criterio                                   Qué se observará
+    Decisión, NO
+                    La propuesta utiliza el estudio existente y concentra el esfuerzo en decidir.
+    diagnóstico
+                         No confunde amenaza, vulnerabilidad y riesgo; no inventa datos ni
+       Rigor
+                                                    dependencias.
+                     Existe una justificación clara para intervenir unas cosas antes que otras y
+    Priorización
+                                              para distribuir los recursos.
+    Pensamiento       Identifica dónde una dependencia faltante podría cambiar la decisión y
+     sistémico                               propone cómo caracterizarla.
+                        La estrategia es revisada frente a un escenario futuro más exigente y
+     Robustez
+                                               reconoce incertidumbre.
+    Viabilidad y      Medidas, secuencia y actores son coherentes con las competencias y el
+    gobernanza                                         territorio.
+                       Los indicadores propuestos permiten evaluar cambios en sensibilidad,
+    Seguimiento
+                                        capacidad adaptativa y vulnerabilidad.
+    Utilidad para       El resultado ayuda a convertir información climática en una decisión
+     CORNARE          reproducible y señala qué capacidad institucional debería fortalecerse.
+
+   13. LO QUE NO DEBEN HACER
+
+➢ Recalcular el estudio de riesgo climático.
+➢ Analizar los 26 municipios.
+➢ Elegir automáticamente el municipio con el índice más alto.
+➢ Inventar dependencias empresariales o utilizar información reservada.
+➢ Construir una plataforma completa o un software.
+➢ Presentar una lista de medidas sin priorización ni asignación de recursos.
+
+El reto es demostrar cómo pasar de conocer las vulnerabilidades climáticas del territorio a
+tomar una decisión de adaptación defendible, robusta y monitoreable, identificando qué
+factores de sensibilidad deben reducirse, qué capacidades adaptativas deben fortalecerse y
+qué información adicional necesita CORNARE para comprender mejor las interdependencias
+territoriales.
+
+Fuentes institucionales del caso
+
+El paquete técnico del reto se construye a partir de la actualización del análisis de
+vulnerabilidad y riesgo climático de CORNARE, el diseño del módulo MEA, los resultados
+triangulados, la climatología, los escenarios SSP, los indicadores y medidas de adaptación, los
+reportes MRV que puedan utilizarse de forma agregada y la cartografía institucional.
+
+Consulta pública: https://observatorioambiental.cornare.gov.co/
+

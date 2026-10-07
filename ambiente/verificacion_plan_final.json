@@ -1,0 +1,1027 @@
+{
+  "version": 2,
+  "auditor": "/root/revisar_presupuesto_territorio",
+  "verificado_utc": "2026-10-07T14:57:43.617086+00:00",
+  "verificado_bogota": "2026-10-07T09:57:43.617086-05:00",
+  "alcance": "Auditoría independiente de propuesta estable contra 75 IDs y fuentes originales; preparación metodológica, no aprobación de cartera futura.",
+  "dictamen": "APTO COMO MÉTODO PREPARATORIO: cobertura de 75 IDs y delta final coherentes, sin objeciones materiales pendientes. No acredita goal completada, productos finales, cartera seleccionada, eficacia ambiental ni prueba SSP completa.",
+  "documento_principal": "caso/propuesta_principal.md",
+  "artefactos": {
+    "caso/propuesta_principal.md": {
+      "sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
+      "bytes": 46278
+    },
+    "caso/matriz_requisitos_completa.md": {
+      "sha256": "a8ef33d1d9ec8cb1088294508cedc0484d7aaac2fe1391630f92dd8a6ce93619",
+      "bytes": 51827
+    },
+    "caso/catalogo_costos_reto.csv": {
+      "sha256": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
+      "bytes": 3272
+    },
+    "caso/comparacion_financiera.json": {
+      "sha256": "2a6d19987ab575474e8981bc65240f33c522263167595211eae0bbf75e50079c",
+      "bytes": 9965
+    },
+    "caso/comparar_presupuesto.py": {
+      "sha256": "09626b8633d40eddc4d6b45df9951f9bd0103003bbf1f65f5732489999eb62a0",
+      "bytes": 4632
+    },
+    "caso/revision_documentos.md": {
+      "sha256": "f9733de6426d3db929c6e7087d716b113a8ee3901973a1e9f769e6cc7b38ae22",
+      "bytes": 28126
+    },
+    "caso/revision_excel.md": {
+      "sha256": "cce5de01a70310c68b044099c3ea562c26d069bfdf5a08320bfda5b4a40704e9",
+      "bytes": 20949
+    },
+    "RETO CLIMATE WEEK HACKATHON.pdf": {
+      "sha256": "3dc49d0290487b0d316db4ed1e3d78dc2abbcb5c823a536e9ebbffa768251779",
+      "bytes": 391891
+    },
+    "insumos/cornare/RETO CLIMATE WEEK HACKATHON (1).pdf": {
+      "sha256": "ce8901194241e006db4b90998719b08ff97963f64ec71d2416edd3ebae958e6d",
+      "bytes": 378523
+    },
+    "insumos/cornare/HACKATHON RETO CORNARE.pdf": {
+      "sha256": "b9eafc137f1c8d1fdb592f8dc6c3f52f4765d59c942df0415261002b16e51fdc",
+      "bytes": 9235620
+    },
+    "insumos/cornare/HACKATHON RETO CORNARE.pptx": {
+      "sha256": "2768c29617022090e20ec60672e351eb85ffad654cb4c60c0cf26cfcf2b6ad14",
+      "bytes": 105157128
+    },
+    "insumos/texto/presentacion_pptx.json": {
+      "sha256": "f652b24b2235d5d7683278c39de816c175048eaef9d09f24b1dccd56abcd1139",
+      "bytes": 104743
+    },
+    "explicacion.txt": {
+      "sha256": "28a8e5c393b7b34ee5829d0626b22dc507d504ee6032355b914104980ae7d9a1",
+      "bytes": 7424
+    },
+    "Climate_Risk_Hackathon_convocatoria_completa.md": {
+      "sha256": "1f1dc5f3bf9c1fcfedbca04ab357901d14f647756d7c035f74efb80cf2e4fc84",
+      "bytes": 19108
+    },
+    "caso/evaluaciones/claude/informe.md": {
+      "sha256": "ef7fa9ae61e4192ecd5ef26ee7cf967bc511865b4b209e0e6835142ba9bb8b1e",
+      "bytes": 16574
+    },
+    "caso/evaluaciones/muse/informe.md": {
+      "sha256": "2c25e7a5d8ed4b89494fdbe266637504fe68f848003a2ea750afbd1945f428e6",
+      "bytes": 17383
+    }
+  },
+  "cobertura": {
+    "filas": 75,
+    "grupos": {
+      "R": 22,
+      "Q": 9,
+      "C": 8,
+      "X": 6,
+      "P": 3,
+      "F": 3,
+      "I": 16,
+      "H": 8
+    },
+    "IDs_unicos": true,
+    "campos_por_fila": 7,
+    "estados_actuales": {
+      "pendiente": 64,
+      "condicional": 6,
+      "demostrado": 5
+    },
+    "localizadores": [
+      {
+        "id": "R01",
+        "regla_y_fuente": "Decidir adaptación con información existente, recursos limitados y brecha de dependencias; reducir vulnerabilidad actuando sobre sensibilidad y/o capacidad adaptativa y fortalecer resiliencia futura. E p.1 §1 y p.8 cierre.",
+        "localizador_propuesta": "§3 pasos 1–3 y 6; §6 P1–P3",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + AG"
+      },
+      {
+        "id": "R02",
+        "regla_y_fuente": "Corredor Rionegro–Guarne–Marinilla, no muestra estadística de toda Valles ni selección de los municipios con mayor riesgo. E pp.1–2 §2.",
+        "localizador_propuesta": "§1 autoridad; §3 pasos 1–2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + IN"
+      },
+      {
+        "id": "R03",
+        "regla_y_fuente": "No confundir amenaza, sensibilidad, capacidad adaptativa, vulnerabilidad y riesgo. E pp.1–2 y p.7 §12.",
+        "localizador_propuesta": "§3 paso 1; §4 C2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "R04",
+        "regla_y_fuente": "Perfiles diferenciados y siete dimensiones; una decisión exclusiva sobre biodiversidad/agua puede dejar desastres, infraestructura u ocupación sin atender. E p.2 §2.",
+        "localizador_propuesta": "§3 pasos 1–2 y 4; §6 P1/P3",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "R05",
+        "regla_y_fuente": "Fondo conjunto simulado de COP 5.000 millones para los tres municipios. E p.4 §6.",
+        "localizador_propuesta": "§5 costos, alternativas y total; §6 P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "CA + IN"
+      },
+      {
+        "id": "R06",
+        "regla_y_fuente": "Quince opciones con precio, unidades funcionales comparables e indivisibles salvo instrucción expresa de CORNARE. E p.5 §6.",
+        "localizador_propuesta": "§5 unidades e IDs; §6 P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "CA + DA"
+      },
+      {
+        "id": "R07",
+        "regla_y_fuente": "Seleccionar el máximo de intervenciones posibles con el recurso; localizarlas y distribuirlo. E p.4 §6 y p.6 §8/§10.",
+        "localizador_propuesta": "§5 enumeración condicionada y elegibilidad; §9 brecha de conteo",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "condicional",
+        "responsable_delegado": "CA + IN + RI"
+      },
+      {
+        "id": "R08",
+        "regla_y_fuente": "No es obligatorio ejecutar todo el fondo. E p.4 §6.",
+        "localizador_propuesta": "§5 saldo y remanente; §6 P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "CA"
+      },
+      {
+        "id": "R09",
+        "regla_y_fuente": "Precios supuestos para comparación; no contractuales ni disponibilidades reales de CORNARE. E p.4 §6.",
+        "localizador_propuesta": "Apertura fondo simulado; §5 precios del ejercicio; §7 históricos",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + RI"
+      },
+      {
+        "id": "R10",
+        "regla_y_fuente": "Demostrar por qué la combinación genera mayor reducción de vulnerabilidad que las alternativas descartadas, especificando S, CA, territorio/sistema, actores y residual. E pp.4–5 §6.",
+        "localizador_propuesta": "§3 paso 4; §4 C3; §5 alternativas",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + CA + IN + RI"
+      },
+      {
+        "id": "R11",
+        "regla_y_fuente": "Posibles beneficios compartidos entre ecosistemas, comunidades, infraestructura, agua y actividad productiva; no asumir cadenas empresariales. E pp.2–3 §2.",
+        "localizador_propuesta": "§3 paso 4; §5 complementariedad y solapamientos",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + RI"
+      },
+      {
+        "id": "R12",
+        "regla_y_fuente": "Primero escenario de referencia y horizonte futuro intermedio suministrado por CORNARE. E p.6 §7.",
+        "localizador_propuesta": "§3 paso 5; §9 fichas y escenarios",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + IN"
+      },
+      {
+        "id": "R13",
+        "regla_y_fuente": "Prueba de robustez SSP3-7.0 hacia 2060; mantener, modificar o reemplazar la cartera. E p.6 §7 y pp.6–7 P2.",
+        "localizador_propuesta": "§3 paso 5/primer diagrama; §4 C5; §9 escenarios",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG + CA + RI"
+      },
+      {
+        "id": "R14",
+        "regla_y_fuente": "Usar escenarios existentes; no se espera modelación climática nueva. E p.6 §7.",
+        "localizador_propuesta": "§3 pasos 1 y 5; §10 no recalcular",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "R15",
+        "regla_y_fuente": "No completar, inferir o suponer la matriz empresarial ausente ni propagación de interrupciones. E p.3 §2 y p.4 §5.",
+        "localizador_propuesta": "§2 Efecto Dominó; §7 dependencias; §10 exclusiones",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG + RI"
+      },
+      {
+        "id": "R16",
+        "regla_y_fuente": "Identificar qué información adicional cambiaría/fortalecería la decisión, por qué y cómo integrarla a la futura capacidad de análisis/monitoreo. E p.4 §5.",
+        "localizador_propuesta": "§3 paso 6; §4 C4/C8; §7 y §9",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + DA + IN"
+      },
+      {
+        "id": "R17",
+        "regla_y_fuente": "Empresas solamente agregadas, anonimizadas o sintéticas; sin reservado ni identificable. E p.3 §3 y p.8 §13.",
+        "localizador_propuesta": "§7 plan de levantamiento y anonimización; §10",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + IN + RI"
+      },
+      {
+        "id": "R18",
+        "regla_y_fuente": "Diferenciar dato institucional, inferencia del equipo, supuesto e información faltante. E p.7 §11.",
+        "localizador_propuesta": "§3 paso 1; §4 C2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + IN + RI"
+      },
+      {
+        "id": "R19",
+        "regla_y_fuente": "Seguimiento para verificar S, CA o V, no solo actividades/inversión. E p.7 P3/§12; D p.23 ciclo MEA.",
+        "localizador_propuesta": "§3 paso 6; §7 ficha y ciclo de seguimiento",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "R20",
+        "regla_y_fuente": "Convertir conocimiento en decisión defendible, robusta, monitoreable y reproducible, señalando capacidad institucional por fortalecer. E pp.7–8 §12/cierre.",
+        "localizador_propuesta": "§4 C8; §6 productos; §9 cierres",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + CA + RI"
+      },
+      {
+        "id": "R21",
+        "regla_y_fuente": "Ruta oficial de ocho horas: lectura, diagnóstico, mapa, cartera, estrés, residual, seguimiento y síntesis. E p.6 §8.",
+        "localizador_propuesta": "§3 flujo operativo; §9 cronograma y cierre",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "OR + IN"
+      },
+      {
+        "id": "R22",
+        "regla_y_fuente": "Decisión, mapa/localización y seguimiento deben poder comunicarse en formatos permitidos. E pp.6–7 §10/§11.",
+        "localizador_propuesta": "§2 reutilización; §6 salidas; §9 corte de interfaz",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + CA + RI"
+      },
+      {
+        "id": "Q01",
+        "regla_y_fuente": "¿Qué proteger primero y por qué? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q1; P1",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + AG"
+      },
+      {
+        "id": "Q02",
+        "regla_y_fuente": "¿En cuál municipio, sistema o elemento territorial intervenir primero? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q2; P1/P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "Q03",
+        "regla_y_fuente": "¿Qué combinación de medidas implementar con el presupuesto? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q3; P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + CA + RI"
+      },
+      {
+        "id": "Q04",
+        "regla_y_fuente": "¿Cómo distribuir los recursos entre intervenciones? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q4; P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "CA"
+      },
+      {
+        "id": "Q05",
+        "regla_y_fuente": "¿Qué actores deben participar en cada intervención? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q5; P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + DA"
+      },
+      {
+        "id": "Q06",
+        "regla_y_fuente": "¿Qué cambia frente a SSP3-7.0 hacia 2060? E p.6 §9; notación confirmada en §7.",
+        "localizador_propuesta": "§6 tabla Q6; P2 y §4 C5",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG + RI"
+      },
+      {
+        "id": "Q07",
+        "regla_y_fuente": "¿Qué riesgo residual permanece? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q7; P3",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + IN"
+      },
+      {
+        "id": "Q08",
+        "regla_y_fuente": "¿Qué dependencias o datos faltantes podrían cambiar la decisión? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q8; P3 y §7",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG + RI"
+      },
+      {
+        "id": "Q09",
+        "regla_y_fuente": "¿Qué indicadores permitirán saber después si disminuyó vulnerabilidad? E p.6 §9.",
+        "localizador_propuesta": "§6 tabla Q9; P3 y §7",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "C01",
+        "regla_y_fuente": "Decisión, NO diagnóstico. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C1",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + RI"
+      },
+      {
+        "id": "C02",
+        "regla_y_fuente": "Rigor. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "C03",
+        "regla_y_fuente": "Priorización. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C3",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + AG + CA"
+      },
+      {
+        "id": "C04",
+        "regla_y_fuente": "Pensamiento sistémico. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C4",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + DA + RI"
+      },
+      {
+        "id": "C05",
+        "regla_y_fuente": "Robustez. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C5",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG + RI"
+      },
+      {
+        "id": "C06",
+        "regla_y_fuente": "Viabilidad y gobernanza. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C6",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + DA"
+      },
+      {
+        "id": "C07",
+        "regla_y_fuente": "Seguimiento. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C7",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "C08",
+        "regla_y_fuente": "Utilidad para CORNARE. E p.7 §12.",
+        "localizador_propuesta": "§4 fila C8",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + CA + RI"
+      },
+      {
+        "id": "X01",
+        "regla_y_fuente": "No recalcular el estudio de riesgo climático. E p.7 §13.",
+        "localizador_propuesta": "§10 exclusión 1; §3",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "X02",
+        "regla_y_fuente": "No analizar los 26 municipios. E p.7 §13.",
+        "localizador_propuesta": "§10 exclusión 2; §6 P1",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + RI"
+      },
+      {
+        "id": "X03",
+        "regla_y_fuente": "No elegir automáticamente el municipio del índice más alto. E p.7 §13.",
+        "localizador_propuesta": "§10 exclusión 3; §3 paso 2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + RI"
+      },
+      {
+        "id": "X04",
+        "regla_y_fuente": "No inventar dependencias empresariales ni usar reservado. E p.8 §13.",
+        "localizador_propuesta": "§10 exclusión 4; §7",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "X05",
+        "regla_y_fuente": "No construir una plataforma completa o un software. E p.8 §13.",
+        "localizador_propuesta": "§10 exclusión 5; §2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + RI"
+      },
+      {
+        "id": "X06",
+        "regla_y_fuente": "No presentar lista de medidas sin priorización ni asignación. E p.8 §13.",
+        "localizador_propuesta": "§10 exclusión 6; §5/§6 P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + CA + RI"
+      },
+      {
+        "id": "P01",
+        "regla_y_fuente": "Tablero de decisión territorial. E p.6 §10.",
+        "localizador_propuesta": "§6 tabla P1",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN, con DA + AG"
+      },
+      {
+        "id": "P02",
+        "regla_y_fuente": "Portafolio priorizado de adaptación. E pp.6–7 §10.",
+        "localizador_propuesta": "§6 tabla P2",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN, con CA + DA + AG"
+      },
+      {
+        "id": "P03",
+        "regla_y_fuente": "Riesgo residual, información faltante y seguimiento. E p.7 §10.",
+        "localizador_propuesta": "§6 tabla P3",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN, con DA + AG"
+      },
+      {
+        "id": "F01",
+        "regla_y_fuente": "Pitch final ≤ 7 minutos. E p.7 §11.",
+        "localizador_propuesta": "§10 guion de 7:00; §9 ensayo",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + equipo"
+      },
+      {
+        "id": "F02",
+        "regla_y_fuente": "Tres productos en formato libre y comprensibles sin explicación extensa. E p.7 §11.",
+        "localizador_propuesta": "§6 controles de aceptación; §10 legibilidad",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + RI"
+      },
+      {
+        "id": "F03",
+        "regla_y_fuente": "Anexo metodológico opcional ≤ 2 páginas si se usa matriz multicriterio, algoritmo o procedimiento cuantitativo. E p.7 §11.",
+        "localizador_propuesta": "§4 C8; §9 ensayo/anexo; §10 límite 2 páginas",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "condicional",
+        "responsable_delegado": "CA + IN + RI"
+      },
+      {
+        "id": "I01",
+        "regla_y_fuente": "Dos enunciados oficiales de ocho páginas. E; RD §1.",
+        "localizador_propuesta": "§1 lectura y jerarquía, enlaces RD/inventario",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "demostrado",
+        "responsable_delegado": "IN/DA, revisión documental realizada"
+      },
+      {
+        "id": "I02",
+        "regla_y_fuente": "Catálogo económico de 15 medidas y unidades. E p.5; CC; RD §3.",
+        "localizador_propuesta": "§5 CSV, procedimiento y resultado financiero",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "demostrado",
+        "responsable_delegado": "CA, contraste documental realizado"
+      },
+      {
+        "id": "I03",
+        "regla_y_fuente": "Presentación de 31 páginas/diapositivas, notas y figuras. D; RD §§1/5.",
+        "localizador_propuesta": "§1 lectura completa; enlace RD/PPTX",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "demostrado",
+        "responsable_delegado": "DA, revisión documental realizada"
+      },
+      {
+        "id": "I04",
+        "regla_y_fuente": "Fichas A/S/CA/V/R por dimensión de los tres municipios. E p.3 §3.",
+        "localizador_propuesta": "§9 brecha de fichas; §3 paso 1",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA"
+      },
+      {
+        "id": "I05",
+        "regla_y_fuente": "Mapas de referencia, horizonte intermedio y SSP3-7.0/2060. E p.3 §3 y p.6 §7.",
+        "localizador_propuesta": "§3 paso 5/primer diagrama; §9 escenarios",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA"
+      },
+      {
+        "id": "I06",
+        "regla_y_fuente": "Resumen de eventos históricos relevantes. E p.3 §3.",
+        "localizador_propuesta": "§3 lectura de eventos; §9 brechas/entradas",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA"
+      },
+      {
+        "id": "I07",
+        "regla_y_fuente": "Capas/enlaces de agua, riesgo, POMCA, determinantes y otros elementos. E pp.3–4 §§3/4.",
+        "localizador_propuesta": "§3 capas/POMCA/determinantes; §9 brechas/entradas",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "I08",
+        "regla_y_fuente": "Catálogo/fichas oficiales de medidas MEA. E p.3 §3; D pp.16–18.",
+        "localizador_propuesta": "§3 paso 3; §9 MEA",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "I09",
+        "regla_y_fuente": "Indicadores MEA relacionados con S/CA. E p.3 §3 y p.7 P3; D p.23.",
+        "localizador_propuesta": "§4 C7; §7 ficha; §9 MEA",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "I10",
+        "regla_y_fuente": "Información empresarial únicamente agregada, anonimizada o sintética cuando sea necesaria. E p.3 §3.",
+        "localizador_propuesta": "§7 datos agregados/anonimizados; §10",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "condicional",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "I11",
+        "regla_y_fuente": "Rutas oficiales Observatorio, riesgo, POMCA, determinantes y MARCO; Excel como indicadores complementarios. E pp.3–4 §4; D p.30.",
+        "localizador_propuesta": "§9 fuentes del Observatorio; enlace RD/matriz",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "demostrado",
+        "responsable_delegado": "DA, existencia documental revisada"
+      },
+      {
+        "id": "I12",
+        "regla_y_fuente": "ZIP: 11 útiles, ocho Excel con una copia idéntica, dos PDF y un PPTX. Inventario; RD §1; EX §§1–3.",
+        "localizador_propuesta": "§1 inventario/Excel; §7 antecedentes y límites",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "demostrado",
+        "responsable_delegado": "DA/CA, revisión Excel realizada"
+      },
+      {
+        "id": "I13",
+        "regla_y_fuente": "Eficacia/beneficio cuantificable, si existe en fuentes institucionales. E p.4 §6 exige comparación; EX §6 acredita ausencia en las hojas.",
+        "localizador_propuesta": "§2 motor PV; §9 eficacia; §5 alcance financiero",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "condicional",
+        "responsable_delegado": "DA + AG + CA + RI"
+      },
+      {
+        "id": "I14",
+        "regla_y_fuente": "Regla de repetición de unidades y elegibilidad/localización para el máximo. E pp.4–5, ambigüedad no resuelta; PC.",
+        "localizador_propuesta": "§5 supuesto de una unidad; §9 conteo",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "condicional",
+        "responsable_delegado": "IN + CA + AG"
+      },
+      {
+        "id": "I15",
+        "regla_y_fuente": "Localización, continuidad de antecedentes, capacidades y actores ejecutores. E pp.6–7 P1/P2/§12; EX §§4–6.",
+        "localizador_propuesta": "§3 paso 3; §4 C6; §7 continuidad; §9 sitios/actores",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG"
+      },
+      {
+        "id": "I16",
+        "regla_y_fuente": "Avances de las dos iniciativas seleccionadas. U; PC; [seleccion_propuestas.md](seleccion_propuestas.md).",
+        "localizador_propuesta": "§2 iniciativas; §8 frentes remotos; §9 tablas/láminas",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "CA + IN + RI"
+      },
+      {
+        "id": "H01",
+        "regla_y_fuente": "Horizonte operativo de un año, N línea 59; no límite uniforme en E. PSA tiene tres años, E p.5.",
+        "localizador_propuesta": "§1 año operativo; §5 PSA tres años",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "condicional",
+        "responsable_delegado": "IN + AG + CA"
+      },
+      {
+        "id": "H02",
+        "regla_y_fuente": "Meta institucional de disminuir 30% los indicadores de V **a 2035**, D p.19; notas “al 30%” imprecisas.",
+        "localizador_propuesta": "§1 meta 30% a 2035; §7 meta propuesta",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + IN + RI"
+      },
+      {
+        "id": "H03",
+        "regla_y_fuente": "Discrepancias de presentación: 106 frente a suma 99 indicadores empresariales, D p.10; piloto 32 frente a barras que suman 34, D pp.3/14/20/23; siete/ocho dimensiones, D pp.9/10.",
+        "localizador_propuesta": "§9 inconsistencias de denominadores; enlace RD",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + RI"
+      },
+      {
+        "id": "H04",
+        "regla_y_fuente": "Priorización previa 70/15/15, D p.15; seis medidas preferentes de Valles, D p.16; 17 territoriales/11 empresariales frente a 15 precios de E.",
+        "localizador_propuesta": "§1 70/15/15; §5 catálogo y antecedente 6.500",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + CA + IN"
+      },
+      {
+        "id": "H05",
+        "regla_y_fuente": "Expectativas previas de producto completo, V §18; criterios inferidos V §9 y desconocimiento previo del reto V §11. E ya contiene reglas y excluye construir software.",
+        "localizador_propuesta": "§1 jerarquía; §2 uso de iniciativas; §10 no plataforma",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "IN + RI"
+      },
+      {
+        "id": "H06",
+        "regla_y_fuente": "Referencias normativas/inversión del 1% de N y cronología D p.2 no corroboradas en esta auditoría.",
+        "localizador_propuesta": "§1 fuentes subordinadas; §4 C6 y §10; enlace RD/matriz",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "AG + RI"
+      },
+      {
+        "id": "H07",
+        "regla_y_fuente": "Caso de ocho horas E p.6; horario previo V 08:00–16:00; U exige paquete antes de 14:00 Bogotá.",
+        "localizador_propuesta": "Apertura y §9 plazo/cierre",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "OR + IN"
+      },
+      {
+        "id": "H08",
+        "regla_y_fuente": "Afirmaciones de N sobre mayor riesgo, baja CA universal y ausencia de variabilidad no sustentadas por E/D.",
+        "localizador_propuesta": "§1 autoridad; §3 perfiles/factores; enlace RD/matriz",
+        "cobertura_metodo": "identificada_en_propuesta_o_matriz_enlazada",
+        "estado_evidencia_actual": "pendiente",
+        "responsable_delegado": "DA + AG + RI"
+      }
+    ],
+    "nota": "Cobertura del método no equivale a ejecución. Los 5 demostrados acreditan solo preparación acotada; 64 pendientes y 6 condicionales conservan sus límites."
+  },
+  "objeciones": [
+    {
+      "id": "OBS-01",
+      "prioridad": "alta",
+      "tema": "Root solo orquestador",
+      "estado": "corregida",
+      "evidencia": "Apertura/regla, §8 tabla y segundo diagrama"
+    },
+    {
+      "id": "OBS-02",
+      "prioridad": "media",
+      "tema": "Ciclo MEA y remedición/ajuste",
+      "estado": "corregida",
+      "evidencia": "§7 ficha y revisión de contexto"
+    },
+    {
+      "id": "OBS-03",
+      "prioridad": "media",
+      "tema": "Dueño/salida/corte por brecha",
+      "estado": "corregida",
+      "evidencia": "§9 tabla de brechas, DA nativo y Gemini adicional"
+    },
+    {
+      "id": "OBS-04",
+      "prioridad": "media",
+      "tema": "Gate visual y dato Rionegro insuficiente",
+      "estado": "corregida",
+      "evidencia": "Primer diagrama y texto posterior"
+    },
+    {
+      "id": "OBS-05",
+      "prioridad": "media",
+      "tema": "Eventos/capas/POMCA/determinantes",
+      "estado": "corregida",
+      "evidencia": "§3 paso2 y §9 brecha territorial"
+    },
+    {
+      "id": "OBS-06",
+      "prioridad": "baja",
+      "tema": "Ensayo y congelado antes del plazo",
+      "estado": "corregida",
+      "evidencia": "§9:ensayo≤7:00,anexo≤2p,congelado13:50"
+    }
+  ],
+  "comprobaciones_correcciones": {
+    "root_solo_orquestador": true,
+    "ciclo_MEA": true,
+    "dueno_salida_corte_de_brechas": true,
+    "gate_condicional_sin_falso_SSP": true,
+    "eventos_capas_POMCA_determinantes": true,
+    "congelado_y_ensayo_antes_de14": true
+  },
+  "enlaces_markdown": {
+    "comprobados": 12,
+    "destinos": [
+      {
+        "etiqueta": "revisión documental",
+        "destino": "revision_documentos.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "revisión de Excel",
+        "destino": "revision_excel.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "inventario del ZIP",
+        "destino": "../insumos/inventario.json",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "matriz de requisitos completa",
+        "destino": "matriz_requisitos_completa.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "comparación de las cuatro propuestas",
+        "destino": "seleccion_propuestas.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "auditoría estática del Codex remoto de Presupuesto Vivo",
+        "destino": "../ambiente/evaluaciones/codex-presupuesto.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "15 precios oficiales",
+        "destino": "catalogo_costos_reto.csv",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "resultado financiero",
+        "destino": "comparacion_financiera.json",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "estado del entorno",
+        "destino": "../ambiente/estado_entorno.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "dictámenes de Claude",
+        "destino": "evaluaciones/claude/informe.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "Muse",
+        "destino": "evaluaciones/muse/informe.md",
+        "existe_localmente": true
+      },
+      {
+        "etiqueta": "registro de encargos locales",
+        "destino": "../ambiente/evaluaciones_locales.json",
+        "existe_localmente": true
+      }
+    ],
+    "resultado": "Todos los destinos locales existen; no se sondearon backend ni URLs externas."
+  },
+  "mermaid": {
+    "bloques": 2,
+    "parser_disponible": false,
+    "parser_ejecutado": false,
+    "renderizado_ejecutado": false,
+    "resultado": "revisión estática satisfactoria, sin garantía de parser/renderizado",
+    "motivo": "mmdc ausente en PATH; mermaid y @mermaid-js/mermaid-cli no resolubles desde cwd;no se instaló software ni usó servicio externo",
+    "diagramas": [
+      {
+        "numero": 1,
+        "sha256_fuente": "443d55b07619470383c9ef53a6c1f649cfdf3daca10b5edfc56c1256f7644e54",
+        "tipo": "flowchart TD",
+        "nodos_sin_subgrafos": 11,
+        "subgrafos": 0,
+        "objetos_incluidos_subgrafos": 11,
+        "referencias_de_aristas": 26,
+        "comprobacion_estatica": "delimitadores, comillas, cierres de subgrafos, IDs y referencias consistentes"
+      },
+      {
+        "numero": 2,
+        "sha256_fuente": "87dcb117cf783b61ef5be07825117b5a2d9f405adca4863279848d3742cc6fa5",
+        "tipo": "flowchart TD",
+        "nodos_sin_subgrafos": 13,
+        "subgrafos": 2,
+        "objetos_incluidos_subgrafos": 15,
+        "referencias_de_aristas": 40,
+        "comprobacion_estatica": "delimitadores, comillas, cierres de subgrafos, IDs y referencias consistentes"
+      }
+    ]
+  },
+  "finanzas": {
+    "validacion": "enumeración independiente solo en memoria;no se ejecutó script que reescribe resultado",
+    "catalogo_filas": 15,
+    "catalogo_suma_millones_cop": 18900,
+    "fondo_simulado_millones_cop": 5000,
+    "subconjuntos": 32768,
+    "factibles_incluida_vacia": 1567,
+    "conteo_por_tamano": {
+      "0": 1,
+      "1": 15,
+      "2": 105,
+      "3": 419,
+      "4": 717,
+      "5": 303,
+      "6": 7
+    },
+    "carteras_de_seis": 7,
+    "maximo_condicional": 6,
+    "hipotesis": "máximo una unidad completa por entrada con precio;repetición/elegibilidad/viabilidad pendientes",
+    "costo_minimo_siete_millones_cop": 5800,
+    "A_B_C_D_millones_cop": [
+      4700,
+      4900,
+      4500,
+      5000
+    ],
+    "A_B_C_D_cantidades": [
+      5,
+      5,
+      4,
+      6
+    ],
+    "A_B_C_D_saldos_millones_cop": [
+      300,
+      100,
+      500,
+      0
+    ],
+    "PSA": "1.200 millones por programa de 3 años indivisible; no prorratear al primer año",
+    "ids": "RETO-xx son locales,no códigos MEA confirmados",
+    "cartera_ambiental_aprobada": false,
+    "eficacia_causal_ejecutada": false,
+    "optimo_ambiental_demostrado": false,
+    "E_F_millones_cop": [
+      4800,
+      5000
+    ],
+    "E_F_cantidades": [
+      6,
+      6
+    ],
+    "E_F_saldos_millones_cop": [
+      200,
+      0
+    ],
+    "E_F_rotulos_dimension": [
+      6,
+      6
+    ],
+    "E_F_limite": "Cobertura de seis categorías del catálogo, no eficacia ni superioridad ambiental.",
+    "unidades_directas_excluidas_por_todos_los_siete_maximos": [
+      "RETO-02",
+      "RETO-05",
+      "RETO-06",
+      "RETO-10",
+      "RETO-11",
+      "RETO-12"
+    ],
+    "limite_residual": "Exclusión de unidades de financiación no prueba igual riesgo residual, ausencia de atención o beneficio indirecto nulo.",
+    "A_etiqueta_vigente": "Lista regional de Valles sin SUDS; no presupone antecedentes de verdes/suelos en el corredor."
+  },
+  "pendientes_para_entrega_completa": [
+    "fichas completas A/S/CA/V/R,referencia/intermedio y SSP3-7.0/2060 del corredor",
+    "códigos/fichas/indicadores MEA,unidad/fórmula/línea base/frecuencia/responsable y revisión",
+    "regla de repetición/conteo y elegibilidad territorial/funcional",
+    "localización,actores,continuidad y acuerdos/permisos cuando apliquen",
+    "beneficio comparado con soporte o razonado cualitativo declarado,sin eficacia inventada",
+    "P1/P2/P3 finales,cálculo final,estrés real y revisión independiente de esos artefactos",
+    "ensayo≤7:00,anexo opcional≤2p y entrega antes de 14:00"
+  ],
+  "limites": [
+    "No se aprobó cartera,ejecutó intervención o acreditó reducción del 30% a 2035.",
+    "Rionegro 0,28→0,32 de E p.2 no identifica SSP ni completa contraste oficial.",
+    "Estados demostrado limitados a preparación,no ocho criterios o tres productos cumplidos.",
+    "Harnesses y baselines se atribuyen a registros de entorno;esta auditoría no reejecutó pruebas de apps ni validó DB/backend/persistencia.",
+    "Mermaid solo estático,sin parser/renderizado.",
+    "La verificación corresponde a hashes exactos;un cambio posterior exige actualizarla."
+  ],
+  "acciones_de_esta_auditoria": [
+    "lectura de documentos",
+    "enumeración financiera en memoria",
+    "actualización exclusiva de matriz",
+    "creación ambiente/verificacion_plan_final.json",
+    "Revisión acotada del delta de Claude y actualización del recibo al hash final a4af4e87…"
+  ],
+  "no_ejecutado": [
+    "goal",
+    "cambios de apps",
+    "tmux/SSH de ejecución",
+    "instalaciones",
+    "modelos/proveedores nuevos",
+    "red externa",
+    "edición documento central"
+  ],
+  "revisiones_adicionales": [
+    {
+      "origen": "Muse y editor",
+      "tema": "Filtro de elegibilidad pasa/no pasa/condicionado por unidad",
+      "evidencia": "§3 paso 3; condicionado conserva supuesto y cambia conteo si no se habilita",
+      "estado": "incorporada"
+    },
+    {
+      "origen": "Muse y auditoría independiente",
+      "tema": "Carteras E/F de seis dimensiones",
+      "evidencia": "§5; 4800/5000 millones, seis unidades/rótulos, ambas miembros de los siete máximos",
+      "estado": "verificada financieramente; no aprobada ambientalmente"
+    },
+    {
+      "origen": "Muse y auditoría independiente",
+      "tema": "Unidades excluidas, residual y solapamientos",
+      "evidencia": "§5; 02/05/06/10/11/12 y solapamientos 01/03,07/08,13/14 con límites explícitos",
+      "estado": "incorporada"
+    },
+    {
+      "origen": "Muse",
+      "tema": "Gobernanza territorial y PSA años 2–3",
+      "evidencia": "§7; sitio/competencia/acuerdos, mantenimiento, ejecución, remedición/custodio",
+      "estado": "método incorporado; compromisos pendientes"
+    },
+    {
+      "origen": "Codex remoto Presupuesto Vivo",
+      "tema": "Motor y proxies distintos del objetivo oficial",
+      "evidencia": "§2 y auditoría enlazada; menor conteo, proxy social, multiplicadores y costo de ciclo de vida",
+      "estado": "límites documentados mediante auditoría estática; motor no ejecutado"
+    }
+  ],
+  "delta_final": {
+    "hash_anterior": "93d1d775670b46df02666d3b352339ad9ee4f0be633e8c079a3258b78aae806f",
+    "hash_actual": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
+    "alcance": "Revisión exclusiva del delta final de Claude; se conserva la cobertura de 75 IDs previamente auditada.",
+    "comprobaciones": {
+      "municipio_dimension_factor": true,
+      "no_umbral_oficial_o_maximo_pertinente_cinco": true,
+      "A_es_lista_regional": true,
+      "comparadores_condicionales_5_4700": true,
+      "infraestructura_condicional_no_descartada_solo_por_costo": true,
+      "brechas_afectan_decision": true,
+      "informes_no_atribuidos_al_final": true
+    },
+    "comparadores": {
+      "PSA_y_rondas": {
+        "ids_locales": [
+          "RETO-14",
+          "RETO-03",
+          "RETO-04",
+          "RETO-01",
+          "RETO-05"
+        ],
+        "cantidad": 5,
+        "costo_millones_cop": 4700,
+        "saldo_millones_cop": 300,
+        "estado": "ilustración condicional, no selección ni máximo pertinente"
+      },
+      "SAT_y_rondas": {
+        "ids_locales": [
+          "RETO-14",
+          "RETO-03",
+          "RETO-04",
+          "RETO-13",
+          "RETO-05"
+        ],
+        "cantidad": 5,
+        "costo_millones_cop": 4700,
+        "saldo_millones_cop": 300,
+        "estado": "ilustración condicional, no selección ni máximo pertinente"
+      }
+    },
+    "diagramas": "Fuentes Mermaid idénticas a la versión auditada; se conserva revisión estática, sin parser/renderizado.",
+    "informes_externos": "Claude y Muse recibidos sobre originales y borrador 37fb7d6c…; sus objeciones fueron incorporadas, sin atribuirles revisión del hash final.",
+    "nota_matriz": "Los estados de dominio no cambian. El párrafo de estado de harnesses de la matriz refleja el corte anterior al informe final de Claude; la propuesta y este recibo registran el estado recibido. No se modificó la matriz en esta revisión acotada."
+  }
+}
