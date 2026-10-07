@@ -1,0 +1,1471 @@
+{
+  "title": "Comparación financiera independiente — simulación P2",
+  "computed_at_local": "2026-10-07 10:34 America/Bogota (fase GO indicada por usuario)",
+  "currency": "COP",
+  "unit": "millones de COP, simulados; una unidad funcional completa e indivisible por entrada",
+  "budget_millions_cop": 5000,
+  "independent_recalculation": true,
+  "input_sha256": {
+    "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
+    "caso/comparacion_financiera.json": "2a6d19987ab575474e8981bc65240f33c522263167595211eae0bbf75e50079c",
+    "insumos/texto/RETO CLIMATE WEEK HACKATHON.txt": "49f14da0cdffd01ffd09454e6bb8d2781c3cf4fe546e2064b43d0bb2fe652524"
+  },
+  "inputs": [
+    "caso/catalogo_costos_reto.csv",
+    "caso/comparacion_financiera.json",
+    "insumos/texto/RETO CLIMATE WEEK HACKATHON.txt"
+  ],
+  "rules": {
+    "enumeration": "todos los subconjuntos binarios de 15 entradas locales RETO-01..15",
+    "feasibility": "suma de costos <= 5000; contar subconjuntos incluido el vacío",
+    "objective": "maximizar cantidad de entradas financieramente factibles, no impacto ambiental",
+    "repetition": "se supone a lo sumo una unidad por entrada; el caso permite excepción si CORNARE la indica expresamente; máxima condicionada",
+    "ids": "identificadores locales; no son códigos MEA",
+    "eligibility_sensitivity": "conjuntos directo/ampliado son propuestas analíticas, no regla oficial ni elegibilidad validada",
+    "sbn": "clasificación provisional según descripción de unidad; afinidad SbN es preferencia de cartera híbrida, sin restricción dura ni ponderaciones",
+    "environment": "no se computan eficacia, reducción de vulnerabilidad, GEI ni beneficios monetizados"
+  },
+  "enumeration": {
+    "subsets_examined": 32768,
+    "financially_feasible_including_empty": 1567,
+    "feasible_counts_by_size": {
+      "0": 1,
+      "1": 15,
+      "2": 105,
+      "3": 419,
+      "4": 717,
+      "5": 303,
+      "6": 7,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    "maximum_count": 6,
+    "maximum_sets": [
+      {
+        "ids": [
+          "RETO-03",
+          "RETO-04",
+          "RETO-07",
+          "RETO-08",
+          "RETO-09",
+          "RETO-14"
+        ],
+        "count": 6,
+        "cost_millions_cop": 5000,
+        "balance_millions_cop": 0,
+        "dimensions": {
+          "Biodiversidad": 1,
+          "Recurso hídrico": 1,
+          "Seguridad alimentaria": 2,
+          "Hábitat": 1,
+          "Riesgo de desastres": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "3": "áreas protegidas: conservación institucional",
+          "4": "eficiencia hídrica: habilitante/eficiencia",
+          "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+          "8": "agroecología: agroecosistémica condicionada al diseño",
+          "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+          "14": "conocimiento de riesgo: habilitante"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      },
+      {
+        "ids": [
+          "RETO-01",
+          "RETO-03",
+          "RETO-04",
+          "RETO-08",
+          "RETO-14",
+          "RETO-15"
+        ],
+        "count": 6,
+        "cost_millions_cop": 5000,
+        "balance_millions_cop": 0,
+        "dimensions": {
+          "Biodiversidad": 2,
+          "Recurso hídrico": 1,
+          "Seguridad alimentaria": 1,
+          "Riesgo de desastres": 1,
+          "Salud": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "1": "PSA: habilitante de conservación/restauración (3 años)",
+          "3": "áreas protegidas: conservación institucional",
+          "4": "eficiencia hídrica: habilitante/eficiencia",
+          "8": "agroecología: agroecosistémica condicionada al diseño",
+          "14": "conocimiento de riesgo: habilitante",
+          "15": "salud: capacidad institucional/beneficio sanitario"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      },
+      {
+        "ids": [
+          "RETO-03",
+          "RETO-04",
+          "RETO-07",
+          "RETO-08",
+          "RETO-14",
+          "RETO-15"
+        ],
+        "count": 6,
+        "cost_millions_cop": 4800,
+        "balance_millions_cop": 200,
+        "dimensions": {
+          "Biodiversidad": 1,
+          "Recurso hídrico": 1,
+          "Seguridad alimentaria": 2,
+          "Riesgo de desastres": 1,
+          "Salud": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "3": "áreas protegidas: conservación institucional",
+          "4": "eficiencia hídrica: habilitante/eficiencia",
+          "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+          "8": "agroecología: agroecosistémica condicionada al diseño",
+          "14": "conocimiento de riesgo: habilitante",
+          "15": "salud: capacidad institucional/beneficio sanitario"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      },
+      {
+        "ids": [
+          "RETO-03",
+          "RETO-04",
+          "RETO-07",
+          "RETO-09",
+          "RETO-14",
+          "RETO-15"
+        ],
+        "count": 6,
+        "cost_millions_cop": 5000,
+        "balance_millions_cop": 0,
+        "dimensions": {
+          "Biodiversidad": 1,
+          "Recurso hídrico": 1,
+          "Seguridad alimentaria": 1,
+          "Hábitat": 1,
+          "Riesgo de desastres": 1,
+          "Salud": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "3": "áreas protegidas: conservación institucional",
+          "4": "eficiencia hídrica: habilitante/eficiencia",
+          "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+          "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+          "14": "conocimiento de riesgo: habilitante",
+          "15": "salud: capacidad institucional/beneficio sanitario"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      },
+      {
+        "ids": [
+          "RETO-03",
+          "RETO-04",
+          "RETO-08",
+          "RETO-09",
+          "RETO-14",
+          "RETO-15"
+        ],
+        "count": 6,
+        "cost_millions_cop": 4800,
+        "balance_millions_cop": 200,
+        "dimensions": {
+          "Biodiversidad": 1,
+          "Recurso hídrico": 1,
+          "Seguridad alimentaria": 1,
+          "Hábitat": 1,
+          "Riesgo de desastres": 1,
+          "Salud": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "3": "áreas protegidas: conservación institucional",
+          "4": "eficiencia hídrica: habilitante/eficiencia",
+          "8": "agroecología: agroecosistémica condicionada al diseño",
+          "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+          "14": "conocimiento de riesgo: habilitante",
+          "15": "salud: capacidad institucional/beneficio sanitario"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      },
+      {
+        "ids": [
+          "RETO-03",
+          "RETO-07",
+          "RETO-08",
+          "RETO-09",
+          "RETO-14",
+          "RETO-15"
+        ],
+        "count": 6,
+        "cost_millions_cop": 4900,
+        "balance_millions_cop": 100,
+        "dimensions": {
+          "Biodiversidad": 1,
+          "Seguridad alimentaria": 2,
+          "Hábitat": 1,
+          "Riesgo de desastres": 1,
+          "Salud": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "3": "áreas protegidas: conservación institucional",
+          "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+          "8": "agroecología: agroecosistémica condicionada al diseño",
+          "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+          "14": "conocimiento de riesgo: habilitante",
+          "15": "salud: capacidad institucional/beneficio sanitario"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      },
+      {
+        "ids": [
+          "RETO-03",
+          "RETO-04",
+          "RETO-08",
+          "RETO-13",
+          "RETO-14",
+          "RETO-15"
+        ],
+        "count": 6,
+        "cost_millions_cop": 5000,
+        "balance_millions_cop": 0,
+        "dimensions": {
+          "Biodiversidad": 1,
+          "Recurso hídrico": 1,
+          "Seguridad alimentaria": 1,
+          "Riesgo de desastres": 2,
+          "Salud": 1
+        },
+        "provisional_sbn_type_by_id": {
+          "3": "áreas protegidas: conservación institucional",
+          "4": "eficiencia hídrica: habilitante/eficiencia",
+          "8": "agroecología: agroecosistémica condicionada al diseño",
+          "13": "SAT: habilitante de alerta/preparación",
+          "14": "conocimiento de riesgo: habilitante",
+          "15": "salud: capacidad institucional/beneficio sanitario"
+        },
+        "all_15_catalog_prices_millions_cop": [
+          {
+            "id": "RETO-01",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-02",
+            "cost": 1500
+          },
+          {
+            "id": "RETO-03",
+            "cost": 700
+          },
+          {
+            "id": "RETO-04",
+            "cost": 900
+          },
+          {
+            "id": "RETO-05",
+            "cost": 1300
+          },
+          {
+            "id": "RETO-06",
+            "cost": 1600
+          },
+          {
+            "id": "RETO-07",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-08",
+            "cost": 800
+          },
+          {
+            "id": "RETO-09",
+            "cost": 1000
+          },
+          {
+            "id": "RETO-10",
+            "cost": 1800
+          },
+          {
+            "id": "RETO-11",
+            "cost": 2500
+          },
+          {
+            "id": "RETO-12",
+            "cost": 2000
+          },
+          {
+            "id": "RETO-13",
+            "cost": 1200
+          },
+          {
+            "id": "RETO-14",
+            "cost": 600
+          },
+          {
+            "id": "RETO-15",
+            "cost": 800
+          }
+        ]
+      }
+    ],
+    "seven_cheapest_cost_millions_cop": 5800,
+    "seven_cheapest_prices_millions_cop": [
+      600,
+      700,
+      800,
+      800,
+      900,
+      1000,
+      1000
+    ],
+    "proof": "los 7 precios menores suman > presupuesto, por lo que ningún subconjunto de 7 es factible bajo la unidad única/indivisible por entrada"
+  },
+  "eligibility_sensitivity": [
+    {
+      "label": "financiero_universo_catalogo",
+      "ids_universe": [
+        "RETO-01",
+        "RETO-02",
+        "RETO-03",
+        "RETO-04",
+        "RETO-05",
+        "RETO-06",
+        "RETO-07",
+        "RETO-08",
+        "RETO-09",
+        "RETO-10",
+        "RETO-11",
+        "RETO-12",
+        "RETO-13",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count_universe": 15,
+      "feasible_subsets_including_empty": 1567,
+      "feasible_counts_by_size": {
+        "0": 1,
+        "1": 15,
+        "2": 105,
+        "3": 419,
+        "4": 717,
+        "5": 303,
+        "6": 7
+      },
+      "maximum_count": 6,
+      "all_maximum_sets": [
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-07",
+            "RETO-08",
+            "RETO-09",
+            "RETO-14"
+          ],
+          "count": 6,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 2,
+            "Hábitat": 1,
+            "Riesgo de desastres": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-01",
+            "RETO-03",
+            "RETO-04",
+            "RETO-08",
+            "RETO-14",
+            "RETO-15"
+          ],
+          "count": 6,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 1,
+            "Riesgo de desastres": 1,
+            "Salud": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "1": "PSA: habilitante de conservación/restauración (3 años)",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "14": "conocimiento de riesgo: habilitante",
+            "15": "salud: capacidad institucional/beneficio sanitario"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-07",
+            "RETO-08",
+            "RETO-14",
+            "RETO-15"
+          ],
+          "count": 6,
+          "cost_millions_cop": 4800,
+          "balance_millions_cop": 200,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 2,
+            "Riesgo de desastres": 1,
+            "Salud": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "14": "conocimiento de riesgo: habilitante",
+            "15": "salud: capacidad institucional/beneficio sanitario"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-07",
+            "RETO-09",
+            "RETO-14",
+            "RETO-15"
+          ],
+          "count": 6,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 1,
+            "Hábitat": 1,
+            "Riesgo de desastres": 1,
+            "Salud": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+            "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+            "14": "conocimiento de riesgo: habilitante",
+            "15": "salud: capacidad institucional/beneficio sanitario"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-08",
+            "RETO-09",
+            "RETO-14",
+            "RETO-15"
+          ],
+          "count": 6,
+          "cost_millions_cop": 4800,
+          "balance_millions_cop": 200,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 1,
+            "Hábitat": 1,
+            "Riesgo de desastres": 1,
+            "Salud": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+            "14": "conocimiento de riesgo: habilitante",
+            "15": "salud: capacidad institucional/beneficio sanitario"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-07",
+            "RETO-08",
+            "RETO-09",
+            "RETO-14",
+            "RETO-15"
+          ],
+          "count": 6,
+          "cost_millions_cop": 4900,
+          "balance_millions_cop": 100,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Seguridad alimentaria": 2,
+            "Hábitat": 1,
+            "Riesgo de desastres": 1,
+            "Salud": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+            "14": "conocimiento de riesgo: habilitante",
+            "15": "salud: capacidad institucional/beneficio sanitario"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-08",
+            "RETO-13",
+            "RETO-14",
+            "RETO-15"
+          ],
+          "count": 6,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 1,
+            "Riesgo de desastres": 2,
+            "Salud": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "13": "SAT: habilitante de alerta/preparación",
+            "14": "conocimiento de riesgo: habilitante",
+            "15": "salud: capacidad institucional/beneficio sanitario"
+          }
+        }
+      ],
+      "cheapest_max_plus_one_millions_cop": 5800
+    },
+    {
+      "label": "analitico_directo_propuesto",
+      "ids_universe": [
+        "RETO-01",
+        "RETO-02",
+        "RETO-03",
+        "RETO-04",
+        "RETO-05",
+        "RETO-06",
+        "RETO-10",
+        "RETO-11",
+        "RETO-12",
+        "RETO-13",
+        "RETO-14"
+      ],
+      "count_universe": 11,
+      "feasible_subsets_including_empty": 315,
+      "feasible_counts_by_size": {
+        "0": 1,
+        "1": 11,
+        "2": 55,
+        "3": 139,
+        "4": 100,
+        "5": 9
+      },
+      "maximum_count": 5,
+      "all_maximum_sets": [
+        {
+          "ids": [
+            "RETO-01",
+            "RETO-02",
+            "RETO-03",
+            "RETO-04",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 4900,
+          "balance_millions_cop": 100,
+          "dimensions": {
+            "Biodiversidad": 3,
+            "Recurso hídrico": 1,
+            "Riesgo de desastres": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "1": "PSA: habilitante de conservación/restauración (3 años)",
+            "2": "restauración de ecosistemas: SbN directa",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-01",
+            "RETO-03",
+            "RETO-04",
+            "RETO-05",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 4700,
+          "balance_millions_cop": 300,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 2,
+            "Riesgo de desastres": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "1": "PSA: habilitante de conservación/restauración (3 años)",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "5": "restauración de rondas: SbN directa",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-02",
+            "RETO-03",
+            "RETO-04",
+            "RETO-05",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 2,
+            "Riesgo de desastres": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "2": "restauración de ecosistemas: SbN directa",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "5": "restauración de rondas: SbN directa",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-01",
+            "RETO-03",
+            "RETO-04",
+            "RETO-06",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 2,
+            "Riesgo de desastres": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "1": "PSA: habilitante de conservación/restauración (3 años)",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "6": "protección de cabeceras: SbN directa",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-01",
+            "RETO-03",
+            "RETO-04",
+            "RETO-13",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 4600,
+          "balance_millions_cop": 400,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 1,
+            "Riesgo de desastres": 2
+          },
+          "provisional_sbn_type_by_id": {
+            "1": "PSA: habilitante de conservación/restauración (3 años)",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "13": "SAT: habilitante de alerta/preparación",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-02",
+            "RETO-03",
+            "RETO-04",
+            "RETO-13",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 4900,
+          "balance_millions_cop": 100,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 1,
+            "Riesgo de desastres": 2
+          },
+          "provisional_sbn_type_by_id": {
+            "2": "restauración de ecosistemas: SbN directa",
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "13": "SAT: habilitante de alerta/preparación",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-01",
+            "RETO-03",
+            "RETO-05",
+            "RETO-13",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 2,
+            "Recurso hídrico": 1,
+            "Riesgo de desastres": 2
+          },
+          "provisional_sbn_type_by_id": {
+            "1": "PSA: habilitante de conservación/restauración (3 años)",
+            "3": "áreas protegidas: conservación institucional",
+            "5": "restauración de rondas: SbN directa",
+            "13": "SAT: habilitante de alerta/preparación",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-05",
+            "RETO-13",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 4700,
+          "balance_millions_cop": 300,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 2,
+            "Riesgo de desastres": 2
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "5": "restauración de rondas: SbN directa",
+            "13": "SAT: habilitante de alerta/preparación",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        },
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-06",
+            "RETO-13",
+            "RETO-14"
+          ],
+          "count": 5,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 2,
+            "Riesgo de desastres": 2
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "6": "protección de cabeceras: SbN directa",
+            "13": "SAT: habilitante de alerta/preparación",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        }
+      ],
+      "cheapest_max_plus_one_millions_cop": 5900
+    },
+    {
+      "label": "ampliado_propuesto_sin_salud15",
+      "ids_universe": [
+        "RETO-01",
+        "RETO-02",
+        "RETO-03",
+        "RETO-04",
+        "RETO-05",
+        "RETO-06",
+        "RETO-07",
+        "RETO-08",
+        "RETO-09",
+        "RETO-10",
+        "RETO-11",
+        "RETO-12",
+        "RETO-13",
+        "RETO-14"
+      ],
+      "count_universe": 14,
+      "feasible_subsets_including_empty": 1045,
+      "feasible_counts_by_size": {
+        "0": 1,
+        "1": 14,
+        "2": 91,
+        "3": 330,
+        "4": 470,
+        "5": 138,
+        "6": 1
+      },
+      "maximum_count": 6,
+      "all_maximum_sets": [
+        {
+          "ids": [
+            "RETO-03",
+            "RETO-04",
+            "RETO-07",
+            "RETO-08",
+            "RETO-09",
+            "RETO-14"
+          ],
+          "count": 6,
+          "cost_millions_cop": 5000,
+          "balance_millions_cop": 0,
+          "dimensions": {
+            "Biodiversidad": 1,
+            "Recurso hídrico": 1,
+            "Seguridad alimentaria": 2,
+            "Hábitat": 1,
+            "Riesgo de desastres": 1
+          },
+          "provisional_sbn_type_by_id": {
+            "3": "áreas protegidas: conservación institucional",
+            "4": "eficiencia hídrica: habilitante/eficiencia",
+            "7": "reconversión de suelos: agroecosistémica condicionada al diseño",
+            "8": "agroecología: agroecosistémica condicionada al diseño",
+            "9": "espacios verdes: SbN urbana si diseño ecosistémico",
+            "14": "conocimiento de riesgo: habilitante"
+          }
+        }
+      ],
+      "cheapest_max_plus_one_millions_cop": 6200
+    }
+  ],
+  "comparators_recomputed": {
+    "A": {
+      "ids": [
+        "RETO-01",
+        "RETO-04",
+        "RETO-09",
+        "RETO-07",
+        "RETO-14"
+      ],
+      "count": 5,
+      "cost_millions_cop": 4700,
+      "balance_millions_cop": 300,
+      "feasible": true,
+      "matches_contrast_record": true
+    },
+    "B": {
+      "ids": [
+        "RETO-01",
+        "RETO-02",
+        "RETO-03",
+        "RETO-04",
+        "RETO-14"
+      ],
+      "count": 5,
+      "cost_millions_cop": 4900,
+      "balance_millions_cop": 100,
+      "feasible": true,
+      "matches_contrast_record": true
+    },
+    "C": {
+      "ids": [
+        "RETO-10",
+        "RETO-01",
+        "RETO-04",
+        "RETO-14"
+      ],
+      "count": 4,
+      "cost_millions_cop": 4500,
+      "balance_millions_cop": 500,
+      "feasible": true,
+      "matches_contrast_record": true
+    },
+    "D": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-09",
+        "RETO-07",
+        "RETO-14"
+      ],
+      "count": 6,
+      "cost_millions_cop": 5000,
+      "balance_millions_cop": 0,
+      "feasible": true,
+      "matches_contrast_record": true
+    },
+    "E": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-08",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 4800,
+      "balance_millions_cop": 200,
+      "feasible": true,
+      "matches_contrast_record": true
+    },
+    "F": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-07",
+        "RETO-09",
+        "RETO-14",
+        "RETO-15"
+      ],
+      "count": 6,
+      "cost_millions_cop": 5000,
+      "balance_millions_cop": 0,
+      "feasible": true,
+      "matches_contrast_record": true
+    },
+    "N1": {
+      "ids": [
+        "RETO-01",
+        "RETO-03",
+        "RETO-04",
+        "RETO-05",
+        "RETO-14"
+      ],
+      "count": 5,
+      "cost_millions_cop": 4700,
+      "balance_millions_cop": 300,
+      "feasible": true,
+      "dimensions": {
+        "Biodiversidad": 2,
+        "Recurso hídrico": 2,
+        "Riesgo de desastres": 1
+      },
+      "provisional_sbn_type_by_id": {
+        "1": "PSA: habilitante de conservación/restauración (3 años)",
+        "3": "áreas protegidas: conservación institucional",
+        "4": "eficiencia hídrica: habilitante/eficiencia",
+        "5": "restauración de rondas: SbN directa",
+        "14": "conocimiento de riesgo: habilitante"
+      }
+    },
+    "N2": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-05",
+        "RETO-13",
+        "RETO-14"
+      ],
+      "count": 5,
+      "cost_millions_cop": 4700,
+      "balance_millions_cop": 300,
+      "feasible": true,
+      "dimensions": {
+        "Biodiversidad": 1,
+        "Recurso hídrico": 2,
+        "Riesgo de desastres": 2
+      },
+      "provisional_sbn_type_by_id": {
+        "3": "áreas protegidas: conservación institucional",
+        "4": "eficiencia hídrica: habilitante/eficiencia",
+        "5": "restauración de rondas: SbN directa",
+        "13": "SAT: habilitante de alerta/preparación",
+        "14": "conocimiento de riesgo: habilitante"
+      }
+    },
+    "N3": {
+      "ids": [
+        "RETO-01",
+        "RETO-03",
+        "RETO-04",
+        "RETO-13",
+        "RETO-14"
+      ],
+      "count": 5,
+      "cost_millions_cop": 4600,
+      "balance_millions_cop": 400,
+      "feasible": true,
+      "dimensions": {
+        "Biodiversidad": 2,
+        "Recurso hídrico": 1,
+        "Riesgo de desastres": 2
+      },
+      "provisional_sbn_type_by_id": {
+        "1": "PSA: habilitante de conservación/restauración (3 años)",
+        "3": "áreas protegidas: conservación institucional",
+        "4": "eficiencia hídrica: habilitante/eficiencia",
+        "13": "SAT: habilitante de alerta/preparación",
+        "14": "conocimiento de riesgo: habilitante"
+      }
+    },
+    "critical_infra_11": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-11",
+        "RETO-14"
+      ],
+      "count": 4,
+      "cost_millions_cop": 4700,
+      "balance_millions_cop": 300,
+      "feasible": true,
+      "dimensions": {
+        "Biodiversidad": 1,
+        "Recurso hídrico": 1,
+        "Infraestructura": 1,
+        "Riesgo de desastres": 1
+      },
+      "provisional_sbn_type_by_id": {
+        "3": "áreas protegidas: conservación institucional",
+        "4": "eficiencia hídrica: habilitante/eficiencia",
+        "11": "infraestructura resiliente: infraestructura gris/híbrida según solución",
+        "14": "conocimiento de riesgo: habilitante"
+      }
+    },
+    "critical_infra_12": {
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-12",
+        "RETO-14"
+      ],
+      "count": 4,
+      "cost_millions_cop": 4200,
+      "balance_millions_cop": 800,
+      "feasible": true,
+      "dimensions": {
+        "Biodiversidad": 1,
+        "Recurso hídrico": 1,
+        "Infraestructura": 1,
+        "Riesgo de desastres": 1
+      },
+      "provisional_sbn_type_by_id": {
+        "3": "áreas protegidas: conservación institucional",
+        "4": "eficiencia hídrica: habilitante/eficiencia",
+        "12": "infraestructura/servicios: infraestructura gris/híbrida según solución",
+        "14": "conocimiento de riesgo: habilitante"
+      }
+    }
+  },
+  "arithmetic_checks": {
+    "cost_cop_equals_millions_times_1e6": true,
+    "row_count": 15,
+    "unique_local_ids": true,
+    "all_costs_positive": true,
+    "maximum_sets_count": 7,
+    "feasible_count_distribution_sums": true
+  },
+  "warnings": [
+    "Máximo 6 es resultado financiero condicionado a una unidad completa por cada entrada y a no repetir; la regla de repetición oficial no está aclarada.",
+    "Ni los máximos financieros ni la cantidad de intervenciones equivalen a un óptimo ambiental.",
+    "P2 nativo decide elegibilidad, naturaleza, ubicación y pertinencia con evidencia institucional MEA y territorial; nueva evidencia puede alterar universos y decisiones.",
+    "07/08/09 se excluyen del escenario directo propuesto; incluirlos en el ampliado requiere documentar problema, sitio y función distintos para evitar solapamiento.",
+    "La afinidad por SbN en cartera híbrida es orientación, no filtro rígido. SUDS puede ser híbrido; 11/12 se incluyen como variantes de infraestructura sin afirmar superioridad ambiental.",
+    "No convertir efectos, porcentajes de reducción de vulnerabilidad, GEI ni inversiones históricas en beneficios/costos oficiales.",
+    "El comparador antecedente regional de seis unidades supera el presupuesto: 6500 millones, déficit 1500."
+  ],
+  "contrast_only": {
+    "previous_file_sha256": "2a6d19987ab575474e8981bc65240f33c522263167595211eae0bbf75e50079c",
+    "comparison": "se compararon precios/subconjuntos previamente registrados; resultados independientes calculados desde CSV; el archivo previo no fue fuente de cifras."
+  }
+}

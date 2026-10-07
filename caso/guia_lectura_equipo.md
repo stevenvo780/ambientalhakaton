@@ -5,7 +5,14 @@ web canónica: https://hackathon-ambiental.stevenvallejo.com. Cada archivo trae
 enlace absoluto de lectura (blob) y de texto (raw); las fuentes versionadas se
 citan por GitHub/raw `dev`.
 
-## Estado público verificado (snapshot, no tiempo real)
+## Nota GO 10:34 (sin re-auditoría)
+
+GO explícito recibido 2026-10-07 10:34 Bogotá: goal ACTIVA, ya no rige esperar
+GO. `dev` pública ya contiene esta FAQ/guía (commit usuario `163df69`; `dev`
+`5e98676` reportado por editor). README actual en `dev`: 34 KB. Web canónica:
+https://hackathon-ambiental.stevenvallejo.com.
+
+## Estado público verificado (snapshot histórico 10:29, no tiempo real)
 
 - `dev` HEAD `5c3184524ccd4620573cd2c18a90a7b4edf26bf7`, padre `427c6e5`,
   2026-10-07 10:17 Bogotá.

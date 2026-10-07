@@ -1,5 +1,7 @@
 # Preguntas frecuentes del equipo: reto CORNARE
 
+> **Nota de estado, 10:34 (Bogotá):** se recibió el **GO explícito** y, según coordinación, la goal está **ACTIVA**. Ya no rige la instrucción de esperar el GO. Las respuestas marcadas "*Instantánea previa al GO*" se conservan como registro histórico.
+
 **Lectura:** 7 de octubre de 2026, 10:27–10:31 (Bogotá). Versiones leídas:
 
 | Archivo | Hora | SHA-256 |
@@ -90,11 +92,11 @@ No. Las pruebas unitarias (419 en Presupuesto Vivo, 252 en Territorio Vivo) y la
 
 **11. ¿Ya empezó la ejecución? ¿Lo que está en local ya está publicado?**
 
-No a las dos cosas. La goal está preparada pero **inactiva**: requiere el GO explícito del usuario.
+**Estado actual (10:34):** sí. Se recibió el GO explícito y la goal está activa, según coordinación. El GO volvió a autorizar a un único publicador de Git, el redactor delegado `afinar_plan_final`. Ningún otro agente hace add, commit, push ni cambios por API: entregan la lista de archivos con sus SHA.
 
-Los archivos locales **no se publican solos**. Git lo maneja **el usuario**: los agentes no hacen add, commit, push ni cambios por API; solo entregan la lista de archivos con sus SHA.
+*Instantánea previa al GO (10:27–10:42):* la goal estaba preparada pero inactiva, y Git dependía solo del usuario.
 
-Para comparar la versión local con la publicada, use el **hash del contenido** además de la hora. Que la hora de modificación sea posterior no demuestra que el contenido haya cambiado.
+Los archivos locales **no se publican solos**. Para comparar la versión local con la publicada, use el **hash del contenido** además de la hora. Que la hora de modificación sea posterior no demuestra que el contenido haya cambiado.
 
 **12. ¿Dónde leemos el material y cómo lo usamos en un Proyecto de ChatGPT?**
 
@@ -102,6 +104,8 @@ La web canónica es <https://hackathon-ambiental.stevenvallejo.com>. Para las fu
 
 - vista: <https://github.com/stevenvo780/ambientalhakaton/blob/dev/>
 - texto plano: <https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/>
+
+Según lo reportado por coordinación, la rama `dev` pública ya contiene esta FAQ (commit del usuario `163df69`; el editor reporta `dev` en `5e98676`). El README actual de `dev` pesa unos 34 KB. No lo verifiqué en línea.
 
 La rama `main` empezó solo con el README. Ese era su estado inicial: según el coordinador, a las 15:27 UTC (commit `27f5842`) `main` ya tenía también documentos del caso. **No describa el repositorio como vacío.** Antes de citar `main`, compruebe qué contiene en ese momento.
 
