@@ -1,14 +1,14 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T16:39:05Z",
+  "updated_at": "2026-10-07T16:42:04Z",
   "timezone": "America/Bogota",
-  "titulo": "Ejecución reanudada · P1 entregado; P2 y P3 en revisión",
-  "detalle": "P1 está entregado con datos institucionales y hallazgos trazados; su presencia no implica validación ambiental. La comparación financiera P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; no es un óptimo ambiental. P3 y sus variables constan como borrador D6 provisional en revisión. Eficacia causal, delta V y robustez completa siguen sin demostrarse. Las condiciones de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta. La decisión D6 y la elegibilidad, repetición, cupos y seguimiento requieren confirmación.",
+  "titulo": "P1 entregado; P2 y P3 en revisión",
+  "detalle": "P1 presenta datos institucionales y hallazgos trazados, pero su presencia no implica validación ambiental. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables constan como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta. Siguen pendientes confirmar la elegibilidad, repetición y cupos de D6, e integrar y revisar los entregables.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/f4f07f11babbdf1e91767fbcc4b63bfd9ada858f/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -89,26 +89,26 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T16:39:05Z"
+    "comprobado_utc": "2026-10-07T16:42:04Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
-    "Confirmar elegibilidad, repetición y cupos de D6, incluido el conocimiento regional.",
+    "Confirmar elegibilidad, repetición y cupos de D6.",
     "Integrar y revisar P2/P3, pitch y seguimiento.",
     "Resolver el alcance de autorización y reproducción de M-E-2411 B7.",
     "Mantener eficacia, delta V y robustez como no demostradas."
   ],
   "summary": [
     "P1 entregado; no valida ambientalmente una cartera.",
-    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; no es óptimo ambiental.",
+    "P2: 32.768 subconjuntos; 1.567 factibles; máximo de seis, bajo el supuesto de una unidad por catálogo.",
     "P3 y variables presentes como borrador D6 provisional, en revisión.",
     "Eficacia, delta V y robustez completa no demostradas.",
     "Uso y reproducción de M-E-2411 B7 en revisión; acceso público no equivale a licencia abierta."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T16:39:05Z",
-  "source_commit": "f4f07f11babbdf1e91767fbcc4b63bfd9ada858f",
-  "source_captured_at": "2026-10-07T16:38:44Z",
+  "checked_at": "2026-10-07T16:42:04Z",
+  "source_commit": "8f5815bd5e2ca867f51d309703bd35df81cd8de9",
+  "source_captured_at": "2026-10-07T16:41:44Z",
   "source_was_current_at_publication": true,
-  "head_before_publication": "f4f07f11babbdf1e91767fbcc4b63bfd9ada858f"
+  "head_before_publication": "8f5815bd5e2ca867f51d309703bd35df81cd8de9"
 }
