@@ -1,10 +1,10 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T15:39:26.000583+00:00",
+  "updated_at": "2026-10-07T15:57:49.328677+00:00",
   "timezone": "America/Bogota",
   "titulo": "GO recibido · ejecución ambiental en curso",
-  "detalle": "El usuario autorizó resolver el reto. Ejecutores delegados recuperan datos oficiales y preparan P1, P2 y P3; aún no hay cartera ambientalmente validada.",
-  "goal_activada": false,
+  "detalle": "GO real y goal activa registrados. P1 entregó 21 perfiles/357 registros oficiales; comparación financiera independiente completada. Elegibilidad de cartera P2, residual P3 y eficacia/robustez ambiental siguen en revisión.",
+  "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
@@ -35,17 +35,52 @@
       "titulo": "GO explícito y ejecución iniciada",
       "estado": "en_curso",
       "detalle": "Lectura de datos oficiales, diagnóstico P1, cartera P2 y residual P3 asignados a delegados. Root solo orquesta. Productos, eficacia y robustez SSP siguen pendientes."
+    },
+    {
+      "titulo": "GO y goal activa comprobados contra registro",
+      "estado": "demostrado_registro",
+      "fecha": "2026-10-07T15:57:49.328677+00:00",
+      "detalle": "estado_orquestacion registra goal activada, create_goal usado y estado_tool active. No equivale a productos ambientales completos.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json"
+    },
+    {
+      "titulo": "Perfiles municipales oficiales",
+      "estado": "artefacto_entregado",
+      "fecha": "2026-10-07T15:57:49.328677+00:00",
+      "detalle": "21 perfiles y 357 registros institucionales conservan celdas, valores cacheados y escenarios. No eficacia de cartera.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/datos_oficiales.json",
+      "sha256": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232"
+    },
+    {
+      "titulo": "Diagnóstico P1 entregado",
+      "estado": "artefacto_entregado",
+      "fecha": "2026-10-07T15:57:49.328677+00:00",
+      "detalle": "Interpretación oficial entregada por dueño P1; conserva brechas y diferencias de fuentes.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.md",
+      "sha256": "fea2d983c68b67643708707c2348523a3af9221e896329a257d820d69393857f"
+    },
+    {
+      "titulo": "Comparación financiera independiente",
+      "estado": "artefacto_entregado",
+      "fecha": "2026-10-07T15:57:49.328677+00:00",
+      "detalle": "32768 subconjuntos: 1567 factibles, 7 máximas de 6; condicionado a una unidad por entrada. No óptimo ambiental.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json",
+      "sha256": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45"
     }
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
-  "source_updated_at": "2026-10-07T15:31:34.726880+00:00",
+  "source_updated_at": "2026-10-07T15:45:05.987705+00:00",
   "source_branch": "dev",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "go_recibido": true,
   "ejecucion_autorizada": true,
   "registro_create_goal": {
-    "estado": "pendiente_de_confirmacion",
-    "fuente": "El GO fue explícito; el último registro de orquestación disponible aún era anterior al GO."
-  }
+    "estado": "active",
+    "herramienta_create_goal_usada": true,
+    "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
+    "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
+    "comprobado_utc": "2026-10-07T15:57:49.328677+00:00"
+  },
+  "source_repo": "https://github.com/stevenvo780/ambientalhakaton"
 }
