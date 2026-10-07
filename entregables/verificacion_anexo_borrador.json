@@ -105,7 +105,12 @@
     }
   ],
   "publication_target": "main",
-  "matrix_sha256": "e7805c969d674850c5abebb0330542286b346e462de0760643398c221fee32ba",
+  "matrix_sha256": "25bc880e69a5ce438ffa0cddd56460f82429efb70c76ec9ab3395cb3234ce0ae",
   "editorial_audit_at_bogota": "2026-10-07T12:52:40.959329-05:00",
-  "editorial_audit_note": "I06condicional:21perfiles no son resumen histórico fechado;Q02:14sóloRionegro. PDF/MD/fuentes científicas/contenidooral idénticos; no nueva inspección ni aval pretendidos."
+  "editorial_audit_note": "I06condicional:21perfiles no son resumen histórico fechado;Q02:14sóloRionegro. PDF/MD/fuentes científicas/contenidooral idénticos; no nueva inspección ni aval pretendidos.",
+  "post_export_supplement": {
+    "P1_sha256": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
+    "scope": "3reportes históricos primarios contexto parcial; I06COND39/35/1; no cambia21perfiles/357registros/5hallazgos/D6/PDF; fuenteP1delPDF permanece corteanterior d7d935",
+    "PDF_unchanged": true
+  }
 }

@@ -2,7 +2,7 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md",
-  "source_sha256": "e7805c969d674850c5abebb0330542286b346e462de0760643398c221fee32ba",
+  "source_sha256": "25bc880e69a5ce438ffa0cddd56460f82429efb70c76ec9ab3395cb3234ce0ae",
   "scope": "Cierre material antes14. P1d7d935/P2v3.3/P3v6 congelados; PDF único2p y lectura documental independiente V4.3, actual sólo espacios inspeccionados. HorizonteSSP3 cerrado;14R600/12meses propuesta; máximo financiero cupo1condicionado y cupo3hipotético. SóloF01 pendiente humano14–16;34condiciones no eficacia/adopción/eligibilidad demostradas.",
   "items": [
     {
@@ -513,7 +513,7 @@
       "id": "I06",
       "regla_fuente": "Resumen de eventos históricos relevantes. E p.3 §3.",
       "accion": "Obtener eventos con tipo, fecha, territorio y fuente; usarlos como evidencia de contexto.",
-      "evidencia": "Resumen desagregado no localizado. P1-H3 y secciónFaltantes decisivos conservan ausencia de eventos con fecha/ubicación; revision_documentos.md, tabla de insumosfaltantes, separa climatología1994–2024 de serie de incidentes. Los21perfiles/357registros son índices municipales, no inventario histórico de eventos.",
+      "evidencia": "Contexto parcial añadido porP1, SHA6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142, secciónAntecedentes históricos:3reportes primarios separados. Guarne:suceso27abr2024/reporte29abr, lluvias/granizada y afectacionesvías/techos. Marinilla:DAGRAN10ene2023, crecienteElChocho, fecha exacta delsucesoNA. Rionegro:CORNARE12abr2025, inundación, fecha exacta/consecuencia localdesagregadaNA. Fuentes/localizadores enP1; PDFGuarne040f6134… cotejado. No inventario comparable completo, recurrencia/retorno, atribución climática o eficaciaD6.",
       "validacion": "Cobertura y fechas comprobadas; las categorías de amenaza de EX/AM no se convierten en un inventario completo de eventos o recurrencia.",
       "responsable": "DA",
       "estado": "condicional"
@@ -681,7 +681,7 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T17:52:40.955036+00:00",
+  "updated_at": "2026-10-07T18:00:00.941616+00:00",
   "counts": {
     "condicional": 35,
     "demostrado": 39,
