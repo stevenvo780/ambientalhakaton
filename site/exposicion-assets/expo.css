@@ -447,7 +447,11 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   body[data-vista="presentacion"] .leyenda-unidades li{grid-template-columns:.7rem 1.9rem minmax(0,1fr);gap:.1rem .35rem;font-size:.74rem;padding:.12rem 0}
   body[data-vista="presentacion"] .leyenda-unidades .num{grid-column:3;text-align:left}
   body[data-vista="presentacion"] .ssp{max-height:56vh}
-  body[data-vista="presentacion"] .escalera{height:8.5rem;margin:.3rem 0 .1rem}
+  body[data-vista="presentacion"] .escalera{height:8.5rem;margin:.3rem 0 .1rem;perspective:none}
+  /* Equivalente fijo en 2D: los cuatro peldaños quedan dentro de su caja, sin rotación ni movimiento. */
+  body[data-vista="presentacion"] .escalera .pl{transform:none;animation:none}
+  body[data-vista="presentacion"] .esc{left:calc(var(--i) * 25%);top:calc(58% - var(--i) * 18%);width:24%;height:38%;transform:none}
+  body[data-vista="presentacion"] .escalera+.fuente{position:relative;z-index:1}
   body[data-vista="presentacion"] .max.grande .pila{height:2.2rem}
   body[data-vista="presentacion"] .comp{gap:.4rem}
   body[data-vista="presentacion"] .comp .max.d6{margin-bottom:1.25rem}
