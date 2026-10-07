@@ -1,0 +1,218 @@
+{
+  "quota": {
+    "capturedAt": "2026-10-07T15:35:16.801Z",
+    "scope": "Kratos; no confirma Fedora ni ws-steven",
+    "providers": {
+      "claude#1": {
+        "ok": false,
+        "windows": []
+      },
+      "claude#2": {
+        "ok": false,
+        "windows": []
+      },
+      "claude#3": {
+        "ok": false,
+        "windows": []
+      },
+      "codex1": {
+        "ok": false,
+        "windows": []
+      },
+      "codex200": {
+        "ok": false,
+        "windows": []
+      },
+      "gemini#1": {
+        "ok": true,
+        "ageSeconds": 14,
+        "windows": [
+          {
+            "label": "5 horas",
+            "remainingPercent": 99
+          },
+          {
+            "label": "semanal",
+            "remainingPercent": 99
+          },
+          {
+            "label": "5 horas",
+            "remainingPercent": 100
+          },
+          {
+            "label": "semanal",
+            "remainingPercent": 100
+          }
+        ]
+      },
+      "gemini#2": {
+        "ok": true,
+        "ageSeconds": 5,
+        "windows": [
+          {
+            "label": "5 horas",
+            "remainingPercent": 100
+          },
+          {
+            "label": "semanal",
+            "remainingPercent": 71
+          },
+          {
+            "label": "5 horas",
+            "remainingPercent": 100
+          },
+          {
+            "label": "semanal",
+            "remainingPercent": 100
+          }
+        ]
+      },
+      "minimax": {
+        "ok": true,
+        "ageSeconds": 12,
+        "windows": [
+          {
+            "label": "general 5h",
+            "remainingPercent": 100,
+            "status": 1
+          },
+          {
+            "label": "general sem",
+            "remainingPercent": 82,
+            "status": 1
+          }
+        ]
+      }
+    }
+  },
+  "catalogo_fedora": {
+    "scope": "Fedora local",
+    "queried_at_utc": "2026-10-07T15:35:16Z",
+    "selected_new_routes": false,
+    "routes": [
+      {
+        "model": "claude/fable",
+        "provider": "claude",
+        "cli": "claude",
+        "cli_detected": true,
+        "native": "claude-fable-5-1"
+      },
+      {
+        "model": "claude/haiku",
+        "provider": "claude",
+        "cli": "claude",
+        "cli_detected": true,
+        "native": "haiku"
+      },
+      {
+        "model": "claude/opus",
+        "provider": "claude",
+        "cli": "claude",
+        "cli_detected": true,
+        "native": "opus"
+      },
+      {
+        "model": "claude/sonnet",
+        "provider": "claude",
+        "cli": "claude",
+        "cli_detected": true,
+        "native": "sonnet"
+      },
+      {
+        "model": "codex/gpt-5.3-codex-spark",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-5.3-codex-spark"
+      },
+      {
+        "model": "codex/gpt-5.6-luna",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-5.6-luna"
+      },
+      {
+        "model": "codex/gpt-5.6-sol",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-5.6-sol"
+      },
+      {
+        "model": "codex/gpt-5.6-terra",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-5.6-terra"
+      },
+      {
+        "model": "codex/gpt-6-astra",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-6-astra"
+      },
+      {
+        "model": "codex/gpt-6-luna",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-6-luna"
+      },
+      {
+        "model": "codex/gpt-6-sol",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-6-sol"
+      },
+      {
+        "model": "codex/gpt-6.1-sol",
+        "provider": "codex",
+        "cli": "codex",
+        "cli_detected": true,
+        "native": "gpt-6.1-sol"
+      },
+      {
+        "model": "gemini/3.1-pro",
+        "provider": "gemini",
+        "cli": "agy",
+        "cli_detected": true,
+        "native": "pro"
+      },
+      {
+        "model": "gemini/3.7-flash",
+        "provider": "gemini",
+        "cli": "agy",
+        "cli_detected": true,
+        "native": "Gemini 3.7 Flash (Medium)"
+      },
+      {
+        "model": "gemini/3.8-flash",
+        "provider": "gemini",
+        "cli": "agy",
+        "cli_detected": true,
+        "native": "Gemini 3.8 Flash (Medium)"
+      },
+      {
+        "model": "gemini/flash",
+        "provider": "gemini",
+        "cli": "agy",
+        "cli_detected": true,
+        "native": "flash"
+      },
+      {
+        "model": "gemini/pro",
+        "provider": "gemini",
+        "cli": "agy",
+        "cli_detected": true,
+        "native": "pro"
+      }
+    ]
+  },
+  "sondeo_codex_local_habilitado": false,
+  "failover": false,
+  "remote_route": "SSH ws-steven; cuatro sesiones Codex existentes, dev/perfil heredado",
+  "remote_quota": "DESCONOCIDA"
+}

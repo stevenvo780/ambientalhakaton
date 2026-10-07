@@ -1,13 +1,13 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T15:26:02.679947+00:00",
-  "updated_at_bogota": "2026-10-07T10:26:02.679947-05:00",
+  "updated_at_utc": "2026-10-07T15:31:34.726880+00:00",
+  "updated_at_bogota": "2026-10-07T10:31:34.726880-05:00",
   "timezone": "America/Bogota",
   "estado": "preparacion_lista_goal_pendiente_GO",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
     "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
-    "sha256": "162171efba3971c7df9ab9121355f0c8ad63495dc6fdfbb131dc961ac81e9470",
+    "sha256": "0ff8940dc8ea73865d4aef50e3adcf9168e28bad2db683b60660115ca6c795c7",
     "preparada": true,
     "activada": false,
     "herramienta_create_goal_usada": false,
@@ -28,7 +28,7 @@
     "nativos_ejecutores_maximos": 4,
     "claude_muse": "locales; evaluaciones previas recibidas, FAQ/guía activas según coordinación",
     "gemini": "local; pendiente autenticacion, sin inferencia atribuida",
-    "gpt_6_luna": "QA local en cola según coordinación, sin ejecución acreditada",
+    "gpt_6_luna": "QA local respondida en 39,3 s según coordinación; no prueba infraestructura remota",
     "codex_remotos": "solo sesiones existentes; worktrees aislados",
     "cuotas": "disponibilidad local no confirmada; sin failover"
   },
@@ -116,6 +116,8 @@
     "protocolo": "artefacto terminado+lista exacta+SHA → usuario publica → HEAD y archivos al escritor web → lote JSON al usuario",
     "privacidad": "solo whitelist sin secretos, rutas personales, IP privada, TUI o perfiles",
     "mutaciones_git_por_agentes_autorizadas": false,
-    "rama_documentos": "dev"
+    "rama_documentos": "dev",
+    "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
+    "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos"
   }
 }

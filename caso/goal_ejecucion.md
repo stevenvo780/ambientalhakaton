@@ -2,6 +2,8 @@
 
 **Estado: preparada, INACTIVA; requiere el GO explícito del usuario.** Este archivo no activa `create_goal`, no reanuda goals antiguas y no autoriza implementar aplicaciones. Preparación registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
 
+Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.stevenvallejo.com). El repositorio de trabajo permanece en la rama `dev`; la publicación Git corresponde al usuario.
+
 **Objetivo para activar tras GO:** resolver la pregunta ambiental del corredor Rionegro–Guarne–Marinilla y entregar una decisión de adaptación defendible, reproducible y monitoreable: P1, P2, P3 y pitch, aprovechando **Presupuesto Vivo como principal** y **Territorio Vivo como apoyo de evidencia territorial/seguimiento**. El éxito corresponde a la decisión y sus razones, no a completar un software.
 
 Base de trabajo: [propuesta principal](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/propuesta_principal.md), [75 requisitos](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md), [catálogo](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/catalogo_costos_reto.csv), [comparación financiera](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparacion_financiera.json) y [script reproducible](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparar_presupuesto.py). Versión preparatoria central: `a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767`; los cambios de publicación se registran por commit. Los originales oficiales gobiernan; el documento central no los sustituye.
@@ -19,7 +21,7 @@ Root **solo orquesta**: asigna, recibe evidencia, resuelve discrepancias y decid
 | Adaptación/cálculo de Presupuesto Vivo | Codex del tmux remoto EXISTENTE `PresupuestoVivo`; solo cambios indispensables expresamente asignados, en su worktree/ramas de tarea. |
 | Territorio, procedencia y MEA de apoyo | Codex remoto EXISTENTE `EfectoDomio` = Territorio Vivo; worktree independiente. |
 | Crítica independiente | Claude y Muse **locales**: evaluación, FAQ/guía acotadas según asignación; cada uno escribe solo su archivo, con versión y objeciones. |
-| Apoyo acotado de cobertura/consistencia | GPT-6-Luna local solicitado: QA en cola según coordinación, sin ejecución acreditada ni quinto slot nativo. |
+| Apoyo acotado de cobertura/consistencia | GPT-6-Luna: QA local respondida en 39,3 s según coordinación; no acredita runtime remoto ni añade un quinto slot nativo. |
 | Revisión adicional MEA/escenarios | Gemini **local**, solo después de login oficial y catálogo verificado; pendiente, sin sustitución remota. |
 | Publicación y estado | El usuario es el único responsable Git; los redactores entregan lotes/SHA y el dueño web actualiza estado tras su publicación. |
 

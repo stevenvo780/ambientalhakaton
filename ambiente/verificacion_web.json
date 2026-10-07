@@ -1,0 +1,97 @@
+{
+  "schema": "corredor-vivo.web-verificacion.v1",
+  "verified_at": "2026-10-07T15:29:56.329853+00:00",
+  "production_url": "https://ambientalhakaton.vercel.app",
+  "http": {
+    "/": 200,
+    "/estado.json": 200,
+    "/requisitos.json": 200,
+    "/app.js": 200,
+    "/styles.css": 200,
+    "/deployment.json": 200
+  },
+  "matriz_ids": 75,
+  "matriz_grupos": {
+    "R": 22,
+    "Q": 9,
+    "C": 8,
+    "X": 6,
+    "P": 3,
+    "F": 3,
+    "I": 16,
+    "H": 8
+  },
+  "criterios": 8,
+  "criterios_estado": "pendiente",
+  "diagramas_html": 2,
+  "ids_html_unicos": true,
+  "anchors_validos": true,
+  "links_source_branch": "dev",
+  "responsive": "CSS revisado con media query 700px; no render móvil observado",
+  "js_syntax": "node --check app.js exit0",
+  "json_syntax": "estado, requisitos y deployment parseados desde producción",
+  "refresh_ms": 25000,
+  "source_updated_at": "2026-10-07T15:26:02.679947+00:00",
+  "site_updated_at": "2026-10-07T15:26:52.123352+00:00",
+  "browser": {
+    "tool_available": true,
+    "connected_instances": 0,
+    "result": "No browser is available; recuperación oficial confirmó lista vacía. Sin comprobación visual/E2E."
+  },
+  "git_integration": {
+    "repo": "stevenvo780/ambientalhakaton",
+    "productionBranch": "dev",
+    "rootDirectory": "site",
+    "provider_config_verified": true,
+    "automatic_push_end_to_end": "Pendiente observar próximo push del usuario; no se creó commit de prueba."
+  },
+  "goal_activated": false,
+  "environmental_products_complete": false,
+  "privacy": "Resultado público revisado: sin IP privada, rutas personales, claves o tokens; sólo archivos estáticos enumerados. No auditoría general de secretos del repositorio.",
+  "artifacts": {
+    "site/styles.css": {
+      "sha256": "0c76d6f8e2a27536a53d885476e70bded1c4f5fec8f07d62ef41439398c2c5b0",
+      "bytes": 6619
+    },
+    "site/.vercelignore": {
+      "sha256": "4f114fe6ce6be0c8dc90b688acfbae5338e4f39b03cd7a083ce0ce38f0dc5b09",
+      "bytes": 38
+    },
+    "site/requisitos.json": {
+      "sha256": "76292c1f536690386612eb66a12ac2e172505fe483154fb56a407df135bb81f4",
+      "bytes": 44578
+    },
+    "site/index.html": {
+      "sha256": "793a55a1565fa3261712f1b101b2a2398622b773140849d3bc429da395c590f1",
+      "bytes": 11521
+    },
+    "site/diseno.md": {
+      "sha256": "572d81effdb66965a813a1d9abfe43ae15f39625f4304f8b16e0f13e4a6578c1",
+      "bytes": 1518
+    },
+    "site/vercel.json": {
+      "sha256": "b9a9215bcf40295f227f42ea37cfda6cd0a8f742bd15470c86b8fb29d9be9dfe",
+      "bytes": 148
+    },
+    "site/build.mjs": {
+      "sha256": "e861e7c2a8f36765d9b4ea5df5d26ab923dd955bb72dd6b76eb37e663689a5f8",
+      "bytes": 1220
+    },
+    "site/.gitignore": {
+      "sha256": "6fe16e5e5dad9408c6a9082604c816d8067641ae1b5e59aceb90eb51c1088c63",
+      "bytes": 14
+    },
+    "site/package.json": {
+      "sha256": "8af00407583febd19a585f8f724269a373eff747f2281b99e57e593e1cdcbf34",
+      "bytes": 103
+    },
+    "site/app.js": {
+      "sha256": "5928a4a8616cbb7ca15130fa2e1aa5c4893df3abc5b0f55f6e9f45869507219e",
+      "bytes": 4227
+    },
+    "site/estado.json": {
+      "sha256": "5cab110a32ad2169c461a7a5eb7bab4c32ff9a4446fc68e5246f46e8bce7b8c6",
+      "bytes": 2479
+    }
+  }
+}

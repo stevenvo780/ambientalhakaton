@@ -1,6 +1,6 @@
 {
-  "updated_at_utc": "2026-10-07T15:26:02.679947+00:00",
-  "updated_at_bogota": "2026-10-07T10:26:02.679947-05:00",
+  "updated_at_utc": "2026-10-07T15:31:34.726880+00:00",
+  "updated_at_bogota": "2026-10-07T10:31:34.726880-05:00",
   "fase": "auditoria_preparatoria_solo_lectura",
   "GO_recibido": false,
   "implementacion_autorizada": false,
@@ -34,11 +34,12 @@
   "publicacion_git": "solo usuario; agentes entregan archivos y SHA",
   "actualizacion_coordinador": {
     "Claude_Muse": "FAQ/guía locales activas según coordinación",
-    "GPT_6_Luna": "QA local en cola; sin resultado de ejecución",
+    "GPT_6_Luna": "QA local respondida en 39,3 s; no prueba infraestructura remota",
     "Gemini": "local pendiente autenticación",
     "frentes_remotos_asignados": 4,
     "auditorias_remotas_en_curso_confirmadas": 3,
     "auditorias_remotas_terminadas": 1
   },
-  "rama_documentos": "dev"
+  "rama_documentos": "dev",
+  "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com"
 }

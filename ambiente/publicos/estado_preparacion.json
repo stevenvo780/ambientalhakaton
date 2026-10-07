@@ -15,5 +15,7 @@
   },
   "productos_ambientales": "pendientes de GO y ejecución",
   "limite_entrega": "14:00 Bogotá, 7/10/2026",
-  "sin_credenciales_o_rutas_operativas": true
+  "sin_credenciales_o_rutas_operativas": true,
+  "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
+  "actualizacion_dominio_utc": "2026-10-07T15:31:34.726880+00:00"
 }

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "scope": "Inventario y revisión de publicación pública; originales locales intactos; Git/README único escritor asignado, Gitops ahora a cargo del usuario",
   "files": [],
-  "updated_at": "2026-10-07T15:26:55.038429+00:00",
+  "updated_at": "2026-10-07T15:35:41.298638+00:00",
   "public_repository": "https://github.com/stevenvo780/ambientalhakaton",
   "publication_branch": "dev",
   "qa_luna": {
@@ -22,8 +22,14 @@
       "output": "caso/preguntas_equipo.md",
       "prompt_sha256": "a7b16a96d165e44732df31c16e6529c88e1d7995bc8e1874fc85773dd26390f7",
       "typed_at": "2026-10-07T15:25:32.252673+00:00",
-      "status": "submitted",
-      "submitted_at": "2026-10-07T15:26:55.038429+00:00"
+      "status": "canonical_point_correction_submitted",
+      "submitted_at": "2026-10-07T15:26:55.038429+00:00",
+      "canonical_followup": {
+        "prompt_sha256": "83453287b00070b87515cabad027e980aa192e929c8c90a5565e6034550615fd",
+        "typed_at": "2026-10-07T15:34:35.494244+00:00",
+        "status": "submitted",
+        "submitted_at": "2026-10-07T15:35:41.298638+00:00"
+      }
     },
     {
       "harness": "muse",
@@ -31,8 +37,15 @@
       "output": "caso/guia_lectura_equipo.md",
       "prompt_sha256": "c25d880584b381345e2eaaf9db2b70cd3395e4af33f87af9009aee0764e84e94",
       "typed_at": "2026-10-07T15:25:32.252673+00:00",
-      "status": "submitted",
-      "submitted_at": "2026-10-07T15:26:55.038429+00:00"
+      "status": "canonical_point_correction_submitted",
+      "submitted_at": "2026-10-07T15:26:55.038429+00:00",
+      "canonical_followup": {
+        "prompt_sha256": "83453287b00070b87515cabad027e980aa192e929c8c90a5565e6034550615fd",
+        "typed_at": "2026-10-07T15:34:35.494244+00:00",
+        "status": "submitted",
+        "submitted_at": "2026-10-07T15:35:41.298638+00:00"
+      }
     }
-  ]
+  ],
+  "canonical_website": "https://hackathon-ambiental.stevenvallejo.com"
 }
