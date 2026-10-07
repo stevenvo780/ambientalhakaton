@@ -1,0 +1,536 @@
+diff --git a/app/page.tsx b/app/page.tsx
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -1,4 +1,4 @@
+ import { redirect } from "next/navigation";
+ export default function Home() {
+-  redirect("/dashboard");
++  redirect("/hackathon");
+ }
+diff --git a/app/hackathon/page.tsx b/app/hackathon/page.tsx
+new file mode 100644
+--- /dev/null
++++ b/app/hackathon/page.tsx
+@@ -0,0 +1,5 @@
++import { P2MotorDemo } from "../../src/platform/p2_motor_demo";
++
++export default function Page() {
++  return <P2MotorDemo />;
++}
+diff --git a/src/platform/p2_motor_demo.tsx b/src/platform/p2_motor_demo.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/platform/p2_motor_demo.tsx
+@@ -0,0 +1,146 @@
++"use client";
++import Link from "next/link";
++import { useMemo, useState, type ChangeEvent } from "react";
++import {
++  BUDGET_COP, CATALOG, DEFAULT_PORTFOLIOS, compareCatalogue, evaluatePortfolio,
++  exportPortfoliosJson, importPortfoliosJson, exportPortfoliosCsv, importPortfoliosCsv,
++  scopeCondition,
++  type Portfolio,
++} from "../hackathon/p2_motor_carteras";
++import { Table, money, number } from "./common";
++import "../hackathon/p2_motor_demo.css";
++
++const municipalities: Record<string, string> = { "05615": "Rionegro", "05318": "Guarne", "05440": "Marinilla" };
++
++function download(text: string, format: "json" | "csv") {
++  const url = URL.createObjectURL(new Blob([text], { type: format === "json" ? "application/json;charset=utf-8" : "text/csv;charset=utf-8" }));
++  const anchor = document.createElement("a");
++  anchor.href = url;
++  anchor.download = `p2_motor_carteras.${format}`;
++  anchor.click();
++  setTimeout(() => URL.revokeObjectURL(url), 1000);
++}
++
++export function P2MotorDemo() {
++  const [portfolios, setPortfolios] = useState<Portfolio[]>(DEFAULT_PORTFOLIOS);
++  const [message, setMessage] = useState("");
++  const [error, setError] = useState("");
++  const comparison = useMemo(() => compareCatalogue(), []);
++  const catalog = useMemo(() => new Map(CATALOG.map(entry => [entry.id, entry])), []);
++  const evaluated = portfolios.map(portfolio => ({ portfolio, result: evaluatePortfolio(portfolio) }));
++  const hasAny14 = portfolios.some(p => p.units.some(u => u.catalogue_id === "RETO-14"));
++  const hasLegacy14 = portfolios.some(p => p.units.some(u => u.catalogue_id === "RETO-14" && u.scope_hypothesis !== "municipal_rionegro_proposed"));
++
++  async function importFile(event: ChangeEvent<HTMLInputElement>) {
++    const file = event.target.files?.[0];
++    event.target.value = "";
++    if (!file) return;
++    setMessage("");
++    setError("");
++    try {
++      if (file.size > 1_000_000) throw new Error("El archivo supera el límite de 1 MB.");
++      const text = await file.text();
++      const imported = file.name.toLowerCase().endsWith(".csv") ? importPortfoliosCsv(text)
++        : file.name.toLowerCase().endsWith(".json") ? importPortfoliosJson(text)
++        : (() => { throw new Error("Use un archivo JSON o CSV de carteras exportado desde esta vista."); })();
++      imported.forEach(evaluatePortfolio);
++      setPortfolios(imported);
++      const legacy = imported.some(p => p.units.some(u => u.catalogue_id === "RETO-14" && u.scope_hypothesis !== "municipal_rionegro_proposed"));
++      setMessage(legacy ? "Dos carteras importadas. RETO-14 conserva la hipótesis anterior, sin alcance aprobado; no se reasignó a Rionegro ni se añadió plazo."
++        : "Dos carteras importadas y costos recalculados con el catálogo oficial.");
++    } catch (cause) {
++      setError(cause instanceof Error ? cause.message : "No se pudo validar el archivo.");
++    }
++  }
++
++  return (
++    <main className="page-content p2-motor-demo" id="contenido">
++      <header className="page-title">
++        <div>
++          <Link href="/">◈ Presupuesto Vivo · Consulta pública</Link>
++          <p className="eyebrow">CORNARE · RIONEGRO / GUARNE / MARINILLA</p>
++          <h1>Dos carteras, un presupuesto</h1>
++          <p className="muted small">Consulta y exportación financiera abiertas, sin cuenta. La administración de proyectos requiere iniciar sesión.</p>
++          <p>{!hasAny14
++            ? "Comparación de carteras importadas sin RETO-14; no se atribuye alcance municipal ni plazo a una medida ausente."
++            : hasLegacy14
++            ? "Comparación de hipótesis importadas: RETO-14 conserva su alcance anterior no aprobado, sin reasignación municipal ni plazo añadido."
++            : "Base provisional D6 y alternativa N1. RETO-14: una unidad municipal propuesta para Rionegro, 12 meses desde el acta de inicio. Comparación financiera con costos completos del reto."}</p>
++        </div>
++      </header>
++
++      <div className="notice warning">
++        <strong>Cupos y elegibilidad territorial: condicionales.</strong> El cálculo supone como máximo una unidad indivisible por fila. Los sitios, actores y cobertura requieren validación; estas cifras no certifican beneficio ambiental ni robustez climática.
++      </div>
++
++      <section className="card" aria-labelledby="p2-summary">
++        <h2 id="p2-summary">Comparación conjunta</h2>
++        <p>Fondo único: <strong>{money(BUDGET_COP)}</strong>. Cada cartera se evalúa por separado. Una unidad compartida entre municipios conserva un costo y un conteo.</p>
++        <Table headings={["Cartera", "Unidades", "Costo (millones COP)", "Saldo (millones COP)", "Presupuesto", "Elegibilidad"]}>
++          {evaluated.map(({ portfolio, result }) => (
++            <tr key={portfolio.id} data-testid={`summary-${portfolio.id}`}>
++              <td><strong>{portfolio.name}</strong></td>
++              <td>{result.count}</td>
++              <td>{number(result.cost_cop / 1_000_000)}</td>
++              <td>{number(result.balance_cop / 1_000_000)}</td>
++              <td>{result.financially_feasible ? "Dentro del fondo" : "Excede el fondo"}</td>
++              <td>Condicional</td>
++            </tr>
++          ))}
++        </Table>
++        <div className="p2-motor-actions">
++          <button onClick={() => download(exportPortfoliosJson(portfolios), "json")}>Exportar carteras JSON</button>
++          <button className="secondary" onClick={() => download(exportPortfoliosCsv(portfolios), "csv")}>Exportar carteras CSV</button>
++          <button className="secondary" onClick={() => { setPortfolios(DEFAULT_PORTFOLIOS); setError(""); setMessage("Base provisional D6 y alternativa N1 restauradas."); }}>Restaurar D6 y N1</button>
++        </div>
++        <label className="p2-motor-import">Importar dos carteras JSON o CSV
++          <input type="file" accept=".json,.csv,application/json,text/csv" onChange={importFile} />
++        </label>
++        <p className="muted small">La importación abre una comparación local. Exporte el archivo para conservarla; al recargar se vuelve a D6 y N1.</p>
++        {message && <p className="notice success" role="status">{message}</p>}
++        {error && <p className="notice error" role="alert">{error}</p>}
++      </section>
++
++      <div className="p2-motor-portfolios">
++        {evaluated.map(({ portfolio, result }) => (
++          <section className="card" key={portfolio.id} aria-labelledby={`heading-${portfolio.id}`}>
++            <h2 id={`heading-${portfolio.id}`}>{portfolio.name}</h2>
++            <p><strong>{result.count} unidades · {money(result.cost_cop)}</strong><br />Saldo: {money(result.balance_cop)} · Elegibilidad condicional.</p>
++            <Table headings={["Medida oficial", "Unidad completa", "Costo (millones COP)", "Municipios"]}>
++              {portfolio.units.map(unit => {
++                const entry = catalog.get(unit.catalogue_id)!;
++                return <tr key={unit.id}>
++                  <td><strong>{entry.id}</strong><p>{entry.measure}</p><small>{entry.dimension}</small></td>
++                  <td>{entry.functional_unit}<p className="muted">Cantidad: 1 · Cupo condicional</p>
++                    {entry.id === "RETO-14" && <p><strong>{scopeCondition(unit)}.</strong></p>}
++                  </td>
++                  <td>{number(entry.cost_cop / 1_000_000)}</td>
++                  <td>{unit.municipalities.length ? unit.municipalities.map(code => municipalities[code]).join(", ") : "Asignación pendiente"}</td>
++                </tr>;
++              })}
++            </Table>
++          </section>
++        ))}
++      </div>
++
++      <section className="card" aria-labelledby="p2-enumeration">
++        <h2 id="p2-enumeration">Límite financiero condicionado</h2>
++        <p data-testid="financial-enumeration">{number(comparison.subsets_examined)} subconjuntos examinados; <strong>{number(comparison.feasible_count)} factibles, incluida la cartera vacía</strong>. Máximo financiero: <strong>{comparison.max_count} unidades</strong>; <strong>{comparison.maximum_candidates.length} carteras</strong> alcanzan ese máximo.</p>
++        <details>
++          <summary>Ver las siete carteras financieras de seis unidades</summary>
++          <Table headings={["Unidades del catálogo", "Costo (millones COP)", "Saldo (millones COP)"]}>
++            {comparison.maximum_candidates.map(candidate => <tr key={candidate.ids.join("-")}><td>{candidate.ids.join(" / ")}</td><td>{number(candidate.cost_cop / 1_000_000)}</td><td>{number(candidate.balance_cop / 1_000_000)}</td></tr>)}
++          </Table>
++        </details>
++        <p className="muted small">El máximo depende de la hipótesis de una unidad por fila; no establece un máximo ambiental. No hay ranking por eficacia ni una recomendación automática entre D6 y N1.</p>
++      </section>
++
++      <footer className="card">
++        <strong>Fuente y límites</strong>
++        <p>RETO CLIMATE WEEK HACKATHON.pdf, páginas 4–5; 15 filas con precio. IDs RETO locales, sin equivalencia automática a códigos MEA. PSA: programa íntegro de tres años, COP 1.200 millones. Restauración: unidad integral de aproximadamente 100 ha, COP 1.500 millones.</p>
++        <p className="muted small">Las condiciones territoriales, la elegibilidad y el contraste ambiental acompañan la decisión documental del equipo. La comparación conserva sus faltantes.</p>
++        <Link href="/login">Administrar proyectos (requiere iniciar sesión)</Link>
++      </footer>
++    </main>
++  );
++}
+diff --git a/src/hackathon/p2_motor_carteras.ts b/src/hackathon/p2_motor_carteras.ts
+new file mode 100644
+--- /dev/null
++++ b/src/hackathon/p2_motor_carteras.ts
+@@ -0,0 +1,215 @@
++import Papa from "papaparse";
++import catalogue from "./p2_motor_catalogo.json";
++
++/** Comparación presupuestal del caso oficial; independiente del optimizador productivo. */
++export const CATALOG = Object.freeze(catalogue.map((row) => Object.freeze({ ...row })));
++export const BUDGET_COP = 5_000_000_000;
++export const SOURCE_SHA256 = "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6";
++export const COUNTING_ASSUMPTION = "Máximo una unidad indivisible por fila del catálogo";
++export const ELIGIBILITY = "CONDICIONAL: cupos y elegibilidad territorial pendientes de validación";
++export const RETO14_REGIONAL_CONDITION = "RETO-14: una unidad regional PROPUESTA por validar; no acredita un SAT completo RETO-13";
++export const RETO14_SCOPE_CONDITION = "RETO-14: una unidad municipal PROPUESTA completa en Rionegro (05615); 12 meses desde el acta de inicio, sin fecha aprobada; no acredita un SAT completo RETO-13";
++export type Scope14 = "municipal_rionegro_proposed" | "regional_proposed" | "legacy_unspecified";
++export function scopeCondition(unit: Unit): string {
++  if (unit.catalogue_id !== "RETO-14") return "";
++  if (unit.scope_hypothesis === "municipal_rionegro_proposed") return RETO14_SCOPE_CONDITION;
++  if (unit.scope_hypothesis === "regional_proposed") return `${RETO14_REGIONAL_CONDITION}; hipótesis importada, sin alcance ni plazo aprobados`;
++  return "RETO-14: hipótesis anterior de alcance y plazo no especificados ni aprobados; sin reasignación municipal; no acredita un SAT completo RETO-13";
++}
++const unitEligibility = (unit: Unit) => unit.catalogue_id === "RETO-14"
++  ? `${ELIGIBILITY}. ${scopeCondition(unit)}` : ELIGIBILITY;
++const FORMAT = "p2_motor_demo_v2";
++const MUNICIPALITIES = new Set(["05615", "05318", "05440"]);
++const byId = new Map(CATALOG.map((row) => [row.id, row]));
++
++export type Unit = {
++  id: string;
++  functional_unit_id: string;
++  catalogue_id: string;
++  quantity: number;
++  municipalities: string[];
++  scope_hypothesis?: Scope14;
++  duration_months?: 12 | null;
++  start_basis?: "acta_inicio" | null;
++};
++export type Portfolio = { id: string; name: string; units: Unit[] };
++
++function defaultPortfolio(id: string, name: string, ids: number[]): Portfolio {
++  return { id, name, units: ids.map((n) => {
++    const catalogue_id = `RETO-${String(n).padStart(2, "0")}`;
++    return { id: `${id}-${catalogue_id}`, functional_unit_id: `${catalogue_id}-UF-01`, catalogue_id, quantity: 1,
++      municipalities: n === 14 ? ["05615"] : [],
++      ...(n === 14 ? { scope_hypothesis: "municipal_rionegro_proposed" as const, duration_months: 12 as const, start_basis: "acta_inicio" as const } : {}),
++    };
++  }) };
++}
++
++export const DEFAULT_PORTFOLIOS: Portfolio[] = [
++  defaultPortfolio("D6", "BASE PROVISIONAL D6", [3, 4, 7, 8, 9, 14]),
++  defaultPortfolio("N1", "N1", [1, 3, 4, 5, 14]),
++];
++
++function fail(message: string): never { throw new Error(message); }
++function object(value: unknown, keys: string[], context: string): Record<string, unknown> {
++  if (!value || typeof value !== "object" || Array.isArray(value)) fail(`${context}: objeto requerido`);
++  const record = value as Record<string, unknown>;
++  if (Object.keys(record).length !== keys.length || keys.some((key) => !Object.hasOwn(record, key))) fail(`${context}: campos no admitidos o ausentes`);
++  return record;
++}
++function text(value: unknown, context: string, identifier = false): string {
++  if (typeof value !== "string" || !value.trim() || value.length > 150 || /[\u0000-\u001f\u007f]/u.test(value) || /^[-=+@]/u.test(value.trimStart())) fail(`${context}: texto inválido`);
++  if (identifier && !/^[A-Za-z0-9_-]{1,80}$/u.test(value)) fail(`${context}: identificador inválido`);
++  return value;
++}
++function validateUnit(value: unknown, enriched: boolean): Unit {
++  const keys = ["id", "functional_unit_id", "catalogue_id", "quantity", "municipalities"];
++  if (enriched) keys.push("cost_cop", "functional_unit", "eligibility");
++  const hasScope = !!value && typeof value === "object" && Object.hasOwn(value, "scope_hypothesis");
++  if (hasScope) keys.push("scope_hypothesis", "duration_months", "start_basis");
++  const row = object(value, keys, "Unidad");
++  const id = text(row.id, "Unidad.id", true);
++  const catalogue_id = text(row.catalogue_id, "catalogue_id", true);
++  const entry = byId.get(catalogue_id);
++  if (!entry) fail(`Catálogo desconocido: ${catalogue_id}`);
++  const functional_unit_id = text(row.functional_unit_id, "functional_unit_id", true);
++  if (functional_unit_id !== `${catalogue_id}-UF-01`) fail("Identificador de unidad funcional no corresponde al catálogo");
++  if (row.quantity !== 1) fail("Cada fila exige una unidad indivisible completa; cantidad debe ser 1");
++  if (!Array.isArray(row.municipalities) || row.municipalities.some((m) => typeof m !== "string" || !MUNICIPALITIES.has(m)) || new Set(row.municipalities).size !== row.municipalities.length) fail("Municipios inválidos o repetidos");
++  const valid: Unit = { id, functional_unit_id, catalogue_id, quantity: 1, municipalities: [...row.municipalities] as string[] };
++  if (catalogue_id === "RETO-14") {
++    const hypothesis = hasScope ? row.scope_hypothesis
++      : row.eligibility === `${ELIGIBILITY}. ${RETO14_REGIONAL_CONDITION}` ? "regional_proposed" : "legacy_unspecified";
++    if (!["municipal_rionegro_proposed", "regional_proposed", "legacy_unspecified"].includes(hypothesis as string)) fail("Hipótesis RETO-14 desconocida");
++    valid.scope_hypothesis = hypothesis as Scope14;
++    valid.duration_months = hypothesis === "municipal_rionegro_proposed" ? 12 : null;
++    valid.start_basis = hypothesis === "municipal_rionegro_proposed" ? "acta_inicio" : null;
++    if (hasScope && (row.duration_months !== valid.duration_months || row.start_basis !== valid.start_basis)) fail("Plazo RETO-14 propuesto o base de inicio incompatibles");
++    if (hypothesis === "municipal_rionegro_proposed" && (valid.municipalities.length !== 1 || valid.municipalities[0] !== "05615")) fail("La propuesta municipal RETO-14 corresponde solo a Rionegro 05615");
++  } else if (hasScope) fail("La hipótesis de alcance RETO-14 no se aplica a otra medida");
++  const legacyEligibility = !hasScope && (row.eligibility === ELIGIBILITY
++    || (catalogue_id === "RETO-14" && row.eligibility === `${ELIGIBILITY}. ${RETO14_REGIONAL_CONDITION}`));
++  if (enriched && (row.cost_cop !== entry.cost_cop || row.functional_unit !== entry.functional_unit
++    || (row.eligibility !== unitEligibility(valid) && !legacyEligibility))) fail("Costo, unidad funcional o condición territorial discrepan del catálogo");
++  return valid;
++}
++function validatePortfolio(value: unknown, enriched = false): Portfolio {
++  const row = object(value, ["id", "name", "units"], "Cartera");
++  const id = text(row.id, "Cartera.id", true);
++  const name = text(row.name, "Cartera.name");
++  if (!Array.isArray(row.units) || row.units.length < 1 || row.units.length > CATALOG.length) fail("La cartera exige entre 1 y 15 filas");
++  const units = row.units.map((unit) => validateUnit(unit, enriched));
++  if (new Set(units.map((unit) => unit.id)).size !== units.length || new Set(units.map((unit) => unit.catalogue_id)).size !== units.length) fail("Filas duplicadas en una cartera");
++  return { id, name, units };
++}
++function validatePair(values: unknown, enriched = false): Portfolio[] {
++  if (!Array.isArray(values) || values.length !== 2) fail("Se requieren las dos carteras D6 y N1");
++  const portfolios = values.map((value) => validatePortfolio(value, enriched));
++  if (new Set(portfolios.map((p) => p.id)).size !== 2 || !portfolios.some((p) => p.id === "D6") || !portfolios.some((p) => p.id === "N1")) fail("Se requieren los identificadores D6 y N1");
++  return portfolios;
++}
++
++export function evaluatePortfolio(portfolio: Portfolio) {
++  const valid = validatePortfolio(portfolio);
++  const cost_cop = valid.units.reduce((sum, unit) => sum + byId.get(unit.catalogue_id)!.cost_cop, 0);
++  return { count: valid.units.length, cost_cop, balance_cop: BUDGET_COP - cost_cop, financially_feasible: cost_cop <= BUDGET_COP };
++}
++
++/** Enumeración financiera, sin coeficientes de beneficio ni validación ambiental. Incluye conjunto vacío. */
++export function compareCatalogue() {
++  let feasible_count = 0;
++  let max_count = 0;
++  let maximum_candidates: { ids: string[]; cost_cop: number; balance_cop: number }[] = [];
++  const subsets_examined = 2 ** CATALOG.length;
++  for (let mask = 0; mask < subsets_examined; mask++) {
++    const ids: string[] = [];
++    let cost_cop = 0;
++    for (let index = 0; index < CATALOG.length; index++) {
++      if ((mask & (1 << index)) !== 0) { ids.push(CATALOG[index].id); cost_cop += CATALOG[index].cost_cop; }
++    }
++    if (cost_cop > BUDGET_COP) continue;
++    feasible_count++;
++    if (ids.length > max_count) { max_count = ids.length; maximum_candidates = []; }
++    if (ids.length === max_count) maximum_candidates.push({ ids, cost_cop, balance_cop: BUDGET_COP - cost_cop });
++  }
++  return { subsets_examined, feasible_count, max_count, maximum_candidates };
++}
++
++export function exportPortfoliosJson(portfolios: Portfolio[]): string {
++  const valid = validatePair(portfolios);
++  return JSON.stringify({ format: FORMAT, source_sha256: SOURCE_SHA256, source_page: 5,
++    budget_cop: BUDGET_COP, counting_assumption: COUNTING_ASSUMPTION, eligibility: ELIGIBILITY,
++    portfolios: valid.map((p) => ({ ...p, units: p.units.map((u) => ({ ...u,
++      cost_cop: byId.get(u.catalogue_id)!.cost_cop,
++      functional_unit: byId.get(u.catalogue_id)!.functional_unit, eligibility: unitEligibility(u),
++    })) })),
++  }, null, 2);
++}
++
++function boundedInput(input: string): void {
++  if (typeof input !== "string" || input.length > 1_000_000) fail("Archivo inválido o demasiado grande");
++}
++/** JSON.parse conserva el último miembro repetido: rechazar esa ambigüedad del archivo. */
++function rejectDuplicateJsonKeys(input: string): void {
++  const stack: { object: boolean; expectingKey: boolean; keys: Set<string> }[] = [];
++  for (let i = 0; i < input.length; i++) {
++    const char = input[i];
++    if (char === '"') {
++      const start = i++;
++      while (i < input.length && input[i] !== '"') {
++        if (input[i] === "\\") i++;
++        i++;
++      }
++      const frame = stack.at(-1);
++      if (frame?.object && frame.expectingKey) {
++        const key = JSON.parse(input.slice(start, i + 1)) as string;
++        if (frame.keys.has(key)) fail("JSON ambiguo: clave repetida dentro de un objeto");
++        frame.keys.add(key);
++        frame.expectingKey = false;
++      }
++    } else if (char === "{" || char === "[") {
++      stack.push({ object: char === "{", expectingKey: char === "{", keys: new Set() });
++    } else if (char === "}" || char === "]") stack.pop();
++    else if (char === "," && stack.at(-1)?.object) stack.at(-1)!.expectingKey = true;
++  }
++}
++export function importPortfoliosJson(input: string): Portfolio[] {
++  boundedInput(input);
++  let parsed: unknown;
++  try { parsed = JSON.parse(input); } catch { return fail("JSON inválido"); }
++  rejectDuplicateJsonKeys(input);
++  const doc = object(parsed, ["format", "source_sha256", "source_page", "budget_cop", "counting_assumption", "eligibility", "portfolios"], "Documento");
++  if (![FORMAT, "p2_motor_demo_v1"].includes(doc.format as string) || doc.source_sha256 !== SOURCE_SHA256 || doc.source_page !== 5 || doc.budget_cop !== BUDGET_COP || doc.counting_assumption !== COUNTING_ASSUMPTION || doc.eligibility !== ELIGIBILITY) fail("Formato, fuente, presupuesto o condiciones no corresponden a esta demo");
++  return validatePair(doc.portfolios, true);
++}
++
++const CSV_HEADER = ["cartera_id", "cartera_nombre", "id", "unidad_funcional_id", "catalogo_id", "cantidad", "municipios", "costo_cop", "unidad_funcional", "elegibilidad"];
++const CSV_HEADER_V2 = [...CSV_HEADER, "hipotesis_alcance", "duracion_meses", "inicio_base"];
++export function exportPortfoliosCsv(portfolios: Portfolio[]): string {
++  const rows = validatePair(portfolios).flatMap((p) => p.units.map((u) => [p.id, p.name, u.id, u.functional_unit_id,
++    u.catalogue_id, "1", u.municipalities.join("|"), String(byId.get(u.catalogue_id)!.cost_cop),
++    byId.get(u.catalogue_id)!.functional_unit, unitEligibility(u), u.scope_hypothesis ?? "", u.duration_months ?? "", u.start_basis ?? ""]));
++  return Papa.unparse([CSV_HEADER_V2, ...rows], { newline: "\r\n" });
++}
++export function importPortfoliosCsv(input: string): Portfolio[] {
++  boundedInput(input);
++  const parsed = Papa.parse<string[]>(input, { delimiter: ",", skipEmptyLines: "greedy" });
++  const v2 = JSON.stringify(parsed.data[0]) === JSON.stringify(CSV_HEADER_V2);
++  if (parsed.errors.length || parsed.data.length < 3 || (!v2 && JSON.stringify(parsed.data[0]) !== JSON.stringify(CSV_HEADER))) fail("CSV inválido o cabecera incorrecta");
++  const portfolios = new Map<string, { id: string; name: string; units: unknown[] }>();
++  for (const row of parsed.data.slice(1)) {
++    if (row.length !== (v2 ? CSV_HEADER_V2.length : CSV_HEADER.length)) fail("CSV: número de columnas incorrecto");
++    const [portfolioId, name, id, functionalId, catalogueId, quantity, municipalities, cost, functionalUnit, eligibility, scope, duration, start] = row;
++    if (quantity !== "1" || !/^[1-9][0-9]*$/u.test(cost)) fail("CSV: cantidad o costo entero inválido");
++    let portfolio = portfolios.get(portfolioId);
++    if (!portfolio) { portfolio = { id: portfolioId, name, units: [] }; portfolios.set(portfolioId, portfolio); }
++    if (portfolio.name !== name) fail("CSV: nombres inconsistentes para la misma cartera");
++    if (v2 && catalogueId !== "RETO-14" && (scope !== "" || duration !== "" || start !== "")) fail("CSV: alcance RETO-14 en otra medida");
++    if (v2 && catalogueId === "RETO-14" && (!scope || !["", "12"].includes(duration))) fail("CSV: alcance o plazo RETO-14 inválido");
++    portfolio.units.push({ id, functional_unit_id: functionalId, catalogue_id: catalogueId, quantity: 1,
++      municipalities: municipalities === "" ? [] : municipalities.split("|"), cost_cop: Number(cost),
++      functional_unit: functionalUnit, eligibility,
++      ...(v2 && catalogueId === "RETO-14" ? { scope_hypothesis: scope, duration_months: duration === "" ? null : Number(duration), start_basis: start === "" ? null : start } : {}),
++    });
++  }
++  return validatePair([...portfolios.values()], true);
++}
+diff --git a/src/hackathon/p2_motor_catalogo.json b/src/hackathon/p2_motor_catalogo.json
+new file mode 100644
+--- /dev/null
++++ b/src/hackathon/p2_motor_catalogo.json
+@@ -0,0 +1,107 @@
++[
++  {
++    "id": "RETO-01",
++    "dimension": "Biodiversidad",
++    "measure": "Instrumentos de compensación y Pago por Servicios Ambientales — PSA",
++    "functional_unit": "Programa territorial de conservación/restauración de áreas estratégicas durante 3 años",
++    "cost_cop": 1200000000
++  },
++  {
++    "id": "RETO-02",
++    "dimension": "Biodiversidad",
++    "measure": "Restauración de ecosistemas estratégicos",
++    "functional_unit": "Intervención integral aproximada de 100 ha, mantenimiento inicial y seguimiento",
++    "cost_cop": 1500000000
++  },
++  {
++    "id": "RETO-03",
++    "dimension": "Biodiversidad",
++    "measure": "Fortalecimiento de sistemas de áreas protegidas",
++    "functional_unit": "Identificación, gestión, acuerdos, conectividad y fortalecimiento en el corredor",
++    "cost_cop": 700000000
++  },
++  {
++    "id": "RETO-04",
++    "dimension": "Recurso hídrico",
++    "measure": "Uso intersectorial eficiente del recurso hídrico",
++    "functional_unit": "Programa para grandes usuarios: diagnóstico, medición, eficiencia, reúso y seguimiento",
++    "cost_cop": 900000000
++  },
++  {
++    "id": "RETO-05",
++    "dimension": "Recurso hídrico",
++    "measure": "Protección y recuperación de rondas hídricas",
++    "functional_unit": "Intervención integral de corredores ribereños priorizados",
++    "cost_cop": 1300000000
++  },
++  {
++    "id": "RETO-06",
++    "dimension": "Recurso hídrico",
++    "measure": "Protección de cabeceras de cuenca y ecosistemas abastecedores",
++    "functional_unit": "Intervención de una microcuenca o sistema abastecedor estratégico",
++    "cost_cop": 1600000000
++  },
++  {
++    "id": "RETO-07",
++    "dimension": "Seguridad alimentaria",
++    "measure": "Protección y reconversión de suelos agrícolas estratégicos",
++    "functional_unit": "Programa territorial con productores: asistencia, reconversión y conservación de suelo y agua",
++    "cost_cop": 1000000000
++  },
++  {
++    "id": "RETO-08",
++    "dimension": "Seguridad alimentaria",
++    "measure": "Producción agroecológica y economía rural resiliente",
++    "functional_unit": "Programa de asistencia técnica, manejo de suelo/agua, asociatividad y adaptación productiva",
++    "cost_cop": 800000000
++  },
++  {
++    "id": "RETO-09",
++    "dimension": "Hábitat",
++    "measure": "Espacios verdes urbanos",
++    "functional_unit": "Corredor o área verde multifuncional",
++    "cost_cop": 1000000000
++  },
++  {
++    "id": "RETO-10",
++    "dimension": "Hábitat",
++    "measure": "Sistemas Urbanos de Drenaje Sostenible — SUDS",
++    "functional_unit": "Intervención piloto de escala municipal",
++    "cost_cop": 1800000000
++  },
++  {
++    "id": "RETO-11",
++    "dimension": "Infraestructura",
++    "measure": "Infraestructura resiliente al cambio climático",
++    "functional_unit": "Adecuación de un punto crítico de infraestructura, vía o servicio",
++    "cost_cop": 2500000000
++  },
++  {
++    "id": "RETO-12",
++    "dimension": "Infraestructura",
++    "measure": "Fortalecimiento de infraestructura resiliente y servicios públicos",
++    "functional_unit": "Intervención focalizada de infraestructura o servicio esencial",
++    "cost_cop": 2000000000
++  },
++  {
++    "id": "RETO-13",
++    "dimension": "Riesgo de desastres",
++    "measure": "Fortalecimiento de Sistemas de Alerta Temprana — SAT",
++    "functional_unit": "Sistema interoperable para puntos críticos del corredor: instrumentación, comunicaciones y protocolos",
++    "cost_cop": 1200000000
++  },
++  {
++    "id": "RETO-14",
++    "dimension": "Riesgo de desastres",
++    "measure": "Conocimiento y comunicación sobre amenazas, vulnerabilidad y riesgo climático",
++    "functional_unit": "Estudios, modelación, instrumentación básica, protocolos y plataforma de información",
++    "cost_cop": 600000000
++  },
++  {
++    "id": "RETO-15",
++    "dimension": "Salud",
++    "measure": "Sistema de salud y entornos saludables resilientes al clima",
++    "functional_unit": "Vigilancia climato-sensible, capacidades institucionales, prevención y respuesta",
++    "cost_cop": 800000000
++  }
++]
+diff --git a/src/hackathon/p2_motor_demo.css b/src/hackathon/p2_motor_demo.css
+new file mode 100644
+--- /dev/null
++++ b/src/hackathon/p2_motor_demo.css
+@@ -0,0 +1,17 @@
++.p2-motor-demo { max-width: 1420px; }
++.p2-motor-demo > .notice { margin-bottom: 22px; }
++.p2-motor-demo .eyebrow { margin-top: 22px; }
++.p2-motor-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
++.p2-motor-import { display: block; max-width: 560px; }
++.p2-motor-portfolios { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
++.p2-motor-demo summary { cursor: pointer; padding: 10px 0; }
++.p2-motor-demo td { overflow-wrap: anywhere; }
++.p2-motor-demo footer p { margin-top: 10px; }
++@media (max-width: 900px) {
++  .p2-motor-portfolios { grid-template-columns: 1fr; }
++  .p2-motor-demo { padding: 24px 16px; }
++  .p2-motor-demo h1 { font-size: 28px; }
++}
++@media (max-width: 600px) {
++  .p2-motor-demo table { min-width: 560px; }
++}
+diff --git a/src/platform/Shell.tsx b/src/platform/Shell.tsx
+--- a/src/platform/Shell.tsx
++++ b/src/platform/Shell.tsx
+@@ -40,0 +41 @@
++  ["/hackathon", "≋", "Carteras del reto"],
+diff --git a/src/platform/AuthForm.tsx b/src/platform/AuthForm.tsx
+--- a/src/platform/AuthForm.tsx
++++ b/src/platform/AuthForm.tsx
+@@ -71,0 +72,3 @@
++        <Link className="button secondary" href="/hackathon">
++          Comparar carteras del reto CORNARE
++        </Link>

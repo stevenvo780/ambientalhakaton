@@ -1,0 +1,194 @@
+{
+  "format": "pv_sanitized_public_source_patch_v1",
+  "generated_at_utc": "2026-10-07T18:08:52.249695+00:00",
+  "status": "sanitized existing source export; no new software or tests",
+  "patch": {
+    "path": "pv_fuente_publica.patch",
+    "sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
+    "bytes": 30647,
+    "runtime_files": 6,
+    "navigation_only_hunks": 2,
+    "total_paths": 8
+  },
+  "base": {
+    "commit": "513b7e6872e159485e62f325bbc5ad4450a777d9",
+    "requires_private_base": true,
+    "self_contained_repository": false,
+    "deployment_dependencies_copied": false,
+    "deployment_project": "presupuesto-vivo",
+    "framework": "nextjs",
+    "rootDirectory": null
+  },
+  "public_urls": {
+    "root": "https://presupuesto-vivo-chi.vercel.app/",
+    "case": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+    "method_sources": "https://hackathon-ambiental.stevenvallejo.com/metodologia#fuentes"
+  },
+  "runtime_files": [
+    {
+      "path": "app/page.tsx",
+      "operation": "modify",
+      "sha256": "7e7ae400d6ae6088f0d1430ee2fb9a563c8cc7425233994af71088e21a8c4d7c",
+      "base_sha256": "ea03288859c3777df7473aab3bc0fd470d2d34d323b66b0406a8a799f404c274",
+      "bytes": 105,
+      "scope": "own runtime only; no individual baselines"
+    },
+    {
+      "path": "app/hackathon/page.tsx",
+      "operation": "add",
+      "sha256": "4034bc97b1ecf8605d1b8342154896c49537aca1c0ed1a2b55412a2227705159",
+      "base_sha256": null,
+      "bytes": 126,
+      "scope": "own runtime only; no individual baselines"
+    },
+    {
+      "path": "src/platform/p2_motor_demo.tsx",
+      "operation": "add",
+      "sha256": "f342b879888653fa9d4d9fab5ea1432ade84ed1189dd35bde1471a9f170352ee",
+      "base_sha256": null,
+      "bytes": 9428,
+      "scope": "own runtime only; no individual baselines"
+    },
+    {
+      "path": "src/hackathon/p2_motor_carteras.ts",
+      "operation": "add",
+      "sha256": "1d23f0bb6b8fd140d8bb19c1078849f1c7780b75b7f6de230c3475c049d8d107",
+      "base_sha256": null,
+      "bytes": 14284,
+      "scope": "own runtime only; no individual baselines"
+    },
+    {
+      "path": "src/hackathon/p2_motor_catalogo.json",
+      "operation": "add",
+      "sha256": "74e22bf3e092b54486a956a1a9d08afb053453ea5eb280131e6591f68387b623",
+      "base_sha256": null,
+      "bytes": 4023,
+      "scope": "own runtime only; no individual baselines"
+    },
+    {
+      "path": "src/hackathon/p2_motor_demo.css",
+      "operation": "add",
+      "sha256": "ba60efe1ad64c3da54e433bfbe4acfb55d20260cf97e15c2704090826c48b84e",
+      "base_sha256": null,
+      "bytes": 767,
+      "scope": "own runtime only; no individual baselines"
+    }
+  ],
+  "navigation_diff_only": [
+    {
+      "path": "src/platform/Shell.tsx",
+      "scope": "navigation insertion only, zero context; no complete file or guards",
+      "added_lines": 1,
+      "baseline_file_sha256": "95d9bededcccf9e989e4b59dc1f33fc1c5fe24c7eb4e5adb6ea95b6b37ab1c30",
+      "final_existing_file_sha256": "f5ecc2552585c06e2e9412b2814bbfb9097712c4377545ed0986db7fb2ca210e",
+      "hunk_sha256": "35e7853763cbe115b82b45aee17f5eca0604bba1c08b200ca95bc53e4d364ba4",
+      "guard_code_included": false
+    },
+    {
+      "path": "src/platform/AuthForm.tsx",
+      "scope": "navigation insertion only, zero context; no complete file or guards",
+      "added_lines": 3,
+      "baseline_file_sha256": "f0fbf3c9a44cdd287a1e1b5e8c1e4c805adf37f806889709dffd95dadb7c3e82",
+      "final_existing_file_sha256": "b88733dc28f6f0a3ea39a944904334ac5fc68d2ea3d0be4fc72a1b1e1c036e50",
+      "hunk_sha256": "758fbd06b2be81ae3a296c3bb1760b69d59f7807d37f471b4ec5cb68cc7d04bc",
+      "guard_code_included": false
+    }
+  ],
+  "base_prerequisites_relative_only": [
+    {
+      "path": "src/platform/common.tsx",
+      "sha256": "71a5e2339dda89b70c7033461bad7fa25360f7bd298d2c831238fb4194ae0979",
+      "included": false
+    },
+    {
+      "path": "src/platform/api.ts",
+      "sha256": "0cc4e9f0621a9c33c186899310de593e92f55b4288fe14b6ac00d61a3abc3438",
+      "included": false
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "7e6d9ec2774beb530f8ee1fa7720d1f012c9ab61da6331544a0165bc04aa878a",
+      "included": false
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "1a43931bc0ca7a5f2819eefb71e00978e0a282c3f815e30d1cfb68c9979da8de",
+      "included": false
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "496e94b81d46b4ad9c409ba164c47cb61903de416455f50d41d6d732ed10e4fd",
+      "included": false
+    },
+    {
+      "path": "tsconfig.next.json",
+      "sha256": "91e4cfb65b882c7edbfc124cddd193ae3979f104f3990ec254edb4155823b567",
+      "included": false
+    },
+    {
+      "path": "package.json",
+      "sha256": "7deaf7f48a89dc87dcf3168da6c3e779148c8bdb3607624aec6ca2412c43b3aa",
+      "included": false
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "36794f350435d65f7e97a8b02c218d69d61f31f4980c5f7c5f4049f1fc44586f",
+      "included": false
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "7998af140e0070d4a7e4c6cdd2f6f7e02284bafd0e81f449779d9660e0a0c30c",
+      "included": false
+    },
+    {
+      "path": "next-env.d.ts",
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+      "included": false
+    }
+  ],
+  "source_basis": {
+    "existing_full_publisher_patch_sha256": "f13c928522b0e5ee5f078e268101e3eeac6c9e90c55f6691f698faa9f8ade5c9",
+    "current_sources_match_frozen_source_hashes": true,
+    "existing_navigation_hashes_preserved": true,
+    "generation": "explicit six-file allowlist; NAV additions verified against exact allowed link lines; zero context to exclude guard/auth code",
+    "patch_is_against_BASE_not_deployed_tree": true,
+    "note": "source export only; publisher already applied full patch plus navigation. Do not reapply additions blindly to deployed tree."
+  },
+  "licence": {
+    "declared_by_this_export": null,
+    "CC_licence_inferred": false,
+    "CORNARE_approval_inferred": false,
+    "note": "No licence or redistribution authorization is established by this curation. Depends on private base; source references do not grant institutional approval."
+  },
+  "excluded": [
+    "complete repository or private base files",
+    "tests/scripts/oracles/fixtures",
+    "private route implementations",
+    "complete AuthForm/Shell files or guard/auth code",
+    ".env/auth/config credentials",
+    "DB/API/server/production implementations",
+    "node_modules/dependency files contents",
+    "individual baselines/internal snapshots",
+    "private receipts/documents"
+  ],
+  "limitations": [
+    "financial official-price case; no measured efficacy or environmental winner",
+    "public CSV13 has no explicit fingerprint/version; not scientific CSV29",
+    "JSONv1/v2 and municipal14proposal preserved as currentsource; sourcecuration doesnotrevalidate behavior",
+    "dependent on10 baseprerequisites; no autonomous app claimed"
+  ],
+  "checks": {
+    "textual_allowlist_and_hash_curation_only": true,
+    "new_runtime_tests": false,
+    "QA11_rerun": false,
+    "new_reviews": false,
+    "sources_or_frozen_artifacts_modified": false,
+    "Git_mutations_or_deploy": false,
+    "absolute_workspace_paths_in_patch_or_manifest": false
+  },
+  "guide": {
+    "path": "guia_jurado_pv.md",
+    "sha256": "afe70d0c5a310d735cc9ba1d64c622c457b329c4e01f929dc960ca2af11024ac"
+  },
+  "frozen_at_utc": "2026-10-07T18:10:09.371830+00:00"
+}

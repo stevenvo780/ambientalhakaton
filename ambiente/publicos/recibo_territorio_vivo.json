@@ -1,0 +1,18 @@
+{
+  "software": "Territorio Vivo",
+  "url": "https://territorio-vivo-five.vercel.app/resultados",
+  "base_commit": "19214fceffd89a0de9131acc90fc3fd4205d8a62",
+  "patch_aplicado_sha256": "d1983b9f4fe1cf3f58039001e314b3968daebe95f2dc2fbcb2aa317e4510e0de",
+  "estado": "produccion_HTTP_verificada_QA_visual_en_curso",
+  "build": "Next.js Webpack producción22rutas, sin migración",
+  "snapshot_commit": "84b0199ff88828531bb0cf861d2d4d7cf09c5736",
+  "verificacion": {
+    "resultados_HTTP": 200,
+    "API_publica_HTTP": 200,
+    "API_privadas_HTTP": 401,
+    "conteos": "21 perfiles/6 unidades D6/42 cruces documentales"
+  },
+  "limite": "Snapshot público fijado por commit; no seguimiento físico ni eficacia acreditados.",
+  "schema": "ambiental.software.publicacion.v1",
+  "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T17:37:23+00:00",
-  "updated_at_bogota": "2026-10-07T11:50:37.683593-05:00",
+  "updated_at_utc": "2026-10-07T18:17:10.309923+00:00",
+  "updated_at_bogota": "2026-10-07T13:17:10.309923-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_reanudada_Desktop_goal_activa",
   "goal": {
@@ -24,7 +24,6 @@
   "limites": {
     "paquete_bogota": "2026-10-07T13:50:00-05:00",
     "entrega_bogota": "2026-10-07T14:00:00-05:00",
-    "minutos_disponibles_hasta_paquete": 143,
     "recalcular_tras_GO_tardio": true,
     "entrega": "paquete listo para el usuario antes de 14:00; presentación posterior al estudio",
     "estudio_bogota": {
@@ -41,9 +40,9 @@
   "recursos": {
     "nativos_maximos_incluido_root": 5,
     "nativos_ejecutores_maximos": 4,
-    "claude_muse": "Revisiones independientes actuales sobre copias congeladas, con archivos propios; resultados pendientes.",
-    "gemini": "Puente local verificado previamente; revisión MEA en curso. El menú de autenticación de la sesión anterior no representa el estado del puente.",
-    "gpt_6_luna": "Actualizador único: dos ciclos reales exitosos con inicios11:35:44 y11:38:44 separados180segundos; validación y push confirmados. Solo fuentes aprobadas/publicadas por commit, sin leer borradores.",
+    "claude_muse": "Revisiones documentales y visuales por versión; el modo oral actual tiene QA de navegador independiente en curso.",
+    "gemini": "Revisión MEA documental recibida: Gemini3.8Flash esfuerzo alto,154segundos, sobre snapshot1836f59 y metadatos PDF75e7; no inspección visual ni aval institucional.",
+    "gpt_6_luna": "Actualizador único origin/main: ciclos reales12:20:35 y12:23:35 separados180segundos; continuidad posterior registrada. Sólo fuentes publicadas congeladas por commit; latencia Git/Vercel separada.",
     "codex_remotos": "solo sesiones existentes; worktrees aislados",
     "cuotas": "Lectura actual de la app para Codex; las cuotas de otros proveedores locales permanecen desconocidas. Sin renovación local, cambio de cuenta ni failover automático."
   },
@@ -67,7 +66,7 @@
     "requisitos_IDs": 75,
     "robustez_completa_demostrada": false,
     "eficacia_causal_demostrada": false,
-    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
+    "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md",
     "P3": "42_residuales_34_variables_6ejemplos_PROP_en_revision",
     "base_cartera": "D6_6unidades_5000_condicional_14municipal_Rionegro_600_12meses_PROP",
     "restriccion_datos": "B7 autorización/aval en estudio legal; nuevos valores basales individuales retenidos, lectura interna continua",
@@ -75,11 +74,16 @@
       "obligatorio": true,
       "maximo_paginas_total": 2,
       "incluye_anexo_metodologico": true,
-      "estado": "archivo_entregado_dos_paginas_verificado_editorial",
+      "estado": "dos_paginas_editorial_verificadas_corte_previo_cierre_final_en_preparacion",
       "archivo": "entregables/ANEXO_METODOLOGICO.pdf",
-      "source_commit_verificado": "8a4846b69ca5baa2f1f025ecaa7bb60ee3f9e3f6",
-      "sha256_verificado": "929e1c7c1ecfb057573b2264f8c1effba85859768e5477c8f44db1982ba92d9f",
+      "source_commit_verificado": "80b0cf4",
+      "sha256_verificado": "83e58b76faacb32e50fe076af65768c64b1fab14c797400abaa3af670cc51875",
       "ensayo_humano": "pendiente_durante_estudio_14_a_16_no_bloquea_paquete"
+    },
+    "requisitos_estado": {
+      "demostrados_con_alcance_limitado": 39,
+      "condicionales": 35,
+      "pendiente_ensayo_humano": 1
     }
   },
   "cronograma_condicional": [
@@ -147,7 +151,7 @@
     "rama_documentos": "main",
     "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
     "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos",
-    "actualizador": "Luna único con source origin/main; primer ciclo real inicio12:20:35/fin12:20:51, push efddb4ca confirmado; siguiente inicio12:23:35. Cadencia nueva necesita segundo ciclo, demora de despliegue separada.",
+    "actualizador": "Actualizador único origin/main: ciclos reales12:20:35 y12:23:35 separados180segundos; continuidad posterior registrada. Sólo fuentes publicadas congeladas por commit; latencia Git/Vercel separada.",
     "verificacion_recibos": {
       "primer_commit": "f4f07f11babbdf1e91767fbcc4b63bfd9ada858f",
       "segundo_commit": "96d9e20064debf765675a55e87fe712662bf3e91",
@@ -161,7 +165,17 @@
       "portada": "tres accesos por nueva instrucción humana: presentación, metodología y Estado de avances",
       "avances": "/avances preservado",
       "PDF": "único ANEXO_METODOLOGICO.pdf máximo2p, enlazado en ambas vistas",
-      "metodologia": "web normal detallada en rediseño, sin formato PPT/reloj; proceso tecnológico real y anexos PV/TV pendientes de acceso público verificado"
+      "metodologia": "Web normal detallada publicada: proceso verificable y tablero explorable. Presupuesto Vivo público verificado; Territorio Vivo producción HTTP verificada y QA visual en curso.",
+      "presentacion": "Modo oral lineal de nueve escenas dentro de siete bloques/7min; comparaciones visibles sin filtros obligatorios. Corte78b08e9 publicado, QA navegador en curso."
+    },
+    "main_cadencia": {
+      "primer_inicio_bogota": "12:20:35",
+      "segundo_inicio_bogota": "12:23:35",
+      "intervalo_segundos": 180,
+      "commits": [
+        "efddb4ca",
+        "aa127e0"
+      ]
     }
   },
   "ejecucion_remota": [
@@ -195,18 +209,61 @@
     "ruta_verificada": "puente local existente",
     "provider": "gemini",
     "model": "gemini/3.8-flash",
-    "revision_estado": "revision_previa_recibida_nueva_revision_MEA_pendiente",
+    "revision_estado": "MEA_documental_recibida_154segundos_sobre_corte1836f59",
     "legal_estado": "borrador_previo_recibido_en_correccion_editorial",
     "auth_bridge": "respuesta_real_confirmada_previamente",
     "auth_standalone": "menu_anterior_conservado_sin_reconfigurar",
     "cuota_local": "UNKNOWN"
   },
   "equipo_presentacion": {
-    "lider": "Ariadna, ingeniera ambiental",
+    "lider": "Ariadna, líder ambiental",
     "apoyos": [
-      "Brahyam, ingeniero ambiental",
+      "Brahyam, apoyo ambiental y defensa",
       "Steven, desarrollador"
     ],
     "duracion_total_maxima_minutos": 7
+  },
+  "software_publico": {
+    "recibo_presupuesto_vivo.json": {
+      "software": "Presupuesto Vivo",
+      "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+      "base_commit": "513b7e6872e159485e62f325bbc5ad4450a777d9",
+      "patch_aplicado_sha256": "f13c928522b0e5ee5f078e268101e3eeac6c9e90c55f6691f698faa9f8ade5c9",
+      "source_export_sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
+      "estado": "produccion_verificada_consulta_anonima",
+      "build": "Next.js producción, sin migración",
+      "verificacion": {
+        "fecha_bogota": "2026-10-07T12:59:28-05:00",
+        "controles": 11,
+        "D6": "5000M/6",
+        "N1": "4700M/5",
+        "unidad14": "Rionegro/600M/12meses propuestos",
+        "export_JSON_sha256": "be2aad8e08f236579b350a44f61e7293ea8155aa3c08f1aad6a351119bc4bd0a",
+        "export_CSV_sha256": "b7bd85eb1efd5e0e45689748ebfce3e1028b6ccf418131f098683ae4acdf4f1c",
+        "API_privadas": 401,
+        "administracion": "requiere cuenta"
+      },
+      "limite": "Consulta financiera reproducible; no eficacia ambiental ni repositorio autónomo acreditados.",
+      "schema": "ambiental.software.publicacion.v1",
+      "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
+    },
+    "recibo_territorio_vivo.json": {
+      "software": "Territorio Vivo",
+      "url": "https://territorio-vivo-five.vercel.app/resultados",
+      "base_commit": "19214fceffd89a0de9131acc90fc3fd4205d8a62",
+      "patch_aplicado_sha256": "d1983b9f4fe1cf3f58039001e314b3968daebe95f2dc2fbcb2aa317e4510e0de",
+      "estado": "produccion_HTTP_verificada_QA_visual_en_curso",
+      "build": "Next.js Webpack producción22rutas, sin migración",
+      "snapshot_commit": "84b0199ff88828531bb0cf861d2d4d7cf09c5736",
+      "verificacion": {
+        "resultados_HTTP": 200,
+        "API_publica_HTTP": 200,
+        "API_privadas_HTTP": 401,
+        "conteos": "21 perfiles/6 unidades D6/42 cruces documentales"
+      },
+      "limite": "Snapshot público fijado por commit; no seguimiento físico ni eficacia acreditados.",
+      "schema": "ambiental.software.publicacion.v1",
+      "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
+    }
   }
 }

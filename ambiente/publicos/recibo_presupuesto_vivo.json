@@ -1,0 +1,23 @@
+{
+  "software": "Presupuesto Vivo",
+  "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+  "base_commit": "513b7e6872e159485e62f325bbc5ad4450a777d9",
+  "patch_aplicado_sha256": "f13c928522b0e5ee5f078e268101e3eeac6c9e90c55f6691f698faa9f8ade5c9",
+  "source_export_sha256": "921e8d8d22b5facec2e4b34b7995dc711e54f7c46dd2741b89b73e7e3241665b",
+  "estado": "produccion_verificada_consulta_anonima",
+  "build": "Next.js producción, sin migración",
+  "verificacion": {
+    "fecha_bogota": "2026-10-07T12:59:28-05:00",
+    "controles": 11,
+    "D6": "5000M/6",
+    "N1": "4700M/5",
+    "unidad14": "Rionegro/600M/12meses propuestos",
+    "export_JSON_sha256": "be2aad8e08f236579b350a44f61e7293ea8155aa3c08f1aad6a351119bc4bd0a",
+    "export_CSV_sha256": "b7bd85eb1efd5e0e45689748ebfce3e1028b6ccf418131f098683ae4acdf4f1c",
+    "API_privadas": 401,
+    "administracion": "requiere cuenta"
+  },
+  "limite": "Consulta financiera reproducible; no eficacia ambiental ni repositorio autónomo acreditados.",
+  "schema": "ambiental.software.publicacion.v1",
+  "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
+}
