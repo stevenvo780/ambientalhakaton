@@ -1,14 +1,14 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T16:26:26Z",
+  "updated_at": "2026-10-07T16:35:58Z",
   "timezone": "America/Bogota",
-  "titulo": "Ejecución reanudada · P1, P2 y P3 en revisión",
-  "detalle": "Reanudación expresa del 7 de octubre a las 11:19 de Bogotá; goal activa y paquete objetivo 13:50. P1 está entregado; P2 compara siete carteras máximas de seis unidades bajo una unidad por entrada. D6 continúa provisional: COP5.000 millones, elegibilidad operativa y cupo regional por confirmar. P3 ya existe como borrador de riesgo residual y seguimiento. Eficacia, delta V y robustez completa permanecen sin demostrar. Las condiciones de autorización y reproducción del master M-E-2411 B7 siguen en revisión.",
+  "titulo": "Ejecución reanudada · P1 entregado; P2 y P3 en revisión",
+  "detalle": "P1 está entregado con datos institucionales y hallazgos trazados; su presencia no implica validación ambiental. La comparación financiera P2 examinó 32.768 subconjuntos: 1.567 factibles y máximo de seis unidades, condicionado a una unidad por catálogo; no es un óptimo ambiental. P3 y sus variables constan como borrador D6 provisional en revisión. Eficacia causal, delta V y robustez completa siguen sin demostrarse. Las condiciones de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta. La decisión D6 y la elegibilidad, repetición, cupos y seguimiento requieren confirmación.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/0348647f76410187b6381ea71c025b47b17d85b9/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -69,6 +69,12 @@
       "fecha": "2026-10-07T16:26:26Z",
       "detalle": "Tres artefactos de la base D6 provisional entregan riesgos, dependencias y variables. Su presencia no demuestra eficacia ni cierre completo.",
       "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.md"
+    },
+    {
+      "titulo": "P3 y variables de seguimiento presentes",
+      "estado": "en_revision",
+      "detalle": "Constan como borrador D6 provisional; su presencia no acredita eficacia ni robustez.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/0348647f76410187b6381ea71c025b47b17d85b9/entregables/p3_riesgo_residual.md"
     }
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
@@ -83,19 +89,26 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T16:26:26Z"
+    "comprobado_utc": "2026-10-07T16:35:58Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
-    "Cerrar elegibilidad operativa de D6 y confirmar la regla de repetición/cupos, incluido conocimiento regional.",
-    "P3 y pitch requieren integración y revisión; la eficacia, delta V y robustez completa siguen sin demostrarse.",
-    "Resolver autorización y reproducción del master M-E-2411 B7; no incorporar nuevos valores basales restringidos."
+    "Confirmar elegibilidad, repetición y cupos de D6, incluido el conocimiento regional.",
+    "Integrar y revisar P2/P3, pitch y seguimiento.",
+    "Resolver el alcance de autorización y reproducción de M-E-2411 B7.",
+    "Mantener eficacia, delta V y robustez como no demostradas."
   ],
   "summary": [
-    "P1 entregado; P2 y P3 están presentes y en revisión.",
-    "D6: seis unidades completas por COP5.000 millones; decisión provisional y máximo condicional.",
-    "Goal activa tras reanudación expresa; paquete 13:50 y entrega antes de 14:00 Bogotá."
+    "P1 entregado; no valida ambientalmente una cartera.",
+    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; no es óptimo ambiental.",
+    "P3 y variables presentes como borrador D6 provisional, en revisión.",
+    "Eficacia, delta V y robustez completa no demostradas.",
+    "Uso y reproducción de M-E-2411 B7 en revisión; acceso público no equivale a licencia abierta."
   ],
-  "status": "ejecucion_reanudada_entregables_en_revision",
-  "checked_at": "2026-10-07T16:26:26Z"
+  "status": "GO_activo_entregables_en_revision",
+  "checked_at": "2026-10-07T16:35:58Z",
+  "source_commit": "0348647f76410187b6381ea71c025b47b17d85b9",
+  "source_captured_at": "2026-10-07T16:35:44Z",
+  "source_was_current_at_publication": true,
+  "head_before_publication": "0348647f76410187b6381ea71c025b47b17d85b9"
 }
