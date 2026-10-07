@@ -1,9 +1,9 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T16:53:57Z",
+  "updated_at": "2026-10-07T16:56:58Z",
   "timezone": "America/Bogota",
   "titulo": "P1 entregado; P2 y P3 en revisión",
-  "detalle": "P1 presenta datos institucionales y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta.",
+  "detalle": "P1 presenta datos institucionales y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta; esto no determina ilegalidad ni autorización general.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
@@ -101,7 +101,7 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T16:53:57Z"
+    "comprobado_utc": "2026-10-07T16:56:58Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
@@ -113,14 +113,14 @@
   "summary": [
     "P1 entregado; sus hallazgos trazados no validan ambientalmente una cartera.",
     "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
-    "P3 y sus variables presentes como borrador D6 provisional, en revisión.",
+    "P3 y sus variables están presentes como borrador D6 provisional, en revisión.",
     "Eficacia, delta V y robustez completa no demostradas.",
     "Uso y reproducción de M-E-2411 B7 en revisión; acceso público no significa licencia abierta."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T16:53:57Z",
+  "checked_at": "2026-10-07T16:56:58Z",
   "source_commit": "fa6770793f466962531c8ffae8629b5ff30a241d",
-  "source_captured_at": "2026-10-07T16:53:44Z",
+  "source_captured_at": "2026-10-07T16:56:44Z",
   "source_was_current_at_publication": true,
   "head_before_publication": "fa6770793f466962531c8ffae8629b5ff30a241d"
 }

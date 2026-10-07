@@ -1,15 +1,15 @@
 {
   "schema": "actualizador-luna.recibo.v1",
-  "updated_at": "2026-10-07T16:53:57Z",
+  "updated_at": "2026-10-07T16:56:58Z",
   "status": "ok",
   "modelo": "gpt-6-luna",
   "esfuerzo": "medium",
   "exito": true,
   "error": null,
-  "ciclo_id": "20261007T165344Z-c16a0277",
-  "snapshot_sha256": "127a577c87bc62fda4fc65ba0a8b51a4c2df8a859d4c5f5e437ec546e1f704a4",
+  "ciclo_id": "20261007T165644Z-9ae3d96a",
+  "snapshot_sha256": "40370f80bb159db72267d98f587022f7105895f6122c74e663ab1e415fb2d627",
   "source_commit": "fa6770793f466962531c8ffae8629b5ff30a241d",
-  "source_captured_at": "2026-10-07T16:53:44Z",
+  "source_captured_at": "2026-10-07T16:56:44Z",
   "head_before_publication": "fa6770793f466962531c8ffae8629b5ff30a241d",
   "source_was_current_at_publication": true,
   "source_artifacts_sha256": {
@@ -23,7 +23,7 @@
     "entregables/p3_riesgo_residual.md": "f3b8791ac0cff49e19a35413c5ddf4e22eff90c2af82c35ce06ebf708af0e8ad",
     "entregables/variables_seguimiento.csv": "2743e829d6e61e60e72f1668f67df1f0730e690fd6f4b8d8f23c58a7d473ef90"
   },
-  "site_estado_sha256": "0c6eb469df1495a0e8d9fd9060faa2f25b7fceffc9485a1b17c342870e274dd3",
+  "site_estado_sha256": "4efc46e53165470754087a171c9570f3b5af42caadd65f427272dff5b4357ed0",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "fuentes": [
     "https://github.com/stevenvo780/ambientalhakaton/blob/fa6770793f466962531c8ffae8629b5ff30a241d/ambiente/estado_orquestacion.json",
