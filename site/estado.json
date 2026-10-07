@@ -1,14 +1,14 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T17:08:54Z",
+  "updated_at": "2026-10-07T17:20:50Z",
   "timezone": "America/Bogota",
-  "titulo": "P1 entregado; P2 y P3 en revisión",
-  "detalle": "P1 reúne datos institucionales y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables constan como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta; esto no determina ilegalidad ni autorización general.",
+  "titulo": "P1 entregado; P2, P3 y guion en revisión",
+  "detalle": "P1 reúne datos y hallazgos trazados; no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo. Es una comparación financiera, no un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta; esto no determina ilegalidad ni autorización general. El PDF final obligatorio de hasta dos páginas está preparado; el ensayo humano de 14–16 minutos sigue pendiente.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/c601d6d7e081260d8f242876ad06bd4a06d51bf4/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/128f0aff3ff2275554d1916799d1a498342a255a/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -99,28 +99,29 @@
   "registro_create_goal": {
     "estado": "active",
     "herramienta_create_goal_usada": true,
-    "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
+    "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/main/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T17:08:54Z"
+    "comprobado_utc": "2026-10-07T17:20:50Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
-    "Integrar y revisar P2/P3, el pitch y el seguimiento.",
-    "Resolver el alcance de autorización y reproducción de M-E-2411 B7.",
+    "Revisar P2, P3, el pitch y el seguimiento.",
+    "Resolver el alcance de uso y reproducción de M-E-2411 B7.",
     "Mantener eficacia, delta V y robustez como no demostradas.",
-    "Preparar PDF final de máximo dos páginas, incluido anexo metodológico; ensayo humano pendiente durante el estudio."
+    "Realizar el ensayo humano de 14–16 minutos."
   ],
   "summary": [
     "P1 entregado; sus hallazgos no validan ambientalmente una cartera.",
     "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
     "P3 y sus variables presentes como borrador D6 provisional en revisión.",
     "Eficacia, delta V y robustez completa no demostradas.",
-    "Uso y reproducción de M-E-2411 B7 en revisión; el acceso público no significa licencia abierta."
+    "Uso y reproducción de M-E-2411 B7 en revisión; el acceso público no significa licencia abierta.",
+    "PDF final de hasta dos páginas preparado; ensayo humano de 14–16 minutos pendiente."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T17:08:54Z",
-  "source_commit": "c601d6d7e081260d8f242876ad06bd4a06d51bf4",
-  "source_captured_at": "2026-10-07T17:08:44Z",
+  "checked_at": "2026-10-07T17:20:50Z",
+  "source_commit": "128f0aff3ff2275554d1916799d1a498342a255a",
+  "source_captured_at": "2026-10-07T17:20:35Z",
   "source_was_current_at_publication": true,
-  "head_before_publication": "c601d6d7e081260d8f242876ad06bd4a06d51bf4"
+  "head_before_publication": "128f0aff3ff2275554d1916799d1a498342a255a"
 }
