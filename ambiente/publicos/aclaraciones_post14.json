@@ -36,5 +36,30 @@
     "prospectivo": "La medición de T0, las actas de custodios y los efectos observados futuros no son exigencias actuales para formular P2/P3 prospectivos.",
     "brechas_decisionales": "Beneficio esperado comparativo R10 sin dominancia global; regla de repetición/cupo no explícita; ensayo humano F01 pendiente durante14–16.",
     "estados_sin_promocion": "39 demostraciones de alcance limitado,35 condiciones y1 pendienteF01; sin nueva eficacia, aprobación o cambio de cartera."
+  },
+  "segundo_lote_documental_post14": {
+    "fecha_preparacion_publicacion_bogota": "2026-10-07T14:38:45.858334-05:00",
+    "fecha_publicacion_efectiva": "Consta en el commit MAIN de estos archivos; es posterior a su modificación14:35 y al corte13:58.",
+    "documentos": [
+      {
+        "archivo": "caso/reutilizacion_observatorio_mea.md",
+        "sha256_anterior": "d9f4dc37502a23f4c1285d452624c340965c415b133c12f53328c9a65f3e502b",
+        "sha256_post14": "8bccd36f7fd7b937513a1b417cdb1e15beb0275ef8d7f4e61208ca887f445028",
+        "fecha_aclaracion_bogota": "2026-10-07T14:35:59.212976-05:00",
+        "razon": "Tres cambios: nota del corte histórico11:06, horizonte SSP3 solicitado por aclaración humana coincidente con estrés y SSP2auxiliar, ejecución futura diferenciada del beneficio esperado comparativo R10parcial.",
+        "url_lectura": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/reutilizacion_observatorio_mea.md"
+      },
+      {
+        "archivo": "entregables/estado_criterios_oficiales.md",
+        "sha256_anterior": null,
+        "sha256_post14": "084562260fa2d16c7d993bbe4733f8d4e6be24669bed30b5cfc7bdde3efce8b8",
+        "fecha_aclaracion_bogota": "2026-10-07T14:35:00-05:00",
+        "precision_fecha": "Hora indicada en el documento; sin precisión de segundos.",
+        "razon": "Guía de los ocho criterios oficiales, con seis respuestas sustentadas documentalmente y dos brechas parciales. No notas del jurado ni promoción de estados.",
+        "url_lectura": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/estado_criterios_oficiales.md"
+      }
+    ],
+    "verificacion_independiente": "PASS de editor sobre guía08456226 y PASS del publicador sobre tres cambiosMEA8bcc; revisión sólo documental acotada.",
+    "alcance": "8criterios oficiales son distintos de75IDs internos. No cambia39/35/1, R10 no acredita dominancia global. EnlacesGitHub MAIN conservan navegación relativa; no se afirma que estos dos documentos estén servidos como rutas de Vercel. PDF350 y tabla de fuentes de metodología preservan el corte anterior."
   }
 }
