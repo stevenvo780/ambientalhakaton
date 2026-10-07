@@ -235,5 +235,43 @@
     "historical_D6_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
     "paquete_actual": "paquete_estudio_m62.json",
     "paquete_original_13_59": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/8f2eaf2071ca9fc45d63fcac03837158e6d88f93/ambiente/publicos/paquete_estudio.json"
+  },
+  "accesos_qr_post14": {
+    "registrado_bogota": "2026-10-07T16:34:11.125424-05:00",
+    "alcance": "QR de la solución al final de la presentación y dos recuadros de consulta con QR para Presupuesto Vivo y Territorio Vivo en metodología. Diez escenas, tiempos, PDF y datos científicos sin cambios.",
+    "archivos": [
+      {
+        "archivo": "site/presentacion/index.html",
+        "sha256": "e131e82f6a7bb41ffa71f708942259238ce136fa10042aa1fe335b3bdbca2047"
+      },
+      {
+        "archivo": "site/metodologia/index.html",
+        "sha256": "82bca24f61cc74f7f06eda4a4c492e20401d93cc9fcc68c80fbf604e2d1a0536"
+      },
+      {
+        "archivo": "site/exposicion-assets/qr-artefacto-principal.svg",
+        "sha256": "adbbdf1bca2e73d43eff2b61abeb54e1cdbca7e3aff0ff47914748b39fd19ba8"
+      },
+      {
+        "archivo": "site/exposicion-assets/qr-presupuesto-vivo.svg",
+        "sha256": "55c08a6fbf9ec770fede9cdfb829ebc6d65bb8d1f88c1e91330cf2ea9a3f7ddb"
+      },
+      {
+        "archivo": "site/exposicion-assets/qr-territorio-vivo.svg",
+        "sha256": "ad781da31b50bef24b3f46ce905b21a232dee76648d6189bd75326113a23463f"
+      }
+    ],
+    "destinos": [
+      "https://hackathon-ambiental.stevenvallejo.com/",
+      "https://presupuesto-vivo-chi.vercel.app/hackathon",
+      "https://territorio-vivo-five.vercel.app/resultados"
+    ],
+    "verificacion": {
+      "qr": "PASS independiente desde módulos dibujados del SVG y rasterización, payload exacto, formato duplicado y corrección de errores Reed–Solomon. Zona de silencio de cuatro módulos.",
+      "visual": "PASS independiente limitado: última escena en 1280×720 y 390×844 sin solapes; dos recuadros de metodología con lectura vertical normal, enlaces accesibles y sin desbordamiento horizontal.",
+      "camara_telefono": false,
+      "ensayo_humano": false
+    },
+    "fecha_publicacion": "La fecha real consta en el commit que incorpora este registro; esta ampliación es posterior al corte entregado antes de las 14."
   }
 }

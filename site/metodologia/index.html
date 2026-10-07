@@ -9,6 +9,17 @@
 <link rel="stylesheet" href="../exposicion-assets/expo.css">
 <script defer src="../exposicion-assets/datos.js"></script>
 <script defer src="../exposicion-assets/expo.js"></script>
+<style>
+#software .accesos-artefactos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+#software .acceso-artefacto{border:2px solid var(--c);border-radius:12px;padding:clamp(1rem,2vw,1.6rem);background:var(--panel);min-width:0}
+#software .acceso-artefacto h3{font-size:clamp(1.35rem,2vw,1.8rem);margin:0 0 .6rem}
+#software .acceso-artefacto .abrir-artefacto{display:inline-block;padding:.7rem 1rem;border:1px solid var(--c);border-radius:6px;font-weight:700;margin:.3rem 0 .7rem}
+#software .acceso-qr{display:flex;gap:1rem;align-items:center;margin-top:1rem;border-top:1px solid var(--linea);padding-top:1rem}
+#software .acceso-qr img{width:164px;height:164px;flex:none;background:#fff}
+#software .acceso-qr a{overflow-wrap:anywhere;font-size:.85rem;line-height:1.4}
+@media(max-width:980px){#software .accesos-artefactos{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:480px){#software .acceso-qr{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body data-vista="metodologia" class="pagina">
 <a class="salto" href="#contenido">Ir al contenido</a>
@@ -273,16 +284,20 @@
 
 <section id="software" class="seccion">
   <h2>Software de apoyo</h2>
-  <div class="dos">
-    <section class="tarjeta" style="--c:var(--agua)">
-      <h3>Presupuesto Vivo · principal</h3>
-      <p>Apoyo para la cuenta de carteras con costos indivisibles y la comparación de alternativas.</p>
+  <div class="accesos-artefactos">
+    <section class="acceso-artefacto" style="--c:var(--agua)">
+      <h3>Presupuesto Vivo</h3>
+      <p>Para decidir cómo distribuir el presupuesto: compara carteras, costos indivisibles y alternativas sin confundir asignación con beneficio ambiental.</p>
+      <a class="abrir-artefacto" href="https://presupuesto-vivo-chi.vercel.app/hackathon">Abrir comparación presupuestal →</a>
       <p><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">Consulta abierta</a>: M6-2 actual, verificada POST-14 y fijada al corte 3cc: 5.000/6, con D6 como comparador histórico, N1 4.700/5 y 14R con 12 meses propuestos. Exportación JSON/CSV verificada; la administración está protegida y requiere cuenta.</p>
+      <div class="acceso-qr"><a href="https://presupuesto-vivo-chi.vercel.app/hackathon" aria-label="Abrir Presupuesto Vivo"><img src="../exposicion-assets/qr-presupuesto-vivo.svg" width="164" height="164" alt="QR para abrir Presupuesto Vivo"></a><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">https://presupuesto-vivo-chi.vercel.app/hackathon</a></div>
     </section>
-    <section class="tarjeta" style="--c:var(--bosque)">
-      <h3>Territorio Vivo · apoyo</h3>
-      <p>Apoyo para la evidencia territorial y el seguimiento.</p>
+    <section class="acceso-artefacto" style="--c:var(--bosque)">
+      <h3>Territorio Vivo</h3>
+      <p>Para consultar la evidencia por municipio: explora perfiles, escenarios, riesgo residual y variables de seguimiento de la propuesta.</p>
+      <a class="abrir-artefacto" href="https://territorio-vivo-five.vercel.app/resultados">Abrir evidencia y seguimiento →</a>
       <p><a href="https://territorio-vivo-five.vercel.app/resultados">Consulta abierta</a>: M6-2 actual, verificada POST-14 y fijada al corte 3cc: 21 perfiles, 6 unidades de M6-2, 42 cruces documentales y 34 variables (14 primarias y 20 auxiliares), con filtros por N1 y municipio. Las rutas privadas y la administración están protegidas. Muestra datos y cruces; no acredita seguimiento ejecutado ni eficacia.</p>
+      <div class="acceso-qr"><a href="https://territorio-vivo-five.vercel.app/resultados" aria-label="Abrir Territorio Vivo"><img src="../exposicion-assets/qr-territorio-vivo.svg" width="164" height="164" alt="QR para abrir Territorio Vivo"></a><a href="https://territorio-vivo-five.vercel.app/resultados">https://territorio-vivo-five.vercel.app/resultados</a></div>
     </section>
   </div>
   <p><span class="tipo calculo">Cálculo</span> La enumeración es reproducible con <code>caso/comparar_presupuesto.py</code> sobre <code>caso/catalogo_costos_reto.csv</code>. <span class="tipo faltante">Límite</span> Las pruebas de software acreditan preparación técnica, no productos ambientales ni eficacia.</p>

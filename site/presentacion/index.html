@@ -11,6 +11,15 @@
 <script defer src="../exposicion-assets/datos.js"></script>
 <script defer src="../exposicion-assets/explicaciones-m62.js"></script>
 <script defer src="../exposicion-assets/expo.js"></script>
+<style>
+#preguntas .texto{position:relative}
+#preguntas .qr-final{position:absolute;inset-inline-end:0;top:0;display:flex;gap:.75rem;align-items:center;width:340px;padding:.5rem;border:1px solid var(--linea);border-radius:8px;background:var(--panel)}
+#preguntas .qr-final img{width:136px;height:136px;flex:none;background:#fff}
+#preguntas .qr-final strong{display:block;margin-bottom:.4rem;font-size:1rem}
+#preguntas .qr-final a{font-size:.75rem;overflow-wrap:anywhere;line-height:1.35}
+@media(min-width:981px){#preguntas h2,#preguntas .equipo{max-width:calc(100% - 370px)}#preguntas .qa{margin-top:2.5rem}}
+@media(max-width:980px){#preguntas .qr-final{position:static;width:100%;max-width:360px;margin:.65rem 0;box-sizing:border-box}}
+</style>
 </head>
 <body data-vista="presentacion">
 <a class="salto" href="#escenario">Ir a la lámina actual</a>
@@ -269,6 +278,10 @@
   <div class="texto">
     <p class="bloque"><b>Después de 7:00</b>, preguntas (no se expone; fuera del objetivo del cronómetro)</p>
     <h2 id="h8">Preguntas probables y dónde está la respuesta.</h2>
+    <aside class="qr-final" aria-label="Acceso a la solución completa">
+      <a href="https://hackathon-ambiental.stevenvallejo.com/" aria-label="Abrir la solución completa"><img src="../exposicion-assets/qr-artefacto-principal.svg" width="136" height="136" alt="QR para abrir la solución completa"></a>
+      <div><strong>Explora la solución</strong><a href="https://hackathon-ambiental.stevenvallejo.com/">https://hackathon-ambiental.stevenvallejo.com/</a></div>
+    </aside>
     <div class="equipo"><p><b>Ariadna</b>Lidera y responde prioridades</p><p><b>Brahyam</b>Incertidumbres, criterios y límites</p><p><b>Steven</b>Cuenta, fuentes y herramientas</p></div>
     <ul class="qa">
       <li><b>Q01 ¿Qué proteger y por qué?</b>Capacidad de conservación bio y sensibilidad hídrica (P1-H1/H2). M6-2 asigna 24 % a PSA y 16 % a salud: presupuesto, no impacto. <em>Ariadna</em></li>
