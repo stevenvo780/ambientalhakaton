@@ -1,16 +1,16 @@
 {
   "schema": "actualizador-luna.recibo.v1",
-  "updated_at": "2026-10-07T16:42:04Z",
+  "updated_at": "2026-10-07T16:45:06Z",
   "status": "ok",
   "modelo": "gpt-6-luna",
   "esfuerzo": "medium",
   "exito": true,
   "error": null,
-  "ciclo_id": "20261007T164144Z-b7b73875",
-  "snapshot_sha256": "ac21c9eb9ddaee375d58d579567c363e5a7d02b0de734c1d8f55aa4da25cc531",
-  "source_commit": "8f5815bd5e2ca867f51d309703bd35df81cd8de9",
-  "source_captured_at": "2026-10-07T16:41:44Z",
-  "head_before_publication": "8f5815bd5e2ca867f51d309703bd35df81cd8de9",
+  "ciclo_id": "20261007T164444Z-d3f7395d",
+  "snapshot_sha256": "84b46f88d2e905a8f9d3e0a28f43c05638663f74afc99ec6d061531cdd6c737e",
+  "source_commit": "e23621203e1d2e9e6a5d3146ee09e7420021d331",
+  "source_captured_at": "2026-10-07T16:44:44Z",
+  "head_before_publication": "e23621203e1d2e9e6a5d3146ee09e7420021d331",
   "source_was_current_at_publication": true,
   "source_artifacts_sha256": {
     "ambiente/estado_orquestacion.json": "8b75727c930e735d2bc5cd04e3370845cdd507894cabb65bef5cddfc949a68bc",
@@ -23,18 +23,18 @@
     "entregables/p3_riesgo_residual.md": "087a6900a0b725cad51317e8a07b9ac1b39490f319bb561a588bb607202d8d1d",
     "entregables/variables_seguimiento.csv": "f4c21e7a5b9f68834d6c5f3011e0c7e33d6fc7ec5dcd7eaa4d9ab324ca388216"
   },
-  "site_estado_sha256": "92609443b91a77c63ba20ea5d5091f70c8c989ade5d0bc84f3e90fd4ae03c6a7",
+  "site_estado_sha256": "d9a48ac77b3344600257a0773c940c230d443a16c06f0f229002288ad5ae64b7",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "fuentes": [
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/ambiente/estado_orquestacion.json",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/registro_avances.md",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/datos_oficiales.json",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/p1_tablero.md",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/caso/brechas_escenarios_mea.md",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/p2_comparacion_financiera.json",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/p2_portafolio.md",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/p3_riesgo_residual.md",
-    "https://github.com/stevenvo780/ambientalhakaton/blob/8f5815bd5e2ca867f51d309703bd35df81cd8de9/entregables/variables_seguimiento.csv"
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/ambiente/estado_orquestacion.json",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/registro_avances.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/datos_oficiales.json",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/p1_tablero.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/caso/brechas_escenarios_mea.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/p2_comparacion_financiera.json",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/p2_portafolio.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/p3_riesgo_residual.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/variables_seguimiento.csv"
   ],
   "actualizador_sha256": "0e1777802bc51c7e2dbba287e86a86a65120df47540c99ba290c9a8f7242d8d1"
 }
