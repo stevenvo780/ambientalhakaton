@@ -19,6 +19,11 @@
 #preguntas .qr-final a{font-size:.75rem;overflow-wrap:anywhere;line-height:1.35}
 @media(min-width:981px){#preguntas h2,#preguntas .equipo{max-width:calc(100% - 370px)}#preguntas .qa{margin-top:2.5rem}}
 @media(max-width:980px){#preguntas .qr-final{position:static;width:100%;max-width:360px;margin:.65rem 0;box-sizing:border-box}}
+#metodo .roles{grid-template-columns:repeat(3,minmax(0,1fr))}
+#metodo .roles section{text-align:center}
+#metodo .qr-artefacto{display:block;width:160px;max-width:100%;margin:.5rem auto .6rem}
+#metodo .qr-artefacto img{display:block;width:100%;height:auto;background:#fff}
+@media(max-width:980px){#metodo .roles{grid-template-columns:minmax(0,1fr)}#metodo .qr-artefacto{width:180px}}
 </style>
 </head>
 <body data-vista="presentacion">
@@ -236,9 +241,9 @@
       <li><a href="../metodologia/#software"><b>Consulta pública</b><small>Repositorio, PV y TV</small></a></li>
     </ol>
     <div class="roles">
-      <section style="--c:var(--agua)"><h3><a href="https://github.com/stevenvo780/ambientalhakaton/tree/main">Análisis por capas y orquestación</a></h3><p>Este repositorio sustenta la decisión: fuentes, P1–P3, cálculo y SHA. Detalle en la <a href="../metodologia/">metodología</a>.</p></section>
-      <section style="--c:var(--bosque)"><h3><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">Presupuesto Vivo</a></h3><p>Apoyo de presupuesto. Muestra M6-2 actual, verificada POST-14; D6 como comparador histórico.</p></section>
-      <section style="--c:var(--ocre)"><h3><a href="https://territorio-vivo-five.vercel.app/resultados">Territorio Vivo</a></h3><p>Apoyo de territorio y seguimiento. Muestra M6-2 actual, verificada POST-14: 21 perfiles, 42 cruces y 34 variables.</p></section>
+      <section style="--c:var(--agua)"><h3><a href="https://hackathon-ambiental.stevenvallejo.com/">Análisis por capas y orquestación</a></h3><a class="qr-artefacto" href="https://hackathon-ambiental.stevenvallejo.com/" aria-label="Abrir el artefacto principal"><img src="../exposicion-assets/qr-artefacto-principal.svg" width="160" height="160" alt="QR del artefacto principal: análisis, estado y metodología"></a><p>Este repositorio sustenta la decisión: fuentes, P1–P3, cálculo y SHA. Detalle en la <a href="../metodologia/">metodología</a>.</p></section>
+      <section style="--c:var(--bosque)"><h3><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">Presupuesto Vivo</a></h3><a class="qr-artefacto" href="https://presupuesto-vivo-chi.vercel.app/hackathon" aria-label="Abrir Presupuesto Vivo"><img src="../exposicion-assets/qr-presupuesto-vivo.svg" width="160" height="160" alt="QR de Presupuesto Vivo: decisión presupuestal"></a><p>Apoyo de presupuesto. Muestra M6-2 actual, verificada POST-14; D6 como comparador histórico.</p></section>
+      <section style="--c:var(--ocre)"><h3><a href="https://territorio-vivo-five.vercel.app/resultados">Territorio Vivo</a></h3><a class="qr-artefacto" href="https://territorio-vivo-five.vercel.app/resultados" aria-label="Abrir Territorio Vivo"><img src="../exposicion-assets/qr-territorio-vivo.svg" width="160" height="160" alt="QR de Territorio Vivo: territorio y seguimiento"></a><p>Apoyo de territorio y seguimiento. Muestra M6-2 actual, verificada POST-14: 21 perfiles, 42 cruces y 34 variables.</p></section>
     </div>
   </div>
   <aside class="notas" aria-label="Notas de estudio">
