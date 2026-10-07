@@ -78,7 +78,15 @@ Las carteras de 5 unidades son comparadores, no un máximo demostrado. Un ejempl
 
 **8. ¿Qué falta de escenarios y MEA?**
 
-Faltan fichas completas por municipio y dimensión, los escenarios exactos de referencia e intermedio, SSP3-7.0/2060 del corredor, códigos MEA con líneas base, sitios, actores y la regla de repetición. Mientras falten, robustez y seguimiento son **condicionales**.
+**Estado actual, después del GO:**
+
+- **Disponible:** P1 publicó **21 perfiles con 357 registros** institucionales (S, CA y V de referencia, más amenaza y riesgo por escenario). SSP3-7.0 tiene fuente primaria: el informe de amenazas, p. 6, y las celdas P y BB de la matriz.
+- **Escenario intermedio:** usar SSP2-4.5/2040 es una **elección explícita del equipo, todavía por confirmar**. No es un par oficial impuesto.
+- **Pendiente:** el año basal de los índices (no identificado), los valores basales de los indicadores MEA, los predios y sitios, la cobertura, los actores validados, la regla de repetición y cualquier eficacia.
+
+Robustez y seguimiento siguen siendo **condicionales**: hay datos de escenario, pero ninguna cartera está probada.
+
+*Instantánea previa al GO:* entonces faltaban las fichas completas por municipio y dimensión, los escenarios exactos de referencia e intermedio, SSP3-7.0/2060 del corredor, los códigos MEA con sus líneas base, los sitios, los actores y la regla de repetición.
 
 El dato 0,28→0,32 (riesgo de desastres de Rionegro hacia 2060, p. 2) **no identifica el SSP en esa página**. Es un dato futuro parcial del estudio: no hay que asignarlo a SSP3 ni llamarlo prueba de la cartera.
 

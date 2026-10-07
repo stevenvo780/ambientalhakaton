@@ -1,6 +1,6 @@
 # Publicabilidad de los insumos y evidencias
 
-La publicación de los textos, costos y datos municipales/sectoriales puede avanzar. Los originales institucionales de 31 páginas y el ZIP permanecen locales hasta disponer de un derivado que omita información empresarial individual identificable. Este dictamen no establece una prohibición general de redistribución ni considera secreto un nombre público por sí solo.
+La publicación de los avances propios, textos del reto y costos puede avanzar. La difusión de matrices municipales/sectoriales de terceros y sus derivados requiere además respetar condiciones de uso y aval, ahora en revisión. Los originales institucionales de 31 páginas y el ZIP permanecen locales hasta disponer de un derivado que omita información empresarial individual identificable. Este dictamen no establece una prohibición general de redistribución ni considera secreto un nombre público por sí solo.
 
 ## Regla y procedencia
 
@@ -20,7 +20,7 @@ Se revisaron visualmente las 31 páginas de la presentación y se ampliaron las 
 
 Las fotos de talleres y las tablas municipales no contienen resultados individuales empresariales observados. No se inventa una reserva general sobre esos contenidos.
 
-## Conjunto apto
+## Conjunto revisado y condiciones de uso
 
 - README y documentos del caso: propuesta, plan, matriz de 75 requisitos, selección, revisiones, dictámenes, goal y guías; conservan sus estados y límites.
 - Enunciados de ocho páginas, transcripciones, convocatoria y notas. Los costos son referencias simuladas, no presupuestos reales.
@@ -42,3 +42,9 @@ Rutas personales, IP de red privada, nombres de host, PID y TUI son metadatos op
 La [web canónica](https://hackathon-ambiental.stevenvallejo.com) presenta resúmenes. Las fuentes versionadas se consultan en [GitHub dev](https://github.com/stevenvo780/ambientalhakaton/tree/dev), con su SHA y hora. La FAQ y guía indican el orden y el fallback: subir README a Proyecto ChatGPT no descarga automáticamente documentos si no hay navegación. No se crea un GPT personalizado.
 
 El [inventario nominal](../ambiente/inventario_publicacion.json) contiene decisiones por archivo y SHA locales de revisión. Su sello temporal no certifica que cada archivo exista en ese mismo hash remoto. Toda publicación de nuevos artefactos corresponde al publicador único autorizado por GO.
+
+## Condición nueva de autoría y uso (7oct2026)
+
+Se verificó en el masterM-E-2411, hoja `Sobre este documento`, B7, un aviso de uso exclusivo de CORNARE y aval/autorización para uso, mención, reproducción o modificación. Acceso por URL pública no equivale a licencia abierta. La interpretación jurídica del aviso y el alcance del caso siguen en revisión por el responsable legal; no se deduce ilegalidad por el solo aviso ni se certifica autorización general. No se añaden copias masivas de esas fuentes hasta dictamen. Las comprobaciones técnicas de datos agregados/ausencia de secretos siguen siendo válidas, pero no sustituyen esa revisión de derechos.
+
+La allowlist previa describe privacidad y formato del primer lote, no una licencia libre de todas las fuentes. Originales ya publicados mantienen trazabilidad; ningún cambio Git, retirada o republicación se hace desde esta auditoría. Los avances propios de decisión y estado pueden continuar mostrando la condición pendiente.
