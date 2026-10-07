@@ -39,7 +39,7 @@
   },
   "segundo_lote_documental_post14": {
     "fecha_preparacion_publicacion_bogota": "2026-10-07T14:38:45.858334-05:00",
-    "fecha_publicacion_efectiva": "Consta en el commit MAIN de estos archivos; es posterior a su modificación14:35 y al corte13:58.",
+    "fecha_publicacion_efectiva": "Los dos documentos se publicaron enMAIN a las14:38:45, después de su aclaración14:35 y del corte13:58.",
     "documentos": [
       {
         "archivo": "caso/reutilizacion_observatorio_mea.md",
@@ -60,6 +60,13 @@
       }
     ],
     "verificacion_independiente": "PASS de editor sobre guía08456226 y PASS del publicador sobre tres cambiosMEA8bcc; revisión sólo documental acotada.",
-    "alcance": "8criterios oficiales son distintos de75IDs internos. No cambia39/35/1, R10 no acredita dominancia global. EnlacesGitHub MAIN conservan navegación relativa; no se afirma que estos dos documentos estén servidos como rutas de Vercel. PDF350 y tabla de fuentes de metodología preservan el corte anterior."
+    "alcance": "8criterios oficiales son distintos de75IDs internos. No cambia39/35/1, R10 no acredita dominancia global. EnlacesGitHub MAIN conservan navegación relativa; no se afirma que estos dos documentos estén servidos como rutas de Vercel. PDF350 y tabla de fuentes de metodología preservan el corte anterior.",
+    "fecha_publicacion_documentos_bogota": "2026-10-07T14:38:45-05:00",
+    "commit_publicacion_documentos": "57b66ceefdb9992987c1394b8585b54143147cf5"
+  },
+  "primer_lote_publicacion": {
+    "commit": "125ae6301782eaafe0c22ac85d3872bd0e95aab0",
+    "fecha_commit_bogota": "2026-10-07T14:27:20-05:00",
+    "verificacion_HTTP_bogota": "2026-10-07T14:29:45-05:00"
   }
 }
