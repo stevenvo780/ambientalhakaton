@@ -1,6 +1,6 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T16:50:37.683585+00:00",
+  "updated_at_utc": "2026-10-07T17:06:34.350223+00:00",
   "updated_at_bogota": "2026-10-07T11:50:37.683593-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_reanudada_Desktop_goal_activa",
@@ -57,7 +57,7 @@
     "E2E_navegador_completo": false
   },
   "entrega_ambiental": {
-    "estado": "P1 entregado; P2 y P3 actualizados en 3628d53, aún en revisión. D6=6 unidades/COP5000M, incluida UNA unidad14 municipal Rionegro/COP600M/12 meses propuestos desde futura acta; Guarne y Marinilla sin programa14 propio financiado. 03 admitida oficialmente en el corredor por enunciado p5, sitio e indicador por validar. SSP3-7.0/2060 es horizonte solicitado confirmado por el usuario al responder consulta sobre intermedio; intermedio y estrés coinciden, selección cerrada. SSP2 solo exploratorio adicional. PDF FINAL obligatorio máximo2 páginas total, incluye anexo metodológico, en preparación. Paquete listo para usuario antes14:00, estudio14:00–16:00, presentación después; ensayo humano pendiente durante estudio, no bloquea paquete. Ariadna lidera con Brahyam y Steven;7 minutos totales.",
+    "estado": "P1/P2/P3 y guion entregados como recomendación condicional en revisión. P1 aclara SSP3-7.0/2060 confirmado como horizonte solicitado: intermedio y estrés coinciden; SSP2 adicional exploratorio. D6=6 unidades/COP5000M bajo supuesto1unidad/entrada: siete carteras empatan el máximo, conteo no prueba superioridad. Unidad14 UNAmunicipalRionegro/COP600M/12meses PROPUESTOS desde futura acta; G/Msin14 propiofinanciado. 03admisióncorredor resuelta porenunciadop5; sitio/indicador pendiente. HIPcupo3 para14 permite7UNIDADES5TIPOS con15+14G/M noacreditados yretiro07/09=2000M40%asignación; noadoptada/noreglaoficial. PDFfinal obligatorio≤2pTOTAL decisión+metodología entregado yverificado físicamente por editor; ensayoreal14–16 pendiente,no bloqueapaquete13:50/antes14. Ariadnalíder/BrahyamStevenQ&A,7minTOTAL. P3residuales42/variables34,ejemplos físicosPROP ycustodios/basales/fechasfaltantes; presencia nopruebaeficacia.",
     "productos": [
       "P1",
       "P2",
@@ -68,14 +68,18 @@
     "robustez_completa_demostrada": false,
     "eficacia_causal_demostrada": false,
     "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
-    "P3": "borrador_D6_provisional_3archivos_existentes_11:12",
+    "P3": "42_residuales_34_variables_6ejemplos_PROP_en_revision",
     "base_cartera": "D6_6unidades_5000_condicional_14municipal_Rionegro_600_12meses_PROP",
     "restriccion_datos": "B7 autorización/aval en estudio legal; nuevos valores basales individuales retenidos, lectura interna continua",
     "PDF_final": {
       "obligatorio": true,
       "maximo_paginas_total": 2,
       "incluye_anexo_metodologico": true,
-      "estado": "en_preparacion_editorial"
+      "estado": "archivo_entregado_dos_paginas_verificado_editorial",
+      "archivo": "entregables/ANEXO_METODOLOGICO.pdf",
+      "source_commit_verificado": "8a4846b69ca5baa2f1f025ecaa7bb60ee3f9e3f6",
+      "sha256_verificado": "929e1c7c1ecfb057573b2264f8c1effba85859768e5477c8f44db1982ba92d9f",
+      "ensayo_humano": "pendiente_durante_estudio_14_a_16_no_bloquea_paquete"
     }
   },
   "cronograma_condicional": [

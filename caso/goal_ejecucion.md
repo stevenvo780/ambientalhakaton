@@ -10,6 +10,8 @@ Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.
 
 Base de trabajo: [propuesta principal](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/propuesta_principal.md), [75 requisitos](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md), [catálogo](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/catalogo_costos_reto.csv), [comparación financiera](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparacion_financiera.json) y [script reproducible](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparar_presupuesto.py). Versión preparatoria central: `a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767`; los cambios de publicación se registran por commit. Los originales oficiales gobiernan; el documento central no los sustituye.
 
+Estado documental comprobado: el PDF final único de dos páginas está entregado con decisión y metodología; el ensayo humano sigue pendiente durante el estudio. Las revisiones y las vistas de exposición se integran por versiones; la goal permanece activa y no se declara eficacia ambiental.
+
 ## Aclaración de entrega del usuario
 
 Aclaración recibida el 7 de octubre, registrada en esta continuidad: el paquete de estudio se entrega al usuario antes de las 14:00, con buffer interno de 13:50. El ensayo humano con reloj se realizará durante el estudio de 14:00 a 16:00; su recibo queda pendiente y se añadirá antes de la presentación. Su ausencia no bloquea la entrega del paquete para estudiar. Ariadna, ingeniera ambiental, lidera la presentación; Brahyam, ingeniero ambiental, y Steven, desarrollador, apoyan y responden preguntas. El límite es **siete minutos en total entre los tres**. La entrega documental final es **un PDF obligatorio de máximo dos páginas en total**, que incluye el anexo metodológico de cómo se llegó a la respuesta.
@@ -29,7 +31,7 @@ Root **solo orquesta**: asigna, recibe evidencia, resuelve discrepancias y decid
 | Territorio, procedencia y MEA de apoyo | Codex remoto EXISTENTE `EfectoDomio` = Territorio Vivo; worktree independiente. |
 | Crítica independiente | Claude y Muse **locales**: evaluación, FAQ/guía acotadas según asignación; cada uno escribe solo su archivo, con versión y objeciones. |
 | Apoyo acotado de cobertura/consistencia | GPT-6-Luna: QA local respondida en 39,3 s según coordinación; no acredita runtime remoto ni añade un quinto slot nativo. |
-| Revisión adicional MEA/escenarios | Gemini **local**, solo después de login oficial y catálogo verificado; pendiente, sin sustitución remota. |
+| Revisión adicional MEA/escenarios | Gemini **local** mediante el puente verificado: lectura de fuentes congeladas y revisión del resultado; los fallos de tiempo no acreditan problemas de autenticación. |
 | Publicación y estado | Un único publicador delegado realiza Git en dev; los redactores entregan lotes/SHA y el dueño web actualiza estado tras su publicación. |
 
 Antes de nuevo workflow/proveedor: consultar cuotas actuales y catálogo de la ruta, declarar máquina/modelo/motivo. Una lectura de otra máquina no confirma disponibilidad local. Conservar cuentas/sesiones; sin failover automático, sondeo Codex deshabilitado, Scite o servicios de pago nuevos. Cada prompt es autocontenido y fija entradas, restricciones, resultado y **un escritor por archivo**. No delegar de una máquina a otra y de vuelta. No usar las sesiones remotas nuevas de preparación para el trabajo.
