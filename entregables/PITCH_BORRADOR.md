@@ -17,11 +17,11 @@ Los cinco hallazgos llevan a una decisión territorial. Biodiversidad es priorit
 
 **Fuentes para la lámina, sin leer toda la cita en voz alta:** P1-H1…H5 en p1_tablero.md; matrizM-E-2411, Regional Valles SN, filas15–79; informe de amenazasM-E-2550p6 para SSP3-7.0 y período2041–2060. Referencia climática1981–2010; año basal dimensional aún no deducible del selector2026.
 
-Se aprovechan fuentes, mapas, fichas e indicadores del Observatorio/MEA. Nuestro aporte es decidir cartera, asignación, prioridades y residual con lo existente, sin replicar el portal ni recalcular su modelo.
+Se aprovechan fuentes, mapas, fichas e indicadores del Observatorio/MEA. Nuestro aporte es decidir cartera, asignación, prioridades y residual, y preparar fichas para el MEA municipal existente. El manual M-E-3269 ya documenta basales/vigencia/unidades/fuentes/frecuencia (pp.77–79), medidas/fases/costos/fechas (pp.80–81) y reportes (pp.83–84). No se ejecutaron esas funciones ni se acreditó acceso autenticado. Mapa de doce recursos: [reutilizacion_observatorio_mea.md](../caso/reutilizacion_observatorio_mea.md).
 
 ## Preferencia declarada del equipo
 
-Explicar en la defensa cómo la preferencia por soluciones basadas en la naturaleza se evaluó dentro de una cartera híbrida, y qué se aceptó/condicionó/descartó según factor crítico, evidencia y sacrificios. No llamarla criterio oficial, asignar nuevos pesos del jurado ni asumir que sustituye alertas/infraestructura necesarias. Referencia futura: registro_preferencias.md del dueño P2, cuando realmente entregue ese archivo.
+Explicar en la defensa cómo la preferencia por soluciones basadas en la naturaleza se evaluó dentro de una cartera híbrida, y qué se aceptó/condicionó/descartó según factor crítico, evidencia y sacrificios. No llamarla criterio oficial, asignar nuevos pesos del jurado ni asumir que sustituye alertas/infraestructura necesarias. Registro entregado: [registro_preferencias.md](registro_preferencias.md).
 
 ## Comprobación antes de entregar
 
@@ -50,6 +50,6 @@ Con una unidad completa por entrada del catálogo, hay siete carteras financiabl
 
 **5:15–6:15 · Residual y seguimiento.** D6 no financia unidades dedicadas de PSA, restauración, rondas, cabeceras, SAT o infraestructura. Permanecen riesgos de biodiversidad/agua, alerta y continuidad de Guarne. Las otras medidas pueden ayudar por mecanismos relacionados; no cubren automáticamente esos problemas. El seguimiento debe separar ejecución de resultado: ficha MEA, definición, unidad, basal o ausencia, fuente, frecuencia y custodio. **Pendiente de integrar el P3 estable:** códigos/variables y regla concreta de revisión por unidad. Sin basal no prometemos un porcentaje de reducción; datos futuros no demuestran causalidad.
 
-**6:15–7:00 · Utilidad.** Entregamos una decisión actualizable, costos reproducibles y las condiciones que podrían cambiarla: sitio de07/08/09, unidad regional14, alerta/infraestructura esenciales, conteo y horizonte intermedio. La preferencia por naturaleza es del equipo, dentro de una cartera híbrida; no es peso del jurado. El valor añadido es elegir, distribuir y hacer visible el residual a partir del Observatorio y MEA existentes. La meta regional del30% es a2035, no un resultado de esta jornada. Las condiciones de uso de fuentes de terceros siguen su revisión específica y no se presume licencia abierta.
+**6:15–7:00 · Utilidad.** Entregamos una decisión actualizable, costos reproducibles y las condiciones que podrían cambiarla: sitio de07/08/09, unidad regional14, alerta/infraestructura esenciales, conteo y horizonte intermedio. La preferencia por naturaleza es del equipo, dentro de una cartera híbrida; no es peso del jurado. Elegimos, distribuimos y hacemos visible el residual para alimentar el MEA municipal que ya existe. La meta regional del30% es a2035, no un resultado de esta jornada. M-E-2411 B7 exige autorización/aval; el alcance de uso está en revisión y no se presume licencia abierta.
 
 **Ensayo real:** pendiente. Estos tiempos son distribución objetivo; no acreditan duración≤7:00. El guion final se cerrará con P3 y el recibo de revisión independiente.

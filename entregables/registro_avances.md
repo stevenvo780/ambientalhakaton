@@ -8,5 +8,7 @@
 | 10:45 | Anexo borrador exportado y layout preparado | PDF A4 de dos páginas comprobadas por pdfinfo; lectura de texto y revisión visual. No es la cartera ni anexo final; nuevo conteo obligatorio al integrar resultados. |
 | 10:52 | Perfiles oficiales publicados | 21 perfiles/357 registros institucionales, celdas/categorías y escenarios conservados; commit e61a45c. No P1 final ni cartera aprobada. |
 | 10:52 | Primer ciclo automático Git→Vercel→dominio comprobado | Vercel source=git/READY/dev y HTTP200; SHA servido a36a7f2… coincide con su push. Los posteriores se verifican aparte. |
+| 11:08 | Reutilización MEA y revisiones corregidas publicadas | Commit8380de9: doce recursos y funciones descritas en manual; no ejecución autenticada. P1/P2 conservan sitios, unidades y eficacia condicionados. |
+| 11:08–11:09 | Primer ciclo real del actualizador Luna publicado | Inicio16:08:17UTC, estado16:08:36UTC, commit955ff125; GOactivo y productos incompletos. Repetición180s y publicación en dominio se acreditan aparte. |
 
 Los siguientes registros se añaden cuando un ejecutor entrega un archivo terminado, indicando fuente, comprobación y limitaciones. El historial Git contiene los commits efectivos; esta tabla no sustituye sus hashes ni acredita resultados ambientales sin evidencia.
