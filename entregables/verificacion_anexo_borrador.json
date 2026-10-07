@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T18:25:02.087787+00:00",
+  "verified_at_utc": "2026-10-07T18:44:41.432942+00:00",
   "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "4f4e9c554dbdcf7d581d31b7475f5cfd1ce132394ff87e32ac1df2b176b313c7",
+  "source_sha256": "1fe8b80934eb2377e5a505de56c981d3ab9757fd91d63d22b8d79d04a3d07220",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
+  "pdf_sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,11 +17,11 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T13:25:02.081801-05:00",
-    "method": "pdftoppm PDF final científico; inspección directa de ambas imágenes sin recortes",
+    "reviewed_at_bogota": "2026-10-07T13:44:41.427746-05:00",
+    "method": "pdftoppm yinspección directa ambas páginas nuevas35058001; legibles/sinrecortes",
     "render_paths": [
-      ".agentes-local/cumplimiento-respaldo/pdf-final-render/anexo-final-1.png",
-      ".agentes-local/cumplimiento-respaldo/pdf-final-render/anexo-final-2.png"
+      ".agentes-local/cumplimiento-respaldo/pdf-repro-final-render/anexo-repro-1.png",
+      ".agentes-local/cumplimiento-respaldo/pdf-repro-final-render/anexo-repro-2.png"
     ]
   },
   "changes_require_new_verification": true,
@@ -37,7 +37,8 @@
     "entregables/p3_riesgo_residual.md": "e38535fe5713f1345e4eea9c90fcf37c3f0f4cd901d32599f149e1be50642252",
     "entregables/p3_riesgo_residual.csv": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
     "entregables/variables_seguimiento.csv": "247c4cdeec3e89850a8f37d358efae90b9fed7fb0b6a62770a40a4dea4e7737d",
-    "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
+    "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
+    "caso/comparar_presupuesto.py": "e9b30af167dde4ea79bed9a149b3a0a632c3fbaf8ee4df3fc135d7d06c5b0006"
   },
   "source_urls": {
     "entregables/p1_tablero.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p1_tablero.md",
@@ -50,7 +51,8 @@
     "entregables/p3_riesgo_residual.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p3_riesgo_residual.md",
     "entregables/p3_riesgo_residual.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p3_riesgo_residual.csv",
     "entregables/variables_seguimiento.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/variables_seguimiento.csv",
-    "caso/catalogo_costos_reto.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/catalogo_costos_reto.csv"
+    "caso/catalogo_costos_reto.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/catalogo_costos_reto.csv",
+    "caso/comparar_presupuesto.py": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/comparar_presupuesto.py"
   },
   "horizon": {
     "requested": "SSP3-7.0 hacia2060",
@@ -87,7 +89,7 @@
     "numeric_occurrences_in_GO": 28,
     "GO_current_sha256": "b43a5d096518ca96abdc14c766375fdadb017c74172b8590f06114649451214a"
   },
-  "change_note": "Cierre científico final: P1 contexto histórico parcial, P2v3.6 comparación/PROP desempate entre máximas elegibles, P3v8.2 protocolo09 condicionado y cautelas técnicas. Mismos D6/costos/localizaciones/SSP3/42cruces/34variables. PDF único2pA4 con ambas páginas inspeccionadas; F01 humano14–16 pendiente.",
+  "change_note": "Corrección reproducibilidad: salida default caso/comparacion_financiera.json yflagHIPstdout; scriptactualestablee9b30af confirmadoP2 yejecutadoreadonly. Repeticiónfinancieracondensada mismo sentido para mantener2p. Ciencia/cartera/costos/42/34 y39/35/1 intactos.",
   "source_versions": {
     "P1": "final contexto histórico parcial6b3a3bf6",
     "P2": "v3.6",
@@ -121,18 +123,18 @@
     }
   ],
   "publication_target": "main",
-  "matrix_sha256": "36493f85cce87c5bd514f4658bb57de30023e14f9eeba5a2701bbdfc722cb9b4",
-  "editorial_audit_at_bogota": "2026-10-07T13:35:38.388954-05:00",
-  "editorial_audit_note": "Registro H07/R21 actualizado a publicación científica finalMAIN5489a562 y revisionesactualesbc5c7f19; I16 consulta pública observada sin promoción de estado.39/35/1 intacto; PDF/MD/PITCH/ciencia no cambiados. F01humano14–16pendiente.",
-  "exported_at_utc": "2026-10-07T18:16:48.519729+00:00",
-  "independent_review_of_current_pdf": "Claude y Muse revisaron bytes nuevos eb358c8b; sin fallos urgentes. Claude renderizó ambas páginas; Muse texto/estructura. No aval ambiental/institucional ni ensayo.",
+  "matrix_sha256": "2c566f111ab0f070d015a2c3ab6056f01e8a26db53d1f55881f16badab02cbaf",
+  "editorial_audit_at_bogota": "2026-10-07T13:44:41.427746-05:00",
+  "editorial_audit_note": "Salida financiera real y modo hipotético reproducibles; sin promoción por software/eficacia/aprobación/ensayo.",
+  "exported_at_utc": "2026-10-07T18:42:15.656397+00:00",
+  "independent_review_of_current_pdf": "pendiente nuevos bytes35058001; informes anteriores cubren únicamenteeb358c8b/75e7",
   "publication_receipt": {
     "reported_by": "publicar_web",
     "final_scientific_commit": "5489a562e74b3fd33f6bf0fba3bedbd1055b18a5",
     "final_review_commit_prefix": "bc5c7f19",
     "pdf_sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
     "pdf_bytes": 55370,
-    "scope": "Publicación científica y revisión documental; no ensayo humano ni eficacia ambiental"
+    "scope": "Publicación5489/bc5 de versión anterioreb358; nuevo350580 corregido requiere recibo propio, no publicación presumida."
   },
   "software_public_qa": {
     "PV_receipt_sha256": "d37604dd6a89d406d7d1445d0d3ce5d623f6958b8c3ae7ca80a4e0784cf49563",
@@ -142,5 +144,26 @@
     "TV_at_bogota": "2026-10-07T13:16:48-05:00",
     "TV_scope": "Consulta pública200/21perfiles/6unidades/42cruces, fuentesSHAcoincidentes; privadas401/público405; sin efectos ambientales/adopción",
     "matrix_state_unchanged": "39demostrados limitados/35condicionales/F01pendiente14–16"
+  },
+  "reproducibility": {
+    "script_sha256": "e9b30af167dde4ea79bed9a149b3a0a632c3fbaf8ee4df3fc135d7d06c5b0006",
+    "default_command": "python3 caso/comparar_presupuesto.py",
+    "default_output": "caso/comparacion_financiera.json",
+    "base_read_only_command": "python3 caso/comparar_presupuesto.py --stdout",
+    "hypothetical_command": "python3 caso/comparar_presupuesto.py --hipotesis-14-tres-municipios",
+    "hypothetical_output": "stdout only",
+    "base_result": [
+      32768,
+      1567,
+      6
+    ],
+    "hypothetical_result": [
+      131072,
+      3906,
+      7,
+      5
+    ],
+    "hypothetical_rule_official": false,
+    "environmental_effect_verified": false
   }
 }

@@ -2,8 +2,8 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md",
-  "source_sha256": "36493f85cce87c5bd514f4658bb57de30023e14f9eeba5a2701bbdfc722cb9b4",
-  "scope": "Cierre material final publicadoMAIN5489a562; PDFeb358 único2pA4 con revisiones nuevasClaude/Muse enbc5c7f19.39demostrados limitados/35condicionales/F01humano14–16pendiente. PV/TVconsultas públicasQAreal sin eficacia/adopción; máximo financiero cupo1condicionado,14R600/12mesesPROP,SSP3cerrado.",
+  "source_sha256": "2c566f111ab0f070d015a2c3ab6056f01e8a26db53d1f55881f16badab02cbaf",
+  "scope": "Cierre material final publicadoMAIN5489a562; PDFeb358 único2pA4 con revisiones nuevasClaude/Muse enbc5c7f19.39demostrados limitados/35condicionales/F01humano14–16pendiente. PV/TVconsultas públicasQAreal sin eficacia/adopción; máximo financiero cupo1condicionado,14R600/12mesesPROP,SSP3cerrado. Corrección reproducible PDF35058001 único2p: salidaREALcaso/comparacion_financiera.json yflagHIPstdout verificados; reviews anteriores cubreneb358, nueva revisión porSHA.",
   "items": [
     {
       "id": "R01",
@@ -681,7 +681,7 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T13:36:08.515199-05:00",
+  "updated_at": "2026-10-07T13:44:41.427746-05:00",
   "counts": {
     "condicional": 35,
     "demostrado": 39,
