@@ -1,13 +1,13 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T16:45:33Z",
-  "updated_at_bogota": "2026-10-07T11:45:33-05:00",
+  "updated_at_utc": "2026-10-07T16:50:37.683585+00:00",
+  "updated_at_bogota": "2026-10-07T11:50:37.683593-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_reanudada_Desktop_goal_activa",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
     "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
-    "sha256": "ab6d901a663cf8541c402814d0f64fa50adae960c6555a22cff247139788afae",
+    "sha256": "445c5f7fb5dcc0f9c06221acff54678562affa9955f11f8f7855c57bbd862615",
     "preparada": true,
     "activada": true,
     "herramienta_create_goal_usada": true,
@@ -57,7 +57,7 @@
     "E2E_navegador_completo": false
   },
   "entrega_ambiental": {
-    "estado": "en_ejecucion_productos_pendientes_de_verificacion",
+    "estado": "P1 entregado; P2 y P3 actualizados en 3628d53, aún en revisión. D6=6 unidades/COP5000M, incluida UNA unidad14 municipal Rionegro/COP600M/12 meses propuestos desde futura acta; Guarne y Marinilla sin programa14 propio financiado. 03 admitida oficialmente en el corredor por enunciado p5, sitio e indicador por validar. SSP3-7.0/2060 es horizonte solicitado confirmado por el usuario al responder consulta sobre intermedio; intermedio y estrés coinciden, selección cerrada. SSP2 solo exploratorio adicional. PDF FINAL obligatorio máximo2 páginas total, incluye anexo metodológico, en preparación. Paquete listo para usuario antes14:00, estudio14:00–16:00, presentación después; ensayo humano pendiente durante estudio, no bloquea paquete. Ariadna lidera con Brahyam y Steven;7 minutos totales.",
     "productos": [
       "P1",
       "P2",
@@ -69,8 +69,14 @@
     "eficacia_causal_demostrada": false,
     "matriz": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
     "P3": "borrador_D6_provisional_3archivos_existentes_11:12",
-    "base_cartera": "D6_6unidades_5000_condicional_no_optimo_ambiental",
-    "restriccion_datos": "B7 autorización/aval en estudio legal; nuevos valores basales individuales retenidos, lectura interna continua"
+    "base_cartera": "D6_6unidades_5000_condicional_14municipal_Rionegro_600_12meses_PROP",
+    "restriccion_datos": "B7 autorización/aval en estudio legal; nuevos valores basales individuales retenidos, lectura interna continua",
+    "PDF_final": {
+      "obligatorio": true,
+      "maximo_paginas_total": 2,
+      "incluye_anexo_metodologico": true,
+      "estado": "en_preparacion_editorial"
+    }
   },
   "cronograma_condicional": [
     {
