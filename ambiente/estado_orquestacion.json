@@ -7,7 +7,7 @@
   "goal": {
     "documento": "caso/goal_ejecucion.md",
     "url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/goal_ejecucion.md",
-    "sha256": "445c5f7fb5dcc0f9c06221acff54678562affa9955f11f8f7855c57bbd862615",
+    "sha256": "4b6ea129887dfb3202c0689db996997bfdcaab464b35e4a8683c66008ee82a28",
     "preparada": true,
     "activada": true,
     "herramienta_create_goal_usada": true,

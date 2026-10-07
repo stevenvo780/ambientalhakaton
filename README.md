@@ -267,7 +267,7 @@ Cadencia solicitada: **180 segundos**. El controlador delegado y GPT-6-Luna revi
 
 Tras GO, terminar exige P1–P3, cuenta/fuentes verificables, comparación defendible, contraste obligatorio con datos suficientes, residual/MEA, verificación de los75 IDs y ensayo dentro del plazo. Documentación, web y pruebas técnicas avanzaron; **productos ambientales, cartera definitiva y robustez completa permanecen pendientes**.
 
-Cada escritor entrega archivo, versión, comprobación, objeciones y pendiente. El publicador delegado hace commit/push acotado en **dev** por avance; el dueño web mantiene estado coherente. Para continuar desde ChatGPT o cualquier herramienta, abrir primero README/estado/commit y mantener: **root solo delega; un escritor por archivo; no inventar evidencia; activar la goal solo mediante el registro autorizado del GO; entrega antes de las14:00**.
+Cada escritor entrega archivo, versión, comprobación, objeciones y pendiente. El publicador delegado hace commit/push acotado en **main** por avance; el dueño web mantiene estado coherente. Para continuar desde ChatGPT o cualquier herramienta, abrir primero README/estado/commit y mantener: **root solo delega; un escritor por archivo; no inventar evidencia; activar la goal solo mediante el registro autorizado del GO; entrega antes de las14:00**.
 
 
 ### Corte público verificado, 7 de octubre 13:17 Bogotá
