@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cómo llegamos a D6 · Metodología</title>
+<meta name="description" content="Método de la decisión D6: fuentes, datos, factor S/CA, cartera, riesgo residual y MEA, revisión. Cada afirmación marcada como dato, cálculo, inferencia, supuesto o faltante.">
+<meta name="theme-color" content="#11302a">
+<link rel="stylesheet" href="../exposicion-assets/expo.css">
+<script defer src="../exposicion-assets/expo.js"></script>
+</head>
+<body data-vista="metodologia">
+<a class="salto" href="#escenario">Ir a la metodología</a>
+<header class="barra-sup">
+  <a class="raiz" href="../">Corredor vivo</a>
+  <nav class="vistas" aria-label="Vistas de exposición"><a href="../presentacion/">Presentación</a><a href="../metodologia/" aria-current="page">Metodología</a></nav>
+  <p class="anexo">Anexo metodológico: <a href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final, 2 páginas</a></p>
+  <div class="controles" role="group" aria-label="Controles">
+    <button type="button" data-accion="notas" aria-pressed="false">Notas<kbd>N</kbd></button>
+    <button type="button" data-accion="estudio" aria-pressed="false">Modo estudio<kbd>E</kbd></button>
+    <button type="button" data-accion="pantalla">Pantalla completa<kbd>F</kbd></button>
+  </div>
+</header>
+
+<nav class="rio" aria-label="Seis etapas del método">
+  <button type="button" class="tramo" data-ir="0"><span class="t">Etapa 1</span><span class="n">Fuentes</span></button>
+  <button type="button" class="tramo" data-ir="1"><span class="t">Etapa 2</span><span class="n">Datos</span></button>
+  <button type="button" class="tramo" data-ir="2"><span class="t">Etapa 3</span><span class="n">Factor S/CA</span></button>
+  <button type="button" class="tramo" data-ir="3"><span class="t">Etapa 4</span><span class="n">Cartera</span></button>
+  <button type="button" class="tramo" data-ir="4"><span class="t">Etapa 5</span><span class="n">Residual y MEA</span></button>
+  <button type="button" class="tramo" data-ir="5"><span class="t">Etapa 6</span><span class="n">Revisión</span></button>
+</nav>
+
+<main id="escenario" class="escenario" tabindex="-1">
+
+<!-- Visión general -->
+<section class="lamina ancha" id="vision" data-tramo="-1" data-habla="Vista para estudio y preguntas" aria-labelledby="m0">
+  <div class="texto">
+    <p class="bloque"><b>Metodología</b>: cómo se llegó a la respuesta</p>
+    <h1 id="m0">De la fuente a la decisión en seis etapas, con cada afirmación marcada por su tipo.</h1>
+    <ol class="tuberia" aria-label="Etapas del método">
+      <li><button type="button" data-ir="0"><b>Fuentes</b><small>Enunciado, matriz M-E-2411, fichas MEA, amenazas, Plan Valles, Manual MEA</small><span class="marcas"><span class="tipo dato">Dato</span><span class="tipo faltante">Faltante</span></span></button></li>
+      <li><button type="button" data-ir="1"><b>Datos</b><small>357 valores institucionales; 21 perfiles; sin recalcular</small><span class="marcas"><span class="tipo dato">Dato</span><span class="tipo faltante">Faltante</span></span></button></li>
+      <li><button type="button" data-ir="2"><b>Factor S/CA</b><small>P1: cinco hallazgos; qué proteger primero</small><span class="marcas"><span class="tipo dato">Dato</span><span class="tipo inferencia">Inferencia</span></span></button></li>
+      <li><button type="button" data-ir="3"><b>Cartera</b><small>P2: 15 precios, puerta común, enumeración, D6</small><span class="marcas"><span class="tipo calculo">Cálculo</span><span class="tipo supuesto">Supuesto</span><span class="tipo inferencia">Inferencia</span></span></button></li>
+      <li><button type="button" data-ir="4"><b>Residual y MEA</b><small>P3: 42 cruces, 34 variables, ficha puente</small><span class="marcas"><span class="tipo inferencia">Inferencia</span><span class="tipo faltante">Faltante</span></span></button></li>
+      <li><button type="button" data-ir="5"><b>Revisión</b><small>SSP3-7.0/2060 y reglas de reapertura</small><span class="marcas"><span class="tipo dato">Dato</span><span class="tipo supuesto">Supuesto</span></span></button></li>
+    </ol>
+    <ul class="leyenda-tipos" aria-label="Tipos de afirmación">
+      <li><span class="tipo dato">Dato</span> valor o texto institucional con localizador</li>
+      <li><span class="tipo calculo">Cálculo</span> operación reproducible sobre datos</li>
+      <li><span class="tipo inferencia">Inferencia</span> mecanismo o juicio del equipo, por verificar</li>
+      <li><span class="tipo supuesto">Supuesto</span> regla adoptada sin confirmación oficial</li>
+      <li><span class="tipo faltante">Faltante</span> dato ausente que puede cambiar la decisión</li>
+    </ul>
+    <p class="aviso agua">Esta página acompaña al <a href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final de 2 páginas</a> (decisión y anexo metodológico); no lo sustituye.</p>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Cómo usar esta vista</h3>
+    <dl>
+      <dt>Navegar</dt><dd>Flechas o deslizar; números 1–8; clic en una etapa. E abre todo como documento con notas.</dd>
+      <dt>Regla de respuesta</dt><dd>Antes de responder, decir de qué tipo es la afirmación. Un dato no es un efecto; un cálculo financiero no es elegibilidad.</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 1 Fuentes -->
+<section class="lamina" id="fuentes" data-tramo="0" data-habla="Etapa 1 de 6" aria-labelledby="m1">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 1</b>, fuentes</p>
+    <h2 id="m1">El enunciado manda; las fuentes ampliadas se conservan aparte cuando difieren.</h2>
+    <p class="bajada">Reutilizamos el estudio existente de CORNARE. No corrimos un modelo climático ni recalculamos índices.</p>
+  </div>
+  <div class="figura">
+    <ul class="libro">
+      <li><span class="tipo dato">Dato</span><span>Enunciado del reto, pp. 1–8; catálogo de 15 costos indivisibles en p. 5.<small>Prevalece cuando discrepa con otra fuente.</small></span></li>
+      <li><span class="tipo dato">Dato</span><span>Matriz municipal M-E-2411, hoja Regional Valles SN, filas 15–79.<small>S/CA/V de referencia, amenaza y riesgo por escenario.</small></span></li>
+      <li><span class="tipo dato">Dato</span><span>17 fichas MEA (M-E-2897) e indicadores ASCA; RETO es un ID local, nunca un código MEA.<small>17 fichas y 15 precios: sin equivalencia por posición.</small></span></li>
+      <li><span class="tipo dato">Dato</span><span>Informe de amenazas M-E-2550, p. 6: SSP3-7.0, periodo 2041–2060. Plan Valles M-E-2852.</span></li>
+      <li><span class="tipo dato">Dato</span><span>Manual MEA M-E-3269, pp. 77–84: registro de basales, medidas y reportes.</span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Licencia de reutilización: M-E-2411, «Sobre este documento», B7, pide uso de CORNARE y aval.<small>Acceso público no equivale a licencia abierta; no publicamos basales individuales.</small></span></li>
+    </ul>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Si preguntan</dt><dd>«¿Por qué confiar en esos datos?» Son institucionales, citados por hoja y celda; conservamos discrepancias (p. ej., agua Rionegro Medio en lámina 12, Alto en matriz ampliada) en vez de armonizarlas.</dd>
+      <dt>Responde</dt><dd>Steven (localizadores y SHA); Brahyam (alcance de cada fuente).</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 2 Datos -->
+<section class="lamina" id="datos" data-tramo="1" data-habla="Etapa 2 de 6" aria-labelledby="m2">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 2</b>, datos</p>
+    <h2 id="m2">357 valores leídos tal como están almacenados, sin ejecutar fórmulas.</h2>
+    <div class="cifras">
+      <p><b>21</b>perfiles: 3 municipios × 7 dimensiones</p>
+      <p><b>357</b>valores: 21 × (7 amenazas + 7 riesgos + S, CA, V)</p>
+    </div>
+  </div>
+  <div class="figura">
+    <ul class="libro">
+      <li><span class="tipo dato">Dato</span><span>Extracción por XML de Excel: valor almacenado, categoría vecina, encabezado, celda y hash.</span></li>
+      <li><span class="tipo dato">Dato</span><span>Referencia climática 1981–2010; escenarios SSP1, SSP2 y SSP3 para 2040 y 2060.</span></li>
+      <li><span class="tipo calculo">Cálculo</span><span>Ninguno sobre los índices: no se recalculó R = A × V ni se interpoló.<small>Mostrar a tres o cinco decimales es solo lectura; la precisión fuente se conserva.</small></span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Año basal de los índices dimensionales: no identificado (null).</span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Predios, captaciones, activos, eventos fechados y basales físicas.<small>La ausencia no se codifica como cero ni como relación probada.</small></span></li>
+    </ul>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Cuidado</dt><dd>Un índice 0–1 no es porcentaje, hectárea, m³ ni COP. El nombre «SIN-RISK» del archivo no implica ausencia de riesgo.</dd>
+      <dt>Responde</dt><dd>Steven.</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 3 Factor S/CA -->
+<section class="lamina" id="factor" data-tramo="2" data-habla="Etapa 3 de 6" aria-labelledby="m3">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 3</b>, factor S/CA (P1)</p>
+    <h2 id="m3">Del índice al factor: qué proteger primero y con qué mecanismo.</h2>
+    <p class="bajada">Separamos amenaza, sensibilidad, capacidad adaptativa, vulnerabilidad y riesgo. No elegimos automáticamente el índice mayor.</p>
+  </div>
+  <div class="figura">
+    <ul class="libro">
+      <li><span class="tipo dato">Dato</span><span>H1 Biodiversidad R/M: CA 0,222/0,237 (muy baja), V 0,765/0,745 (muy alta).<small>El enunciado da V 0,75/0,72: versión distinta, prevalece el enunciado.</small></span></li>
+      <li><span class="tipo dato">Dato</span><span>H2 Agua: S Marinilla 0,661 (alta). V alta en M y R según la matriz ampliada; la lámina 12 da Medio para Rionegro.</span></li>
+      <li><span class="tipo dato">Dato</span><span>H3 Desastres Rionegro: riesgo 0,283 Bajo → 0,321 Medio (SSP3-7.0/2060). H4 Infraestructura Guarne: V 0,597 Alta, CA 0,442 Baja.</span></li>
+      <li><span class="tipo inferencia">Inferencia</span><span>Priorizar capacidad de conservación (bio) y demanda hídrica; respuesta híbrida para desastres e infraestructura.<small>Mecanismo propuesto, sin porcentaje de eficacia.</small></span></li>
+      <li><span class="tipo supuesto">Supuesto</span><span>La resolución sustentada es municipal; ninguna parcela se da por elegible por proximidad.</span></li>
+    </ul>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Si preguntan</dt><dd>«Guarne tiene sensibilidad alta en infraestructura?» No: vulnerabilidad alta con sensibilidad baja (0,429) y capacidad baja.</dd>
+      <dt>Responde</dt><dd>Brahyam.</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 4 Cartera -->
+<section class="lamina" id="cartera" data-tramo="3" data-habla="Etapa 4 de 6" aria-labelledby="m4">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 4</b>, cartera (P2)</p>
+    <h2 id="m4">Una cuenta reproducible y una puerta común; la elección de D6 sigue siendo nuestra.</h2>
+    <p class="nota-escala">Pasos de la enumeración; recuadros no proporcionales.</p>
+    <div class="embudo" aria-label="Enumeración con una unidad por entrada">
+      <div><b>32.768</b>subconjuntos de las 15 medidas (2<sup>15</sup>)</div>
+      <div><b>1.567</b>factibles con suma ≤ 5.000, incluido el vacío</div>
+      <div><b>7</b>carteras con seis unidades; siete no caben (mínimo 5.800)</div>
+      <div><b>D6</b>elegida, provisional</div>
+    </div>
+    <div class="embudo" aria-label="Sensibilidad no oficial al cupo de 14">
+      <div class="hipo"><b>17</b>unidades si 14 admitiera tres programas municipales</div>
+      <div class="hipo"><b>3.906</b>factibles de 131.072</div>
+      <div class="hipo"><b>7</b>unidades de 5 tipos: {03, 04, 08, 15, 14R, 14G, 14M} = 5.000</div>
+    </div>
+    <p class="fuente">Script caso/comparar_presupuesto.py; catálogo caso/catalogo_costos_reto.csv; salida p2_comparacion_financiera.json.</p>
+  </div>
+  <div class="figura">
+    <ul class="libro">
+      <li><span class="tipo calculo">Cálculo</span><span>D6 = 700 + 900 + 1.000 + 800 + 1.000 + 600 = 5.000, saldo 0. N1 = 4.700, cinco unidades, saldo 300.</span></li>
+      <li><span class="tipo calculo">Cálculo</span><span>56 % = 2.800 / 5.000 a 07, 08 y 09.<small>Es asignación presupuestal, no impacto.</small></span></li>
+      <li><span class="tipo supuesto">Supuesto</span><span>Una unidad completa por entrada del catálogo. Seis es el máximo de ese supuesto, no uno universal.</span></li>
+      <li><span class="tipo supuesto">Supuesto</span><span>Hipótesis de cupo 3 para 14: máximo 7. No es escenario adoptado ni oficial ni son tres programas actuales. Frente a D6 retira 07 y 09 (2.000 M, 40 %) y añade 15, 14G y 14M con pertinencia pendiente.</span></li>
+      <li><span class="tipo inferencia">Inferencia</span><span>Preferir D6 por diversidad de mecanismos pertinentes si las seis pasan la puerta. Aporte de 07/08/09 a biodiversidad y agua: hipótesis.</span></li>
+      <li><span class="tipo inferencia">Inferencia</span><span>14 como una unidad municipal en Rionegro, 12 meses operativos desde una futura acta: diseño del equipo; C28 de la ficha 17 es antecedente.</span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Sitios, adicionalidad, actores comprometidos y custodios para cualquiera de las siete máximas; ninguna tiene fallo ni elegibilidad demostrados.</span></li>
+    </ul>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Puerta común</dt><dd>Problema/factor, mecanismo, sitio, actor/competencia, unidad/mantenimiento, adicionalidad sin doble pago, presupuesto/secuencia/seguimiento. Condición no resuelta ≠ fallo probado.</dd>
+      <dt>Doble pago</dt><dd>07/08 y 08/09 pueden compartir beneficiarios si distinguen acciones, productos y pagos. No se exige disjunción inventada.</dd>
+      <dt>Responde</dt><dd>Steven (cuenta); Brahyam (puerta común).</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 5 Residual y MEA -->
+<section class="lamina" id="residual" data-tramo="4" data-habla="Etapa 5 de 6" aria-labelledby="m5">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 5</b>, riesgo residual y MEA (P3)</p>
+    <h2 id="m5">Lo que queda abierto se mide con basal física, custodio y regla de ajuste.</h2>
+    <div class="cifras">
+      <p><b>42</b>cruces: D6/N1 × 3 municipios × 7 dimensiones</p>
+      <p><b>34</b>variables: 14 códigos institucionales y 20 PROP locales</p>
+    </div>
+    <ol class="cadena" aria-label="Cadena de verificación">
+      <li><b>Ejecución</b>Actas y registros</li>
+      <li><b>Cambio observado</b>Basal fechada y mismo método</li>
+      <li><b>Atribución</b>Solo con comparación viable</li>
+    </ol>
+  </div>
+  <div class="figura">
+    <ul class="libro">
+      <li><span class="tipo dato">Dato</span><span>Códigos institucionales (p. ej., InSensHIDRO-01, InCaRD-01) con libro, hoja y celda.</span></li>
+      <li><span class="tipo inferencia">Inferencia</span><span>InCaHIDRO-01, capacidad de conservación hídrica, queda sin unidad dedicada en D6; 04 atiende demanda e inversión, no protección del origen.</span></li>
+      <li><span class="tipo supuesto">Supuesto</span><span>Frecuencias y custodios propuestos; ninguno aceptado.<small>PROP son solicitudes locales, no compras ni códigos oficiales.</small></span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Basales físicas fechadas, umbrales operativos y matriz de dependencias (servicio, respaldo, interrupción tolerable, recuperación, afectados).</span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Ingreso al MEA: no hubo login, carga ni persistencia; la ficha puente es para el custodio.</span></li>
+    </ul>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Ejemplo</dt><dd>04: InSensHIDRO-01 + demanda/oferta física comparable (PROP). Repetir permite revisar 04; no demuestra causalidad.</dd>
+      <dt>No decir</dt><dd>«34 indicadores oficiales», «riesgo residual calculado», «meta 30 % del primer año».</dd>
+      <dt>Responde</dt><dd>Brahyam.</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 6 Revisión -->
+<section class="lamina" id="revision" data-tramo="5" data-habla="Etapa 6 de 6" aria-labelledby="m6">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 6</b>, revisión</p>
+    <h2 id="m6">SSP3-7.0 hacia 2060 orienta la revisión; un dato nuevo puede reabrir la cartera.</h2>
+    <p class="bajada">Cada disparador abre deliberación y reenumeración de las 15; no sustituye la cartera en automático.</p>
+  </div>
+  <div class="figura">
+    <ul class="libro">
+      <li><span class="tipo dato">Dato</span><span>Horizonte solicitado SSP3-7.0, 2041–2060, confirmado; solicitado y estrés coinciden. SSP2-4.5/2040 solo exploratorio.</span></li>
+      <li><span class="tipo dato">Dato</span><span>Riesgo desastres Rionegro 2060: 0,3206814 / 0,3206764 / 0,3206592 (SSP1/2/3).<small>Distintos aunque redondeen a 0,321: no hay igualdad exacta ni robustez validada.</small></span></li>
+      <li><span class="tipo inferencia">Inferencia</span><span>Mantener las seis condicionadas; revisar prácticas 07/08, función urbana 09 y protocolos 14.</span></li>
+      <li><span class="tipo calculo">Cálculo</span><span>Reaperturas: SAT crítico {03, 04, 08, 13, 14} = 4.200, saldo 800; servicio esencial {03, 04, 08, 12, 14} = 5.000.<small>Salud 15 solo por su propio problema, nunca relleno.</small></span></li>
+      <li><span class="tipo faltante">Faltante</span><span>Eficacia de la cartera bajo el escenario: no publicada ni medida.</span></li>
+    </ul>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Disparadores</dt><dd>Nueva evidencia territorial; cambio de unidad, cupo o precio oficial; falla de actor, mantenimiento o adicionalidad; contraste de escenario que altere función; medición contradictoria o efecto adverso.</dd>
+      <dt>Responde</dt><dd>Brahyam; Ariadna si es una decisión de prioridad.</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- Cierre -->
+<section class="lamina ancha" id="limites" data-tramo="-1" data-habla="Cierre de la metodología" aria-labelledby="m7">
+  <div class="texto">
+    <p class="bloque"><b>Límites</b>, qué no afirmamos</p>
+    <h2 id="m7">Cuenta demostrada; elegibilidad, eficacia y causalidad pendientes.</h2>
+    <div class="estados">
+      <section style="--c:var(--bosque)"><h3>Demostrado</h3><ul><li>5.000/6, saldo 0, con precios oficiales.</li><li>Siete máximas de seis bajo una unidad por entrada.</li><li>Valores institucionales trazables.</li></ul></section>
+      <section style="--c:var(--ocre)"><h3>Propuesto</h3><ul><li>D6 y sus lugares municipales.</li><li>14R, 600 M, 12 meses desde futura acta.</li><li>Variables, custodios y frecuencias.</li></ul></section>
+      <section style="--c:var(--residuo)"><h3>Sin demostrar</h3><ul><li>Elegibilidad de sitios y cupos.</li><li>Mayor reducción de vulnerabilidad.</li><li>Atribución causal de cualquier cambio.</li></ul></section>
+    </div>
+    <p class="aviso">El entregable obligatorio es el <a href="/entregables/ANEXO_METODOLOGICO.pdf">PDF final de 2 páginas</a>, con decisión y anexo metodológico. Esta página es material de estudio.</p>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Cierre</dt><dd>«No hay mapa geográfico: no inventamos sitios. No hay eficacia: no inventamos coeficientes.»</dd>
+    </dl>
+  </aside>
+</section>
+
+</main>
+
+<footer class="pie">
+  <button type="button" data-accion="anterior" aria-label="Pantalla anterior">Anterior</button>
+  <p class="contador" aria-live="polite"></p>
+  <p class="habla"></p>
+  <button type="button" data-accion="siguiente" aria-label="Pantalla siguiente">Siguiente</button>
+</footer>
+</body>
+</html>

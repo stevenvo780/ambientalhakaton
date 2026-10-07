@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T17:04:32.814777+00:00",
+  "verified_at_utc": "2026-10-07T17:07:57.477123+00:00",
   "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "a055f3b4e329249c7a31f88c4e4cc99e0f6e154d3299d55a516efdbc2c2f8bc1",
+  "source_sha256": "b397732e06e9b98b57e227e944a18ac2168335a3934bf47a5540f40cc9e3de27",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "929e1c7c1ecfb057573b2264f8c1effba85859768e5477c8f44db1982ba92d9f",
+  "pdf_sha256": "75e7f30ecd3fb3da445464e66bc2f179a1c7b1cdda14536ea4e3a6869d75d5e6",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,11 +17,11 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T12:04:32.815834-05:00",
+    "reviewed_at_bogota": "2026-10-07T12:07:57.477251-05:00",
     "method": "pdftoppm ambas paginas; inspeccion directa"
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "06643e138b20dd7df891f7d155466033f27f7c5b3bbad63f20c03a95f02113a9",
+  "pitch_sha256": "d5c31aea6edd1dc2ff943d97894f1281faec6f3456b8d3dcd8d51e39f0a4b537",
   "inputs_sha256": {
     "entregables/p1_tablero.md": "d7d9356630b811cb06f06ab22b089109c7866fa7805ff5c20e7affbd80eb69d9",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
@@ -30,9 +30,9 @@
     "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
     "entregables/p2_justificacion.md": "6ca94ca2705f0c6a2fdf672f1db81d21d2422e5f31737733f2a86d0a521cf32b",
     "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
-    "entregables/p3_riesgo_residual.md": "7f984b1f5e9b8c1ed7d109f29a5a266dbcbf612a9fb0519d2492f8e1a0799d76",
-    "entregables/p3_riesgo_residual.csv": "73306058f36935ab577a27d47530ad98c3060d3f4e1ff3ecacdde6a316fe8c38",
-    "entregables/variables_seguimiento.csv": "efa576ea4a83079a95d1075d11c6c56f6460bf29a415a8471bc3cd0ce55ef190",
+    "entregables/p3_riesgo_residual.md": "b83ca69574987c74866d9fd0f6f5e1ad4cfae3ca7676f09e304aec6f2e958366",
+    "entregables/p3_riesgo_residual.csv": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
+    "entregables/variables_seguimiento.csv": "057e4d279c9e4abdfc4cec8a5d5bb6e55f1d53cc2857f2b6b140d557e3b03337",
     "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
   },
   "source_urls": {
@@ -81,5 +81,11 @@
     "historical_commit_content_not_erased": true,
     "rights_clearance_certified": false
   },
-  "change_note": "V4.2 P1 horizonte aclarado d7d935/P2v3.2/P3v5; reponeaguaR/MVAlta solo matrizampliada frenteRMediaL12, sixPROP físicos/operacionales con limitaciones, custodia/basal/sitiosNA.42/34constantes."
+  "change_note": "V4.3 usa snapshot privado exactoP1d7d935/P2v3.3 3d4b/P3v6 b83ca para evitar mezclar versiones durante edición. D6empata conteo otras6;no mayor reducción porconteo;sin05 no presumaInCaHIDRO01cero;N101/05sinlocalizaciónmunicipal decidida/contextoexterno no cobertura local.",
+  "source_versions": {
+    "P1": "horizonte aclarado mínimo d7d935",
+    "P2": "v3.3",
+    "P3": "v6"
+  },
+  "inputs_frozen_before_export": true
 }
