@@ -1,0 +1,68 @@
+# P1 · Tablero de decisión territorial
+
+**Borrador verificable, no cartera aprobada.** Corte de extracción: 2026-10-07T15:53:30.863333+00:00. Ámbito exclusivo: Rionegro, Guarne y Marinilla. El enunciado del reto prevalece; las fuentes ampliadas se mantienen separadas cuando difieren. La preferencia del equipo por soluciones basadas en la naturaleza (SbN) en una cartera híbrida se evalúa contra el problema y las condiciones territoriales; no es un peso oficial de la rúbrica.
+
+## Cinco hallazgos y decisiones que habilitan
+
+| ID | Hallazgo comprobado y localizador | Qué proteger primero y mecanismo propuesto | Localización/resolución y límite para P2/P3 |
+|---|---|---|---|
+| P1-H1 | **Biodiversidad: Rionegro y Marinilla tienen capacidad adaptativa muy baja y vulnerabilidad muy alta.** El enunciado p2 fija V=0,75/0,72 y CA=0,22/0,24. La matriz publicada guarda Rionegro S=0,39259, CA=0,22194, V=0,76467 (W69/AD69/AJ69); Marinilla S=0,52092, CA=0,23680, V=0,74496 (W68/AD68/AJ68). Son versiones distintas; no se sustituye el enunciado. | Proteger ecosistemas y sus servicios mediante conservación, PSA y restauración cuando la ficha MEA y el sitio acrediten el mecanismo. Prioridad ambiental a biodiversidad y capacidad de gestión; beneficio esperado cualitativo, sin porcentaje de eficacia. | **Municipal**, primero Rionegro y Marinilla por este problema específico; no es un ranking global entre municipios. Faltan predios, ecosistema intervenido, conectividad, titularidad, cobertura y custodio del programa PSA durante sus3años. Ninguna parcela se da elegible por proximidad. |
+| P1-H2 | **El agua exige atender sensibilidad y capacidad, además del riesgo agregado.** Marinilla S=0,66108 (Alto), CA=0,47493 (Medio), V=0,58774 (Alto), fila38; Rionegro S=0,57872 (Medio), CA=0,53281 (Medio), V=0,54812 (Alto), fila39. Fuente: W/AD/AJ y categorías X/AE/AK. El enunciado p2 ya identifica el agua como prioridad regional. | Proteger abastecimiento y regulación hídrica: rondas, fuentes y ecosistemas reguladores; complementar con uso eficiente cuando la ficha y el usuario objetivo lo justifiquen. El nexo entre medida y sensibilidad/capacidad debe quedar explícito. | Las tres jurisdicciones participan en POMCA Río Negro, código2308-01. Su página indica cobertura municipal Guarne77,67%, Marinilla97,64%, Rionegro100%; esto **no identifica** predios, captaciones ni una dependencia demostrada entre usuarios. Rionegro agua figura Medio en lámina12 y Alto en matriz: mantener discrepancia. |
+| P1-H3 | **Rionegro conserva exposición creciente al riesgo de desastres.** Referencia: S=0,39645 (Bajo), CA=0,56332 (Medio), V=0,482314 (Alto), fila19. Riesgo almacenado AP19=0,283193 (Bajo) → BB19=0,320659 (Medio), SSP3/2060. Amenaza D19=0,488745 → P19=0,567143. El informe de amenazas p6 identifica SSP3-7.0 y período2041–2060. | Proteger vidas, asentamientos y continuidad de servicios con una respuesta híbrida: ecosistemas que reduzcan exposición cuando el sitio lo sustente, más alerta, protocolos, ordenamiento e infraestructura si la evaluación local lo requiere. PSA por sí solo no prueba reducción del riesgo de inundación/deslizamiento. | Municipal; faltan polígonos de amenaza, eventos con fecha/ubicación, activos expuestos, cobertura de alerta y protocolos. El cambio del índice oficial es evidencia de escenario, **no** de impacto de una cartera. |
+| P1-H4 | **Guarne presenta vulnerabilidad alta de infraestructura con capacidad baja.** S=0,42857 (Bajo), CA=0,44173 (Bajo), V=0,59748 (Alto), W45/AD45/AJ45. Riesgo AP45=0,21517 (Bajo) → BB45=0,24628 (Bajo), SSP3/2060. No confundir vulnerabilidad alta con sensibilidad alta. | Proteger conectividad y servicios críticos. Evaluar mantenimiento/adaptación y soluciones naturales o mixtas según la amenaza y el activo real; conservar una alternativa de ingeniería condicionada si el componente crítico lo exige. | No se identificó en estos índices un tramo, puente o activo elegible. La unidad de infraestructura del catálogo no queda seleccionada sólo por el valor municipal; requiere localización, competencias, diseño y factibilidad. |
+| P1-H5 | **El residual debe incluir las siete dimensiones y las discrepancias de fuente.** La matriz clasifica Salud de Marinilla V=0,25735 (Medio, AJ58/AK58) y alimentos de Rionegro V=0,24301 (Medio, AJ79/AK79); lámina12 muestra Bajo en ambos. Hábitat, salud y alimentos tienen valores presentes, nunca se convierten en cero por no entrar en una primera cartera. | Preservar vigilancia, seguridad alimentaria y servicios, registrando qué problema queda sin financiar. Una categoría menor no elimina una obligación de seguimiento ni un cambio futuro. | No hay basal de indicador MEA probado por sustituirlo con V/S/CA. P3 debe unir código, definición, unidad, valor basal, fecha, fuente y responsable. No se selecciona una medida de salud sólo para aumentar conteo. |
+
+## Tablero completo: tres municipios por siete dimensiones
+
+Valores **de referencia** de sensibilidad(S), capacidad adaptativa(CA) y vulnerabilidad(V); riesgo institucional de referencia y SSP3-7.0/2060. Cinco decimales se muestran sólo para lectura; CSV/JSON conservan la precisión almacenada. Las categorías proceden de las celdas fuente, no de umbrales del equipo.
+
+| Municipio | Dimensión | S ref | CA ref | V ref / categoría | Riesgo ref → SSP3-7.0/2060 | Fila fuente |
+|---|---|---:|---:|---|---|---:|
+| Guarne | Riesgo de desastres | 0.34800 | 0.48570 | 0.40775 / Medio | 0.16410 (Bajo) → 0.18377 (Bajo) | 15 |
+| Marinilla | Riesgo de desastres | 0.29239 | 0.60859 | 0.11000 / Muy bajo | 0.14981 (Bajo) → 0.15583 (Bajo) | 18 |
+| Rionegro | Riesgo de desastres | 0.39645 | 0.56332 | 0.48231 / Alto | 0.28319 (Bajo) → 0.32066 (Medio) | 19 |
+| Guarne | Hábitat Humano | 0.18022 | 0.42634 | 0.17866 / Bajo | 0.06623 (Muy bajo) → 0.07036 (Muy bajo) | 25 |
+| Marinilla | Hábitat Humano | 0.21819 | 0.51676 | 0.15281 / Bajo | 0.12484 (Muy bajo) → 0.12716 (Muy bajo) | 28 |
+| Rionegro | Hábitat Humano | 0.19708 | 0.83493 | 0.11000 / Muy bajo | 0.04588 (Muy bajo) → 0.04304 (Muy bajo) | 29 |
+| Guarne | Recursos Hídricos | 0.60048 | 0.55564 | 0.36974 / Medio | 0.13397 (Bajo) → 0.13797 (Bajo) | 35 |
+| Marinilla | Recursos Hídricos | 0.66108 | 0.47493 | 0.58774 / Alto | 0.17377 (Bajo) → 0.17968 (Bajo) | 38 |
+| Rionegro | Recursos Hídricos | 0.57872 | 0.53281 | 0.54812 / Alto | 0.16981 (Bajo) → 0.17478 (Bajo) | 39 |
+| Guarne | Infraestructura | 0.42857 | 0.44173 | 0.59748 / Alto | 0.21517 (Bajo) → 0.24628 (Bajo) | 45 |
+| Marinilla | Infraestructura | 0.35526 | 0.79863 | 0.11000 / Muy bajo | 0.07259 (Muy bajo) → 0.08088 (Muy bajo) | 48 |
+| Rionegro | Infraestructura | 0.42357 | 0.73243 | 0.32410 / Medio | 0.18026 (Bajo) → 0.20128 (Bajo) | 49 |
+| Guarne | Salud Humana | 0.25481 | 0.44528 | 0.14503 / Muy bajo | 0.03750 (Muy bajo) → 0.03750 (Muy bajo) | 55 |
+| Marinilla | Salud Humana | 0.25120 | 0.51072 | 0.25735 / Medio | 0.14074 (Bajo) → 0.14074 (Bajo) | 58 |
+| Rionegro | Salud Humana | 0.23792 | 0.57152 | 0.11000 / Muy bajo | 0.11200 (Muy bajo) → 0.11200 (Muy bajo) | 59 |
+| Guarne | Biodiversidad | 0.36707 | 0.33002 | 0.33989 / Medio | 0.07956 (Muy bajo) → 0.08695 (Muy bajo) | 65 |
+| Marinilla | Biodiversidad | 0.52092 | 0.23680 | 0.74496 / Muy alto | 0.30811 (Medio) → 0.32822 (Medio) | 68 |
+| Rionegro | Biodiversidad | 0.39259 | 0.22194 | 0.76467 / Muy alto | 0.27919 (Bajo) → 0.29709 (Bajo) | 69 |
+| Guarne | Seguridad alimentaria | 0.16721 | 0.44713 | 0.17736 / Bajo | 0.14025 (Bajo) → 0.14567 (Bajo) | 75 |
+| Marinilla | Seguridad alimentaria | 0.19266 | 0.49061 | 0.22685 / Bajo | 0.13970 (Bajo) → 0.14112 (Bajo) | 78 |
+| Rionegro | Seguridad alimentaria | 0.20387 | 0.53460 | 0.24301 / Medio | 0.15069 (Bajo) → 0.15995 (Bajo) | 79 |
+
+Fuente de todas las filas: [matriz municipal M-E-2411](https://observatorioambiental.cornare.gov.co/wp-content/uploads/2026/04/Copia-de-M-E-2411_MVRC_Municipios_v3_SIN-RISK.xlsx), hoja `Regional Valles SN`. Columnas W/AD/AJ= S/CA/V de referencia; X/AE/AK= categorías respectivas; AP/AQ= riesgo de referencia/categoría; BB/BC= riesgo SSP3/2060/categoría. D/E y P/Q= amenaza de referencia y SSP3/2060. Filas por dimensión:15/18/19,25/28/29,35/38/39,45/48/49,55/58/59,65/68/69,75/78/79. No se emplean índices integrados para asignar presupuestos ni inferir criticidad de un factor.
+
+## Escenarios, tiempo y calidad de evidencia
+
+Se recuperaron **357 valores** institucionales presentes:21 perfiles×(7 amenazas por escenario/horizonte +7 riesgos +3 factores S/CA/V de referencia). Hay referencia y SSP1,SSP2,SSP3 para2040/2060. El [informe de amenazas M-E-2550, PDFp6](https://observatorioambiental.cornare.gov.co/wp-content/uploads/2026/04/Copia-de-M-E-2550_Informe_Proyeccion_amenazas_V3.pdf) especifica SSP1-2.6, SSP2-4.5 y SSP3-7.0, con períodos2021–2040 y2041–2060. El [Plan Valles, PDFp20](https://observatorioambiental.cornare.gov.co/wp-content/uploads/2026/04/Copia-de-M-E-2852-Plan-Adaptacion-Regional-VSN-CORNARE-v2.pdf) usa SSP3-7.0 y tablas2040/2060. La equivalencia no proviene únicamente del nombre corto de la matriz.
+
+El escenario climático de referencia del informe corresponde a1981–2010. **El año basal de los índices dimensionales no está identificado por el selector2026 del sitio**; se conserva `null`. Los S/CA/V mostrados son de referencia: no se presentan como nuevas mediciones futuras. El enunciado p6 exige primero un **horizonte futuro intermedio suministrado por CORNARE**, sin definirlo en el texto. SSP2-4.5/2040 está disponible en el CSV para comparación preliminar; escoger ese par como horizonte intermedio oficial requiere confirmación y debe registrarse. El JSON conserva también SSP2-4.5/2060 para separar sensibilidad al escenario de sensibilidad al horizonte. La prueba final SSP3-7.0/2060 dispone de datos; su aplicación a P2 aún necesita registrar mantener/modificar/reemplazar y el riesgo residual.
+
+Extracción mediante XML de Excel: valores `<v>` almacenados, texto de categoría vecino, encabezado institucional, celda, hash y fórmula original cuando existe. **No se ejecutaron fórmulas**, no se recalculó R=A×V, no se corrió un modelo climático y no se inventó eficacia. El nombre de archivo `SIN-RISK` no implica ausencia de riesgo: la hoja pública contiene los valores de riesgo mencionados. Campos de códigos/indicadores MEA requieren trazabilidad adicional; `Riesgo_SSP3_2060` es un encabezado agregado, no un código MEA.
+
+## Información territorial disponible y faltantes que cambian la decisión
+
+[POMCA Río Negro](https://observatorioambiental.cornare.gov.co/pomca/pomca-rio-negro/) aporta código de cuenca, participación municipal y enlaces de diagnóstico/zonificación. Las áreas de una cuenca y de un municipio no son intercambiables. La página consultada no basta para comprobar intersecciones de predios con zonas de protección, amenaza o captación; aún no se obtuvo ni intersectó cartografía de elegibilidad. [Recurso hídrico](https://observatorioambiental.cornare.gov.co/recurso-hidrico/) ofrece instrumentos de consulta; descubrir una capa tampoco demuestra haberla usado.
+
+Faltantes decisivos: localización de unidades e intersección cartográfica; estado de ecosistemas/activos/captaciones; acuerdos de tenencia y ejecución/custodia; fechas, tipos y coordenadas de eventos; vínculo entre17fichas MEA y15unidades de precio del reto; basales por indicador y año; eficacia causal o magnitud esperada; confirmación del horizonte intermedio; conciliación de versiones. La ausencia de datos no se codifica como valor cero, relación territorial probada ni intervención viable. P2/P3 son responsables de cerrar sus decisiones y seguimiento; este tablero no certifica sus productos.
+
+## Versiones y paquete de evidencia
+
+Discrepancias conservadas: enunciado biodiversidad Rionegro/Marinilla V0,75/0,72 frente a matriz0,76467/0,74496; lámina12 vs matriz en Guarne/desastres (Alto/Medio), Rionegro/agua(Medio/Alto), Guarne/salud(Bajo/Muy bajo), Marinilla/salud(Bajo/Medio), Marinilla/alimentos(Muy bajo/Bajo), Rionegro/alimentos(Bajo/Medio). No se atribuyen a redondeo sin probar versión/metodología; el enunciado manda para resolver el caso.
+
+- [CSV de21perfiles](p1_tablero.csv): visualización compacta; campos vacíos mantienen faltantes.
+- [JSON de357registros y fuentes](datos_oficiales.json): precisión, fórmulas originales/caché, categoría/celda, URL, hash, escenario y período.
+- [Registro de brechas](../caso/brechas_escenarios_mea.md): qué disponibilidad se cerró, qué decisión sigue condicionada y quién la verifica.
+- Fuentes MEA/ASCA recuperadas: [fichas17](https://observatorioambiental.cornare.gov.co/wp-content/uploads/2026/04/Copia-de-M-E-2897_Fichas_Adaptacion_Municipales1.xlsx), [indicadores ASCA](https://observatorioambiental.cornare.gov.co/wp-content/uploads/2026/04/Copia-de-M-E-2896-Anexo-1.-Indicadores-ASCA-Municipales.pdf). Su lectura detallada y vínculo con P3 continúan; no se afirma una eficacia cuantificada por haberlas descargado.
+
+**Estado de P1:** datos y cinco hallazgos trazados; localización municipal. Revisión independiente, conciliación de fuentes y localización de unidades pendientes. No se declara diagnóstico predial ni reducción de vulnerabilidad demostrada.
