@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-10-07T15:46:20.822900+00:00",
+  "privacy_check_passed": true,
+  "files": [
+    {
+      "path": "caso/goal_ejecucion.md",
+      "sha256": "69305e97119557c1908e2d5b4eeb8242063df34c7288a3b3ed81d6579fb72a84",
+      "bytes": 10631
+    },
+    {
+      "path": "ambiente/estado_orquestacion.json",
+      "sha256": "e9d93d31c31ce95d21ce63cb84de76613efd663f0709a44c62400ffe03368d74",
+      "bytes": 5701
+    },
+    {
+      "path": "ambiente/publicos/estado_preparacion.json",
+      "sha256": "678c577a1422821e93863db426ab9eb59ef3c4554c3b35611e17a45610520d68",
+      "bytes": 951
+    },
+    {
+      "path": "ambiente/publicos/estado_preparacion.md",
+      "sha256": "3ff5d73a5efdb88a2aa9ae71b03de534cbbbf39ed1df0fe589a5e02df8241780",
+      "bytes": 1198
+    },
+    {
+      "path": "ambiente/publicos/auditorias_preparatorias.json",
+      "sha256": "0c8656df790b37d0edaf6b703160e1fb57c48128a2c556ef9a8e4eea8bf9b5c8",
+      "bytes": 2013
+    }
+  ]
+}

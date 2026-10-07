@@ -1,20 +1,20 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T15:38:52.183528+00:00",
-  "updated_at_bogota": "2026-10-07T10:38:52.183528-05:00",
+  "updated_at_utc": "2026-10-07T15:45:05.987705+00:00",
+  "updated_at_bogota": "2026-10-07T10:45:05.987705-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_GO_recibido_goal_activa",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
     "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
-    "sha256": "d76e73db11950dade184be1afa9ec99aaa598a75cd96496fc6c07e14637e8a2f",
+    "sha256": "69305e97119557c1908e2d5b4eeb8242063df34c7288a3b3ed81d6579fb72a84",
     "preparada": true,
     "activada": true,
     "herramienta_create_goal_usada": true,
     "requiere": "evidencia verificable de cierre",
-    "threadId": "01a116ac-c851-7cb3-8f24-ec598ceb8608",
     "estado_tool": "active",
-    "GO_recibido_utc": "2026-10-07T15:34:31+00:00"
+    "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
+    "gestion_autoritativa": "conversación principal"
   },
   "root": "solo_orquestador_sin_ejecucion_material",
   "implementacion_autorizada": true,
@@ -23,7 +23,7 @@
   "limites": {
     "paquete_bogota": "2026-10-07T13:50:00-05:00",
     "entrega_bogota": "2026-10-07T14:00:00-05:00",
-    "minutos_disponibles_hasta_paquete": 205,
+    "minutos_disponibles_hasta_paquete": 184,
     "recalcular_tras_GO_tardio": true
   },
   "recursos": {
@@ -45,7 +45,7 @@
     "E2E_navegador_completo": false
   },
   "entrega_ambiental": {
-    "estado": "pendiente_GO_y_ejecucion",
+    "estado": "en_ejecucion_productos_pendientes_de_verificacion",
     "productos": [
       "P1",
       "P2",
@@ -122,5 +122,31 @@
     "rama_documentos": "dev",
     "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
     "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos"
-  }
+  },
+  "ejecucion_remota": [
+    {
+      "frente": "presupuesto",
+      "estado": "GO_enviado",
+      "enviado_utc": "2026-10-07T15:42:22.448528+00:00",
+      "salida_auxiliar": "p2_motor_presupuesto.md"
+    },
+    {
+      "frente": "territorio",
+      "estado": "GO_enviado",
+      "enviado_utc": "2026-10-07T15:42:22.448381+00:00",
+      "salida_auxiliar": "p1_p3_fuentes_territoriales.md"
+    },
+    {
+      "frente": "dependencias",
+      "estado": "GO_enviado",
+      "enviado_utc": "2026-10-07T15:42:23.359708+00:00",
+      "salida_auxiliar": "p3_dependencias_fuentes.md"
+    },
+    {
+      "frente": "localizacion",
+      "estado": "GO_enviado",
+      "enviado_utc": "2026-10-07T15:42:23.009280+00:00",
+      "salida_auxiliar": "mapa_limites_localizacion.md"
+    }
+  ]
 }

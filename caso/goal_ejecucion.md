@@ -1,6 +1,6 @@
 # Goal activa — decisión de adaptación CORNARE
 
-**Estado: ACTIVA; GO explícito recibido y `create_goal` ejecutado el 07/10/2026 a las 10:34:31 de Bogotá.** No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
+**Estado: ACTIVA en la conversación principal; GO explícito recibido el 07/10/2026 a las 10:34 de Bogotá.** No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
 
 Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.stevenvallejo.com). El repositorio de trabajo permanece en la rama `dev`; la publicación Git corresponde al único publicador delegado, autorizado nuevamente con el GO.
 
@@ -17,7 +17,8 @@ Root **solo orquesta**: asigna, recibe evidencia, resuelve discrepancias y decid
 | Datos/fichas oficiales, escenarios y MEA | Nativo DA: `caso/entrega/evidencia_y_vacios.md`; registro de datos/fuentes. |
 | P1: diagnóstico, ubicación y cinco hallazgos | Nativo P1: `caso/entrega/producto_1.md`. |
 | P2: cartera, cálculo y alternativas | Nativo P2: `caso/entrega/producto_2.md`; único escritor de cálculos que se le asignen. |
-| P3, ensamblado y pitch | Nativo P3: `caso/entrega/producto_3.md`, `pitch.md` y paquete integrado; integra por referencias, no sobrescribe P1/P2. |
+| P3: residual y seguimiento | Nativo de entorno/P3: `entregables/p3_riesgo_residual.md`, `p3_riesgo_residual.csv` y `variables_seguimiento.csv`; no sobrescribe P1/P2. |
+| Pitch/anexo e integración editorial | Editor/publicador: `entregables/PITCH_BORRADOR.md` y `ANEXO_BORRADOR.md`; escritor exclusivo, integra por referencias. |
 | Adaptación/cálculo de Presupuesto Vivo | Codex del tmux remoto EXISTENTE `PresupuestoVivo`; solo cambios indispensables expresamente asignados, en su worktree/ramas de tarea. |
 | Territorio, procedencia y MEA de apoyo | Codex remoto EXISTENTE `EfectoDomio` = Territorio Vivo; worktree independiente. |
 | Crítica independiente | Claude y Muse **locales**: evaluación, FAQ/guía acotadas según asignación; cada uno escribe solo su archivo, con versión y objeciones. |
@@ -34,13 +35,13 @@ Cronograma de ejecución actualizado con el GO real de las 10:34. Mantiene 13:50
 | Fase | Inicio–fin Bogotá | Salida/condición |
 |---|---|---|
 | GO recibido y asignaciones | 10:34–10:43 | Goal activa; root asigna y ejecutores reciben alcance/archivo exclusivo. |
-| DA: fichas, escenarios y vacíos | 10:34–11:14 | Fuentes oficiales y SSP/MEA prioritarios; primera declaración de faltantes antes11:15. |
+| DA: fichas, escenarios y vacíos | 10:34–11:14 | Fuentes oficiales y SSP/MEA prioritarios; primera declaración de faltantes antes de 11:15. |
 | P1: diagnóstico territorial | 10:43–11:42 | Hasta cinco hallazgos; cobertura de municipios y siete dimensiones. |
 | P2: selección y comparación | 10:43–12:18 | Elegibilidad, unidades enteras, conteo, presupuesto y alternativas. |
 | P3: residual y seguimiento | 10:43–12:18 | Vacíos que cambian decisión, indicadores/línea base y revisión. |
 | Contraste de escenarios | 11:28–12:45 | Referencia/intermedio/SSP3-7.0–2060; decisiones y límites reales. |
 | Integración y revisión independiente | 12:41–13:30 | 75 IDs con evidencia; Claude/Muse y revisión delegada. |
-| Pitch, anexo y paquete público | 13:30–13:50 | Ensayo ≤7min; anexo opcional ≤2p; versiones coherentes. |
+| Pitch, anexo y paquete público | 13:30–13:50 | Ensayo ≤ 7 min; anexo opcional ≤ 2 páginas; versiones coherentes. |
 | Entrega | 13:50–14:00 | Paquete final y limitaciones con hora real. |
 
 Prioridad: **evidencia y diagnóstico → cartera/presupuesto → residual/seguimiento → contraste y defensa**. DA, P1, P2 y P3 avanzan en paralelo; comunican entradas pendientes sin rellenarlas. SpecOrganon se usa solo si ayuda a trazabilidad sin retrasar: no obliga a recorrer/aprobar automáticamente sus fases. Los cambios de interfaz son accesorios; el formato de tablas/láminas está permitido.
@@ -59,4 +60,4 @@ Prioridad: **evidencia y diagnóstico → cartera/presupuesto → residual/segui
 
 ## Publicar avances sin exponer operación privada
 
-Cada escritor termina su artefacto y entrega lista exacta, SHA y comprobaciones. **El publicador delegado es el único escritor Git**, nuevamente autorizado con el GO: hace commit/push acotado en `dev` por artefacto terminado, conserva los commits del usuario y comunica HEAD/archivos. El dueño web actualiza JSON de progreso y devuelve ese lote al mismo publicador. Los otros agentes no hacen Git/API mutations. El despliegue automático configurado conserva su alcance autorizado. Sin cambios simultáneos al archivo ni watchers globales. Publicar solo whitelist revisada: sin credenciales, cuentas, IP privada, rutas personales, `.env`, TUI, respaldos, empresas identificables o insumos con permisos pendientes. El [estado público](https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json) distingue preparación, GO, ejecución y entregas. `create_goal` ya se ejecutó con este objetivo, sin token_budget, en el thread `01a116ac-c851-7cb3-8f24-ec598ceb8608`. La herramienta devuelve estado `active`; el documento no declara el resultado cumplido.
+Cada escritor termina su artefacto y entrega lista exacta, SHA y comprobaciones. **El publicador delegado es el único escritor Git**, nuevamente autorizado con el GO: hace commit/push acotado en `dev` por artefacto terminado, conserva los commits del usuario y comunica HEAD/archivos. El dueño web actualiza JSON de progreso y devuelve ese lote al mismo publicador. Los otros agentes no hacen Git/API mutations. El despliegue automático configurado conserva su alcance autorizado. Sin cambios simultáneos al archivo ni watchers globales. Publicar solo whitelist revisada: sin credenciales, cuentas, IP privada, rutas personales, `.env`, TUI, respaldos, empresas identificables o insumos con permisos pendientes. El [estado público](https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json) distingue preparación, GO, ejecución y entregas. La goal autoritativa está activa en la conversación principal, sin token_budget explícito; esta instancia ejecutora mantiene el mismo objetivo delegado. No se crean procesos ni escritores duplicados. El documento no declara el resultado cumplido.
