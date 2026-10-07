@@ -57,6 +57,8 @@ No. En la matriz de 75 requisitos, "demostrado" solo cubre la lectura y la trans
 
 Orden de autoridad: enunciado oficial → presentación de CORNARE (contexto) → Excel (antecedentes, no eficacia) → notas → preparación previa. El 70/15/15 no son pesos del jurado; la meta del −30 % es regional y a 2035; MR y RM no se suman; "Vulnerabilidad" en AM es un tipo de evento; una inversión no es un resultado.
 
+Se omite la información individual identificable de empresas. Sí se pueden usar nombres de instituciones, del consultor y otros nombres públicos, siempre que no lleven datos individuales asociados.
+
 **6. ¿Cuántas intervenciones podemos financiar?**
 
 El **máximo financiero es 6**, siempre que se cuente una unidad completa por entrada del catálogo. Con esa condición hay 7 carteras posibles de 6 unidades, dentro de 1.567 combinaciones factibles.
@@ -92,14 +94,16 @@ No a las dos cosas. La goal está preparada pero **inactiva**: requiere el GO ex
 
 Los archivos locales **no se publican solos**. Git lo maneja **el usuario**: los agentes no hacen add, commit, push ni cambios por API; solo entregan la lista de archivos con sus SHA.
 
+Para comparar la versión local con la publicada, use el **hash del contenido** además de la hora. Que la hora de modificación sea posterior no demuestra que el contenido haya cambiado.
+
 **12. ¿Dónde leemos el material y cómo lo usamos en un Proyecto de ChatGPT?**
 
-Use la rama **dev**:
+La web canónica es <https://hackathon-ambiental.stevenvallejo.com>. Para las fuentes, use la rama **dev**:
 
 - vista: <https://github.com/stevenvo780/ambientalhakaton/blob/dev/>
 - texto plano: <https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/dev/>
 
-La rama `main` contiene al principio solo el README. **Un 404 en `main` no significa que el repositorio esté vacío.**
+La rama `main` empezó solo con el README. Ese era su estado inicial: según el coordinador, a las 15:27 UTC (commit `27f5842`) `main` ya tenía también documentos del caso. **No describa el repositorio como vacío.** Antes de citar `main`, compruebe qué contiene en ese momento.
 
 Subir el README a un Proyecto de ChatGPT orienta la lectura, pero no da acceso automático ni crea un GPT personalizado. Si el GPT no puede navegar, suba estos archivos:
 

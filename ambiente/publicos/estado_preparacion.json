@@ -1,8 +1,8 @@
 {
   "schema": "ambiental-hackathon.preparacion-publica.v1",
   "verified_at_utc": "2026-10-07T15:13:24.805567+00:00",
-  "estado": "preparacion_lista_goal_pendiente_GO",
-  "goal_activada": false,
+  "estado": "ejecucion_GO_recibido_goal_activa",
+  "goal_activada": true,
   "gemini_local": "pendiente_autenticacion",
   "baseline": {
     "presupuesto_unitarias_aprobadas": 419,
@@ -17,5 +17,7 @@
   "limite_entrega": "14:00 Bogotá, 7/10/2026",
   "sin_credenciales_o_rutas_operativas": true,
   "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
-  "actualizacion_dominio_utc": "2026-10-07T15:31:34.726880+00:00"
+  "actualizacion_dominio_utc": "2026-10-07T15:31:34.726880+00:00",
+  "GO_recibido": true,
+  "actualizacion_utc": "2026-10-07T15:38:52.183528+00:00"
 }

@@ -1,0 +1,33 @@
+{
+  "phase": "GO",
+  "tasks": {
+    "presupuesto": {
+      "session": "PresupuestoVivo",
+      "worktree": "presupuesto-vivo",
+      "branch": "hackathon/ambiental-p2-20261007",
+      "output": "p2_motor_presupuesto.md",
+      "details": "Frente P2 MOTOR: codex de presupuesto. Writer exclusivo del worktree presupuesto-vivo; app de prueba43007/DB pv_hackathon_test ya configurada con credenciales NUEVAS privadas en .env.local, no imprimirlas. Autor NATIVO P2 controla elección y razones finales: no selecciones una cartera ambiental autoritativa en paralelo. Tu salida es contrato/cálculo de apoyo y adaptaciones mínimas que él pueda aprovechar.\nInspección previa demostró minimax-regret favorece menos intervenciones en desempate; no usarlo como certificado de máximo oficial. Reusar CSV oficial15filas/unidades enteras, enumeración presupuesto/conteo/comparadores bajo reglas EXPLÍCITAS; campos elegibilidad/cupo pendiente no se vuelven aprobados. Verificar max6/7carteras financieras condicionales y costo íntegro PSA3años/restauraciónunidad completa; comparar alternativas regional6500sinfraccionar. No forzar perfilesbeneficios numéricos para medidas oficiales. Preferir tabla/helper aislado si resuelve P2; solo adaptar UI/import/export si imprescindible, separando finanzas de eficacia. Cuentaunidad compartida una vez, trazabilidad municipal/sitio/actor/condición y mecanismos S/CA propuestos. Pruebas pertinentes de presupuesto integer/no fracción/no doble conteo y correspondencia de catálogo. Salida auxiliar no sobrescribe entregables/p2*. Resultado propio remotos/p2_motor_presupuesto.md; si produces CSV/JSON auxiliares usan prefijo p2_motor_ y únicos de este frente."
+    },
+    "territorio": {
+      "session": "EfectoDomio",
+      "worktree": "territorio-vivo",
+      "branch": "hackathon/ambiental-territorio-20261007",
+      "output": "p1_p3_fuentes_territoriales.md",
+      "details": "Frente TERRITORIO/FUENTES P1-P3: writer exclusivo territorio-vivo. App test43008/DB territorio_hackathon_test aislada/PostGIS ya configurada con credenciales nuevas privadas, no imprimirlas. Autor nativo escribe P1/P3 final: tú entrega evidencia y contrato/exportación coherentes.\nPrioriza levantar fuentes oficiales del corredor3municipios y metadatos de escenario/componentes/unidad/fecha/escala. Catálogo provisional Granada–Rionegro NO demuestra Guarne/Marinilla ni estudio completo. Localiza referencia/intermedio exacto/SSP3-7.0/2060 y fichasMEA si existen con linksprimarios/página/celda; investigación acotada y faltantes explícitos11:15. Amenazageográfica/infraregistro≠vulnerabilidadclimática. Conservar7dimensiones, hasta5hallazgospropuestos con fuentes/verificabilidad (no decidefinalP1), origeninstitucional/inferencia/supuesto/missing. Contrato exportable P1/P3 hallazgo→municipio/zona→fuente/escenario→limitación→medida/MEA baseline/null/responsable; no datos prediales/personales. Cambios app mínimos solo si necesarios: campos/exports, no construir mapas completos ni módulos nuevos. Entrega remotos/p1_p3_fuentes_territoriales.md y auxiliares prefijo p1_p3_*. Reporta datos disponibles y prueba específica changedexport. P3 final pertenece al coordinador nativo, no escribas entregables/p3_riesgo_residual.* ni variables_seguimiento.csv."
+    },
+    "dependencias": {
+      "session": "ContinuidadInfraestructuraServicios",
+      "worktree": "dependencias",
+      "branch": "hackathon/ambiental-dependencias-20261007",
+      "output": "p3_dependencias_fuentes.md",
+      "details": "Frente P3 DEPENDENCIAS/LEVANTAMIENTO: writer exclusivo worktree dependencias y auxiliares remotos/p3_dependencias_*. La auditoría estática83líneas ya completa; reusar sin rehacer.\nMaterializa tabla mínima verificable de información deliberadamente faltante para corredor: función/sistema agregado, dependencia a caracterizar SIN extremos empresariales imaginarios, variable/unidad/fuente/custodio/capturador propuestos, método/permiso/resolución, faltanteactual y decisión P2/P3que cambiaría, indicadorMEA oficial si localizado o propuesto sin código atribuido. Registros institucionales cartográficos no acreditan suministro; cero dependencias registradas≠independencia real. Escenarios interrupción operativa≠SSP3. Busca solo fuentes institucionales públicaspermitidas del corredor para confirmar qué está documentado; no inferir vínculos por proximidad ni publicar empresas/direcciones. Actividad/inversión≠resultado, línea base desconocida=null+motivo, no fórmula con coeficientes inventados. Aplicar a alternativas (rondas/alertas/SUDS/proteccióninfra/PSA) como mecanismos/condiciones, NO elegir carterafinal. Residual cualitativo explícito con riesgos y sacrificios no atendidos y quién levantaría información. Prioriza documento/CSV; no necesitas implementar simulador ni nuevos runtime/DB. Salida remotos/p3_dependencias_fuentes.md y CSV p3_dependencias_variables.csv, no tocar entregables/p3_riesgo_residual.* ni variables_seguimiento.csv (escritor final nativo exclusivo)."
+    },
+    "localizacion": {
+      "session": "lote-resiliente",
+      "worktree": "localizacion",
+      "branch": "hackathon/ambiental-localizacion-20261007",
+      "output": "mapa_limites_localizacion.md",
+      "details": "Frente LOCALIZACIÓN/ACTORES/VIABILIDAD: writer exclusivo worktree localizacion y auxiliares remotos/mapa_limites_*. Presupuesto principal/Territorio apoyo; Lote esopcional, no fabricar predios niotraapp.\nReutiliza auditoría de escala/procedencia. Materializa tabla/contrato de ubicación de medidas del catálogo a resolución sustentada: municipio/zona/sistema documentado o sitio por verificar, evidenciaescala/fecha/CRS, autorizacióndegeometría y viabilidad propuesta/pendiente, actorporrol propuesto vsvalidado, incertidumbrenull cuando nohaydato y condición paraelegibilidad. Proximidad/categoríamunicipal no asigna índiceaunpredio, bboxRionegro no cubre3municipios; sincontornooficial geometry=null. Pruebalógica documental hasta5hallazgos+7dimens, unidadesmultimunicipales una solaunidad/costo. Mapea límitespor alternativa rondas/SAT/SUDSinfra/PSA sin elegirtotalfinal niinventar sitios comprometidos; define quéprueba/custodio habilita intervención. Busca expedientes/mapas oficiales del corredor solo cuando tengan utilidad ysinprecisióndibujo inventada. Preferir tabla exportable/leyenda legible. Solo tocarcódigo mínimo si necesario para impedir precisiónfalsa en exportación usada porcaso; no instalarservicios niDB nuevas. Salida remotos/mapa_limites_localizacion.md y CSV mapa_limites_variables.csv, no P1/P2/P3final ni fuentes/archivos demásfronts."
+    }
+  }
+}

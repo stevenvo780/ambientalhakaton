@@ -1,10 +1,10 @@
-# Goal preparada — decisión de adaptación CORNARE
+# Goal activa — decisión de adaptación CORNARE
 
-**Estado: preparada, INACTIVA; requiere el GO explícito del usuario.** Este archivo no activa `create_goal`, no reanuda goals antiguas y no autoriza implementar aplicaciones. Preparación registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
+**Estado: ACTIVA; GO explícito recibido y `create_goal` ejecutado el 07/10/2026 a las 10:34:31 de Bogotá.** No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
 
-Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.stevenvallejo.com). El repositorio de trabajo permanece en la rama `dev`; la publicación Git corresponde al usuario.
+Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.stevenvallejo.com). El repositorio de trabajo permanece en la rama `dev`; la publicación Git corresponde al único publicador delegado, autorizado nuevamente con el GO.
 
-**Objetivo para activar tras GO:** resolver la pregunta ambiental del corredor Rionegro–Guarne–Marinilla y entregar una decisión de adaptación defendible, reproducible y monitoreable: P1, P2, P3 y pitch, aprovechando **Presupuesto Vivo como principal** y **Territorio Vivo como apoyo de evidencia territorial/seguimiento**. El éxito corresponde a la decisión y sus razones, no a completar un software.
+**Objetivo activo:** resolver la pregunta ambiental del corredor Rionegro–Guarne–Marinilla y entregar una decisión de adaptación defendible, reproducible y monitoreable: P1, P2, P3 y pitch, aprovechando **Presupuesto Vivo como principal** y **Territorio Vivo como apoyo de evidencia territorial/seguimiento**. El éxito corresponde a la decisión y sus razones, no a completar un software.
 
 Base de trabajo: [propuesta principal](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/propuesta_principal.md), [75 requisitos](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md), [catálogo](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/catalogo_costos_reto.csv), [comparación financiera](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparacion_financiera.json) y [script reproducible](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparar_presupuesto.py). Versión preparatoria central: `a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767`; los cambios de publicación se registran por commit. Los originales oficiales gobiernan; el documento central no los sustituye.
 
@@ -12,7 +12,7 @@ Base de trabajo: [propuesta principal](https://github.com/stevenvo780/ambientalh
 
 Root **solo orquesta**: asigna, recibe evidencia, resuelve discrepancias y decide la entrega. Los ejecutores leen, calculan, redactan, prueban y publican. Máximo **cuatro ejecutores nativos más root**; las sesiones externas también consumen cuota y no crean licencias adicionales.
 
-| Frente | Ejecutor y salida exclusiva después del GO |
+| Frente | Ejecutor y salida exclusiva durante ejecución |
 |---|---|
 | Datos/fichas oficiales, escenarios y MEA | Nativo DA: `caso/entrega/evidencia_y_vacios.md`; registro de datos/fuentes. |
 | P1: diagnóstico, ubicación y cinco hallazgos | Nativo P1: `caso/entrega/producto_1.md`. |
@@ -23,25 +23,25 @@ Root **solo orquesta**: asigna, recibe evidencia, resuelve discrepancias y decid
 | Crítica independiente | Claude y Muse **locales**: evaluación, FAQ/guía acotadas según asignación; cada uno escribe solo su archivo, con versión y objeciones. |
 | Apoyo acotado de cobertura/consistencia | GPT-6-Luna: QA local respondida en 39,3 s según coordinación; no acredita runtime remoto ni añade un quinto slot nativo. |
 | Revisión adicional MEA/escenarios | Gemini **local**, solo después de login oficial y catálogo verificado; pendiente, sin sustitución remota. |
-| Publicación y estado | El usuario es el único responsable Git; los redactores entregan lotes/SHA y el dueño web actualiza estado tras su publicación. |
+| Publicación y estado | Un único publicador delegado realiza Git en dev; los redactores entregan lotes/SHA y el dueño web actualiza estado tras su publicación. |
 
 Antes de nuevo workflow/proveedor: consultar cuotas actuales y catálogo de la ruta, declarar máquina/modelo/motivo. Una lectura de otra máquina no confirma disponibilidad local. Conservar cuentas/sesiones; sin failover automático, sondeo Codex deshabilitado, Scite o servicios de pago nuevos. Cada prompt es autocontenido y fija entradas, restricciones, resultado y **un escritor por archivo**. No delegar de una máquina a otra y de vuelta. No usar las sesiones remotas nuevas de preparación para el trabajo.
 
 ## Ejecución y horas
 
-Cronograma **condicional si se recibe GO en esta planificación**, actualizado a 10:24 y calculado desde 10:25. No describe tareas de entrega ya ejecutadas. Si el GO llega después, el ejecutor de planificación recalcula desde la hora real manteniendo 13:50/14:00; primero recorta UI y trabajo accesorio, nunca inventa datos ni elimina validaciones sustantivas.
+Cronograma de ejecución actualizado con el GO real de las 10:34. Mantiene 13:50/14:00 y cuatro frentes en paralelo; si una fase se demora, el ejecutor de planificación recalcula desde la hora real. Primero se recorta UI y trabajo accesorio, nunca se inventan datos ni se eliminan validaciones sustantivas.
 
 | Fase | Inicio–fin Bogotá | Salida/condición |
 |---|---|---|
-| Confirmación GO y asignaciones | 10:25–10:34 | Root asigna; ejecutores reciben objetivo, fuentes y archivo exclusivo. |
-| DA: fichas, escenarios y vacíos | 10:25–11:07 | Registro de evidencia, localizadores, MEA y peticiones oficiales acotadas. |
-| P1: diagnóstico territorial | 10:39–11:36 | Hasta cinco hallazgos; cobertura de municipios y siete dimensiones. |
-| P2: selección y comparación | 10:43–12:14 | Elegibilidad, unidades enteras, conteo, presupuesto y alternativas. |
-| P3: residual y seguimiento | 10:43–12:14 | Vacíos que cambian decisión, indicadores/línea base y revisión. |
-| Contraste de escenarios | 11:50–12:42 | Referencia/intermedio/SSP3-7.0–2060; decisiones y límites reales. |
-| Integración y revisión independiente | 12:42–13:34 | 75 IDs con evidencia; Claude/Muse y revisión delegada. |
-| Pitch, anexo y paquete público | 13:34–13:50 | Ensayo ≤ 7 min; anexo opcional ≤ 2 páginas; archivos/versiones coherentes. |
-| Entrega | 13:50–14:00 | Paquete final y limitaciones, con hora real de entrega. |
+| GO recibido y asignaciones | 10:34–10:43 | Goal activa; root asigna y ejecutores reciben alcance/archivo exclusivo. |
+| DA: fichas, escenarios y vacíos | 10:34–11:14 | Fuentes oficiales y SSP/MEA prioritarios; primera declaración de faltantes antes11:15. |
+| P1: diagnóstico territorial | 10:43–11:42 | Hasta cinco hallazgos; cobertura de municipios y siete dimensiones. |
+| P2: selección y comparación | 10:43–12:18 | Elegibilidad, unidades enteras, conteo, presupuesto y alternativas. |
+| P3: residual y seguimiento | 10:43–12:18 | Vacíos que cambian decisión, indicadores/línea base y revisión. |
+| Contraste de escenarios | 11:28–12:45 | Referencia/intermedio/SSP3-7.0–2060; decisiones y límites reales. |
+| Integración y revisión independiente | 12:41–13:30 | 75 IDs con evidencia; Claude/Muse y revisión delegada. |
+| Pitch, anexo y paquete público | 13:30–13:50 | Ensayo ≤7min; anexo opcional ≤2p; versiones coherentes. |
+| Entrega | 13:50–14:00 | Paquete final y limitaciones con hora real. |
 
 Prioridad: **evidencia y diagnóstico → cartera/presupuesto → residual/seguimiento → contraste y defensa**. DA, P1, P2 y P3 avanzan en paralelo; comunican entradas pendientes sin rellenarlas. SpecOrganon se usa solo si ayuda a trazabilidad sin retrasar: no obliga a recorrer/aprobar automáticamente sus fases. Los cambios de interfaz son accesorios; el formato de tablas/láminas está permitido.
 
@@ -59,4 +59,4 @@ Prioridad: **evidencia y diagnóstico → cartera/presupuesto → residual/segui
 
 ## Publicar avances sin exponer operación privada
 
-Cada escritor termina su artefacto y entrega lista exacta, SHA y comprobaciones. **El usuario es el único responsable de Git:** los agentes no hacen add, commit, push ni mutaciones Git/API. El usuario publica los lotes y comunica HEAD/archivos; el dueño web actualiza JSON de progreso y entrega ese nuevo lote al usuario. El despliegue automático configurado conserva su alcance autorizado. Sin cambios simultáneos al archivo ni watchers globales. Publicar solo whitelist revisada: sin credenciales, cuentas, IP privada, rutas personales, `.env`, TUI, respaldos, empresas identificables o insumos con permisos pendientes. El [estado público](https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json) distingue preparación, GO, ejecución y entregas. `create_goal` solo se usará tras el GO, en la instancia autorizada y con el objetivo estable; no se activa con este documento.
+Cada escritor termina su artefacto y entrega lista exacta, SHA y comprobaciones. **El publicador delegado es el único escritor Git**, nuevamente autorizado con el GO: hace commit/push acotado en `dev` por artefacto terminado, conserva los commits del usuario y comunica HEAD/archivos. El dueño web actualiza JSON de progreso y devuelve ese lote al mismo publicador. Los otros agentes no hacen Git/API mutations. El despliegue automático configurado conserva su alcance autorizado. Sin cambios simultáneos al archivo ni watchers globales. Publicar solo whitelist revisada: sin credenciales, cuentas, IP privada, rutas personales, `.env`, TUI, respaldos, empresas identificables o insumos con permisos pendientes. El [estado público](https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json) distingue preparación, GO, ejecución y entregas. `create_goal` ya se ejecutó con este objetivo, sin token_budget, en el thread `01a116ac-c851-7cb3-8f24-ec598ceb8608`. La herramienta devuelve estado `active`; el documento no declara el resultado cumplido.

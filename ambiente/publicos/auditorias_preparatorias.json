@@ -2,9 +2,9 @@
   "updated_at_utc": "2026-10-07T15:31:34.726880+00:00",
   "updated_at_bogota": "2026-10-07T10:31:34.726880-05:00",
   "fase": "auditoria_preparatoria_solo_lectura",
-  "GO_recibido": false,
-  "implementacion_autorizada": false,
-  "goals_activadas": false,
+  "GO_recibido": true,
+  "implementacion_autorizada": true,
+  "goals_activadas": "solo nueva goal ambiental; goals históricos no reanudados",
   "modelos": "GPT-6.1-Sol ultra; sesiones de proyectos existentes",
   "tasks": [
     {
@@ -31,7 +31,7 @@
     }
   ],
   "controles": "captura antes del texto y Enter, espera de un segundo; sin attach, Ctrl-C, cierre de sesiones ni cambios de código, Git, DB o configuración",
-  "publicacion_git": "solo usuario; agentes entregan archivos y SHA",
+  "publicacion_git": "publicador delegado único en dev autorizado con el GO",
   "actualizacion_coordinador": {
     "Claude_Muse": "FAQ/guía locales activas según coordinación",
     "GPT_6_Luna": "QA local respondida en 39,3 s; no prueba infraestructura remota",
@@ -41,5 +41,6 @@
     "auditorias_remotas_terminadas": 1
   },
   "rama_documentos": "dev",
-  "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com"
+  "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
+  "actualizacion_estado_utc": "2026-10-07T15:38:52.183528+00:00"
 }

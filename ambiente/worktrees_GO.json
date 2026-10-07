@@ -1,0 +1,42 @@
+{
+  "prepared_at_utc": "2026-10-07T15:38:54.514782+00:00",
+  "worktrees": [
+    {
+      "project": "presupuesto-vivo",
+      "repo_original": "/workspace/PresupuestoVivo",
+      "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/presupuesto-vivo",
+      "branch": "hackathon/ambiental-p2-20261007",
+      "base_commit": "513b7e6872e159485e62f325bbc5ad4450a777d9",
+      "original_clean": true,
+      "test_environment_copied": false
+    },
+    {
+      "project": "territorio-vivo",
+      "repo_original": "/workspace/EfectoDomio",
+      "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/territorio-vivo",
+      "branch": "hackathon/ambiental-territorio-20261007",
+      "base_commit": "19214fceffd89a0de9131acc90fc3fd4205d8a62",
+      "original_clean": true,
+      "test_environment_copied": false
+    },
+    {
+      "project": "dependencias",
+      "repo_original": "/workspace/ContinuidadInfraestructuraServicios",
+      "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/dependencias",
+      "branch": "hackathon/ambiental-dependencias-20261007",
+      "base_commit": "040d75fb5ec14a53aa0aa60c31fca1d211e8721d",
+      "original_clean": true,
+      "test_environment_copied": false
+    },
+    {
+      "project": "localizacion",
+      "repo_original": "/workspace/lote-resiliente",
+      "worktree": "/home/dev/hackathon-ambiental-20261007/worktrees/localizacion",
+      "branch": "hackathon/ambiental-localizacion-20261007",
+      "base_commit": "f7cb8f203fac850e1c14e91eb8f733d2301d0d62",
+      "original_clean": true,
+      "test_environment_copied": false
+    }
+  ],
+  "production_used": false
+}
