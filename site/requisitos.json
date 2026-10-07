@@ -2,7 +2,7 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/matriz_requisitos_completa.md",
-  "source_sha256": "267e3114d6d5631f7bc2b3dd8e62bd4de1e01afac97ac1f5e625789a81062b6f",
+  "source_sha256": "e7805c969d674850c5abebb0330542286b346e462de0760643398c221fee32ba",
   "scope": "Cierre material antes14. P1d7d935/P2v3.3/P3v6 congelados; PDF único2p y lectura documental independiente V4.3, actual sólo espacios inspeccionados. HorizonteSSP3 cerrado;14R600/12meses propuesta; máximo financiero cupo1condicionado y cupo3hipotético. SóloF01 pendiente humano14–16;34condiciones no eficacia/adopción/eligibilidad demostradas.",
   "items": [
     {
@@ -216,7 +216,7 @@
       "id": "Q02",
       "regla_fuente": "¿En cuál municipio, sistema o elemento territorial intervenir primero? E p.6 §9.",
       "accion": "Elegir localización defendible y resolución geográfica disponible.",
-      "evidencia": "P1 y primera intervención P2. **Corte verificado:** P2v3.3:03/04/14 compartidas paraMarinilla, sin intervención física propia/sitio validado.07Rionegro y08/09Guarne propuestas; esas últimas no resuelven automáticamente infraestructuraAlta.",
+      "evidencia": "P1 y primera intervención P2. **Corte verificado:** P2:03/04 compartidas Rionegro–Marinilla;14 es una única unidad municipal propuesta enRionegro por600M/12meses, sin14 financiada enMarinilla/Guarne.07Rionegro y08/09Guarne propuestas; no intervención física propia validada enMarinilla ni solución automática de infraestructuraAlta enGuarne.",
       "validacion": "Municipio y sistema/elemento identificados; geometría o referencia verificable, o localización provisional marcada como tal.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -513,10 +513,10 @@
       "id": "I06",
       "regla_fuente": "Resumen de eventos históricos relevantes. E p.3 §3.",
       "accion": "Obtener eventos con tipo, fecha, territorio y fuente; usarlos como evidencia de contexto.",
-      "evidencia": "Tabla o resumen oficial, con localizadores. **Corte verificado:** P1 ofrece21perfiles de7dimensiones para3municipios con tabla/celda exactas y categorías institucionales.",
+      "evidencia": "Resumen desagregado no localizado. P1-H3 y secciónFaltantes decisivos conservan ausencia de eventos con fecha/ubicación; revision_documentos.md, tabla de insumosfaltantes, separa climatología1994–2024 de serie de incidentes. Los21perfiles/357registros son índices municipales, no inventario histórico de eventos.",
       "validacion": "Cobertura y fechas comprobadas; las categorías de amenaza de EX/AM no se convierten en un inventario completo de eventos o recurrencia.",
       "responsable": "DA",
-      "estado": "demostrado"
+      "estado": "condicional"
     },
     {
       "id": "I07",
@@ -681,10 +681,10 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T12:27:47.188858-05:00",
+  "updated_at": "2026-10-07T17:52:40.955036+00:00",
   "counts": {
-    "condicional": 34,
-    "demostrado": 40,
+    "condicional": 35,
+    "demostrado": 39,
     "pendiente": 1
   }
 }

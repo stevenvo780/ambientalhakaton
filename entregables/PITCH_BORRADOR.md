@@ -118,4 +118,4 @@ Congelar el guion que se leerá y calcular su SHA antes de empezar; usar reloj o
 
 Registrar esos campos permite verificar F01; no se llena duración o identidad por estimación, recepción de archivos, modelo externo ni conteo de palabras. Hasta el recibo real, **F01 continúa pendiente** como verificación oral; no bloquea la solución material lista antes de14:00 conforme a la aclaración humana. El ensayo se planifica durante el estudio14–16. Si sólo cambia esta ficha posterior al ensayo, conservar el hash del guion leído y explicar la diferencia de versión documental.
 
-Corte documental:75IDs estables,40demostrados de afirmación limitada/34condicionales/1pendiente(F01 humano14–16). La legibilidad de V4.3 fue revisada por Muse/Claude; el PDF posterior sólo corrige espacios y se verificó visualmente. No es puntaje del jurado,75cumplidos ni resultado ambiental.
+Corte documental:75IDs estables,39demostrados de afirmación limitada/35condicionales/1pendiente(F01 humano14–16). La legibilidad de V4.3 fue revisada por Muse/Claude; el PDF posterior sólo corrige espacios y se verificó visualmente. No es puntaje del jurado,75cumplidos ni resultado ambiental.

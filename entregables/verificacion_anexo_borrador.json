@@ -21,7 +21,7 @@
     "method": "pdftoppm ambas paginas; inspeccion directa tras correccion minima de espacios"
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "3517e959b6d45f10b73d30feca9f1e15862f0c9b7fb36b2c7c02758dd3169f4b",
+  "pitch_sha256": "1bb7c7ce42b2f9581b140030789ce6230fb715476cd7228dedc4535a146869c8",
   "inputs_sha256": {
     "entregables/p1_tablero.md": "d7d9356630b811cb06f06ab22b089109c7866fa7805ff5c20e7affbd80eb69d9",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
@@ -71,8 +71,8 @@
     "compatibility_alias": "ANEXO_BORRADOR.pdf copia byte-identica; no entregable adicional"
   },
   "matrix_counts": {
-    "condicional": 34,
-    "demostrado": 40,
+    "condicional": 35,
+    "demostrado": 39,
     "pendiente": 1
   },
   "remediation": {
@@ -104,5 +104,8 @@
       "scope": "coherencia/legibilidad documental V4.3; no ensayo/eficacia/aceptacioninstitucional"
     }
   ],
-  "publication_target": "main"
+  "publication_target": "main",
+  "matrix_sha256": "e7805c969d674850c5abebb0330542286b346e462de0760643398c221fee32ba",
+  "editorial_audit_at_bogota": "2026-10-07T12:52:40.959329-05:00",
+  "editorial_audit_note": "I06condicional:21perfiles no son resumen histórico fechado;Q02:14sóloRionegro. PDF/MD/fuentes científicas/contenidooral idénticos; no nueva inspección ni aval pretendidos."
 }
