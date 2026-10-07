@@ -79,7 +79,7 @@ Pero tiene **cinco incoherencias materiales** entre lo que anuncia y lo que D6 f
 
 *Problema:* el enunciado (p. 5) pide demostrar por qué la combinación reduce más vulnerabilidad que las alternativas descartadas. El guion (L47) compara D6 con N1, pero no da la razón de la preferencia ni el costo de oportunidad, y no usa la evidencia institucional disponible sobre alerta.
 
-*Propuesta:* "No medimos cuál cartera reduce más la vulnerabilidad. Preferimos D6 porque, con la misma regla para las 15 medidas, alcanza el máximo de intervenciones pertinentes si suelos, agroecología y verde acreditan sitio y función. N1 invierte más en conservación y rondas, pero financia una unidad menos. A cambio, D6 deja abierta la cobertura de alerta, que la matriz califica como muy baja en Rionegro (0,209) y Guarne (0,248) (InCaRD-04, matriz de la dimensión desastres). Si 07 a 09 no se acreditan, reenumeramos."
+*Propuesta:* "No medimos cuál cartera reduce más la vulnerabilidad. Preferimos D6 porque, con la misma regla para las 15 medidas, alcanza el máximo de intervenciones pertinentes si suelos, agroecología y verde acreditan sitio y función. N1 invierte más en conservación y rondas, pero financia una unidad menos. A cambio, D6 deja abierta la cobertura de alerta, que la matriz califica como muy baja en Rionegro y Guarne (InCaRD-04, M-E-2601/CapacidadAdaptativa!J29/J22; valoresNA). Basal individual retenido; consultar recurso bajo acceso autorizado. Si 07 a 09 no se acreditan, reenumeramos."
 
 ## Cumplimiento de los criterios oficiales en el guion (enunciado, p. 7)
 
