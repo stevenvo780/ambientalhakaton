@@ -1,12 +1,12 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T17:06:34.350223+00:00",
+  "updated_at_utc": "2026-10-07T17:22:35+00:00",
   "updated_at_bogota": "2026-10-07T11:50:37.683593-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_reanudada_Desktop_goal_activa",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
-    "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
+    "url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/goal_ejecucion.md",
     "sha256": "445c5f7fb5dcc0f9c06221acff54678562affa9955f11f8f7855c57bbd862615",
     "preparada": true,
     "activada": true,
@@ -141,19 +141,26 @@
   "publicacion": {
     "Git_owner": "publicador delegado unico",
     "web_owner": "redactor web delegado unico",
-    "protocolo": "artefacto terminado+lista exacta+SHA → publicador único commit/push dev → HEAD y archivos al escritor web → lote JSON al publicador",
+    "protocolo": "artefacto terminado + lista exacta + SHA → publicador único commit/push main → comprobación SHA Git y web",
     "privacidad": "solo whitelist sin secretos, rutas personales, IP privada, TUI o perfiles",
-    "mutaciones_git_por_agentes_autorizadas": "solo publicador delegado en dev; ningún otro escritor",
-    "rama_documentos": "dev",
+    "mutaciones_git_por_agentes_autorizadas": "solo publicador delegado en main; ningún otro escritor",
+    "rama_documentos": "main",
     "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
     "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos",
-    "actualizador": "Inicios cada180segundos comprobados en dos éxitos; commit/push y despliegue conservan latencia. Recibo conserva commit de fuentes, hashes y fecha de captura; la lectura de una versión anterior queda visible.",
+    "actualizador": "Luna único con source origin/main; primer ciclo real inicio12:20:35/fin12:20:51, push efddb4ca confirmado; siguiente inicio12:23:35. Cadencia nueva necesita segundo ciclo, demora de despliegue separada.",
     "verificacion_recibos": {
       "primer_commit": "f4f07f11babbdf1e91767fbcc4b63bfd9ada858f",
       "segundo_commit": "96d9e20064debf765675a55e87fe712662bf3e91",
       "intervalo_inicios_segundos": 180,
       "web_verificada_commit": "96d9e20064debf765675a55e87fe712662bf3e91",
       "verificada_utc": "2026-10-07T16:41:42Z"
+    },
+    "productionBranch": "main",
+    "rootDirectory": "site",
+    "vistas": {
+      "portada": "dos accesos únicamente: presentación y metodología",
+      "avances": "/avances preservado",
+      "PDF": "único ANEXO_METODOLOGICO.pdf máximo2p, enlazado en ambas vistas"
     }
   },
   "ejecucion_remota": [
