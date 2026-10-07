@@ -1,0 +1,100 @@
+{
+  "schema": "territorio-vivo/modulo-publico/v1",
+  "baseCommit": "19214fceffd89a0de9131acc90fc3fd4205d8a62",
+  "adoptedFullPatchSHA256": "d1983b9f4fe1cf3f58039001e314b3968daebe95f2dc2fbcb2aa317e4510e0de",
+  "curatedPatchSHA256": "80b0c0e21cce08d2db4433a9601458853bfbbf71c7032ec90a40586accac42e8",
+  "files": [
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "4c8dda8e1ac9a4a3b30b468800a75bd9cdb001e78c25a4aa1c752f504abac8a3",
+      "bytes": 108,
+      "change": "modified"
+    },
+    {
+      "path": "src/app/resultados/page.tsx",
+      "sha256": "ad240a9990bfd7de9e6bb6ad1210fb0c71ac33ed1d96f43a503ae5ab3843fd05",
+      "bytes": 410,
+      "change": "new"
+    },
+    {
+      "path": "src/app/metodologia/page.tsx",
+      "sha256": "5e129394bda07084a282d9560e4df04b25cea6d7e89eabe489f7aaeb3a683d9c",
+      "bytes": 127,
+      "change": "new"
+    },
+    {
+      "path": "src/app/api/public/resultados/route.ts",
+      "sha256": "db8d28211293c324be632a75a4eee89e93d4a087dc2dccec400fcdd2620e4dce",
+      "bytes": 283,
+      "change": "new"
+    },
+    {
+      "path": "src/production/public-results.ts",
+      "sha256": "2c484360459a9ddcec71971a3dd290fd2c96550a666e100c1151e94ea9da6781",
+      "bytes": 669,
+      "change": "new"
+    },
+    {
+      "path": "src/production/public-results.json",
+      "sha256": "4dedb2e05b1be5787e1787bc515fa78fa16c5d5006b5d5fb18ece215f04417e6",
+      "bytes": 130780,
+      "change": "new"
+    },
+    {
+      "path": "src/production/public-results.css",
+      "sha256": "2980c3b29692810b47581a3998a0df4d2da6ee7169899f49b86dbe8a4d029f0b",
+      "bytes": 4129,
+      "change": "new"
+    },
+    {
+      "path": "src/production/ui/PublicResults.tsx",
+      "sha256": "934cb3134853d0c0dcfe44d0fa2af955e022b466f9ead74e45f3deb558fbf599",
+      "bytes": 15497,
+      "change": "new"
+    }
+  ],
+  "sourceCommit": "84b0199ff88828531bb0cf861d2d4d7cf09c5736",
+  "sourceHashes": [
+    {
+      "id": "p1",
+      "file": "p1_tablero.csv",
+      "sha256": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
+      "rowCount": 21
+    },
+    {
+      "id": "p2",
+      "file": "p2_portafolio.csv",
+      "sha256": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
+      "rowCount": 6
+    },
+    {
+      "id": "p3",
+      "file": "p3_riesgo_residual.csv",
+      "sha256": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
+      "rowCount": 42
+    }
+  ],
+  "publicPaths": [
+    "/resultados",
+    "/metodologia",
+    "/api/public/resultados"
+  ],
+  "productionAlias": "https://territorio-vivo-five.vercel.app/resultados",
+  "productionDeployment": "https://territorio-vivo-cvqlz70af-stevenvo780s-projects.vercel.app",
+  "productionCheckedAt": "2026-10-07T13:16:48-05:00",
+  "counts": {
+    "p1": 21,
+    "p2": 6,
+    "p3": 42
+  },
+  "buildCommand": "npm run build -- --webpack",
+  "deploymentPerformedBy": "publicador autorizado; este paquete sólo conserva código",
+  "exclusions": [
+    "autenticación y guardas",
+    "DB y variables de entorno",
+    "tests y logs",
+    "base completa y directorios privados",
+    "enlaces complementarios en pantallas existentes y configuración de despliegue"
+  ],
+  "scope": "Subconjunto curado del patch adoptado; no sustituye el patch completo ni afirma ejecutar un despliegue nuevo."
+}

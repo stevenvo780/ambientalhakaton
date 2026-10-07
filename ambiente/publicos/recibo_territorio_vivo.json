@@ -19,5 +19,8 @@
   },
   "limite": "Snapshot público fijado por commit; no seguimiento físico ni eficacia acreditados.",
   "schema": "ambiental.software.publicacion.v1",
-  "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
+  "updated_at_utc": "2026-10-07T18:17:10.309923+00:00",
+  "source_export_sha256": "80b0c0e21cce08d2db4433a9601458853bfbbf71c7032ec90a40586accac42e8",
+  "source_export_manifest": "tv_fuente_publica_manifest.json",
+  "source_export_scope": "8 runtime públicos curados; depende de base existente. No reaplicar sobre árbol desplegado."
 }
