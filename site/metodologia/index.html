@@ -46,6 +46,7 @@
       <li><button type="button" data-ir="4"><b>Residual y MEA</b><small>P3: 42 cruces, 34 variables, ficha puente</small><span class="marcas"><span class="tipo inferencia">Inferencia</span><span class="tipo faltante">Faltante</span></span></button></li>
       <li><button type="button" data-ir="5"><b>Revisión</b><small>SSP3-7.0/2060 y reglas de reapertura</small><span class="marcas"><span class="tipo dato">Dato</span><span class="tipo supuesto">Supuesto</span></span></button></li>
     </ol>
+    <p class="fuente">Las flechas indican el orden del razonamiento, no una relación causal.</p>
     <ul class="leyenda-tipos" aria-label="Tipos de afirmación">
       <li><span class="tipo dato">Dato</span> valor o texto institucional con localizador</li>
       <li><span class="tipo calculo">Cálculo</span> operación reproducible sobre datos</li>
@@ -156,7 +157,7 @@
       <div><b>D6</b>elegida, provisional</div>
     </div>
     <div class="embudo" aria-label="Sensibilidad no oficial al cupo de 14">
-      <div class="hipo"><b>17</b>unidades si 14 admitiera tres programas municipales</div>
+      <div class="hipo"><b>17</b>unidades si 14 admitiera tres programas municipales (no son las 17 fichas MEA)</div>
       <div class="hipo"><b>3.906</b>factibles de 131.072</div>
       <div class="hipo"><b>7</b>unidades de 5 tipos: {03, 04, 08, 15, 14R, 14G, 14M} = 5.000</div>
     </div>
@@ -165,7 +166,8 @@
   <div class="figura">
     <ul class="libro">
       <li><span class="tipo calculo">Cálculo</span><span>D6 = 700 + 900 + 1.000 + 800 + 1.000 + 600 = 5.000, saldo 0. N1 = 4.700, cinco unidades, saldo 300.</span></li>
-      <li><span class="tipo calculo">Cálculo</span><span>56 % = 2.800 / 5.000 a 07, 08 y 09.<small>Es asignación presupuestal, no impacto.</small></span></li>
+      <li><span class="tipo calculo">Cálculo</span><span>56 % = 2.800 / 5.000 a 07, 08 y 09; reparto de D6: 14 / 18 / 20 / 16 / 20 / 12 % = 100 %.<small>Es asignación presupuestal, no impacto ni eficacia.</small></span></li>
+      <li><span class="tipo calculo">Cálculo</span><span>D6 empata en conteo con las otras seis máximas de seis.<small>El conteo no demuestra superioridad; la preferencia por D6 es cualitativa y provisional.</small></span></li>
       <li><span class="tipo supuesto">Supuesto</span><span>Una unidad completa por entrada del catálogo. Seis es el máximo de ese supuesto, no uno universal.</span></li>
       <li><span class="tipo supuesto">Supuesto</span><span>Hipótesis de cupo 3 para 14: máximo 7. No es escenario adoptado ni oficial ni son tres programas actuales. Frente a D6 retira 07 y 09 (2.000 M, 40 %) y añade 15, 14G y 14M con pertinencia pendiente.</span></li>
       <li><span class="tipo inferencia">Inferencia</span><span>Preferir D6 por diversidad de mecanismos pertinentes si las seis pasan la puerta. Aporte de 07/08/09 a biodiversidad y agua: hipótesis.</span></li>
@@ -201,7 +203,7 @@
   <div class="figura">
     <ul class="libro">
       <li><span class="tipo dato">Dato</span><span>Códigos institucionales (p. ej., InSensHIDRO-01, InCaRD-01) con libro, hoja y celda.</span></li>
-      <li><span class="tipo inferencia">Inferencia</span><span>InCaHIDRO-01, capacidad de conservación hídrica, queda sin unidad dedicada en D6; 04 atiende demanda e inversión, no protección del origen.</span></li>
+      <li><span class="tipo inferencia">Inferencia</span><span>InCaHIDRO-01, capacidad de conservación hídrica, queda sin unidad dedicada en D6; 04 atiende demanda e inversión, no protección del origen.<small>No financiar 05 no significa InCaHIDRO-01 = 0 ni ausencia de conservación institucional existente.</small></span></li>
       <li><span class="tipo supuesto">Supuesto</span><span>Frecuencias y custodios propuestos; ninguno aceptado.<small>PROP son solicitudes locales, no compras ni códigos oficiales.</small></span></li>
       <li><span class="tipo faltante">Faltante</span><span>Basales físicas fechadas, umbrales operativos y matriz de dependencias (servicio, respaldo, interrupción tolerable, recuperación, afectados).</span></li>
       <li><span class="tipo faltante">Faltante</span><span>Ingreso al MEA: no hubo login, carga ni persistencia; la ficha puente es para el custodio.</span></li>
@@ -213,6 +215,37 @@
       <dt>Ejemplo</dt><dd>04: InSensHIDRO-01 + demanda/oferta física comparable (PROP). Repetir permite revisar 04; no demuestra causalidad.</dd>
       <dt>No decir</dt><dd>«34 indicadores oficiales», «riesgo residual calculado», «meta 30 % del primer año».</dd>
       <dt>Responde</dt><dd>Brahyam.</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 5b Ejemplos de verificación (P3 v6) -->
+<section class="lamina ancha" id="ejemplos" data-tramo="4" data-habla="Etapa 5 de 6, ejemplos" aria-labelledby="m5b">
+  <div class="texto">
+    <p class="bloque"><b>Etapa 5</b>, ejemplos de verificación propuestos</p>
+    <h2 id="m5b">Del dato a la acción y a la evidencia que la cerraría, con lo que hoy es nulo.</h2>
+    <table class="cartera ejemplos">
+      <thead><tr><th scope="col">Unidad</th><th scope="col"><span class="tipo dato">Dato</span> de partida</th><th scope="col"><span class="tipo inferencia">Inferencia</span> acción propuesta</th><th scope="col"><span class="tipo supuesto">Supuesto</span> evidencia propuesta</th><th scope="col"><span class="tipo faltante">Faltante</span> nulo y límite</th></tr></thead>
+      <tbody>
+        <tr style="--c:var(--u04)"><td><span class="id">04</span> PROP-AGUA-OPER</td><td>InSensHIDRO-01; S agua Marinilla 0,661 alta.</td><td>Diagnóstico, medición y eficiencia con grandes usuarios agregados.</td><td>Intensidad de captación: m³ por unidad real de actividad, con volumen, periodo y denominador; T0 y mensual por acordar.</td><td>Basal, custodio, sitio e inicio en null. Menor actividad puede explicar menor consumo: no prueba eficiencia ni protección del origen.</td></tr>
+        <tr style="--c:var(--u09)"><td><span class="id">09</span> PROP-VERDE-FUNC</td><td>CA hábitat Guarne 0,426 baja (AD25).</td><td>Área verde multifuncional con mantenimiento.</td><td>Supervivencia: vivos sobre la cohorte inicial completa; bajas en el denominador, reposiciones aparte.</td><td>Inventario previo y sitio en null. Supervivencia es condición parcial; no sustituye la función térmica o hídrica.</td></tr>
+        <tr style="--c:var(--u14)"><td><span class="id">14</span> PROP-D07</td><td>Riesgo desastres Rionegro 0,283 → 0,321 (AP19→BB19); InCaRD-01.</td><td>Protocolos y comunicación en Rionegro, 12 meses propuestos desde una futura acta.</td><td>Comunicaciones con recepción y uso documentado sobre intentos válidos, incluidos fallos; T0, prueba trimestral y cierre a 12 meses.</td><td>Solo 14 Rionegro. Recepción no demuestra uso ni capacidad. <b>14 ≠ SAT 13 completo.</b></td></tr>
+      </tbody>
+    </table>
+    <ol class="cadena" aria-label="Cuatro niveles de reporte">
+      <li><b>Actividad ejecutada</b>Actas y registros</li>
+      <li><b>Resultado observado</b>Comparable con T0</li>
+      <li><b>Contribución plausible</b>Con explicaciones alternativas</li>
+      <li><b>Atribución causal</b>Hoy no acreditada</li>
+    </ol>
+    <p class="fuente">P3 v6, «Ejemplos físicos y operativos»: seis ejemplos (03 ha, 04 m³ por actividad, 07 cobertura, 08 kg/ha, 09 supervivencia, 14 recepción y uso) sobre los mismos 34 IDs, sin códigos ni compras nuevas. Corregir un denominador cierra la calidad del dato, no demuestra la función esperada.</p>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Uso oral</dt><dd>No exponer esta tabla en los 7 minutos; sirve para Q09 en preguntas.</dd>
+      <dt>Frase ancla</dt><dd>«Sin T0 válido solo describimos estado o iniciamos una serie; un antes y después no demuestra causalidad.»</dd>
+      <dt>Responde</dt><dd>Steven (variables y CSV); Brahyam (límites de interpretación).</dd>
     </dl>
   </aside>
 </section>
