@@ -2,8 +2,8 @@
   "schema": "corredor-vivo.requisitos.v1",
   "source": "caso/matriz_requisitos_completa.md",
   "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md",
-  "source_sha256": "0ad7fd2e5d7941d091b51a8e2df2d8436e3f053317b373053c5c701b6fa40ef5",
-  "scope": "P2v3.1/P3v4/PDF único obligatorio2p. Horizonte solicitadoSSP3 hacia2060 cerrado porusuario; solicitado/estrés coinciden, SSP2adicionalexploratorio.14municipalR600/12mesesPROPUESTOS,03corredor oficial. Cupo1máximo financiero6; cupo3hipotético14máximo7UNIDADES5TIPOS, elegibilidad no probada. Ensayo14–16futuro no bloquea paqueteantes14.",
+  "source_sha256": "fc58a42d4909b016a2337e2e3fd93d50fdd5154341b1b1765a1d56b7d630a239",
+  "scope": "P2v3.2/P3v4/PDF único obligatorio2p. Horizonte solicitadoSSP3 hacia2060 cerrado porusuario; solicitado/estrés coinciden, SSP2adicionalexploratorio.14municipalR600/12mesesPROPUESTOS,03corredor oficial. Cupo1máximo financiero6; cupo3hipotético14máximo7UNIDADES5TIPOS, elegibilidad no probada. Ensayo14–16futuro no bloquea paqueteantes14. Hip7 retira07/09(2000M40%presupuesto), añade15+14G/Msin elegibilidad demostrada; no porcentajeeficacia.",
   "items": [
     {
       "id": "R01",
@@ -90,7 +90,7 @@
       "id": "R10",
       "regla_fuente": "Demostrar por qué la combinación genera mayor reducción de vulnerabilidad que las alternativas descartadas, especificando S, CA, territorio/sistema, actores y residual. E pp.4–5 §6.",
       "accion": "Comparar carteras sustanciales, incluidos sacrificios y ventajas; vincular medida–factor–mecanismo y declarar nivel de evidencia del beneficio.",
-      "evidencia": "P2 con comparación y motivos de descarte; P3 con residual. **Corte verificado:** P2v3.1 compara D6/N1 y siete máximas;56% (2800M) suelo/agro/verde tiene aporte bio/agua hipotético. P3v4 declara conservación hídrica residual. Razonamiento no prueba mayor reducción deV ni óptimo causal.",
+      "evidencia": "P2 con comparación y motivos de descarte; P3 con residual. **Corte verificado:** P2v3.2 compara D6/N1 y siete máximas;56% (2800M) suelo/agro/verde tiene aporte bio/agua hipotético. P3v4 declara conservación hídrica residual. Razonamiento no prueba mayor reducción deV ni óptimo causal.",
       "validacion": "Cada alternativa tiene costo, conteo, alcance, mecanismo, incertidumbre y motivo verificable de descarte; una afirmación cuantitativa de beneficio tiene método y datos rastreables. Sin eficacias, se declara comparación razonada, no reducción demostrada u óptimo ambiental.",
       "responsable": "AG + CA + IN + RI",
       "estado": "condicional"
@@ -99,7 +99,7 @@
       "id": "R11",
       "regla_fuente": "Posibles beneficios compartidos entre ecosistemas, comunidades, infraestructura, agua y actividad productiva; no asumir cadenas empresariales. E pp.2–3 §2.",
       "accion": "Registrar cobeneficios plausibles separando evidencia de hipótesis; revisar solapamientos entre intervenciones.",
-      "evidencia": "P2: beneficiarios/sistemas, mecanismo y nivel de evidencia. **Corte verificado:** P2v3.1 revisa07/08,08/09,03/09 y13/14 por función/producto/pago; beneficiarios comunes posibles sin duplicación. Faltan expedientes que demuestren adicionalidad/complementariedad; no exigir disjunción territorial como regla inventada.",
+      "evidencia": "P2: beneficiarios/sistemas, mecanismo y nivel de evidencia. **Corte verificado:** P2v3.2 revisa07/08,08/09,03/09 y13/14 por función/producto/pago; beneficiarios comunes posibles sin duplicación. Faltan expedientes que demuestren adicionalidad/complementariedad; no exigir disjunción territorial como regla inventada.",
       "validacion": "No se suman beneficios solapados sin justificación; proximidad o sector no se convierte en dependencia ni efecto causal acreditado.",
       "responsable": "AG + RI",
       "estado": "condicional"
@@ -108,7 +108,7 @@
       "id": "R12",
       "regla_fuente": "Primero escenario de referencia y horizonte futuro intermedio suministrado por CORNARE. E p.6 §7.",
       "accion": "Localizar los dos insumos con año/escenario y construir la primera cartera con ellos.",
-      "evidencia": "P1/P2 iniciales y fuentes exactas. **Corte verificado:** Horizonte solicitadoSSP3-7.0 hacia2060 confirmado porusuario enrespuestaalaconsultasobrebriefing(7oct11:28Bogotá); amenazasM-E-2550p6 ventana2041–2060. P2v3.1/P3v4 contrastan referencia→SSP3. Solicitado/estrés coinciden por aclaración; no son dos futuros independientes. SSP2/2040 sólo exploratorio adicional. Selección cerrada, sin acta institucional inventada.",
+      "evidencia": "P1/P2 iniciales y fuentes exactas. **Corte verificado:** Horizonte solicitadoSSP3-7.0 hacia2060 confirmado porusuario enrespuestaalaconsultasobrebriefing(7oct11:28Bogotá); amenazasM-E-2550p6 ventana2041–2060. P2v3.2/P3v4 contrastan referencia→SSP3. Solicitado/estrés coinciden por aclaración; no son dos futuros independientes. SSP2/2040 sólo exploratorio adicional. Selección cerrada, sin acta institucional inventada.",
       "validacion": "Horizonte solicitado/fuente/fecha/procedencia humana identificados; referencia→SSP3 documentado. No inventar otro par ni dos pruebas futuras independientes; robustez operacional se evalúa enR13.",
       "responsable": "DA + IN",
       "estado": "demostrado"
@@ -117,7 +117,7 @@
       "id": "R13",
       "regla_fuente": "Prueba de robustez SSP3-7.0 hacia 2060; mantener, modificar o reemplazar la cartera. E p.6 §7 y pp.6–7 P2.",
       "accion": "Comparar condiciones iniciales y de estrés, revisar cada intervención y documentar el cambio.",
-      "evidencia": "P2 antes/después; P3 con residual bajo estrés. **Corte verificado:** P2v3.1 contrasta referencia→SSP3-7.0/2041–2060 por unidad y mantiene condicionalmente;M-E-2550p6 confirma escenario/período. Valores2060SSP difieren aunque redondean0,321/Medio, sin afirmar igualdadliteral o efecto cartera.",
+      "evidencia": "P2 antes/después; P3 con residual bajo estrés. **Corte verificado:** P2v3.2 contrasta referencia→SSP3-7.0/2041–2060 por unidad y mantiene condicionalmente;M-E-2550p6 confirma escenario/período. Valores2060SSP difieren aunque redondean0,321/Medio, sin afirmar igualdadliteral o efecto cartera.",
       "validacion": "Datos SSP3-7.0/2060 del corredor con fuente, dimensiones afectadas, regla y decisión registrada para cada intervención. Un contraste parcial se etiqueta parcial y no cierra la prueba oficial completa.",
       "responsable": "DA + AG + CA + RI",
       "estado": "condicional"
@@ -189,7 +189,7 @@
       "id": "R21",
       "regla_fuente": "Ruta oficial de ocho horas: lectura, diagnóstico, mapa, cartera, estrés, residual, seguimiento y síntesis. E p.6 §8.",
       "accion": "Organizar todas las fases, solapando tareas independientes para respetar U; no omitir las fases sustantivas por desarrollar interfaz.",
-      "evidencia": "Fases con salidasP1/P2v3.1/P3v4/PDF y dueños; congelación/versionado final en curso. Aclaración humana: solución antes14, estudio/ensayo14–16. No ensayo previo14requerido; ruta escrita no prueba todas las comprobaciones.",
+      "evidencia": "Fases con salidasP1/P2v3.2/P3v4/PDF y dueños; congelación/versionado final en curso. Aclaración humana: solución antes14, estudio/ensayo14–16. No ensayo previo14requerido; ruta escrita no prueba todas las comprobaciones.",
       "validacion": "Conservar salidas sustantivasR05–R19 antes14 y recibo de congelación; ensayoF01 duranteestudio14–16 segúnaclaraciónhumana, sin darlo por realizado.",
       "responsable": "OR + IN",
       "estado": "pendiente"
@@ -216,7 +216,7 @@
       "id": "Q02",
       "regla_fuente": "¿En cuál municipio, sistema o elemento territorial intervenir primero? E p.6 §9.",
       "accion": "Elegir localización defendible y resolución geográfica disponible.",
-      "evidencia": "P1 y primera intervención P2. **Corte verificado:** P2v3.1:03/04/14 compartidas paraMarinilla, sin intervención física propia/sitio validado.07Rionegro y08/09Guarne propuestas; esas últimas no resuelven automáticamente infraestructuraAlta.",
+      "evidencia": "P1 y primera intervención P2. **Corte verificado:** P2v3.2:03/04/14 compartidas paraMarinilla, sin intervención física propia/sitio validado.07Rionegro y08/09Guarne propuestas; esas últimas no resuelven automáticamente infraestructuraAlta.",
       "validacion": "Municipio y sistema/elemento identificados; geometría o referencia verificable, o localización provisional marcada como tal.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -252,7 +252,7 @@
       "id": "Q06",
       "regla_fuente": "¿Qué cambia frente a SSP3-7.0 hacia 2060? E p.6 §9; notación confirmada en §7.",
       "accion": "Ejecutar R12/R13 y explicar continuidad o cambio.",
-      "evidencia": "P2v3.1/P3v4 referencia→SSP3 y celdas por unidad. **Corte verificado:** Horizonte solicitado y estrés coinciden por respuesta humana; selección cerrada. Mantener/revisar cualitativamente documentado; no eficacia diferencialD6/N1 ni dos futuros independientes. SSP2 adicional exploratorio.",
+      "evidencia": "P2v3.2/P3v4 referencia→SSP3 y celdas por unidad. **Corte verificado:** Horizonte solicitado y estrés coinciden por respuesta humana; selección cerrada. Mantener/revisar cualitativamente documentado; no eficacia diferencialD6/N1 ni dos futuros independientes. SSP2 adicional exploratorio.",
       "validacion": "Se identifica cambio de condiciones y consecuencia en cartera; “sin cambios” tiene justificación y no equivale a omitir el contraste.",
       "responsable": "DA + AG + RI",
       "estado": "condicional"
@@ -324,7 +324,7 @@
       "id": "C05",
       "regla_fuente": "Robustez. E p.7 §12.",
       "accion": "Revisar la estrategia con el futuro más exigente y reconocer incertidumbre.",
-      "evidencia": "R12/R13,P2v3.1/P3v4. **Corte verificado:** Contraste referencia→SSP3 obligatorio documentado y horizonte solicitado cerrado porusuario; solicitado/estrés coinciden. Sitios/diseños/basal físico y eficacia futura no validados. No robustez operacional completa ni efectoSSP3exclusivo porque categorías/redondeo2060coincidan.",
+      "evidencia": "R12/R13,P2v3.2/P3v4. **Corte verificado:** Contraste referencia→SSP3 obligatorio documentado y horizonte solicitado cerrado porusuario; solicitado/estrés coinciden. Sitios/diseños/basal físico y eficacia futura no validados. No robustez operacional completa ni efectoSSP3exclusivo porque categorías/redondeo2060coincidan.",
       "validacion": "SSP3-7.0/2060 realmente contrastado; revisión de cartera trazable; si faltan insumos, criterio queda pendiente y el resultado parcial lo declara.",
       "responsable": "DA + AG + RI",
       "estado": "condicional"
@@ -423,7 +423,7 @@
       "id": "P02",
       "regla_fuente": "Portafolio priorizado de adaptación. E pp.6–7 §10.",
       "accion": "Entregar máximo de intervenciones bajo regla explícita; por cada una: municipio/localización, problema, medida MEA, valor, actores, orden, beneficio esperado y cambio tras estrés.",
-      "evidencia": "P2v3.1 contiene ocho campos/unidades/costos/alternativas/escenarios y condiciones comunes.03 admitida al corredor porE p5; sitios/indicadores pendientes.14 unaunidadRionegro600M/12meses PROPUESTOS, C28antecedente no equivalencia automática17fichas/15precios. CuentaD6seis bajo cupo1; cupo3hipotético14abre7unidades/5tipos con misma puerta. Elegibilidad/mayor reducción no demostradas.",
+      "evidencia": "P2v3.2 contiene ocho campos/unidades/costos/alternativas/escenarios y condiciones comunes.03 admitida al corredor porE p5; sitios/indicadores pendientes.14 unaunidadRionegro600M/12meses PROPUESTOS, C28antecedente no equivalencia automática17fichas/15precios. CuentaD6seis bajo cupo1; cupo3hipotético14abre7unidades/5tipos con misma puerta. Elegibilidad/mayor reducción no demostradas.",
       "validacion": "Ninguna fila carece de campo; R05–R13 y Q03–Q06 comprobados; código MEA faltante declarado; máximo condicionado si no se aclara repetición; beneficio esperado distinto de resultado observado.",
       "responsable": "IN, con CA + DA + AG",
       "estado": "condicional"
@@ -531,7 +531,7 @@
       "id": "I08",
       "regla_fuente": "Catálogo/fichas oficiales de medidas MEA. E p.3 §3; D pp.16–18.",
       "accion": "Confirmar correspondencia del nombre del reto con código/ficha, alcance, acciones, indicadores y horizonte MEA.",
-      "evidencia": "P2v3.1/P3v4 separan17fichas/15costos.03admición corredor porE p5, ficha1C11Páramo contextual; sitios/indicadores porvalidar.14ficha17C28municipio-año como antecedente, C20estimadosno precioRET14;14R600/12mesesPROPUESTOS, noSATcompleto.07/08/09 códigos por homologar sin cambiar literalmente fuente.",
+      "evidencia": "P2v3.2/P3v4 separan17fichas/15costos.03admisión corredor porE p5, ficha1C11Páramo contextual; sitios/indicadores porvalidar.14ficha17C28municipio-año como antecedente, C20estimadosno precioRET14;14R600/12mesesPROPUESTOS, noSATcompleto.07/08/09 códigos por homologar sin cambiar literalmente fuente.",
       "validacion": "Se puede localizar código y medida oficial; los 17 nombres territoriales, 11 empresariales y 15 precios se mantienen como alcances distintos. Una portada o esquema de 21 campos no es ficha íntegra.",
       "responsable": "DA + AG",
       "estado": "condicional"
@@ -585,7 +585,7 @@
       "id": "I14",
       "regla_fuente": "Regla de repetición de unidades y elegibilidad/localización para el máximo. E pp.4–5, ambigüedad no resuelta; PC.",
       "accion": "Aclarar si una medida admite unidades repetidas, condiciones territoriales y conteo de unidad compartida.",
-      "evidencia": "Regla actual una entrada/unaunidad: máximo financiero6. Sensibilidadhipotética3programas14R/G/M conotras14entradascupo1:17unidades/131072conjuntos/3906factibles/máximo7UNIDADES5TIPOS;{03,04,08,15,14R,14G,14M}=5000. No reglaoficial ni elegibilidad comprobada. ReabreD6si cupo/programasdistintos/pertinencia15se acreditan; no saludrelleno ni repeticiónilimitada.",
+      "evidencia": "Regla actual una entrada/unaunidad: máximo financiero6. Sensibilidadhipotética3programas14R/G/M conotras14entradascupo1:17unidades/131072conjuntos/3906factibles/máximo7UNIDADES5TIPOS;{03,04,08,15,14R,14G,14M}=5000. Frente aD6 retira07/09=2000M40%del presupuesto, añade15+14G/M; pierdefunciones suelo/verde por otrasnecesidades aún no acreditadas. No reglaoficial ni elegibilidad comprobada. ReabreD6si cupo/programasdistintos/pertinencia15se acreditan; no saludrelleno ni repeticiónilimitada.",
       "validacion": "No anunciar máximo absoluto sin esa regla; no equiparar una medida distribuida a tres unidades financiadas ni asumir repetición ilimitada.",
       "responsable": "IN + CA + AG",
       "estado": "condicional"
@@ -639,7 +639,7 @@
       "id": "H04",
       "regla_fuente": "Priorización previa 70/15/15, D p.15; seis medidas preferentes de Valles, D p.16; 17 territoriales/11 empresariales frente a 15 precios de E.",
       "accion": "Tratarlo como antecedente institucional y evaluar las 15 opciones con precio; si se usan ponderaciones propias, declararlas y justificar su alcance.",
-      "evidencia": "P2/anexo con origen de criterio y comparación. **Corte verificado:** P2v3.1/anexo separan PlanValles70/15/15 y afinidadSbN del equipo de rúbrica.56%delD6financia suelo/agro/verde con aporteBIO/agua hipótesisPROP; no más eficacia acreditada por afinidad/cantidad.",
+      "evidencia": "P2/anexo con origen de criterio y comparación. **Corte verificado:** P2v3.2/anexo separan PlanValles70/15/15 y afinidadSbN del equipo de rúbrica.56%delD6financia suelo/agro/verde con aporteBIO/agua hipótesisPROP; no más eficacia acreditada por afinidad/cantidad.",
       "validacion": "No se llaman pesos del jurado ni eficacias; no se agregan precios/medidas sin regla. Las seis preferentes cuestan 6.500 millones, por lo que no son cartera financiable íntegra.",
       "responsable": "AG + CA + IN",
       "estado": "condicional"
@@ -681,7 +681,7 @@
       "estado": "demostrado"
     }
   ],
-  "updated_at": "2026-10-07T11:56:44.883109-05:00",
+  "updated_at": "2026-10-07T11:59:41.100078-05:00",
   "counts": {
     "condicional": 33,
     "demostrado": 35,

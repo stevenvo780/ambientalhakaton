@@ -1,4 +1,4 @@
-import {mkdir,copyFile,writeFile,readFile} from "node:fs/promises";
+import {mkdir,copyFile,writeFile,readFile,cp,access} from "node:fs/promises";
 const files=["index.html","styles.css","app.js","estado.json","requisitos.json"];
 await mkdir(new URL("public/",import.meta.url),{recursive:true});
 const state=JSON.parse(await readFile(new URL("estado.json",import.meta.url),"utf8"));
@@ -19,6 +19,21 @@ const deployment_commit=candidate&&/^[a-f0-9]{40}$/.test(candidate)?candidate:nu
 await writeFile(new URL("public/deployment.json",import.meta.url),JSON.stringify({schema:"corredor-vivo.deployment.v1",deployment_commit},null,2)+"\n");
 // La publicación CLI usa únicamente el resultado estático; el proyecto Git conserva rootDirectory=site.
 await mkdir(new URL(".vercel/output/static/",import.meta.url),{recursive:true});
-await writeFile(new URL(".vercel/output/config.json",import.meta.url),JSON.stringify({version:3})+"\n");
+await writeFile(new URL(".vercel/output/config.json",import.meta.url),JSON.stringify({version:3,routes:[{src:"^/presentacion/?$",dest:"/presentacion/index.html"},{src:"^/metodologia/?$",dest:"/metodologia/index.html"},{handle:"filesystem"}]})+"\n");
 for(const file of [...files,"deployment.json"])await copyFile(new URL("public/"+file,import.meta.url),new URL(".vercel/output/static/"+file,import.meta.url));
-console.log("Sitio estático generado: 5 archivos y metadatos de commit.");
+// Vistas independientes: conservan el sitio raíz y comparten el mismo despliegue.
+for(const directory of ["presentacion","metodologia","exposicion-assets"]){
+  const source=new URL(directory+"/",import.meta.url);
+  try{await access(source);}catch{continue;}
+  await cp(source,new URL("public/"+directory+"/",import.meta.url),{recursive:true});
+  await cp(source,new URL(".vercel/output/static/"+directory+"/",import.meta.url),{recursive:true});
+}
+const finalPdf=new URL("../entregables/ANEXO_METODOLOGICO.pdf",import.meta.url);
+try{
+  await access(finalPdf);
+  for(const base of ["public/",".vercel/output/static/"]){
+    await mkdir(new URL(base+"entregables/",import.meta.url),{recursive:true});
+    await copyFile(finalPdf,new URL(base+"entregables/ANEXO_METODOLOGICO.pdf",import.meta.url));
+  }
+}catch(error){if(error.code!=="ENOENT")throw error;}
+console.log("Sitio estático generado: raíz, metadatos y vistas independientes disponibles.");

@@ -1,1 +1,17 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","framework":null,"buildCommand":"node build.mjs","outputDirectory":"public","installCommand":""}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node build.mjs",
+  "outputDirectory": "public",
+  "installCommand": "",
+  "rewrites": [
+    {
+      "source": "/presentacion",
+      "destination": "/presentacion/index.html"
+    },
+    {
+      "source": "/metodologia",
+      "destination": "/metodologia/index.html"
+    }
+  ]
+}

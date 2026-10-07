@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T16:56:17.462770+00:00",
+  "verified_at_utc": "2026-10-07T16:59:09.632448+00:00",
   "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "5b59490bc7118d80164735810b4dedf666f85e624768094cafab0b5c0145d862",
+  "source_sha256": "df030a6fbc233aba368706ff2e2f0e2c0a293e3d4471b4fad1c0f0f83b4c4a1d",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "100fbeeb22e29bf0de316841bdf1960985e3c51e686b0a622ac54ff9ab98c074",
+  "pdf_sha256": "7c88ec670f3a9d6d4df3b3b2759a0aff64c2a4d62e12e17dfb1429ac1b83c164",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,18 +17,18 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T11:56:44.883848-05:00",
+    "reviewed_at_bogota": "2026-10-07T11:59:41.100985-05:00",
     "method": "pdftoppm render ambas paginas; inspeccion directa"
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "8befe189fc34094e81383f58f127fef29dfb9f5b6df20cbe48ea98432d20a5c0",
+  "pitch_sha256": "32f6d55379dce32868ac3018f9a7b19387a4a28f487c751d1c18712fd3ca4c96",
   "inputs_sha256": {
     "entregables/p1_tablero.md": "485a635e7afd6238af0cb35d20616339a8efd31181281613036feb55643cc791",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
     "entregables/datos_oficiales.json": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232",
-    "entregables/p2_portafolio.md": "48e205adc32cc57fb5acb2402c7c7309482b190443a4d0dba5536f6d41bb8b1b",
+    "entregables/p2_portafolio.md": "d35ab25f47361ee959a37c4a9a07a13cfe16fd4e6145f11820391f0390f2e6d1",
     "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
-    "entregables/p2_justificacion.md": "285eeeb20bf7e39247282c50a5df845ce61decce2c9264828dd528c42f51cd2a",
+    "entregables/p2_justificacion.md": "c0bcf9965171e8583fb692de03ae65e9d4c6b7e28833ec62102a87da6bb4c907",
     "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
     "entregables/p3_riesgo_residual.md": "f3b8791ac0cff49e19a35413c5ddf4e22eff90c2af82c35ce06ebf708af0e8ad",
     "entregables/p3_riesgo_residual.csv": "3fa273ed0b45bf3a4dd1cb3df41b41b968dfa99cb53100051093b881b4babb46",
@@ -51,7 +51,7 @@
   "horizon": {
     "requested": "SSP3-7.0 hacia2060",
     "primary_threat_window": "2041–2060",
-    "human_confirmation": "Usuario respondio consulta explícita sobre briefing: es SSP3-7.0 2060 debe ser ese",
+    "human_confirmation": "Usuario respondio consulta explicita sobre briefing: es SSP3-7.0 2060 debe ser ese",
     "selection_closed": true,
     "requested_and_stress_coincide": true,
     "SSP2": "adicional exploratorio"
@@ -80,5 +80,6 @@
     "repeated_mentions_replaced": 5,
     "historical_commit_content_not_erased": true,
     "rights_clearance_certified": false
-  }
+  },
+  "change_note": "V4.1 usaP2v3.2/P3v4; explicita14RprioridadGRDsinindiceautomatico y costo oportunidadhip7retira07/09=40%presupuesto, noeficacia"
 }
