@@ -51,6 +51,19 @@ Todos los lugares son **propuestas municipales/sistémicas**, sin predios o pol�
 
 [CSV de seis unidades candidatas](p2_portafolio.csv) conserva costo, municipio/sistema, medida, actores, beneficiarios, secuencia, beneficio y cambio SSP condicional. Se comprobó contra los15precios oficiales y la máximaD6 de la enumeración; esa comprobación no valida sitios o efectos.
 
+### Distinción de funciones: condiciones que pueden reducir el conteo
+
+| Par | Distinción propuesta con fuente | Prueba necesaria y consecuencia si falla |
+|---|---|---|
+| 07 suelo /08 agroecología | Ficha8 C9/C15–20 prioriza suelos estratégicos, erosión, zonificación y conservación; ficha9 C9/C15–22 prioriza resiliencia de producción/UPA, BPA, agua, diversificación y asociatividad. Se proponen07 enRionegro y08 enGuarne, no dos rótulos de la misma asistencia. | Dos expedientes de unidades completas con sitios/beneficiarios/resultados comprados y pagos identificables. La distinta ficha o distinto municipio **no basta** si se está financiando el mismo producto dos veces. Si hay duplicación, no contar ambas y re-enumerar las15. |
+| 03 conservación /09 verde urbano | 03 fortalece sistema de áreas/acuerdos/conectividad bioR/M; ficha10 C11–17 admiteGuarne y propone verde urbano/microclima, biodiversidad e inversión infra/bio. 09 atiende una función urbana propia, no se cuenta como área protegida adicional. | Polígono/función climática/mantenimiento urbano distintos del expediente03. No sumar dos veces conectividad o inversión como reducción deV; si09 sólo repite conservación03 u ornamento, pierde pertinencia y se revisan las máximas. |
+| 13 SAT /14 conocimiento | SAT es sistema interoperable instrumentado/operado;14 aprovecha información/protocolos y acciones de gestión. Su relación con InCaRD-01 no demuestra nueva coberturaSAT. | Delimitar operación, equipos, comunicación y cobertura. La capacidad específicaSAT baja/muy baja deR/G es residual explícito conD6; si alerta es la función crítica, evaluar13 y el sacrificio de otra unidad. |
+| 01 PSA /03 conservación /02 restauración | Incentivo/permanencia3años, gestión de protección y restauración~100ha son funciones diferentes, aunque compartan ecosistema. | Predios, acuerdos y actividades/pagos distinguidos de antecedentes y entre unidades; no duplicar conservación/restauración ni afirmar financiación garantizada. Aplica también aN1/naturaleza4/restauración5. |
+
+Estas son **condiciones de diseño propuestas**, todavía no verificaciones de campo. D6 tiene ventaja demostrada de cantidad financiera; su ventaja ambiental sólo es una hipótesis defendida por mecanismos, hasta resolver esos expedientes. La mayor concentración deN1 en bio/agua sigue siendo un costo de oportunidad real deD6.
+
+**Valor añadido específico de14 frente al MEA existente:** no comprar de nuevo un portal o estudio. La unidad propone acordar protocolos locales de comunicación/decisión, actualizar instrumentos y responsabilidades con la información disponible, levantar las variables mínimas todavía ausentes y entregar registros al custodio institucional delMEA. El [manualM-E-3269](https://observatorioambiental.cornare.gov.co/wp-content/uploads/2026/04/M-E-3269-Manual-de-Usuario-Modulo-MEA-1.pdf), pp77–84, describe basal/medida/fases/acciones/costo/responsables y reporte; la [revisión de reutilización](../caso/reutilizacion_observatorio_mea.md) distingue esas funciones documentadas de una ejecución nuestra. No se accedió ni escribió en elMEA. El programa debe acreditar capacidad adicional de acción, no gastar600M por enlazar una web; conserva el costo funcional completo del reto y su alcance regional propuesto por validar. Tampoco incorpora por600M la instrumentación/cobertura delSAT de1.200M.
+
 ## Las siete máximas financieras y las alternativas que compiten
 
 Luna enumeró32.768 subconjuntos,1.567 factibles incluido vacío y siete de seis unidades. Las siete más baratas cuestan5.800 M; con **una unidad por entrada**, siete no caben. Repetición/cupo oficial no aclarado: el máximo6 es condicionado, no máximo universal con copias ilimitadas.
@@ -90,6 +103,22 @@ Se reutilizan valores cacheados institucionales, sin fórmula nueva ni modelo cl
 | 08 | Mantener condicional; diversificar manejo de suelo/agua | AlimentosG amenaza0,275→0,304; antecedente no prueba estabilidad productiva futura. |
 | 09 | Mantener condicional; revisar función hídrica/térmica | HábitatG amenaza0,316→0,403; falta exposición urbana y desempeño. No convertir el índice en parámetro de diseño. |
 | 14 | Mantener, ampliar protocolos de residual | DesastresR riesgo0,283→0,321 Bajo→Medio; infraG riesgo0,215→0,246. No reemplazaSAT ni infraestructura. |
+
+**Localizadores del contraste de tres momentos.** MasterM-E-2411, hoja `Regional Valles SN`: D/J/P son amenaza referencia/SSP2-4.5–2040/SSP3-7.0–2060; AP/AV/BB son riesgo de esos momentos. Las categorías permanecen como enP1; valores mostrados a tres decimales para lectura, precisión fuente enJSON. S/CA/V de referencia no se transforman en eficacias futuras.
+
+| Unidad / perfil | Fila y celdas A / R | A ref → intermedio preliminar → SSP3 | R ref → intermedio preliminar → SSP3 |
+|---|---|---|---|
+| 03 / BioRionegro | 69: D/J/P69; AP/AV/BB69 | 0,291→0,293→0,313 | 0,279→0,281→0,297 |
+| 03 / BioMarinilla | 68: D/J/P68; AP/AV/BB68 | 0,334→0,334→0,360 | 0,308→0,308→0,328 |
+| 04 / AguaMarinilla | 38: D/J/P38; AP/AV/BB38 | 0,180→0,180→0,190 | 0,174→0,174→0,180 |
+| 04 / AguaRionegro | 39: D/J/P39; AP/AV/BB39 | 0,244→0,244→0,254 | 0,170→0,170→0,175 |
+| 07 / AlimentosRionegro | 79: D/J/P79; AP/AV/BB79 | 0,384→0,384→0,435 | 0,151→0,151→0,160 |
+| 08 / AlimentosGuarne | 75: D/J/P75; AP/AV/BB75 | 0,275→0,275→0,304 | 0,140→0,140→0,146 |
+| 09 / HábitatGuarne | 25: D/J/P25; AP/AV/BB25 | 0,316→0,387→0,403 | 0,066→0,067→0,070 |
+| 14 / DesastresRionegro | 19: D/J/P19; AP/AV/BB19 | 0,489→0,491→0,567 | 0,283→0,284→0,321 |
+| Residual infraGuarne | 45: D/J/P45; AP/AV/BB45 | 0,323→0,327→0,367 | 0,215→0,218→0,246 |
+
+En el intermedio elegido provisionalmente no se propone reemplazar una unidad sólo por esos cambios agregados: mantener las seis **condicionadas** y revisar especialmente función/exposición de09 y protocolo de14. En el estrés final se conserva esa decisión preliminar, aumentando exigencia de sitio, continuidad y revisiónSAT/infra. Un índice creciente orienta la revisión; no define un caudal, temperatura de diseño o eficacia. La comprobación de estas celdas usa los registros institucionales, no una simulación nuestra.
 
 Es una **decisión de robustez cualitativa condicionada**, no una prueba de eficacia de cartera. Puede cambiar la selección si aparecen sitios inviables, pérdida de función ecosistémica, amenaza del activo esencial o déficit de alerta. No afirmar que el agregado S/CA/V futuro fue recalculado ni que la cartera lo reduce.
 
