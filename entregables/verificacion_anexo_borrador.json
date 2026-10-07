@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T18:44:41.432942+00:00",
-  "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
+  "verified_at_utc": "2026-10-07T20:25:26.564733+00:00",
+  "status": "pdf_unico_decision_metodologia_POST14_M6_2_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "1fe8b80934eb2377e5a505de56c981d3ab9757fd91d63d22b8d79d04a3d07220",
+  "source_sha256": "13b30456cc72e7444995102a04677aeb95f76745c476d2ba94f3b677ff94baa5",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
+  "pdf_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,28 +17,29 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T13:44:41.427746-05:00",
-    "method": "pdftoppm yinspección directa ambas páginas nuevas35058001; legibles/sinrecortes",
+    "reviewed_at_bogota": "2026-10-07T15:25:26.561887-05:00",
+    "method": "pdftoppm 1600px e inspección directa de ambas páginas nuevas M6-2; fuente11pt, legibles, sin recorte",
     "render_paths": [
-      ".agentes-local/cumplimiento-respaldo/pdf-repro-final-render/anexo-repro-1.png",
-      ".agentes-local/cumplimiento-respaldo/pdf-repro-final-render/anexo-repro-2.png"
+      ".agentes-local/cumplimiento-respaldo/pre-M6-2-post14/render-final/anexo-m6-1.png",
+      ".agentes-local/cumplimiento-respaldo/pre-M6-2-post14/render-final/anexo-m6-2.png"
     ]
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "a2360610f39b25fa380964e271210a4b969b98b3dd50cb1411d4547479167549",
+  "pitch_sha256": "a89625b8d855a45bbe41cc90b5bf6c59fa6bada95c413e33e903644d243f2075",
   "inputs_sha256": {
     "entregables/p1_tablero.md": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
     "entregables/datos_oficiales.json": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232",
-    "entregables/p2_portafolio.md": "cc1e7a3ac605d5f1f1e9041dc1c6d42b68d2bf0d0457f7e3d3eab1dbac46428b",
-    "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
-    "entregables/p2_justificacion.md": "40db288fdb2e5846ee09ae11d7ac6fd0e265fe4ce1509161ef7ae18d9ef50e1e",
+    "entregables/p2_portafolio.md": "af55925fadeeb7cef465e0d8a3993a0b21081e50e9340729c326d85d5c187e55",
+    "entregables/p2_portafolio.csv": "63340d6fa57e48045e2786ee502861f543acb6b34be5767995397ddb21cab11b",
+    "entregables/p2_justificacion.md": "63734229fd62c217e90db62c274b39a0183602bda676de2eaa1b627b07a9ed61",
     "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
-    "entregables/p3_riesgo_residual.md": "e38535fe5713f1345e4eea9c90fcf37c3f0f4cd901d32599f149e1be50642252",
-    "entregables/p3_riesgo_residual.csv": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
-    "entregables/variables_seguimiento.csv": "247c4cdeec3e89850a8f37d358efae90b9fed7fb0b6a62770a40a4dea4e7737d",
+    "entregables/p3_riesgo_residual.md": "edcef4a66b599486efff2c3052317ebb18c8ad146944804a326424cf6bc71124",
+    "entregables/p3_riesgo_residual.csv": "eb0c9933c7fde4b2296ec52fb0f255164e855f2fbef0615dcf91008575d8e2c6",
+    "entregables/variables_seguimiento.csv": "d03c83b1b314c6821b949d728e021e4ab32627078c25d3723e4c7c16a9bdc592",
     "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
-    "caso/comparar_presupuesto.py": "e9b30af167dde4ea79bed9a149b3a0a632c3fbaf8ee4df3fc135d7d06c5b0006"
+    "caso/comparar_presupuesto.py": "e9b30af167dde4ea79bed9a149b3a0a632c3fbaf8ee4df3fc135d7d06c5b0006",
+    "entregables/comparacion_incremental_carteras.md": "6490118457cc9ab8d83fa6ff8768adea9c2c2080c7a118c71d35fa01ab60e470"
   },
   "source_urls": {
     "entregables/p1_tablero.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p1_tablero.md",
@@ -52,7 +53,8 @@
     "entregables/p3_riesgo_residual.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/p3_riesgo_residual.csv",
     "entregables/variables_seguimiento.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/variables_seguimiento.csv",
     "caso/catalogo_costos_reto.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/catalogo_costos_reto.csv",
-    "caso/comparar_presupuesto.py": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/comparar_presupuesto.py"
+    "caso/comparar_presupuesto.py": "https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/comparar_presupuesto.py",
+    "entregables/comparacion_incremental_carteras.md": "https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/comparacion_incremental_carteras.md"
   },
   "horizon": {
     "requested": "SSP3-7.0 hacia2060",
@@ -89,11 +91,11 @@
     "numeric_occurrences_in_GO": 28,
     "GO_current_sha256": "b43a5d096518ca96abdc14c766375fdadb017c74172b8590f06114649451214a"
   },
-  "change_note": "Corrección reproducibilidad: salida default caso/comparacion_financiera.json yflagHIPstdout; scriptactualestablee9b30af confirmadoP2 yejecutadoreadonly. Repeticiónfinancieracondensada mismo sentido para mantener2p. Ciencia/cartera/costos/42/34 y39/35/1 intactos.",
+  "change_note": "POST14: M6-2 sustituye D6 como principal provisional; 01/03/04/08/14/15=5000/6. Sacrificios y clima esperados, no superioridad global/R10/eficacia. P3 mantiene42/34:14 institucionales primarios y20PROP auxiliares; Salud código null. Corte13:58/PDF350 conservado histórico.",
   "source_versions": {
     "P1": "final contexto histórico parcial6b3a3bf6",
-    "P2": "v3.6",
-    "P3": "v8.2"
+    "P2": "v3.8 POST14",
+    "P3": "v8.3 POST14"
   },
   "inputs_frozen_before_export": true,
   "documentary_reviews": [
@@ -123,18 +125,15 @@
     }
   ],
   "publication_target": "main",
-  "matrix_sha256": "2c566f111ab0f070d015a2c3ab6056f01e8a26db53d1f55881f16badab02cbaf",
-  "editorial_audit_at_bogota": "2026-10-07T13:44:41.427746-05:00",
-  "editorial_audit_note": "Salida financiera real y modo hipotético reproducibles; sin promoción por software/eficacia/aprobación/ensayo.",
-  "exported_at_utc": "2026-10-07T18:42:15.656397+00:00",
-  "independent_review_of_current_pdf": "pendiente nuevos bytes35058001; informes anteriores cubren únicamenteeb358c8b/75e7",
+  "matrix_sha256": "754a121c892053e75a41314acd1ee97c2d60a6b443c226961367f8c11ae812f2",
+  "editorial_audit_at_bogota": "2026-10-07T15:25:26.561887-05:00",
+  "editorial_audit_note": "Fuentes P1/P2v3.8/P3v8.3 congeladas y SHA verificadas; ambas páginas nuevas renderizadas/inspeccionadas;39/35/1 intactos. Sin ensayo/eficacia/adopción demostrados.",
+  "exported_at_utc": "2026-10-07T20:23:43.675124+00:00",
+  "independent_review_of_current_pdf": "Pendiente revisión independiente de nuevos bytes a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e; revisiones350/eb358/75e7 sólo históricas.",
   "publication_receipt": {
-    "reported_by": "publicar_web",
-    "final_scientific_commit": "5489a562e74b3fd33f6bf0fba3bedbd1055b18a5",
-    "final_review_commit_prefix": "bc5c7f19",
-    "pdf_sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
-    "pdf_bytes": 55370,
-    "scope": "Publicación5489/bc5 de versión anterioreb358; nuevo350580 corregido requiere recibo propio, no publicación presumida."
+    "status": "pendiente transporte nuevos bytes M6-2",
+    "current_pdf_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+    "historical_publication_not_current": true
   },
   "software_public_qa": {
     "PV_receipt_sha256": "d37604dd6a89d406d7d1445d0d3ce5d623f6958b8c3ae7ca80a4e0784cf49563",
@@ -143,7 +142,8 @@
     "TV_receipt_sha256": "2538b4b704761f7e77c661165a16cca4ef60a4f2761183de552fda3bec91fd6d",
     "TV_at_bogota": "2026-10-07T13:16:48-05:00",
     "TV_scope": "Consulta pública200/21perfiles/6unidades/42cruces, fuentesSHAcoincidentes; privadas401/público405; sin efectos ambientales/adopción",
-    "matrix_state_unchanged": "39demostrados limitados/35condicionales/F01pendiente14–16"
+    "matrix_state_unchanged": "39demostrados limitados/35condicionales/F01pendiente14–16",
+    "scope_of_prior_receipts": "QA histórico de D6 anterior; no certifica transporte M6-2 actualizado ni impacto. Nuevo transporte requiere fuenteSHA y recibo propio."
   },
   "reproducibility": {
     "script_sha256": "e9b30af167dde4ea79bed9a149b3a0a632c3fbaf8ee4df3fc135d7d06c5b0006",
@@ -165,5 +165,17 @@
     ],
     "hypothetical_rule_official": false,
     "environmental_effect_verified": false
+  },
+  "historical_pdf": {
+    "sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
+    "cut": "paquete13:58 antes14; D6",
+    "immutable_commit": "82f354888469cafedf06623c862845735cf2fbe9",
+    "url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/82f354888469cafedf06623c862845735cf2fbe9/entregables/ANEXO_METODOLOGICO.pdf"
+  },
+  "indicator_roles": {
+    "institutional_primary": 14,
+    "operational_PROP_auxiliary": 20,
+    "health_literal_code": null,
+    "normalised_index_not_physical_result": true
   }
 }

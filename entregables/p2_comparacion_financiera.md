@@ -2,6 +2,8 @@
 
 Simulación de **$5.000 millones COP**. Recalculada el 7 oct 2026 desde el catálogo de costos oficiales (PDF, p. 5). Costos simulados; una unidad funcional completa e indivisible por entrada.
 
+**Estado P2v3.8 · 2026-10-07 15:20:29 Bogotá: M6-2={01,03,04,08,14,15}=5000M/6 es principal provisional; D6=5000M/6 y N1=4700M/5 son comparadores.** Cambia la selección deliberativa, no catálogo, enumeraciónJSON, costos, regla supuesta de una unidad por entrada ni matemática. PDF13:58 conserva su corteD6 histórico.
+
 ## Enumeración
 
 Se examinaron 32.768 subconjuntos: **1.567 factibles**, incluido vacío. Tamaños factibles: 0:1, 1:15, 2:105, 3:419, 4:717, 5:303, 6:7. Máximo financiero condicionado: **6 unidades**, siete carteras. Las siete entradas más baratas cuestan **$5.800 M**; siete no caben con la regla de una unidad por entrada. El JSON lista las siete carteras, saldo, dimensiones y los 15 precios oficiales para cada una.

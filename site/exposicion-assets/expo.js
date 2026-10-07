@@ -66,7 +66,7 @@
 
   /* ---------- Río del fondo (Sankey): grosor de cada brazo proporcional al costo ---------- */
   function rio(cont) {
-    const cartera = D.carteras[cont.dataset.cartera || "D6"];
+    const cartera = D.carteras[cont.dataset.cartera || D.principal];
     const k = 0.1, x0 = 140, x1 = 700, gap = 16, top = 40;
     const alto = D.fondo * k + gap * (cartera.unidades.length - 1);
     const svg = sv("svg", { class: "sankey", viewBox: `0 0 1000 ${alto + top + 30}`, role: "img", "aria-label": `Presupuesto de 5.000 millones (no agua ni caudal) repartido en ${cartera.unidades.length} unidades; grosor proporcional al costo` });
@@ -103,8 +103,8 @@
     G: ["Sin unidad propia financiada: 02, 07, 08, 09, 14, 13, 10, 11, 12, 15", "01/05 con ubicación pendiente", "No significa ausencia institucional"]
   };
   function tablero(cont) {
-    let carteraK = cont.dataset.cartera || "D6", muni = "";
-    const opciones = cont.dataset.opciones ? cont.dataset.opciones.split(",") : ["D6", "N1", "SAT", "SERV", "HIP7"];
+    let carteraK = cont.dataset.cartera || D.principal, muni = "";
+    const opciones = cont.dataset.opciones ? cont.dataset.opciones.split(",") : ["M62", "D6", "N1", "SAT", "SERV", "HIP7"];
     const selC = el("fieldset", { class: "selector" }, `<legend>Cartera</legend>${opciones.map(k => `<button type="button" data-c="${k}" class="${D.carteras[k].hipotesis ? "hipo" : ""}" aria-pressed="false">${D.carteras[k].nombre}</button>`).join("")}`);
     const conMuni = cont.dataset.municipios !== "no";
     const selM = el("fieldset", { class: "selector" }, `<legend>Municipio</legend><button type="button" data-m="" aria-pressed="true">Los tres</button>${["R", "G", "M"].map(m => `<button type="button" data-m="${m}" aria-pressed="false">${D.municipios[m].nombre}</button>`).join("")}`);
@@ -137,10 +137,12 @@
       kpis.innerHTML = `<p><b>${c.unidades.length}</b>unidades completas</p><p><b>${fmt(c.total)}</b>millones asignados</p><p><b>${fmt(sal)}</b>saldo${sal ? ", no es reserva obligada" : ""}</p>`;
       estado.textContent = `${c.nombre}: ${c.estado}. Porcentajes = asignación del presupuesto, no eficacia.${c.hipotesis ? " Contar más unidades no es más eficacia." : ""}`;
       if (!conMuni) return;
-      const enM = m => c.unidades.filter(x => !x.corredor && !x.compartida && x.ubic.includes(m));
+      const enM = m => c.unidades.filter(x => !x.corredor && !x.compartida && !x.prioridad && x.ubic.includes(m));
       const corr = c.unidades.filter(x => x.corredor), comp = c.unidades.filter(x => x.compartida), pend = c.unidades.filter(x => !x.ubic.length);
+      const prior = c.unidades.filter(x => x.prioridad);
       esquema.innerHTML = `<p class="rotulo">Esquema territorial rotulado: no es un mapa; no indica posición, superficie ni cobertura.</p>
         <div class="grid3">
+          ${prior.length ? `<div class="banda">${prior.map(ficha).join("")} prioridad territorial Rionegro–Marinilla; sitios pendientes</div>` : ""}
           ${corr.length ? `<div class="banda">${corr.map(ficha).join("")} corredor, prioridad Rionegro–Marinilla</div>` : ""}
           ${comp.length ? `<div class="banda mr">${comp.map(ficha).join("")} compartida Marinilla–Rionegro</div>` : ""}
           ${["G", "M", "R"].map(m => `<div class="muni${muni && muni !== m ? " apagado" : ""}${muni === m ? " activo" : ""}"><h4>${D.municipios[m].nombre}</h4>${enM(m).map(ficha).join("") || `<small>${m === "M" ? "Sin obra física propia acreditada" : "Sin unidad municipal propia en esta cartera"}</small>`}</div>`).join("")}
@@ -149,10 +151,11 @@
       if (!muni) { cadena.innerHTML = `<p class="razon">Elija un municipio para ver la cadena factor → función propuesta → evidencia faltante → residual.</p>`; return; }
       const M = D.municipios[muni];
       const fun = M.funcion[carteraK === "N1" ? "N1" : "D6"];
-      const funTxt = carteraK === "D6" || carteraK === "N1" ? fun : c.unidades.filter(x => x.ubic.includes(muni)).map(x => `${x.id} ${cat(x.id).n}${x.hipo ? " (hipótesis)" : ""}`);
-      /* Residual propio de cada cartera: D6 y N1 según P3; las demás no heredan el de D6. */
-      const resid = carteraK === "D6" ? M.residual : carteraK === "N1" ? RESIDUAL_N1[muni] : ["Residual territorial pendiente de validación para esta cartera; no se hereda el de D6."];
-      const evid = carteraK === "D6" ? EVIDENCIA[muni] : ["Sitio, actor, adicionalidad y custodio de cada unidad propuesta", ...(pend.length ? [`Localización de ${pend.map(x => x.id).join(", ")}`] : [])];
+      const funTxt = carteraK === "D6" || carteraK === "N1" ? fun : c.unidades.filter(x => x.ubic.includes(muni)).map(x => `${x.id} ${cat(x.id).n}${x.hipo ? " (hipótesis)" : ""}${x.prioridad ? " (prioridad; sitios pendientes)" : ""}`);
+      /* Residual propio de cada cartera: D6 y N1 según P3; M6-2 en BORRADOR hasta P3 POST-14; las demás no heredan el de D6. */
+      const resid = carteraK === "D6" ? M.residual : carteraK === "N1" ? RESIDUAL_N1[muni] : carteraK === "M62" ? (D.residualM62?.[muni] || [D.BORRADOR_RESIDUAL]) : ["Residual territorial pendiente de validación para esta cartera; no se hereda el de D6."];
+      const tiene = id => c.unidades.some(x => x.id === id && x.ubic.includes(muni));
+      const evid = carteraK === "D6" ? EVIDENCIA[muni] : ["Sitio, actor, adicionalidad y custodio de cada unidad propuesta", ...(tiene("01") ? ["Sitios y acuerdos de 01 PSA (pendientes)"] : []), ...(tiene("15") ? ["Problema sanitario propio y capacidad para 15"] : []), ...(pend.length ? [`Localización de ${pend.map(x => x.id).join(", ")}`] : [])];
       cadena.innerHTML = `<ol class="cadena-r" aria-label="Cadena de razonamiento para ${M.nombre}">
         <li style="--c:var(--agua)"><h4>Factor (P1)</h4><ul>${M.factor.map(t => `<li>${t}</li>`).join("")}</ul></li>
         <li style="--c:var(--bosque)"><h4>Función propuesta</h4><ul>${funTxt.map(t => `<li>${t}</li>`).join("") || "<li>Sin unidad localizada</li>"}</ul></li>
@@ -203,7 +206,7 @@
     const hip = D.carteras.HIP7;
     const fila = (rot, unidades, total, cls) => `<div class="max ${cls}"><span class="rot">${rot}</span><div class="pila">${unidades.map(x => `<span class="seg${x.hipo ? " hipo" : ""}" style="--m:${cat(x.id).c};--c:${color(x.id)}"><b>${x.id}</b></span>`).join("")}${total < 5000 ? `<span class="seg saldo" style="--m:${5000 - total}"></span>` : ""}</div><span class="tot">${fmt(total)} · ${unidades.length} u.</span></div>`;
     cont.innerHTML = `<div class="maximas" role="img" aria-label="Siete carteras de seis unidades factibles con una unidad por entrada; D6 es una de ellas; HIP7 es hipótesis no oficial">
-      ${filas.map((m, i) => fila(m.id, m.unidades, m.total, i === 0 ? "d6" : "")).join("")}
+      ${filas.map(m => fila(m.historica ? `${m.id} (histórica)` : m.principal ? `${m.id} principal` : m.id, m.unidades, m.total, m.principal ? "d6" : "")).join("")}
       ${fila("HIP7", hip.unidades, hip.total, "hip")}
     </div><div class="eje" aria-hidden="true" style="margin-left:5.9rem;margin-right:5.1rem"><span>0</span><span>2.500</span><span>5.000 M</span></div>`;
     $$(".max .pila .seg", cont).forEach((s, i) => { s.style.transitionDelay = `${(i % 7) * 40 + Math.floor(i / 6) * 90}ms`; });
@@ -213,7 +216,11 @@
 
   /* ---------- Escenario: referencia ↔ SSP3-7.0/2060 ↔ SSP2-4.5/2040 exploratorio ---------- */
   function escenario(cont) {
-    const X = v => 230 + v * 1000, filas = D.escenarios, h = 40, top = 50;
+    /* Con data-cartera, solo filas de unidades de esa cartera con celda publicada; las demás se declaran pendientes. */
+    const k = cont.dataset.cartera, idsC = k ? D.carteras[k].unidades.map(x => x.id.slice(0, 2)) : null;
+    const filas = idsC ? D.escenarios.filter(f => f.residual || f.u.split("/").some(x => idsC.includes(x))) : D.escenarios;
+    const sinCelda = idsC ? [...new Set(idsC)].filter(id => !D.escenarios.some(f => f.u.split("/").includes(id))) : [];
+    const X = v => 230 + v * 1000, h = 40, top = 50;
     const svg = sv("svg", { class: "ssp", viewBox: `0 0 900 ${top + filas.length * h + 40}`, role: "img", "aria-label": "Amenaza institucional publicada por unidad, independiente de la cartera y no resultado de intervención; referencia frente al escenario elegido" });
     const rej = sv("g", { class: "rej" });
     for (let v = 0; v <= 6; v++) {
@@ -239,6 +246,7 @@
     const lt2 = sv("text", { x: 484, y: 23, "font-size": 15 }); lt2.textContent = "escenario elegido"; leyenda.append(lt2); svg.append(leyenda);
     const sel = el("fieldset", { class: "selector" }, `<legend>Escenario</legend><button type="button" data-e="ref" aria-pressed="false">Referencia</button><button type="button" data-e="s3" aria-pressed="false">SSP3-7.0, 2041–2060 (solicitado)</button><button type="button" data-e="s2" class="hipo" aria-pressed="false">SSP2-4.5, 2021–2040 (exploratorio)</button>`);
     const caja = el("div", { class: "ssp-caja" }); caja.append(svg);
+    if (sinCelda.length) caja.append(el("p", { class: "fuente" }, `${sinCelda.join(" y ")}: sin fila de amenaza propia en este gráfico; P3 v8.3 revisa su función sin proyectar nuevos valores individuales.`));
     const lect = el("p", { class: "fuente", "aria-live": "polite" });
     if (cont.dataset.modo === "oral") {
       /* Modo oral: referencia fija (círculo hueco) y SSP3 como estado final; al entrar el punto se desplaza una vez. */
@@ -279,51 +287,55 @@
   const filaEstatica = (rot, unidades, total, cls = "", nota = "") => `<div class="max grande ${cls}"><span class="rot">${rot}</span><div class="pila">${unidades.map(x => `<span class="seg${x.hipo ? " hipo" : ""}" style="--m:${cat(x.id).c};--c:${color(x.id)}"><b>${x.id}</b><span>${fmt(cat(x.id).c)}</span></span>`).join("")}${total < 5000 ? `<span class="seg saldo" style="--m:${5000 - total}"><b>${fmt(5000 - total)}</b><span>saldo</span></span>` : ""}${nota}</div><span class="tot">${fmt(total)} · ${unidades.length} u.</span></div>`;
   const ejeOral = `<div class="eje eje-oral" aria-hidden="true"><span>0</span><span>1.000</span><span>2.000</span><span>3.000</span><span>4.000</span><span>5.000 M</span></div>`;
 
-  /* D6 frente a N1 con panel municipal, o diferencia de compras: todo visible sin clics. */
+  /* Principal (M6-2) frente a D6 histórica y N1 con panel municipal, o diferencia de compras: todo visible sin clics. */
   function comparacion(cont) {
-    const d6 = D.carteras.D6, n1 = D.carteras.N1;
+    const p = D.carteras[cont.dataset.a || D.principal], d6 = D.carteras.D6, n1 = D.carteras.N1;
     if (cont.dataset.modo === "diferencia") {
-      const idsD = d6.unidades.map(x => x.id), idsN = n1.unidades.map(x => x.id);
-      const comunes = idsD.filter(id => idsN.includes(id)), soloD = idsD.filter(id => !idsN.includes(id)), soloN = idsN.filter(id => !idsD.includes(id));
+      const b = D.carteras[cont.dataset.b || "D6"];
+      const idsA = p.unidades.map(x => x.id), idsB = b.unidades.map(x => x.id);
+      const comunes = idsA.filter(id => idsB.includes(id)), soloA = idsA.filter(id => !idsB.includes(id)), soloB = idsB.filter(id => !idsA.includes(id));
       const u = ids => ids.map(id => ({ id }));
       const t = ids => D.total(ids);
-      cont.innerHTML = `<div class="maximas visto comp" role="img" aria-label="Compras comunes y diferentes entre D6 y N1 a la misma escala">
+      const nb = b === d6 ? "D6 (histórica)" : b.nombre;
+      cont.innerHTML = `<div class="maximas visto comp" role="img" aria-label="Compras comunes y diferentes entre ${p.nombre} y ${nb} a la misma escala">
         ${filaEstatica("En ambas", u(comunes), 5000, "", "")}
-        ${filaEstatica("Solo D6", u(soloD), 5000, "d6", "")}
-        ${filaEstatica("Solo N1", u(soloN), 5000, "", "")}
+        ${filaEstatica(`Solo ${p.nombre}`, u(soloA), 5000, "d6", "")}
+        ${filaEstatica(`Solo ${b.nombre}`, u(soloB), 5000, "", "")}
       </div>${ejeOral}
-      <p class="fuente">En ambas: ${comunes.join(", ")} = ${fmt(t(comunes))} M. Solo D6: ${soloD.join(", ")} = ${fmt(t(soloD))} M (56 %). Solo N1: ${soloN.join(", ")} = ${fmt(t(soloN))} M, más saldo de 300 que no es reserva obligada. Escala lineal común; asignación, no eficacia.</p>`;
-      $$(".tot", cont).forEach((s, k) => { s.textContent = `${fmt(t([comunes, soloD, soloN][k]))} M`; });
+      <p class="fuente">En ambas: ${comunes.join(", ")} = ${fmt(t(comunes))} M. Solo ${p.nombre}: ${soloA.join(", ")} = ${fmt(t(soloA))} M (${pct(t(soloA))}). Solo ${nb}: ${soloB.join(", ")} = ${fmt(t(soloB))} M (${pct(t(soloB))}). Escala lineal común; porcentajes de presupuesto, no impacto.</p>`;
+      $$(".tot", cont).forEach((s, k) => { s.textContent = `${fmt(t([comunes, soloA, soloB][k]))} M`; });
       $$(".seg.saldo", cont).forEach(s => s.remove());
       return;
     }
-    const llave = `<span class="llave56" style="left:32%;width:56%"><span>07+08+09 = 2.800 M = 56 % (asignación)</span></span>`;
-    let html = `<div class="maximas visto comp" role="img" aria-label="D6 y N1 a la misma escala de 0 a 5.000 millones">
-      ${filaEstatica("D6", d6.unidades, d6.total, "d6", llave)}
+    let html = `<div class="maximas visto comp" role="img" aria-label="${p.nombre}, D6 histórica y N1 a la misma escala de 0 a 5.000 millones">
+      ${filaEstatica(p.nombre, p.unidades, p.total, "d6")}
+      ${filaEstatica("D6 hist.", d6.unidades, d6.total)}
       ${filaEstatica("N1", n1.unidades, n1.total)}
     </div>${ejeOral}`;
     if (cont.dataset.municipios !== "no") {
       const fichaO = (x, extra = "") => `<span class="ficha${x.hipo ? " hipo" : ""}" style="--c:${color(x.id)}">${x.id}${extra}</span>`;
-      const enM = (c, m) => c.unidades.filter(x => x.ubic.includes(m)).map(x => fichaO(x, x.corredor ? " corredor" : x.compartida ? " compartida" : "")).join("") || "<small>ninguna localizada</small>";
-      html += `<p class="rotulo-esq">Esquema municipal rotulado, no es un mapa: unidades propuestas, factor P1 y residual de D6.</p>
+      const enM = (c, m) => c.unidades.filter(x => x.ubic.includes(m)).map(x => fichaO(x, x.prioridad ? " prioridad" : x.corredor ? " corredor" : x.compartida ? " compartida" : "")).join("") || "<small>ninguna localizada</small>";
+      const resP = m => (p === D.carteras.M62 ? D.residualM62?.[m] : null) || [D.BORRADOR_RESIDUAL];
+      html += `<p class="rotulo-esq">Esquema municipal rotulado, no es un mapa: unidades propuestas por cartera y factor P1.</p>
       <div class="muni-oral">${["G", "M", "R"].map(m => { const M = D.municipios[m]; return `<section><h4>${M.nombre}</h4>
-        <p><b>D6</b> ${enM(d6, m)}</p><p><b>N1</b> ${enM(n1, m)}</p>
+        <p><b>${p.nombre}</b> ${enM(p, m)}</p><p><b>D6</b> ${enM(d6, m)}</p><p><b>N1</b> ${enM(n1, m)}</p>
         <p class="fac">${M.factor.slice(0, 2).join(". ")}.</p>
-        <p class="res-rot">Residual esperado — solo D6</p>
-        <ul class="res">${M.residual.map(r => `<li>${r}</li>`).join("")}</ul></section>`; }).join("")}</div>
-      <p class="fuente">N1: 01 y 05 sin localización municipal acreditada; no se dibuja cobertura. Residual mostrado = residual de D6.</p>`;
+        <p class="res-rot">Residual esperado — solo ${p.nombre} (P3 v8.3)</p>
+        <ul class="res">${resP(m).map(r => `<li>${r}</li>`).join("")}</ul></section>`; }).join("")}</div>
+      <p class="fuente">01 de ${p.nombre}: prioridad territorial Rionegro–Marinilla, sitios pendientes; no se dibuja cobertura. N1: 01 y 05 sin localización municipal acreditada. D6 es el comparador histórico.</p>`;
     }
     cont.innerHTML = html;
   }
 
   function reapertura(cont) {
     if (cont.dataset.modo === "oral") {
-      const base = D.carteras.D6.unidades.map(x => x.id);
-      const filas = ["D6", "SAT", "SERV"].map(k => {
+      const bk = cont.dataset.base || "D6";
+      const base = D.carteras[bk].unidades.map(x => x.id);
+      const filas = [bk, "SAT", "SERV"].map(k => {
         const c = D.carteras[k], ids = c.unidades.map(x => x.id);
         const sale = base.filter(id => !ids.includes(id)), entra = ids.filter(id => !base.includes(id));
-        const nota = k === "D6" ? "" : `<p class="cambios">${sale.map(id => `<span class="sale">${id} ${cat(id).n}</span>`).join(" ")} ${entra.map(id => `<span class="entra">+ ${id} ${cat(id).n}</span>`).join(" ")}</p>`;
-        return filaEstatica(c.nombre, c.unidades, c.total, k === "D6" ? "d6" : "") + nota;
+        const nota = k === bk ? "" : `<p class="cambios">${sale.map(id => `<span class="sale">${id} ${cat(id).n}</span>`).join(" ")} ${entra.map(id => `<span class="entra">+ ${id} ${cat(id).n}</span>`).join(" ")}</p>`;
+        return filaEstatica(c.nombre, c.unidades, c.total, k === bk ? "d6" : "") + nota;
       }).join("");
       cont.innerHTML = `<div class="maximas visto comp" role="img" aria-label="D6 y dos reaperturas a la misma escala">${filas}</div>${ejeOral}`;
       return;
@@ -398,6 +410,21 @@
     if (Number.isInteger(n) && n >= 1 && n <= laminas.length) return n - 1;
     return laminas.findIndex(l => l.id === h);
   };
+  /* Explicaciones M6-2 (archivos del helper, no editados aquí): se montan al entrar en la lámina y se desmontan al salir.
+     Sin window.mountM62Explain, los contenedores [data-m62-explain] quedan ocultos y no pasa nada. */
+  let limpiarExp = [];
+  const montarExplicaciones = ls => {
+    limpiarExp.forEach(f => { try { f(); } catch (err) { console.error("Desmontar explicación M6-2", err); } });
+    limpiarExp = [];
+    if (typeof window.mountM62Explain !== "function") return;
+    ls.forEach(l => $$("[data-m62-explain]", l).forEach(c => {
+      try {
+        const f = window.mountM62Explain(c, { sceneKey: c.dataset.m62Explain, data: D, reducedMotion: reducido });
+        if (typeof f === "function") limpiarExp.push(f);
+        c.hidden = false;
+      } catch (err) { console.error("Explicación M6-2", c.dataset.m62Explain, err); }
+    }));
+  };
   const pintar = (dir = 0) => {
     laminas.forEach((l, k) => {
       const activa = k === i;
@@ -422,6 +449,7 @@
     if (deck) escenarioEl?.scrollTo({ top: 0 });
     laminas[i].setAttribute("aria-label", `${i + 1} de ${laminas.length}: ${titulo}`);
     $$("[data-componente]", laminas[i]).forEach(c => activar(c));
+    montarExplicaciones(deck ? [laminas[i]] : laminas);
     if (reloj && !reloj.hidden) tic();
   };
   const ir = (k, dir = 0) => {

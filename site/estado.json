@@ -1,116 +1,17 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T18:59:48Z",
+  "updated_at": "2026-10-07T20:28:12.872384+00:00",
   "timezone": "America/Bogota",
-  "titulo": "Entregables en revisión; ensayo humano y revisión legal pendientes",
-  "detalle": "P1 reúne datos y hallazgos trazados, pero no valida ambientalmente una cartera. P2 es una comparación financiera: examinó 32.768 subconjuntos, con 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; no es un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta; esto no afirma ilegalidad ni autorización general. El PDF obligatorio de hasta dos páginas está preparado; el ensayo humano de 14–16 minutos sigue pendiente. La unidad 14 municipal para Rionegro, por COP 600 millones y 12 meses, está propuesta y sujeta a una futura acta.",
+  "titulo": "Versión POST14: M6-2 principal provisional; revisión y publicación por fases",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/8f2eaf2071ca9fc45d63fcac03837158e6d88f93/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/main/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
-  "hitos": [
-    {
-      "titulo": "Preparación y auditoría",
-      "estado": "demostrado_preparacion",
-      "detalle": "Plan, catálogo de costos y matriz de 75 requisitos revisados. Claude y Muse evaluaron un borrador; el delta final tuvo revisión independiente."
-    },
-    {
-      "titulo": "Entorno de prueba",
-      "estado": "demostrado_parcial",
-      "detalle": "Pruebas unitarias: Presupuesto Vivo 419 aprobadas; Territorio Vivo 252 aprobadas y 29 omitidas. Cinco comprobaciones de backend aprobadas; integración amplia y E2E pendientes."
-    },
-    {
-      "titulo": "GO explícito y ejecución iniciada",
-      "estado": "en_curso",
-      "detalle": "Lectura de datos oficiales, diagnóstico P1, cartera P2 y residual P3 asignados a delegados. Root solo orquesta. Productos, eficacia y robustez SSP siguen pendientes."
-    },
-    {
-      "titulo": "GO y goal activa comprobados contra registro",
-      "estado": "demostrado_registro",
-      "fecha": "2026-10-07T15:57:49.328677+00:00",
-      "detalle": "estado_orquestacion registra goal activada, create_goal usado y estado_tool active. No equivale a productos ambientales completos.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json"
-    },
-    {
-      "titulo": "Perfiles municipales oficiales",
-      "estado": "artefacto_entregado",
-      "fecha": "2026-10-07T15:57:49.328677+00:00",
-      "detalle": "21 perfiles y 357 registros institucionales conservan celdas, valores cacheados y escenarios. No eficacia de cartera.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/datos_oficiales.json",
-      "sha256": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232"
-    },
-    {
-      "titulo": "Diagnóstico P1 entregado",
-      "estado": "artefacto_entregado",
-      "fecha": "2026-10-07T15:57:49.328677+00:00",
-      "detalle": "Interpretación oficial entregada por dueño P1; conserva brechas y diferencias de fuentes.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.md",
-      "sha256": "fea2d983c68b67643708707c2348523a3af9221e896329a257d820d69393857f"
-    },
-    {
-      "titulo": "Comparación financiera independiente",
-      "estado": "artefacto_entregado",
-      "fecha": "2026-10-07T15:57:49.328677+00:00",
-      "detalle": "32768 subconjuntos: 1567 factibles, 7 máximas de 6; condicionado a una unidad por entrada. No óptimo ambiental.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json",
-      "sha256": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45"
-    },
-    {
-      "titulo": "Comparación financiera P2",
-      "estado": "en_revision",
-      "detalle": "32768 subconjuntos examinados, 1567 factibles y máximo de 6, condicionado a una unidad por catálogo; no es óptimo ambiental.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json"
-    },
-    {
-      "titulo": "P3 presente: riesgo residual y seguimiento",
-      "estado": "en_revision",
-      "fecha": "2026-10-07T16:26:26Z",
-      "detalle": "Tres artefactos de la base D6 provisional entregan riesgos, dependencias y variables. Su presencia no demuestra eficacia ni cierre completo.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.md"
-    },
-    {
-      "titulo": "P3 y variables de seguimiento presentes",
-      "estado": "en_revision",
-      "detalle": "Constan como borrador D6 provisional; su presencia no acredita eficacia ni robustez.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/0348647f76410187b6381ea71c025b47b17d85b9/entregables/p3_riesgo_residual.md"
-    },
-    {
-      "titulo": "P1 entregado: datos institucionales y hallazgos trazados",
-      "estado": "en_revision",
-      "detalle": "P1 contiene datos y hallazgos trazados; su presencia no valida ambientalmente una cartera.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/p1_tablero.md"
-    },
-    {
-      "titulo": "Coordinación de ejecución reanudada y parámetros registrados",
-      "estado": "en_revision",
-      "detalle": "El registro indica GO recibido y goal activa. D6 contempla seis unidades por COP 5.000 millones, incluida una unidad municipal 14 para Rionegro, propuesta por COP 600 millones y 12 meses desde una futura acta; Guarne y Marinilla no tienen programa 14 propio financiado. El horizonte SSP3-7.0/2060 fue confirmado como solicitado; intermedio y estrés coinciden, y SSP2 queda como exploratorio adicional",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/f8f7cdf0313cad41da3b93f89b7ea13040ac4226/ambiente/estado_orquestacion.json"
-    },
-    {
-      "titulo": "Unidad 14 municipal propuesta para Rionegro",
-      "estado": "en_revision",
-      "detalle": "Se propone una unidad municipal para Rionegro por COP 600 millones y 12 meses, sujeta a una futura acta. Guarne y Marinilla no tienen programa 14 propio financiado.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/f400e854859d5b5ffd6b02159488c08fcceec5c5/ambiente/estado_orquestacion.json"
-    },
-    {
-      "titulo": "PDF obligatorio de hasta dos páginas preparado",
-      "estado": "en_revision",
-      "detalle": "El PDF final obligatorio, con decisión y metodología, fue entregado y verificado físicamente por el editor; el ensayo humano de 14–16 minutos sigue pendiente.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/c50c2059e74e122b98f0d15290c7346daa1cbba3/ambiente/estado_orquestacion.json"
-    },
-    {
-      "titulo": "PDF obligatorio preparado; ensayo humano pendiente",
-      "estado": "en_revision",
-      "detalle": "El PDF de hasta dos páginas está preparado y verificado físicamente por el editor. El ensayo humano de 14–16 minutos sigue pendiente.",
-      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/c3d9e8807bb3107f64a7664da42c5cdf5496cc6e/ambiente/estado_orquestacion.json"
-    }
-  ],
-  "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
-  "source_updated_at": "2026-10-07T18:26:05.606150+00:00",
-  "source_branch": "dev",
+  "source_updated_at": "2026-10-07T20:28:12.872384+00:00",
+  "source_branch": "main",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "go_recibido": true,
   "ejecucion_autorizada": true,
@@ -122,25 +23,84 @@
     "comprobado_utc": "2026-10-07T18:59:48Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
-  "limitations": [
-    "Ensayo humano de 14–16 minutos.",
-    "Revisión legal de las condiciones de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7.",
-    "Precisar sitio e indicador; faltan custodios, basales y fechas para el seguimiento.",
-    "Definir eficacia, delta V y robustez completa con evidencia explícita.",
-    "Formalizar mediante futura acta la unidad 14 municipal propuesta para Rionegro."
-  ],
+  "status": "POST14_M6_2_publicacion_por_fases",
+  "checked_at": "2026-10-07T20:28:12.872384+00:00",
+  "detalle": "M6-2 reúne01/03/04/08/14/15 por COP5000M y seis unidades completas. PSA01 es una unidad de tres años con prioridad Rionegro–Marinilla;08 se propone en Guarne,15 en Marinilla y14 sólo en Rionegro por600M/12meses propuestos. D6 queda como histórico y N1 como comparador4700M/cinco. P3 organiza42 cruces M6-2/N1 y34 variables:14 institucionales primarias y20PROP auxiliares con sus unidades propias. El PDF activo se revisó a dos páginas para esta versión posterior a las14; no reemplaza la fecha de entrega del corte histórico13:58. Las apps conservan el snapshot D6 previo hasta verificar su actualización M6-2.",
+  "source_commit": null,
+  "source_sha256": {
+    "entregables/p2_portafolio.md": "af55925fadeeb7cef465e0d8a3993a0b21081e50e9340729c326d85d5c187e55",
+    "entregables/p2_portafolio.csv": "63340d6fa57e48045e2786ee502861f543acb6b34be5767995397ddb21cab11b",
+    "entregables/p2_justificacion.md": "63734229fd62c217e90db62c274b39a0183602bda676de2eaa1b627b07a9ed61",
+    "entregables/comparacion_incremental_carteras.md": "6490118457cc9ab8d83fa6ff8768adea9c2c2080c7a118c71d35fa01ab60e470",
+    "entregables/p2_comparacion_financiera.md": "7ac9d9ad87ab2b008d9e94b893536fedfec60ab02ae4a1a31fb8d3f4fe3a7d54",
+    "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
+    "entregables/p3_riesgo_residual.md": "edcef4a66b599486efff2c3052317ebb18c8ad146944804a326424cf6bc71124",
+    "entregables/p3_riesgo_residual.csv": "eb0c9933c7fde4b2296ec52fb0f255164e855f2fbef0615dcf91008575d8e2c6",
+    "entregables/variables_seguimiento.csv": "d03c83b1b314c6821b949d728e021e4ab32627078c25d3723e4c7c16a9bdc592"
+  },
+  "current_case": "M6-2",
   "summary": [
-    "P1 reúne datos y hallazgos trazados; no valida ambientalmente una cartera.",
-    "P2 compara financieramente 32.768 subconjuntos: 1.567 factibles y máximo de seis, condicionado a una unidad por catálogo; no es un óptimo ambiental.",
-    "P3 y sus variables están presentes como borrador D6 provisional en revisión; eficacia, delta V y robustez completa siguen sin demostrarse.",
-    "El PDF obligatorio de hasta dos páginas está preparado; el ensayo humano de 14–16 minutos sigue pendiente.",
-    "La unidad 14 municipal para Rionegro, por COP 600 millones y 12 meses, está propuesta y sujeta a una futura acta.",
-    "Las condiciones legales de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión; el acceso público no significa licencia abierta y esto no afirma ilegalidad ni autorización general."
+    "M6-2 principal provisional5000M/6; no ganador global certificado.",
+    "01PSA1200M/36meses prioridadR/M;03R/M700;04M/R900;08G800;14R600/12mesesPROP;15M800.",
+    "42 cruces M6-2/N1,14 variables institucionales primarias y20PROP auxiliares.",
+    "39 demostraciones limitadas/35 condiciones/F01 pendiente; no75 cumplidos.",
+    "Apps todavía snapshot D6 anterior; actualizaciones M6-2 se verifican por versión."
   ],
-  "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T18:59:48Z",
-  "source_commit": "8f2eaf2071ca9fc45d63fcac03837158e6d88f93",
-  "source_captured_at": "2026-10-07T18:59:35Z",
-  "source_was_current_at_publication": true,
-  "head_before_publication": "8f2eaf2071ca9fc45d63fcac03837158e6d88f93"
+  "limitations": [
+    "M6-2 es una candidata principal provisional; no dominancia global frente a todas las alternativas ni eficacia ambiental demostrada.",
+    "Elegibilidad local y regla de repetición/cupo siguen condicionadas.",
+    "Los75 IDs son un desglose interno distinto de los8 criterios del jurado;35 condiciones no equivalen a35 fallos del jurado.",
+    "T0 físico de sitios propuestos, actas y efectos futuros no son exigencias para formular esta propuesta prospectiva; su seguimiento posterior sigue condicionado.",
+    "F01: ensayo humano pendiente de recibo. Siete minutos son el plan oral, no una prueba de ensayo.",
+    "B7 y derechos de reproducción mantienen su alcance específico; no se publican nuevos basales individuales retenidos."
+  ],
+  "hitos": [
+    {
+      "titulo": "Decisión de revisión POST14",
+      "estado": "candidata_principal_provisional",
+      "fecha": "2026-10-07T14:53:00-05:00",
+      "detalle": "M6-2 pasa a candidata principal provisional tras comparación cualitativa independiente, sin demostrar superioridad global."
+    },
+    {
+      "titulo": "Fuentes M6-2 congeladas",
+      "estado": "artefacto_documental",
+      "fecha": "2026-10-07T15:20:29-05:00",
+      "detalle": "P2v3.8 yP3v8.3 verificadas porSHA. No nuevos precios ni recálculo de índices."
+    },
+    {
+      "titulo": "PDF activo POST14",
+      "estado": "verificado_editor_dos_paginas",
+      "fecha": "2026-10-07T15:25:26-05:00",
+      "detalle": "PDFa018 de53177bytes,2A4 con ambas páginas inspeccionadas; revisión independiente de nuevos bytes registrada por separado."
+    },
+    {
+      "titulo": "Apps de consulta",
+      "estado": "actualizacion_en_curso",
+      "detalle": "M6-2 aún no se atribuye a producción PV/TV. Las consultas D6 históricas permanecen accesibles sin sesión; administración privada protegida."
+    }
+  ],
+  "PDF_actual": {
+    "url": "https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf?version=a018559c997b",
+    "sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+    "bytes": 53177,
+    "paginas": 2,
+    "case": "M6-2",
+    "version": "POST14",
+    "QA_independiente": "PASS_independiente_nativo"
+  },
+  "historial_Luna": {
+    "commit": "3ffb8beb96717678aa3f1cfe42bfb4fbc2c40832",
+    "updated_at": "2026-10-07T18:59:48Z",
+    "sha256_estado": "baf9089d3a0e7f3ed140f9217e0766bf8c537d87478ce15d2a1049d806329f5b",
+    "source_branch": "origin/main",
+    "fin_natural_bogota": "2026-10-07T14:02:35-05:00",
+    "reiniciado": false
+  },
+  "publicacion": "Git MAIN y Vercel site; un único publicador, sin reiniciar el controlador. El snapshot13:58 y el recibo13:59 se conservan históricos; la revisión M6-2 se publica con su hora real.",
+  "revision_documental_M6_2": {
+    "estado": "PASS_independiente_nativo",
+    "fecha_bogota": "2026-10-07T15:27:00-05:00",
+    "PDF_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+    "alcance": "Texto completo y ambos renders actuales:2A4/53177B legibles sin cortes/solapes. P2v3.8/P3v8.3 comprobados; no eficacia ni ensayo humano ni aval institucional."
+  }
 }

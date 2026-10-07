@@ -1,28 +1,26 @@
 # Vistas de exposición: integración y procedencia
 
-Archivos estáticos sin dependencias, red externa ni servicios:
+Versión POST-14 (corte de las 15:25 Bogotá, 7 oct. 2026). **M6-2** = {01, 03, 04, 08, 14, 15}, 5.000 M en seis unidades con saldo 0, es la candidata principal provisional. D6 queda como comparador histórico (decisión de las 13:58) y N1 = 4.700/5. Los porcentajes son de presupuesto, no de impacto.
 
-- `presentacion/index.html`: **modo oral lineal**, 9 láminas para 7 bloques orales (0:40/1:10/1:20/0:50/1:00/1:20/0:40 = 7:00 en total), más una lámina de preguntas fuera del tiempo oral. Ariadna lidera; Brahyam y Steven responden preguntas.
-  - Solo Siguiente o la flecha avanzan; no hay selectores y las cifras finales quedan fijas.
-  - Al entrar en cada lámina, una animación breve resalta su contenido, sin avanzar sola ni cambiar ninguna selección.
-  - Escenas: río del presupuesto D6; hallazgos H1–H5 marcados a la vez; D6 frente a N1 con panel municipal; diferencia de compras; siete máximas; referencia → SSP3-7.0/2060; residual y reaperturas; cierre; preguntas.
-- `metodologia/index.html`: página web normal y larga, sin diapositivas ni reloj. Incluye:
-  - Menú de anclas y filtro por tipo de afirmación.
-  - Dashboard explorable: tablero cartera × municipio, matriz H1–H5, máximas y escenario seleccionable.
-  - Orquestación, fuentes, verificación con SHA y límites.
-  - Software público:
-    - [Presupuesto Vivo](https://presupuesto-vivo-chi.vercel.app/hackathon): consulta abierta; administración protegida.
-    - [Territorio Vivo](https://territorio-vivo-five.vercel.app/resultados): consulta abierta sobre el snapshot 84b0199; rutas privadas y administración protegidas.
-- `exposicion-assets/datos.js`: datos agregados públicos de P1/P2/P3, sin basales individuales, con autochequeo de totales.
-- `exposicion-assets/expo.js`: componentes y motor. En la presentación, cada gráfico se dibuja cuando su contenedor tiene ancho mayor que 0.
-- `exposicion-assets/expo.css`: estilos de ambas vistas.
+Fuentes: P2 v3.8 (`af55925fadee`), P3 v8.3 (`edcef4a66b59`), variables (`d03c83b1b314`) y PDF final de 2 páginas (`a018559c997b`). El PDF histórico de las 13:58 (`3505800107fb`) se enlaza desde la metodología a su copia inmutable en GitHub.
 
-Ambas páginas enlazan la raíz `../`, la otra vista y el PDF final de 2 páginas `/entregables/ANEXO_METODOLOGICO.pdf`. El build del publicador copia estos directorios y el PDF.
+Archivos de este escritor:
+- `presentacion/index.html`: modo oral lineal, 9 láminas para 7 bloques (7:00 en total) más la lámina de preguntas fuera del oral. Solo avanza Siguiente o la flecha. Ariadna lidera; Brahyam y Steven responden preguntas.
+- `metodologia/index.html`: página web normal. Incluye:
+  - Decisión POST-14 e historia conservada.
+  - Dashboard explorable.
+  - 14 códigos institucionales como base primaria y 20 PROP auxiliares.
+  - Orquestación, software, verificación con SHA y límites.
+- `exposicion-assets/datos.js`: datos agregados públicos, sin basales individuales.
+  - Residual de M6-2 tomado de P3 v8.3.
+  - Celdas de escenario literales de P2 v3.8: 01/03 comparten las filas BIO69/68; salud58 es constante.
+  - Autochequeo de totales.
+- `exposicion-assets/expo.js`, `exposicion-assets/expo.css`: motor, componentes y estilos (incluidos los ajustes para 720 y 900 px de alto, móvil y movimiento reducido).
 
-Controles de la presentación:
-- Flechas, Re Pág/Av Pág, espacio, Inicio/Fin y 1–9; deslizar en táctil.
-- N muestra las notas; E abre el modo estudio; P pausa el movimiento; T y R manejan el cronómetro de ensayo (ayuda local, no evidencia); F activa la pantalla completa.
-- El hash `#id` enlaza cada lámina; un hash malformado o desconocido no reinicia la vista.
-- `prefers-reduced-motion` desactiva animaciones.
+Archivos de otro autor (helper), no editados aquí: `exposicion-assets/explicaciones-m62.js` y `explicaciones-m62.css`. `expo.js` llama a `window.mountM62Explain(contenedor, { sceneKey, data, reducedMotion })` al entrar en una lámina y ejecuta su limpieza al salir. Claves acordadas: `decision`, `pertinencia`, `sacrificios`, `residual` y `tablero`. Los contenedores `[data-m62-explain]` se añaden solo cuando el helper está listo.
 
-Límites: los porcentajes son asignación del presupuesto, no eficacia. El río representa presupuesto, no agua. El gráfico SSP3 muestra amenaza institucional, independiente de la cartera. No hay mapa geográfico.
+Enlaces: la raíz `../`, la otra vista y `/entregables/ANEXO_METODOLOGICO.pdf?version=a018559c997b`.
+
+Software público: las tarjetas de Presupuesto Vivo y Territorio Vivo operan sobre el snapshot D6 previo hasta que su QA de M6-2 esté READY.
+
+Límites: el río representa presupuesto, no agua; el gráfico SSP3 muestra amenaza institucional independiente de la cartera; no hay mapa geográfico ni eficacia demostrada.

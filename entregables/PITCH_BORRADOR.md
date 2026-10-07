@@ -1,121 +1,83 @@
-# Pitch CORNARE - guion de decisión y defensa
+# Guion de decisión · M6-2 provisional
 
-**Versión de continuidad integrada con P2/P3 estables, 7 octubre 2026. D6 sigue provisional.** El texto está preparado para ensayo; no se ha acreditado una locución de siete minutos. La distribución siguiente es un objetivo. No se atribuye a Claude/Muse revisión de esta versión nueva.
+**Actualización POST14 · 7 octubre 2026, 15:23:07 Bogotá.** Principal M6-2, 5.000 M COP simulados/seis unidades; D6 conserva el corte histórico. Siete bloques con intervalos de planificación: máximo oral permitido siete minutos; duración humana aún no acreditada. Ariadna conduce; Brahyam y Steven apoyan las preguntas.
 
-## Guion para la exposición
+**0:00–0:40 — Decisión.** Proponemos M6-2 provisional: seis unidades completas por5.000 millones simulados. Priorizamos conservación de biodiversidad y demanda hídrica mediante PSA, áreas estratégicas y eficiencia, complementadas con agroecología, conocimiento y salud. Naturaleza y gestión orientan la selección; la ingeniería entra si una función crítica lo exige. No hemos demostrado superioridad ambiental global.
 
-El equipo dispone de siete minutos en total. Ariadna conduce el argumento ambiental; Brahyam y Steven apoyan la defensa y las preguntas. El reparto de voz se acuerda en el ensayo. Los tiempos siguientes son un objetivo, sin cronometraje acreditado.
+**0:40–1:50 — Hallazgos.** Biodiversidad de Rionegro y Marinilla combina capacidad muy baja y vulnerabilidad muy alta. Marinilla tiene sensibilidad hídrica alta; la matriz ampliada clasifica vulnerabilidad hídrica alta en ambos, aunque Rionegro figura Media en lámina12. Rionegro cambia de riesgo de desastres Bajo a Medio; Guarne conserva infraestructura vulnerable. Salud se examina por capacidad municipal, sin inventar enfermedad o déficit hospitalario. Son cinco hallazgos; los21perfiles de las siete dimensiones conservan fuente y discrepancias. Los índices no seleccionan automáticamente sitios ni autorizan atribuir una reducción a cada intervención.
 
-**0:00–0:40 — Decisión.** Proponemos D6: seis unidades completas por5.000 millones de pesos simulados para Rionegro, Guarne y Marinilla. Priorizamos capacidad de conservación de biodiversidad y demanda hídrica, combinando suelo, agroecología, verde urbano y conocimiento del riesgo. Predominan naturaleza y habilitantes de gestión; ingeniería entra cuando una función esencial la exige. La decisión es provisional: no hemos demostrado mayor reducción de vulnerabilidad.
+**1:50–3:10 — Cartera.** PSA1200, áreas700, eficiencia900, agroecología800, conocimiento600 y salud800 suman5000, saldo cero. PSA es un único programa territorial de tres años, con prioridad Rionegro–Marinilla; áreas y eficiencia son compartidas. Agroecología va a Guarne, conocimiento a Rionegro por12meses propuestos y salud a Marinilla. Frente a D6 retiramos suelo y verde; frente a N1 añadimos agroecología y salud, sacrificando rondas. M6-7 cambia PSA por SAT al mismo costo si la criticidad y elegibilidad lo justifican.
 
-**0:40–1:50 — Cinco hallazgos.** Biodiversidad en Rionegro y Marinilla combina capacidad muy baja y vulnerabilidad muy alta. Agua tiene sensibilidad alta en Marinilla y vulnerabilidad alta en ambos en la matriz ampliada; Rionegro figura Media en la lámina12. Desastres de Rionegro pasa de riesgo bajo a medio hacia2060. Guarne tiene infraestructura vulnerable y capacidad baja. Salud, alimentos y hábitat conservan seguimiento. Examinamos las siete dimensiones, separando amenaza, sensibilidad, capacidad, vulnerabilidad y riesgo. Cada hallazgo orienta una función; no elegimos automáticamente el índice mayor. Las fuentes sustentan resolución municipal, todavía sin predios o activos validados.
+**3:10–4:00 — Pertinencia.** Siete carteras empatan financieramente en seis bajo una unidad por entrada; no equivale a máximo ambiental. Las15 reciben la misma puerta de problema, mecanismo, sitio, rol, mantenimiento, productos y pagos. PSA y03 deben demostrar adicionalidad distinta. CORNARE, municipios, titulares, productores y operadores son actores propuestos, sin actas ni custodios comprometidos.
 
-**1:50–3:10 — Cartera y sacrificios.** Áreas estratégicas cuesta700 millones; eficiencia hídrica900; suelos1.000; agroecología800; verde1.000; conocimiento600. Total5.000, saldo cero. Conservación se propone compartida Rionegro–Marinilla y eficiencia Marinilla–Rionegro; suelo en Rionegro, agroecología y verde en Guarne. Conocimiento es una unidad municipal completa Rionegro:600millones y12meses operativos propuestos. Reutiliza Observatorio yMEA, con productos adicionales verificables; no compra un SAT completo ni tres programas municipales.
+**4:00–5:00 — Escenario.** El usuario confirmó SSP3-7.0 hacia2060; amenazas primarias2041–2060. Solicitado y estrés coinciden: hacemos referencia→SSP3, sin dos pruebas independientes. SSP2 sólo es auxiliar. Revisamos permanencia del programaPSA y continuidad sanitaria;36meses no garantizan permanencia ni respuesta futura. Mantener la cartera es condicional, sin porcentajes de eficacia.
 
-N1 financia cinco unidades por4.700:PSA, áreas, eficiencia, rondas y conocimiento. Concentra conservación y agua; renuncia suelo/agro/verde. D6 destina56% a estas tres funciones; su aporte bio/agua es hipótesis. Deja conservación hídrica dedicada, oferta, restauración, alerta, infraestructura y salud sin compra propia. Marinilla tiene unidades compartidas, sin obra física propia acreditada;08/09 no resuelven infraestructura crítica de Guarne.
+**5:00–6:20 — Residual y seguimiento.** Permanecen suelo, verde, rondas, restauración02 y servicios/alerta sin unidades propias. PSA no elimina necesidad deSAT. Priorizamos14indicadores institucionales;20PROPauxiliares capturan dependencias, basal fechado, procedimiento, denominador, frecuencia ycustodio. Para eficiencia, índice0–1 no es volumen, porcentaje,ha oCOP; para salud, gestión municipal no mide enfermedad. Separamos ejecución, cambio y causalidad. Las variables se enlazan alMEA existente; no hemos cargado mediciones.
 
-**3:10–4:00 — Pertinencia y actores.** Con una unidad por entrada, la enumeración muestra siete carteras financieras de seis. D6 empata con las otras seis; el conteo no demuestra su superioridad. Ninguna tiene elegibilidad definitiva: a las15 exigimos problema, mecanismo, sitio, actor, unidad, mantenimiento y ausencia de doble pago. Una regla de repetición distinta puede cambiar ese máximo. Suelo/agro/verde pueden compartir beneficiarios con productos y pagos distintos.03 está admitida al corredor por el catálogo oficial; sitios e indicadores siguen condicionados. CORNARE, municipios, productores y operadores son roles propuestos, sin compromisos recibidos. Primero expedientes y custodios; después ejecución.
+**6:20–7:00 — Cierre.** Entregamos una decisión revisable, sacrificios explícitos y seguimiento en un PDF único de dos páginas. Esta actualizaciónPOST14 conserva el corte anterior como historia. Elegibilidad, adicionalidad y ventaja global siguen condicionadas; la aplicación no prueba eficacia y el ensayo humano continúa pendiente.
 
-**4:00–5:00 — Horizonte y revisión.** El usuario confirmó SSP3-7.0 hacia2060 al responder la consulta sobre briefing; la fuente de amenazas usa2041–2060. Comparamos referencia→SSP3. Horizonte solicitado y estrés coinciden por esa aclaración; no son dos pruebas independientes. SSP2 sólo es exploratorio adicional. Revisamos prácticas agrícolas, función urbana y protocolos. Los riesgos2060 de Rionegro difieren entre escenarios aunque redondeen0,321/Medio; no son idénticos ni prueban igual eficacia. Mantener D6 es condicional, sin porcentaje inventado ni robustez operacional demostrada.
 
-**5:00–6:20 — Residual y seguimiento.** P3 aporta42cruces y34variables:14códigos institucionales y20propuestas locales. Pedimos servicio/activo, respaldo, interrupción tolerable, recuperación y afectados; no inventamos dependencias por proximidad. Si un servicio esencial exige12 elegible, comparar retirar suelo/verde y agregar servicios:5.000 millones, cinco unidades, aceptando ese residual. SAT crítico permite03/04/08/13/14:4.200, cinco, saldo800; salud entra sólo por necesidad propia. Reenumeramos las15 antes de decidir.
+## Evidencia y nueve preguntas — fuera del guion oral
 
-Para eficiencia conservamos InSensHIDRO-01 y levantamos demanda/oferta física comparable, basal fechado, procedimiento, frecuencia y custodio. Índice0–1 no es volumen. Repetir permite revisar04; no demuestra causalidad por sí solo. Para14, recepción con uso documentado sobre intentos válidos incluye fallos y no equivale aSAT. Separamos ejecución, cambio ambiental y atribución, con comparación viable y causas concurrentes. La ficha continúa enMEA existente; no hemos cargado datos. Sin basal físico no anunciamos reducción.
+Fuentes congeladas: [P1](p1_tablero.md), [P2](p2_portafolio.md), [justificación](p2_justificacion.md), [P3](p3_riesgo_residual.md), [residual](p3_riesgo_residual.csv) y [seguimiento](variables_seguimiento.csv). El enunciado prevalece; RETO es IDlocal, nunca códigoMEA. El [PDF único activo](ANEXO_METODOLOGICO.pdf) contiene decisión y metodología; el [PDF350 histórico](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/82f354888469cafedf06623c862845735cf2fbe9/entregables/ANEXO_METODOLOGICO.pdf) conserva el corte anterior y su SHA35058001, no es otra elección activa.
 
-**6:20–7:00 — Cierre.** Entregamos una decisión, su costo de oportunidad y datos capaces de cambiarla, en un PDF único de dos páginas con metodología. Siguen condicionados sitios, expedientes, cupos, actores y medición. Naturaleza no prueba eficacia;70/15/15 no son pesos del jurado y30% a2035 es meta. Acceso público no equivale a licencia o aval; conservamos atribución y omitimos basales individuales retenidos. La utilidad es transformar el diagnóstico en selección revisable, sacrificio explícito y seguimiento verificable.
-
-## Evidencia para las láminas y la defensa
-
-- Decisión y cinco hallazgos: [P1](p1_tablero.md), P1-H1–H5; enunciado pp 1–2; M-E-2411 `Regional Valles SN` filas 15–79. Enunciado prevalece cuando discrepa; año basal dimensional no confirmado.
-- Cartera y condiciones: [P2](p2_portafolio.md), tabla D6, siete máximas, expedientes O1–O5 y escenarios; [justificación](p2_justificacion.md). Precio/unidad: enunciado p. 5; RETO nunca código MEA.
-- Escenarios: M-E-2550 p 6, SSP3-7.0/2041–2060; P2 D/J/P y AP/AV/BB. R de desastres de Rionegro 2060: AT19/AX19/BB19 difiere aunque redondea igual. No sustituir «casi igual» por «idéntico».
-- Residual y ajustes: [P3](p3_riesgo_residual.md); [42 cruces](p3_riesgo_residual.csv); [34 variables](variables_seguimiento.csv), 14 institucionales/20 PROP. PROP son solicitudes locales; no compras ni códigos oficiales.
-- MEA existente: Manual M-E-3269 pp 77–84; fichas M-E-2897/ASCA. Frecuencia acordada/custodio/basal físico pendientes. 03 admite el corredor por enunciado p5; ficha1C11 Páramo conserva contexto, con sitios/indicadores por validar.14 ficha17C28 anual municipio-año es antecedente;C20 costo estimado no sustituye precio600 del reto ni hace oficial el diseño municipalR/12meses.
-- Derechos y privacidad: [alcance de uso](../caso/uso_legal_datos.md), B7 M-E-2411; 357 agregados existentes trazables sin aval acreditado; 90 nuevos basales internos; no originales/mapas empresariales/logins.
-
-## Auditoría de la defensa: nueve preguntas
-
-Las respuestas siguientes existen en los documentos; la columna de límite impide confundir respuesta, hipótesis y resultado. No hay una pregunta cerrada únicamente porque una aplicación funcione o se haya recibido un archivo.
-
-| Pregunta oficial | Respuesta y evidencia concreta | Alcance defendible y condición material |
+| Pregunta oficial | Respuesta actual y evidencia | Límite defendible |
 |---|---|---|
-| Q01 Qué proteger y por qué | P1-H1/H2: baja capacidad bio y sensibilidad hídrica; D6 atiende gestión de conservación y demanda. | Prioridad por factor sustentada. El 56 % rural/urbano tiene aporte bio/agua hipotético; no protección física o mayor eficacia demostradas. |
-| Q02 Dónde primero | P2: 03/04 compartidas con prioridad Rionegro/Marinilla y 14 municipal Rionegro/12meses propuestos; 07 Rionegro, 08/09 Guarne. | Localización municipal propuesta; sin predios/activos/UPA elegibles. Marinilla no tiene unidad física propia validada;08/09 no resuelven automáticamente infraestructura de Guarne. |
-| Q03 Qué combinación | P2: D6 frente a N1, siete máximas y comparadores SAT/infra/SUDS/restauración. | Elección provisional razonada; elegibilidad de las15,03 admitida al corredor por catálogo p5; sitios, indicadores y14/programa municipal condicionados. Seis es máximo financiero bajo regla, no máximo pertinente acreditado. |
-| Q04 Cómo distribuir | P2 CSV:700 + 900 + 1000 + 800 + 1000 + 600 = 5000, saldo0; unidad14 cuenta1. | Cuenta simulada por unidades demostrada. Localizaciones compartidas no autorizan multiplicar costo por municipio ni prueban cobertura contractual de varios municipios. |
-| Q05 Qué actores | P2/P3: CORNARE/municipios/productores/operadores y custodios propuestos por función. | Roles propuestos, sin acuerdos, tenencia, aceptación de custodia o mantenimiento acreditados. Organización de agentes no equivale a gobernanza territorial. |
-| Q06 Qué cambia con SSP3 | P2: D/P y AP/BB por unidad, conservar/revisar diseño; informe amenazas p6. | SSP3-7.0/2060 obligatorio por aclaración humana. Comparación cualitativa existente no prueba eficacia, selección invertida ni diseño robusto. SSP2 adicional/exploratorio no se presenta como intermedio oficial ni se vuelve a solicitar su confirmación humana. |
-| Q07 Qué permanece | P3: 42 cruces, unidades no financiadas y conservación hídrica/continuidad/alerta abiertas. | Residual explícito cualitativo; sin V/R postcartera ni cobertura automática por cobeneficios. |
-| Q08 Qué dato cambia elección | P3: servicio/activo, respaldo, interrupción, recuperación, afectados; SAT 4200/5 o servicios 5000/5 y sacrificios. | Captura y reapertura propuestas, sin red empresarial o activos verificadamente conectados. Salud no entra para rellenar conteo; reenumerar 15. |
-| Q09 Cómo verificar después | 34 variables:14 códigos originales/20 PROP; seis ejemplos03ha/04m³actividad/07cobertura/08kg-ha/09supervivencia/14recepción+uso/intentos, definición/procedimiento/T0/frecuencia/rol. | Contrato de medición propuesto. Basales físicos/fechas/sitios y custodios aceptadosnull; frecuencias orientativas por acordar, seis ejemplos no constituyen mediciones. PROP-VERDE-FUNC añade protocolo condicional: si se valida función hídrica, infiltración mm/h con fase/humedad y huellas comparables T0/T1; humectaciones sucesivas no son réplicas espaciales y suelo perturbado no se trata como intacto. NRCS p.5 es orientación externa, no homologación MEA o causalidad. Ejecución, cambio observado y causalidad se separan. Recibir CSV o comparar gastos no demuestra reducción. |
+| Q01 Qué proteger/por qué | P1 prioriza capacidad de conservaciónBIO R/M y sensibilidad hídricaM; M6-2 compra01/03/04, con08/14/15. | Preferencia/mecanismo esperados, no mayor reducción global ni eficacia de cada unidad. Salud se propone por gestión municipal histórica, no enfermedad medida. |
+| Q02 Dónde primero |01programa único prioridadR/M,03R/M,04M/R,08G,14R,15M. | Localizaciones propuestas; no predios/UPA/activos validados, tresPSA, tres14 o déficit hospitalario inferido. |
+| Q03 Qué combinación | M6-2 frenteD6 histórico/N1 y siete máximas; M6-7 cambiaPSA porSAT. | Empate financiero en seis bajo cupo1; elegibilidad, adicionalidad y mayor beneficio global permanecen parciales. |
+| Q04 Cómo distribuir |1200+700+900+800+600+800=5000/6/saldo0. | Precios/unidades completas; PSA3años íntegro,14R12meses PROP. Asignación no prueba ejecución/impacto. |
+| Q05 Qué actores | CORNARE/municipios, titulares/productores, operadores, GRD y salud; P2/P3 por función. | Roles/custodios propuestos, no compromisos recibidos; expositores Ariadna/Brahyam/Steven no son actores institucionales aceptados. |
+| Q06 Qué cambia conSSP3 | Referencia→SSP3 obligatorio con tabla01/03/04/08/14/15. | Horizonte humano solicitado=estrés, una comparación; SSP2auxiliar.36mesesPSA no garantizan permanencia2060; continuidad sanitaria no proyecta enfermedad. |
+| Q07 Qué permanece | P342cruces; suelo07/verde09/rondas05/restauración02/SUDS/infra/alerta sin compras propias. | Residual cualitativo; programa01no elimina automáticamente necesidadSAT ni déficitagua/infra. |
+| Q08 Qué dato cambia elección | Problema/funciónlocal, pagos/adicionalidad01–03 y15; alerta crítica→M6-7; servicio esencial→retirar01+15(2.000 M), añadir12(2.000 M):5.000/5/saldo0. | Captura/reapertura propuestas, misma puerta a15 y presupuesto, sin aristas inventadas ni sustituir decisión por motor. |
+| Q09 Cómo verificar después | P334variables: primero14indicadores institucionales;20PROPauxiliares de captura/operación, contrato fuente/definición/unidad/método/T0/fecha/frecuencia/custodio/regla. | Pago/actividad/capacidad de gestión no equivalen a conservación/eficacia/incidencia. Los S/CA/V/R oficiales comparables guían remedición; A/R futuros de escenario no son efecto postcartera. El enlace institucional15/código desconocido no se inventa; índice0–1 no equivale a%,ha,COP. T0 ycustodia aceptada faltan; comparar mismo método con causas concurrentes, sin impacto ya medido. |
 
-## Auditoría de la defensa: ocho criterios
+PSA ficha3 conserva InSensBIOSE-01 (bosque) eInCa-01 (inversiónrestauración adicionalaley) en namespace propio; no se homologan aInCaBIOSE-03 ni añaden un indicador a los14primarios. El descriptorASCA CA22/gestiónmunicipal de15 ysuperiodoDNP2016–2023 no son un códigoDIMSalud verificado: el enlace está pendiente y no se inventa un InCaSAL. P3 conserva las fuentes/celdas y la distinción de roles.
 
-| Criterio oficial | Evidencia distinta de software o recepción | Juicio limitado al corte |
+## Ocho criterios oficiales — alcance del soporte
+
+| Criterio | Evidencia pertinente | Límite actual |
 |---|---|---|
-| C01 Decisión | D6 elegida provisionalmente, razones y renuncias frente a N1/otros en P2/P3. | Condicional: decisión visible, mayor reducción y elegibilidad sin demostrar. |
-| C02 Rigor | P1/P2 citan celdas, categoría/componente y versión; fuente SSP3; discrepancias y derechos separados. | Condicional: trazabilidad real; integración versionada; alcance B7/citas del extracto sigue condicionado. Revisores cubren sólo instantáneas. |
-| C03 Priorización | Catálogo oficial, suma, enumeración7 máximas y misma puerta a 15; costo de oportunidad. | Condicional: cota financiera demostrada, no máximo ambiental pertinente o superioridad por afinidad SbN. |
-| C04 Pensamiento sistémico | P3 vincula datos de dependencia con elección/reapertura/captura y sacrificios. | Respuesta documental demostrada; matriz de dependencias real y sus efectos siguen sin levantar. |
-| C05 Robustez | Referencia→SSP3 obligatorio con celdas y decisión por unidad; SSP2 exploratorio visible. | Condicional: no mide respuesta de intervención. Horizonte solicitado/estrés coinciden por aclaración humana recibida; selección cerrada, sin dos futuros independientes. Valores 2060 difieren aunque categoría/redondeo coincida. |
-| C06 Viabilidad y gobernanza | Expedientes mínimos, productos/pagos, secuencia, actores y mantenimiento propuestos. | Condicional: no permisos, sitios, compromisos ni custodia territorial acreditados. |
-| C07 Seguimiento | Variables físicas/normalizadas separadas, basal/fecha ausentes explícitos, reglas de reajuste y puente MEA. | Condicional: vínculos 07/08/09 propuestos, función principal 09 por validar y protocolo físico comparable propuesto; 34 filas no equivalen a 34 indicadores oficiales ni mediciones realizadas. |
-| C08 Utilidad para CORNARE | Cuenta/fuentes, sacrificios, brechas que reabren elección y fichaMEA: utilidad documental explícita. | Condicional: material listo y versionado antes14; uso/aceptación institucional y efecto no observados. Ensayo real14–16 pendiente porF01, sin bloquear entrega. PDF2p no acredita todos los criterios. |
+| Decisión, NO diagnóstico | M6-2 provisional convierte cincohallazgos en selección/localización/sacrificios. | Propuesta visible; no aprobación o ganador ambiental. |
+| Rigor | Fuentes/celdas/versiones y etiquetasdato/inferencia/supuesto/ausencia; A/S/CA/V/R separados. | DerechosB7ybasalesfísicos pendientes; año2026 no fecha de medición. |
+| Priorización | Catálogo15, siete máximas y comparación conN1/D6/M6-7; preferenciaBIOagua/SbN. | R10global parcial: no reducción superior demostrada; sitios/función/adicionalidad comparables por sustentar. |
+| Pensamiento sistémico | Dependencias servicio/activo/respaldo/interrupción/recuperación y decisión afectada. | Matriz relacional real por caracterizar; crucesmunicipales no son aristas. |
+| Robustez | Tabla referencia→SSP3 para seis unidades, incluidos01/15. | Revisión esperada/propuesta, sin eficacia2060 ni dos futuros independientes. |
+| Viabilidad y gobernanza | Unidad/costos/horizonte, secuencia/roles y expedientes01/03/08/14/15. | Función/adicionalidad local parciales; actas/T0/efectos de ejecución futura no nuevos requisitos de jornada. |
+| Seguimiento | Contrato34: indicadores institucionales primero, PROPauxiliares de captura/operación, unidad/basal/fecha/rol/revisión. | Diseño prospectivo; no34mediciones, homologaciones/custodios faltantes. |
+| Utilidad paraCORNARE | Cuenta reproducible, sacrificios/datos de reajuste y puenteMEAexistente. | Consulta/exportación técnica no es adopción institucional/cargaMEA/eficacia. |
 
-El [PDF único de dos páginas](ANEXO_METODOLOGICO.pdf) integra decisiónP1–P3 y metodología obligatoria por instrucción final del usuario; no hay un tercer anexo. La [matriz de75 IDs](../caso/matriz_requisitos_completa.md) conserva pruebas/estados por afirmación limitada. Esta auditoría no es puntaje del jurado, certificación de75 cumplidos ni ejecución física. Los ocho criterios siguen siendo los oficiales; no se añaden criterios del motor financiero o del trabajo con agentes.
+Esta tabla es soporte prospectivo, no calificación del jurado. La matriz histórica75IDs conserva su autoridad y sus pruebas; no se promueve el semáforo por este cambio de cartera. Naturaleza no prueba eficacia;70/15/15 son antecedentes,30%a2035 es meta. [Uso de fuentes](../caso/uso_legal_datos.md): acceso público/357agregados existentes no certifican licencia/aval; B7 por recurso, prosa/citas acotadas y90basales nuevos internos.
 
-## Orientación de estudio de 14:00 a 16:00 - fuera del guion oral
+## Preparación del equipo de14:00 a16:00
 
-**Aclaración humana de continuidad:** la solución material debe quedar lista antes de 14:00 para estudiarla entre 14:00 y 16:00. El ensayo real se hará en esa ventana; no se informó un ensayo realizado antes de 14:00. Presentan tres personas y disponen de **siete minutos en total**, no siete por persona. Ariadna es la líder ambiental del hilo; Brahyam aporta la defensa ambiental de incertidumbres/criterios y Steven, como desarrollador, explica herramientas al servicio de la decisión, principalmente durante preguntas. Son roles del equipo expositor, distintos de los actores/custodios institucionales propuestos para implementar medidas.
+Ariadna dirige el hilo ambiental; Brahyam responde mecanismos/incertidumbres y Steven reproducibilidad/herramientas, principalmente en preguntas. Siete minutos TOTAL; reparto acordado en ensayo real, no tres compromisos institucionales. Esta actualizaciónPOST14 corrige la propuesta durante el estudio; el PDF350 conserva el paquete previo, sin alterar históricamente la entrega antes14.
 
-Propuesta de estudio: 14:00–14:20 leer decisión/costos/condiciones; 14:20–14:50 practicar las siete partes y hacer una primera locución cronometrada; 14:50–15:25 responder las preguntas difíciles; 15:25–15:50 ajustar y repetir el ensayo con versión identificada; 15:50–16:00 conservar la versión y el recibo que se usarán. Los horarios organizan la preparación, no prueban ejecución. El paquete revisable de 13:50 no se bloquea esperando ese ensayo posterior. Toda corrección material posterior se versiona y comunica al equipo.
+Seis decisiones para estudiar: selecciónM6-2/01PSA36meses; cuenta5000/6/cupo1; localizaciones y03/04compartidas;15gestiónmunicipal/clima; SSP3 solicitado=estrés; residual/reapertura/MEA. Cinco riesgos: permanencia/adicionalidad01–03; fundamento climático local15;07/09/05/02/infra/SAT fuera; unidad14R/plazo/adicionalidad PROP; medición/derechos/causalidad.
 
-### Seis decisiones que deben poder explicar
+### Ocho preguntas probables del jurado
 
-1. **Qué elegimos:** D6 y sus seis palancas son una decisión provisional; conservación administrativa/demanda hídrica no equivalen a restauración, rondas o garantía de oferta. Leer P1-H1/H2 y P2 «Candidata D6».
-2. **Cómo contamos y qué sacrificamos:**5000/saldo 0, una unidad completa por entrada; siete máximas financieras, elegibilidad y cupos condicionados. N1 cinco/4700 concentra conservación/rondas;01/05 no tienen localización municipal propia decidida, D6 no acredita mayor eficacia por contar seis ni supera el conteo de otras seis máximas. Leer P2 comparación y PDF«Cuenta y comparación reproducibles».
-3. **Dónde y quién:** leer la última tabla P2 vigente, sin sustituirla por el mapa sugerido durante feedback. Distinguir sitio municipal propuesto, predio/activo validado y cobertura de unidades compartidas. Actores de medida propuestos no son los tres expositores.07Marinilla se compara por problema/sitio/función de suelo como07R; agua adicional sólo si se invoca ese cobeneficio, sin veto por categoría menor.
-4. **Qué compra 14:** conservar600 del reto y contar una unidad. P1-H3 y el mecanismo de acciónGRD sustentan priorizar Rionegro porVAlta/cambio de riesgo, sin elegir automáticamente un índice; Guarne conserva brecha de alerta/infra. C28 de la ficha 17 es antecedente anual por municipio-año; no vuelve oficiales un diseño propio, plazo/cobertura ni tres compras. Aprovechar MEA existente y delimitar valor adicional, sensores/protocolos y SAT completo. Leer ficha14/expediente vigente P2.
-5. **Qué horizonte manda:** SSP3-7.0 hacia 2060, confirmado por usuario al responder la consulta sobre briefing; fuente primaria de amenaza ventana 2041–2060. La selección solicitada y el estrés coinciden por esa aclaración. SSP2/2040 sólo adicional/exploratorio; no solicitar otra ratificación ni inventar un par distinto. Año basal social/físico NA es otro problema.
-6. **Qué dato nos haría cambiar y cómo medir:** servicio esencial/SAT/demanda-oferta/sitio/adicionalidad, con costo y unidad desplazada; medir basal físico fechado, repetir y separar ejecución/cambio observado/causalidad. Leer P3«Reapertura» y CSV 34 variables, no un motor como prueba ambiental.
+1. ¿Por qué el cambioD6→M6-2? Alinea preferenciaBIOagua con01/03/04 yretira07/09; no acredita ventaja global, salud15 sigue condicionada.
+2. ¿PSA y03 pagan lo mismo? Un programaPSA3años y gestión/conectividad03 requieren productos/pagos distintos y adicionalidad verificable; no se afirma no-duplicación resuelta.
+3. ¿Qué prueba salud15 enMarinilla? Ficha15C22 ydescriptorASCAp14 CA22/DNP2016–23 sustentan examinar gestión municipal, no enfermedad, hospital, medición2026 o códigoInCaSALinventado; pertinencia climática local permanece abierta.
+4. ¿Seis es máximo pertinente? Sólo cota financiera bajo cupo1, sieteempatadas; HIP14abre7unidades/5tipos retirando01PSA1.200 por14G/M1.200, sin regla oficial ni elegibilidad acreditada.
+5. ¿Por qué no SAT? PSA no elimina alerta; M6-7 cambia01→13 a5000/6 si criticidad/función/operación favorecenSAT, aceptando perderPSA.
+6. ¿Qué sacrifica cada comparación? D6 pierde07/09 por01/15; N1pierde05 por08/15; M6-7pierde01 por13. No sumar cobeneficios como compras implícitas.
+7. ¿Qué hace SSP3 con01/15? Diseño/permanencia/continuidad y amenazas disponibles, sin tasas futuras inventadas;36meses no garantiza2060.
+8. ¿Qué verificarán y quién? Basal físico fechado/mismo método/custodio aceptado, cambio y causalidad separados; software/recepción no demuestra efecto.
 
-### Cinco riesgos difíciles que deben reconocer
+## Ficha de ensayo humano real — sigue pendiente
 
-- **Aporte esperado frente a evidencia:**2800 M/56 % rural-urbano y su aporte bio/agua son hipótesis; no hay coeficiente de eficacia o mayor reducción demostrados. Sin comprar05 no se presume InCaHIDRO-01cero ni ausencia de acción institucional.
-- **Elegibilidad y solapes:** sitio, función climática, mantenimiento y productos/pagos de 07/08/09; compartir beneficiarios no implica duplicar ni exige sitios disjuntos automáticamente.
-- **Alcance 14:** costo/unidad del reto frente al antecedente municipal-anual C28; programa/municipio/plazo y adicionalidad del diseño deben aparecer propuestos, sin cobertura regional implícita.
-- **Residual que no desaparece:** conservación hídrica, oferta, SAT/infra/servicios y necesidades sanitarias no se cubren automáticamente por verde, protocolos o categorías de riesgo menores.
-- **Medición y derechos:** índice 0–1 no es basal físico ni porcentaje logrado; 30 % a 2035 es meta. Acceso público/357 ya publicados no son aval; B7 comprobado por recurso, citas acotadas y 90 basales nuevos internos. No atribuir causalidad ni licencia a un archivo recibido.
+Congelar el guion leído y su SHA; usar cronómetro, registrar persona/fecha/hora/duración real/omisiones. Si supera7:00, acortar/repetir con nueva versión y conservar el recibo anterior. Los tiempos por bloque y el objetivo de palabras son planificación, no ensayo.
 
-### Ocho preguntas probables del jurado y ancla de respuesta
-
-| Pregunta difícil | Respuesta que debe sostenerse con evidencia |
+| Campo | Evidencia actual |
 |---|---|
-| ¿Por qué destinar 56 % a suelo/agro/verde si el diagnóstico prioriza bio/agua? | Funciones complementarias esperadas y máximo financiero condicionado; declarar el aporte bio/agua hipótesis y el sacrificio frente a N1, sin decir mayor eficacia. P2 justificación/P3 residual. |
-| ¿Seis es máximo pertinente o sólo la cuenta de las unidades baratas? | Cota bajo una unidad por entrada, mismas puertas a 15, siete máximas sin fallos definitivos; sensibilidad de tres14municipales puede abrir7unidades/5tipos, sin regla oficial confirmada; pierde07/09(2.000M,40%del presupuesto), añade15+14G/M aún no acreditados, sin mayor función ecosistémica por conteo. Condicionar elegibilidad/cupos y reenumerar cuando haya prueba. P2 máximas/PDF metodología. |
-| ¿Dónde queda Marinilla y qué aporta cada localización? | Última tabla P2 y su comparación de sitios; no confundir unidades compartidas con obra física propia ni feedback con validación. P1-H1/H2/P2. |
-| ¿Cómo cabe la unidad 14 y qué añade al MEA? | Precio600 del reto, una unidad; C28 municipio-año como antecedente distinto. Explicar productos/rol/cobertura/plazo propuestos, sin nuevo portal oSAT completo implícitos. P2 ficha 14/Manual 77–84. |
-| ¿Qué prueba realmente SSP3 y por qué no cambian necesariamente D6/N1? | Fuente/horizonte humano confirmado, referencia→SSP3 con celdas, revisar diseño/amenazas; sin eficacia futura publicada ni prueba de selección invertida. No llamar idénticos a valores que sólo redondean igual. P2 escenarios. |
-| ¿Qué evidencia les haría abandonar D6 aunque financie seis? | Activo/servicio esencial sin respaldo, alerta crítica, sitio/función o duplicación probados. Mostrar SAT 4200/5/saldo 800 o servicios 5000/5, sacrificio y reenumeración; salud elegible por sí misma. P3 reaperturas. |
-| ¿Cómo sabrán si bajó vulnerabilidad y quién responde? | Basal físico/fecha/denominador, unidad/procedimiento, frecuencia acordada/custodio aceptado, mantenimiento y revisión. 34 variables incluyen 14 códigos/20 PROP; equipo expositor no es custodio territorial. P3 variables. |
-| ¿La aplicación, la recepción de datos o su publicación prueban aceptación/eficacia/permiso? | No: cálculo y recepción son evidencia técnica limitada. Resultado ambiental requiere medición; aceptación territorial y alcance B7 son distintos. 357 publicados no son fundamento jurídico. Matriz 75/uso de fuentes. |
+| Persona que expone y cronometra | Pendiente |
+| Fecha/hora real Bogotá | Pendiente |
+| Duración realmm:ss | Pendiente |
+| SHA del guion efectivamente leído | Pendiente, capturar antes de leer |
+| Guion íntegro/omisiones/pausas/claridad | Pendiente |
+| Resultado≤7:00/repetición | Pendiente |
 
-Los textos/recibos del software demuestran sólo su función y versión observadas. Ariadna sostiene el argumento ambiental; Brahyam distingue datos, mecanismos y límites; Steven explica cómo repetir la cuenta y encontrar fuentes. El apoyo técnico no sustituye un sitio, un actor comprometido, un efecto medido o una revisión institucional.
-
-## Ficha para ensayo oral real durante el estudio14–16
-
-Congelar el guion que se leerá y calcular su SHA antes de empezar; usar reloj o cronómetro real. Leer las siete partes del guion en voz alta con transiciones y pausas de exposición. Registrar el tiempo observado, quién realizó el ensayo y cualquier omisión. Si excede 7:00, acortar y repetir con una versión nueva; conservar el resultado anterior. La estructura de tiempos sugerida por Sol es sólo planificación, no evidencia de una locución.
-
-| Campo del recibo | Valor actual |
-|---|---|
-| Persona que expone y persona que cronometra | Pendiente |
-| Fecha y hora de inicio/fin en Bogotá | Pendiente |
-| Duración real observada, mm:ss | Pendiente |
-| SHA-256 del guion efectivamente leído | Pendiente: capturar inmediatamente antes del ensayo; no insertar un hash autorreferente |
-| Guion íntegro leído / omisiones / pausas | Pendiente |
-| Evidencia y observaciones de claridad | Pendiente |
-| Resultado ≤7:00 y necesidad de repetir | Pendiente |
-
-Registrar esos campos permite verificar F01; no se llena duración o identidad por estimación, recepción de archivos, modelo externo ni conteo de palabras. Hasta el recibo real, **F01 continúa pendiente** como verificación oral; no bloquea la solución material lista antes de14:00 conforme a la aclaración humana. El ensayo se planifica durante el estudio14–16. Si sólo cambia esta ficha posterior al ensayo, conservar el hash del guion leído y explicar la diferencia de versión documental.
-
-Corte documental final: 75 IDs estables, 39 demostrados de afirmación limitada, 35 condicionales y F01 pendiente humano durante estudio14–16. Fuentes congeladas: P1 contexto histórico parcial6b3a3bf6, P2v3.6cc1e7a3a y P3v8.2e38535fe; siguen21perfiles/357registros, D6seis/5000, residual42 y34variables. PDF final único de2pA4 exportado e inspeccionado en ambas páginas. Las revisiones Muse/Claude V4.3 cubren exclusivamente PDF75e7f30e, sin aval del PDF final nuevo. No es puntaje del jurado,75cumplidos ni resultado ambiental. El desempate cualitativo propuesto opera entre carteras completas elegibles; no impone pesos, ganador ni preferencia por menos intervenciones.
+F01 permanece pendiente hasta evidencia humana; transcurso del estudio no equivale a prueba. CortePOST1415:23:07 Bogotá: P16b3a3bf6ba52, P2v3.8/af55925fadee, P3v8.3/edcef4a66b59; M6-2activa provisional, D6histórico, N1/M6-7comparadores. Las revisiones del PDF350/eb358/75e7 cubren esos bytes, no el nuevoPDF M6-2. Ensayo/adopción/eficacia no acreditados.

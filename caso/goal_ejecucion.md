@@ -12,6 +12,10 @@ Base de trabajo: [propuesta principal](https://github.com/stevenvo780/ambientalh
 
 Estado documental comprobado: el PDF final único de dos páginas está entregado con decisión y metodología; el ensayo humano sigue pendiente durante el estudio. Las revisiones y las vistas de exposición se integran por versiones; la goal permanece activa y no se declara eficacia ambiental.
 
+## Continuidad operativa POST14
+
+La decisión humana de14:53 abrió la revisión M6-2 como candidata principal provisional de5000M/seis unidades, con D6 histórico yN1 comparador. El corte13:58 y su recibo13:59 permanecen inmutables; los nuevos archivos/PDF y aplicaciones se publican con fechas reales posteriores. Esta revisión no declara dominancia global, eficacia ni goal completada. El controlador Luna terminó naturalmente14:02:35 y no se reinicia. [Journal de versión](../ambiente/publicos/aclaraciones_post14.json) distingue cada fase y el estado real de las aplicaciones.
+
 ## Aclaración de entrega del usuario
 
 Aclaración recibida el 7 de octubre, registrada en esta continuidad: el paquete de estudio se entrega al usuario antes de las 14:00, con buffer interno de 13:50. El ensayo humano con reloj se realizará durante el estudio de 14:00 a 16:00; su recibo queda pendiente y se añadirá antes de la presentación. Su ausencia no bloquea la entrega del paquete para estudiar. Ariadna, ingeniera ambiental, lidera la presentación; Brahyam, ingeniero ambiental, y Steven, desarrollador, apoyan y responden preguntas. El límite es **siete minutos en total entre los tres**. La entrega documental final es **un PDF obligatorio de máximo dos páginas en total**, que incluye el anexo metodológico de cómo se llegó a la respuesta.
