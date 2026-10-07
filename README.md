@@ -2,7 +2,7 @@
 
 Proponemos **Presupuesto Vivo como principal y Territorio Vivo como apoyo** para decidir qué proteger, dónde intervenir y qué combinación financiar con el fondo simulado de **COP 5.000 millones**. Aprovecharemos sus avances y los antecedentes de PSA, restauración y agroecología, verificando continuidad y evitando duplicación. El evento espera una decisión ambiental defendible: hasta cinco hallazgos, una cartera priorizada y una ficha de riesgo residual/seguimiento MEA, con pitch de máximo siete minutos. El método explica los ocho criterios y nueve preguntas; la cartera final y su contraste completo de escenarios siguen pendientes de ejecución y evidencia.
 
-**Estado de esta ampliación local: 7 de octubre de 2026, 10:36 Bogotá. GO explícito recibido y goal activa: ejecución ambiental autorizada; consultar el registro vigente de orquestación.** Paquete objetivo **13:50**; entrega **antes de las 14:00 de Bogotá**. La fase cambia de preparación a ejecución por el GO del usuario; los productos finales siguen pendientes.
+**Estado de esta ampliación: 7 de octubre de 2026; la fecha vigente de avance se consulta en estado/commits. GO explícito recibido y goal activa: ejecución ambiental autorizada; consultar el registro vigente de orquestación.** Paquete objetivo **13:50**; entrega **antes de las 14:00 de Bogotá**. La fase cambia de preparación a ejecución por el GO del usuario; los productos finales siguen pendientes.
 
 **Codex principal SOLO orquesta:** instancia/delega, asigna áreas, controla sesiones, recibe evidencia, decide la integración conceptual y entrega. Los ejecutores leen, redactan, calculan, prueban y preparan el entorno. Un escritor por archivo. **Publicación delegada tras el GO:** un único ejecutor gestiona Git y recibe lotes terminados de cada escritor; hace commits acotados y push frecuentes a dev. Conserva íntegros los commits del usuario y excluye credenciales/operación privada.
 
@@ -155,12 +155,12 @@ Claude/Muse revisaron un borrador anterior; el redactor incorporó objeciones y 
 
 | Tramo objetivo Bogotá | Salida posterior al GO |
 |---|---|
-| Inicio → 11:07 | DA: fichas/fuentes, escenarios, MEA, faltantes y asignaciones. |
-| Hasta 11:36 | P1, máximo cinco hallazgos y territorio defendible. |
-| Hasta 12:14 | P2/P3 preliminares: elegibilidad, alternativas, actores, costo, residual y MEA. |
-| 11:50–12:42 | Contraste referencia/intermedio/SSP3-7.0–2060 por unidad. |
-| 12:42–13:34 | Integración y revisión independiente por 75 IDs. |
-| 13:34–13:50 | Ensayo ≤7 min; anexo opcional ≤2 páginas; congelar paquete. |
+| Inicio → 11:14 | DA: fichas/fuentes, escenarios, MEA, faltantes y asignaciones. |
+| Hasta 11:42 | P1, máximo cinco hallazgos y territorio defendible. |
+| Hasta 12:18 | P2/P3 preliminares: elegibilidad, alternativas, actores, costo, residual y MEA. |
+| 11:28–12:45 | Contraste referencia/intermedio/SSP3-7.0–2060 por unidad. |
+| 12:41–13:30 | Integración y revisión independiente por 75 IDs. |
+| 13:30–13:50 | Ensayo ≤7 min; anexo opcional ≤2 páginas; congelar paquete. |
 | Desde 13:50 y antes de 14:00 | Entrega y margen de acceso/formato. |
 
 | Brecha real | Ejecutor y acción | Cierre y consecuencia si falta |
