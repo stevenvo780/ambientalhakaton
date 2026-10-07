@@ -1,0 +1,23 @@
+{
+  "schema": "actualizador-luna.recibo.v1",
+  "updated_at": "2026-10-07T16:08:36Z",
+  "status": "ok",
+  "modelo": "gpt-6-luna",
+  "esfuerzo": "medium",
+  "exito": true,
+  "error": null,
+  "ciclo_id": "20261007T160817Z-823b366b",
+  "cli_event_id": "01a1171f-699b-7ab2-8231-3ccc86002059",
+  "snapshot_sha256": "e18a6991fed867c7903f9852af624013b25695e908f4e121e94c017942ffee5c",
+  "site_estado_sha256": "e509b4ca47af4a60acf26745906617b83a4f0161966c617e3796a30beda19a6c",
+  "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
+  "fuentes": [
+    "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/registro_avances.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/datos_oficiales.json",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/brechas_escenarios_mea.md",
+    "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json"
+  ],
+  "actualizador_sha256": "70eb66a0c99de7cf458f3c6168ca48a7cbe2ffd24cadd617aec4e23b0fa1800b"
+}

@@ -1,9 +1,9 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T15:57:49.328677+00:00",
+  "updated_at": "2026-10-07T16:08:36Z",
   "timezone": "America/Bogota",
   "titulo": "GO recibido · ejecución ambiental en curso",
-  "detalle": "GO real y goal activa registrados. P1 entregó 21 perfiles/357 registros oficiales; comparación financiera independiente completada. Elegibilidad de cartera P2, residual P3 y eficacia/robustez ambiental siguen en revisión.",
+  "detalle": "GO real y goal activa registrados. P1 entregó 21 perfiles y 357 registros oficiales; P2 completó una comparación financiera independiente. La elegibilidad de la cartera P2 y el residual P3 siguen en revisión. Eficacia, criterio ambiental, delta V y robustez no están demostrados. Las condiciones de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no implica licencia abierta.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
@@ -66,6 +66,12 @@
       "detalle": "32768 subconjuntos: 1567 factibles, 7 máximas de 6; condicionado a una unidad por entrada. No óptimo ambiental.",
       "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json",
       "sha256": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45"
+    },
+    {
+      "titulo": "Comparación financiera P2",
+      "estado": "en_revision",
+      "detalle": "32768 subconjuntos examinados, 1567 factibles y máximo de 6, condicionado a una unidad por catálogo; no es óptimo ambiental.",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json"
     }
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
@@ -80,7 +86,19 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T15:57:49.328677+00:00"
+    "comprobado_utc": "2026-10-07T16:08:36Z"
   },
-  "source_repo": "https://github.com/stevenvo780/ambientalhakaton"
+  "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
+  "limitations": [
+    "Cerrar elegibilidad de cartera P2 y residual P3, con fuentes, unidades y decisiones trazables.",
+    "Verificar productos ambientales; eficacia, criterio ambiental, delta V y robustez siguen sin demostrarse.",
+    "Resolver la revisión de uso y reproducción del master M-E-2411, hoja «Sobre este documento», celda B7."
+  ],
+  "summary": [
+    "P1 contiene 21 perfiles municipales y 357 registros oficiales; su presencia no valida ambientalmente una cartera.",
+    "P2 examinó 32768 subconjuntos: 1567 factibles y máximo 6, condicionado a una unidad por catálogo. Es una comparación financiera, no un óptimo ambiental.",
+    "El acceso público al master M-E-2411 no implica licencia abierta; las condiciones de uso y reproducción de B7 están en revisión."
+  ],
+  "status": "GO_activo_entregables_en_revision",
+  "checked_at": "2026-10-07T16:08:36Z"
 }
