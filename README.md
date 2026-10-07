@@ -166,7 +166,7 @@ Claude/Muse revisaron un borrador anterior; el redactor incorporó objeciones y 
 | Hasta 12:18 | P2/P3 preliminares: elegibilidad, alternativas, actores, costo, residual y MEA. |
 | 11:28–12:45 | Contraste referencia/intermedio/SSP3-7.0–2060 por unidad. |
 | 12:41–13:30 | Integración y revisión independiente por 75 IDs. |
-| 13:30–13:50 | Ensayo ≤7 min; anexo opcional ≤2 páginas; congelar paquete. |
+| 13:30–13:50 | PDF obligatorio máximo2 páginas totales y guion de7min; congelar paquete. Ensayo humano durante estudio14–16. |
 | Desde 13:50 y antes de 14:00 | Entrega y margen de acceso/formato. |
 
 | Brecha real | Ejecutor y acción | Cierre y consecuencia si falta |
@@ -209,7 +209,7 @@ Abrir primero estado/commit y después 1–7. Todos estos enlaces apuntan a **de
 
 Estado técnico en JSON: [lectura directa](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/ambiente/publicos/estado_preparacion.json). Web: [código site/](https://github.com/stevenvo780/ambientalhakaton/tree/main/site) · [estado fuente](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/site/estado.json) · [commits](https://github.com/stevenvo780/ambientalhakaton/commits/main/).
 
-**Apoyo al equipo ya incorporado:** [preguntas frecuentes](https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/preguntas_equipo.md) · [raw](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/caso/preguntas_equipo.md); [guía de lectura](https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/guia_lectura_equipo.md) · [raw](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/caso/guia_lectura_equipo.md). Ya incorporan el GO y conservan comprobantes históricos; consultar estado/commit actual antes de seguir cualquier instrucción temporal. [Auditorías preparatorias públicas](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/ambiente/publicos/auditorias_preparatorias.json). [Carpeta de entrega](https://github.com/stevenvo780/ambientalhakaton/tree/main/entregables): guion y anexo son borradores, sin cartera ni ensayo final acreditados. Actualizar el mapa con cada artefacto realmente terminado/publicado.
+**Apoyo al equipo ya incorporado:** [preguntas frecuentes](https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/preguntas_equipo.md) · [raw](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/caso/preguntas_equipo.md); [guía de lectura](https://github.com/stevenvo780/ambientalhakaton/blob/main/caso/guia_lectura_equipo.md) · [raw](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/caso/guia_lectura_equipo.md). Ya incorporan el GO y conservan comprobantes históricos; consultar estado/commit actual antes de seguir cualquier instrucción temporal. [Auditorías preparatorias públicas](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/ambiente/publicos/auditorias_preparatorias.json). [Carpeta de entrega](https://github.com/stevenvo780/ambientalhakaton/tree/main/entregables): P1–P3 y guion están publicados como recomendación condicional; PDF obligatorio de dos páginas con fuentes finales. El ensayo humano permanece pendiente14–16. Actualizar el mapa con cada artefacto realmente terminado/publicado.
 
 ## Insumos: originales, extracciones y publicación
 

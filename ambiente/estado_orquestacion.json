@@ -1,7 +1,7 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T18:17:10.309923+00:00",
-  "updated_at_bogota": "2026-10-07T13:17:10.309923-05:00",
+  "updated_at_utc": "2026-10-07T18:26:05.606150+00:00",
+  "updated_at_bogota": "2026-10-07T13:26:05.606150-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_reanudada_Desktop_goal_activa",
   "goal": {
@@ -74,11 +74,16 @@
       "obligatorio": true,
       "maximo_paginas_total": 2,
       "incluye_anexo_metodologico": true,
-      "estado": "dos_paginas_editorial_verificadas_corte_previo_cierre_final_en_preparacion",
+      "estado": "cierre_documental_final_dos_paginas_verificadas_editorial_y_publicador",
       "archivo": "entregables/ANEXO_METODOLOGICO.pdf",
-      "source_commit_verificado": "80b6fe61100e4c7dff24c0e872b9d796090e2f94",
-      "sha256_verificado": "83e58b76faacb32e50fe076af65768c64b1fab14c797400abaa3af670cc51875",
-      "ensayo_humano": "pendiente_durante_estudio_14_a_16_no_bloquea_paquete"
+      "source_commit_verificado": "5489a562e74b3fd33f6bf0fba3bedbd1055b18a5",
+      "sha256_verificado": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
+      "ensayo_humano": "pendiente_durante_estudio_14_a_16_no_bloquea_paquete",
+      "fuentes_finales": {
+        "P1_sha256": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
+        "P2_sha256": "cc1e7a3ac605d5f1f1e9041dc1c6d42b68d2bf0d0457f7e3d3eab1dbac46428b",
+        "P3_sha256": "e38535fe5713f1345e4eea9c90fcf37c3f0f4cd901d32599f149e1be50642252"
+      }
     },
     "requisitos_estado": {
       "demostrados_con_alcance_limitado": 39,
