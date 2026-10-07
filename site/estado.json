@@ -1,6 +1,6 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T17:05:57Z",
+  "updated_at": "2026-10-07T17:08:54Z",
   "timezone": "America/Bogota",
   "titulo": "P1 entregado; P2 y P3 en revisión",
   "detalle": "P1 reúne datos institucionales y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables constan como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones legales de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta; esto no determina ilegalidad ni autorización general.",
@@ -8,7 +8,7 @@
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/8a4846b69ca5baa2f1f025ecaa7bb60ee3f9e3f6/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/c601d6d7e081260d8f242876ad06bd4a06d51bf4/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -91,7 +91,7 @@
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
-  "source_updated_at": "2026-10-07T16:50:37.683585+00:00",
+  "source_updated_at": "2026-10-07T17:06:34.350223+00:00",
   "source_branch": "dev",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "go_recibido": true,
@@ -101,7 +101,7 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T17:05:57Z"
+    "comprobado_utc": "2026-10-07T17:08:54Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
@@ -112,15 +112,15 @@
   ],
   "summary": [
     "P1 entregado; sus hallazgos no validan ambientalmente una cartera.",
-    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis, bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
-    "P3 y sus variables están presentes como borrador D6 provisional en revisión.",
+    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
+    "P3 y sus variables presentes como borrador D6 provisional en revisión.",
     "Eficacia, delta V y robustez completa no demostradas.",
     "Uso y reproducción de M-E-2411 B7 en revisión; el acceso público no significa licencia abierta."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T17:05:57Z",
-  "source_commit": "8a4846b69ca5baa2f1f025ecaa7bb60ee3f9e3f6",
-  "source_captured_at": "2026-10-07T17:05:44Z",
+  "checked_at": "2026-10-07T17:08:54Z",
+  "source_commit": "c601d6d7e081260d8f242876ad06bd4a06d51bf4",
+  "source_captured_at": "2026-10-07T17:08:44Z",
   "source_was_current_at_publication": true,
-  "head_before_publication": "8a4846b69ca5baa2f1f025ecaa7bb60ee3f9e3f6"
+  "head_before_publication": "c601d6d7e081260d8f242876ad06bd4a06d51bf4"
 }
