@@ -72,7 +72,7 @@
   "version_principal_M6_2_POST14": {
     "preparado_bogota": "2026-10-07T15:28:12.872384-05:00",
     "decision_bogota": "2026-10-07T14:53:00-05:00",
-    "estado": "CORE_publicado_y_apps_actualizadas_UI10_en_cierre_QA",
+    "estado": "CORE_apps_y_PATCH_visual_publicados_con_QA_de_versiones_separadas",
     "principal": "M6-2_provisional",
     "unidades": [
       "01",
@@ -174,7 +174,7 @@
   },
   "PATCH_visual10_POST14": {
     "preparado_bogota": "2026-10-07T15:57:31.432221-05:00",
-    "estado": "QA_independiente_PASS_preparado_para_push",
+    "estado": "publicado_MAIN_Vercel_SHA_verificados",
     "escenas": 10,
     "bloques_orales": 7,
     "duracion_plan_segundos": 420,
@@ -193,11 +193,27 @@
     "PITCH_sha256": "7471e1dc26fe4569bef368a638b2f08c090cda152eda3e8f28a8f06e14790b0d",
     "limite": "Animaciones conceptuales y explicación de mecanismos/beneficio esperado; no eficacia ambiental ni elegibilidad certificadas. Tres artefactos: repositorio análisis/orquestación, Presupuesto Vivo y Territorio Vivo.",
     "QA_visual": {
-      "at_bogota": "2026-10-07T16:08:00-05:00",
+      "at_bogota": "2026-10-07T16:07:44-05:00",
       "estado": "PASS_independiente_acotado",
       "alcance": "10/10 escenas sóloNext a1280x720 y1440x900; microetiquetas intercambio37cf legibles; recorrido390sin overflowexterno y escena6SSP vertical ref→SSP3 sin scrollhorizontal. Nextvisible/funcional. Sin fallosmateriales pendientes. Parche móvilmax640 conservaPASSdesktop.",
-      "limites": "Reduced-motion soportado estáticamente, sin emulador runtime. Siete minutos son plan; no ensayo humano ni eficacia ambiental."
+      "limites": "Reduced-motion soportado estáticamente, sin emulador runtime. Siete minutos son plan; no ensayo humano ni eficacia ambiental.",
+      "fuente_fecha": "Hora final comprobada por el revisor independiente; sustituye el minuto aproximado de su primer aviso."
     },
-    "preparado_para_publicacion_bogota": "2026-10-07T16:07:28.959463-05:00"
+    "preparado_para_publicacion_bogota": "2026-10-07T16:07:28.959463-05:00",
+    "commit_UI_publicado": "617549c330dd9d08b9cfa8911b3599d9c1115031",
+    "fecha_commit_bogota": "2026-10-07T16:07:29-05:00",
+    "verificacion_HTTP": {
+      "at_bogota": "2026-10-07T16:08:35-05:00",
+      "deployment_commit": "617549c330dd9d08b9cfa8911b3599d9c1115031",
+      "UI_archivos": 8,
+      "UI_SHA_exactos": true,
+      "PDF_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+      "PDF_bytes": 53177,
+      "PDF_status": 200,
+      "urls": [
+        "https://hackathon-ambiental.stevenvallejo.com/presentacion",
+        "https://hackathon-ambiental.stevenvallejo.com/metodologia"
+      ]
+    }
   }
 }
