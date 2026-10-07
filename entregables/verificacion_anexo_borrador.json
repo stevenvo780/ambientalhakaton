@@ -121,9 +121,26 @@
     }
   ],
   "publication_target": "main",
-  "matrix_sha256": "022dc1f72c31670c624067d2cd35a9d1a45b57399705d990cc8c6dc46a25e016",
-  "editorial_audit_at_bogota": "2026-10-07T13:25:02.081801-05:00",
-  "editorial_audit_note": "39demostrados limitados/35condicionales/F01pendiente. No promoción por software ni atribución de revisión V4.3 al PDF final nuevo.",
+  "matrix_sha256": "36493f85cce87c5bd514f4658bb57de30023e14f9eeba5a2701bbdfc722cb9b4",
+  "editorial_audit_at_bogota": "2026-10-07T13:35:38.388954-05:00",
+  "editorial_audit_note": "Registro H07/R21 actualizado a publicación científica finalMAIN5489a562 y revisionesactualesbc5c7f19; I16 consulta pública observada sin promoción de estado.39/35/1 intacto; PDF/MD/PITCH/ciencia no cambiados. F01humano14–16pendiente.",
   "exported_at_utc": "2026-10-07T18:16:48.519729+00:00",
-  "independent_review_of_current_pdf": "Claude y Muse revisaron bytes nuevos eb358c8b; sin fallos urgentes. Claude renderizó ambas páginas; Muse texto/estructura. No aval ambiental/institucional ni ensayo."
+  "independent_review_of_current_pdf": "Claude y Muse revisaron bytes nuevos eb358c8b; sin fallos urgentes. Claude renderizó ambas páginas; Muse texto/estructura. No aval ambiental/institucional ni ensayo.",
+  "publication_receipt": {
+    "reported_by": "publicar_web",
+    "final_scientific_commit": "5489a562e74b3fd33f6bf0fba3bedbd1055b18a5",
+    "final_review_commit_prefix": "bc5c7f19",
+    "pdf_sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
+    "pdf_bytes": 55370,
+    "scope": "Publicación científica y revisión documental; no ensayo humano ni eficacia ambiental"
+  },
+  "software_public_qa": {
+    "PV_receipt_sha256": "d37604dd6a89d406d7d1445d0d3ce5d623f6958b8c3ae7ca80a4e0784cf49563",
+    "PV_at_bogota": "2026-10-07T12:59:28-05:00",
+    "PV_scope": "Alias producción anónimo11controles, cuenta y exportJSON/CSV, privadas401; sin efectos ambientales/adopción",
+    "TV_receipt_sha256": "2538b4b704761f7e77c661165a16cca4ef60a4f2761183de552fda3bec91fd6d",
+    "TV_at_bogota": "2026-10-07T13:16:48-05:00",
+    "TV_scope": "Consulta pública200/21perfiles/6unidades/42cruces, fuentesSHAcoincidentes; privadas401/público405; sin efectos ambientales/adopción",
+    "matrix_state_unchanged": "39demostrados limitados/35condicionales/F01pendiente14–16"
+  }
 }
