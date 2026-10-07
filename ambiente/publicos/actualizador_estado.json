@@ -1,13 +1,13 @@
 {
   "schema": "actualizador-luna.recibo.v1",
-  "updated_at": "2026-10-07T16:30:01Z",
+  "updated_at": "2026-10-07T16:33:06Z",
   "status": "error",
   "modelo": "gpt-6-luna",
   "esfuerzo": "medium",
   "exito": false,
   "error": "fuente cambió durante el ciclo; esperar próximo snapshot estable",
-  "ciclo_id": "20261007T162944Z-bc2991b6",
-  "snapshot_sha256": "fb390ec102f58716f563ba4f21c8f2058d22a39b1cb40ebbd807e6f88ee48bbe",
+  "ciclo_id": "20261007T163244Z-22134652",
+  "snapshot_sha256": "054d2991f6910dd80b84e3a9da92e73962d5384a0e733c0b274852239b3f72b2",
   "actualizador_sha256": "b43303ab89f042e7a19a4126f0581f3402d4a85d4d3a25d7de2b2688d8fd8e53",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "fuentes": [
