@@ -63,7 +63,7 @@ Esta tabla define evidencia por construir; no declara terminados los productos f
 | **C05 Robustez** | Revisar cada unidad en referencia/intermedio/SSP3-7.0–2060. | Mantener/modificar/reemplazar con fuente, razón y nueva cuenta; contraste parcial declarado si falta insumo. |
 | **C06 Viabilidad y gobernanza** | Comprobar competencia, sitio, secuencia, acuerdos, continuidad y mantenimiento. | Actor propuesto/validado, requisito habilitante y custodio; PSA conserva responsabilidad en años 2–3. |
 | **C07 Seguimiento** | Conectar mecanismo con indicador MEA de sensibilidad/capacidad/vulnerabilidad y ciclo de revisión. | Definición/fórmula, unidad, cobertura, basal o ausencia, fecha, frecuencia, custodio y evidencia que obliga a ajustar. |
-| **C08 Utilidad para CORNARE** | Entregar una decisión legible, reproducible y actualizable, con capacidad institucional a fortalecer. | P1–P3, fuentes/cálculo, próximos datos, pitch ensayado ≤7 min; anexo opcional ≤2 páginas. |
+| **C08 Utilidad para CORNARE** | Entregar una decisión legible, reproducible y actualizable, con capacidad institucional a fortalecer. | P1–P3, fuentes/cálculo, próximos datos, guion de7min totales y PDF obligatorio máximo2p totales; ensayo humano pendiente14–16. |
 
 La gobernanza de agentes organiza al equipo; **no acredita gobernanza territorial**. Cada intervención propone actores según función y competencia. Antecedente histórico no prueba acuerdo vigente, permiso ni cofinanciación.
 
@@ -126,7 +126,7 @@ Controlar solapes PSA/áreas, suelos/agroecología y SAT/conocimiento, sitios/be
 | Iniciativa | Papel | Acceso y límite |
 |---|---|---|
 | **Presupuesto Vivo, principal** | Cartera, restricciones, alternativas y explicación: P2. | [Aplicación](https://presupuesto-vivo-chi.vercel.app). Repositorio fuente no confirmado en este mapa; copia remota delegada inspeccionada. Motor requiere datos y significado oficial. |
-| **Territorio Vivo, secundario** | Procedencia, localización y seguimiento: P1/P3. | [Documentación](https://territorio-vivo-five.vercel.app/documentacion) · [repositorio declarado privado](https://github.com/stevenvo780/TerritorioVivo). Caso Granada–Rionegro debe ajustarse al corredor oficial. |
+| **Territorio Vivo, secundario** | Procedencia y seguimiento documental: P1/P3, snapshot fijado21/6/42. | [Consulta abierta sin sesión](https://territorio-vivo-five.vercel.app/resultados) · [documentación](https://territorio-vivo-five.vercel.app/documentacion). Administración y API privadas protegidas; no seguimiento ejecutado acreditado. |
 | Efecto Dominó, reserva | Dependencias y datos por levantar. | [Documentación](https://efecto-domino.vercel.app/documentacion) · [repositorio declarado privado](https://github.com/stevenvo780/efecto-domino). Sin matriz real no simular aristas empresariales. |
 | Lote Resiliente, reserva | Localización predial cuando exista evidencia suficiente. | [Documentación](https://lote-resiliente.vercel.app/documentacion) · [repositorio declarado privado](https://github.com/stevenvo780/lote-resiliente). Escala insuficiente por sí sola para fondo regional. |
 
@@ -183,7 +183,7 @@ Un plan completo no equivale a todos los criterios cerrados. Si falta evidencia 
 
 ## Orden de lectura y mapa completo
 
-Abrir primero estado/commit y después 1–7. Todos estos enlaces apuntan a **dev**, con contenido comprobado en el árbol publicado.
+Abrir primero estado/commit y después1–7. Los enlaces de la publicación vigente apuntan a **main**; los cortes históricos se distinguen por su fecha o SHA.
 
 | Orden/artefacto | Uso | GitHub / texto |
 |---|---|---|
@@ -261,7 +261,7 @@ Cadencia solicitada: **180 segundos**. El controlador delegado y GPT-6-Luna revi
 
 ## Borradores de defensa y anexo
 
-[Guion de siete minutos](https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/PITCH_BORRADOR.md): estructura con evidencia pendiente de P1/P2/P3, sin ensayo real aún. [Anexo metodológico borrador](https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/ANEXO_BORRADOR.md) · [PDF](https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/ANEXO_BORRADOR.pdf) · [recibo de paginado](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/entregables/verificacion_anexo_borrador.json). El PDF de borrador tiene **dos páginas A4 comprobadas**; no es el anexo final ni aprueba la cartera. Al integrar la decisión final se exportará y contará de nuevo. [Exportador reproducible](https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/exportar_anexo.py) usa Python estándar, LibreOffice y pdfinfo existentes; no instala paquetes ni copia perfiles.
+[Guion de siete minutos](https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/PITCH_BORRADOR.md): siete bloques con evidencia de P1/P2/P3; ensayo humano pendiente durante estudio14–16. [PDF obligatorio único, decisión y metodología](https://hackathon-ambiental.stevenvallejo.com/entregables/ANEXO_METODOLOGICO.pdf) · [fuente Markdown](https://github.com/stevenvo780/ambientalhakaton/blob/main/entregables/ANEXO_METODOLOGICO.md) · [recibo](https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/main/entregables/verificacion_anexo_borrador.json). Son **dos páginas A4** con fuentes finales de P1/P2v3.6/P3v8.2, SHA `eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e`. BORRADOR es sólo alias idéntico de compatibilidad. La verificación documental y visual no aprueba institucionalmente la cartera ni demuestra eficacia.
 
 ## Condición de entrega y continuidad
 
