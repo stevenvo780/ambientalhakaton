@@ -12,6 +12,10 @@
     {
       "source": "/metodologia",
       "destination": "/metodologia/index.html"
+    },
+    {
+      "source": "/avances",
+      "destination": "/avances/index.html"
     }
   ]
 }

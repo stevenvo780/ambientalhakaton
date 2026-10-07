@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Única ruta de publicación: manifiesto explícito, SHA, lock y push a dev."""
+"""Única ruta de publicación: manifiesto explícito, SHA, lock y push a main."""
 from pathlib import Path
 import argparse
 import fcntl
@@ -24,8 +24,8 @@ lock = ROOT / ".agentes-local/publicacion-git.lock"
 lock.parent.mkdir(exist_ok=True)
 with lock.open("a") as stream:
     fcntl.flock(stream, fcntl.LOCK_EX)
-    if git("branch", "--show-current") != "dev":
-        raise SystemExit("La rama actual debe ser dev. No se cambia ni reescribe otra rama.")
+    if git("branch", "--show-current") != "main":
+        raise SystemExit("La rama actual debe ser main. No se cambia ni reescribe otra rama.")
     paths = []
     for item in items:
         relative = Path(item["path"])
@@ -46,8 +46,8 @@ with lock.open("a") as stream:
     if changed:
         git("commit", "--only", "-m", message, "--", *paths)
     commit = git("rev-parse", "HEAD")
-    push = subprocess.run(["git", "push", "origin", "dev"], cwd=ROOT, capture_output=True, text=True, timeout=45)
+    push = subprocess.run(["git", "push", "origin", "main"], cwd=ROOT, capture_output=True, text=True, timeout=45)
     if push.returncode:
         print(json.dumps({"commit_local": commit, "push": "failed", "error": push.stderr[-700:]}, ensure_ascii=False))
         raise SystemExit(push.returncode)
-    print(json.dumps({"branch": "dev", "commit": commit, "paths": paths, "push": "confirmed", "receipt": push.stderr.strip()}, ensure_ascii=False))
+    print(json.dumps({"branch": "main", "commit": commit, "paths": paths, "push": "confirmed", "receipt": push.stderr.strip()}, ensure_ascii=False))
