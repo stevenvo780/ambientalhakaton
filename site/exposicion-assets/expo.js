@@ -309,6 +309,7 @@
       <div class="muni-oral">${["G", "M", "R"].map(m => { const M = D.municipios[m]; return `<section><h4>${M.nombre}</h4>
         <p><b>D6</b> ${enM(d6, m)}</p><p><b>N1</b> ${enM(n1, m)}</p>
         <p class="fac">${M.factor.slice(0, 2).join(". ")}.</p>
+        <p class="res-rot">Residual esperado — solo D6</p>
         <ul class="res">${M.residual.map(r => `<li>${r}</li>`).join("")}</ul></section>`; }).join("")}</div>
       <p class="fuente">N1: 01 y 05 sin localización municipal acreditada; no se dibuja cobertura. Residual mostrado = residual de D6.</p>`;
     }
