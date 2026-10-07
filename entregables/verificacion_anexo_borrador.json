@@ -1,45 +1,84 @@
 {
-  "verified_at_utc": "2026-10-07T16:29:57.358628+00:00",
-  "status": "borrador_no_anexo_final",
-  "source": "ANEXO_BORRADOR.md",
-  "source_sha256": "fe980bfab9b96711a5869d50b3e3d073284dbba59f701e66d2d0dcf2432ffc3b",
-  "pdf": "ANEXO_BORRADOR.pdf",
-  "pdf_sha256": "c509b146f45c70d3fbccc79565b355ef5c6664a1b27aeb971c5650e8fcb16612",
+  "verified_at_utc": "2026-10-07T16:56:17.462770+00:00",
+  "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
+  "source": "ANEXO_METODOLOGICO.md",
+  "source_sha256": "5b59490bc7118d80164735810b4dedf666f85e624768094cafab0b5c0145d862",
+  "pdf": "ANEXO_METODOLOGICO.pdf",
+  "pdf_sha256": "100fbeeb22e29bf0de316841bdf1960985e3c51e686b0a622ac54ff9ab98c074",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
-  "final_requires_new_verification": true,
+  "final_requires_new_verification": false,
+  "page_format": "A4",
   "visual_review": {
-    "reviewed_at_utc": "2026-10-07T16:31:21.228835+00:00",
-    "method": "pdftoppm PNG de ambas páginas y lectura visual",
-    "pages_reviewed": [
+    "pages": [
       1,
       2
     ],
-    "clipping_overlap_unreadable_glyphs": false
+    "text_legible": true,
+    "clipping_observed": false,
+    "reviewed_at_bogota": "2026-10-07T11:56:44.883848-05:00",
+    "method": "pdftoppm render ambas paginas; inspeccion directa"
   },
+  "changes_require_new_verification": true,
+  "pitch_sha256": "8befe189fc34094e81383f58f127fef29dfb9f5b6df20cbe48ea98432d20a5c0",
   "inputs_sha256": {
     "entregables/p1_tablero.md": "485a635e7afd6238af0cb35d20616339a8efd31181281613036feb55643cc791",
-    "entregables/p2_portafolio.md": "86baccd52ac2144dfb02aca976c7aae71cf514cc51040b5cef90fec356f340b8",
-    "entregables/p2_portafolio.csv": "6989e983a06568b3df1ad62159652e9fd429a08419bde77b57d024b1789f34d5",
-    "entregables/p2_justificacion.md": "7e8de333d1e023507aae37a24341ff86042d6f3c1c583a32acc9f13ea273fac2",
-    "entregables/p3_riesgo_residual.md": "39f721f2345d50b41ceb095690ac53686dda92f9f0fa480f272cd2bfa288d3d9",
-    "entregables/p3_riesgo_residual.csv": "517a76728731090a33820af65a66f3f8daf62423f3c083ef7a03feb97f66150f",
-    "entregables/variables_seguimiento.csv": "e71825a4cf2489f954b1083ea74707cd529de8b06a90f52fba2f4b78ca5b808a"
+    "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
+    "entregables/datos_oficiales.json": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232",
+    "entregables/p2_portafolio.md": "48e205adc32cc57fb5acb2402c7c7309482b190443a4d0dba5536f6d41bb8b1b",
+    "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
+    "entregables/p2_justificacion.md": "285eeeb20bf7e39247282c50a5df845ce61decce2c9264828dd528c42f51cd2a",
+    "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
+    "entregables/p3_riesgo_residual.md": "f3b8791ac0cff49e19a35413c5ddf4e22eff90c2af82c35ce06ebf708af0e8ad",
+    "entregables/p3_riesgo_residual.csv": "3fa273ed0b45bf3a4dd1cb3df41b41b968dfa99cb53100051093b881b4babb46",
+    "entregables/variables_seguimiento.csv": "2743e829d6e61e60e72f1668f67df1f0730e690fd6f4b8d8f23c58a7d473ef90",
+    "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
   },
-  "operator_scenario_confirmation": {
-    "source": "instrucción humana de continuidad comunicada por orquestador",
-    "date_bogota": "2026-10-07 11:28",
-    "required": "SSP3-7.0/2060",
-    "additional_only": "SSP2-4.5/2040",
-    "official_intermediate_identified": false
+  "source_urls": {
+    "entregables/p1_tablero.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.md",
+    "entregables/p1_tablero.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p1_tablero.csv",
+    "entregables/datos_oficiales.json": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/datos_oficiales.json",
+    "entregables/p2_portafolio.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_portafolio.md",
+    "entregables/p2_portafolio.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_portafolio.csv",
+    "entregables/p2_justificacion.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_justificacion.md",
+    "entregables/p2_comparacion_financiera.json": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p2_comparacion_financiera.json",
+    "entregables/p3_riesgo_residual.md": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.md",
+    "entregables/p3_riesgo_residual.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/p3_riesgo_residual.csv",
+    "entregables/variables_seguimiento.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/entregables/variables_seguimiento.csv",
+    "caso/catalogo_costos_reto.csv": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/catalogo_costos_reto.csv"
   },
-  "pitch_sha256": "ccb6720f2b2a1799ff8ab33a7747fef04a95ed9f01887234aa4af94dcf03b538",
-  "oral_rehearsal": {
-    "status": "pendiente",
-    "person": null,
+  "horizon": {
+    "requested": "SSP3-7.0 hacia2060",
+    "primary_threat_window": "2041–2060",
+    "human_confirmation": "Usuario respondio consulta explícita sobre briefing: es SSP3-7.0 2060 debe ser ese",
+    "selection_closed": true,
+    "requested_and_stress_coincide": true,
+    "SSP2": "adicional exploratorio"
+  },
+  "rehearsal": {
+    "status": "pendiente_real",
+    "window_bogota": "14:00–16:00",
     "duration_seconds": null,
-    "timestamp": null,
-    "receipt_template": "PITCH_BORRADOR.md: ficha para ensayo oral real"
+    "person": null,
+    "read_sha256": null,
+    "not_blocking_material_before_14": true
+  },
+  "delivery": {
+    "one_pdf_total": true,
+    "page_limit_total": 2,
+    "methodology_required_by_human": true,
+    "compatibility_alias": "ANEXO_BORRADOR.pdf copia byte-identica; no entregable adicional"
+  },
+  "matrix_counts": {
+    "condicional": 33,
+    "demostrado": 35,
+    "pendiente": 7
+  },
+  "remediation": {
+    "unique_individual_basals_replaced": 30,
+    "repeated_mentions_replaced": 5,
+    "historical_commit_content_not_erased": true,
+    "rights_clearance_certified": false
   }
 }

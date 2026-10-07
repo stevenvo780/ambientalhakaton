@@ -57,4 +57,21 @@ El extracto existente corresponde a **Rionegro/Guarne/Marinilla,21perfiles/357re
 
 ## Verificación por recurso ampliada
 
-También se leyó directamente B7 de las fichasM-E-2897 y de la dimensión desastresM-E-2601; los SHA y alcance están en [uso de fuentes](uso_legal_datos.md). No se presume que todos los documentos tengan idéntico aviso. El hecho de que357registros ya estén publicados no es una autorización ni una excepción jurídica: la revisión de cita, atribución, proporcionalidad y derechos es común al extracto existente y a los90retenidos. Los informes de modelos que contienen basales retenidos se excluyen del lote; no se publican por formar parte de una revisión.
+También se leyó directamente B7 de las fichasM-E-2897 y de la dimensión desastresM-E-2601; los SHA y alcance están en [uso de fuentes](uso_legal_datos.md). No se presume que todos los documentos tengan idéntico aviso. El hecho de que357registros ya estén publicados no es una autorización ni una excepción jurídica: la revisión de cita, atribución, proporcionalidad y derechos es común al extracto existente y a los90retenidos. Los informes de modelos no adquieren autorización por formar parte de una revisión. La auditoría específica del commit externo y su corrección actual se documentan abajo; la intención editorial anterior no prueba ausencia de publicación histórica.
+
+## Auditoría y corrección concreta del extracto publicado
+
+Se cotejaron bytes de cuatro archivos del commit `cd2b08c232257957d8057bfd6db661acdc4d15eb` con SHA y con libro/hoja/celda del conjunto interno. La autoría del commit no permite atribuir aquí quién ejecutó la publicación. No se evalúan otros archivos por extrapolación de patrones.
+
+| Archivo y localizador | Hallazgo confirmado, sin reproducir valores | Tratamiento actual |
+|---|---|---|
+| `ambiente/prioridad_reuso_observatorio_GO.txt`, párrafo basales |30valores individuales normalizados:12agua,6desastres,12bio. Son un subconjunto de90, distinto de357agregados. | Sustituidos por código/hoja/celda yNA; nota de basal retenido/acceso autorizado. |
+| `caso/evaluaciones/claude/informe.md`, corrección punto4 (línea153 original) |3basales individuales GRD, repetidos del conjunto30. CA municipal agregado no se retiró. | Sólo3valores sustituidos por localizadores/NA; resto del contexto conservado. |
+| `entregables/revision_pitch_claude.md`, propuesta p82 del texto |2basales SAT individuales, repetidos del conjunto30. | Sólo2valores sustituidos por localizadores/NA. |
+| `entregables/revision_agy.md` | Códigos y agregados, sin nuevo valor individual localizado. | Sin retirada por coincidencia de regex; revisión histórica no acredita cartera actual. |
+
+Los30registros se localizan por Guarne/Marinilla/Rionegro (filas22/26/29): aguaM-E-2603, SensibilidadD/F y CapacidadAdaptativaD/N; desastresM-E-2601, CapacidadAdaptativaD/J; bioM-E-2637, CapacidadAdaptativaD/H/J/L. B7 fue leído directamente también enagua/bio; sus SHA constan en uso de fuentes. El inventario público conserva conteos/localizadores y omite números retenidos. No se encontraron credenciales ni empresa identificada vinculada con ubicación/resultado individual en estos cuatro textos; esa inspección acotada no certifica todo el repositorio.
+
+La sustitución corrige el contenido corriente hacia la decisión editorial de retener basales individuales; **no elimina el contenido del commit histórico ni acredita permiso de reproducción**. Se preservaron originales y respaldos privados0600; no se reescribió historia. Tampoco se declara infracción jurídica, licencia suficiente o secreto por el solo código. La revisión de atribución/proporcionalidad/aviso B7 aplica también a los357agregados existentes.
+
+SHA del contenido publicado examinado: GO `8c15be813e379b62c6a25d5ab0bd25b2641511afd2589cd105774bf5082cdf88`; Claude `524d6224d92073a84473746bccf0dc20bfac1f073f87e8cc20be2a0495be3314`; AGY `02e704aaafdd4e238cb83cb1ce8dcec585e65973cee689354f16de7bb39cf9dc`; pitchClaude `8ff75e87f344f81a0e62fb8e60d20fa32cb2e7ac39ba865c01982404487cc667`. Los SHA corregidos se identifican en el recibo de publicación, sin equiparar corrección local con push confirmado.
