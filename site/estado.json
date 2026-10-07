@@ -1,6 +1,6 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T20:28:12.872384+00:00",
+  "updated_at": "2026-10-07T15:58:14.959442-05:00",
   "timezone": "America/Bogota",
   "titulo": "Versión POST14: M6-2 principal provisional; revisión y publicación por fases",
   "goal_activada": true,
@@ -24,9 +24,9 @@
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "status": "POST14_M6_2_publicacion_por_fases",
-  "checked_at": "2026-10-07T20:28:12.872384+00:00",
-  "detalle": "M6-2 reúne01/03/04/08/14/15 por COP5000M y seis unidades completas. PSA01 es una unidad de tres años con prioridad Rionegro–Marinilla;08 se propone en Guarne,15 en Marinilla y14 sólo en Rionegro por600M/12meses propuestos. D6 queda como histórico y N1 como comparador4700M/cinco. P3 organiza42 cruces M6-2/N1 y34 variables:14 institucionales primarias y20PROP auxiliares con sus unidades propias. El PDF activo se revisó a dos páginas para esta versión posterior a las14; no reemplaza la fecha de entrega del corte histórico13:58. Las apps conservan el snapshot D6 previo hasta verificar su actualización M6-2.",
-  "source_commit": null,
+  "checked_at": "2026-10-07T20:58:14.959442+00:00",
+  "detalle": "M6-2 reúne01/03/04/08/14/15 por COP5000M y seis unidades completas. PSA01 es una unidad de tres años con prioridad Rionegro–Marinilla;08 se propone en Guarne,15 en Marinilla y14 sólo en Rionegro por600M/12meses propuestos. D6 queda como histórico y N1 como comparador4700M/cinco. P3 organiza42 cruces M6-2/N1 y34 variables:14 institucionales primarias y20PROP auxiliares con sus unidades propias. El PDF activo se revisó a dos páginas para esta versión posterior a las14; no reemplaza la fecha de entrega del corte histórico13:58. Presupuesto Vivo y Territorio Vivo ya muestran M6-2 principal provisional con fuentes inmutables3cc y QA independiente de producción; D6 permanece como histórico y las rutas privadas mantienen sus guardas.",
+  "source_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
   "source_sha256": {
     "entregables/p2_portafolio.md": "af55925fadeeb7cef465e0d8a3993a0b21081e50e9340729c326d85d5c187e55",
     "entregables/p2_portafolio.csv": "63340d6fa57e48045e2786ee502861f543acb6b34be5767995397ddb21cab11b",
@@ -44,7 +44,7 @@
     "01PSA1200M/36meses prioridadR/M;03R/M700;04M/R900;08G800;14R600/12mesesPROP;15M800.",
     "42 cruces M6-2/N1,14 variables institucionales primarias y20PROP auxiliares.",
     "39 demostraciones limitadas/35 condiciones/F01 pendiente; no75 cumplidos.",
-    "Apps todavía snapshot D6 anterior; actualizaciones M6-2 se verifican por versión."
+    "Apps M6-2 verificadas en producción; fuentes3cc, D6 histórico y N1 comparador."
   ],
   "limitations": [
     "M6-2 es una candidata principal provisional; no dominancia global frente a todas las alternativas ni eficacia ambiental demostrada.",
@@ -75,8 +75,9 @@
     },
     {
       "titulo": "Apps de consulta",
-      "estado": "actualizacion_en_curso",
-      "detalle": "M6-2 aún no se atribuye a producción PV/TV. Las consultas D6 históricas permanecen accesibles sin sesión; administración privada protegida."
+      "estado": "produccion_M6_2_QA_independiente_PASS",
+      "detalle": "Presupuesto Vivo y Territorio Vivo ya muestran M6-2 principal provisional con fuentes inmutables3cc y QA independiente de producción; D6 permanece como histórico y las rutas privadas mantienen sus guardas.",
+      "fecha": "2026-10-07T15:50:06-05:00"
     }
   ],
   "PDF_actual": {
@@ -101,6 +102,22 @@
     "estado": "PASS_independiente_nativo",
     "fecha_bogota": "2026-10-07T15:27:00-05:00",
     "PDF_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
-    "alcance": "Texto completo y ambos renders actuales:2A4/53177B legibles sin cortes/solapes. P2v3.8/P3v8.3 comprobados; no eficacia ni ensayo humano ni aval institucional."
+    "alcance": "Texto completo y ambos renders actuales:2A4/53177B legibles sin cortes/solapes. P2v3.8/P3v8.3 comprobados; no eficacia ni ensayo humano ni aval institucional.",
+    "estado_apps": "M6-2_publico_verificado_POST14"
+  },
+  "apps_actuales": {
+    "PV": {
+      "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+      "case": "M6-2 principal provisional; D6 histórico y N1 comparadores",
+      "pin": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "QA": "GET/exportbundle independiente PASS15:47"
+    },
+    "TV": {
+      "url": "https://territorio-vivo-five.vercel.app/resultados",
+      "case": "M6-2/N1",
+      "pin": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "QA": "GET y paridad completos PASS15:50:06",
+      "counts": "21/6/42/34;14 MEA primarias+20 PROP auxiliares"
+    }
   }
 }

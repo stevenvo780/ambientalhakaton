@@ -111,7 +111,7 @@
     <section style="--c:var(--agua)"><h3>Orquestación</h3><p>Codex es el orquestador: asigna frentes, recibe y sintetiza la evidencia. Los ejecutores redactan los productos.</p></section>
     <section style="--c:var(--bosque)"><h3>Frentes científicos</h3><p>Fuentes y cartera (P1/P2, con el mismo responsable); residual (P3); defensa editorial (fuentes, matriz, pitch y PDF). Cada frente escribe sobre sus propios archivos.</p></section>
     <section style="--c:var(--ocre)"><h3>Publicador</h3><p>Único escritor de Git: integra lotes con SHA, publica de main a Vercel y conserva el trabajo de los demás.</p></section>
-    <section style="--c:var(--lila)"><h3>Lectores y revisores</h3><p>Claude Opus 5.5, Muse y Gemini leen y critican. GPT-6.1 Sol hace revisión independiente; Luna actualiza el estado y comprueba la cobertura.</p></section>
+    <section style="--c:var(--lila)"><h3>Lectores y revisores</h3><p>Claude Opus 5.5, Muse y Gemini leen y critican. GPT-6.1 Sol hace revisión independiente. Luna actualizó el estado y comprobó la cobertura hasta las 14:02 y terminó de forma natural, sin reinicio.</p></section>
     <section style="--c:var(--coral)"><h3>Personas</h3><p>Ariadna (ingeniera ambiental) lidera la exposición; Brahyam (ingeniero ambiental) sostiene la defensa; Steven (desarrollador) explica las herramientas. Revisión y ensayo humanos: 14:00–16:00, pendientes.</p></section>
   </div>
   <details class="detalle" open>
@@ -119,7 +119,7 @@
     <ul class="libro">
       <li><span class="tipo dato" data-tip="Regla documentada del plan de ejecución.">Dato</span><span>Un escritor por archivo: cada agente entrega su lote con lista exacta y SHA256; nadie sobrescribe a otro.</span></li>
       <li><span class="tipo dato">Dato</span><span>Manifiestos SHA congelan versiones de P1, P2, P3, pitch y PDF; una discrepancia de hash detiene la integración hasta resolverla.</span></li>
-      <li><span class="tipo dato">Dato</span><span>Publicación: Git en main → despliegue en Vercel. El actualizador Luna corre en ciclos de 180 s; se observaron dos ciclos.</span></li>
+      <li><span class="tipo dato">Dato</span><span>Publicación: Git en main → despliegue en Vercel. El actualizador Luna corrió en ciclos de 180 s (se observaron dos) hasta las 14:02 y terminó de forma natural, sin reinicio.</span></li>
       <li><span class="tipo inferencia">Inferencia</span><span>Varias lecturas independientes reducen errores de transcripción e interpretación, pero no sustituyen revisión institucional ni medición.</span></li>
       <li><span class="tipo faltante">Faltante</span><span>Ensayo oral cronometrado y revisión humana final, durante el estudio de 14:00 a 16:00.</span></li>
     </ul>
@@ -277,12 +277,12 @@
     <section class="tarjeta" style="--c:var(--agua)">
       <h3>Presupuesto Vivo · principal</h3>
       <p>Apoyo para la cuenta de carteras con costos indivisibles y la comparación de alternativas.</p>
-      <p><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">Consulta abierta</a> (opera sobre el snapshot D6 previo; M6-2 aún no está en la app pública): D6 5.000/6, N1 4.700/5 y 14R con 12 meses propuestos. La exportación JSON/CSV pasó el QA de producción; la administración está protegida y requiere cuenta.</p>
+      <p><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">Consulta abierta</a>: M6-2 actual, verificada POST-14 y fijada al corte 3cc: 5.000/6, con D6 como comparador histórico, N1 4.700/5 y 14R con 12 meses propuestos. Exportación JSON/CSV verificada; la administración está protegida y requiere cuenta.</p>
     </section>
     <section class="tarjeta" style="--c:var(--bosque)">
       <h3>Territorio Vivo · apoyo</h3>
       <p>Apoyo para la evidencia territorial y el seguimiento.</p>
-      <p><a href="https://territorio-vivo-five.vercel.app/resultados">Consulta abierta</a> (opera sobre el snapshot D6 previo; M6-2 aún no está en la app pública): 21 perfiles, 6 unidades de D6 y 42 cruces documentales, con filtros por N1 y municipio, sobre un snapshot fijado (84b0199), no sobre el estado actual. Las rutas privadas y la administración están protegidas. Muestra datos y cruces; no acredita seguimiento ejecutado ni eficacia.</p>
+      <p><a href="https://territorio-vivo-five.vercel.app/resultados">Consulta abierta</a>: M6-2 actual, verificada POST-14 y fijada al corte 3cc: 21 perfiles, 6 unidades de M6-2, 42 cruces documentales y 34 variables (14 primarias y 20 auxiliares), con filtros por N1 y municipio. Las rutas privadas y la administración están protegidas. Muestra datos y cruces; no acredita seguimiento ejecutado ni eficacia.</p>
     </section>
   </div>
   <p><span class="tipo calculo">Cálculo</span> La enumeración es reproducible con <code>caso/comparar_presupuesto.py</code> sobre <code>caso/catalogo_costos_reto.csv</code>. <span class="tipo faltante">Límite</span> Las pruebas de software acreditan preparación técnica, no productos ambientales ni eficacia.</p>

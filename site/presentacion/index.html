@@ -7,7 +7,9 @@
 <meta name="description" content="Presentación de 7 minutos en total: el fondo de 5.000 millones como un río que se reparte en seis unidades, hallazgos, tablero de carteras, empate de máximas, escenario SSP3-7.0/2060, residual y límites.">
 <meta name="theme-color" content="#0b2a2b">
 <link rel="stylesheet" href="../exposicion-assets/expo.css">
+<link rel="stylesheet" href="../exposicion-assets/explicaciones-m62.css">
 <script defer src="../exposicion-assets/datos.js"></script>
+<script defer src="../exposicion-assets/explicaciones-m62.js"></script>
 <script defer src="../exposicion-assets/expo.js"></script>
 </head>
 <body data-vista="presentacion">
@@ -31,8 +33,8 @@
   <button type="button" class="tramo" data-ir="2" data-fin="190" style="--s:80"><span class="t">1:50</span><span class="n">3 Cartera y sacrificios</span></button>
   <button type="button" class="tramo" data-ir="3" data-fin="240" style="--s:50"><span class="t">3:10</span><span class="n">4 Pertinencia y actores</span></button>
   <button type="button" class="tramo" data-ir="4" data-fin="300" style="--s:60"><span class="t">4:00</span><span class="n">5 Horizonte SSP3-7.0</span></button>
-  <button type="button" class="tramo" data-ir="5" data-fin="380" style="--s:80"><span class="t">5:00</span><span class="n">6 Residual y seguimiento</span></button>
-  <button type="button" class="tramo" data-ir="6" data-fin="420" style="--s:40"><span class="t">6:20</span><span class="n">7 Cierre</span></button>
+  <button type="button" class="tramo" data-ir="5" data-fin="355" style="--s:55"><span class="t">5:00</span><span class="n">6 Residual y seguimiento</span></button>
+  <button type="button" class="tramo" data-ir="6" data-fin="420" style="--s:65"><span class="t">5:55</span><span class="n">7 Método y cierre</span></button>
   <span class="fuera">7:00 · luego preguntas</span>
 </nav>
 
@@ -47,7 +49,8 @@
     <p class="aviso">Candidata principal provisional, la más fundada según P2 POST-14, no dominante: elegibilidad y cupos siguen condicionados. D6, decisión del corte de las 13:58, queda como comparador histórico. No hemos demostrado que reduzca más la vulnerabilidad que otra cartera.</p>
   </div>
   <figure class="figura" data-componente="rio" data-cartera="M62">
-    <figcaption class="fuente">El río representa el presupuesto, no agua ni caudal. Representación conceptual: el grosor de cada brazo es proporcional a su costo (catálogo del reto, enunciado p. 5). El porcentaje es asignación del presupuesto, no eficacia.</figcaption>
+    <div class="explica" data-m62-explain="decision" hidden></div>
+    <figcaption class="fuente">Representación conceptual del presupuesto, no de agua ni caudal: cada unidad ocupa su costo sobre 5.000 M (catálogo del reto, enunciado p. 5). El porcentaje es asignación del presupuesto, no eficacia.</figcaption>
   </figure>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
@@ -90,6 +93,7 @@
     <h2 id="h3a">M6-2 frente a D6 histórica y N1: costo y lugar propuesto en cada municipio.</h2>
     <p class="bajada">M6-2: seis unidades, 5.000, saldo 0. D6 (histórica): seis, 5.000. N1: cinco, 4.700, saldo 300, que no es una reserva obligada.</p>
     <p class="aviso"><b>14 es una sola unidad municipal en Rionegro</b>: 600 M y 12 meses operativos propuestos desde una futura acta. No financia programas en Guarne ni Marinilla, ni un SAT completo. Solo 14R tiene ese plazo propuesto.</p>
+    <div class="explica" data-m62-explain="tablero" hidden></div>
     <p class="fuente">03 y 04 son propuestas existentes del corredor y Marinilla–Rionegro. En N1, 01 y 05 no tienen localización municipal acreditada: van a la bandeja de pendientes, sin dibujar cobertura.</p>
   </div>
   <div class="figura" data-componente="comparacion"></div>
@@ -112,7 +116,10 @@
     <p>Marinilla suma 15 salud y la prioridad de 01; los sitios siguen pendientes. En Guarne, 08 no resuelve la infraestructura vulnerable.</p>
     <p class="aviso">01 + 15 = 2.000 M, el 40 % del presupuesto, sustituyen a 07 y 09. Son porcentajes de presupuesto, no impacto. P3 v8.3: 01 no acredita caudal ni sustituye 05; 15 requiere diagnóstico y protocolo municipal, sin código MEA de salud verificado.</p>
   </div>
-  <div class="figura" data-componente="comparacion" data-modo="diferencia"></div>
+  <div class="figura">
+    <div data-componente="comparacion" data-modo="diferencia"></div>
+    <div class="explica ancho" data-m62-explain="intercambio" hidden></div>
+  </div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
     <dl>
@@ -134,6 +141,7 @@
   <div class="figura">
     <div data-componente="maximas"></div>
     <p class="aviso"><b>HIP7</b> (hipótesis de cupo 3 para 14, no oficial ni adoptada): frente a M6-2 retira 01 PSA (1.200 M, 24 %) y añade 14G y 14M, con pertinencia pendiente. El modelo considera 17 ítems o alternativas (no son las 17 fichas MEA); la cartera hipotética selecciona 7 unidades de 5 tipos. Contar más no es más eficacia.</p>
+    <div class="explica ancho" data-m62-explain="pertinencia" hidden></div>
   </div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
@@ -166,13 +174,13 @@
 <!-- 6 · 5:00–6:20 -->
 <section class="lamina" id="residual" data-tramo="5" data-habla="Ariadna conduce" aria-labelledby="h6">
   <div class="texto">
-    <p class="bloque"><b>Bloque 6</b>, 5:00–6:20</p>
+    <p class="bloque"><b>Bloque 6</b>, 5:00–5:55</p>
     <h2 id="h6">El residual queda escrito, con el dato que nos haría cambiar.</h2>
     <div class="cifras">
       <p><b>42</b>cruces documentales M6-2/N1 × 3 municipios × 7 dimensiones; no son cobertura</p>
       <p><b>34</b>variables: 14 códigos institucionales verificados (base primaria de seguimiento MEA) y 20 PROP auxiliares operativas, sin equivalencia MEA</p>
     </div>
-    <p class="fuente">Pedimos servicio/activo, respaldo, interrupción tolerable, recuperación y afectados; no inventamos dependencias por proximidad. La ficha sigue en el MEA existente; no hemos cargado datos.</p>
+    <div class="explica" data-m62-explain="residual" hidden></div>
   </div>
   <div class="figura">
     <div data-componente="reapertura" data-modo="oral" data-base="M62"></div>
@@ -186,6 +194,7 @@
       </div>
     </div>
     <p class="fuente">Escalera 3D conceptual: no representa magnitudes. Sin basal física fechada (T0) no anunciamos reducción.</p>
+    <p class="fuente">Pedimos servicio/activo, respaldo, interrupción tolerable, recuperación y afectados; no inventamos dependencias por proximidad. La ficha sigue en el MEA existente; no hemos cargado datos.</p>
   </div>
   <aside class="notas" aria-label="Notas de estudio">
     <h3>Notas de estudio</h3>
@@ -196,7 +205,44 @@
   </aside>
 </section>
 
-<!-- 7 · 6:20–7:00 -->
+<!-- 7a · 5:55–6:20 método (25 s) -->
+<section class="lamina" id="metodo" data-tramo="6" data-habla="Ariadna conduce · Steven apoya en preguntas" aria-labelledby="h7m">
+  <div class="texto">
+    <p class="bloque"><b>Bloque 7</b>, 5:55–6:20 · cómo llegamos</p>
+    <h2 id="h7m">Cómo llegamos: fuentes, agentes en paralelo, revisión independiente y decisión humana.</h2>
+    <ul class="libro">
+      <li><span class="tipo dato">Qué hacer</span><span>Elegir una cartera completa dentro de 5.000 M, explicar sus sacrificios y su residual, y dejar un seguimiento verificable.</span></li>
+      <li><span class="tipo calculo">Cómo</span><span>Fuentes citadas por celda, un escritor por archivo con SHA, cálculo reproducible, revisión independiente y decisión final humana.</span></li>
+    </ul>
+    <p class="fuente">Las flechas indican el orden del trabajo, no causalidad. La tecnología acredita proceso y trazabilidad, no eficacia.</p>
+  </div>
+  <div class="figura">
+    <ol class="flujo" aria-label="Proceso de trabajo">
+      <li><a href="../metodologia/#fuentes"><b>Fuentes</b><small>Enunciado, matriz, fichas</small></a></li>
+      <li><a href="../metodologia/#orquestacion"><b>Agentes en paralelo</b><small>Frentes P1/P2, P3 y editorial</small></a></li>
+      <li><a href="../metodologia/#cartera"><b>Cálculo y contraste</b><small>Enumeración y SSP3-7.0</small></a></li>
+      <li><a href="../metodologia/#orquestacion"><b>QA independiente</b><small>Lectores y revisores</small></a></li>
+      <li><a href="../metodologia/#verificacion"><b>P1 · P2 · P3</b><small>Productos con SHA</small></a></li>
+      <li><a href="../metodologia/#post14"><b>Decisión humana</b><small>M6-2 provisional</small></a></li>
+      <li><a href="../metodologia/#software"><b>Consulta pública</b><small>Repositorio, PV y TV</small></a></li>
+    </ol>
+    <div class="roles">
+      <section style="--c:var(--agua)"><h3><a href="https://github.com/stevenvo780/ambientalhakaton/tree/main">Análisis por capas y orquestación</a></h3><p>Este repositorio sustenta la decisión: fuentes, P1–P3, cálculo y SHA. Detalle en la <a href="../metodologia/">metodología</a>.</p></section>
+      <section style="--c:var(--bosque)"><h3><a href="https://presupuesto-vivo-chi.vercel.app/hackathon">Presupuesto Vivo</a></h3><p>Apoyo de presupuesto. Muestra M6-2 actual, verificada POST-14; D6 como comparador histórico.</p></section>
+      <section style="--c:var(--ocre)"><h3><a href="https://territorio-vivo-five.vercel.app/resultados">Territorio Vivo</a></h3><p>Apoyo de territorio y seguimiento. Muestra M6-2 actual, verificada POST-14: 21 perfiles, 42 cruces y 34 variables.</p></section>
+    </div>
+  </div>
+  <aside class="notas" aria-label="Notas de estudio">
+    <h3>Notas de estudio</h3>
+    <dl>
+      <dt>Frase oral (≤ 25 s)</dt><dd>«Así llegamos: partimos de las fuentes oficiales, trabajamos en frentes paralelos con un responsable por archivo, recalculamos y contrastamos con SSP3, pasamos revisión independiente y la decisión final fue humana. Todo es consultable en el repositorio, Presupuesto Vivo y Territorio Vivo.»</dd>
+      <dt>No decir</dt><dd>«Los agentes demostraron eficacia», «las apps prueban eficacia».</dd>
+      <dt>Responde</dt><dd>Steven (herramientas y repositorio); Brahyam (límites).</dd>
+    </dl>
+  </aside>
+</section>
+
+<!-- 7b · 6:20–7:00 -->
 <section class="lamina ancha" id="cierre" data-tramo="6" data-habla="Ariadna cierra · preguntas: Brahyam y Steven" aria-labelledby="h7">
   <div class="texto">
     <p class="bloque"><b>Bloque 7</b>, 6:20–7:00</p>

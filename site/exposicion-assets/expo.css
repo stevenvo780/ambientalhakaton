@@ -181,6 +181,10 @@ svg{max-width:100%}
 .ssp .resid .traza{stroke:var(--coral)}
 .ssp .mov{transition:transform .8s cubic-bezier(.3,.7,.2,1)}
 .ssp .traza{transition:x2 .8s cubic-bezier(.3,.7,.2,1)}
+.ssp-lista{display:none;list-style:none;margin:.4rem 0 0;padding:0;gap:.3rem}
+.ssp-lista li{display:grid;grid-template-columns:minmax(0,1fr);border-left:4px solid var(--agua);padding:.25rem .5rem;background:var(--panel);font-size:.84rem;line-height:1.3}
+.ssp-lista li.resid{border-left-color:var(--coral)}
+.ssp-lista span{font-variant-numeric:tabular-nums}
 .valores-r{display:flex;flex-wrap:wrap;gap:.3rem 1.4rem;margin:.6rem 0 0;font-size:.82rem}
 .valores-r b{font-family:var(--serif);font-size:1.25rem;display:block}
 
@@ -278,6 +282,8 @@ svg{max-width:100%}
 .hallazgos li{display:grid;grid-template-columns:2.2rem minmax(0,1fr);gap:.4rem;margin:.38rem 0;font-size:.84rem;line-height:1.3}
 .hallazgos li>b{font-family:var(--serif);color:var(--ocre);font-size:1rem}
 .hallazgos .f{display:block;color:var(--agua);font-size:.76rem}
+.hallazgos li{transition:background-color .3s}
+.hallazgos li.activo{background:color-mix(in srgb,var(--ocre) 16%,transparent);border-radius:4px}
 .matriz td[data-h]::after{content:attr(data-h);position:absolute;top:-.55rem;right:-.15rem;background:var(--ocre);color:var(--fondo);font-size:.6rem;font-weight:700;padding:0 .25rem;border-radius:3px;line-height:1.4}
 .comp .cambios{margin:-.3rem 0 .2rem 6.7rem}
 
@@ -396,8 +402,8 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   .banda,.banda.mr{grid-column:1/-1}
   .max{grid-template-columns:minmax(0,1fr) auto;gap:.15rem .5rem}
   .max .pila{grid-column:1/-1;grid-row:2}
-  .ssp-caja{overflow-x:auto}
-  .ssp{min-width:640px}
+  .ssp{display:none}
+  .ssp-lista{display:grid}
   .escalera{height:12rem}
   .qa{grid-template-columns:minmax(0,1fr)}
   .libro li{grid-template-columns:minmax(0,1fr);gap:.2rem}
@@ -412,6 +418,7 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   .llave56 span{white-space:normal;width:max(100%,12rem)}
   .comp .max.d6{margin-bottom:2.4rem}
   .muni-oral{grid-template-columns:minmax(0,1fr)}
+  body[data-vista="presentacion"] .explica.ancho .m62-explain,body[data-vista="presentacion"] .explica.franja .m62-explain{display:flex}
   .flujo{grid-template-columns:minmax(0,1fr);gap:1.1rem}
   .flujo li+li::before,.flujo li:nth-child(5)::before{display:block;left:1.2rem;top:-1rem;width:0;height:.8rem;border-top:0;border-left:2px dashed var(--texto-2)}
   .flujo li+li::after,.flujo li:nth-child(5)::after{display:block;left:calc(1.2rem - 5px);top:-.35rem;border-left:6px solid transparent;border-right:6px solid transparent;border-top:7px solid var(--texto-2);border-bottom:0}
@@ -419,14 +426,37 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   .capas-caja .capas{grid-row:auto}
   .ejemplos{font-size:.76rem}
 }
+/* Explicaciones M6-2 (archivos del helper): caja compacta dentro de la columna de texto de la presentación. */
+body[data-vista="presentacion"] .explica{margin-top:.6rem}
+body[data-vista="presentacion"] .explica .m62-explain{font-size:12.5px;padding:8px 10px;gap:6px;border-radius:10px}
+body[data-vista="presentacion"] .explica .m62-explain .m62-svg{max-height:170px}
+body[data-vista="presentacion"] .explica.franja{grid-column:1/-1;margin-top:0}
+body[data-vista="presentacion"] .explica.franja .m62-explain{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);align-items:center;column-gap:16px;row-gap:4px}
+body[data-vista="presentacion"] .explica.franja .m62-explain .m62-svg{grid-row:span 4;max-height:150px}
+/* Sin duplicar lo que la lámina ya muestra; se conservan animación, advertencias, resultado condicional y nota conceptual. */
+body[data-vista="presentacion"] .explica .m62-head,
+body[data-vista="presentacion"] .explica [data-scene="decision"] .m62-cards,
+body[data-vista="presentacion"] .explica [data-scene="decision"] .m62-row,
+body[data-vista="presentacion"] .explica [data-scene="tablero"] .m62-cards,
+body[data-vista="presentacion"] .explica [data-scene="pertinencia"] .m62-cards,
+body[data-vista="presentacion"] .explica [data-scene="residual"] .m62-cards,
+body[data-vista="presentacion"] .explica [data-scene="residual"] .m62-row+.m62-row,
+body[data-vista="presentacion"] .explica [data-scene="sacrificios"] .m62-card:not(:last-child){display:none}
+/* En la columna derecha: SVG a la izquierda y notas a la derecha para ahorrar alto. */
+/* Lámina 1: la animación del helper sustituye al SVG del río solo si se montó; la leyenda queda siempre visible. */
+body[data-vista="presentacion"] #decision .figura:has(.m62-explain) .sankey{display:none}
+body[data-vista="presentacion"] #decision .explica{margin:.2rem 0 .4rem}
+body[data-vista="presentacion"] #decision .explica .m62-explain .m62-svg{max-height:240px}
+body[data-vista="presentacion"] .explica.ancho .m62-explain{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:start;column-gap:12px;row-gap:6px}
+body[data-vista="presentacion"] .explica.ancho .m62-explain .m62-svg{grid-row:span 4;max-height:176px}
 /* Escritorio general (p. ej. 1440×900): el río de la escena 1 no supera la mitad del alto para que la leyenda quepa completa. */
 @media (min-width:981px){
   body[data-vista="presentacion"] .sankey{max-height:50vh}
   body[data-vista="presentacion"] .leyenda-unidades{margin-top:.35rem}
   body[data-vista="presentacion"] .leyenda-unidades li{padding:.18rem 0}
 }
-/* Proyector de poca altura (p. ej. 1280×720): solo presentación de escritorio; compacta sin ocultar datos. */
-@media (min-width:981px) and (max-height:800px){
+/* Escritorio de poca altura (hasta 920 px: 1280×720 y 1440×900): solo presentación; compacta y escalera en 2D, sin ocultar datos. */
+@media (min-width:981px) and (max-height:920px){
   body[data-vista="presentacion"]{font-size:17px}
   body[data-vista="presentacion"] .barra-sup{padding:.2rem var(--gutter);font-size:.68rem;gap:.2rem 1rem}
   body[data-vista="presentacion"] .raiz{font-size:.95rem}
@@ -438,7 +468,7 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   body[data-vista="presentacion"] .pie button{padding:.15rem .7rem}
   body[data-vista="presentacion"] .lamina{padding:.6rem var(--gutter) .5rem;gap:1.5rem}
   body[data-vista="presentacion"] .bloque{margin-bottom:.25rem}
-  body[data-vista="presentacion"] .lamina h1,body[data-vista="presentacion"] .lamina h2{font-size:clamp(1.45rem,4.3vh,2.4rem);margin-bottom:.45rem}
+  body[data-vista="presentacion"] .lamina h1,body[data-vista="presentacion"] .lamina h2{font-size:clamp(1.45rem,4vh,2.4rem);margin-bottom:.45rem}
   body[data-vista="presentacion"] .bajada{font-size:.98rem;margin-bottom:.45rem}
   body[data-vista="presentacion"] .aviso{margin:.4rem 0;padding:.3rem .6rem;font-size:.8rem}
   body[data-vista="presentacion"] .fuente{margin-top:.3rem}
@@ -467,6 +497,11 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   body[data-vista="presentacion"] .estados ul{font-size:.82rem}
   body[data-vista="presentacion"] .qa li{padding:.22rem 0;font-size:.76rem}
   body[data-vista="presentacion"] .equipo{margin:.35rem 0}
+  body[data-vista="presentacion"] .explica{margin-top:.35rem}
+  body[data-vista="presentacion"] .explica .m62-explain{font-size:12px;padding:6px 8px;gap:4px}
+  body[data-vista="presentacion"] .explica.ancho .m62-explain .m62-svg{max-height:150px}
+  body[data-vista="presentacion"] #decision .explica .m62-explain .m62-svg{max-height:200px}
+  body[data-vista="presentacion"] .max .pila{height:1.5rem}
 }
 @media print{
   .barra-sup .controles,.pie,.rio{display:none}

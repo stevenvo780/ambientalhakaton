@@ -72,7 +72,7 @@
   "version_principal_M6_2_POST14": {
     "preparado_bogota": "2026-10-07T15:28:12.872384-05:00",
     "decision_bogota": "2026-10-07T14:53:00-05:00",
-    "estado": "fuentes_congeladas_para_publicacion_por_fases",
+    "estado": "CORE_publicado_y_apps_actualizadas_UI10_en_cierre_QA",
     "principal": "M6-2_provisional",
     "unidades": [
       "01",
@@ -117,7 +117,7 @@
       "sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
       "nota": "El query antiguo no garantiza bytes históricos cuando se reemplaza el archivo activo. La historia se consulta en el commit inmutable."
     },
-    "software": "Producción conserva D6 previo hasta verificar M6-2; no se atribuye el nuevo caso a QA antigua.",
+    "software": "Presupuesto Vivo y Territorio Vivo muestran M6-2 principal provisional, con fuentes inmutables3cc y QA independiente de producción registrada; D6 permanece histórico.",
     "alcance": [
       "M6-2 es una candidata principal provisional; no dominancia global frente a todas las alternativas ni eficacia ambiental demostrada.",
       "Elegibilidad local y regla de repetición/cupo siguen condicionadas.",
@@ -127,13 +127,77 @@
       "B7 y derechos de reproducción mantienen su alcance específico; no se publican nuevos basales individuales retenidos."
     ],
     "sem_estados_sin_promocion": "39/35/1",
-    "fecha_publicacion_real": null,
-    "commit_fuentes_publicadas": null
+    "fecha_publicacion_real": "2026-10-07T15:33:34-05:00",
+    "commit_fuentes_publicadas": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "verificacion_http_core": {
+      "at_bogota": "2026-10-07T15:37:00-05:00",
+      "deployment_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "pdf_status": 200,
+      "pdf_bytes": 53177,
+      "pdf_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+      "scope": "CORE y PDF; helper/escena adicional y apps M6-2 pendientes de sus propios cortes y QA."
+    },
+    "apps_actualizacion": {
+      "PV": {
+        "estado": "produccion_READY_con_QA_GET_y_export_independiente",
+        "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+        "deployment_url": "https://presupuesto-vivo-kmezz7wu9-stevenvo780s-projects.vercel.app",
+        "source_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+        "paquete_sha256": "eea73f6d6c84584e0d1fb44ac251cd76a146c7aaa7bb7e89bd7d932c17b36fa7",
+        "manifest_sha256": "a840d9c3814f71325f4dfb965be9adbb8f3bcec13654cf71bf8f80abda9f294f",
+        "at_bogota": "2026-10-07T15:45:00-05:00",
+        "scope": "Consulta M6-2 principal, D6 histórico y N1; export JSON/CSV reproducible. API privadas401; guard dashboard es cliente. No eficacia/eligibilidad/DB."
+      },
+      "TV": {
+        "estado": "produccion_READY_QA_GET_independiente_PASS",
+        "url": "https://territorio-vivo-five.vercel.app/resultados",
+        "deployment_url": "https://territorio-vivo-a68f7ekif-stevenvo780s-projects.vercel.app",
+        "source_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+        "snapshot_sha256": "fa5f765dde8e0c2d55594c27c82db3db1baeecaf499fb292e14dd37bcde7e549",
+        "at_bogota": "2026-10-07T15:50:06-05:00",
+        "scope": "21 perfiles/6 unidades M6-2/42 cruces M6-2 y N1/34 variables=14 MEA primarias+20 PROP auxiliares. Cuatro fuentes CSV pin3cc GET200/SHA exactos, privadas401, sin cookies. Sin medición/eficacia/custodios certificados.",
+        "prueba_acotada_actual": {
+          "at_bogota": "2026-10-07T15:50:15-05:00",
+          "tests": 4,
+          "exit": 0,
+          "scope": "Sólo archivo existente, una expectativa URL actualizada; runtime JSON y guardas intactos.",
+          "manifest_sha256": "8e1c75e4066acddd35ab12da9198acf612b6f9f332d7fd6ae5df23da0fce6497"
+        }
+      }
+    }
   },
   "revision_documental_M6_2": {
     "estado": "PASS_independiente_nativo",
     "fecha_bogota": "2026-10-07T15:27:00-05:00",
     "PDF_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
     "alcance": "Texto completo y ambos renders actuales:2A4/53177B legibles sin cortes/solapes. P2v3.8/P3v8.3 comprobados; no eficacia ni ensayo humano ni aval institucional."
+  },
+  "PATCH_visual10_POST14": {
+    "preparado_bogota": "2026-10-07T15:57:31.432221-05:00",
+    "estado": "QA_independiente_PASS_preparado_para_push",
+    "escenas": 10,
+    "bloques_orales": 7,
+    "duracion_plan_segundos": 420,
+    "ensayo_real": "pendiente_de_recibo",
+    "fuentes_core_commit": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+    "archivos_sha256": {
+      "site/presentacion/index.html": "bc24c2afd0d37abffcdce2b9e4ee5d8a2c46d673982e677959b722bde6a79416",
+      "site/metodologia/index.html": "a8c1312bddd351e38280242a736dc58ee68db98823d8a020ec9dd2270e55eff8",
+      "site/exposicion-assets/expo.css": "b66d1b0ba5fa0527e1ab8301c8b9e60325afa665cdd1f3fb8d24c14a5e968927",
+      "site/exposicion-assets/expo.js": "f88362160f4b8a06d4c37f21fcbb2a7e1279892759f36c85f2821973b265aa31",
+      "site/exposicion-assets/datos.js": "f038b300c2fb9fe7eb5e913490dc0c85926ca2f3066ebbfc954f4321fcb39251",
+      "site/exposicion-assets/LEEME.md": "38dc2ba60eb59129ca9a190cacd17c592c99f10ea92025a8c09d03fd4d13f0d6",
+      "site/exposicion-assets/explicaciones-m62.js": "37cf8251dd29be2ddc779de30e771522384464f4d86267fdaba100de22e5053d",
+      "site/exposicion-assets/explicaciones-m62.css": "7fbb62ac55574261399ae391d1f375e262de4914c6ad807b88dd4c0346254e72"
+    },
+    "PITCH_sha256": "7471e1dc26fe4569bef368a638b2f08c090cda152eda3e8f28a8f06e14790b0d",
+    "limite": "Animaciones conceptuales y explicación de mecanismos/beneficio esperado; no eficacia ambiental ni elegibilidad certificadas. Tres artefactos: repositorio análisis/orquestación, Presupuesto Vivo y Territorio Vivo.",
+    "QA_visual": {
+      "at_bogota": "2026-10-07T16:08:00-05:00",
+      "estado": "PASS_independiente_acotado",
+      "alcance": "10/10 escenas sóloNext a1280x720 y1440x900; microetiquetas intercambio37cf legibles; recorrido390sin overflowexterno y escena6SSP vertical ref→SSP3 sin scrollhorizontal. Nextvisible/funcional. Sin fallosmateriales pendientes. Parche móvilmax640 conservaPASSdesktop.",
+      "limites": "Reduced-motion soportado estáticamente, sin emulador runtime. Siete minutos son plan; no ensayo humano ni eficacia ambiental."
+    },
+    "preparado_para_publicacion_bogota": "2026-10-07T16:07:28.959463-05:00"
   }
 }

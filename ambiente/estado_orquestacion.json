@@ -1,7 +1,7 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T20:28:12.872384+00:00",
-  "updated_at_bogota": "2026-10-07T15:28:12.872384-05:00",
+  "updated_at_utc": "2026-10-07T20:58:14.959442+00:00",
+  "updated_at_bogota": "2026-10-07T15:58:14.959442-05:00",
   "timezone": "America/Bogota",
   "estado": "POST14_M6_2_publicacion_por_fases_goal_activa",
   "goal": {
@@ -56,7 +56,7 @@
     "E2E_navegador_completo": false
   },
   "entrega_ambiental": {
-    "estado": "M6-2 reúne01/03/04/08/14/15 por COP5000M y seis unidades completas. PSA01 es una unidad de tres años con prioridad Rionegro–Marinilla;08 se propone en Guarne,15 en Marinilla y14 sólo en Rionegro por600M/12meses propuestos. D6 queda como histórico y N1 como comparador4700M/cinco. P3 organiza42 cruces M6-2/N1 y34 variables:14 institucionales primarias y20PROP auxiliares con sus unidades propias. El PDF activo se revisó a dos páginas para esta versión posterior a las14; no reemplaza la fecha de entrega del corte histórico13:58. Las apps conservan el snapshot D6 previo hasta verificar su actualización M6-2.",
+    "estado": "M6-2 reúne01/03/04/08/14/15 por COP5000M y seis unidades completas. PSA01 es una unidad de tres años con prioridad Rionegro–Marinilla;08 se propone en Guarne,15 en Marinilla y14 sólo en Rionegro por600M/12meses propuestos. D6 queda como histórico y N1 como comparador4700M/cinco. P3 organiza42 cruces M6-2/N1 y34 variables:14 institucionales primarias y20PROP auxiliares con sus unidades propias. El PDF activo se revisó a dos páginas para esta versión posterior a las14; no reemplaza la fecha de entrega del corte histórico13:58. Presupuesto Vivo y Territorio Vivo ya muestran M6-2 principal provisional con fuentes inmutables3cc y QA independiente de producción; D6 permanece como histórico y las rutas privadas mantienen sus guardas.",
     "productos": [
       "P1",
       "P2",
@@ -231,6 +231,71 @@
     "duracion_total_maxima_minutos": 7
   },
   "software_publico": {
+    "PV": {
+      "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+      "case": "M6-2 principal provisional; D6 histórico y N1 comparadores",
+      "pin": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "QA": "GET/exportbundle independiente PASS15:47"
+    },
+    "TV": {
+      "url": "https://territorio-vivo-five.vercel.app/resultados",
+      "case": "M6-2/N1",
+      "pin": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+      "QA": "GET y paridad completos PASS15:50:06",
+      "counts": "21/6/42/34;14 MEA primarias+20 PROP auxiliares"
+    }
+  },
+  "actualizacion_post14": {
+    "decision_bogota": "2026-10-07T14:53:00-05:00",
+    "core_freeze_P2_bogota": "2026-10-07T15:20:29-05:00",
+    "core_freeze_P3_bogota": "2026-10-07T15:10:51-05:00",
+    "PDF_freeze_bogota": "2026-10-07T15:25:26-05:00",
+    "fuentes_sha256": {
+      "entregables/p2_portafolio.md": "af55925fadeeb7cef465e0d8a3993a0b21081e50e9340729c326d85d5c187e55",
+      "entregables/p2_portafolio.csv": "63340d6fa57e48045e2786ee502861f543acb6b34be5767995397ddb21cab11b",
+      "entregables/p2_justificacion.md": "63734229fd62c217e90db62c274b39a0183602bda676de2eaa1b627b07a9ed61",
+      "entregables/comparacion_incremental_carteras.md": "6490118457cc9ab8d83fa6ff8768adea9c2c2080c7a118c71d35fa01ab60e470",
+      "entregables/p2_comparacion_financiera.md": "7ac9d9ad87ab2b008d9e94b893536fedfec60ab02ae4a1a31fb8d3f4fe3a7d54",
+      "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
+      "entregables/p3_riesgo_residual.md": "edcef4a66b599486efff2c3052317ebb18c8ad146944804a326424cf6bc71124",
+      "entregables/p3_riesgo_residual.csv": "eb0c9933c7fde4b2296ec52fb0f255164e855f2fbef0615dcf91008575d8e2c6",
+      "entregables/variables_seguimiento.csv": "d03c83b1b314c6821b949d728e021e4ab32627078c25d3723e4c7c16a9bdc592"
+    },
+    "alcance": [
+      "M6-2 es una candidata principal provisional; no dominancia global frente a todas las alternativas ni eficacia ambiental demostrada.",
+      "Elegibilidad local y regla de repetición/cupo siguen condicionadas.",
+      "Los75 IDs son un desglose interno distinto de los8 criterios del jurado;35 condiciones no equivalen a35 fallos del jurado.",
+      "T0 físico de sitios propuestos, actas y efectos futuros no son exigencias para formular esta propuesta prospectiva; su seguimiento posterior sigue condicionado.",
+      "F01: ensayo humano pendiente de recibo. Siete minutos son el plan oral, no una prueba de ensayo.",
+      "B7 y derechos de reproducción mantienen su alcance específico; no se publican nuevos basales individuales retenidos."
+    ],
+    "estado_apps": "M6-2_produccion_ambas_QA_independiente_PASS",
+    "corte_antes14_historico_commit": "82f354888469cafedf06623c862845735cf2fbe9",
+    "PDF_historico_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/82f354888469cafedf06623c862845735cf2fbe9/entregables/ANEXO_METODOLOGICO.pdf",
+    "fecha_publicacion_actual": "pendiente_commit_real",
+    "apps_verificadas": {
+      "PV": {
+        "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
+        "case": "M6-2 principal provisional; D6 histórico y N1 comparadores",
+        "pin": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+        "QA": "GET/exportbundle independiente PASS15:47"
+      },
+      "TV": {
+        "url": "https://territorio-vivo-five.vercel.app/resultados",
+        "case": "M6-2/N1",
+        "pin": "3cc22a90ad1d21c7a9a7987cd5d8a531ca81580d",
+        "QA": "GET y paridad completos PASS15:50:06",
+        "counts": "21/6/42/34;14 MEA primarias+20 PROP auxiliares"
+      }
+    }
+  },
+  "revision_documental_M6_2": {
+    "estado": "PASS_independiente_nativo",
+    "fecha_bogota": "2026-10-07T15:27:00-05:00",
+    "PDF_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+    "alcance": "Texto completo y ambos renders actuales:2A4/53177B legibles sin cortes/solapes. P2v3.8/P3v8.3 comprobados; no eficacia ni ensayo humano ni aval institucional."
+  },
+  "software_publico_historico": {
     "recibo_presupuesto_vivo.json": {
       "software": "Presupuesto Vivo",
       "url": "https://presupuesto-vivo-chi.vercel.app/hackathon",
@@ -277,40 +342,5 @@
       "schema": "ambiental.software.publicacion.v1",
       "updated_at_utc": "2026-10-07T18:17:10.309923+00:00"
     }
-  },
-  "actualizacion_post14": {
-    "decision_bogota": "2026-10-07T14:53:00-05:00",
-    "core_freeze_P2_bogota": "2026-10-07T15:20:29-05:00",
-    "core_freeze_P3_bogota": "2026-10-07T15:10:51-05:00",
-    "PDF_freeze_bogota": "2026-10-07T15:25:26-05:00",
-    "fuentes_sha256": {
-      "entregables/p2_portafolio.md": "af55925fadeeb7cef465e0d8a3993a0b21081e50e9340729c326d85d5c187e55",
-      "entregables/p2_portafolio.csv": "63340d6fa57e48045e2786ee502861f543acb6b34be5767995397ddb21cab11b",
-      "entregables/p2_justificacion.md": "63734229fd62c217e90db62c274b39a0183602bda676de2eaa1b627b07a9ed61",
-      "entregables/comparacion_incremental_carteras.md": "6490118457cc9ab8d83fa6ff8768adea9c2c2080c7a118c71d35fa01ab60e470",
-      "entregables/p2_comparacion_financiera.md": "7ac9d9ad87ab2b008d9e94b893536fedfec60ab02ae4a1a31fb8d3f4fe3a7d54",
-      "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
-      "entregables/p3_riesgo_residual.md": "edcef4a66b599486efff2c3052317ebb18c8ad146944804a326424cf6bc71124",
-      "entregables/p3_riesgo_residual.csv": "eb0c9933c7fde4b2296ec52fb0f255164e855f2fbef0615dcf91008575d8e2c6",
-      "entregables/variables_seguimiento.csv": "d03c83b1b314c6821b949d728e021e4ab32627078c25d3723e4c7c16a9bdc592"
-    },
-    "alcance": [
-      "M6-2 es una candidata principal provisional; no dominancia global frente a todas las alternativas ni eficacia ambiental demostrada.",
-      "Elegibilidad local y regla de repetición/cupo siguen condicionadas.",
-      "Los75 IDs son un desglose interno distinto de los8 criterios del jurado;35 condiciones no equivalen a35 fallos del jurado.",
-      "T0 físico de sitios propuestos, actas y efectos futuros no son exigencias para formular esta propuesta prospectiva; su seguimiento posterior sigue condicionado.",
-      "F01: ensayo humano pendiente de recibo. Siete minutos son el plan oral, no una prueba de ensayo.",
-      "B7 y derechos de reproducción mantienen su alcance específico; no se publican nuevos basales individuales retenidos."
-    ],
-    "estado_apps": "D6_historico_actualizacion_M6_2_en_curso",
-    "corte_antes14_historico_commit": "82f354888469cafedf06623c862845735cf2fbe9",
-    "PDF_historico_url": "https://raw.githubusercontent.com/stevenvo780/ambientalhakaton/82f354888469cafedf06623c862845735cf2fbe9/entregables/ANEXO_METODOLOGICO.pdf",
-    "fecha_publicacion_actual": "pendiente_commit_real"
-  },
-  "revision_documental_M6_2": {
-    "estado": "PASS_independiente_nativo",
-    "fecha_bogota": "2026-10-07T15:27:00-05:00",
-    "PDF_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
-    "alcance": "Texto completo y ambos renders actuales:2A4/53177B legibles sin cortes/solapes. P2v3.8/P3v8.3 comprobados; no eficacia ni ensayo humano ni aval institucional."
   }
 }

@@ -179,13 +179,30 @@
     const lect = el("div", { class: "lectura-h", "aria-live": "polite" });
     const nota = el("p", { class: "fuente" }, "P1, matriz M-E-2411, hoja Regional Valles SN, AJ/AK, filas 15–79. Barra interior = índice 0–1, no porcentaje. *Agua Rionegro: Alto en la matriz ampliada, Medio en la lámina 12; el enunciado prevalece y P1 registra otras discrepancias (p. ej., Guarne desastres, salud y alimentos).");
     if (cont.dataset.modo === "oral") {
-      /* Modo oral: todas las celdas H marcadas a la vez; H3 es riesgo y queda fuera de la tabla. */
-      tabla.classList.add("foco");
-      for (const h of D.hallazgos) for (const [d, j] of h.celdas) {
-        const td = $(`td[data-d="${d}"][data-j="${j}"]`, tabla);
-        if (td) { td.classList.add("on"); td.dataset.h = td.dataset.h ? `${td.dataset.h}·${h.id}` : h.id; }
-      }
+      /* Modo oral: estado final = todas las celdas H marcadas; H3 es riesgo y queda fuera de la tabla.
+         Al entrar, recorrido automático breve (≤ 7 s, sin clics): 21 perfiles → H1…H5 → estado final fijo. */
+      const celdasH = h => h.celdas.map(([d, j]) => $(`td[data-d="${d}"][data-j="${j}"]`, tabla)).filter(Boolean);
+      for (const h of D.hallazgos) for (const td of celdasH(h)) td.dataset.h = td.dataset.h ? `${td.dataset.h}·${h.id}` : h.id;
+      const items = $$(".hallazgos li", cont.closest(".lamina") || document);
+      const final = () => {
+        tabla.classList.add("foco");
+        $$("td", tabla).forEach(td => td.classList.toggle("on", !!td.dataset.h));
+        items.forEach(li => li.classList.remove("activo"));
+      };
       cont.append(tabla, nota);
+      final();
+      let pasos = [];
+      cont.addEventListener("lamina:entra", () => {
+        pasos.forEach(clearTimeout); pasos = [];
+        if (reducido) { final(); return; }
+        tabla.classList.remove("foco"); $$("td", tabla).forEach(td => td.classList.remove("on"));
+        D.hallazgos.forEach((h, k) => pasos.push(setTimeout(() => {
+          tabla.classList.add("foco");
+          $$("td", tabla).forEach(td => td.classList.toggle("on", celdasH(h).includes(td)));
+          items.forEach((li, n) => li.classList.toggle("activo", n === k));
+        }, 900 + k * 1100)));
+        pasos.push(setTimeout(final, 900 + D.hallazgos.length * 1100));
+      });
       return;
     }
     cont.append(sel, tabla, lect, nota);
@@ -246,6 +263,9 @@
     const lt2 = sv("text", { x: 484, y: 23, "font-size": 15 }); lt2.textContent = "escenario elegido"; leyenda.append(lt2); svg.append(leyenda);
     const sel = el("fieldset", { class: "selector" }, `<legend>Escenario</legend><button type="button" data-e="ref" aria-pressed="false">Referencia</button><button type="button" data-e="s3" aria-pressed="false">SSP3-7.0, 2041–2060 (solicitado)</button><button type="button" data-e="s2" class="hipo" aria-pressed="false">SSP2-4.5, 2021–2040 (exploratorio)</button>`);
     const caja = el("div", { class: "ssp-caja" }); caja.append(svg);
+    /* Equivalente vertical para móvil: mismas filas y valores (referencia → SSP3; SSP2 solo exploratorio fuera del modo oral). */
+    caja.append(el("ul", { class: "ssp-lista", "aria-label": "Amenaza institucional publicada por unidad: referencia y SSP3-7.0 2041–2060" },
+      filas.map(f => `<li class="${f.residual ? "resid" : ""}"><b>${f.u === "—" ? "" : f.u + " "}${f.p}</b><span>ref ${dec(f.ref)} → SSP3 ${dec(f.s3)}${cont.dataset.modo === "oral" ? "" : ` · SSP2 exploratorio ${dec(f.s2)}`}</span></li>`).join("")));
     if (sinCelda.length) caja.append(el("p", { class: "fuente" }, `${sinCelda.join(" y ")}: sin fila de amenaza propia en este gráfico; P3 v8.3 revisa su función sin proyectar nuevos valores individuales.`));
     const lect = el("p", { class: "fuente", "aria-live": "polite" });
     if (cont.dataset.modo === "oral") {
