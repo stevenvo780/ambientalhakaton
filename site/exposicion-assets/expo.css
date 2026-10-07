@@ -419,6 +419,12 @@ body.pausado *,body.pausado *::before,body.pausado *::after{animation-play-state
   .capas-caja .capas{grid-row:auto}
   .ejemplos{font-size:.76rem}
 }
+/* Escritorio general (p. ej. 1440×900): el río de la escena 1 no supera la mitad del alto para que la leyenda quepa completa. */
+@media (min-width:981px){
+  body[data-vista="presentacion"] .sankey{max-height:50vh}
+  body[data-vista="presentacion"] .leyenda-unidades{margin-top:.35rem}
+  body[data-vista="presentacion"] .leyenda-unidades li{padding:.18rem 0}
+}
 /* Proyector de poca altura (p. ej. 1280×720): solo presentación de escritorio; compacta sin ocultar datos. */
 @media (min-width:981px) and (max-height:800px){
   body[data-vista="presentacion"]{font-size:17px}
