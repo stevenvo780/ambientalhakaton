@@ -1,10 +1,10 @@
 {
-  "verified_at_utc": "2026-10-07T17:27:47.198777+00:00",
+  "verified_at_utc": "2026-10-07T18:25:02.087787+00:00",
   "status": "pdf_unico_decision_metodologia_verificado_para_deliberacion",
   "source": "ANEXO_METODOLOGICO.md",
-  "source_sha256": "e9f38221492111261e9f0ba9c753d007f52505d49c23870fa483d98b73db8c88",
+  "source_sha256": "4f4e9c554dbdcf7d581d31b7475f5cfd1ce132394ff87e32ac1df2b176b313c7",
   "pdf": "ANEXO_METODOLOGICO.pdf",
-  "pdf_sha256": "83e58b76faacb32e50fe076af65768c64b1fab14c797400abaa3af670cc51875",
+  "pdf_sha256": "eb358c8ba3a49f0c09018543347b5c2e97b6960cc5c9006a842e768c68f2037e",
   "pages": 2,
   "page_limit": 2,
   "environmental_portfolio_approved": false,
@@ -17,22 +17,26 @@
     ],
     "text_legible": true,
     "clipping_observed": false,
-    "reviewed_at_bogota": "2026-10-07T12:27:47.188858-05:00",
-    "method": "pdftoppm ambas paginas; inspeccion directa tras correccion minima de espacios"
+    "reviewed_at_bogota": "2026-10-07T13:25:02.081801-05:00",
+    "method": "pdftoppm PDF final científico; inspección directa de ambas imágenes sin recortes",
+    "render_paths": [
+      ".agentes-local/cumplimiento-respaldo/pdf-final-render/anexo-final-1.png",
+      ".agentes-local/cumplimiento-respaldo/pdf-final-render/anexo-final-2.png"
+    ]
   },
   "changes_require_new_verification": true,
-  "pitch_sha256": "1bb7c7ce42b2f9581b140030789ce6230fb715476cd7228dedc4535a146869c8",
+  "pitch_sha256": "a2360610f39b25fa380964e271210a4b969b98b3dd50cb1411d4547479167549",
   "inputs_sha256": {
-    "entregables/p1_tablero.md": "d7d9356630b811cb06f06ab22b089109c7866fa7805ff5c20e7affbd80eb69d9",
+    "entregables/p1_tablero.md": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
     "entregables/p1_tablero.csv": "177795915784c7886b6c0e8eaa6a166e95f4897997c8ed1d4fdcdaa407dc01b6",
     "entregables/datos_oficiales.json": "9c102dd6f98947a8732973bb94504a57933245f22bec0d7cdd66c21c66c4e232",
-    "entregables/p2_portafolio.md": "3d4b4693feafd3eb2d04240fca485aa5052ca44e17beafab2e6d191b6b828876",
+    "entregables/p2_portafolio.md": "cc1e7a3ac605d5f1f1e9041dc1c6d42b68d2bf0d0457f7e3d3eab1dbac46428b",
     "entregables/p2_portafolio.csv": "92696ddfff34e57439801f307aaeaad8e5ea4e22857f9555c98474c9f599287e",
-    "entregables/p2_justificacion.md": "6ca94ca2705f0c6a2fdf672f1db81d21d2422e5f31737733f2a86d0a521cf32b",
+    "entregables/p2_justificacion.md": "40db288fdb2e5846ee09ae11d7ac6fd0e265fe4ce1509161ef7ae18d9ef50e1e",
     "entregables/p2_comparacion_financiera.json": "cb70858721e17e45e1073f667a6fe634f077fa346e102bf09f27dc3862852e45",
-    "entregables/p3_riesgo_residual.md": "b83ca69574987c74866d9fd0f6f5e1ad4cfae3ca7676f09e304aec6f2e958366",
+    "entregables/p3_riesgo_residual.md": "e38535fe5713f1345e4eea9c90fcf37c3f0f4cd901d32599f149e1be50642252",
     "entregables/p3_riesgo_residual.csv": "a4635a04131869b429bb715019a4970defee5c1b1e6e493149615a251a93cc6a",
-    "entregables/variables_seguimiento.csv": "057e4d279c9e4abdfc4cec8a5d5bb6e55f1d53cc2857f2b6b140d557e3b03337",
+    "entregables/variables_seguimiento.csv": "247c4cdeec3e89850a8f37d358efae90b9fed7fb0b6a62770a40a4dea4e7737d",
     "caso/catalogo_costos_reto.csv": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6"
   },
   "source_urls": {
@@ -83,11 +87,11 @@
     "numeric_occurrences_in_GO": 28,
     "GO_current_sha256": "b43a5d096518ca96abdc14c766375fdadb017c74172b8590f06114649451214a"
   },
-  "change_note": "Cierre editorial: formato/salidas/material listo demostrado limitado;R20/C08condicionales;F01humano14–16pendiente. PDF cambia sólo espacios señalados por Claude,2pA4 reinspeccionadas; contenido científico/snapshotfuentes intactos.",
+  "change_note": "Cierre científico final: P1 contexto histórico parcial, P2v3.6 comparación/PROP desempate entre máximas elegibles, P3v8.2 protocolo09 condicionado y cautelas técnicas. Mismos D6/costos/localizaciones/SSP3/42cruces/34variables. PDF único2pA4 con ambas páginas inspeccionadas; F01 humano14–16 pendiente.",
   "source_versions": {
-    "P1": "horizonte aclarado mínimo d7d935",
-    "P2": "v3.3",
-    "P3": "v6"
+    "P1": "final contexto histórico parcial6b3a3bf6",
+    "P2": "v3.6",
+    "P3": "v8.2"
   },
   "inputs_frozen_before_export": true,
   "documentary_reviews": [
@@ -105,12 +109,9 @@
     }
   ],
   "publication_target": "main",
-  "matrix_sha256": "25bc880e69a5ce438ffa0cddd56460f82429efb70c76ec9ab3395cb3234ce0ae",
-  "editorial_audit_at_bogota": "2026-10-07T12:52:40.959329-05:00",
-  "editorial_audit_note": "I06condicional:21perfiles no son resumen histórico fechado;Q02:14sóloRionegro. PDF/MD/fuentes científicas/contenidooral idénticos; no nueva inspección ni aval pretendidos.",
-  "post_export_supplement": {
-    "P1_sha256": "6b3a3bf6ba52487d60a81a387429e768f6a0a9a2d9e2bbfacf696146a5962142",
-    "scope": "3reportes históricos primarios contexto parcial; I06COND39/35/1; no cambia21perfiles/357registros/5hallazgos/D6/PDF; fuenteP1delPDF permanece corteanterior d7d935",
-    "PDF_unchanged": true
-  }
+  "matrix_sha256": "022dc1f72c31670c624067d2cd35a9d1a45b57399705d990cc8c6dc46a25e016",
+  "editorial_audit_at_bogota": "2026-10-07T13:25:02.081801-05:00",
+  "editorial_audit_note": "39demostrados limitados/35condicionales/F01pendiente. No promoción por software ni atribución de revisión V4.3 al PDF final nuevo.",
+  "exported_at_utc": "2026-10-07T18:16:48.519729+00:00",
+  "independent_review_of_current_pdf": "pendiente del corte exacto nuevo; revisiones listadas cubren sólo75e7f30e"
 }
