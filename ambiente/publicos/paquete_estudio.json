@@ -1,10 +1,10 @@
 {
   "schema": "ambiental.paquete_estudio.v1",
-  "verified_at_utc": "2026-10-07T18:57:16.169219+00:00",
-  "verified_at_bogota": "2026-10-07T13:57:16.169219-05:00",
+  "verified_at_utc": "2026-10-07T18:59:08.433852+00:00",
+  "verified_at_bogota": "2026-10-07T13:59:08.433852-05:00",
   "estado": "listo para estudio con límites explícitos",
-  "package_source_commit": "91220a37b8d9db6d29bee98d3e254e8f5b799d99",
-  "deployment_commit_observed": "1301e0313d2d84c97a76d3cbbcc46579772e95b5",
+  "package_source_commit": "82f354888469cafedf06623c862845735cf2fbe9",
+  "deployment_commit_observed": "82f354888469cafedf06623c862845735cf2fbe9",
   "rama_documentos": "main",
   "productionBranch": "main",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
@@ -16,10 +16,18 @@
       "sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6"
     },
     {
+      "url": "https://hackathon-ambiental.stevenvallejo.com/presentacion",
+      "HTTP": 200,
+      "bytes": 19094,
+      "sha256": "7bc87043f915c73945141bb2ebdf203ecdd591ddb711b74f957c0171669dfa02",
+      "versioned_pdf_links": 2
+    },
+    {
       "url": "https://hackathon-ambiental.stevenvallejo.com/metodologia",
       "HTTP": 200,
-      "bytes": 25638,
-      "sha256": "bf020efd4f139cd29922354e0f25e1a622863d1194e8d23ab59ebb4a95e8d882"
+      "bytes": 25680,
+      "sha256": "a9c61fada84af34d8684e6d56af1eb2fb799ef0038f5df3099867631287f82d4",
+      "versioned_pdf_links": 2
     }
   ],
   "portada": {
