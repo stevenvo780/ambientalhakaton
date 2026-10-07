@@ -69,7 +69,7 @@
     const cartera = D.carteras[cont.dataset.cartera || "D6"];
     const k = 0.1, x0 = 140, x1 = 700, gap = 16, top = 40;
     const alto = D.fondo * k + gap * (cartera.unidades.length - 1);
-    const svg = sv("svg", { class: "sankey", viewBox: `0 0 1000 ${alto + top + 30}`, role: "img", "aria-label": `Fondo de 5.000 millones repartido en ${cartera.unidades.length} unidades; grosor proporcional al costo` });
+    const svg = sv("svg", { class: "sankey", viewBox: `0 0 1000 ${alto + top + 30}`, role: "img", "aria-label": `Presupuesto de 5.000 millones (no agua ni caudal) repartido en ${cartera.unidades.length} unidades; grosor proporcional al costo` });
     const off = (alto - D.fondo * k) / 2;
     svg.append(sv("rect", { class: "fuente-caudal", x: 100, y: top + off, width: 40, height: D.fondo * k, rx: 4 }));
     const t0 = sv("text", { x: 0, y: top + off - 12, "font-size": 24, "font-weight": 700 }); t0.textContent = "Fondo 5.000 M"; svg.append(t0);
@@ -95,6 +95,12 @@
     R: ["Sitio y estado del suelo para 07", "Programa completo y custodio de 14", "Acuerdos de 03 y usuarios de 04"],
     G: ["UPA, prácticas y basal de 08", "Sitio, función y mantenimiento de 09", "Activo crítico de infraestructura"],
     M: ["Usuarios y demanda física de 04", "Acuerdos y custodia de 03", "Problema sanitario propio para 15"]
+  };
+  /* Residual de N1 según P3 (CSV de residual, cruces N1): documental, no ausencia institucional. */
+  const RESIDUAL_N1 = {
+    R: ["Sin unidades propias 07, 08, 09, SAT 13, SUDS 10, 11/12 ni 15", "01/05 con ubicación pendiente", "No significa ausencia institucional"],
+    M: ["Sin 14 municipal propia ni 07, 08, 09", "Transferencia de 14: potencial, no cobertura", "01/05 con ubicación pendiente"],
+    G: ["Sin unidad propia financiada: 02, 07, 08, 09, 14, 13, 10, 11, 12, 15", "01/05 con ubicación pendiente", "No significa ausencia institucional"]
   };
   function tablero(cont) {
     let carteraK = cont.dataset.cartera || "D6", muni = "";
@@ -144,11 +150,14 @@
       const M = D.municipios[muni];
       const fun = M.funcion[carteraK === "N1" ? "N1" : "D6"];
       const funTxt = carteraK === "D6" || carteraK === "N1" ? fun : c.unidades.filter(x => x.ubic.includes(muni)).map(x => `${x.id} ${cat(x.id).n}${x.hipo ? " (hipótesis)" : ""}`);
+      /* Residual propio de cada cartera: D6 y N1 según P3; las demás no heredan el de D6. */
+      const resid = carteraK === "D6" ? M.residual : carteraK === "N1" ? RESIDUAL_N1[muni] : ["Residual territorial pendiente de validación para esta cartera; no se hereda el de D6."];
+      const evid = carteraK === "D6" ? EVIDENCIA[muni] : ["Sitio, actor, adicionalidad y custodio de cada unidad propuesta", ...(pend.length ? [`Localización de ${pend.map(x => x.id).join(", ")}`] : [])];
       cadena.innerHTML = `<ol class="cadena-r" aria-label="Cadena de razonamiento para ${M.nombre}">
         <li style="--c:var(--agua)"><h4>Factor (P1)</h4><ul>${M.factor.map(t => `<li>${t}</li>`).join("")}</ul></li>
         <li style="--c:var(--bosque)"><h4>Función propuesta</h4><ul>${funTxt.map(t => `<li>${t}</li>`).join("") || "<li>Sin unidad localizada</li>"}</ul></li>
-        <li style="--c:var(--ocre)"><h4>Evidencia faltante</h4><ul>${EVIDENCIA[muni].map(t => `<li>${t}</li>`).join("")}</ul></li>
-        <li style="--c:var(--coral)"><h4>Residual</h4><ul>${M.residual.map(t => `<li>${t}</li>`).join("")}</ul></li>
+        <li style="--c:var(--ocre)"><h4>Evidencia faltante</h4><ul>${evid.map(t => `<li>${t}</li>`).join("")}</ul></li>
+        <li style="--c:var(--coral)"><h4>Residual</h4><ul>${resid.map(t => `<li>${t}</li>`).join("")}</ul></li>
       </ol><p class="razon">Las flechas muestran el orden del razonamiento propuesto, no causalidad ni efecto medido.</p>`;
     };
     selC.addEventListener("click", e => { const b = e.target.closest("[data-c]"); if (b) { carteraK = b.dataset.c; pintar(); } });
@@ -195,7 +204,7 @@
   /* ---------- Escenario: referencia ↔ SSP3-7.0/2060 ↔ SSP2-4.5/2040 exploratorio ---------- */
   function escenario(cont) {
     const X = v => 230 + v * 1000, filas = D.escenarios, h = 40, top = 50;
-    const svg = sv("svg", { class: "ssp", viewBox: `0 0 900 ${top + filas.length * h + 40}`, role: "img", "aria-label": "Amenaza institucional publicada por unidad; referencia frente al escenario elegido" });
+    const svg = sv("svg", { class: "ssp", viewBox: `0 0 900 ${top + filas.length * h + 40}`, role: "img", "aria-label": "Amenaza institucional publicada por unidad, independiente de la cartera y no resultado de intervención; referencia frente al escenario elegido" });
     const rej = sv("g", { class: "rej" });
     for (let v = 0; v <= 6; v++) {
       rej.append(sv("line", { x1: X(v / 10), x2: X(v / 10), y1: top - 20, y2: top + filas.length * h }));
@@ -225,11 +234,18 @@
     const ver = e => {
       $$("button", sel).forEach(b => b.setAttribute("aria-pressed", String(b.dataset.e === e)));
       for (const { f, mv, tr, val } of movs) { const x = X(f[e]); mv.style.transform = `translate(${x}px,0px)`; tr.setAttribute("x2", x); val.textContent = dec(f[e]); }
-      lect.textContent = e === "s3" ? "SSP3-7.0 hacia 2060: horizonte solicitado y confirmado; coincide con el de estrés. Índice 0–1 de amenaza, no caudal, temperatura ni eficacia." : e === "s2" ? "SSP2-4.5/2040: solo exploración adicional del equipo; no es el horizonte solicitado." : "Referencia climática 1981–2010.";
+      const base = " Amenaza institucional publicada, independiente de la cartera: no es resultado de intervención.";
+      lect.textContent = (e === "s3" ? "SSP3-7.0 hacia 2060: horizonte solicitado y confirmado; coincide con el de estrés. Índice 0–1, no caudal, temperatura ni eficacia." : e === "s2" ? "SSP2-4.5/2040: solo exploración adicional del equipo; no es el horizonte solicitado." : "Referencia climática 1981–2010.") + base;
     };
-    sel.addEventListener("click", e => { const b = e.target.closest("[data-e]"); if (b) ver(b.dataset.e); });
+    /* La animación automática a SSP3 se cancela si la persona elige un escenario o si la vista deja de estar visible. */
+    let auto = 0;
+    const cancelar = () => { clearTimeout(auto); auto = 0; };
+    sel.addEventListener("click", e => { const b = e.target.closest("[data-e]"); if (b) { cancelar(); ver(b.dataset.e); } });
     ver("ref");
-    cont.addEventListener("lamina:entra", () => { ver("ref"); if (!reducido) setTimeout(() => ver("s3"), 650); });
+    cont.addEventListener("lamina:entra", () => {
+      cancelar(); ver("ref");
+      if (!reducido) auto = setTimeout(() => { auto = 0; if (!cont.closest(".lamina[hidden]")) ver("s3"); }, 650);
+    });
   }
 
   /* ---------- Reapertura: D6 → SAT crítico / servicio esencial ---------- */
