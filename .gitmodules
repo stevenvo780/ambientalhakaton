@@ -1,0 +1,3 @@
+[submodule "metodologia/SpecOrganon"]
+	path = metodologia/SpecOrganon
+	url = https://github.com/stevenvo780/SpecOrganon.git
