@@ -11,7 +11,7 @@
 | Archivo | Versión |
 |---|---|
 | Guía de preguntas | `f237e3270770f88d72ff41cea529a1287e92a2eb3bc3019f5ce9a9bcb5a7124b` |
-| PDF único `ANEXO_METODOLOGICO.pdf` (2 páginas en total: recomendación y metodología) | Instantánea congelada `final-718aea-20261007-1202`, commit local `718aea550492ae24740abd29beadc7311970545b` (push a GitHub pendiente). SHA-256 `7c88ec670f3a9d6d4df3b3b2759a0aff64c2a4d62e12e17dfb1429ac1b83c164`, verificado contra el manifiesto. Sustituye la referencia anterior `100fbeeb…`, que queda obsoleta. Es un solo PDF, no dos |
+| PDF único `ANEXO_METODOLOGICO.pdf` (2 páginas en total) | Instantánea `final-718aea-20261007-1202`, SHA-256 `7c88ec670f3a9d6d4df3b3b2759a0aff64c2a4d62e12e17dfb1429ac1b83c164`; `100fbeeb…` queda obsoleto. Antes de ensayar, usar el SHA del PDF vigente que el editor congele |
 
 ## Antes de empezar
 
@@ -25,15 +25,18 @@
 
 ## Durante
 
-- [ ] Leer el guion completo en voz alta, con transiciones y pausas reales.
-- [ ] Anotar cuánto dura cada bloque frente a su objetivo:
-  - decisión (0:45);
-  - hallazgos (1:15);
-  - cartera y sacrificios (2:00);
-  - escenarios (1:00);
-  - residual y seguimiento (1:15);
-  - utilidad (0:45).
-- [ ] Anotar omisiones, frases confusas y cifras dichas distinto a como figuran en el PDF.
+- [ ] Leer el guion completo en voz alta, con pausas reales.
+- [ ] Anotar cuánto dura cada uno de los **siete bloques** del guion frente a su objetivo:
+  - decisión: 40 s (0:00–0:40);
+  - hallazgos: 70 s (0:40–1:50);
+  - cartera y sacrificios: 80 s (1:50–3:10);
+  - pertinencia y actores: 50 s (3:10–4:00);
+  - horizonte y revisión: 60 s (4:00–5:00);
+  - residual y seguimiento: 80 s (5:00–6:20);
+  - cierre: 40 s (6:20–7:00).
+
+  En total, **420 s = 7:00**. El ensayo real sigue pendiente para el estudio de 14:00 a 16:00.
+- [ ] Anotar omisiones y cifras que no coincidan con el PDF.
 
 ## Recibo (solo con datos observados)
 
@@ -47,7 +50,7 @@
 | Omisiones o desvíos | |
 | ¿≤ 7:00? ¿Hace falta repetir? | |
 
-Si se repite el ensayo, se registra un recibo nuevo y se conserva el anterior.
+Si se repite, registrar un recibo nuevo y conservar el anterior.
 
 ## Si pasa de 7 minutos, recortar en este orden
 
@@ -57,13 +60,7 @@ Si se repite el ensayo, se registra un recibo nuevo y se conserva el anterior.
 4. La mención de SSP2 exploratorio.
 5. El detalle de costos por unidad: basta "5.000 en seis unidades completas, saldo cero".
 
-**Nunca recortar:**
-
-- que la recomendación es condicional y sin eficacia medida;
-- el sacrificio de D6 frente a N1;
-- que SSP3-7.0/2060 no prueba la cartera;
-- la separación entre ejecución, cambio y atribución;
-- que la unidad 14 en Rionegro es una propuesta.
+**Nunca recortar:** recomendación condicional sin eficacia medida; sacrificio de D6 frente a N1; SSP3 no prueba la cartera; ejecución, cambio y atribución separados; unidad 14 en Rionegro como propuesta.
 
 ## Fuera de la exposición: preguntas y respuestas
 

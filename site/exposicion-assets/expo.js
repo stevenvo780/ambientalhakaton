@@ -49,6 +49,9 @@
       if (k === t) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
       b.classList.toggle("hecho", t >= 0 ? k < t : i > 0);
     });
+    const rio = document.querySelector(".rio");
+    const actual = tramos[t];
+    if (rio && actual && rio.scrollWidth > rio.clientWidth) rio.scrollLeft = actual.offsetLeft - rio.offsetLeft - 16;
     const titulo = laminas[i].querySelector("h1,h2")?.textContent.trim() ?? "";
     if (contador) contador.textContent = `${i + 1} de ${laminas.length}`;
     if (habla) habla.textContent = laminas[i].dataset.habla || "";
