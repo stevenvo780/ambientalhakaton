@@ -1,13 +1,13 @@
 {
   "schema": "actualizador-luna.recibo.v1",
-  "updated_at": "2026-10-07T17:38:53Z",
+  "updated_at": "2026-10-07T17:43:05Z",
   "status": "error",
   "modelo": "gpt-6-luna",
   "esfuerzo": "medium",
   "exito": false,
-  "error": "cli_error:1: 2026-10-07T17:38:53.154173Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https:[ruta]",
-  "ciclo_id": "20261007T173835Z-3e5d1411",
-  "snapshot_sha256": "62777c74057b436c1fc450705e01ee4571b676c966bd81cfb2285853ef516681",
+  "error": "CLI superó timeout de 90 s",
+  "ciclo_id": "20261007T174135Z-2ab94362",
+  "snapshot_sha256": "657e73a38c7a7183b0e54fc862dca178c2d1b71854f9e7bb9b62aa0e15842d7c",
   "actualizador_sha256": "251a8e8947bbc3ee85538f76c5728e35dacf54ab2a8447c61013307bde163b0a",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "fuentes": [
