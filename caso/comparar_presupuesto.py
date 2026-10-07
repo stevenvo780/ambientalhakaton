@@ -6,6 +6,12 @@ from collections import Counter
 import csv
 import hashlib
 import json
+import argparse
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--stdout", action="store_true", help="Emitir el JSON completo sin escribir archivos.")
+parser.add_argument("--hipotesis-14-tres-municipios", action="store_true", help="Sensibilidad NO oficial: sustituir 14 por tres unidades completas 14R/G/M; emitir sólo stdout.")
+args = parser.parse_args()
 
 ROOT = Path(__file__).resolve().parent
 source = ROOT / "catalogo_costos_reto.csv"
@@ -16,6 +22,9 @@ assert len(rows) == len(costs) == 15
 assert all(row["indivisible"] == "si" for row in rows)
 assert all(int(row["costo_cop"]) == int(row["costo_millones_cop"]) * 1_000_000 for row in rows)
 budget = 5000
+if args.hipotesis_14_tres_municipios:
+    unit14_cost = costs.pop("RETO-14")
+    costs.update({f"RETO-14{municipality}": unit14_cost for municipality in ("R", "G", "M")})
 ids = list(costs)
 feasible = []
 for mask in range(1 << len(ids)):
@@ -26,6 +35,33 @@ for mask in range(1 << len(ids)):
 maximum = max(item["count"] for item in feasible)
 cheapest_next = sum(sorted(costs.values())[:maximum + 1])
 assert cheapest_next > budget
+if args.hipotesis_14_tres_municipios:
+    maxima = [item for item in feasible if item["count"] == maximum]
+    assert len(ids) == 17 and len(feasible) == 3906 and maximum == 7
+    assert len(maxima) == 1 and maxima[0]["cost_millions_cop"] == 5000
+    assert set(maxima[0]["ids"]) == {"RETO-03", "RETO-04", "RETO-08", "RETO-15", "RETO-14R", "RETO-14G", "RETO-14M"}
+    result = {
+        "computed_at_utc": datetime.now(timezone.utc).isoformat(),
+        "source": source.name,
+        "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+        "budget_millions_cop": budget,
+        "mode": "hypothetical_14_three_municipal_units_not_official",
+        "classification": {"data": "15 exercise prices, unchanged", "assumption": "Other 14 entries: at most one whole unit each; 14R/G/M: one whole unit at the exercise price each", "inference": "Financial subset enumeration only", "missing": "Official repetition/counting/cap rule and environmental eligibility"},
+        "unit14_municipal_labels": {"R": "Rionegro", "G": "Guarne", "M": "Marinilla"},
+        "priced_catalogue_types": 15,
+        "hypothetical_unit_entries": len(ids),
+        "subsets_examined": 1 << len(ids),
+        "financially_feasible_subsets_including_empty": len(feasible),
+        "feasible_counts": dict(sorted(Counter(item["count"] for item in feasible).items())),
+        "conditional_maximum_count": maximum,
+        "maximum_count_financial_candidates": maxima,
+        "maximum_candidate_catalogue_type_count": len({key[:7] for key in maxima[0]["ids"]}),
+        "environmental_optimum": None,
+        "scope": "Non-official sensitivity, not an approved portfolio or environmental ranking. No files are written; no costs, eligibility, efficacy or selection are changed.",
+    }
+    assert result["maximum_candidate_catalogue_type_count"] == 5
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    raise SystemExit(0)
 definitions = {
     "antecedente_regional": ["RETO-04", "RETO-01", "RETO-09", "RETO-10", "RETO-07", "RETO-14"],
     "A_lista_regional_sin_SUDS": ["RETO-01", "RETO-04", "RETO-09", "RETO-07", "RETO-14"],
@@ -62,5 +98,8 @@ result = {
     "environmental_optimum": None,
     "remaining_checks": ["Official counting/repetition rule", "Critical vulnerability and location of each unit", "MEA factor and indicator", "Actors and implementation viability", "Overlap with funded actions and between measures", "Reference/intermediate and SSP3-7.0/2060 contrast"],
 }
-(ROOT / "comparacion_financiera.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(json.dumps({key: result[key] for key in ("subsets_examined", "financially_feasible_subsets_including_empty", "feasible_counts", "conditional_maximum_count", "cheapest_seven_millions_cop")}, ensure_ascii=False))
+if args.stdout:
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+else:
+    (ROOT / "comparacion_financiera.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({key: result[key] for key in ("subsets_examined", "financially_feasible_subsets_including_empty", "feasible_counts", "conditional_maximum_count", "cheapest_seven_millions_cop")}, ensure_ascii=False))
