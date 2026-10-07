@@ -142,3 +142,13 @@ Sustitutas condicionadas: Restauración (1.500) en lugar de Rondas solo si biodi
 **Riesgos de causalidad:** confundir amenaza con vulnerabilidad (Marinilla); tomar inversión o nombres de indicador como resultado; tomar GEI por adaptación; adicionalidad y doble conteo (D5); desfase de escala entre intervención local e índice municipal; factores de confusión (ocupación territorial, programas concurrentes, cambios de método).
 
 **Frase para el pitch:** "Preferimos esta cartera por cobertura y mecanismo sobre las celdas críticas, no por una reducción medida; existe un dato futuro parcial del estudio, pero la cartera no se ha probado contra SSP3-7.0/2060".
+
+## 9. Corrección posterior (11:00, Bogotá)
+
+Esta corrección prevalece sobre las §1, §3, §5 y §6. Se basa en la matriz oficial M-E-2411, las 17 fichas MEA, la matriz de la dimensión desastres y P1 (`p1_tablero.md`, SHA `fea2d983…`). El detalle completo está en `entregables/p2_justificacion.md` v2 (SHA `0864092e…`).
+
+1. **Retiro N1 como línea base recomendada y la regla de que el conteo solo desempata.** El reto pide el máximo entre las unidades **pertinentes**. La elección queda abierta entre D6 (6 unidades), N1, Naturaleza4, Restauración5, N2 y el comparador de infraestructura, cada una con los datos que la inclinarían.
+2. **El umbral V Alta/Muy alta excluía Suelos, Agroecología y Verdes de forma artificial.** El Plan Valles (lámina 16) prioriza suelos, espacios verdes y SUDS. Además, una V baja hoy no significa que no haya problema municipal. P2 v2 aplica una regla uniforme a las 15 unidades; todas quedan condicionadas porque ninguna tiene sitio validado.
+3. **Rondas no prueba una reducción de la sensibilidad de desastres.** La ficha 6 (C16) la liga a indicadores hídricos: InSensHIDRO-02, InCaHIDRO-01 e InCaHIDRO-04. Su beneficio sobre desastres es una hipótesis territorial indirecta y no sustituye a SAT.
+4. **Sí hay un déficit de capacidad específica en desastres.** El índice CA de desastres de Rionegro es Medio (0,563), pero InCaRD-01 vale 0,1 y la cobertura SAT (InCaRD-04) es 0,209 en Rionegro y 0,248 en Guarne, ambas Muy bajas. Esto corrige lo que escribí en las §3 y §6.
+5. **Datos del master que corrigen la lámina 12:** recurso hídrico en Rionegro es Alto (0,548) y desastres en Guarne es Medio (0,408). El riesgo de desastres de Rionegro a 2060 es 0,3207 en SSP1, SSP2 y SSP3: es evidencia del escenario y ninguna cartera queda probada.

@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "frente": "presupuesto",
+      "session": "PresupuestoVivo",
+      "worktree": "presupuesto-vivo",
+      "branch": "hackathon/ambiental-p2-20261007",
+      "output": "p2_motor_presupuesto.md",
+      "state": "GO_enviado",
+      "sent_at_utc": "2026-10-07T15:42:22.448528+00:00",
+      "capture_before_text": true,
+      "capture_before_enter": true,
+      "wait_before_enter_s": 1
+    },
+    {
+      "frente": "territorio",
+      "session": "EfectoDomio",
+      "worktree": "territorio-vivo",
+      "branch": "hackathon/ambiental-territorio-20261007",
+      "output": "p1_p3_fuentes_territoriales.md",
+      "state": "GO_enviado",
+      "sent_at_utc": "2026-10-07T15:42:22.448381+00:00",
+      "capture_before_text": true,
+      "capture_before_enter": true,
+      "wait_before_enter_s": 1
+    },
+    {
+      "frente": "dependencias",
+      "session": "ContinuidadInfraestructuraServicios",
+      "worktree": "dependencias",
+      "branch": "hackathon/ambiental-dependencias-20261007",
+      "output": "p3_dependencias_fuentes.md",
+      "state": "GO_enviado",
+      "sent_at_utc": "2026-10-07T15:42:23.359708+00:00",
+      "capture_before_text": true,
+      "capture_before_enter": true,
+      "wait_before_enter_s": 1
+    },
+    {
+      "frente": "localizacion",
+      "session": "lote-resiliente",
+      "worktree": "localizacion",
+      "branch": "hackathon/ambiental-localizacion-20261007",
+      "output": "mapa_limites_localizacion.md",
+      "state": "GO_enviado",
+      "sent_at_utc": "2026-10-07T15:42:23.009280+00:00",
+      "capture_before_text": true,
+      "capture_before_enter": true,
+      "wait_before_enter_s": 1
+    }
+  ],
+  "GO_recibido": true,
+  "goals_antiguas_reanudadas": false,
+  "git_writer": "publicador delegado local único"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "session": "PresupuestoVivo",
+    "capture_at_utc": "2026-10-07T16:12:24.994831+00:00",
+    "exit": 0,
+    "status": "running",
+    "snapshot_sha256": "a2805d4d9cc95edef9ff01c19a2f24942a7e48f0b286051dccc728b29d8e98cb"
+  },
+  {
+    "session": "EfectoDomio",
+    "capture_at_utc": "2026-10-07T16:12:25.469798+00:00",
+    "exit": 0,
+    "status": "running",
+    "snapshot_sha256": "ac3642c78a6af07d1e47f4f08eff097bb6e1c945947b48c41695e9eaf6e559ed"
+  },
+  {
+    "session": "ContinuidadInfraestructuraServicios",
+    "capture_at_utc": "2026-10-07T16:12:25.914107+00:00",
+    "exit": 0,
+    "status": "running",
+    "snapshot_sha256": "47a071e41c0314c49af41ecf78bec9aa45155b2bbcd62524ca9d1ddcfd8b6d96"
+  },
+  {
+    "session": "lote-resiliente",
+    "capture_at_utc": "2026-10-07T16:12:26.419146+00:00",
+    "exit": 0,
+    "status": "terminal_check_needed",
+    "snapshot_sha256": "3bf1009d14aca5089f77565f8f98fbd0c8da93103fdd89b26bb83e05bd2c1090"
+  }
+]

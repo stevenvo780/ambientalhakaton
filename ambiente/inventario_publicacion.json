@@ -1,8 +1,338 @@
 {
   "schema_version": 1,
   "scope": "Inventario y revisión de publicación pública; originales locales intactos; Git/README único escritor asignado, Gitops ahora a cargo del usuario",
-  "files": [],
-  "updated_at": "2026-10-07T15:35:41.298638+00:00",
+  "files": [
+    {
+      "path": "caso/brechas_escenarios_mea.md",
+      "bytes": 6910,
+      "sha256": "99c4c4710dce70def31dd2c764346732aecafe71f344272cbc3ce6e85afe2af9",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/catalogo_costos_reto.csv",
+      "bytes": 3272,
+      "sha256": "4bfa305f9ba4f0553ad9a2e51fa24a18ab544f14a8e602348522e46c5067f1f6",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/comparacion_financiera.json",
+      "bytes": 9965,
+      "sha256": "2a6d19987ab575474e8981bc65240f33c522263167595211eae0bbf75e50079c",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/comparar_presupuesto.py",
+      "bytes": 4632,
+      "sha256": "09626b8633d40eddc4d6b45df9951f9bd0103003bbf1f65f5732489999eb62a0",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/decision_y_ambiente.md",
+      "bytes": 9418,
+      "sha256": "4ba037f487f87f359c5e712a1d0dff9d67ea0ad8fb13170bb7b63ff7b219326e",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/evaluaciones/claude/informe.md",
+      "bytes": 16574,
+      "sha256": "ef7fa9ae61e4192ecd5ef26ee7cf967bc511865b4b209e0e6835142ba9bb8b1e",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/evaluaciones/muse/informe.md",
+      "bytes": 17383,
+      "sha256": "2c25e7a5d8ed4b89494fdbe266637504fe68f848003a2ea750afbd1945f428e6",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/goal_ejecucion.md",
+      "bytes": 10631,
+      "sha256": "69305e97119557c1908e2d5b4eeb8242063df34c7288a3b3ed81d6579fb72a84",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/guia_lectura_equipo.md",
+      "bytes": 8942,
+      "sha256": "906bb1197f2eefa93d278051643cce0c0d23468817e05f18250908218bcecd82",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/informe_metodo.md",
+      "bytes": 13962,
+      "sha256": "b82e900f11d5a0b8d0baf2091665068f2b1a7cd946449bb1161d931f20c14d96",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/matriz_requisitos_completa.md",
+      "bytes": 51827,
+      "sha256": "a8ef33d1d9ec8cb1088294508cedc0484d7aaac2fe1391630f92dd8a6ce93619",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/organon.json",
+      "bytes": 27211,
+      "sha256": "b40c9f5a37dd1c6e21e2c20a2839ff10808b6e1677d7888d3772a89eba7bc2dc",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/plan_ejecucion.md",
+      "bytes": 18424,
+      "sha256": "fe97cd9de55b9aa1cce98dc44f84a93e519bb8e5b6dd013df471c0a5e6c60102",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/preguntas_equipo.md",
+      "bytes": 8677,
+      "sha256": "edfd2738c588aeb402d9fc88beec9c923be1912d4b9cabf3f2cee189a617aa1c",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/propuesta_principal.md",
+      "bytes": 46278,
+      "sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/revision_documentos.md",
+      "bytes": 28126,
+      "sha256": "f9733de6426d3db929c6e7087d716b113a8ee3901973a1e9f769e6cc7b38ae22",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/revision_excel.md",
+      "bytes": 20949,
+      "sha256": "cce5de01a70310c68b044099c3ea562c26d069bfdf5a08320bfda5b4a40704e9",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/seleccion_artefactos.json",
+      "bytes": 14954,
+      "sha256": "89cc849ebff2a165ad5a9af1f5878e2314477f830f1e600376e1938d5ecfcec0",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "caso/seleccion_propuestas.md",
+      "bytes": 15041,
+      "sha256": "4729cab07c44eadd5ce4e1a4bd9afca4bce71f4cd5f518fc9b9dff5e30465838",
+      "decision": "publicable_texto",
+      "reason": "Contenido del reto/método/cálculos/revisión. Rutas operativas no son credenciales; web debe usar resumen sin ellas. FAQ/guía son snapshots y están en actualización GO."
+    },
+    {
+      "path": "README.md",
+      "bytes": 37590,
+      "sha256": "09dda926c7801c721966df846a281c7560f59253771e28cfb535b033dfb812ea",
+      "decision": "publicable",
+      "reason": "Enunciado/convocatoria/índice, sin resultados individuales empresariales ni secretos encontrados."
+    },
+    {
+      "path": "Climate_Risk_Hackathon_convocatoria_completa.md",
+      "bytes": 19108,
+      "sha256": "1f1dc5f3bf9c1fcfedbca04ab357901d14f647756d7c035f74efb80cf2e4fc84",
+      "decision": "publicable",
+      "reason": "Enunciado/convocatoria/índice, sin resultados individuales empresariales ni secretos encontrados."
+    },
+    {
+      "path": "explicacion.txt",
+      "bytes": 7424,
+      "sha256": "28a8e5c393b7b34ee5829d0626b22dc507d504ee6032355b914104980ae7d9a1",
+      "decision": "publicable",
+      "reason": "Enunciado/convocatoria/índice, sin resultados individuales empresariales ni secretos encontrados."
+    },
+    {
+      "path": "RETO CLIMATE WEEK HACKATHON.pdf",
+      "bytes": 391891,
+      "sha256": "3dc49d0290487b0d316db4ed1e3d78dc2abbcb5c823a536e9ebbffa768251779",
+      "decision": "publicable",
+      "reason": "Enunciado/convocatoria/índice, sin resultados individuales empresariales ni secretos encontrados."
+    },
+    {
+      "path": "insumos/cornare/RETO CLIMATE WEEK HACKATHON (1).pdf",
+      "bytes": 378523,
+      "sha256": "ce8901194241e006db4b90998719b08ff97963f64ec71d2416edd3ebae958e6d",
+      "decision": "publicable",
+      "reason": "Enunciado/convocatoria/índice, sin resultados individuales empresariales ni secretos encontrados."
+    },
+    {
+      "path": "insumos/inventario.json",
+      "bytes": 3241,
+      "sha256": "e6c0066ce0aaca1f763de780a933bd8692e0a43e5c568a50cf01daa358cc0002",
+      "decision": "publicable",
+      "reason": "Enunciado/convocatoria/índice, sin resultados individuales empresariales ni secretos encontrados."
+    },
+    {
+      "path": "insumos/texto/HACKATHON RETO CORNARE.txt",
+      "bytes": 23125,
+      "sha256": "bfa773053a8aea7d86f2f19f7fedd8c93c467b1a9721e0a7d6b5b6924cf33bcd",
+      "decision": "publicable",
+      "reason": "Extracción textual/JSON sin imágenes identificables; Excel agregado y registro municipal/sectorial. No contiene nombres de participantes empresariales ni credenciales de capturas."
+    },
+    {
+      "path": "insumos/texto/RETO CLIMATE WEEK HACKATHON (1).txt",
+      "bytes": 24028,
+      "sha256": "49f14da0cdffd01ffd09454e6bb8d2781c3cf4fe546e2064b43d0bb2fe652524",
+      "decision": "publicable",
+      "reason": "Extracción textual/JSON sin imágenes identificables; Excel agregado y registro municipal/sectorial. No contiene nombres de participantes empresariales ni credenciales de capturas."
+    },
+    {
+      "path": "insumos/texto/RETO CLIMATE WEEK HACKATHON.txt",
+      "bytes": 24028,
+      "sha256": "49f14da0cdffd01ffd09454e6bb8d2781c3cf4fe546e2064b43d0bb2fe652524",
+      "decision": "publicable",
+      "reason": "Extracción textual/JSON sin imágenes identificables; Excel agregado y registro municipal/sectorial. No contiene nombres de participantes empresariales ni credenciales de capturas."
+    },
+    {
+      "path": "insumos/texto/adaptacion_corredor.json",
+      "bytes": 12018,
+      "sha256": "f7996d289469008c1dd13a2ac0d57ae5a8e2506260766f8ffc4f889c286c2083",
+      "decision": "publicable",
+      "reason": "Extracción textual/JSON sin imágenes identificables; Excel agregado y registro municipal/sectorial. No contiene nombres de participantes empresariales ni credenciales de capturas."
+    },
+    {
+      "path": "insumos/texto/excel.json",
+      "bytes": 897178,
+      "sha256": "3af8c87e6a81616d45ae05e36f458d65403a97222e03ef86aff78ac6e3bc025a",
+      "decision": "publicable",
+      "reason": "Extracción textual/JSON sin imágenes identificables; Excel agregado y registro municipal/sectorial. No contiene nombres de participantes empresariales ni credenciales de capturas."
+    },
+    {
+      "path": "insumos/texto/presentacion_pptx.json",
+      "bytes": 104743,
+      "sha256": "f652b24b2235d5d7683278c39de816c175048eaef9d09f24b1dccd56abcd1139",
+      "decision": "publicable",
+      "reason": "Extracción textual/JSON sin imágenes identificables; Excel agregado y registro municipal/sectorial. No contiene nombres de participantes empresariales ni credenciales de capturas."
+    },
+    {
+      "path": "insumos/cornare/ACCIONES DE ADAPTACIÓN SECTORES (1).xlsx",
+      "bytes": 13099,
+      "sha256": "085da6b14bb304130376a86b5b0f0396bafc0ab5115d28c7f090b76831090266",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/ACCIONES DE ADAPTACIÓN SECTORES.xlsx",
+      "bytes": 13099,
+      "sha256": "085da6b14bb304130376a86b5b0f0396bafc0ab5115d28c7f090b76831090266",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/EMISIONES POR ALCANCE SECTORES.xlsx",
+      "bytes": 13485,
+      "sha256": "aed007fdfbe9cf2a0ecdb0c5cf26805c333bb48b6889bfe7c12d9d0710fd741f",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/INDICADORES POR UNIDAD DE PRODUCCIÓN SECTORES.xlsx",
+      "bytes": 13309,
+      "sha256": "068214d790331b3d69bc9d7a222bde046422e67418ff3f500474eff1f730fa63",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/MEDIDAS DE MITIGACIÓN REGIONALES.xlsx",
+      "bytes": 24898,
+      "sha256": "5ff9c731fae564bd7846dd74a734cb1196806a981bb51dfb565a6720de9c01fd",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/REDUCCIÓN DE EMISIONES SECTORES.xlsx",
+      "bytes": 12304,
+      "sha256": "abf46028a9b5c23282a872ea984e12d85f4a17b59e3d18850237d62ee569b16b",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/REPORTE MEDIDAS DE ADAPTACIÓN MUNICIPIOS.xlsx",
+      "bytes": 32186,
+      "sha256": "7d619f13571532b8be8d1c05592aeba150576c0a6bb8af67056a38a7f52908c7",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/REPORTE MITIGACIÓN.xlsx",
+      "bytes": 12657,
+      "sha256": "b0e5c32ee47a5a0c45eebffbbd9025a2421cd52cb0903e3662901f4497f2d9fa",
+      "decision": "publicable",
+      "reason": "Ocho libros/hojas revisados íntegros, datos municipales/regionales/sectoriales agregados; copiaAS duplicada señalada, sin microdatos empresariales."
+    },
+    {
+      "path": "insumos/cornare/HACKATHON RETO CORNARE.pdf",
+      "bytes": 9235620,
+      "sha256": "b9eafc137f1c8d1fdb592f8dc6c3f52f4765d59c942df0415261002b16e51fdc",
+      "decision": "original_local_fuera_release",
+      "reason": "Contiene capturas que asocian empresas identificables con mapas de riesgo o planes individuales; requiere derivado público. No se afirma reserva legal del documento completo ni prohibición genérica de redistribución."
+    },
+    {
+      "path": "insumos/cornare/HACKATHON RETO CORNARE.pptx",
+      "bytes": 105157128,
+      "sha256": "2768c29617022090e20ec60672e351eb85ffad654cb4c60c0cf26cfcf2b6ad14",
+      "decision": "original_local_fuera_release",
+      "reason": "Contiene capturas que asocian empresas identificables con mapas de riesgo o planes individuales; requiere derivado público. No se afirma reserva legal del documento completo ni prohibición genérica de redistribución."
+    },
+    {
+      "path": "Paquete CRH . Medellín Reto Cornare.zip",
+      "bytes": 101069004,
+      "sha256": "063829fcef0e6f739011e9d7ca6a8d37b5b70e7ac777842923351d172a7cb108",
+      "decision": "original_local_fuera_release",
+      "reason": "Contiene capturas que asocian empresas identificables con mapas de riesgo o planes individuales; requiere derivado público. No se afirma reserva legal del documento completo ni prohibición genérica de redistribución."
+    },
+    {
+      "path": "ambiente/publicos/auditorias_preparatorias.json",
+      "bytes": 2013,
+      "sha256": "0c8656df790b37d0edaf6b703160e1fb57c48128a2c556ef9a8e4eea8bf9b5c8",
+      "decision": "publicable_sanitizado",
+      "reason": "Resumen técnico sanitizado revisado por su escritor; sin rutas/hosts/credenciales."
+    },
+    {
+      "path": "ambiente/publicos/estado_preparacion.json",
+      "bytes": 951,
+      "sha256": "678c577a1422821e93863db426ab9eb59ef3c4554c3b35611e17a45610520d68",
+      "decision": "publicable_sanitizado",
+      "reason": "Resumen técnico sanitizado revisado por su escritor; sin rutas/hosts/credenciales."
+    },
+    {
+      "path": "ambiente/publicos/estado_preparacion.md",
+      "bytes": 1198,
+      "sha256": "3ff5d73a5efdb88a2aa9ae71b03de534cbbbf39ed1df0fe589a5e02df8241780",
+      "decision": "publicable_sanitizado",
+      "reason": "Resumen técnico sanitizado revisado por su escritor; sin rutas/hosts/credenciales."
+    },
+    {
+      "path": "ambiente/estado_orquestacion.json",
+      "bytes": 5701,
+      "sha256": "e9d93d31c31ce95d21ce63cb84de76613efd663f0709a44c62400ffe03368d74",
+      "decision": "publicable_sanitizado",
+      "reason": "Estado/recibo técnico; authorization es prosa de autorización del usuario, no token/header."
+    },
+    {
+      "path": "ambiente/deployweb.json",
+      "bytes": 1575,
+      "sha256": "ad3dd5b02dd4322e6b18d74ac695bb74fb86820616ca645c4eda997605e57568",
+      "decision": "publicable_sanitizado",
+      "reason": "Estado/recibo técnico; authorization es prosa de autorización del usuario, no token/header."
+    }
+  ],
+  "updated_at": "2026-10-07T16:08:17.349187+00:00",
   "public_repository": "https://github.com/stevenvo780/ambientalhakaton",
   "publication_branch": "dev",
   "qa_luna": {
@@ -12,8 +342,35 @@
     "access": "read",
     "effort": "medium",
     "job_id": "7fff4ffdd5484e7da5c7c8a411768b10",
-    "status_last_observed": "queued",
-    "limitations": "Tarea inicial apuntó a main; la verificación complementaria dev se hace separadamente, sin escrituras Git."
+    "status_last_observed": "succeeded",
+    "limitations": "Tarea inicial apuntó a main; la verificación complementaria dev se hace separadamente, sin escrituras Git.",
+    "duration_seconds": 39.3,
+    "real_response_observed": true,
+    "network_result": "curl(6): Could not resolve host api.github.com y raw.githubusercontent.com; no validación remota desde esa tarea",
+    "quota_or_auth_error": false,
+    "public_verification_by_native": {
+      "time_utc": "2026-10-07T15:27:54Z",
+      "repo_http": 200,
+      "public": true,
+      "main_sha": "27f584288436b0cb7e6691556b6a321ccfa5adda",
+      "dev_sha": "5c3184524ccd4620573cd2c18a90a7b4edf26bf7",
+      "readme_dev_http": 200,
+      "tree_dev_truncated": false
+    },
+    "objections": [
+      {
+        "issue": "Destinos README no verificados por Luna debido a DNS",
+        "resolution": "Comprobación pública nativa independiente confirmó repo/dev/README/árbol; no atribuida a Luna"
+      },
+      {
+        "issue": "Diferenciar preparación de productos finales",
+        "resolution": "README/FAQ/guía señalan estados y productos todavía pendientes, actualizados por GO"
+      },
+      {
+        "issue": "README no garantiza descarga de fuentes sin navegación",
+        "resolution": "FAQ y guía ofrecen adjuntos mínimos y enlaces blob/raw absolutos"
+      }
+    ]
   },
   "team_documents": [
     {
@@ -47,5 +404,192 @@
       }
     }
   ],
-  "canonical_website": "https://hackathon-ambiental.stevenvallejo.com"
+  "canonical_website": "https://hackathon-ambiental.stevenvallejo.com",
+  "go_p2": {
+    "received_time": "2026-10-07 10:34 Bogotá",
+    "quotas_consulted": "2026-10-07T15:35:16.801Z; scopeKratos no disponibilidadFedora, Codex/Claude desconocidas",
+    "jobs": [
+      {
+        "harness": "luna",
+        "model": "codex/gpt-6-luna",
+        "bridge": "fedora-local",
+        "job_id": "9a89785120074a3a99bba39fc6f53610",
+        "access": "write",
+        "outputs": [
+          "entregables/p2_comparacion_financiera.json",
+          "entregables/p2_comparacion_financiera.md"
+        ],
+        "status_last_observed": "queued"
+      },
+      {
+        "harness": "claude",
+        "pane": "%0",
+        "output": "entregables/p2_justificacion.md",
+        "typed_at": "2026-10-07T15:47:12.248696+00:00",
+        "prompt_sha256": "93dfb0eab331090f815e71584745b6f09ff6af75d59bdf5ef1f952e7427948a5",
+        "status": "submitted",
+        "submitted_at": "2026-10-07T15:47:38.210232+00:00"
+      },
+      {
+        "harness": "muse",
+        "pane": "%1",
+        "output": "entregables/revision_independiente.md",
+        "typed_at": "2026-10-07T15:47:12.248696+00:00",
+        "prompt_sha256": "e65d5d896e4b6e9402bbec4887dd7c2067b197e1507e2ce4d366470d65ff1da9",
+        "status": "submitted",
+        "submitted_at": "2026-10-07T15:47:38.210232+00:00"
+      }
+    ],
+    "native_writer_outputs": [
+      "entregables/p2_portafolio.md",
+      "entregables/p2_portafolio.csv",
+      "entregables/registro_preferencias.md"
+    ],
+    "updated_at": "2026-10-07T16:08:17.349187+00:00",
+    "candidate": {
+      "portfolio": "D6",
+      "ids": [
+        "RETO-03",
+        "RETO-04",
+        "RETO-07",
+        "RETO-08",
+        "RETO-09",
+        "RETO-14"
+      ],
+      "cost_millions_cop": 5000,
+      "count": 6,
+      "status": "base_provisional_aceptada_no_optimo_ambiental",
+      "conditions": [
+        "unidad regional14/cupo porconfirmar",
+        "sitios/factores/funciones distintas07–08/09vs03",
+        "eficacia no demostrada",
+        "uso/aval fuentes tercero en revisión"
+      ]
+    },
+    "financial_job": {
+      "job_id": "9a89785120074a3a99bba39fc6f53610",
+      "status": "succeeded",
+      "route": "fedora-local",
+      "model": "codex/gpt-6-luna",
+      "account_alias": "portatil",
+      "duration_s": 65.4,
+      "subsets": 32768,
+      "feasible": 1567,
+      "maximum_count_conditional": 6,
+      "maximum_sets": 7
+    },
+    "scheduler_builder_job": {
+      "job_id": "776483f87dc346c0af488e546a1f182e",
+      "status": "succeeded_con_error_hijo",
+      "route": "fedora-local",
+      "model": "codex/gpt-6-luna",
+      "duration_s": 126.2,
+      "child_error": "Read-only file system; no atribuir auth/cuota",
+      "native_recovery": "CLI respondió; parser corregido, continuidad pendiente de observar"
+    },
+    "reviews": {
+      "Claude": "justificaciónv2corregida estable; nueva revisiónpitchen curso",
+      "Muse": "revisiónindependiente corregida estable; nuevarevisióncarteraen curso"
+    }
+  },
+  "operational_scan": {
+    "at": "2026-10-07T15:53:56.598955+00:00",
+    "reviewed_text_files": 67,
+    "included_frozen_package": true,
+    "real_secret_confirmed": false,
+    "false_positive_fields": [
+      {
+        "file": "ambiente/preparar_runtime_aislado.py",
+        "lines": [
+          26,
+          69,
+          70
+        ],
+        "reason": "Generación/parametrización de secretos de runtime al ejecutar; no valores de credenciales embebidos. Herramienta interna, no necesaria para web."
+      },
+      {
+        "file": "ambiente/paquete_publico_congelado/ambiente/preparar_runtime_aislado.py",
+        "lines": [
+          26,
+          69,
+          70
+        ],
+        "reason": "Copia de la misma parametrización, no secreto real."
+      },
+      {
+        "file": "ambiente/deployweb.json",
+        "field": "authorization",
+        "reason": "Texto de autorización del usuario; no encabezado Bearer/Basic ni credencial."
+      }
+    ],
+    "recommendation": "Usar copias ambiente/publicos para lectura pública del progreso. Rutas/IP/usuario/TUI de operativos originales son metadatos no secretos; no se declara incidente ni se bloquea repo por ellos."
+  },
+  "institutional_visual_review": {
+    "pages_reviewed": 31,
+    "source_pdf_sha256": "b9eafc137f1c8d1fdb592f8dc6c3f52f4765d59c942df0415261002b16e51fdc",
+    "findings": [
+      {
+        "page": 14,
+        "identifiable_fields": [
+          "nombre_empresa",
+          "punto_ubicacion",
+          "categoria_riesgo_actual_y_SSP2"
+        ],
+        "action": "Omitir/redactar tres mapas individuales; conservar gráfico agregado, hallazgos y factores."
+      },
+      {
+        "page": 20,
+        "identifiable_fields": [
+          "nombre_juridico_en_carátula",
+          "vinculo_plan_adaptacion_individual"
+        ],
+        "action": "Omitir carátulas; conservar explicación del programa de32organizaciones."
+      },
+      {
+        "pages": [
+          24,
+          25,
+          26,
+          27
+        ],
+        "identifiable_fields": [
+          "nombre_usuario_MRV",
+          "login_municipal",
+          "ID_app_registro"
+        ],
+        "action": "Omitir solamente identificadores de operación, conservar campos y lógica MEA. No se observó contraseña."
+      }
+    ],
+    "institutional_attribution_names_allowed": true,
+    "rule_source": "RETO CLIMATE WEEK HACKATHON.pdf p.3: información empresarial únicamente agregada, anonimizada o sintética; p.8: no utilizar información reservada.",
+    "public_source_document_verified": false,
+    "source_institutional_page": "https://observatorioambiental.cornare.gov.co/crecimiento-verde-y-cambio-climatico/cambio-climatico/",
+    "publication_limits": "Presentación recibida como insumo institucional; no se ha verificado una URL pública del mismo PDF/PPTX. No se atribuye confidencialidad legal a nombres públicos por sí solos."
+  },
+  "excluded_directories": [
+    ".agentes-local/",
+    "node_modules/",
+    ".venv/",
+    "venv/",
+    ".codex/",
+    "auth/perfiles/backups",
+    "repos_anidados_copia",
+    "ZIP_original_con_capturas"
+  ],
+  "methodology": {
+    "publication": "gitlink_submodule_pinned_only",
+    "path": "metodologia/SpecOrganon",
+    "commit": "b1bc77e66ee518b0d1ca2c835b2b64263703a4b3",
+    "url": "https://github.com/stevenvo780/SpecOrganon/tree/b1bc77e66ee518b0d1ca2c835b2b64263703a4b3",
+    "copied_tree": false
+  },
+  "rights_review": {
+    "status": "pendiente_interpretacion_juridica",
+    "source": "M-E-2411",
+    "sheet": "Sobre este documento",
+    "cell": "B7",
+    "observed": "condiciones uso exclusivo CORNARE/aval para uso/mención/reproducción/modificación",
+    "public_access_is_open_license": false,
+    "action": "no nuevas copias masivas de terceros hasta dictamen; avances propios continúan"
+  }
 }

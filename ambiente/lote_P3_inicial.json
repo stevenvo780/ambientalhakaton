@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-07T16:11:36.889695+00:00",
+  "state": "borrador_P3_D6_provisional",
+  "rows_residual": 26,
+  "rows_variables": 19,
+  "raw_new_baselines_published": false,
+  "values_physical_not_invented": true,
+  "files": {
+    "entregables/p3_riesgo_residual.md": "3b5c0e6729c47ebf52a036866b0ba20c57d15d836bd1bbf400404f27d7085da3",
+    "entregables/p3_riesgo_residual.csv": "7591d4816281e9d5101a273e4688f155bb222303f89e32e68b2ba64586d921bb",
+    "entregables/variables_seguimiento.csv": "6a328f36755015784d91e574a7d0618122365b47a830b6cfbe8be20985231feb"
+  }
+}

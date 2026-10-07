@@ -1,0 +1,703 @@
+                                                     Código: M-F-01
+
+                     ANEXO 1.                        Fecha Elab. 22/02/2023
+
+                   INDICADORES                       Versión: 01
+                    EVALUADOS                        Fecha Act. 27/01/2025
+                    MUNCIPALES                       Consecutivo: M-E-2896
+
+
+
+
+ CORPORACIÓN AUTÓNOMA REGIONAL DE LAS CUENCAS DE LOS RÍOS NEGRO Y
+                       NARE — CORNARE—
+
+
+
+
+ANEXO 1. INDICADORES DE AMENAZA, SENSIBILIDAD Y CAPACIDAD ADAPTATIVA
+   EVALUADOS EN EL ANÁLISIS DE VULNERABILIDAD Y RIESGO CLIMÁTICO
+                            MUNICIPALES
+
+
+
+
+                  PLAN DE ADAPTACIÓN TERRITORIAL
+
+
+
+
+                             VERSIÓN 1
+
+
+
+
+  FASE 3 PROYECTO DE ACTUALIZACIÓN DE LA VULNERABILIDAD Y EL RIESGO
+               CLIMÁTICO EN LA JURISDICCIÓN DE CORNARE
+
+
+
+
+                     MEDELLÍN, OCTUBRE DE 2025
+                                                                        Código: M-F-01
+
+                             ANEXO 1.                                   Fecha Elab. 22/02/2023
+
+                           INDICADORES                                  Versión: 01
+                            EVALUADOS                                   Fecha Act. 27/01/2025
+                            MUNCIPALES                                  Consecutivo: M-E-2896
+
+
+
+Amenazas climáticas físicas
+
+                                                                    Origen de la            Período de la
+ No.   Dimensión SIIVRA   Indicador                        Fuente                                                  Método de proyección
+                                                                    información             información
+
+
+       Biodiversidad y
+                          Cambio en las Formaciones                                         (1981-2010) y (2040,   Metodología de zonas de
+ 1     servicios                                           SIIVRA   IDEAM, CORNARE
+                          vegetales de Holdridge                                            2060)                  vida de Holdridge, 1967
+       ecosistémicos
+
+
+                          Porcentaje de áreas
+       Biodiversidad y                                                                                             Procesamiento
+                          protegidas afectados por                                          (1981-2010) y (2040,
+ 2     servicios                                           SIIVRA   IDEAM, CORNARE                                 cartográfico, cruce de
+                          amenazas naturales por                                            2060)
+       ecosistémicos                                                                                               capas
+                          municipio
+
+
+                          Cambio del área municipal
+                                                                                            (1981-2010) y (2040,   Índice de Thom (confort
+ 3     Hábitat humano     con óptimo de confort            SIIVRA   IDEAM
+                                                                                            2060)                  climático)
+                          climático
+
+
+                          Porcentaje de centros
+                                                                                                                   Procesamiento
+                          poblados afectados por                                            (1981-2010) y (2040,
+ 4     Hábitat humano                                      SIIVRA   IDEAM, DANE                                    cartográfico, cruce de
+                          amenazas naturales por                                            2060)
+                                                                                                                   capas
+                          municipio
+
+
+                                                                                            (1981-2010) y (2040,   Balance hídrico de largo
+ 5     Recurso hídrico    Disminución de la                SIIVRA   IDEAM, CORNARE
+                                                                                            2060)                  plazo
+                          escorrentía (relativa (%) a la
+                                                                    Código: M-F-01
+
+                             ANEXO 1.                               Fecha Elab. 22/02/2023
+
+                           INDICADORES                              Versión: 01
+                            EVALUADOS                               Fecha Act. 27/01/2025
+                            MUNCIPALES                              Consecutivo: M-E-2896
+
+
+
+                          observada en el clima de
+                          referencia)
+
+
+                          Índice de aridez (aumento                                     (1981-2010) y (2040,   IDEAM - Índice de Aridez
+6   Recurso hídrico                                     SIIVRA   IDEAM, CORNARE
+                          en el IA municipal)                                           2060)                  (IA)
+
+
+                          Elementos puntuales y
+                                                                                                               Procesamiento
+                          lineales afectados por                 DNP, IDEAM,            (1981-2010) y (2040,
+7   Infraestructura                                     SIIVRA                                                 cartográfico, cruce de
+                          amenazas naturales por                 CORNARE                2060)
+                                                                                                               capas
+                          municipio
+
+
+                                                                                                               Índice Municipal de
+                          Aumento del área                                                                     Riesgo de Desastres
+                          municipal amenazada por                                                              Ajustado por Capacidades
+                          sequía, incendios,                                            (1981-2010) y (2040,   – DNP complementado
+8   Riesgo de desastres                                 SIIVRA   CORNARE, IDEAM
+                          inundación, avenida                                           2060)                  con estudios técnicos de
+                          torrencial y movimientos en                                                          zonificación de amenazas
+                          masa                                                                                 y vulnerabilidad de
+                                                                                                               CORNARE
+
+
+                          Aumento del porcentaje del                                                           Metodología propuesta
+                                                                 CORNARE IDEAM,
+                          área territorial con                                                                 por Alarcón Hincapié,
+                                                                 MADS                   (1981-2010) y (2040,
+9   Salud humana          condiciones climáticas        SIIVRA                                                 2017
+                                                                                        2060)
+                          favorables para presencia
+                          del Anopheles
+                                                                   Código: M-F-01
+
+                        ANEXO 1.                                   Fecha Elab. 22/02/2023
+
+                      INDICADORES                                  Versión: 01
+                       EVALUADOS                                   Fecha Act. 27/01/2025
+                       MUNCIPALES                                  Consecutivo: M-E-2896
+
+
+
+
+                     Aumento del porcentaje del                                                               Metodología propuesta
+                     área territorial con                                                                     por Alarcón Hincapié,
+                                                                IDEAM, CORNARE,        (1981-2010) y (2040,
+10   Salud humana    condiciones climáticas       SIIVRA                                                      2017
+                                                                MADS                   2060)
+                     favorables para presencia
+                     de Aedes aegypti
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                              Proyección de acuerdo
+     alimentaria y   las zonas óptimas                          IDEAM, POTA,           (1981-2010) y (2040,
+11                                                SIIVRA                                                      con los requerimientos
+     producción      agroclimáticas para el                     UPRA                   2060)
+                                                                                                              del cultivo
+     agropecuaria    cultivo aguacate
+
+
+                     Cambio en la superficie de
+     Seguridad
+                     las zonas óptimas                                                                        Proyección de acuerdo
+     alimentaria y                                              IDEAM, POTA,           (1981-2010) y (2040,
+12                   agroclimáticas para el       SIIVRA                                                      con los requerimientos
+     producción                                                 UPRA                   2060)
+                     cultivo de hortalizas de                                                                 del cultivo
+     agropecuaria
+                     clima frío
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                              Proyección de acuerdo
+     alimentaria y   las zonas óptimas                          IDEAM, POTA,           (1981-2010) y (2040,
+13                                                Ecoacciones                                                 con los requerimientos
+     producción      agroclimáticas para el                     UPRA                   2060)
+                                                                                                              del cultivo
+     agropecuaria    cultivo cebolla
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                              Proyección de acuerdo
+     alimentaria y   las zonas óptimas                          IDEAM, POTA,           (1981-2010) y (2040,
+14                                                Ecoacciones                                                 con los requerimientos
+     producción      agroclimáticas para el                     UPRA                   2060)
+                                                                                                              del cultivo
+     agropecuaria    cultivo maíz
+                                                              Código: M-F-01
+
+                        ANEXO 1.                              Fecha Elab. 22/02/2023
+
+                      INDICADORES                             Versión: 01
+                       EVALUADOS                              Fecha Act. 27/01/2025
+                       MUNCIPALES                             Consecutivo: M-E-2896
+
+
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                         Proyección de acuerdo
+     alimentaria y   las zonas óptimas                     IDEAM, POTA,           (1981-2010) y (2040,
+15                                                SIIVRA                                                 con los requerimientos
+     producción      agroclimáticas para el                UPRA                   2060)
+                                                                                                         del cultivo
+     agropecuaria    cultivo de café
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                         Proyección de acuerdo
+     alimentaria y   las zonas óptimas                     IDEAM, POTA,           (1981-2010) y (2040,
+16                                                SIIVRA                                                 con los requerimientos
+     producción      agroclimáticas para                   UPRA                   2060)
+                                                                                                         del cultivo
+     agropecuaria    plantaciones forestales
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                         Proyección de acuerdo
+     alimentaria y   las zonas óptimas                     IDEAM, POTA,           (1981-2010) y (2040,
+17                                                SIIVRA                                                 con los requerimientos
+     producción      agroclimáticas para carne             UPRA                   2060)
+                                                                                                         del cultivo
+     agropecuaria    bovina
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                         Proyección de acuerdo
+     alimentaria y   las zonas óptimas                     IDEAM, POTA,           (1981-2010) y (2040,
+18                                                SIIVRA                                                 con los requerimientos
+     producción      agroclimáticas para leche             UPRA                   2060)
+                                                                                                         del cultivo
+     agropecuaria    bovina
+
+
+     Seguridad       Cambio en la superficie de
+                                                                                                         Proyección de acuerdo
+     alimentaria y   las zonas óptimas                     IDEAM, POTA,           (1981-2010) y (2040,
+19                                                SIIVRA                                                 con los requerimientos
+     producción      agroclimáticas para el                UPRA                   2060)
+                                                                                                         del cultivo
+     agropecuaria    cultivo de mora
+                                                              Código: M-F-01
+
+                        ANEXO 1.                              Fecha Elab. 22/02/2023
+
+                      INDICADORES                             Versión: 01
+                       EVALUADOS                              Fecha Act. 27/01/2025
+                       MUNCIPALES                             Consecutivo: M-E-2896
+
+
+
+
+     Seguridad       Áreas con aptitud
+                                                                                                         Procesamiento
+     alimentaria y   agropecuaria afectados por            IDEAM, POTA,           (1981-2010) y (2040,
+20                                                SIIVRA                                                 cartográfico, cruce de
+     producción      amenazas naturales por                UPRA                   2060)
+                                                                                                         capas
+     agropecuaria    municipio
+                                                                               Código: M-F-01
+
+                                 ANEXO 1.                                      Fecha Elab. 22/02/2023
+
+                               INDICADORES                                     Versión: 01
+                                EVALUADOS                                      Fecha Act. 27/01/2025
+                                MUNCIPALES                                     Consecutivo: M-E-2896
+
+
+
+Sensibilidad física
+
+ No.   Dimensión SIIVRA             Indicador                               Fuente              Origen de la información     Período de la información
+
+
+
+       Biodiversidad y servicios    Porcentaje de áreas del municipio                           Mapa satelital de
+ 1                                                                          SIIVRA                                           2018
+       ecosistémicos                correspondiente a bosque                                    coberturas de bosque- CLC
+
+
+       Biodiversidad y servicios
+                                    Índice de extracción de productos del
+       ecosistémicos
+ 2                                  bosque (maderables) por actividad       SIIVRA              MINTRANSPORTE                2024
+                                    económica
+       Recurso hídrico
+
+
+       Biodiversidad y servicios                                                                Instituto Alexander von
+ 3                                  Índice de integridad ecológica          SIIVRA                                           2023
+       ecosistémicos                                                                            Humboldt
+
+
+       Biodiversidad y servicios
+                                                                                                Observatorio de bosques de
+       ecosistémicos
+ 4                                  Tasa de deforestación                   SIIVRA              Antioquia - Instituto        2022
+                                                                                                Geográfico Agustín Codazzi
+       Recurso hídrico
+
+
+                                    Porcentaje de personas que habitan
+                                    en viviendas inadecuadas
+ 5     Hábitat humano                                                       SIIVRA              DANE                         2021
+                                    (subcomponente del Índice de
+                                    necesidades básicas insatisfechas)
+                                                                        Código: M-F-01
+
+                         ANEXO 1.                                       Fecha Elab. 22/02/2023
+
+                       INDICADORES                                      Versión: 01
+                        EVALUADOS                                       Fecha Act. 27/01/2025
+                        MUNCIPALES                                      Consecutivo: M-E-2896
+
+
+
+
+6    Hábitat humano         Déficit de vivienda (cualitativo)        SIIVRA              DANE                       2018
+
+
+                            Condiciones de la vivienda y servicios
+7    Hábitat humano         públicos (privación por hacinamiento     SIIVRA              DANE                       2021
+                            crítico)
+
+
+8    Recurso hídrico        Índice de uso del agua Municipal         SIIVRA              POMCAS CORNARE y ENA       2018
+
+
+                            Índice de vulnerabilidad al
+9    Recurso hídrico                                                 SIIVRA              POMCAS CORNARE y ENA       2018
+                            desabastecimiento hídrico municipal
+
+
+                            Índice de alteración potencial de
+10   Recurso hídrico                                                 SIIVRA              POMCAS CORNARE y ENA       2018
+                            calidad del agua (IACAL)
+
+
+                            Valores pagados en fletes de
+11   Infraestructura        municipio de origen y destino con        Ecoacciones         MINTRANSPORTE              2024
+                            respecto al total de la jurisdicción
+
+
+                                                                                         Sistema único de
+                            Consumo eléctrico municipal                                  información de servicios
+12   Infraestructura                                                 SIIVRA                                         2023
+                            residencial por suscriptores                                 públicos domiciliarios -
+                                                                                         DANE
+                                                                            Código: M-F-01
+
+                             ANEXO 1.                                       Fecha Elab. 22/02/2023
+
+                           INDICADORES                                      Versión: 01
+                            EVALUADOS                                       Fecha Act. 27/01/2025
+                            MUNCIPALES                                      Consecutivo: M-E-2896
+
+
+
+
+                                                                                             Sistema único de
+                                Intensidad energética (consumo
+                                                                                             información de servicios
+13   Infraestructura            eléctrico regulado del segmento          Ecoacciones                                        2023
+                                                                                             públicos domiciliarios -
+                                Industrial / valor agregado municipal)
+                                                                                             DANE
+
+
+                                Privación por acceso a fuente de agua
+14   Infraestructura            mejorada (subcomponente del Índice       SIIVRA              DANE                           2021
+                                de pobreza multidimensional)
+
+
+                                Número de fenómenos                                          DAGRAN, UNGRD,
+15   Gestión del riesgo         hidroclimáticos extremos que tiene       SIIVRA              CORNARE, Desinventar,          1994-2024
+                                presencia en el territorio                                   Instrumentos municipales
+
+
+                                Área territorial expuesta a fenómenos                        DAGRAN, UNGRD,
+16   Gestión del riesgo         hidroclimáticos extremos que tienen      SIIVRA              CORNARE, Desinventar,          1994-2024
+                                presencia en el territorio                                   Instrumentos municipales
+
+
+                                Número de casos de dengue por cada                           Secretaría de Salud e
+17   Salud humana                                                        Ecoacciones                                        2010-2023
+                                100 000 habitantes                                           Inclusión Social
+
+
+                                Número de casos de malaria por cada                          Secretaría de Salud e
+18   Salud humana                                                        Ecoacciones                                        2010-2023
+                                100 000 habitantes                                           Inclusión Social
+
+
+     Seguridad alimentaria y    Áreas en conflicto de uso del suelo en                       Instituto Geográfico Agustín
+19                                                                       SIIVRA                                             2022
+     producción agropecuaria    zonas agrícolas                                              Codazzi
+                                                                          Código: M-F-01
+
+                             ANEXO 1.                                     Fecha Elab. 22/02/2023
+
+                           INDICADORES                                    Versión: 01
+                            EVALUADOS                                     Fecha Act. 27/01/2025
+                            MUNCIPALES                                    Consecutivo: M-E-2896
+
+
+
+
+                                Áreas agrícolas con suelos
+     Seguridad alimentaria y                                                               Instituto Geográfico Agustín
+20                              degradados por erosión (presiones      Ecoacciones                                        2022
+     producción agropecuaria                                                               Codazzi
+                                antrópicas, naturales)
+
+
+                                Porcentaje de UPA que tienen
+     Seguridad alimentaria y                                                               Censo Nacional
+21                              dificultades en el uso del agua para   Ecoacciones                                        2014
+     producción agropecuaria                                                               Agropecuario
+                                las actividades agropecuarias
+
+
+     Seguridad alimentaria y
+     producción agropecuaria
+
+     Recurso hídrico
+22                              Índice de pobreza multidimensional     SIIVRA              DANE                           2021
+     Gestión del riesgo
+
+     Salud humana
+                                                                                   Código: M-F-01
+
+                                 ANEXO 1.                                          Fecha Elab. 22/02/2023
+
+                               INDICADORES                                         Versión: 01
+                                EVALUADOS                                          Fecha Act. 27/01/2025
+                                MUNCIPALES                                         Consecutivo: M-E-2896
+
+
+
+Capacidad adaptativa física
+
+                                                                                                                                        Período de la
+ No.   Dimensión SIIVRA             Indicador                                       Fuente             Origen de la información
+                                                                                                                                        información
+
+
+       Biodiversidad y servicios    Porcentaje de área del municipio con áreas                         RUNAP – Registro Único
+ 1                                                                                  SIIVRA                                              2025
+       ecosistémicos                protegidas registradas en RUNAP                                    Nacional de Áreas Protegidas
+
+
+       Biodiversidad y servicios
+                                    Inversión en restauración/reforestación por
+       ecosistémicos                                                                                   Departamento Nacional de
+ 2                                  municipio ADICIONAL a lo requerido por          SIIVRA                                              2023
+                                                                                                       Planeación
+                                    ley
+       Recurso hídrico
+
+
+                                    Porcentaje de área de Reserva Natural de la
+       Biodiversidad y servicios                                                                       RUNAP – Registro Único
+ 3                                  Sociedad Civil RNSC respecto al área            SIIVRA                                              2025
+       ecosistémicos                                                                                   Nacional de Áreas Protegidas
+                                    municipal
+
+
+                                    Capacidad de inversión en Biodiversidad y
+       Biodiversidad y servicios    SE, comparado con la capacidad de
+ 4                                                                                  SIIVRA             DANE                             2025
+       ecosistémicos                generación de valor agregado por
+                                    municipio
+
+
+                                    Índice de inversión en mejoramientos de
+                                                                                                       Planes de desarrollo
+ 5     Hábitat humano               vivienda considerando el déficit cualitativo    SIIVRA                                              2024-2027
+                                                                                                       actualizados de cada municipio
+                                    de vivienda.
+                                                                           Código: M-F-01
+
+                         ANEXO 1.                                          Fecha Elab. 22/02/2023
+
+                       INDICADORES                                         Versión: 01
+                        EVALUADOS                                          Fecha Act. 27/01/2025
+                        MUNCIPALES                                         Consecutivo: M-E-2896
+
+
+
+
+                            Índice de capacidad de ordenamiento                                Departamento Nacional de
+6    Hábitat humano                                                         SIIVRA                                        2016-2023
+                            territorial del municipio                                          Planeación
+
+
+                            Inversiones en la conservación del recurso
+                            hídrico por parte de entidades territoriales
+7    Recurso hídrico                                                        SIIVRA             CORNARE                    2020-2024
+                            y Cornare por Km2 de área de cada
+                            municipio
+
+
+                            Componente de servicios públicos -
+                                                                                               Departamento Nacional de
+8    Recurso hídrico        Subíndice de desempeño integral                 SIIVRA                                        2016-2023
+                                                                                               Planeación
+                            municipal
+
+
+                            Cobertura viviendas con agua potable
+9    Recurso hídrico                                                        SIIVRA             Gobernación de Antioquia   2023
+                            rural/urbano
+
+
+                            Capacidad de inversión Recurso Hídrico,
+     Recurso hídrico
+                            comparado con la capacidad de
+10                                                                          Ecoacciones        DANE                       2025
+                            generación de valor agregado por
+                            municipio
+
+
+                            Índice de cobertura eléctrica rural y
+                            cobertura de internet - Subcomponente de                           Departamento Nacional de
+11   Infraestructura                                                        SIIVRA                                        2016-2023
+                            servicios del Índice de desempeño integral                         Planeación
+                            municipal servicios públicos
+                                                                            Código: M-F-01
+
+                            ANEXO 1.                                        Fecha Elab. 22/02/2023
+
+                          INDICADORES                                       Versión: 01
+                           EVALUADOS                                        Fecha Act. 27/01/2025
+                           MUNCIPALES                                       Consecutivo: M-E-2896
+
+
+
+
+                               Capacidad de inversión en Infraestructura,
+                               comparado con la capacidad de
+12   Infraestructura                                                         Ecoacciones        DANE                             2023
+                               generación de valor agregado por
+                               municipio
+
+
+                               Acciones tendientes a fortalecer la GRD                          CORNARE (Banco de Proyectos,
+13   Gestión del riesgo        por los fenómenos que aumentarían su          SIIVRA             MRV) - Planes de Desarrollo      2020-2024
+                               frecuencia por el cambio climático                               Municipal
+
+
+                               Índice de capacidad de Ordenamiento
+                                                                                                Departamento Nacional de
+14   Gestión del riesgo        territorial (ot) - Índice de desempeño        SIIVRA                                              2016-2023
+                                                                                                Planeación
+                               integral municipal
+
+
+                               Porcentaje de cobertura de SAT: Cantidad                         CORNARE - Planes de Desarrollo
+15   Gestión del riesgo        de sistema(s) de alarma temprana (SAT)        Ecoacciones        Municipal (PDM)- UNGRD-          1994-2024
+                               implementados que posee un municipio                             DAGRAN- Desinventar
+
+
+                               Disponibilidad e implementación de
+                                                                                                Planes de Desarrollo Municipal
+16   Gestión del riesgo        instrumentos, equipos y vehículos             Ecoacciones                                         2025
+                                                                                                (PDM) - PMGRD - EMRE
+                               operativos
+
+
+                               Capacidad de inversión en Riesgo de
+                               desastres, comparado con la capacidad de
+17   Gestión del riesgo                                                      Ecoacciones        DANE                             2023
+                               generación de valor agregado por
+                               municipio
+                                                                             Código: M-F-01
+
+                             ANEXO 1.                                        Fecha Elab. 22/02/2023
+
+                           INDICADORES                                       Versión: 01
+                            EVALUADOS                                        Fecha Act. 27/01/2025
+                            MUNCIPALES                                       Consecutivo: M-E-2896
+
+
+
+
+                                Capacidad instalada de servicios de
+                                                                                                 Secretaria de salud e inclusión
+18   Salud humana               atención en salud (camas hospitalarias,       Ecoacciones                                          2024
+                                                                                                 social
+                                consultorios y ambulancias x 1000 hab)
+
+                                Campañas realizadas en prevención de
+                                                                                                 Secretaria de salud e inclusión
+19   Salud humana               enfermedades por vectores (dengue,            Ecoacciones                                          2024
+                                                                                                 social
+                                malaria, Chikunguña, entre otras)
+                                                                                                 Secretaria de salud e inclusión
+20   Salud humana               Inversión en vacunación per capita            Ecoacciones                                          2025
+                                                                                                 social
+                                                                                                 Secretaria de salud e inclusión
+21   Salud humana               Inversión en primera infancia                 Ecoacciones                                          2025
+                                                                                                 social
+                                Índice de gestión del sistema de salud del                       Departamento Nacional de
+22   Salud humana                                                             SIIVRA                                               2016-2023
+                                municipio                                                        Planeación
+     Seguridad alimentaria y
+23                              Asistencia técnica BPA prestada a la UPA      SIIVRA             Censo Nacional Agropecuario       2014
+     producción agropecuaria
+                                Porcentaje de productores que no
+     Seguridad alimentaria y
+24                              pertenecen a ningún tipo de asociación en     SIIVRA             Censo Nacional Agropecuario       2014
+     producción agropecuaria
+                                el municipio
+     Seguridad alimentaria y    Porcentaje de la superficie agrícola con
+25                                                                            SIIVRA             Censo Nacional Agropecuario       2014
+     producción agropecuaria    irrigación
+     Seguridad alimentaria y    Unidades productoras agropecuarias con
+26                                                                            SIIVRA             Censo Nacional Agropecuario       2014
+     producción agropecuaria    actividades de conservación del suelo
+     Seguridad alimentaria y    Unidades productoras agropecuarias con
+27                                                                            SIIVRA             Censo Nacional Agropecuario       2014
+     producción agropecuaria    prácticas de manejo del suelo
+     Seguridad alimentaria y    Áreas de conservación por unidades
+28                                                                            SIIVRA             Censo Nacional Agropecuario       2014
+     producción agropecuaria    productoras agropecuarias
+                                                                               Código: M-F-01
+
+                               ANEXO 1.                                        Fecha Elab. 22/02/2023
+
+                             INDICADORES                                       Versión: 01
+                              EVALUADOS                                        Fecha Act. 27/01/2025
+                              MUNCIPALES                                       Consecutivo: M-E-2896
+
+
+
+                                  Número de estudiantes matriculados por
+                                  municipio en relación con el número de
+     Seguridad alimentaria y      estudiantes en cobertura de plan de                              Departamento Nacional de
+29                                                                              SIIVRA                                        2016-2023
+     producción agropecuaria      alimentación escolar para entidades                              Planeación
+                                  oficiales de municipios de la jurisdicción
+                                  de CORNARE
+                                  Capacidad de inversión en Seguridad
+                                  Alimentaria y Producción Agropecuaria,
+     Seguridad alimentaria y                                                                       Departamento Nacional de
+30                                comparado con la capacidad de                                                               2016-2023
+     producción agropecuaria                                                                       Planeación
+                                  generación de valor agregado por
+                                  municipio
+     Biodiversidad y servicios
+     ecosistémicos
+     Recurso hídrico
+     Hábitat humano
+                                  Importancia económica municipal (valor
+31   Infraestructura                                                            SIIVRA             DANE                       2023
+                                  agregado)
+     Salud humana
+     Gestión del riesgo
+     Seguridad alimentaria y
+     producción agropecuaria
+                                                                       Código: M-F-01
+
+                            ANEXO 1.                                   Fecha Elab. 22/02/2023
+
+                          INDICADORES                                  Versión: 01
+                           EVALUADOS                                   Fecha Act. 27/01/2025
+                           MUNCIPALES                                  Consecutivo: M-E-2896
+
+
+
+
+CONTROL DE DISTRIBUCIÓN
+Copia de este documento ha sido entregada a:
+
+
+
+     Nombre              Dependencia              Empresa                  Copia
+  Sandra Ledezma            CORNARE               CORNARE                    1
+ Germán Castellanos    Servidor SharePoint      ECOACCIONES                  1
+
+
+Las observaciones que resulten de su revisión y aplicación deben ser informadas a Ecoacciones
+S.A.S. BIC
+
+
+                                CONTROL DE REVISIONES
+
+
+ Rev.      Fecha           Descripción          Elaboró       Revisó           Aprobó
+                                                 Equipo       Germán            Sandra
+   0     30/10/2025       Emisión inicial
+                                               Ecoacciones   Castellanos       Ledezma
+

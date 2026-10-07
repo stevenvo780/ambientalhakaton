@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-07T16:08:37.606004+00:00",
+  "session": "PresupuestoVivo",
+  "text_sent": true,
+  "capture_before_text": true,
+  "capture_before_enter": true,
+  "wait_s": 1,
+  "purpose": "D6_N1_minimal_demo_integration",
+  "pre_idle": true
+}
