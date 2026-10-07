@@ -1,6 +1,6 @@
 # Goal activa — decisión de adaptación CORNARE
 
-**Estado: ACTIVA en esta conversación de ChatGPT Desktop desde la reanudación expresa del 07/10/2026 a las 11:19 de Bogotá.** El GO inicial se recibió a las 10:34; la pausa de migración posterior queda como antecedente histórico. No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; entrega límite: **14:00 del 7 de octubre de 2026**, Bogotá.
+**Estado: ACTIVA en esta conversación de ChatGPT Desktop desde la reanudación expresa del 07/10/2026 a las 11:19 de Bogotá.** El GO inicial se recibió a las 10:34; la pausa de migración posterior queda como antecedente histórico. No se reanudan goals históricas. La ejecución ambiental y los cambios mínimos aislados están autorizados. Preparación inicial registrada: 07/10/2026 10:13:24 Bogotá. Paquete objetivo: **13:50**; paquete listo para el usuario **antes de las 14:00 del 7 de octubre de 2026**, Bogotá. El usuario estudiará de **14:00 a 16:00** y presentará después.
 
 Continuidad vigente: [README](https://github.com/stevenvo780/ambientalhakaton/blob/dev/README.md) y [registro de ejecución](https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json). El [handoff](https://github.com/stevenvo780/ambientalhakaton/blob/dev/CONTINUIDAD_CHATGPT_DESKTOP.md) conserva el corte anterior a la reanudación; no modifica los criterios de aceptación siguientes.
 
@@ -9,6 +9,10 @@ Página canónica del equipo: [Hackathon ambiental](https://hackathon-ambiental.
 **Objetivo activo:** resolver la pregunta ambiental del corredor Rionegro–Guarne–Marinilla y entregar una decisión de adaptación defendible, reproducible y monitoreable: P1, P2, P3 y pitch, aprovechando **Presupuesto Vivo como principal** y **Territorio Vivo como apoyo de evidencia territorial/seguimiento**. El éxito corresponde a la decisión y sus razones, no a completar un software.
 
 Base de trabajo: [propuesta principal](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/propuesta_principal.md), [75 requisitos](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/matriz_requisitos_completa.md), [catálogo](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/catalogo_costos_reto.csv), [comparación financiera](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparacion_financiera.json) y [script reproducible](https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/comparar_presupuesto.py). Versión preparatoria central: `a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767`; los cambios de publicación se registran por commit. Los originales oficiales gobiernan; el documento central no los sustituye.
+
+## Aclaración de entrega del usuario
+
+Aclaración recibida el 7 de octubre, registrada en esta continuidad: el paquete de estudio se entrega al usuario antes de las 14:00, con buffer interno de 13:50. El ensayo humano con reloj se realizará durante el estudio de 14:00 a 16:00; su recibo queda pendiente y se añadirá antes de la presentación. Su ausencia no bloquea la entrega del paquete para estudiar. Ariadna, ingeniera ambiental, lidera la presentación; Brahyam, ingeniero ambiental, y Steven, desarrollador, apoyan y responden preguntas. El límite es **siete minutos en total entre los tres**.
 
 ## Recursos y escritores
 
@@ -43,8 +47,8 @@ Cronograma de ejecución actualizado con el GO real de las 10:34. Mantiene 13:50
 | P3: residual y seguimiento | 10:43–12:18 | Vacíos que cambian decisión, indicadores/línea base y revisión. |
 | Contraste de escenarios | 11:28–12:45 | Referencia/intermedio/SSP3-7.0–2060; decisiones y límites reales. |
 | Integración y revisión independiente | 12:41–13:30 | 75 IDs con evidencia; Claude/Muse y revisión delegada. |
-| Pitch, anexo y paquete público | 13:30–13:50 | Ensayo ≤ 7 min; anexo opcional ≤ 2 páginas; versiones coherentes. |
-| Entrega | 13:50–14:00 | Paquete final y limitaciones con hora real. |
+| Pitch, anexo y paquete de estudio | 13:30–13:50 | Guion preparado; ensayo durante estudio 14:00–16:00; anexo opcional ≤ 2 páginas; versiones coherentes. |
+| Entrega al usuario | 13:50–antes de 14:00 | Paquete listo para estudiar, limitaciones y ensayo humano aún pendiente. |
 
 Prioridad: **evidencia y diagnóstico → cartera/presupuesto → residual/seguimiento → contraste y defensa**. DA, P1, P2 y P3 avanzan en paralelo; comunican entradas pendientes sin rellenarlas. SpecOrganon se usa solo si ayuda a trazabilidad sin retrasar: no obliga a recorrer/aprobar automáticamente sus fases. Los cambios de interfaz son accesorios; el formato de tablas/láminas está permitido.
 
@@ -56,7 +60,7 @@ Prioridad: **evidencia y diagnóstico → cartera/presupuesto → residual/segui
 4. Cada intervención seleccionada incluye medida/ficha MEA por confirmar, factor S/CA, municipio/sitio sustentado o provisional, costo, actores propuestos/validados, secuencia y beneficio esperado con nivel de evidencia. No inventar beneficios, probabilidades, efectos causales, compromisos ni pesos del jurado.
 5. Contrastar **referencia, futuro intermedio suministrado y SSP3-7.0/2060**; conservar fuentes y decidir mantener/modificar/reemplazar por medida. DA busca faltantes en fuentes oficiales con tiempo acotado y registra ruta, resultado y dato solicitado. Si falta matriz/escenario obligatorio, entregar contraste parcial claramente marcado: **no cerrar la robustez completa ni la goal como cumplida**.
 6. **P3:** riesgo residual y sacrificios explícitos, dependencias deliberadamente ausentes como preguntas de levantamiento, variables mínimas/fuente/responsable/decisión afectada. No inferir aristas empresariales de proximidad. MEA con indicador, definición/fórmula, unidad, cobertura, línea base/fecha o ausencia, custodio/frecuencia y regla de reajuste; actividad/inversión no equivale a impacto. La meta del 30% es regional a 2035, no del primer año.
-7. P1–P3 responden las nueve preguntas oficiales; pitch ensayado ≤ 7 min y anexo cuantitativo opcional ≤ 2 páginas. Otro integrante reproduce cifras, conteo, fuentes y razones. La matriz conserva **R22+Q9+C8+X6+P3+F3+I16+H8=75 IDs**, cada uno con estado y evidencia/localizador; “condicional”/“pendiente” no se transforma en cumplido por una promesa.
+7. P1–P3 responden las nueve preguntas oficiales; pitch preparado para ≤ 7 min totales y anexo cuantitativo opcional ≤ 2 páginas; el ensayo humano se verifica durante el estudio y antes de la presentación. Otro integrante reproduce cifras, conteo, fuentes y razones. La matriz conserva **R22+Q9+C8+X6+P3+F3+I16+H8=75 IDs**, cada uno con estado y evidencia/localizador; “condicional”/“pendiente” no se transforma en cumplido por una promesa.
 
 **Done:** archivos entregados, razonamiento/evidencia verificables, cálculo reproducible, aceptación de los requisitos aplicables y límites visibles. Las pruebas de software/DB acreditan preparación técnica, no productos ambientales. No declarar eficacia observada, cartera ambiental óptima o robustez completa sin los datos necesarios. Si persiste una obligación científica sin evidencia, publicar la limitación y el resultado parcial sin falsear cumplimiento.
 

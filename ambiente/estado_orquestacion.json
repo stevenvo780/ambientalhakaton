@@ -1,13 +1,13 @@
 {
   "schema": "ambiental-hackathon.orquestacion.v1",
-  "updated_at_utc": "2026-10-07T16:26:26Z",
-  "updated_at_bogota": "2026-10-07T11:26:26-05:00",
+  "updated_at_utc": "2026-10-07T16:45:33Z",
+  "updated_at_bogota": "2026-10-07T11:45:33-05:00",
   "timezone": "America/Bogota",
   "estado": "ejecucion_reanudada_Desktop_goal_activa",
   "goal": {
     "documento": "caso/goal_ejecucion.md",
     "url": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/caso/goal_ejecucion.md",
-    "sha256": "013c2aafc1195124ce6a09c6b8ba0c2951e8f1992018034cba5d82db3ef2344b",
+    "sha256": "ab6d901a663cf8541c402814d0f64fa50adae960c6555a22cff247139788afae",
     "preparada": true,
     "activada": true,
     "herramienta_create_goal_usada": true,
@@ -25,14 +25,25 @@
     "paquete_bogota": "2026-10-07T13:50:00-05:00",
     "entrega_bogota": "2026-10-07T14:00:00-05:00",
     "minutos_disponibles_hasta_paquete": 143,
-    "recalcular_tras_GO_tardio": true
+    "recalcular_tras_GO_tardio": true,
+    "entrega": "paquete listo para el usuario antes de 14:00; presentación posterior al estudio",
+    "estudio_bogota": {
+      "inicio": "2026-10-07T14:00:00-05:00",
+      "fin": "2026-10-07T16:00:00-05:00"
+    },
+    "ensayo_humano": {
+      "estado": "pendiente",
+      "ventana": "durante estudio 14:00–16:00, antes de la presentación",
+      "bloquea_paquete_estudio_14h": false
+    },
+    "aclaracion_usuario_registrada_utc": "2026-10-07T16:45:33Z"
   },
   "recursos": {
     "nativos_maximos_incluido_root": 5,
     "nativos_ejecutores_maximos": 4,
     "claude_muse": "Revisiones independientes actuales sobre copias congeladas, con archivos propios; resultados pendientes.",
     "gemini": "Puente local verificado previamente; revisión MEA en curso. El menú de autenticación de la sesión anterior no representa el estado del puente.",
-    "gpt_6_luna": "Actualizador único en recuperación; falta comprobar ciclo real y repetición automática.",
+    "gpt_6_luna": "Actualizador único: dos ciclos reales exitosos con inicios11:35:44 y11:38:44 separados180segundos; validación y push confirmados. Solo fuentes aprobadas/publicadas por commit, sin leer borradores.",
     "codex_remotos": "solo sesiones existentes; worktrees aislados",
     "cuotas": "Lectura actual de la app para Codex; las cuotas de otros proveedores locales permanecen desconocidas. Sin renovación local, cambio de cuenta ni failover automático."
   },
@@ -126,7 +137,14 @@
     "rama_documentos": "dev",
     "canonicalURL": "https://hackathon-ambiental.stevenvallejo.com",
     "verificacion_sitio": "comprobación HTTP y despliegue a cargo del escritor web; sin alterar recibos históricos",
-    "actualizador": "Cadencia de inicio solicitada 180 segundos; recuperación en curso. Confirmar ciclos, push y despliegue por separado."
+    "actualizador": "Inicios cada180segundos comprobados en dos éxitos; commit/push y despliegue conservan latencia. Recibo conserva commit de fuentes, hashes y fecha de captura; la lectura de una versión anterior queda visible.",
+    "verificacion_recibos": {
+      "primer_commit": "f4f07f11babbdf1e91767fbcc4b63bfd9ada858f",
+      "segundo_commit": "96d9e20064debf765675a55e87fe712662bf3e91",
+      "intervalo_inicios_segundos": 180,
+      "web_verificada_commit": "96d9e20064debf765675a55e87fe712662bf3e91",
+      "verificada_utc": "2026-10-07T16:41:42Z"
+    }
   },
   "ejecucion_remota": [
     {
@@ -164,5 +182,13 @@
     "auth_bridge": "respuesta_real_confirmada_previamente",
     "auth_standalone": "menu_anterior_conservado_sin_reconfigurar",
     "cuota_local": "UNKNOWN"
+  },
+  "equipo_presentacion": {
+    "lider": "Ariadna, ingeniera ambiental",
+    "apoyos": [
+      "Brahyam, ingeniero ambiental",
+      "Steven, desarrollador"
+    ],
+    "duracion_total_maxima_minutos": 7
   }
 }

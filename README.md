@@ -8,6 +8,8 @@ Proponemos **Presupuesto Vivo como principal y Territorio Vivo como apoyo** para
 
 **Estado de esta ampliación: 7 de octubre de 2026; la fecha vigente de avance se consulta en estado/commits. GO explícito recibido y goal activa: ejecución ambiental autorizada; consultar el registro vigente de orquestación.** Paquete objetivo **13:50**; entrega **antes de las 14:00 de Bogotá**. La fase cambia de preparación a ejecución por el GO del usuario; los productos finales siguen pendientes.
 
+**Entrega al equipo:** solución lista para estudiar antes de las **14:00**; estudio de **14:00 a 16:00** y presentación después. Ariadna lidera; Brahyam y Steven apoyan y responden preguntas. El pitch tiene un límite de **siete minutos totales**. El ensayo humano ocurrirá durante el estudio y sigue pendiente; no bloquea el paquete de estudio para las 14:00.
+
 **Codex principal SOLO orquesta:** instancia/delega, asigna áreas, controla sesiones, recibe evidencia, decide la integración conceptual y entrega. Los ejecutores leen, redactan, calculan, prueban y preparan el entorno. Un escritor por archivo. **Publicación delegada tras el GO:** un único ejecutor gestiona Git y recibe lotes terminados de cada escritor; hace commits acotados y push frecuentes a dev. Conserva íntegros los commits del usuario y excluye credenciales/operación privada.
 
 ## Acceso y versión vigente
