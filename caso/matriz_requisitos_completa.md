@@ -190,7 +190,7 @@ Persisten: regla de repetición/cupo y programa14 municipalR/12meses; elegibilid
 
 ## Versiones exactas examinadas
 
-Los SHA identifican las entradas congeladas examinadas. La auditoría de defensa enpitch distingue respuesta, decisión sustentada y resultado sin apoyarse exclusivamente ensoftware/recepción. El escenarioSSP3 queda obligatorio por aclaración humana y no se vuelve a pedirSSP2; las revisiones externas sólo cubren sus instantáneas; no se atribuye aval de versiones posteriores. Las URLsdev permiten contrastar identidad, pero este registro local no prueba publicación remota del mismo byte. PDF único obligatorio2p decisión+metodología verificado; ensayo oral previsto14–16 pendiente.
+Los SHA identifican las entradas congeladas examinadas. La auditoría de defensa enpitch distingue respuesta, decisión sustentada y resultado sin apoyarse exclusivamente ensoftware/recepción. El escenarioSSP3 queda obligatorio por aclaración humana y no se vuelve a pedirSSP2; las revisiones externas sólo cubren sus instantáneas; no se atribuye aval de versiones posteriores. Las URLsMAIN permiten contrastar identidad, pero este registro local no prueba publicación remota del mismo byte. PDF único obligatorio2p decisión+metodología verificado; ensayo oral previsto14–16 pendiente.
 
 | Archivo | SHA-256 al corte | Enlace de lectura |
 |---|---|---|
