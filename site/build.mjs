@@ -11,6 +11,8 @@ const criterios=matrix.items.filter(r=>r.id.startsWith("C")).map(r=>`<article><h
 await mkdir(new URL("public/avances/",import.meta.url),{recursive:true});
 let html=await readFile(new URL("avances/index.html",import.meta.url),"utf8");
 html=html.replace(/<div id="lista-criterios" class="criterios">[\s\S]*?<\/div>/,`<div id="lista-criterios" class="criterios">${criterios}</div>`).replace('<div id="lista-requisitos" class="requisitos"></div>',`<div id="lista-requisitos" class="requisitos">${requisitos}</div>`).replace("Cargando matriz…","75 de 75 obligaciones visibles. Abrir una fila muestra acción, evidencia, validación y responsable.");
+const counts=matrix.items.reduce((a,r)=>(a[r.estado]=(a[r.estado]||0)+1,a),{});
+html=html.replace(/Corte de la matriz vigente: \d+ demostradas, \d+ condicionales y \d+ pendientes?\./,`Corte de la matriz vigente: ${counts.demostrado||0} demostradas, ${counts.condicional||0} condicionales y ${counts.pendiente||0} pendiente${counts.pendiente===1?"":"s"}.`);
 const date=value=>new Intl.DateTimeFormat("es-CO",{dateStyle:"medium",timeStyle:"short",timeZone:"America/Bogota"}).format(new Date(value))+" · Bogotá";
 html=html.replace(/<time id="fecha-fuente">[\s\S]*?<\/time>/,`<time id="fecha-fuente" datetime="${esc(state.updated_at)}">${esc(date(state.updated_at))}</time>`);
 html=html.replace(/<ol id="hitos" class="hitos">[\s\S]*?<\/ol>/,`<ol id="hitos" class="hitos">${state.hitos.map(h=>`<li><strong>${esc(h.titulo)}</strong><p>${esc(h.detalle)}</p></li>`).join("")}</ol>`);
