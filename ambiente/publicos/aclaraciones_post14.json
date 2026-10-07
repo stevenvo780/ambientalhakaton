@@ -273,5 +273,16 @@
       "ensayo_humano": false
     },
     "fecha_publicacion": "La fecha real consta en el commit que incorpora este registro; esta ampliación es posterior al corte entregado antes de las 14."
+  },
+  "tokens_cierre_presentacion_post14": {
+    "preparado_bogota": "2026-10-07T16:54:14.344467-05:00",
+    "literal": "1.222.533.785",
+    "paradigma": "test time compute",
+    "atribucion": "Tokens reportados por el equipo; dato humano, sin telemetría medida o auditada por nosotros.",
+    "presentacion_sha256": "9713b8ce319effbb2ff4fc4f357e8a4ddf14ad83829298e4931943cc7f0d99d2",
+    "alcance": "Una línea en última escena existente juntoQR; sin escena adicional, tiempo oral, cambios de datos, costos o afirmación de eficacia.",
+    "PDF_activo_sha256": "a018559c997b96f7a6e77f4446d7f923141dd7749e4a4e7d0a8dec231cd10b4e",
+    "QA_visual": "PASS independiente de última escena1280×720 y390×844: cifra/atribución/QR/Q02/Next legibles sin solape; no revisión de ciencia, PDF ni10escenas.",
+    "QA_registrado_bogota": "2026-10-07T16:55:43.348748-05:00"
   }
 }
