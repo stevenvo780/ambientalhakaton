@@ -268,3 +268,15 @@ Cadencia solicitada: **180 segundos**. El controlador delegado y GPT-6-Luna revi
 Tras GO, terminar exige P1–P3, cuenta/fuentes verificables, comparación defendible, contraste obligatorio con datos suficientes, residual/MEA, verificación de los75 IDs y ensayo dentro del plazo. Documentación, web y pruebas técnicas avanzaron; **productos ambientales, cartera definitiva y robustez completa permanecen pendientes**.
 
 Cada escritor entrega archivo, versión, comprobación, objeciones y pendiente. El publicador delegado hace commit/push acotado en **dev** por avance; el dueño web mantiene estado coherente. Para continuar desde ChatGPT o cualquier herramienta, abrir primero README/estado/commit y mantener: **root solo delega; un escritor por archivo; no inventar evidencia; activar la goal solo mediante el registro autorizado del GO; entrega antes de las14:00**.
+
+
+### Corte público verificado, 7 de octubre 13:17 Bogotá
+
+La rama de publicación y Production Branch son `main`. La portada ofrece Presentación, Metodología y Estado de avances. El modo oral lineal de nueve escenas reúne siete bloques en siete minutos totales; el ensayo humano permanece pendiente durante el estudio de 14:00 a 16:00.
+
+- [Presentación](https://hackathon-ambiental.stevenvallejo.com/presentacion): corte `78b08e9`, comparaciones visibles y QA del recorrido en curso.
+- [Metodología](https://hackathon-ambiental.stevenvallejo.com/metodologia): sitio detallado con fuentes, proceso tecnológico y límites.
+- [Presupuesto Vivo](https://presupuesto-vivo-chi.vercel.app/hackathon): consulta sin sesión, D6=5000M/6 y N1=4700M/5, exportaciones JSON/CSV verificadas y administración protegida. Fuente adoptada y guía en `ambiente/publicos/pv_fuente_publica_manifest.json` y `guia_jurado_pv.md`.
+- [Territorio Vivo](https://territorio-vivo-five.vercel.app/resultados): consulta sin sesión del snapshot `84b0199`, con 21 perfiles, seis unidades D6 y 42 cruces documentales; filtros y API pública verificados, API privadas protegidas.
+
+La matriz registra 39 demostraciones de alcance limitado, 35 condiciones y un ensayo humano pendiente; no acredita eficacia ambiental. El PDF obligatorio único tiene dos páginas totales; su cierre con las fuentes finales se publica por separado tras inspección de ambas páginas. Luna lee exclusivamente `origin/main` congelado por commit y conserva cadencia de inicio de 180 segundos, separada de la demora de despliegue.
