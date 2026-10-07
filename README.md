@@ -280,3 +280,5 @@ La rama de publicación y Production Branch son `main`. La portada ofrece Presen
 - [Territorio Vivo](https://territorio-vivo-five.vercel.app/resultados): consulta sin sesión del snapshot `84b0199`, con 21 perfiles, seis unidades D6 y 42 cruces documentales; filtros y API pública verificados, API privadas protegidas.
 
 La matriz registra 39 demostraciones de alcance limitado, 35 condiciones y un ensayo humano pendiente; no acredita eficacia ambiental. El PDF obligatorio único tiene dos páginas totales; su cierre con las fuentes finales se publica por separado tras inspección de ambas páginas. Luna lee exclusivamente `origin/main` congelado por commit y conserva cadencia de inicio de 180 segundos, separada de la demora de despliegue.
+
+Las [aclaraciones posteriores al corte](https://hackathon-ambiental.stevenvallejo.com/ambiente/publicos/aclaraciones_post14.json) registran cambios documentales de las14:12/14:15 con SHA anteriores y nuevos. El PDF y la tabla de fuentes de metodología conservan el snapshot entregado a las13:58; no se atribuyen estas aclaraciones a sus bytes.

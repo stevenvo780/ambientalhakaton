@@ -42,3 +42,12 @@ try{
   }
 }catch(error){if(error.code!=="ENOENT")throw error;}
 console.log("Sitio estático generado: raíz, metadatos y vistas independientes disponibles.");
+
+// Aclaraciones posteriores al corte: documentos exactos y journal, sin alterar vistas o PDF.
+for(const relative of ["entregables/p2_portafolio.md","entregables/p2_justificacion.md","entregables/variables_seguimiento.csv","ambiente/publicos/aclaraciones_post14.json"]){
+  for(const base of ["public/",".vercel/output/static/"]){
+    const destination=new URL(base+relative,import.meta.url);
+    await mkdir(new URL("./",destination),{recursive:true});
+    await copyFile(new URL("../"+relative,import.meta.url),destination);
+  }
+}

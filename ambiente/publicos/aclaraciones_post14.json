@@ -1,0 +1,40 @@
+{
+  "schema": "ambiental.aclaraciones_post14.v1",
+  "registrado_bogota": "2026-10-07T14:25:04.508318-05:00",
+  "nota": "Aclaraciones posteriores al corte; no forman parte de los bytes del PDF ni del snapshot de metodología entregados antes de las14.",
+  "corte_estudio_commit": "82f354888469cafedf06623c862845735cf2fbe9",
+  "recibo_historico_commit": "8f2eaf2071ca9fc45d63fcac03837158e6d88f93",
+  "PDF_corte_sha256": "3505800107fb8c83d6f4e688f7c3a910d02834db985a420e9973261d84093ed6",
+  "PDF_paginas": 2,
+  "archivos": [
+    {
+      "archivo": "entregables/p2_portafolio.md",
+      "sha256_corte_1358": "cc1e7a3ac605d5f1f1e9041dc1c6d42b68d2bf0d0457f7e3d3eab1dbac46428b",
+      "sha256_post14": "3dbc0ee924339431f9a662a606e15782c5b5640f20fe9c05c357188c73ba84ec",
+      "fecha_aclaracion_bogota": "2026-10-07T14:15:42-05:00",
+      "razon": "Aclaración comparativa parcial de funciones y tradeoffs; no ranking global ni eficacia observada."
+    },
+    {
+      "archivo": "entregables/p2_justificacion.md",
+      "sha256_corte_1358": "40db288fdb2e5846ee09ae11d7ac6fd0e265fe4ce1509161ef7ae18d9ef50e1e",
+      "sha256_post14": "c154c26a03ee2ea83860af52ae842903f7436525d166024070c48877a7309b90",
+      "fecha_aclaracion_bogota": "2026-10-07T14:15:42-05:00",
+      "razon": "Aclaración comparativa parcial de funciones y tradeoffs; no ranking global ni eficacia observada."
+    },
+    {
+      "archivo": "entregables/variables_seguimiento.csv",
+      "sha256_corte_1358": "247c4cdeec3e89850a8f37d358efae90b9fed7fb0b6a62770a40a4dea4e7737d",
+      "sha256_post14": "fe7fa1dbee8b4e6bee4de5525101b1fa95eb9e0c9df07a1eded514483dd1cc81",
+      "fecha_aclaracion_bogota": "2026-10-07T14:12:25.537492-05:00",
+      "razon": "InCaRD-01 formula_procedimiento: alcance municipal propuesto en Rionegro, una unidad600; corrige designación regional anterior. Otros campos y33filas intactos."
+    }
+  ],
+  "sin_cambios": "Carteras, localizaciones, costos, reglas, datos357, cálculos, PDF, HTML, CSS, JS, escenarios y semáforo39/35/1 intactos. R10 no promovido; preferencias parciales condicionadas.",
+  "Luna": "Terminó naturalmente; último éxito13:59:48 y cierre14:02:35; no se reinicia.",
+  "alcance_del_contrato": {
+    "registro": "Los75 IDs son un desglose interno; el jurado evalúa8 criterios. Las35 condiciones no equivalen a35 criterios incumplidos.",
+    "prospectivo": "La medición de T0, las actas de custodios y los efectos observados futuros no son exigencias actuales para formular P2/P3 prospectivos.",
+    "brechas_decisionales": "Beneficio esperado comparativo R10 sin dominancia global; regla de repetición/cupo no explícita; ensayo humano F01 pendiente durante14–16.",
+    "estados_sin_promocion": "39 demostraciones de alcance limitado,35 condiciones y1 pendienteF01; sin nueva eficacia, aprobación o cambio de cartera."
+  }
+}
