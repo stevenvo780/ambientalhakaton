@@ -1,14 +1,14 @@
 {
   "schema": "corredor-vivo.estado.v1",
-  "updated_at": "2026-10-07T16:48:05Z",
+  "updated_at": "2026-10-07T16:51:02Z",
   "timezone": "America/Bogota",
   "titulo": "P1 entregado; P2 y P3 en revisión",
-  "detalle": "P1 presenta datos institucionales y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta. Pendiente confirmar elegibilidad, horizonte intermedio, repetición y cupos de D6, e integrar y revisar los entregables.",
+  "detalle": "P1 presenta datos institucionales y hallazgos trazados, pero no valida ambientalmente una cartera. P2 examinó 32.768 subconjuntos: 1.567 factibles y un máximo de seis, condicionado a una unidad por catálogo; es una comparación financiera, no un óptimo ambiental. P3 y sus variables están presentes como borrador D6 provisional en revisión. Eficacia, delta V y robustez completa siguen sin demostrarse. Las condiciones de uso y reproducción de M-E-2411, hoja «Sobre este documento», celda B7, están en revisión: el acceso público no significa licencia abierta.",
   "goal_activada": true,
   "productos_completados": false,
   "orquestador": "Root solo delega; no ejecuta trabajo material.",
   "source": "ambiente/estado_orquestacion.json",
-  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/3628d53bfaa10b98a0615139bfccd6d336b3134a/ambiente/estado_orquestacion.json",
+  "source_url": "https://github.com/stevenvo780/ambientalhakaton/blob/f8f7cdf0313cad41da3b93f89b7ea13040ac4226/ambiente/estado_orquestacion.json",
   "plan_sha256": "a4af4e87ec7d40d55a79d026b8401ee4b48114eeda2d645ce505900c318b3767",
   "hitos": [
     {
@@ -81,11 +81,17 @@
       "estado": "en_revision",
       "detalle": "P1 contiene datos y hallazgos trazados; su presencia no valida ambientalmente una cartera.",
       "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/e23621203e1d2e9e6a5d3146ee09e7420021d331/entregables/p1_tablero.md"
+    },
+    {
+      "titulo": "Coordinación de ejecución reanudada y parámetros registrados",
+      "estado": "en_revision",
+      "detalle": "El registro indica GO recibido y goal activa. D6 contempla seis unidades por COP 5.000 millones, incluida una unidad municipal 14 para Rionegro, propuesta por COP 600 millones y 12 meses desde una futura acta; Guarne y Marinilla no tienen programa 14 propio financiado. El horizonte SSP3-7.0/2060 fue confirmado como solicitado; intermedio y estrés coinciden, y SSP2 queda como exploratorio adicional",
+      "evidencia": "https://github.com/stevenvo780/ambientalhakaton/blob/f8f7cdf0313cad41da3b93f89b7ea13040ac4226/ambiente/estado_orquestacion.json"
     }
   ],
   "publicacion": "Vercel está conectado a GitHub, producción dev y directorio site. Tras el GO, el publicador delegado único publica los lotes de cada avance, preservando los commits del usuario. El tablero consulta estado cada25segundos; commit, push y despliegue introducen demora.",
   "deadline": "2026-10-07T14:00:00-05:00",
-  "source_updated_at": "2026-10-07T16:45:33Z",
+  "source_updated_at": "2026-10-07T16:50:37.683585+00:00",
   "source_branch": "dev",
   "canonical_url": "https://hackathon-ambiental.stevenvallejo.com",
   "go_recibido": true,
@@ -95,26 +101,26 @@
     "herramienta_create_goal_usada": true,
     "fuente": "https://github.com/stevenvo780/ambientalhakaton/blob/dev/ambiente/estado_orquestacion.json",
     "GO_recibido_utc": "2026-10-07T15:34:31+00:00",
-    "comprobado_utc": "2026-10-07T16:48:05Z"
+    "comprobado_utc": "2026-10-07T16:51:02Z"
   },
   "source_repo": "https://github.com/stevenvo780/ambientalhakaton",
   "limitations": [
-    "Confirmar elegibilidad, horizonte intermedio, repetición y cupos de D6.",
+    "Confirmar elegibilidad, horizonte intermedio y repetición y cupos de D6.",
     "Integrar y revisar P2/P3, pitch y seguimiento.",
-    "Resolver alcance de autorización y reproducción de M-E-2411 B7.",
+    "Resolver el alcance de autorización y reproducción de M-E-2411 B7.",
     "Mantener eficacia, delta V y robustez como no demostradas."
   ],
   "summary": [
-    "P1 entregado; no valida ambientalmente una cartera.",
-    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; no es óptimo ambiental.",
+    "P1 entregado; sus hallazgos trazados no validan ambientalmente una cartera.",
+    "P2: 32.768 subconjuntos, 1.567 factibles y máximo de seis bajo el supuesto de una unidad por catálogo; comparación financiera, no óptimo ambiental.",
     "P3 y variables presentes como borrador D6 provisional, en revisión.",
     "Eficacia, delta V y robustez completa no demostradas.",
-    "Uso y reproducción de M-E-2411 B7 en revisión; el acceso público no significa licencia abierta."
+    "Uso y reproducción de M-E-2411 B7 en revisión; acceso público no significa licencia abierta."
   ],
   "status": "GO_activo_entregables_en_revision",
-  "checked_at": "2026-10-07T16:48:05Z",
-  "source_commit": "3628d53bfaa10b98a0615139bfccd6d336b3134a",
-  "source_captured_at": "2026-10-07T16:47:44Z",
+  "checked_at": "2026-10-07T16:51:02Z",
+  "source_commit": "f8f7cdf0313cad41da3b93f89b7ea13040ac4226",
+  "source_captured_at": "2026-10-07T16:50:44Z",
   "source_was_current_at_publication": true,
-  "head_before_publication": "3628d53bfaa10b98a0615139bfccd6d336b3134a"
+  "head_before_publication": "f8f7cdf0313cad41da3b93f89b7ea13040ac4226"
 }
